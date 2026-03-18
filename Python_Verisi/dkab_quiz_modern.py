@@ -434,7 +434,7 @@ Başarılar dilerim! 🌟
                 
                 i += 1
             
-            if soru_no and len(options) == 5 and dogru_cevap:
+            if soru_no and len(options) >= 2 and dogru_cevap:
                 return {
                     "yil": year,
                     "ders": "DKAB",

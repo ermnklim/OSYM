@@ -186,7 +186,8 @@ Aciklama: Sahabenin kendi sozu olarak nakledilen rivayet mevkuf hadis sayilir.
 
 ---SONRAKI SORU---
 Soru 12:
-(Tablo: Hz. Muhammed - A - B - Tabiun - C - Tebeu't-tabiin)
+[Tablo]
+Hz. Muhammed -> A -> B -> Tabiun -> C -> Tebeu't-tabiin
 
 Tabloda hadis usulu olcutlerine gore muttasil ve sahih kabul edilen bir hadisin senedine isaret edilmistir.
 

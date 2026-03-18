@@ -419,7 +419,9 @@ Dogru Cevap: B
 Soru 4:
 Kur'an-i Kerim dersinde ogretmen bir tecvit kuralini anlatirken o kurala ait ornegi asagidaki gibi tahtaya yazar. Ogrencilerden de ayni kurala ait 2, 3, 4 ve 5. maddelere ornek yazmalarini ister.
 
-[Tablo gorseli orijinal PDF'dedir]
+Gorsel Notu:
+Bu soruda tablo gorseli bulunmaktadir.
+Dosya: 2025_Soru_4.png
 
 Buna gore asagidakilerin hangisi ogrencilerin bosluklara yazabilecegi orneklerden biri degildir?
 
