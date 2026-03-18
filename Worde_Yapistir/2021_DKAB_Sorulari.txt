@@ -5,7 +5,7 @@ Bu testte 75 soru vardir.
 Soru 1:
 Tecvit kaideleri ve bunlarin gerceklestigi harf gruplariyla ilgili;
 I. idgam-i bila gunne: lam (ل) ve ra (ر),
-II. idgam-i mutecaniseyn: gaf (غ) ve kef (ك),
+II. idgam-i mutecaniseyn: gaf (ق) ve kef (ك),
 III. idgam-i mutekaribeyn: be (ب) ve mim (م)
 eslestirmelerinden hangileri dogrudur?
 A) Yalniz I
@@ -27,19 +27,20 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 3:
-Kur'an-i Kerim'i okurken bazi kelimelerin altinda kucuk harflerle cesitli kelimelerin veya harflerin yer aldigi gorulur. Kelimenin aslina uygun bir sekilde duzgun telaffuz edilebilmesi icin okuyucu tarafindan bunlara dikkat edilmesi gerekir.
-Gorsel Notu: Bu soru orijinal PDF'de aciklama gorseli ile verilmistir.
-Buna gore asagidaki aciklamalardan hangisi yanlistir?
-A) Kelimedeki ص harfinin altina yazilan س harfi inceltme icindir.
-B) Kelimedeki ح harfinin altina yazilan ح harfi uzatmak icindir.
-C) Altinda امالة lafi bulunan kelime okunurken nefes bir sure tutulup ses kesilir.
-D) Altinda الشمد kelimesi bulunan harfte cezimden sonra harfin aslinda olan otre sessiz olarak dudaklarla gosterilir.
-E) Kelimedeki ح harfinin altina yazilan خص kelimesi, harfin kisa okunmasi icindir.
-Dogru Cevap: C
+Kur'an-ı Kerim'i okurken bazı kelimelerin altında küçük harflerle çeşitli kelimelerin veya harflerin yer aldığı görülür. Kelimenin aslına uygun bir şekilde düzgün telaffuz edilebilmesi için okuyucu tarafından bunlara dikkat edilmesi gerekir.
+Buna göre aşağıdaki açıklamalardan hangisi yanlıştır?
+
+A) Kelimedeki ص harfinin altına yazılan س harfi inceltme içindir.
+B) Kelimedeki ی harfinin altına yazılan مد harfi uzatmak içindir.
+C) Altında اِمالة lafzı bulunan kelime okunurken nefes bir süre tutulup ses kesilir.
+D) Altında اِشمام kelimesi bulunan harfte cezimden sonra harfin aslında olan ötre sessiz olarak dudaklarla gösterilir.
+E) Kelimedeki و harfinin altına yazılan قصر kelimesi, harfin kısa okunması içindir.
+
+Doğru Cevap: C
 
 ---SONRAKI SORU---
 Soru 4:
-* الله لا اله الا هو الحي القيوم
+الم * اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ *
 (Al-i Imran, 3:1-2)
 Verilen ayetlerde asagidaki medlerden hangisi bulunmamaktadir?
 A) Lazim
@@ -318,9 +319,13 @@ Dogru Cevap: E
 
 ---SONRAKI SORU---
 Soru 29:
-Haritada bir mezhebin mensuplarinin, nufusun cogunlugunu veya bir kismini olusturdugu yerler renkli olarak gosterilmistir.
-Gorsel Notu: Bu soru orijinal PDF'de harita gorseli ile verilmistir.
-Bu haritada nufus yogunlugu verilen mezhep asagidakilerden hangisidir?
+Haritada bir mezhebin mensuplarının, nüfusun çoğunluğunu veya bir kısmını oluşturduğu yerler renkli olarak gösterilmiştir.
+Bu haritada nüfus yoğunluğu verilen mezhep aşağıdakilerden hangisidir?
+
+Görsel Notu:
+Bu soru resimlidir.
+Dosya: 2021_Soru_29_Gorsel_01.png
+Konum: C:\Users\osman\Desktop\OSYM\Gorseller\2021\2021_Soru_29_Gorsel_01.png
 A) Zeydilik
 B) Ismaililik
 C) Esarilik

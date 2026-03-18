@@ -3,15 +3,19 @@ Bu testte 50 soru vardir.
 
 ---SONRAKI SORU---
 Soru 1:
-Tenvin ve sakin nun'dan sonra "yemnu" harflerinden biri geldigi takdirde nun sesi bu harflerden birine gunne ile idgam edilerek okunur. Ancak seddeye veya baska bir kelimeye benzemesine sebebiyet verecek yerlerde kelimenin aslini korumak icin idgam yerine izhar yapilmasi gerekir.
-Asagidakilerden hangisi bu parçada bahsedilen izhar durumuna ornektir?
-A) إِنَّ تَقُولُ
-B) خَلْقُ مَثَلٍ
-C) إِنَّ تَكُ
-D) أَنْتِ وَلَا
+Tenvin ve sakin nundan sonra "yemnu" (ي، م، ن، و) harflerinden biri geldiği takdirde nun sesi bu harflerden birine gunne ile idgam edilerek okunur. Ancak secdeye veya başka bir kelimeye benzemesine sebebiyet verecek yerlerde kelimenin aslını korumak için idgam yerine izhar yapılması gerekir.
+
+Aşağıdakilerden hangisi bu parçada bahsedilen izhar durumuna örnektir?
+
+A) اِنْ نَقُولُ
+B) خَلْفًا مِمَّا
+C) اِنْ يَكُ
+D) أُفٍّ وَلَا
 E) بُنْيَانٌ
-Dogru Cevap: E
-Aciklama: "Bunyan" kelimesinde nun sakin ile ya harfi ayni kelime icinde yer alir. Bu durumda idgam degil, kelimenin aslini korumak icin izhar uygulanir.
+
+Doğru Cevap: E
+
+Açıklama: "Bunyan" kelimesinde nun-ı sakin ile ya harfi aynı kelime içinde yer alır. Bu durumda idgam değil, kelimenin aslını korumak için izhar uygulanır (Bu kurala İzhar-ı Mutlak denir).
 
 ---SONRAKI SORU---
 Soru 2:
