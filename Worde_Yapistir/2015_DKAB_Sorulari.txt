@@ -14,7 +14,6 @@ E) Neseple iftihar
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 2:
@@ -29,7 +28,6 @@ E) Bedir'in intikamını almak amacıyla Uhud Savaşı'nın tertiplenmesi
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 3:
@@ -44,7 +42,6 @@ E) Huneyn
 
 Doğru Cevap: B
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 4:
@@ -59,7 +56,6 @@ E) Müdrec
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 5:
@@ -74,7 +70,6 @@ E) Hadislerin fıkıh konuları esas alınarak tasnif edilmesinin
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 6:
@@ -88,7 +83,6 @@ E) Müsnedler
 
 Doğru Cevap: D
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 7:
@@ -103,7 +97,6 @@ E) Ashab-ı karye
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 8:
@@ -118,7 +111,6 @@ E) Yunus
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 9:
@@ -133,7 +125,6 @@ E) el-Kâria
 
 Doğru Cevap: D
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 10:
@@ -148,7 +139,6 @@ E) Hafız olması
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 11:
@@ -163,7 +153,6 @@ E) Nasih ve mensuha
 
 Doğru Cevap: B
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 12:
@@ -178,7 +167,6 @@ E) İçtimai
 
 Doğru Cevap: C
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 13:
@@ -193,7 +181,6 @@ E) Teşbih
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 14:
@@ -208,7 +195,6 @@ E) Hidayet
 
 Doğru Cevap: B
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 15:
@@ -221,9 +207,8 @@ C) Eşari'nin görüşleri ile Cebriye'nin görüşleri arasında benzerlik vard
 D) Cüveyni'nin fiil konusuna yaklaşımı Mutezile'ye yakın durmaktadır.
 E) Bakıllani'ye göre insanın, fiilleri üzerinde hiçbir etkisi yoktur.
 
-Doğru Cevap: B
+Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 16:
@@ -238,7 +223,6 @@ E) Vahye dayanmaktadır.
 
 Doğru Cevap: C
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 17:
@@ -253,7 +237,6 @@ E) Dede
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 18:
@@ -268,7 +251,6 @@ E) Altı rekâta tamamlanması gerekir.
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 19:
@@ -282,7 +264,6 @@ E) Udhiyye
 
 Doğru Cevap: C
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 20:
@@ -295,9 +276,8 @@ C) Tenzihen mekruh
 D) Tahrimen mekruh
 E) Haram lizatihi
 
-Doğru Cevap: D
+Doğru Cevap: B
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 21:
@@ -312,7 +292,6 @@ E) Ahlaki açıdan mutlak iyi veya mutlak kötüden söz edilemez.
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 22:
@@ -327,7 +306,6 @@ E) İnsanların, farkında olmadan felsefe yaptığı
 
 Doğru Cevap: D
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 23:
@@ -341,7 +319,6 @@ E) Gazzâlî
 
 Doğru Cevap: B
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 24:
@@ -354,9 +331,8 @@ C) İslam sanatı, İslam düşüncesinin nihai yorumudur.
 D) İslam sanatı, varlığı İslam fikriyatı ile ele alır.
 E) İslam sanatı, gerçeği güzelin üzerinde tutar.
 
-Doğru Cevap: C
+Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 25:
@@ -370,7 +346,6 @@ E) Tevazu ve sadelik anlayışı
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 26:
@@ -385,7 +360,6 @@ E) soyutluğun estetik bir forma dökülmesi hüsn-ü hattı geliştirmiştir
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 27:
@@ -400,7 +374,6 @@ E) Ehlikitapla yaşanan tartışmalar
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 28:
@@ -415,7 +388,6 @@ E) Tasdik
 
 Doğru Cevap: B
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 29:
@@ -430,7 +402,6 @@ E) Dinlerin itikadi kabulleri ne ölçüde birbiriyle örtüşmektedir?
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 30:
@@ -445,7 +416,6 @@ E) Yabancılaştırma
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 31:
@@ -460,7 +430,6 @@ E) Toplumdaki çatışma siyasette de etkisini hissettirir.
 
 Doğru Cevap: D
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 32:
@@ -475,7 +444,6 @@ E) Zihniyet
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 33:
@@ -490,7 +458,6 @@ E) Yaşlılık
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 34:
@@ -505,7 +472,6 @@ E) Erich Fromm
 
 Doğru Cevap: D
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 35:
@@ -524,7 +490,6 @@ E) II, III ve IV
 
 Doğru Cevap: D
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 36:
@@ -543,7 +508,6 @@ E) II, III ve IV
 
 Doğru Cevap: D
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 37:
@@ -557,7 +521,6 @@ E) Nesturilik
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 38:
@@ -572,7 +535,6 @@ E) Meditasyon
 
 Doğru Cevap: C
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 39:
@@ -585,9 +547,8 @@ C) Dinde kullandığımız dil gerçekliği resmetmektedir.
 D) Dil oyunları realist bir bakış sunmaktadır.
 E) Anlam; bağlam ve kullanıma göre değişir.
 
-Doğru Cevap: B
+Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 40:
@@ -602,7 +563,6 @@ E) Şeffaflık
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 41:
@@ -617,7 +577,6 @@ E) Dinî Kapsayıcılık
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 42:
@@ -632,7 +591,6 @@ E) Küresel bir dinin icat edilmesi
 
 Doğru Cevap: D
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 43:
@@ -647,7 +605,6 @@ E) İdğam yapmanın faydaları
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 44:
@@ -662,7 +619,6 @@ E) Çoklu zekâ yoluyla öğretim
 
 Doğru Cevap: B
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 45:
@@ -677,7 +633,6 @@ E) Allah'ın sıfatlarına ilişkin kavramları gruplaması
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 46:
@@ -692,7 +647,6 @@ E) Sarı
 
 Doğru Cevap: B
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 47:
@@ -707,7 +661,6 @@ E) Gösterip yaptırma
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 48:
@@ -722,7 +675,6 @@ E) Kötü davranışlardan kaçınmak için verilen örnek olaylardan yola çık
 
 Doğru Cevap: B
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 49:
@@ -741,7 +693,6 @@ E) Yapılandırmacı
 
 Doğru Cevap: C
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 50:
@@ -756,4 +707,3 @@ E) İradesini yönlendirecek ortamlar sunulmamıştır.
 
 Doğru Cevap: C
 
-Açıklama:

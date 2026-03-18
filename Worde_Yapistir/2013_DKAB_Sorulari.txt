@@ -15,7 +15,6 @@ E) Zımmi
 
 Doğru Cevap: D
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 2:
@@ -31,7 +30,6 @@ E) Evtas
 
 Doğru Cevap: D
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 3:
@@ -47,7 +45,6 @@ E) Murteza
 
 Doğru Cevap: B
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 4:
@@ -61,7 +58,6 @@ E) Mevkuf
 
 Doğru Cevap: C
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 5:
@@ -75,7 +71,6 @@ E) Takyidü'l-Hadis
 
 Doğru Cevap: D
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 6:
@@ -89,7 +84,6 @@ E) Zevaidler
 
 Doğru Cevap: B
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 7:
@@ -103,7 +97,6 @@ E) Taşir
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 8:
@@ -117,7 +110,6 @@ E) Tekâsür – Çoklukla övünmenin eleştirilmesi
 
 Doğru Cevap: C
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 9:
@@ -133,7 +125,6 @@ E) Adalet
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 10:
@@ -147,7 +138,6 @@ E) Mecaz
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 11:
@@ -163,7 +153,6 @@ E) Nasih – Mensuh
 
 Doğru Cevap: B
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 12:
@@ -179,7 +168,6 @@ E) Süyuti – ed-Dürrü'l-Mensur
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 13:
@@ -195,7 +183,6 @@ E) Basar
 
 Doğru Cevap: B
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 14:
@@ -209,7 +196,6 @@ E) Tevfik
 
 Doğru Cevap: C
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 15:
@@ -223,7 +209,6 @@ E) Gaye ve Nizam
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 16:
@@ -239,7 +224,6 @@ E) Kulların fiilleri
 
 Doğru Cevap: C
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 17:
@@ -253,7 +237,6 @@ E) Örf
 
 Doğru Cevap: B
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 18:
@@ -269,7 +252,6 @@ E) Ahval-ı şahsiyye
 
 Doğru Cevap: B
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 19:
@@ -285,7 +267,6 @@ E) Rükûnun terk edildiğini ikinci secdeden sonra hatırlamak
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 20:
@@ -301,7 +282,6 @@ E) Zekât
 
 Doğru Cevap: D
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 21:
@@ -317,7 +297,6 @@ E) Siyaset felsefesi
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 22:
@@ -337,7 +316,6 @@ E) II, IV ve V
 
 Doğru Cevap: D
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 23:
@@ -356,7 +334,6 @@ E) Bâtınilik
 
 Doğru Cevap: C
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 24:
@@ -372,7 +349,6 @@ E) Minare alemlerinde
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 25:
@@ -386,7 +362,6 @@ E) Revak
 
 Doğru Cevap: B
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 26:
@@ -400,7 +375,6 @@ E) Zincirek
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 27:
@@ -418,7 +392,6 @@ E) Mutezile
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 28:
@@ -434,7 +407,6 @@ E) Zeydîlik
 
 Doğru Cevap: D
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 29:
@@ -450,7 +422,6 @@ E) Çatışmacı
 
 Doğru Cevap: C
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 30:
@@ -466,7 +437,6 @@ E) Cami cemaati
 
 Doğru Cevap: B
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 31:
@@ -480,7 +450,6 @@ E) Teolojik
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 32:
@@ -496,7 +465,6 @@ E) Biyolojik
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 33:
@@ -515,7 +483,6 @@ E) Taoizm
 
 Doğru Cevap: D
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 34:
@@ -532,7 +499,6 @@ E) Sukkot
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 35:
@@ -546,7 +512,6 @@ E) Avrupa İnsan Hakları Sözleşmesi
 
 Doğru Cevap: D
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 36:
@@ -562,7 +527,6 @@ E) Dinî tecrübe delili
 
 Doğru Cevap: D
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 37:
@@ -580,7 +544,6 @@ E) Deizm
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 38:
@@ -601,7 +564,6 @@ E) Örgün – İnformal – Yaygın – Formal
 
 Doğru Cevap: C
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 39:
@@ -615,7 +577,6 @@ E) Dersiam
 
 Doğru Cevap: D
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 40:
@@ -629,7 +590,6 @@ E) Yükseköğretim Kanunu
 
 Doğru Cevap: C
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 41:
@@ -643,7 +603,6 @@ E) Michael Grimmet – John Hull
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 42:
@@ -659,7 +618,6 @@ E) Avrupa Birliği'nin, üye ülkeleri bağlayıcı herhangi bir din eğitimi po
 
 Doğru Cevap: D
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 43:
@@ -675,7 +633,6 @@ E) İtaatkârlık
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 44:
@@ -694,7 +651,6 @@ E) Mezhepler arası öğrenme
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 45:
@@ -710,7 +666,6 @@ E) Eğilimleri yönlendirme
 
 Doğru Cevap: B
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 46:
@@ -726,7 +681,6 @@ E) Balık kılçığı kavram haritası
 
 Doğru Cevap: C
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 47:
@@ -740,7 +694,6 @@ E) Çember
 
 Doğru Cevap: B
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 48:
@@ -756,7 +709,6 @@ E) Sunuş stratejisi – Dramatizasyon – İş birliğine dayalı öğrenme
 
 Doğru Cevap: A
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 49:
@@ -770,7 +722,6 @@ E) Dinî öğrenme modelini benimser.
 
 Doğru Cevap: E
 
-Açıklama:
 ---SONRAKİ SORU---
 
 Soru 50:
@@ -786,4 +737,3 @@ E) Öğrencileri dinî konularda dar fikirli ve tek görüşlü hâle getirir.
 
 Doğru Cevap: D
 
-Açıklama:
