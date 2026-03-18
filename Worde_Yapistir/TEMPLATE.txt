@@ -1,0 +1,27 @@
+DERS: DKAB
+KONU:
+YIL: 2021
+
+Soru 1:
+[Tam soru metni]
+
+A) ...
+B) ...
+C) ...
+D) ...
+E) ...
+
+Doğru Cevap: A
+
+Açıklama:
+[Bu şıkkın neden doğru olduğu]
+
+Not:
+[Varsa görsel bilgisi]
+
+Görsel Notu:
+Bu soru resim/görsel içeriyor.
+Görsel dosya adı: 2021_Soru_04.png
+Görsel konumu: C:\Users\osman\Desktop\OSYM\Gorseller\2021\2021_Soru_04.png
+Word’de bu satırın altına görseli yapıştır.
+
