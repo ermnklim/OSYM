@@ -16,7 +16,7 @@ C) II ve III
 D) II ve IV
 E) I, III ve IV
 
-Doğru Cevap: E
+Doğru Cevap: B
 
 Açıklama: Lahn-ı celî, Kur'an okumasında herkesin fark edebileceği açık hatalardır. Harf karıştırmak, medd hataları, hareke hataları ve tecvit hataları bu kapsama girer.
 
@@ -31,7 +31,7 @@ C) İşmam
 D) İmale
 E) Gunne
 
-Doğru Cevap: D
+Doğru Cevap: C
 
 Açıklama: Ötre harfini göstermek için dudakları ileriye götürmek İmale tecvit kuralına örnektir.
 
@@ -46,7 +46,7 @@ C) İzhar
 D) İdgam-ı misleyn meal-gunne
 E) İhfa
 
-Doğru Cevap: D
+Doğru Cevap: E
 
 Açıklama: Verilen metinde İdgam-ı misleyn meal-gunne kuralı bulunmamaktadır.
 
@@ -66,7 +66,7 @@ C) Kitab-ı meknun
 D) Ümmü'l-kitab
 E) Kitab-ı mübin
 
-Doğru Cevap: E
+Doğru Cevap: A
 
 Açıklama: Kitab-ı mübin, açık ve apaçık olan kitap anlamına gelir, kayıt mahiyetiyle ilgili diğer kavramlardan farklıdır.
 
@@ -179,7 +179,7 @@ C) Hadis rivayetinde hata yapmaktan endişe duymaları
 D) Hz. Muhammed'den kısa bir süre önce vefat etmeleri
 E) Yaptıkları rivayetlerin sıhhat açısından zayıf bulunması
 
-Doğru Cevap: D
+Doğru Cevap: E
 
 Açıklama: Hz. Muhammed'den kısa süre önce vefat etmek, muksirun olmamanın sebebi arasında gösterilemez.
 
@@ -194,7 +194,7 @@ C) Mütevatir ve meşhur sünnetlere aykırılık
 D) Akıl ve mantığa aykırılık
 E) Bilimsel gerçeklere aykırılık
 
-Doğru Cevap: C
+Doğru Cevap: D
 
 Açıklama: Sahabelerin rivayete itiraz etmesi, bu sözün mütevatir ve meşhur sünnetlere aykırı olduğunu göstermektedir.
 
@@ -209,7 +209,7 @@ C) Mu'dal
 D) Müdrec
 E) Hasen
 
-Doğru Cevap: A
+Doğru Cevap: C
 
 Açıklama: Tebei tabiîn neslinden birinin doğrudan peygamberden aktardığı hadise Mürsel hadis denir.
 
@@ -233,7 +233,7 @@ C) I ve III
 D) II ve III
 E) I, II ve III
 
-Doğru Cevap: E
+Doğru Cevap: C
 
 Açıklama: Hadis Buhari'de geçtiği için merfudur, müntehası Buhari'dir ve isnadı humidir (Hz. Muhammed'e kadar ulaşan).
 
@@ -251,7 +251,7 @@ C) II ve III
 D) I ve III
 E) I, II ve III
 
-Doğru Cevap: C
+Doğru Cevap: D
 
 Açıklama: Hanefi mezhebine göre Ramazan Bayramı'nın 2. günü ve kadının nifas gününde oruç tutmak yasaktır.
 
@@ -266,9 +266,9 @@ C) Kuşluk
 D) Evvabin
 E) Küsuf
 
-Doğru Cevap: B
+Doğru Cevap: A
 
-Açıklama: Parçada bahsedilen namaz Teheccüd namazıdır.
+Açıklama: Parçada bahsedilen namaz Teravih namazıdır.
 
 ---SONRAKİ SORU---
 
@@ -286,7 +286,7 @@ C) II ve III
 D) II ve IV
 E) III ve IV
 
-Doğru Cevap: D
+Doğru Cevap: E
 
 Açıklama: Hayvanın şaşı olması veya kuyruğunun üçte birinden fazlasının kopmuş olması kurban olmasına engeldir.
 
@@ -301,7 +301,7 @@ C) Zaruretler yasakları mübah kılar.
 D) Zarar imkân ölçüsünce giderilir.
 E) Beraat-ı zimmet asıldır.
 
-Doğru Cevap: B
+Doğru Cevap: A
 
 Açıklama: Müftü, yerleşik uygulama (örf) esas alınarak karar vermiştir.
 
@@ -436,9 +436,9 @@ C) Ebu Hanife - Cüveyni
 D) Bakıllani - Necmeddin Ömer en-Nesefi
 E) Ebu'l-Hüzeyl el-Allaf - Pezdevi
 
-Doğru Cevap: E
+Doğru Cevap: B
 
-Açıklama: Ebu'l-Hüzeyl el-Allaf kulun hür iradeye sahip olduğunu, Pezdevi ise ilahi iradeyi esas alan görüşü savunur.
+Açıklama: Mabed el-Cüheni kulun hür iradeye sahip olduğunu, Cehm b. Safvan ise ilahi iradeyi esas alan görüşü savunur.
 
 ---SONRAKİ SORU---
 
@@ -516,9 +516,9 @@ C) Sevik
 D) Evtas
 E) Beni Müstalik
 
-Doğru Cevap: C
+Doğru Cevap: E
 
-Açıklama: Parçada bahsedilen olay Sevik Gazvesi'dir.
+Açıklama: Parçada bahsedilen olay Beni Müstalik Gazvesi'dir.
 
 ---SONRAKİ SORU---
 
@@ -596,9 +596,9 @@ C) Kadisiye
 D) Yermük
 E) Hemedan
 
-Doğru Cevap: A
+Doğru Cevap: B
 
-Açıklama: 751 yılında gerçekleşen ve kâğıt imalatının öğrenildiği savaş Köprü Talas Savaşı'dır.
+Açıklama: 751 yılında gerçekleşen ve kâğıt imalatının öğrenildiği savaş Talas Savaşı'dır.
 
 ---SONRAKİ SORU---
 
@@ -834,7 +834,7 @@ C) Kimlik kazanmaya karşı rol karmaşası
 D) Üretkenliğe karşı durgunluk
 E) Benlik bütünlüğüne karşı umutsuzluk
 
-Doğru Cevap: E
+Doğru Cevap: C
 
 Açıklama: Mehmet'in yaşadığı kimlik bütünlüğü ve umutsuzluk çatışması, Erikson'un genç yetişkinlik dönemine ait çatışmasıdır.
 
