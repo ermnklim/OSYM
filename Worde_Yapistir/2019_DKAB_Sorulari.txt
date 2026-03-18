@@ -14,8 +14,6 @@ E) Hadr
 
 Doğru Cevap: D
 
-Açıklama: Parçada tahkik (yavaş), tedvir (orta) ve hadr (hızlı) okuyuşlarından bahsedilmiştir. Hezreme ise harfleri ve sıfatları bozarak yapılan süratli ve caiz olmayan okuyuştur. İzhar bir okuyuş tarzı değil, bir tecvit kaidesidir.
-
 ---SONRAKİ SORU---
 
 DERS: Kur'an-ı Kerim
@@ -36,8 +34,6 @@ D) İdğam - İdğam - İhfa
 E) İhfa - İzhar - İhfa
 
 Doğru Cevap: A
-
-Açıklama: I. Sakin mim'den sonra dal gelmesi "Mim-i Sakin'in İzharı"dır. II. Sakin lam'dan sonra ra gelmesi "İdğam-ı Mütekaribeyn"dir. III. Sakin nun'dan sonra kaf gelmesi ise "İhfa"dır.
 
 ---SONRAKİ SORU---
 
@@ -60,15 +56,13 @@ E) III ve IV
 
 Doğru Cevap: A
 
-Açıklama: Zamir, kendisinden önceki harf harekeli ise uzatılır (I ve IV). Kendisinden önceki harf sakin (II ve III) ise uzatılmaz.
-
 ---SONRAKİ SORU---
 
 DERS: Kur'an-ı Kerim
 KONU: Vakıf Kuralları
 YIL: 2019
 Soru 4:
-Kur’an tilaveti esnasında bir kelimede vakıf yapılmış ve sonrasında kaldığı yerden tilavetine devam etmiştir. Bu şekilde yapılmadığında mananın bozulacağını, dolayısıyla mutlaka bu durakta durulması gerektiğini anlatmıştır. Bu parçaya göre vakıf yapılan durak aşağıdakilerden hangisidir?
+Kur’an okuma ve tecvit dersinde Mehmet Öğretmen, vakıf kurallarını anlattıktan sonra öğrencilerin konuyu kavrayıp kavramadıklarını görmek istemiştir. Bu maksatla Kur’an tilaveti esnasında bir kelimede vakıf yapmış ve sonrasında kaldığı yerden tilavetine devam etmiştir. Bu şekilde yapılmadığında mananın bozulacağını, dolayısıyla mutlaka bu durakta durulması gerektiğini anlatmıştır. Bu parçaya göre Mehmet Öğretmen’in vakıf yaptığı durak aşağıdakilerden hangisidir?
 
 A) Vakf-ı lâ
 B) Vakf-ı caiz
@@ -78,15 +72,15 @@ E) Vakf-ı mücevvez
 
 Doğru Cevap: C
 
-Açıklama: Durulması zorunlu olan ve mananın bozulmasını önleyen vakıf "Vakf-ı Lazım"dır.
-
 ---SONRAKİ SORU---
 
 DERS: Tefsir
 KONU: Kur'an Kavramları (Nezair)
 YIL: 2019
 Soru 5:
-Lafızları farklı olsa da aralarında anlamsal açıdan bir yakınlık olan kelimelerin (Cennet, Naîm, Firdevs vb.) birbirleriyle açıklanması hangisiyle ifade edilir?
+Müfessirler, Kur’an-ı Kerim’deki bir kelimenin tefsirini yaparken lafızları farklı olsa da aralarında anlamsal açıdan bir yakınlık olduğunu düşündükleri kelimeleri birbiriyle açıklarlar. Örneğin mana itibarıyla ahirette vadedilen nimet ve mükâfat yurdu anlamında kullanılan “cennet”, “naîm”, “firdevs”, “adn”, “darü'l-huld” ve “darü's-selam” kelimelerini birbiri ile tefsir eder ve aynı anlamda kullanırlar.
+
+Bu parçada bahsedilen husus aşağıdaki kavramlardan hangisiyle ifade edilir?
 
 A) Mücmel
 B) Mübhem
@@ -96,18 +90,17 @@ E) Garib
 
 Doğru Cevap: D
 
-Açıklama: Eş anlamlı veya yakın anlamlı farklı kelimelerin birbirini tefsir etmesine Nezair denir.
-
 ---SONRAKİ SORU---
 
 DERS: Tefsir
 KONU: Neshin Şartları
 YIL: 2019
 Soru 6:
-Müfessirlerin ayetler arasında neshin gerçekleşebilmesi için ileri sürdükleri şartlar arasında hangileri yer alır?
-I. Ayetler arasında uzlaştırılamayacak bir müşkilin varlığı
-II. İyilik ve kötülük vasfı taşıyan bir hükümle ilgili olması
-III. Nasih ayetin mensuhtan sonra nazil olması
+Müfessirlerin ayetler arasında neshin gerçekleşebilmesi için ileri sürdükleri şartlar arasında;
+I. ayetler arasında uzlaştırılamayacak derecede bir müşkilin varlığı,
+II. iyilik ve kötülük vasfı taşıyan bir hükümle ilgili olması,
+III. nasih olduğu kabul edilen ayetin mensuhtan sonra nazil olması
+hususlarından hangileri yer almaktadır?
 
 A) Yalnız I
 B) Yalnız II
@@ -117,15 +110,15 @@ E) II ve III
 
 Doğru Cevap: D
 
-Açıklama: Nesh için zaman farkı (sonra gelme) ve hükümler arası tam çatışma şarttır.
-
 ---SONRAKİ SORU---
 
 DERS: Tefsir
 KONU: Tehaddi (Meydan Okuma)
 YIL: 2019
 Soru 7:
-Müşriklerin inkârına karşı Kur'an'ın "haydi onun gibi on sure getirin" veya "benzeri bir sure getirin" teklifinde bulunması hangisidir?
+Müşrikler Kur’an-ı Kerim’in Allah kelamı olduğunu inkâr ediyor; onu Hz. Muhammed’e birilerinin yazdırdığını, onun bir şiir olduğunu söylüyorlardı. Allah da onları bu iddialarını ispatlamaya çağırıp “...Eğer doğru söyleyenler iseniz, haydi Allah’tan başka gücünüzün yettiklerini de (yardıma) çağırıp, siz de onun gibi on sure getirin.”(Hud, 11:13), ve “Eğer kulumuza (Muhammed’e) indirdiğimiz (Kur’an) hakkında şüphede iseniz, haydi onun benzeri bir sure getirin...” (Bakara, 2:23) teklifinde bulunmuştu.
+
+Bu parçada anlatılan husus aşağıdaki kavramlardan hangisiyle ifade edilir?
 
 A) Tebliğ
 B) Tebyin
@@ -135,15 +128,15 @@ E) Telif
 
 Doğru Cevap: C
 
-Açıklama: Kur'an'ın muarızlarına hiddetli bir şekilde meydan okumasına Tehaddi denir.
-
 ---SONRAKİ SORU---
 
 DERS: Tefsir
 KONU: İhtilaf Sebepleri
 YIL: 2019
 Soru 8:
-Aşağıdakilerden hangisi ayetlerin yorumlanmasında ortaya çıkan görüş ayrılıklarının sebeplerinden biri değildir?
+Vahyin iniş sürecinde ayetlerle ilgili anlaşılmayan kimi hususlar, sahabe tarafından Hz. Muhammed’e sorulmak suretiyle açıklığa kavuşturulmuştur. Onun vefatı sonrasında önce Kur’an’a ve Sünnet’e müracaat edilmiş, bu ikisinden hareketle cevaplanamayan hususlar bağlamında ise zaman zaman rey ve içtihada başvurulmuştur. Bu durum, ayetlerin nasıl anlaşılacağı ve yorumlanacağı noktasında görüş ayrılıklarının ortaya çıkmasına zemin hazırlamıştır.
+
+Aşağıdakilerden hangisi bu görüş ayrılıklarının sebeplerinden biri değildir?
 
 A) Itlak-takyid farklılığı
 B) Tedvin-tasnif ayrımı
@@ -153,15 +146,15 @@ E) Vücuh-nezair olgusu
 
 Doğru Cevap: B
 
-Açıklama: Tedvin ve tasnif (kayda geçirme ve düzenleme) süreci yorum ihtilaflarının dilsel veya hükmî sebebi değildir.
-
 ---SONRAKİ SORU---
 
 DERS: Tefsir
 KONU: Müşkilü’l-Kur'an
 YIL: 2019
 Soru 9:
-Kur’an’da insanın yaratılışıyla ilgili (toprak, çamur, balçık vb.) farklı ifadelerin bir tezat değil, aşamalar olduğunu inceleyen ilim hangisidir?
+Kur’an-ı Kerim’de insanın topraktan, balçıktan, cıvık çamurdan, kupkuru balçıktan yaratıldığı şeklinde birbirinden farklı ifadeler yer almaktadır. Bu ayetlere bakıldığında insanın hangi maddeden yaratıldığı konusunda ilk bakışta bir tezat varmış gibi gözükmektedir. Ancak konu ile doğrudan ve dolaylı olarak ilgili ayetlere geniş bir perspektiften bakıldığında bunun bir tezat olmadığı, bilakis söz konusu ayetlerin insanın yaratılışının çeşitli aşamalarına işaret ettiği görülmektedir.
+
+Bu tür anlatımlar aşağıdaki Kur’an ilimlerinden hangisi kapsamında incelenmektedir?
 
 A) Mübhematü’l-Kur’an
 B) Müşkilü’l-Kur'an
@@ -171,25 +164,23 @@ E) İcazü’l-Kur’an
 
 Doğru Cevap: B
 
-Açıklama: İlk bakışta çelişkili gibi görünen ayetleri açıklayan ilim Müşkilü'l-Kur'an'dır.
-
 ---SONRAKİ SORU---
 
 DERS: Hadis
 KONU: Müsned Tasnifi
 YIL: 2019
 Soru 10:
-Ravileri merkeze alarak (sahabelere göre) tasnif edilmiş eser türü hangisidir?
+Fikret Hoca hadis dersinde, her bir öğrencisine farklı bir sahabenin ismini vererek bu kişilerin rivayetlerini incelemelerini istemiştir. Öğrencilerin biri bu amaçla bir eseri incelemiş fakat aradığı sahabenin rivayet ettiği hadislerin bu eserde farklı konulara dağılmış hâlde yer aldığını görmüştür. Bunun üzerine bir arkadaşından yardım istemiş, arkadaşı da ona farklı metotlarla yazılmış hadis kitapları olduğunu ve eğer ravileri merkeze alarak hadis arıyorsa bu şekilde tasnif edilmiş eserlere müracaat etmesi gerektiğini söylemiştir.
 
-A) Musannef
-B) Sünen
-C) Müsned
-D) Cami
-E) Muvatta
+Bu öğrencinin aşağıdaki eserlerden hangisine başvurması gerektiği söylenebilir?
+
+A) Abdürrezzak b. Hemmam'ın Musannef'i
+B) Darimi'nin Sünen'i
+C) Ebu Davud et-Tayalisi'nin Müsned'i
+D) Mamer b. Raşid'in Cami'i
+E) İmam Malik'in Muvatta'ı
 
 Doğru Cevap: C
-
-Açıklama: Hadisleri ilk ravisine göre sıralayan kitaplara Müsned denir.
 
 ---SONRAKİ SORU---
 
@@ -197,7 +188,9 @@ DERS: Hadis
 KONU: Tahammülü’l-hadis
 YIL: 2019
 Soru 11:
-Hadislerin sema, kıraat gibi yollarla aktarılması faaliyetinin genel adı nedir?
+Önceleri hadisler sema adı verilen ve sözlü aktarıma dayanan bir yolla şeyhten öğrencilere aktarılmıştır. Hadis eğitim ve öğretiminin daha sistematik hâle gelmesiyle birlikte bu yöntemin yanında kıraat, kitabet, arz, münavele, vicade, icazet, i’lâm gibi metotlar da gelişmiş ve hadisler pek çok yolla aktarılmaya başlanmıştır.
+
+Bu aktarım faaliyetinin genel adı aşağıdakilerden hangisidir?
 
 A) Tahric
 B) Dirayet
@@ -207,15 +200,15 @@ E) Tasnif
 
 Doğru Cevap: C
 
-Açıklama: Hadisin hocadan alınmasına Tahammül, başkasına aktarılmasına Eda denir.
-
 ---SONRAKİ SORU---
 
 DERS: Hadis
 KONU: Nasih-Mensuh
 YIL: 2019
 Soru 12:
-Hz. Peygamber'in hacamatı önce yasaklayıp sonra kendisinin yaptırması durumu hangisiyle ifade edilir?
+Sahabeden Şeddad b. Evs’in rivayet ettiği bir hadise göre Hz. Muhammed, Hicret’in sekizinci yılında oruçlu kişinin hacamat yaptırmasını yasaklamış ve “Hacamat yapan da yaptıran da orucunu bozmuş olur.” buyurmuştur. Ancak İbn Abbas’tan gelen bir hadiste Hz. Muhammed’in Veda Haccı sırasında oruçlu ve ihramlı iken hacamat yaptırdığı bildirilmiştir.
+
+Bu durum aşağıdaki kavram çiftlerinden hangisiyle ifade edilir?
 
 A) Münker-maruf
 B) Şaz-mahfuz
@@ -225,15 +218,15 @@ E) Mütevatir-ahad
 
 Doğru Cevap: C
 
-Açıklama: Hükmün değişmesi nesh olayıdır.
-
 ---SONRAKİ SORU---
 
 DERS: Hadis
 KONU: Hadis Türleri / Kutsi
 YIL: 2019
 Soru 13:
-“Ben, salih kullarıma hiçbir gözün görmediği... nimetler hazırladım” ifadesi hangi türdür?
+“Ben, salih kullarıma hiçbir gözün görmediği, hiçbir kulağın işitmediği ve hiç kimsenin hayal bile edemeyeceği nimetler hazırladım.”
+
+Bu ifadenin, aşağıdaki hadis türlerinden hangisine girdiği söylenebilir?
 
 A) Meşhur
 B) Mevkuf
@@ -243,15 +236,15 @@ E) Hasen
 
 Doğru Cevap: D
 
-Açıklama: Allah'ın kelamı olarak rivayet edilen hadisler Kutsi'dir.
-
 ---SONRAKİ SORU---
 
 DERS: Hadis
 KONU: Maruf ve Münker
 YIL: 2019
 Soru 14:
-Mevkuf olan sahih isnadın, merfu olan zayıf isnada tercih edilmesi durumu hangisidir?
+“Kim namazı dosdoğru kılar, zekâtı verir, hac yapar, Ramazan’da oruç tutar ve misafiri ağırlarsa cennete girer.” hadisi, İbn Abbas’tan merfu ve mevkuf olarak iki farklı şekilde rivayet edilmiştir. Yapılan araştırmada rivayetin mevkuf olan isnadının sahih olduğu tespit edilmiş; merfu olanında ise zayıf bir ravi fark edilmiştir. Bundan dolayı hadisin merfu rivayeti kabul edilmemiştir.
+
+Bu parçada bahsedilen rivayetler aşağıdaki kavram çiftlerinden hangisiyle ifade edilir?
 
 A) Munkatı - muttasıl
 B) Maruf - münker
@@ -261,15 +254,15 @@ E) Mutabi - şahid
 
 Doğru Cevap: B
 
-Açıklama: Zayıf rivayet (Münker), kuvvetli olan marufa aykırıysa reddedilir.
-
 ---SONRAKİ SORU---
 
 DERS: Fıkıh
 KONU: Ariyet Akdi
 YIL: 2019
 Soru 15:
-Bir malın menfaatinin bedelsiz olarak bir süreliğine verilmesi hangi akittir?
+Çiftçilikle uğraşan Ali Bey, hasat zamanı buğdayını taşımak için komşusu Süleyman Bey’den traktörünü ister. Süleyman Bey, komşusunun ihtiyacını gidermek ve ona yardımcı olmak amacıyla traktörünü kendisine bir aylığına bedelsiz olarak verir. Ali Bey, komşusunun istek ve rızasına uygun olarak traktörü kullanır ve işi bittikten sonra da söz verdiği gibi traktörü iade eder.
+
+Bu yardımlaşma biçimini ifade eden akit aşağıdakilerden hangisidir?
 
 A) Karz
 B) Hibe
@@ -279,25 +272,23 @@ E) Vedia
 
 Doğru Cevap: D
 
-Açıklama: Karşılıksız kullanım ödüncü Ariyet'tir.
-
 ---SONRAKİ SORU---
 
 DERS: Fıkıh
 KONU: Yemin Bozma
 YIL: 2019
 Soru 16:
-Yemin edip sonra bu yemine aykırı davranan (mün'akid yemin) kişi için hangisi doğrudur?
+Mustafa ve eşi bir mağazadan yemek takımı satın alırlar. İlk yıkamadan sonra rengi solması sebebiyle aldıkları yemek takımını mağazaya geri götürürler. Mağaza yetkilileri, bu durumdan kendilerinin sorumlu olmadığını, bundan dolayı da herhangi bir iade veya değişim işlemi yapamayacaklarını söylerler. Mustafa bunun üzerine çok sinirlenir ve “Yemin ederim ki bir daha bu mağazadan alışveriş yapmayacağım.” der. Ancak eşi, Mustafa’nın yemin ettiğini bilmesine rağmen ısrar ederek bir süre sonra o mağazadan tekrar alışveriş yapmasına sebep olur.
 
-A) Kefaret gerekmez.
-B) Kefaret gerekir.
-C) Tövbe yeterlidir.
-D) Başkası sorumlu olur.
-E) Hiçbiri.
+Buna göre aşağıdaki yargılardan hangisi doğrudur?
+
+A) Herhangi bir kefaret söz konusu değildir.
+B) Mustafa yeminini bozduğu için kefaret gerekir.
+C) Mustafa'nın tövbe etmesi kefaret için yeterlidir.
+D) Hem Mustafa hem de eşi kefaretle yükümlüdür.
+E) Bu duruma sebep olduğu için kefaret sorumluluğunu Mustafa’nın eşi yüklenir.
 
 Doğru Cevap: B
-
-Açıklama: Bozulan yemin için kefaret ödenir.
 
 ---SONRAKİ SORU---
 
@@ -305,10 +296,12 @@ DERS: Fıkıh
 KONU: Haber-i Vahid Analizi
 YIL: 2019
 Soru 17:
-Haber-i vahid olan fiilî sünnetin delil niteliği hangisi olabilir?
-I. Sübutu ve delaleti kati
-II. Sübutu ve delaleti zanni
-IV. Sübutu zanni; delaleti kati
+Haber-i vahid olarak rivayet edilen bir fiilî sünnet;
+I. hem sübutu hem de delaleti kati,
+II. hem sübutu hem de delaleti zanni,
+III. sübutu kati; delaleti zanni,
+IV. sübutu zanni; delaleti kati
+şeklindeki delil tasniflerinden hangilerine girebilir?
 
 A) Yalnız I
 B) Yalnız II
@@ -318,15 +311,19 @@ E) III ve IV
 
 Doğru Cevap: D
 
-Açıklama: Haber-i vahid sübutu zannidir; delaleti ise hem zanni hem kati olabilir.
-
 ---SONRAKİ SORU---
 
 DERS: Fıkıh
 KONU: Sahih-Batıl-Fasit
 YIL: 2019
 Soru 18:
-Hanefilere göre; I. Şartlı/Rükünlü tam, II. Kurucu unsuru eksik, III. Sıhhat şartı eksik olan fiillerin sırası:
+Hanefilere göre, mükellefin yaptığı fiiller gerekli rükünleri, şartları ve kurucu unsurları taşıyip taşımamalarına göre üçe ayrılır.
+Buna göre;
+I. gerekli bütün şart ve rükünleri taşıyan,
+II. rükünlerinde veya kurucu unsurlarında eksiklik olan,
+III. rüknü veya temel unsurları tamam olduğu hâlde sıhhat şartlarında eksiklik bulunan
+fiillere verilen isimler aşağıdakilerden hangisinde doğru olarak sıralanmıştır?
+    I          II          III
 
 A) Sahih - fasit - batıl
 B) Batıl - fasit - sahih
@@ -336,15 +333,17 @@ E) Sahih - batıl - fasit
 
 Doğru Cevap: E
 
-Açıklama: Sahih (eksiksiz), Batıl (aslı bozuk), Fasit (vasfı bozuk).
-
 ---SONRAKİ SORU---
 
 DERS: Fıkıh
 KONU: Zekâtın Geçerliliği
 YIL: 2019
 Soru 19:
-Zekât niyetiyle yapılan; I. Fakire gıda, II. Cami halısı, III. Dernek bağışı tercihlerinden hangisi geçerlidir?
+Zekât niyetiyle yapılan;
+I. fakire gıda yardımında bulunmak,
+II. camiye halı bağışlamak,
+III. Türkiye’nin ağaçlandırılması için çalışan bir derneğe bağış yapmak
+şeklindeki yardımlardan hangilerinin geçerli olduğu söylenebilir?
 
 A) Yalnız I
 B) Yalnız II
@@ -354,25 +353,24 @@ E) I, II ve III
 
 Doğru Cevap: A
 
-Açıklama: Zekât kişiye (temlik) verilmelidir, hayır kurumlarına veya kamu hizmetine harcanamaz.
-
 ---SONRAKİ SORU---
 
 DERS: Fıkıh
 KONU: Mesh Süresi
 YIL: 2019
 Soru 20:
-Saat 10:00'da mest giyen, 14:00'te abdesti bozulan bir seferi (yolcu) için mesh süresi ne zaman başlar ve ne kadardır?
+Hanefi olan Zülküf Bey otobüsle Erzurum’dan İzmir’e gitmek üzere saat 12.00’de yola çıkacaktır. Saat 10.00’da evinde ayağını yıkayarak abdest aldıktan sonra mestini giyer ve otobüse biner. Saat 14.00'te verilen molada tuvalete giderek abdestini bozar ve yolculuğuna devam eder. Otobüsün saat 16.00'da tekrar mola verdiği sırada mestin üzerine mesh yaparak abdestini alır ve namazını kılar.
 
-A) 10:00 - 24 saat
-B) 14:00 - 24 saat
-C) 14:00 - 72 saat
-D) 16:00 - 72 saat
-E) 16:00 - 24 saat
+Buna göre Zülküf Bey’in meshinin başladığı zaman ve süresiyle ilgili aşağıdakilerden hangisi doğrudur?
+      Başladığı zaman     Toplam süresi 
+
+A) Saat 10.00’da         24 saat
+B) Saat 14.00’te         24 saat
+C) Saat 14.00’te         72 saat
+D) Saat 16.00’da         72 saat
+E) Saat 16.00’da         24 saat
 
 Doğru Cevap: C
-
-Açıklama: Süre abdestin bozulmasıyla başlar; seferilikte 3 gün (72 saat)dür.
 
 ---SONRAKİ SORU---
 
@@ -380,7 +378,12 @@ DERS: Fıkıh
 KONU: Umre Rükünleri
 YIL: 2019
 Soru 21:
-I. Arafat vakfesi, II. İhram, III. Şeytan taşlama, IV. Tavaf hangileri umrede de vardır?
+Hac ibadeti kapsamında yerine getirilen;
+I. Arafat’ta vakfe yapma,
+II. ihrama girme,
+III. Şeytan taşlama,
+IV. tavaf yapma
+uygulamalarından hangilerinin umre sırasında da yapılması zorunludur?
 
 A) Yalnız I
 B) I ve III
@@ -390,15 +393,15 @@ E) III ve IV
 
 Doğru Cevap: D
 
-Açıklama: Umre'de vakfe ve şeytan taşlama yoktur.
-
 ---SONRAKİ SORU---
 
 DERS: Kelam
 KONU: Rüyetullah / Eşariyye
 YIL: 2019
 Soru 22:
-Allah'ın görülmesinin uluhiyete zarar vereceğini savunan (inkâr eden) birinin hangisine mensup olması beklenmez?
+Bir şeyin görülebilmesi için onun var olması ve bir yönde bulunması gerekir. Bir mekân ve yönde bulunmak ise yaratılmışlık alameti olan hususlardır. Hâlbuki Allah tüm bu alametlerden münezzehtir. Bu sebeple Allah’ın ahirette görülebileceğini söylemek onun uluhiyetine zarar verir.
+
+Bu şekilde düşünen bir kelamcının aşağıdaki mezheplerden hangisine mensup olması beklenmez?
 
 A) İmamiyye
 B) Zeydiyye
@@ -408,15 +411,15 @@ E) Mutezile
 
 Doğru Cevap: D
 
-Açıklama: Eş'arilik görmeyi (rüyetullah) aklen ve naklen kabul eder.
-
 ---SONRAKİ SORU---
 
 DERS: Kelam
 KONU: Selefiyye / Tevil
 YIL: 2019
 Soru 23:
-Allah'ın sıfatlarını (el, yüz vb.) asla yorumlamadan kabul eden yaklaşım:
+İstanbul’dan Ankara’ya hızlı trenle seyahat etmekte olan Hasan, yanında oturan yolcunun kendisi gibi dinî içerikli bir kitap okuduğunu fark eder. İlk fırsatta tanıştığı ve adının Kamil olduğunu öğrendiği bu yolcu ile aralarında genel dinî konulardan itikadi ve kelami konulara evrilen koyu bir sohbet başlar. Sohbet sırasında Kamil, Al-i İmran Suresi’nin 7. ayetinde geçen “...kalplerinde bir eğrilik olanlar, fitne çıkarmak ve onun olmadık yorumlarını yapmak için müteşabih ayetlerinin ardına düşerler. Oysa onun gerçek manasını ancak Allah bilir.” şeklindeki ifadeye dikkat çeker ve bazı ayetlerde Allah hakkında kullanılan vech (yüz), istiva (oturma) ve ayn (göz) gibi sözcüklerin asla yorumlanmaması gerektiğini ve yorumlanmaya çalışılsa da bunun mümkün olmadığını belirtir.
+
+Kamil’in bu yaklaşımı, aşağıdaki mezheplerden hangisiyle ilişkilendirilebilir?
 
 A) Selefiyye
 B) Matüridiyye
@@ -426,25 +429,23 @@ E) Zeydiyye
 
 Doğru Cevap: A
 
-Açıklama: Selef tevili reddeder.
-
 ---SONRAKİ SORU---
 
 DERS: Kelam
 KONU: Gazali / Mantık
 YIL: 2019
 Soru 24:
-Müteahhirun dönemini başlatan belirleyici özellik hangisidir?
+Eşari kelamcıları başta olmak üzere birçok İslam âlimine göre Gazali, ehlisünnet kelamında bir dönüm noktasıdır. Bundan dolayı Gazali’den önceki döneme mütekaddimun, sonrasına ise müteahhirun kelamı adı verilir.
 
-A) Mezhep tartışmaları
-B) Misyonerlik
-C) Mantığın kelama girmesi
-D) Yazılı eserler
-E) Müstakil ilim
+Bu ayrımda aşağıdakilerden hangisinin belirleyici olduğu söylenebilir?
+
+A) Daha çok İslam mezhepleri arasındaki fikrî tartışmaların merkeze alınması
+B) İslam'ı açıklamaktan ziyade diğer din ve inançlarla mücadelenin öne çıkması
+C) Mantığın dâhil edilerek kelamın konu alanının genişlemesi
+D) Kelam ilminde sözlü rivayetlere göre yazılı eserlerin tercih edilmesi
+E) Kelamın müstakil bir ilim dalı olarak kabul edilmesi
 
 Doğru Cevap: C
-
-Açıklama: Gazali mantığı kelamın ön şartı yapmıştır.
 
 ---SONRAKİ SORU---
 
@@ -452,13 +453,15 @@ DERS: Kelam
 KONU: Sebr ve Taksim
 YIL: 2019
 Soru 25:
-İhtimalleri sıralayıp yanlışı eleyerek doğruya ulaşma yöntemi:
+Kelamcılar, hakkında iki veya daha fazla hükmün verilme ihtimali bulunan bir konuda bütün ihtimalleri sıralamak, ardından da bu ihtimalleri yanlış olanları ayıklayıp doğruya ulaşmak şeklinde bir akıl yürütme yöntemini zaman zaman kullanmışlardır. Örneğin âlem ya hâdis ya da kadimdir; kadim olabilmesi için varlığının kendisinden olması gerekir. Ancak tabiattaki değişim ve dönüşüm, onun varlığının kendisinden değil, bir başkasından kaynaklandığını göstermektedir ki bu onun kadim olamayacağının delilidir. Kadim olmadığı ispat edilince de âlemin zorunlu olarak hâdis olduğu anlaşılır.
+
+Bu parçada sözü edilen yöntem aşağıdakilerden hangisiyle isimlendirilmektedir?
 
 A) Sebr ve taksim
 B) İnikas-ı edille
-C) Menzile
-D) Teberra
-E) Kıyas
+C) el-Menzile beyne’l-menzileteyn
+D) Tevella ve teberra
+E) Kıyasu’l-gaib ale’ş-hahid
 
 Doğru Cevap: A
 
@@ -478,15 +481,15 @@ E) Meşru imama biat etmek tüm Müslümanların üzerine yükümlülüktür.
 
 Doğru Cevap: D
 
-Açıklama: Zeydiyye Hz. Ebu Bekir ve Ömer'in imametini meşru kabul ederek diğerlerinden ayrılır.
-
 ---SONRAKİ SORU---
 
 DERS: Kelam
 KONU: İcmali İman
 YIL: 2019
 Soru 27:
-Kelime-i tevhidden hareketle yapılan toplu imana ne ad verilir?
+Yeni Müslüman olan ve iman ettiğini dile getirmek isteyen bir kimsenin bütün iman esaslarını tek tek sayması beklenmez. Bundan dolayı İslam âlimleri, kişinin mümin sayılması için kelime-i tevhidde yer alan hususları dile getirip tasdik etmesini yeterli görmüşlerdir.
+
+Bu parçada imanın hangi türünden bahsedilmektedir?
 
 A) Tahkiki
 B) Taklidi
@@ -502,7 +505,9 @@ DERS: Mezhepler Tarihi
 KONU: Vehhabilik
 YIL: 2019
 Soru 28:
-Türbe ziyareti ve vesile/şefaati şirk sayan mezhep:
+Kitap fuarını ziyaret eden ilahiyat fakültesi öğrencisi Zeynep, eline aldığı bir eserin arka kapak yazısında şu bilgilerin yer aldığını görür: “Tevhid inancı, sadece Allah’ın bir ve tek oluşunu kabul etmek ve bunu dil ile söylemek ile gerçekleşmiş olmaz; Rab oluşunda, ilah oluşunda, zat ve sıfatlarında Allah’ı birlemek ve buna uygun davranışlar sergilemek gerekir. Hayatının her safhasında buna özen gösteren bir kimse, gerçek muvahhid olma vasfını kazanır. Allah’a yakınlaşmak için başka şeyleri vesile kılan bir kimsenin ise müşrikten hiçbir farkı yoktur.” Okuduklarını, İslam mezhepleri tarihi dersinde öğrendikleri ile değerlendiren Zeynep, bu bilgilerin bir mezhebin düşüncelerini yansıttığını fark eder.
+
+Bu parçada bahsedilen mezhep aşağıdakilerden hangisidir?
 
 A) Eşarilik
 B) Matüridilik
@@ -518,7 +523,9 @@ DERS: Mezhepler Tarihi
 KONU: Nusayrilik
 YIL: 2019
 Soru 29:
-Hz. Ali'ye ilahlık nispet eden mezhep:
+Tanrı’nın lahuti ve nasuti şeklinde iki yönü bulunmaktadır. Lahuti açıdan, aşkın ve içkindir; kullarının idrakinin de ötesindedir. Kullarının kendisini bilip tanıyabilmesi için bazı dönemlerde nasuti bir kalıba girmiştir. Âdem, Nuh, Yakub, Musa, Süleyman ve İsa dönemlerinde sırasıyla Habil, Şit, Yusuf, Yuşa, Asef ve Petrus şeklinde tecelli etmiştir. O, son olarak Hz. Muhammed döneminde Ali’ye tecelli etmiştir. Bu nedenle Ali zahirde imam, bâtında ilahtır.
+
+Tanrı anlayışı hakkındaki bu görüşler aşağıdaki mezheplerden hangisine aittir?
 
 A) Nusayrilik
 B) Kadiyanilik
@@ -530,11 +537,9 @@ Doğru Cevap: A
 
 ---SONRAKİ SORU---
 
-DERS: Mezhepler Tarihi
-KONU: Beda
-YIL: 2019
-Soru 30:
-Allah'ın takdirinin değişmesi iddiası (Şia'da):
+Şii fırkalarına göre Allah’ın belli bir şekilde gerçekleşeceğini haber verdiği bir olay, daha sonradan başka şekilde vuku bulabilir. Bu düşüncenin ortaya çıkışıyla ilgili rivayet şu şekildedir: Muhtar es-Sekafi bir savaş öncesinde askerlerine, Allah’ın kendilerini zafere ulaştıracağını bildirir ancak mağlup olur. Bunun üzerine Allah'ın kendisine zafer takdir ettiğini ancak sonradan ilminde değişiklik olduğunu söyler. Bu görüşünü temellendirmek için de Kur'an'daki bazı ayetleri kullanır.
+
+Bu parçada bahsedilen düşünce, aşağıdakilerden hangisiyle isimlendirilir?
 
 A) Recat
 B) Beda
@@ -550,7 +555,9 @@ DERS: Mezhepler Tarihi
 KONU: Mutezile / Kader
 YIL: 2019
 Soru 31:
-İnsanın kaderinin kendi elinde olduğunu savunan mezhep:
+Emeviler, kendi iktidarlarını sağlam temellere oturtmak ve toplumdaki muhalif hareketlerin direncini kırmak için her şeyi Allah’ın iradesiyle ilişkilendirmek istiyorlardı. İlahi irade sonucu iktidara geldiklerini, toplumdaki buhranların ve yönetimdeki olumsuzlukların kendileriyle bir ilgisinin olmadığını ve her şeyin Allah’ın takdiriyle olduğunu ileri sürüyorlardı. Emevi iktidarının bu olumsuz yaklaşımına ve insan iradesini yok saymasına karşı çıkan bazı âlimler, insanın kaderinin kendi elinde olduğunu, insanın iyilik ve kötülüğü tamamen kendi iradesi ve gücüyle gerçekleştirdiğini ileri sürmüşlerdir. Bu âlimlerin görüşleri zamanla sistemleşerek İslam dünyasında aklı merkeze alan bir mezhebin ortaya çıkmasına vesile olmuştur.
+
+Bu parçada bahsedilen mezhep aşağıdakilerden hangisidir?
 
 A) Haricilik
 B) Mürcie
@@ -566,13 +573,15 @@ DERS: Siyer
 KONU: Müşrik Teklifleri
 YIL: 2019
 Soru 32:
-Mekkeli müşriklerin Hz. Peygamber'e yaptığı tekliflerden biri değildir:
+Mekkeli müşriklerin Hz. Muhammed’i tebliğ faaliyetinden vazgeçirmek ve ona inananları İslam’dan döndürmek için giriştikleri bütün mücadeleler başarısız olmuş ve inananların sayısı gün geçtikçe artmaya devam etmiştir. Bunun üzerine onlar, Hz. Muhammed’i bu faaliyetinden güzellikle vazgeçirmeyi planlamışlar ve bu amaçla ona bazı tekliflerde bulunmuşlardır.
 
-A) Yöneticilik
-B) Evlilik
-C) Para
-D) Ortak Tanrı
-E) Mekke dışına çıkması
+Aşağıdakilerden hangisi bunlardan biri değildir?
+
+A) Yöneticilik verme
+B) İstediği kadınla evlendirme
+C) Maddi imkânlar sağlama
+D) Birbirlerinin tanrılarını kabul etme
+E) Tebliğini Mekke dışında yapmasını isteme
 
 Doğru Cevap: E
 
@@ -582,7 +591,9 @@ DERS: Siyer
 KONU: Mute Savaşı
 YIL: 2019
 Soru 33:
-Elçinin şehit edilmesi üzerine Bizans ile yapılan savaş:
+Hz. Muhammed’in, Hicret’in sekizinci yılında İslam’a davet için Busra’ya gönderdiği elçi yolda şehit edildi. Bunun üzerine Hz. Muhammed üç bin kişilik bir ordu hazırladı ve bölgeye gönderdi. Orduyu komuta etmek üzere de sırasıyla üç kişiyi görevlendirdi ve bunların ölümü hâlinde istedikleri birini komutan seçebileceklerini söyledi. Bizans’ın gönderdiği yüz bin kişilik orduyla üç bin kişilik İslam ordusu arasında gerçekleşen savaşta Hz. Muhammed’in görevlendirdiği komutanların hepsi şehit oldu ve daha sonra sancağı alan Halid b. Velid’in taktik başarısı sayesinde büyük bir kayıp yaşanmadan savaş son buldu.
+
+Bu parçada bahsedilen savaş aşağıdakilerden hangisidir?
 
 A) Huneyn
 B) Mute
@@ -598,7 +609,9 @@ DERS: Siyer
 KONU: Nesi
 YIL: 2019
 Soru 34:
-Haram ayların yerini değiştirme uygulaması:
+“Haram ayları ertelemek, ancak inkârda daha da ileri gitmektir ki bununla inkâr edenler saptırılır. Allah’ın haram kıldığı ayların sayısına uygun getirip böylece Allah’ın haram kıldığını helal kılmak için haram ayı bir yıl helal, bir yıl haram sayıyorlar. Onların bu çirkin işleri, kendilerine süslenip güzel gösterildi. Allah, inkârcı toplumu doğru yola iletmez.” (Tevbe, 9:37)
+
+Bu ayette kınanan Cahiliye uygulaması aşağıdakilerden hangisidir?
 
 A) Sikaye
 B) Liva
@@ -614,7 +627,12 @@ DERS: Siyer
 KONU: Fetih Sonrası Olaylar
 YIL: 2019
 Soru 35:
-Mekke'nin fethinden (H.8) sonra gerçekleşenler: III. Veda Haccı, IV. Hz. Ebu Bekir'in imameti
+Hz. Muhammed;
+I. Mekkeli müşriklerle Hudeybiye Antlaşması’nı imzalama,
+II. çevredeki devletlerin yöneticilerine İslam’a davet mektupları gönderme,
+III. hac için kalabalık bir Müslüman topluluğuyla Medine’den yola çıkma,
+IV. cemaate imamlık yaparak namaz kıldırmak üzere, yerine Hz. Ebu Bekir’i görevlendirme
+fiillerinden hangilerini Mekke’nin fethinden sonra gerçekleştirmiştir?
 
 A) Yalnız I
 B) Yalnız IV
@@ -630,17 +648,17 @@ DERS: İslam Tarihi
 KONU: Hz. Osman Eleştirileri
 YIL: 2019
 Soru 36:
-Hangisi Hz. Osman'a yapılan eleştirilerden biri değildir?
+Hz. Osman dönemi sadece parlak zaferlerin gerçekleştirildiği bir süreç değil, aynı zamanda İslâm toplumunu derinden sarsan hadiselerin yaşandığı bir dönem olmuştur. Öyle ki Hz. Osman’ın yaptığı birçok faaliyet hem kendi döneminde hem de sonrasında eleştirilmiştir.
 
-A) Akraba atamaları
-B) İltimas
-C) Mührü düşürmesi
-D) Sürgün ve cezalar
-E) İbadetin işleri aksatması
+Aşağıdakilerden hangisi bu parçada bahsedilen eleştirilerden biri değildir?
+
+A) Önemli makamların çoğuna Ümeyyeoğulları'nı ataması
+B) Devlet imkânlarını yakınlarına tahsis etmesi
+C) Hz. Muhammed’den intikal eden mührü Bi’rieris’e düşürmesi
+D) Kendisini eleştiren bazı sahabeleri çeşitli şekillerde cezalandırması
+E) İbadetle fazla meşgul olarak devlet işlerini aksatması
 
 Doğru Cevap: E
-
-Açıklama: İbadet eleştiri konusu olmamıştır.
 
 ---SONRAKİ SORU---
 
@@ -648,7 +666,12 @@ DERS: İslam Tarihi
 KONU: Abdülmelik b. Mervan
 YIL: 2019
 Soru 37:
-Emevi parasını bastıran ikinci kurucu:
+Emevi Devleti'nde;
+- kaybolan otoriteyi tekrar tesis etmesi,
+- ilk İslam parasını tedavüle sokması,
+- yaşanan isyanları bastırması,
+- devlet teşkilatında önemli düzenlemeler gerçekleştirmesi
+gibi sebeplerle tarihçiler tarafından, Emevi Devleti'nin ikinci kurucusu olarak kabul edilen yönetici aşağıdakilerden hangisidir?
 
 A) Abdülmelik b. Mervan
 B) Mervan b. Hakem
@@ -664,7 +687,11 @@ DERS: İslam Tarihi
 KONU: Ribat
 YIL: 2019
 Soru 38:
-Sınır boyu garnizonuyken tekkeleşen yapı:
+İslam kurumları içerisinde;
+- sınır güvenliğini sağlama maksadıyla inşa edilen,
+- sınırların genişlemesiyle birlikte kervansaray olarak hizmet veren,
+- İslam’ın tebliğ edilmesi ve ilmî faaliyetler için de kullanılan
+yapı aşağıdakilerden hangisidir?
 
 A) Ribat
 B) Zaviye
@@ -680,7 +707,12 @@ DERS: İslam Coğrafyası
 KONU: Taif
 YIL: 2019
 Soru 39:
-Cahiliyede sayfiye yeri olan üzümcü şehir:
+Hicaz bölgesindeki şehirler arasında;
+- Mekke’nin doğusunda Sakîf Kabilesi’nin yaşadığı,
+- Mekkelilerin sayfiye yeri olarak kullandığı,
+- üretilen ziraat mahsulü ve deri gibi ürünlerinin Kureyş tacirleri tarafından, Arap Yarımadası dışına ihraç edildiği,
+- halkının başta karşı çıkmasına rağmen daha sonra heyet göndererek İslam'ı kabul ettiği
+şehir aşağıdakilerden hangisidir?
 
 A) Taif
 B) Hayber
@@ -696,13 +728,13 @@ DERS: İslam Sanatları
 KONU: Minyatür
 YIL: 2019
 Soru 40:
-Minyatürle ilgili hangisi yanlıştır? (C şıkkı - Ebru tarifi):
+Minyatür sanatı ile ilgili olarak aşağıdaki ifadelerden hangisi yanlıştır?
 
-A) Bilimsel amaç
-B) Derinliksiz
-C) Kitreli su
-D) Anatomi kullanımı
-E) Sosyal tarih bilgisi
+A) Türk İslam minyatürleri, genellikle şematik tarzda ve bilimsel amaçlarla yapılmıştır.
+B) Derinlik duygusu verilmeden gerçeklikten uzak olarak yapılan küçük boyutlu resimlerdir.
+C) Kitreli suya öd ilave edilmiş boyalar kullanılarak hazırlanıir.
+D) Coğrafya, tıp, anatomi ve astronomi gibi alanlarda yazılan eserlerde kullanılmıştır.
+E) Dönemin yaşayış biçimini ortaya konan önemli tarihî bilgiler sunmaktadır.
 
 Doğru Cevap: C
 
@@ -735,13 +767,16 @@ DERS: İslam Sanatları
 KONU: Kat'ı - Çini
 YIL: 2019
 Soru 42:
-Kâğıt oyma (Kat'ı) ve Toprak pişirme (Çini) sıralaması:
+El sanatları kursunda öğretmen, öğrencilerine birer ödev vermiştir. Ayşe, bir kâğıt üzerindeki şekli çıkartıp deri, cam veya karton üzerine yapıştıracaktır. Ahmet ise, çeşitli biçimlerdeki levhaları renklendirip sırladıktan sonra fırınlayacaktır.
 
-A) Ebru - Çini
-B) Kat’ı - Tezhip
-C) Çini - Tezhip
-D) Kat’ı - Çini
-E) Çini - Ebru
+Buna göre, öğrencilerin hazırlayacakları ödevlerin ilgili olduğu İslam sanatları aşağıdakilerin hangisinde sırasıyla verilmiştir?
+      Ayşe        Ahmet
+
+A) Ebru         çini
+B) Kat’ı        tezhip
+C) Çini         tezhip
+D) Kat’ı        çini
+E) Çini         ebru
 
 Doğru Cevap: D
 
@@ -751,7 +786,9 @@ DERS: İslam Felsefesi
 KONU: Amiri
 YIL: 2019
 Soru 43:
-Bilgi ile ibadetin (nazari-ameli) ayrılmamasını savunan filozof:
+İslam düşünürlerinden Ebu’l-Hasan el-Amiri; insanı, aklı sayesinde varlığa düzen veren bir canlı olarak konumlandırır. Ona göre insan bu vasfı sayesinde aynı zamanda ulvi âlemin süsü olmaya namzettir. Bunun için insanın aklını hikmetle donatması ve dinî vecibeleri eksiksiz bir şekilde yerine getirmesi gerekir. Öyle ki Amiri sadece ibadete düşkün olan bir filozofun gerçek anlamda fazilet sahibi olabileceğini belirtmektedir. Bu kapsamda o, Bâtınileri de “Belli bir bilgi düzeyine yükselen kimsenin artık ibadete ihtiyacı yoktur.” şeklindeki görüşlerinden dolayı eleştirmektedir.
+
+Bu parçaya göre Amiri’nin aşağıdakilerden hangisine vurgu yaptığı söylenebilir?
 
 A) Beden-ruh
 B) Tabii ahlak
@@ -767,7 +804,9 @@ DERS: İslam Felsefesi
 KONU: Ebu Bekir er-Razi
 YIL: 2019
 Soru 44:
-Tabiiyyun temsilcisi ampirist filozof:
+İslam düşünce ekollerinden Tabiiyyun, Tanrı’nın ve ruhun varlığını kabul etmekle birlikte, sosyal, siyasal ve psikolojik bütün hadiselerin ve durumların doğal yasalarla açıklanabileceğini savunmaktadır. İslam düşüncesinde ampirist düşüncenin temsilciliğini de yapan bu ekol, tabiat felsefesine dayalı bir metafizik kurmaya çalışmıştır. Bu tür iddiaları kanıtlamak adına deney, müşahede ve tümevarım metodunu kullanmıştır.
+
+Aşağıdakilerden hangisi bu parçada bahsedilen ekolün kurucusu ve en önemli temsilcisi olarak kabul edilmektedir?
 
 A) İbn Rüşd
 B) Ebu Bekir er-Razi
@@ -783,7 +822,12 @@ DERS: İslam Felsefesi
 KONU: İbn Miskeveyh
 YIL: 2019
 Soru 45:
-Tehzibü’l-Ahlak yazarı:
+İslam ahlak felsefesinde;
+- Büveyhiler devrinin ünlü düşünürlerinden olan,
+- Aristo’nun etkisinde kalarak ahlakın eğitimle değiştirilebileceğini savunan,
+- uzlete dayalı çileci bir ahlak anlayışını reddederek gerçek hazzın kaynağının Allah olduğunu savunan,
+- ahlaka dair sistematik bir eser olan Tehzibü’l-Ahlak’ı yazan
+düşünür aşağıdakilerden hangisidir?
 
 A) İbn Sina
 B) Nasiruddin Tusi
@@ -799,13 +843,15 @@ DERS: Din Felsefesi
 KONU: Wittgenstein
 YIL: 2019
 Soru 46:
-Dil oyunlarında hangisi beklenmez?
+Wittgenstein’a göre dil; çeşitli caddeleri, sokakları, eski ve yeni binaları ihtiva eden bir şehre benzer. Böylesi bir şehir tek bir kalıba sığdırılamaz; aksine nereden bakıldığına göre şehrin hikâyesi değişkenlik gösterir. Dil de böyledir. Dil eğer bir oyunsa -ki öyledir- bu durumda bir değil, birçok dil oyunu söz konusudur. Genel kurallarına dikkat etmek koşuluyla, dil çeşitli şekillerde kullanılabilir. Bu durumda anlamın elde edilebilmesi için, dilin doğrudan kendisinin değil, kullanımının esas alınması gerekir.
 
-A) İndirgemecilikten uzaklık
-B) Genel yapı
-C) Literal yaklaşım
-D) Fonksiyonel anlam
-E) Bağlam
+Buna göre din dili konusunda Wittgenstein’ın aşağıdakilerden hangisini savunması beklenmez?
+
+A) İndirgemeci yaklaşımlardan uzak durulmalıdır.
+B) Genel dil yapısı göz önünde bulundurulmalıdır.
+C) Literal bir yaklaşım esas alınmalıdır.
+D) Her bir kelimeye bulunduğu yere göre anlam verilmelidir.
+E) Bağlamsal çerçeve dikkate alınmalıdır.
 
 Doğru Cevap: C
 
@@ -815,7 +861,11 @@ DERS: Din Felsefesi
 KONU: Deizm
 YIL: 2019
 Soru 47:
-Karışmayan Tanrı anlayışı:
+Din felsefesi dersinde bir öğrenci hocasına şu soruyu yöneltir: Kutsal kitaplara ve peygamberlere inanmayıp Tanrı’nın varlığına inanmak mümkün müdür?
+
+Hoca şöyle cevap verir: Yarattıktan sonra âlemin işleyişine müdahale etmeyen bir tanrı anlayışına sahipseniz neden olmasın. Tarihte Batı’da yaşamış birçok düşünür, özellikle Kilise’nin bilime müdahalesine tepki olarak günlük hayata karışmayan, insanı ve evreni yaratıp yasalarını koyduktan sonra kendi hâline bırakan bir tanrı anlayışını benimsemiştir.
+
+Bu parçada bahsedilen tanrı anlayışı aşağıdakilerden hangisidir?
 
 A) Panteizm
 B) Ateizm
@@ -831,7 +881,9 @@ DERS: Din Felsefesi
 KONU: Rasyonellik
 YIL: 2019
 Soru 48:
-Akıl yoluyla temellendirme özelliği:
+Tarih felsefesi, bilim felsefesi, hukuk felsefesi gibi terkiplerde ilk kelime alanı verirken ikinci kelime bakış açısını vermektedir. Tarihe, bilime ve hukuka felsefi bir bakış açısıyla yönelmek bu terkipleri meydana getirir. Aynı şekilde din felsefesi terkibi de dine felsefi bir bakış açısıyla yönelmektir. Diğer terkiplerde felsefi bakış açısı nasıl uygulanıyorsa din felsefesinde de aynı felsefi bakış açısı kullanılmaktadır. Din felsefesinin bakış açısına dair en temel özelliklerinden biri “aklın imkânlarını kullanmak suretiyle, dinin ana iddialarının temellendirilebilmesi için mümkün olan en ileri noktaya kadar gitmeye çalışmaktır.”
+
+Bu parçada din felsefesinin hangi özelliğinden bahsedilmektedir?
 
 A) Objektiflik
 B) Tutarlılık
@@ -847,7 +899,9 @@ DERS: Din Sosyolojisi
 KONU: Parsons / İşlevselcilik
 YIL: 2019
 Soru 49:
-Dini dengede tutan fonksiyonel unsur görme:
+Talcott Parsons, toplumsal sistemin birbiriyle ilişkili unsurlardan meydana geldiğine, bu unsurların karşılıklı uyum içinde oldukça ve birbirleri lehine olumlu fonksiyonlar yerine getirdikçe toplumsal sistemin nispeten dengede ve nihayet istikrarlı olacağına ilişkin bir görüş benimser. O, dini tüm toplumlarda meydana gelen çeşitli sosyal problemler hakkında çözüm önerileri sunan bir kurum olarak görür.
+
+Parsons’ın bu yaklaşımı aşağıdaki din teorilerinden hangisiyle ifade edilir?
 
 A) Yapısal-işlevselci
 B) Fenomenolojik
@@ -863,7 +917,9 @@ DERS: Din Sosyolojisi
 KONU: Sosyal Bütünleşme
 YIL: 2019
 Soru 50:
-Hucurat 13 vurgusu:
+“Ey insanlar! Biz sizi bir erkek ve bir kadından yarattık ve sizi kavimler ve kabileler hâline getirdik ki birbirinizi tanıyabilesiniz. Şüphesiz, Allah katında en üstün olanınız, O’na karşı derin sorumluluk (takva) bilincine sahip olanınızdır. Allah her şeyi bilir, her şeyden haberdardır.” (Hucurat, 49:13)
+
+Aşağıdakilerden hangisi bu ayette vurgulanan hususlardan biridir?
 
 A) Sosyal gelişme
 B) Sosyal değişme
@@ -879,7 +935,12 @@ DERS: Din Sosyolojisi
 KONU: Toplum Tipleri / Geleneksel
 YIL: 2019
 Soru 51:
-Kutsalın hâkim olduğu toplumsal yapı:
+Hayri Hoca, din sosyolojisi dersinde dinin toplumdaki etkinliğine göre toplumları sınıflandırmış ve projeksiyon cihazıyla şu özellikleri perdeye yansıtmıştır:
+- Kutsal ile kutsal dışı, semavi bir kaynağa dayanır ve birbiriyle iç içe geçmiş bir yapıda bulunur.
+- İktidar, aile, akrabalık gibi yapılar dinî bir nitelik taşır.
+- Toplum üyelerinden hem toplum hem de din adına empoze edilen normlara ve davranış modellerine uymaları beklenir.
+
+Buna göre Hayri Hoca, aşağıdaki toplum tiplerinin hangisinden söz etmektedir?
 
 A) Modern
 B) Post-modern
@@ -895,7 +956,12 @@ DERS: Din Psikolojisi
 KONU: William James
 YIL: 2019
 Soru 52:
-Dinî Tecrübenin Çeşitliliği yazarı:
+Din psikolojisi alanında;
+- işlevselcilik ilkesine yaptığı katkılardan dolayı ABD'de psikolojinin kurucularından kabul edilen,
+- alanında bir klasik olma özelliği taşıyan Dinî Tecrübenin Çeşitliliği adlı kitabı yazan,
+- “Tanrı var mıdır?” sorusundan çok, “Tanrı hayatımıza ne kazandırır?” sorusuna odaklanan,
+- din psikolojisine dair görüşlerinin merkezine dinî tecrübeyi yerleştiren
+düşünür aşağıdakilerden hangisidir?
 
 A) Erich Fromm
 B) William James
@@ -911,7 +977,11 @@ DERS: Din Psikolojisi
 KONU: Gazali
 YIL: 2019
 Soru 53:
-Münkız mine'd-dalal ve nefsi 4 unsura ayıran:
+İslam düşünürleri arasında;
+- el-Münkız mine'd-Dalal adlı eserinde, gerçeğe ulaşmada tasavvufun ve kendi şahsi iç tecrübe ve şuur hâllerinin öneminden bahseden,
+- insanın varlık yapısının iyilik arzusu (rabbaniyyet), fizyolojik güdüler (behimiyyet), saldırganlık (sebuiyyet) ve kötülük (şeytaniyet) olmak üzere dört unsurdan oluştuğunu savunan,
+- niyet ve hedefleri açısından insanda din ve hevâ olmak üzere iki ana güdü olduğunu ileri süren
+âlim aşağıdakilerden hangisidir?
 
 A) Mevlana
 B) İbn Arabi
@@ -927,13 +997,13 @@ DERS: Din Sosyolojisi
 KONU: Dindarlık Boyutları
 YIL: 2019
 Soru 54:
-Etki boyutu örneği:
+Glock ve Stark’ın beş boyutlu dindarlık modeline göre aşağıdakilerden hangisi dindarlığın etki boyutuna örnek verilebilir?
 
-A) İman
-B) Oruç
-C) Bilgi
-D) Dürüst davranmak
-E) Vecd
+A) Ahirete iman etmek
+B) Ramazan ayında oruç tutmak
+C) İslam’ın ticari emir ve yasaklarını bilmek
+D) İnancı gereği insanlara dürüst davranmak
+E) Zikir çekerken vecd yaşamak
 
 Doğru Cevap: D
 
@@ -943,7 +1013,9 @@ DERS: Din Eğitimi
 KONU: Yaşam Merkezli
 YIL: 2019
 Soru 55:
-Hz. Muhammed'in hayatını güncel sorunlarla işleme:
+Din eğitiminin içeriği hazırlanırken farklı yaklaşımlar benimsenebilir. Örneğin bir öğretmen konularını seçerken ilk olarak Hz. Muhammed’in çocukluğunu, gençliğini, yetişkinliğini, kendi toplumu için gerçekleştirdiklerini, bunların günümüz sorunlarına yansımalarını önceler. Ardından öğrencilerin gözlemlediği ve iç içe olduğu sorunlardan hareketle, Kur’an’daki öğretilerle ilişki kuracak bir kurgu geliştirir. Arkadaşlık, evlilik, iş, boş zaman ve ibadet gibi konuları pedagojik ve teolojik bir bakışla anlatmaya çalışır.
+
+Bu parçada öne çıkan din eğitimi yaklaşımı aşağıdakilerden hangisidir?
 
 A) Fenomenolojik
 B) Yaşam merkezli
@@ -959,7 +1031,9 @@ DERS: Din Eğitimi
 KONU: Diyanet Görevleri
 YIL: 2019
 Soru 56:
-Hangisi Diyanet'in görevi değildir?
+Diyanet İşleri Başkanlığının görev tanımı Anayasa’nın 136. maddesinde, “Genel idare içinde yer alan Diyanet İşleri Başkanlığı, laiklik ilkesi doğrultusunda, bütün siyasi görüş and düşüncelerin dışında kalarak ve milletçe dayanışma and bütünleşmeyi amaç edinerek özel kanununda gösterilen görevleri yerine getirir.” şeklinde belirlenmiştir. Ayrıca bu kurum, özel kanununda belirtildiği gibi, toplumu din konusunda aydınlatmak, İslam dininin itikat, ibadet and ahlak ile ilgili işlerini yürütmek and ibadet yerlerini yönetmekle yükümlü kılınmıştır.
+
+Buna göre aşağıdakilerden hangisi Diyanet İşleri Başkanlığının görev alanı içerisinde yer almaz?
 
 A) Tebliğ
 B) Moral değer
@@ -975,7 +1049,7 @@ DERS: Din Eğitimi
 KONU: Eğitim Mevzuatı
 YIL: 2019
 Soru 57:
-2012 Kanunuyla (4+4+4) yapılmayan:
+Aşağıdakilerden hangisi 2012 yılında çıkarılan 6287 sayılı “İlköğretim ve Eğitim Kanunu ile Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun”la genel eğitim ve din eğitimi alanında yapılan değişikliklerden biri değildir?
 
 A) 4 yıllık kademeler
 B) İHO açılması
@@ -985,15 +1059,17 @@ E) Fırsat eşitliği
 
 Doğru Cevap: D
 
-Açıklama: Saat artışı daha sonradır.
-
 ---SONRAKİ SORU---
 
 DERS: Dinler Tarihi
 KONU: Sayentoloji
 YIL: 2019
 Soru 58:
-L. Ron Hubbard ve psikanalitik kurtuluş:
+Yeni Çağ dinî hareketleri arasında;
+- bireylere tenasüh çemberinden kurtulup ebedi saadete kavuşmaları için psikanaliz yöntemleri öneren,
+- Budistler tarafından ahir zamanda gelmesi beklenen kurtarıcının, Lafeyetta Ron Hubbard şahsında ortaya çıktığını kabul eden,
+- özellikle Hristiyanlık ve Budimz’e özgü öğretileri barındırdığından senkretik bir nitelik taşıyan
+akım aşağıdakilerden hangisidir?
 
 A) Sayentoloji
 B) Moonculuk
@@ -1009,7 +1085,9 @@ DERS: Dinler Tarihi
 KONU: Yahudilik / İsrail
 YIL: 2019
 Soru 59:
-Tanrı ile güreşen peygamber:
+Yahudi kutsal metinlerinde bir peygamberin karşısına kendisini “Tanrı adamı” olarak isimlendiren birinin çıktığından ve onunla güreştiğinden bahsedilir. Kıssaya göre bu ikisi sabaha kadar birbirlerini yenemezler ve o kişi sabah olunca, söz konusu peygamberi kutsayarak ona “Tanrı’yla güreşen” manasına gelen “İsrail” lakabını verir.
+
+Bu parçada sözü edilen peygamber aşağıdakilerden hangisidir?
 
 A) Hz. Davud
 B) Hz. Süleyman
@@ -1065,7 +1143,7 @@ C) Hedef belirsizliği
 D) Süre azlığı
 E) Düzey üstü konu
 
-Doğru Cevap: E
+Doğru Cevap: B
 
 ---SONRAKİ SORU---
 
@@ -1073,7 +1151,13 @@ DERS: Alan Eğitimi
 KONU: Planlama / Rehberlik
 YIL: 2019
 Soru 63:
-İdris Öğretmen'in ihmal ettikleri (Key: E):
+Din kültürü ve ahlak bilgisi dersinde bir sonraki hafta “Zararlı Alışkanlıklar” konusunu çoklu zekâ uygulamaları doğrultusunda işlemeyi düşünen İdris Öğretmen, öğrencilerden zararlı alışkanlıklar konusunda video, pano, şiir ve slayt gibi özgün materyaller hazırlamalarını ister. Ancak öğrencileri bu materyalleri hangi sıra ve adımlarla kullanacakları ve nasıl bir öğretim gerçekleştirecekleri konusunda serbest bırakır. Bu doğrultuda öğrenciler, sarhoş bir kişinin düştüğü zor durumu içeren bir video, kötü alışkanlıklarla ilgili karikatürlerin yer aldığı bir pano çalışması ve sigaranın zararlarıyla ilgili bir alan araştırması gibi materyaller hazırlayıp gelirler. Ders esnasında öğretmen, onların kendilerini rahat hissetmeleri için hiçbir sunuma müdahalede bulunmaz. Ancak dersin sonunda, zararlı alışkanlıkların neler olduğu ve bunlardan niçin uzak durulması gerektiği yönündeki değerlendirme sorularına öğrencilerin yeterli şekilde cevap veremediklerini fark eder ve bunun nedenlerini sorgular.
+
+Buna göre İdris Öğretmen’in bu dersin uygulamasında;
+I. hedefe uygun etkinliklerin belirlenmesi,
+II. hedefe ulaşılabilmesi için önceden planlama yapılması,
+III. etkinliklerin uygulanması sürecinde yönlendiricilik rolü
+ilkelerinden hangilerini ihmal ettiği söylenebilir?
 
 A) Yalnız I
 B) Yalnız II
@@ -1089,13 +1173,15 @@ DERS: Alan Eğitimi
 KONU: Teknoloji Kullanımı
 YIL: 2019
 Soru 64:
-Materyalın yanlış kullanımı örneği:
+Bir din kültürü ve ahlak bilgisi öğretmeni eğitim bilimlerinde benimsenen yeni gelişmelere açık değilse eğitimdeki güncel araç gereç, teknoloji ve materyalleri geleneksel öğretim yapma ve salt bilgi aktarma aracı olarak kullanabilir. Bu durum, eğitimde teknoloji ve materyal kullanımını gerçek amacından uzaklaştırır.
 
-A) Amaç odaklılık
-B) Tutarlılık
-C) Ortam uyumu
-D) Fazla bilgi yükleme
-E) Kazanım uyumu
+Öğretmenin aşağıdakilerden hangisini yapması bu parçada bahsedilen duruma örnek verilebilir?
+
+A) Kullanılan araç gereçlerle öğretim amaçlarına ulaşmayı hedeflemesi
+B) Derste kullanılacak yöntem ile araç gereçler arasında tutarlı bir seçim yapması
+C) Araç seçiminde öğrenme ortamının özelliklerini dikkate alması
+D) Öğretim teknolojisi ve araç gereçlerle ayrıntılı ve fazla bilgi vermeye çalışması
+E) Kazanımları gerçekleştirmede öğretimde kullanılan araç gereçlerin özelliklerini dikkate alması
 
 Doğru Cevap: D
 
@@ -1105,13 +1191,15 @@ DERS: Alan Eğitimi
 KONU: Süreç Değerlendirme
 YIL: 2019
 Soru 65:
-Artı/eksi ve ürün dosyası yöntemi:
+Seçmeli Kur’an-ı Kerim dersine giren Fatih Öğretmen, öğretim yılının başında öğrencilerine dersin işlenişiyle ilgili bilgi vermiştir. Buna göre, bütün öğrenciler her hafta bir sayfayı yüzünden ve tecvit kurallarına uygun olarak okuyacak; doğru okuyanlar artı (+), hatalı okuyanlar eksi (-) alacaktır. Sure ezberlerinin ise haftalık olarak takibi yapılacaktır. Ayrıca dönem içinde hazırlanacak ürün dosyaları, ders içi performans notu olarak değerlendirilecektir.
 
-A) Tanıma
-B) Süreç Değerlendirme
-C) Hazırbulunuşluk
-D) Güven
-E) Davranış silme
+Bu parçaya göre Fatih Öğretmen’in temel hedefinin aşağıdakilerden hangisi olduğu söylenebilir?
+
+A) Tanımaya yönelik değerlendirme yapmak
+B) Öğretimde süreç değerlendirmeyi merkeze almak
+C) Öğrencilerin hazırbulunuşluk seviyelerini yükseltmek
+D) Öğrencilerin güven duygularını geliştirmek
+E) Olumsuz davranışları ortadan kaldırmak
 
 Doğru Cevap: B
 
@@ -1121,7 +1209,9 @@ DERS: Alan Eğitimi
 KONU: Doğaçlama
 YIL: 2019
 Soru 66:
-Senaryo verilip tepki istenmesi:
+Tuğba Öğretmen, iftira atmanın birey ve toplum üzerindeki etkilerini işlerken birkaç öğrenciyi tahtaya davet eder ve onlara; “Otobüstesiniz; yanınızdaki kişi aniden bağırarak sizi, parasını çalmakla suçluyor. Ne yapardınız?” şeklinde bir soru sorar ve öğrencilerden bu durum karşısındaki tepkilerini canlandırmalarını ister.
+
+Tuğba Öğretmen'in bu derste uygulamayı amaçladığı drama tekniği aşağıdakilerden hangisidir?
 
 A) Kenardan
 B) Öykü
@@ -1137,13 +1227,15 @@ DERS: Alan Eğitimi
 KONU: Kazanımlar
 YIL: 2019
 Soru 67:
-Rüya, ilham konusunun kazanımı:
+Din kültürü ve ahlak bilgisi öğretmeni Birsen Hanım, derse başlarken İslam kelamının epistemolojik yaklaşımları bağlamında rüya, keşif ve ilham kavramları konusunda öğrencilerin hazırbulunuşluklarını yoklamış, aldığı dönütlerden sonra İslam âlimlerinin konuya dair görüşlerini ortaya koymuştur. Dersin sonunda ise öğrencilerden ayet ve hadisler doğrultusunda bu kavramları izah etmelerini istemiştir.
 
-A) Bilginin kaynaklarını açıklar.
-B) İmanın mahiyeti
-C) Doğa ve din
-D) İman-İslam ilişkisi
-E) Allah inancı
+Buna göre, Birsen Hanım’ın aşağıdaki kazanımlardan hangisini gerçekleştirmeyi hedeflediği söylenebilir?
+
+A) İslam’da bilginin kaynaklarını açıklar.
+B) İslam inancında imanın mahiyetini araştırır.
+C) İnsanın doğası ile din arasında ilişki kurar.
+D) İman ve İslam kavramları arasındaki ilişkiyi fark eder.
+E) Allah inancı ve insan hayatındaki yeri ve önemini yorumlar.
 
 Doğru Cevap: A
 
@@ -1153,7 +1245,12 @@ DERS: Alan Eğitimi
 KONU: Varsayımsal Düşünme
 YIL: 2019
 Soru 68:
-"Olmasaydı ne olurdu?" soruları:
+8. sınıf “Kader İnancı” ünitesini işleyen Uğur Öğretmen, aşağıdaki soruları sorarak derse başlar:
+- Bütün sular tuzlu olsaydı yeryüzünde yaşam nasıl olurdu?
+- Hiç gündüz olmasaydı dünya nasıl bir yer olurdu?
+- Yer çekimi kuvveti olmasaydı hayatımız nasıl olurdu?
+
+Buna göre Uğur Öğretmen'in, öğrencilerinde aşağıdaki düşünme biçimlerinden hangisini geliştirmeyi amaçladığı söylenebilir?
 
 A) Varsayımsal
 B) Yansıtıcı
@@ -1169,17 +1266,17 @@ DERS: Alan Eğitimi
 KONU: Telaffuz Sorunu
 YIL: 2019
 Soru 69:
-Mahreç karışıklığında hangisi faydasızdır?
+Seher Öğretmen seçmeli Kur’an-ı Kerim dersinde önce peltek se (ث) harfini, daha sonra sin (س) harfini öğretmiştir. Ancak ders sonunda yaptırdığı okumalarda öğrencilerin bu iki harfin mahreçlerini karıştırarak her ikisini de peltek okuduklarını fark etmiştir.
 
-A) Zaman aralığı
-B) Karşılaştırma
-C) Farklı teknik
-D) Alıştırma
-E) Yazma ödevi
+Seher Öğretmen’in aşağıdaki uygulamalardan hangisini yapması bu sorunu çözmeye katkı sağlamaz?
+
+A) İki harfin öğretimi arasında geçen zaman aralığını artırması
+B) İki harfi, benzerlik ve farklılıklarını karşılaştırarak tanımlaması
+C) İki harfin öğretiminde farklı strateji, yöntem ve teknikler kullanması
+D) Harfler öğrenciler tarafından tanınıncaya kadar alıştırma yaptırması
+E) Harfleri yazma becerisi kazandırmak için ödev vermesi
 
 Doğru Cevap: E
-
-Açıklama: Yazma harfin ses çıkışını düzeltmez.
 
 ---SONRAKİ SORU---
 
@@ -1187,7 +1284,7 @@ DERS: Alan Eğitimi
 KONU: Seviyeye Uygunluk
 YIL: 2019
 Soru 70:
-5. sınıf için uygun olmayan (göz ardı edilen) kazanım:
+Din kültürü ve ahlak bilgisi dersi öğretim programı için hazırlanan bir tasarıda 5. sınıf “Allah İnancı” ünitesinde aşağıdaki kazanımlardan hangisine yer verilmesi, hazırbulunuşluk ilkesinin göz ardı edildiği anlamına gelir?
 
 A) Yaratıcıyı fark etme
 B) Akli-nakli delil analizi
@@ -1203,7 +1300,12 @@ DERS: Alan Eğitimi
 KONU: Çoklu Zekâ
 YIL: 2019
 Soru 71:
-Zekât süreci sıralaması:
+Orhan Öğretmen zekât konusunu işlerken;
+- önce zekâtla ilgili temel kavramları anlatmış,
+- zekât verilecek malların niteliklerini sıraladıktan sonra öğrencilerden zekât verilmesi gereken malların oransal farklılıklarını değerlendirmelerini istemiş,
+- zekâtın bireysel ve toplumsal faydalarıyla ilgili küçük grup tartışması yaptırarak dersi tamamlamıştır.
+
+Orhan Öğretmen'in bu derste kullandığı zekâ alanları aşağıdakilerin hangisinde doğru sıralanmıştır?
 
 A) Sözel-İçsel-Mantıksal
 B) İçsel-Mantıksal-Sözel
@@ -1219,13 +1321,15 @@ DERS: Alan Eğitimi
 KONU: II. Tip Ceza
 YIL: 2019
 Soru 72:
-Hangisi II. tip cezadır?
+Ali Öğretmen derste öğrencilerine dürüstlük değerini kazandırmak için çeşitli etkinlikler gerçekleştirmiştir. Ancak bazı öğrencilerin dersle yeterince ilgilenmediğini bundan dolayı da öğrenemediğini fark etmiştir. Bunun üzerine bu öğrencilere ikinci tip ceza uygulamaya karar vermiştir.
 
-A) Ödevden muafiyet
-B) Etiket verme
-C) Sınıf temizletme
-D) Arkadaştan ayırma
-E) Düşük not
+Buna göre Ali Öğretmen, aşağıdaki uygulamalardan hangisini yaparsa bu ceza türünü uygulamış olur?
+
+A) Dürüst davranan öğrenciyi ev ödevinden muaf tutmak
+B) Dürüst öğrencilere haftada bir gülen yüz etiketi vermek
+C) Yalan söyleyen öğrenciye sınıfı temizletme
+D) Yalan söyleyen öğrenciyi sevdiği arkadaşlarından ayırmak
+E) Yalan söyleyen öğrenciye düşük sözlü notu vermek
 
 Doğru Cevap: D
 
@@ -1235,7 +1339,7 @@ DERS: Alan Eğitimi
 KONU: 2018 Programı
 YIL: 2019
 Soru 73:
-Programla ilgili yanlış (Key: B):
+2018 Din Kültürü ve Ahlak Bilgisi Dersi Öğretim Programı'yla ilgili olarak aşağıdakilerden hangisi yanlıştır?
 
 A) Kök değer
 B) Aynı öğrenme alanı sıralaması
@@ -1251,7 +1355,9 @@ DERS: Alan Eğitimi
 KONU: Fotoğraf Yorumlatma
 YIL: 2019
 Soru 74:
-İlk sorulması gereken:
+Din kültürü ve ahlak bilgisi öğretmeni Erol Bey çoklu zekâ yöntemini önemsemekte ve buna katkıda bulunabilecek çeşitli tekniklere başvurmaktadır. Onun zaman zaman müracaat ettiği ve olumlu geri bildirimler aldığı tekniklerden biri de fotoğraf yorumlatma tekniğidir. Bu amaçla dersinde, üç dört yaşlarında, deniz kenarında yerde yatan bir çocuk ve onu izleyen insanların yer aldığı bir fotoğrafı tahtaya yansıtır ve öğrencilerine, her biri diğerinin üzerine inşa edilecek çeşitli sorular sorar. Bu teknikte asıl önemli olanın, seçilen fotoğraftan ziyade öğrencilere yöneltilen sorular olduğunun bilincinde olan Erol Bey sorularını bilgi, kavrama, uygulama, analiz, sentez ve değerlendirme düzeylerine karşılık gelecek şekilde sıralar.
+
+Buna göre Erol Öğretmen'in aşağıdaki sorulardan hangisini ilk olarak sorması gerektiği söylenebilir?
 
 A) Mantıksızlık
 B) Ne görüyor sun?
@@ -1267,12 +1373,14 @@ DERS: Alan Eğitimi
 KONU: Ayrılıp-Birleşme
 YIL: 2019
 Soru 75:
-Belli bir konuyu uzmanlaşmak için yeni gruplarda çalışıp eski gruplarına dönme:
+İslam’ın beş temel esasını işbirliğine dayalı öğretim stratejisine göre işlemeyi planlayan bir din kültürü ve ahlak bilgisi öğretmeni, sınıfı öncelikle heterojen bir şekilde kelime-i şehadet, namaz, oruç, zekât ve hac gruplarına ayırmıştır. Daha sonra her gruptan birer üyenin katılımıyla bu konulardan birini hazırlamak üzere yeni gruplar oluşturmuştur. Yeni oluşan grupların her üyesinden, konunun kendilerine verilen kısmı üzerinde çalıştıktan sonra eski gruplarına dönerek kazandığı bilgi ve becerileri grup arkadaşlarıyla paylaşmasını istemiştir.
+
+Bu uygulama işbirliğine dayalı öğretim stratejisinde hangi teknikle ifade edilmektedir?
 
 A) Turnuva
 B) Başarı grubu
 C) Ayrılıp-birleşme
-D) Tartışma
+D) Tartışma grubu
 E) Grup araştırması
 
 Doğru Cevap: C

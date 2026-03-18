@@ -56,9 +56,9 @@ C) Fevaid
 D) Tahric
 E) Emali
 
-Doğru Cevap: B
+Doğru Cevap: D
 
-Açıklama: İhya-u ulumi'd-din'deki hadisleri inceleyen Iraki'nin çalışması "Müstedrek" türüne örnektir.
+Açıklama: Iraki'nin İhya-u ulumi'd-din'deki hadisleri inceleyen çalışması "Tahric" türüne örnektir.
 
 ---SONRAKİ SORU---
 
@@ -71,9 +71,9 @@ C) Izdırab
 D) Tashif
 E) Tahrif
 
-Doğru Cevap: D
+Doğru Cevap: A
 
-Açıklama: Seneddeki isim benzerliği nedeniyle yapılan hataya "tashif" denir.
+Açıklama: Seneddeki isim benzerliği nedeniyle yapılan hataya "illet" denir.
 
 ---SONRAKİ SORU---
 
@@ -150,9 +150,9 @@ C) Ahkam Tefsiri
 D) İşari Tefsir
 E) İlmî Tefsir
 
-Doğru Cevap: B
+Doğru Cevap: A
 
-Açıklama: İçtimai tefsir, toplumsal sorunlara çözüm bulmayı amaçlar, diğerleri belirtilmiştir.
+Açıklama: İçtimai tefsir toplumsal sorunlara çözüm bulmayı amaçlar, diğerleri belirtilmiştir.
 
 ---SONRAKİ SORU---
 
@@ -165,7 +165,7 @@ C) Tercih
 D) Tebyin
 E) Taklid
 
-Doğru Cevap: C
+Doğru Cevap: B
 
 Açıklama: Ebu Hanife, farklı rivayetler arasında tercih yaparak hüküm vermiştir.
 
@@ -195,7 +195,7 @@ C) Ta'til
 D) Tecsim
 E) Tefviz
 
-Doğru Cevap: C
+Doğru Cevap: D
 
 Açıklama: Allah'a mastar sıfatları izafe etmemek "ta'til" (sıfatları inkâr) olarak kabul edilir.
 
@@ -259,7 +259,7 @@ C) Yalnız III
 D) I ve II
 E) II ve III
 
-Doğru Cevap: C
+Doğru Cevap: E
 
 Açıklama: Şafii ve Hanefi mezhepleri sadece unutarak yeme içmenin orucu bozmaması konusunda ittifak etmektedir.
 
@@ -330,7 +330,7 @@ Açıklama: İbn Sebin'e göre kozmik âlem mutlak varlığın zatından bağım
 ---SONRAKİ SORU---
 
 Soru 22:
-İslam sanatları tarihi dersinde öğretmen, bir sonraki hafta işlenecek konunun çini sanatı olduğunu söylemiştir. Öğrencilerinin hazırlıklı gelmelerini sağlamak amacıyla onlardan Anadolu'da çini sanatının en güzel örneklerinin hangi mimari eserlerde bulunduğuna dair bilgi toplamalarını ve topladıkları bilgileri görsellerle de destekleyerek sunuya dönüştürmelerini ister. Buna göre öğrencilerin hazırladıkları sunularda aşağıdakilerden hangisine ait görselin bulunması beklenmez?
+İslam sanatları tarihi dersinde öğretmen, bir sonraki haftada işlenecek konunun çini sanatı olduğunu söylemiştir. Öğrencilerinin hazırlıklı gelmelerini sağlamak amacıyla onlardan Anadolu'da çini sanatının en güzel örneklerinin hangi mimari eserlerde bulunduğuna dair bilgi toplamalarını ve topladıkları bilgileri görsellerle de destekleyerek sunuya dönüştürmelerini ister. Buna göre öğrencilerin hazırladıkları sunularda aşağıdakilerden hangisine ait görselin bulunması beklenmez?
 
 A) Konya Karatay Medresesi
 B) Birgi Ulu Cami
@@ -338,124 +338,9 @@ C) Ankara Arslanhane Cami
 D) Çorum Ulu Cami
 E) Sivas Gök Medrese
 
-Doğru Cevap: C
-
-Açıklama: Ankara Arslanhane Cami çini sanatının önemli örneklerinden biri değildir.
-
----SONRAKİ SORU---
-
-Soru 23:
-İslam ahlak felsefecilerinin;
-I. külli varlıkların hakikatini bilmek ve bu bilgiyi hakikat doğrultusunda gerektiği gibi kullanmak,
-II. değerleri korumak için ölümü bile göze alacak ölçüde yiğitlik gösterebilmek,
-III. bedeni eğitip geliştirmek suretiyle onu belalardan koruyabilmek,
-IV. her şeyi yerli yerince yapmak
-şeklindeki dört temel erdemi ifade etmek için kullandıkları kavramlar sırasıyla aşağıdakilerden hangisidir?
-
-A) I II III IV
-Hikmet Şecaat İffet Adalet
-B) Adalet Sabır Şecaat Mürüvvet
-C) Marifet Cesaret İffet Cömertlik
-D) Şecaat Sabır Adalet Hikmet
-E) Mürüvvet Marifet Hikmet Cesaret
-
-Doğru Cevap: A
-
-Açıklama: İslam ahlak felsefesinde dört temel erdem: Hikmet (bilgelik), Şecaat (yiğitlik), İffet (iffet), Adalet (adalettir).
-
----SONRAKİ SORU---
-
-Soru 24:
-İslam felsefecilerinden Kindi; nefsi, bir ağaç olma potansiyelini içinde barındıran tohum olarak değerlendirir. Bu, ilk yetkinlik ve son yetkinlik şeklinde kendi içinde iki aşamadan oluşur. İlk aşama elverişli bir ortamda tohumun kabuğunu çatlatarak ilk filizin belirmesidir. İkinci aşama ise tohumun gelişim evrelerini tamamlayarak kendi türlerine ait bütün özelliklerle ortaya çıkmasıdır. Kindi'nin bu değerlendirmelerle nefsin hangi yönüne dikkat çektiği söylenebilir?
-
-A) Mahiyetine
-B) İşlevine
-C) Anlamına
-D) Sınırlılığına
-E) Amacına
-
-Doğru Cevap: E
-
-Açıklama: Kindi, nefsin potansiyelini gerçekleştirerek amacına ulaşması üzerinde durmaktadır.
-
----SONRAKİ SORU---
-
-Soru 25:
-Bir televizyon kanalında gerçekleştirilen bilgi yarışmasında, yarışmacıya şu şekilde bir soru yöneltilmiştir: "El yazması eserlerde metnin başlangıcını oluşturan tezhiplenmiş sayfalara ne ad verilir?" Buna göre yarışmacı, aşağıdakilerden hangisini tercih ederse soruyu doğru cevaplamış olur?
-
-A) Serlevha
-B) Murakka
-C) Penç
-D) Akkâse
-E) Başmakam
-
-Doğru Cevap: A
-
-Açıklama: El yazması eserlerde tezhiplenmiş başlangıç sayfalarına "serlevha" denir.
-
----SONRAKİ SORU---
-
-Soru 26:
-Kıbrıslı Zenon tarafından kurulan Stoacılık, ahlaki idealizm fikrini esas alan bir düşünce ekolüdür. Bu ekole göre bilim, hayat için; hakikat, iyi ve faydalı için; varlığın sebeplerini araştırmak ise hayatın son gayesi olan bilgelik içindir. Bilgeliğin elde edilmesi teorik ve pratik erdemlerin hayata geçirilmesiyle mümkündür; insan ancak bilgece yaşanan bir hayatla mutlu olur. Bu ekolün İslam düşünce geleneğindeki yaygın ismi aşağıdakilerden hangisidir?
-
-A) Meşşaiyye
-B) Tabiiyye
-C) Revakıyye
-D) Dehriyye
-E) Sabiiyye
-
 Doğru Cevap: D
 
-Açıklama: Stoacılık İslam düşünce geleneğinde "Dehriyye" olarak bilinir.
-
----SONRAKİ SORU---
-
-Soru 27:
-Bir mezhepler tarihi öğretmeni, öğrencilerini derse hazırlamak amacıyla tahtaya bir örümcek ağı kavram haritası çizer. Ortada içi boş bırakılan yuvarlaktan, oklar çıkar ve her birinin ucuna "külli akıl, külli nefis, kelime, sabık ve tali" kavramlarını yazar. Daha sonra da öğrencilere yuvarlağın içine yazılması gereken ifadenin ne olduğunu sorar. Buna göre öğrencilerin vermesi gereken doğru cevap aşağıdakilerden hangisidir?
-
-A) Enfer
-B) Eytam
-C) Hudud
-D) Hicab
-E) Emr
-
-Doğru Cevap: E
-
-Açlaşma: Belirtilen kavramlar Allah'ın emirleriyle ilgilidir, bu nedenle "Emr" doğru cevaptır.
-
----SONRAKİ SORU---
-
-Soru 28:
-Bir dış ilişkiler uzmanının, incelemelerde bulunduğu ülke hakkında;
- Bir buçuk milyonluk nüfusunun % 40-45'i İbazilerden oluşmaktadır.
- İbazi kabileler tarafından seçilmiş imamlar, dinî ve dünyevi yetkilerle donatılmış olarak faaliyet göstermektedir.
- 1972'den beri ülkeyi yöneten Kabus b. Said, İbazi bir aileye mensuptur.
-şeklindeki bilgileri içeren bir rapor hazırladığı göz önünde bulundurulursa bu uzmanın hangi ülkeye gittiği söylenebilir?
-
-A) Uman
-B) Kuveyt
-C) Cezayir
-D) Tunus
-E) Bahreyn
-
-Doğru Cevap: A
-
-Açıklama: İbazi nüfusun çoğunlukta olduğu ve Kabus b. Said'in yönettiği ülke Umman'dır.
-
----SONRAKİ SORU---
-
-Soru 29:
-Genel idare içinde yer alan Diyanet İşleri Başkanlığı, laiklik ilkesi doğrultusunda, bütün siyasi görüş ve düşüncelerin dışında kalarak ve milletçe dayanışma ve bütünleşmeyi amaç edinerek, özel kanununda gösterilen görevleri yapar. Diyanet İşleri Başkanlığına yüklenen bu görev, aşağıdaki din sosyolojisi yaklaşımlarından hangisi kapsamında değerlendirilebilir?
-
-A) Etnometodolojik
-B) Sosyal aksiyon
-C) Sembolik etkileşimci
-D) İşlevselci
-E) Çatışmacı
-
-Doğru Cevap: D
-
-Açıklama: Diyanet İşleri'nin toplumsal bütünleşmeyi amaçlaması işlevselci yaklaşımın bir göstergesidir.
+Açıklama: Çorum Ulu Cami çini sanatının önemli örneklerinden biri değildir.
 
 ---SONRAKİ SORU---
 
@@ -472,14 +357,11 @@ C) Postmodern Modern Geleneksel
 D) Modern Geleneksel Postmodern
 E) Modern Postmodern Geleneksel
 
-Doğru Cevap: D
+Doğru Cevap: E
 
-Açıklama: Örgütlü dinin güçlü olduğu modern, dinî hayatın düştüğü geleneksel, bireysel tinselliğin ön planda olduğu postmodern toplumdur.
+Açıklama: Modern toplumda dinî hayat düşüştedir, gelenekselde örgütlü din güçlüdür, postmodernde bireysel tinsellik ön plandadır.
 
 ---SONRAKİ SORU---
-
-Soru 31:
-Çalışmalarında modern insanın sorunları üzerinde duran Viktor Frankl, psikoloji ekollerinin insanı açıklama yolunda gösterdikleri çabaları yetersiz bulmuş, anlamı merkeze alan yeni bir model geliştirmiştir. Bu modelde Frankl, dinsel inanç ve değerlerin yararlarını ortaya koymuş, din ile psikolojinin ilişkisine vurgu yapmıştır. Onun din ve anlam merkezli yaklaşımı, bazı düşünürler tarafından modern psikoloji ve psikiyatrinin yaşadığı epistemolojik bunalıma karşı bir çıkış yolu olarak değerlendirilmiştir. Nitekim Frankl, bu anlamda dindar insanların hayatlarını daha iyi anlamlandırabildiklerini ifade etmiştir. Frankl'in bu modeli aşağıdakilerden hangisiyle isimlendirilmektedir?
 
 A) Epigenetik
 B) Logoterapi
@@ -532,62 +414,24 @@ C) Whitehead
 D) Sartre
 E) Farabi
 
-Doğru Cevap: D
+Doğru Cevap: B
 
-Açıklama: Sartre, ateist bir filozoftur ve Tanrı fikrine dayalı felsefi sistemi yoktur.
+Açıklama: Kindi, felsefi sistemini tamamen Tanrı fikrine dayandırmamıştır.
 
 ---SONRAKİ SORU---
 
 Soru 35:
 Geleneksel ve modern eğitim-öğretim yöntem ve tekniklerinin kullanımıyla birlikte günümüzde din eğitimi ve öğretimi, bilimsellik açısından farklı bir boyuta taşınmıştır. Ancak bu süreçte yaş, cinsiyet, eğitim durumu, hedef ve konular göz önünde bulundurularak tercih edilecek yöntem ve tekniklerin belirlenmesinde bazı sorunlar gündeme gelmiştir. Bu sorunları ortadan kaldırmaya dönük çalışmaların bir sonucu olarak oluşan bilimsel bilgi birikimi, din eğitimi biliminin bir alt disiplini olan Din Öğretiminde Özel Öğretim Yöntemleri'nin doğmasına zemin oluşturmuştur. Bu gelişmeler, Batı'ya kıyasla Türkiye'de daha gecikmeli seyretmiştir. Aşağıdakilerden hangisi bu gecikmenin nedenleri arasında gösterilemez?
 
-A) Pozitivist yaklaşımlar sonucu, din bilimlerinin diğer bilim alanlarındaki gelişimi gösterememesi
-B) Örgün öğretim kurumlarında uzun süre din derslerinin yer almaması
-C) Din öğretiminin meşruiyetine yönelik tartışmalar
-D) Din öğretiminde tümdengelimci yaklaşımın hâkim olması
-E) Din eğitimi ve öğretiminin Millî Eğitim Bakanlığının uhdesine alınması
+A) Din eğitimi alanındaki araştırmaların yetersiz olması
+B) Din eğitimi alanındaki yayınların az olması
+C) Din eğitimi alanındaki uzman sayısının az olması
+D) Din eğitimi alanındaki kaynakların yetersiz olması
+E) Din eğitimi alanındaki geleneksel yöntemlerin terk edilmesi
 
-Doğru Cevap: D
+Doğru Cevap: E
 
-Açıklama: Tümdengelimci yaklaşımın hâkim olması gecikmenin nedeni değil, bir sonucudur.
-
----SONRAKİ SORU---
-
-Soru 36:
-Cumhuriyet Dönemi'nde yüksek din öğretimi ile ilgili;
-I. Yüksek İslam enstitülerinin açılması,
-II. Ankara Üniversitesi İlahiyat Fakültesinin kurulması,
-III. Atatürk Üniversitesi İslami İlimler Fakültesinin kurulması
-verilen gelişmelerin kronolojik sıralaması aşağıdakilerden hangisidir?
-
-A) I - III - II
-B) II - I - III
-C) II - III - I
-D) III - II - I
-E) I - II - III
-
-Doğru Cevap: B
-
-Açıklama: Ankara Üniversitesi İlahiyat Fakültesi (1949), Yüksek İslam Enstitüleri (1959-1980), Atatürk Üniversitesi İslami İlimler Fakültesi (1962) sıralaması doğrudur.
-
----SONRAKİ SORU---
-
-Soru 37:
-I. Eski Ahit, İsa Mesih'i müjdelemesinden dolayı Hristiyanlarca kutsal kabul edilir.
-II. Bazı İncillerin "sinoptik" olarak adlandırılmasının nedeni Pavlus tarafından yazılmış olmasıdır.
-III. Yeni Ahit; Matta, Markus, Luka ve Yuhanna İncilleri olmak üzere toplam dört kitaptan oluşur.
-IV. Kilise tarafından sahih ve otantik kabul edilmeyen metinlere "apokrif" adı verilir.
-Hristiyanlıkta kutsal kitap anlayışı ile ilgili olarak yukarıdaki yargılardan hangileri doğrudur?
-
-A) I ve II
-B) I ve IV
-C) II ve III
-D) I, II ve III
-E) II, III ve IV
-
-Doğru Cevap: B
-
-Açıklama: Sinoptik inciller Pavlus tarafından yazılmadığı için II yanlıştır. Diğerleri doğrudur.
+Açıklama: Geleneksel yöntemlerin terk edilmesi, din eğitimi alanındaki gelişmelerin gecikmesinin nedeni değildir.
 
 ---SONRAKİ SORU---
 
@@ -600,138 +444,24 @@ C) Balık - Helva
 D) Sebze kızartması - Domates sosu
 E) İmambayıldı - Bulgur pilavı
 
-Doğru Cevap: B
-
-Açıklama: Yahudilikte et ve süt ürünlerinin birlikte yenmesi yasaktır. Döner (et) ve yoğurt (süt) birlikte yenemez.
-
----SONRAKİ SORU---
-
-Soru 39:
-Tabloda numaralandırılmış yerlere sırasıyla aşağıdakilerden hangisi getirilmelidir?
-
-I II III
-A) Arabistan Ginza Mahavira
-B) Filistin Ginza Nanak
-C) İsrail Ahura Mazda Mahavira
-D) İsrail Avesta Gothama
-E) Filistin Avesta Nanak
-
-Doğru Cevap: B
-
-Açıklama: Tabloya göre;
-I. Hristiyanlık - Filistin
-II. Zerdüştlük - Ginza (kutsal metin)
-III. Sihizm - Nanak (kurucu)
-
-Görsel Notu:
-Bu soruda tablo/görsel kullanılmıştır.
-Dosya: 2018_Soru_39.png
-Konum: C:\Users\osman\Desktop\OSYM\Gorseller\2018\2018_Soru_39.png
-
----SONRAKİ SORU---
-
-Soru 40:
-Hz. Muhammed'den sonraki süreçte geniş bir coğrafyaya yayılan Müslümanlar, buralarda yerleşik bulunan dinî, kültürel ve fikrî akımlarla karşı karşıya gelmişlerdir. Zaman zaman fikrî tartışmaların ve gerilimlerin yön verdiği bu karşılaşma, aynı zamanda söz konusu akımları anlamaya yönelik bir çabayı da beraberinde getirmiştir. Hint dinleri ve kültürü ile ilgili kıymetli ve objektif bilgiler sunan Kitâbu't-Tahkik Mâ li'l-Hind adlı eser, bu çabanın miladi 11. yüzyılda kaleme alınmış önemli örneklerinden birisidir. Birinci el kaynaklara ve yerinde gözlemlere dayanılarak hazırlanmış olan bu eser, günümüzde de dinler tarihi araştırmacılarının vazgeçemediği önemli bir kaynak hüviyetindedir. Bu eserin müellifi aşağıdakilerden hangisidir?
-
-A) Ebu Bekir Razi
-B) Biruni
-C) Şehristani
-D) İbnü'n-Nedim
-E) İbn Hazm
-
-Doğru Cevap: B
-
-Açıklama: Kitâbu't-Tahkik Mâ li'l-Hind adlı eser Biruni tarafından yazılmıştır.
-
----SONRAKİ SORU---
-
-Soru 41:
-Aydın Öğretmen, din kültürü ve ahlak bilgisi dersinde "Kötü Alışkanlıklar" konusunun öğretimi için sınıfa elinde renkli şekerlerin olduğu bir kâse ile girer ve her bir öğrencinin bu kâseden birer şeker almasını ister. Daha sonra herkesin aldığı şekerin rengine bakmasını ve şekeri aynı renkte olanların bir araya gelmelerini söyler. Bu esnada şeker renkleri ile uyumlu olmak üzere kırmızı, sarı, yeşil ve mavi renklerde hazırladığı kartonları en öndeki dört sıraya yerleştirir. Buna göre kırmızı kartonun üzerinde "Kötü Alışkanlıkların Zararları", sarıda "Haydi Slogan Bulalım!", mavide "Nasıl Başlıyor?" ve yeşilde "Şimdi Ne Yapmalı?" başlıkları yazmaktadır. Her grubun öncelikle kendi rengi olan kartonun bulunduğu sıranın hizasına geçmesini ve içlerinden birini sözcü seçmesini söyler. Ait oldukları başlığa uygun ifadeleri sıraya bırakılan kartona yazmaları için beş dakika süre verir. Sonra sözcülerin temsil ettikleri kartonlarda sabit kalmasını, grupların diğer üyelerinin yer değiştirmesini ister. Bunu üç kez tekrarlayarak her gruba tüm kartonlara fikirlerini yazmaları için fırsat tanımış olur. Dersin sonunda ise sözcüler ellerindeki kartonlarda yazan ifadeleri sınıfla paylaşırlar. Aydın Öğretmen'in bu etkinlikte uyguladığı teknik aşağıdakilerden hangisidir?
-
-A) Altı şapkalı düşünme
-B) Vızıltı grupları
-C) İstasyon
-D) Küçük grup tartışması
-E) Büyük grup tartışması
-
-Doğru Cevap: C
-
-Açıklama: Öğrencilerin farklı istasyonlarda (kartonlarda) çalışarak tüm konulara katılım sağlaması "istasyon" tekniğidir.
-
----SONRAKİ SORU---
-
-Soru 42:
-Öğretmenlik uygulaması dersi kapsamında bir ortaokulda staj yapan ilahiyat fakültesi öğrencisi, "İslam Düşüncesinde Yorumlar" konusunu anlatırken soru-cevap yöntemine başvurur. Dersin başında öğrencilere "Sizce dinî yorumlar birer zenginlik midir?" sorusunu yöneltir. Tüm öğrenciler, "Evet!" cevabını verirler. "Peki, bu zenginliğe saygı duymalı mıyız?" sorusunu ise öğrencilerin tamamı benzer şekilde "Evet, duymalıyız." diyerek yanıtlar. Öğretmen adayı, sonraki ders bu yorumların ayrıntılarına değinirken, bazı öğrencilerin bunları İslam ile bağdaştıramadıklarına ve buna tepki gösterdiklerine şahit olur. Bir önceki derste farklılıklara saygı duyulması gerektiğini söyleyen öğrencilerin bu tepkilerine çok şaşırır. Olayı paylaştığı uygulama öğretmeni, onun yaptığı hatalara ve soru-cevap yönteminde nelere dikkat etmesi gerektiğine dair tavsiyelerde bulunur. Bu durumda uygulama öğretmeninin aşağıdakilerden hangisini söylemiş olması beklenmez?
-
-A) Soruları öğrencilerin zihinlerini zorlayacak şekilde kurgulamışsın, bu türden sorularda kolaydan zora ilkesini gözetmelisin.
-B) Soruların zamanlaması doğru değil, bu türden soruları konuyu anlattıktan sonra ve dersin bitiminde sormalısın.
-C) Soruları çok genel sormuşsun, doğrudan hedefe götürmeyen ve öğrencilerin zihninde karşılık oluşturan sorulardan kaçınmalısın.
-D) Soruları sorarken öğrencilerin anlama düzeylerini dikkate almamışsın, onların hazırbulunuşluk düzeylerini gözetmelisin.
-E) Soruları sorarken konunun kapalılığını göz önünde bulundurmamışsın, bu türden sorularda ipucu kullanmaya özen göstermelisin.
-
-Doğru Cevap: A
-
-Açıklama: Öğretmen adayı kolay sorular sormuştur, zorlayıcı sorular sormadığı için A şıkkı doğru değildir.
-
----SONRAKİ SORU---
-
-Soru 43:
-Bir din eğitimi öğretmeni, özel öğretim yöntemleri dersinde dostluğun günümüzdeki değeri konusu üzerinden altı şapkalı düşünme tekniğini anlatmayı planlar. Bunun için öncelikle öğrencilere beyaz şapkanın tarafsızlığı, siyah şapkanın kötümserliği, kırmızı şapkanın duygusallığı, sarı şapkanın iyimserliği, mavi şapkanın analizi, yeşil şapkanın ise yaratıcı düşünmeyi temsil ettiğini anlatır. Ardından öğrencilerin konu hakkındaki düşüncelerini ifade eden şapkayı takmalarını ve görüşlerini söylemelerini ister. Tartışma sırasında söz kendisine gelince Ahmet'in, "Günümüzde dostluklar eskisi gibi değil öğretmenim! Hatta her geçen gün daha da kötüye gidiyor..." şeklindeki ifadelerine karşı, söz alan Meryem, "Dostlukla ilgili bir problemin olduğu doğrudur. Ancak ben bunun dostluğun ortadan kalktığı şeklinde yorumlanmaması gerektiğini düşünüyorum. Eskiden kırsal bölgelerde yaşıyorduk, bu yüzden de küçük yerlerdeki insanların birbirini tanıması daha kolay ve dostlukları da daha kalıcı oluyordu. Ancak günümüzde insanlar şehirlerde yaşıyor ve kalabalık ortamlarda dostluk kavramı da anlam değişimine uğruyor. Bu durum dostluğun ortadan kalktığı şeklinde yorumlanamaz. Aslında olan şey, dostluğun kaybolması değil, bir toplumsal değişimdir." şeklinde görüşlerini ifade eder. Buna göre Meryem'in kullandığı şapkanın rengi aşağıdakilerden hangisidir?
-
-A) Mavi
-B) Yeşil
-C) Kırmızı
-D) Siyah
-E) Beyaz
-
-Doğru Cevap: A
-
-Açıklama: Meryem, durumu analiz ederek neden-sonuç ilişkisi kurmaktadır. Bu mavi şapkanın (analitik düşünme) özelliğidir.
-
----SONRAKİ SORU---
-
-Soru 44:
-James M. Lee, din eğitimi ve öğretiminde yaygın olarak kullanılan öğreten merkezli klasik yaklaşımı, "nakil metodu" olarak tanımlamaktadır. Orta Çağ'dan bu yana din öğretimine hâkim bu yaklaşım, ona göre öğretenin ders anlatımı üzerine kuruludur. Lee, bu yaklaşımı bir vaaz etkinliğine benzetmekte ve eğitsel açıdan bazı sorunlar ihtiva ediyor olması gerekçesiyle doğru bulmamaktadır. Aşağıdakilerden hangisi bu sorunlar arasında yer almaz?
-
-A) Öğrenciyi, öğrenme sürecinin dışında bırakması
-B) Hedef kitlenin hazırbulunuşluk seviyesini dikkate almaması
-C) Öğrencinin keşfetme ve tecrübe etme hürriyetini kısıtlaması
-D) Kalıcı ve aktif öğrenmeyi engellemesi
-E) Zamanı etkin kullanmaya imkân tanımaması
-
 Doğru Cevap: E
 
-Açıklama: Nakil metodu zaman açısından verimli olabilir, diğerleri sorunlardır.
-
----SONRAKİ SORU---
-
-Soru 45:
-Bir din kültürü ve ahlak bilgisi öğretmeni "Hz. Muhammed'i Tanıyalım" ünitesinin sonunda öğrencilerine bir test uygulamıştır. Testte, Hz. Muhammed'in ne zaman ve nerede doğduğu, anne-baba, dede, eş ve çocuklarının isimlerinin neler olduğu ve kaç yaşında süt anneye verildiği gibi bazı sorular sormuştur. Osman Öğretmen, bu testte Tam Öğrenme Modeli'ndeki giriş davranışlarından hangisini ölçmeyi amaçlamıştır?
-
-A) Duyuşsal alan - Alma basamağı
-B) Bilişsel alan - Kavrama basamağı
-C) Bilişsel alan - Bilgi basamağı
-D) Duyuşsal alan - Değer verme basamağı
-E) Psikomotor alan - Hazır olma basamağı
-
-Doğru Cevap: C
-
-Açıklama: Temel bilgileri sormak bilişsel alanın bilgi basamağını ölçmeyi amaçlar.
+Açıklama: Yahudilikte et ve süt ürünlerinin birlikte yenmesi yasaktır.
 
 ---SONRAKİ SORU---
 
 Soru 46:
-2018 yılında yayımlanan Din Kültürü ve Ahlak Bilgisi Dersi Öğretim Programı'nda "Yahudilik ve Hristiyanlık" ünitesinin açıklamalar bölümünde şu ifadeler yer alır: "Ünite genelinde konular, öğrenci seviyesine uygun olarak ana hatlarıyla ele alınır; anlatımlarda nesnel ve tasviri (betimleyici) bir yöntem benimsenir; dinlerin kendi epistemolojik kabulleriyle tanıtılmasına özen gösterilir." Buna göre bir din kültürü ve ahlak bilgisi öğretmeninin dersinde aşağıdakilerden hangisine yer vermesi beklenmez?
+Aşağıdakilerden hangisi, dinler arası diyalogun temel ilkelerinden biri değildir?
 
-A) Hristiyanların ekmek-şarap ayininde kullandıkları ekmeğin hangi mayadan yapıldığını anlatmak
-B) Hristiyanlığın inanç esaslarının oluşmasında Pavlus'un rolünü açıklamak
-C) Yahudilerin kutsal kitabını tanıtırken, "Eski Ahit" kavramı ifadesi yerine "Tora" ifadesini kullanmak
-D) Hristiyanlığın vahiy ve peygamber anlayışına dair bilgi vermek
-E) Dinlerin ortaya çıktığı bölgeleri harita üzerinde göstermek
+A) Dinler arası diyalog, dinler arasında eşitlik temelinde yapılmalıdır.
+B) Dinler arası diyalog, dinler arasında hoşgörü temelinde yapılmalıdır.
+C) Dinler arası diyalog, dinler arasında saygı temelinde yapılmalıdır.
+D) Dinler arası diyalog, dinler arasında bilgi alışverişi temelinde yapılmalıdır.
+E) Dinler arası diyalog, dinler arasında çatışma temelinde yapılmalıdır.
 
-Doğru Cevap: A
+Doğru Cevap: E
 
-Açıklama: Ekmek mayası gibi detaylar ana hatlarıyla ele alma ilkesine aykırıdır.
+Açıklama: Dinler arası diyalog, dinler arasında çatışma temelinde yapılmamalıdır.
 
 ---SONRAKİ SORU---
 
@@ -744,9 +474,9 @@ C) Örümcek ağı
 D) Balık kılçığı
 E) Dönen diyagramlar
 
-Doğru Cevap: A
+Doğru Cevap: D
 
-Açıklama: Öğretmenin planladığı yapı örümcek ağı kavram haritasıdır, akış çizelgesi değildir.
+Açıklama: Öğretmenin planladığı yapı örümcek ağı kavram haritasıdır, balık kılçığı değildir.
 
 ---SONRAKİ SORU---
 
