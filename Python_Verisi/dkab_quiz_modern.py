@@ -16,11 +16,10 @@ import threading
 class ModernDKABQuiz:
     def __init__(self, root):
         self.root = root
-        self.root.title("🎓 DKAB ÖABT Pratik Sınavı")
+        self.root.title("DKAB OABT Pratik Sinavi")
         self.root.geometry("1000x750")
-        self.root.configure(bg='#1a1a2e')
         self.root.resizable(True, True)
-        
+
         # Variables
         self.questions = []
         self.current_question = None
@@ -30,22 +29,64 @@ class ModernDKABQuiz:
         self.selected_year = None
         self.selected_num = 10
         self.quiz_questions = []
-        self.test_history = []  # Store test history
-        
-        # Modern color scheme
-        self.colors = {
-            'bg': '#1a1a2e',
-            'card': '#16213e',
-            'accent': '#e94560',
-            'primary': '#0f3460',
-            'success': '#00b894',
-            'warning': '#fdcb6e',
-            'danger': '#d63031',
-            'text': '#ffffff',
-            'text_secondary': '#b2bec3',
-            'border': '#2d3561'
+        self.test_history = []
+        self.current_view = "welcome"
+        self.current_specific_question = None
+
+        self.theme_palettes = {
+            "Gece Lacivert": {
+                'bg': '#111827',
+                'card': '#182235',
+                'accent': '#f43f5e',
+                'primary': '#1e3a5f',
+                'success': '#10b981',
+                'warning': '#f59e0b',
+                'danger': '#ef4444',
+                'text': '#f8fafc',
+                'text_secondary': '#cbd5e1',
+                'border': '#334155'
+            },
+            "Zumrut": {
+                'bg': '#0b1f1a',
+                'card': '#12332b',
+                'accent': '#2dd4bf',
+                'primary': '#14532d',
+                'success': '#22c55e',
+                'warning': '#fbbf24',
+                'danger': '#f87171',
+                'text': '#ecfdf5',
+                'text_secondary': '#bbf7d0',
+                'border': '#285b52'
+            },
+            "Gun Batimi": {
+                'bg': '#2a1a1f',
+                'card': '#3a2530',
+                'accent': '#fb7185',
+                'primary': '#7c2d12',
+                'success': '#34d399',
+                'warning': '#f59e0b',
+                'danger': '#f87171',
+                'text': '#fff7ed',
+                'text_secondary': '#fed7aa',
+                'border': '#6b3b47'
+            },
+            "Acik Modern": {
+                'bg': '#eef2ff',
+                'card': '#ffffff',
+                'accent': '#2563eb',
+                'primary': '#dbeafe',
+                'success': '#16a34a',
+                'warning': '#d97706',
+                'danger': '#dc2626',
+                'text': '#0f172a',
+                'text_secondary': '#475569',
+                'border': '#cbd5e1'
+            }
         }
-        
+        self.current_theme = "Gece Lacivert"
+        self.colors = self.theme_palettes[self.current_theme].copy()
+        self.root.configure(bg=self.colors['bg'])
+
         # Font styles
         self.fonts = {
             'title': ('Segoe UI', 24, 'bold'),
@@ -55,31 +96,112 @@ class ModernDKABQuiz:
             'button': ('Segoe UI', 10, 'bold'),
             'small': ('Segoe UI', 9)
         }
-        
+
         self.setup_ui()
-        
+
+    def setup_ttk_styles(self):
+        """ttk bilesenlerini aktif temaya gore stillendirir."""
+        style = ttk.Style()
+        try:
+            style.theme_use('clam')
+        except Exception:
+            pass
+
+        field_bg = self.colors['card'] if self.colors['card'] != '#ffffff' else '#f8fafc'
+        style.configure(
+            'Modern.TCombobox',
+            fieldbackground=field_bg,
+            background=self.colors['primary'],
+            foreground=self.colors['text'],
+            bordercolor=self.colors['border'],
+            arrowcolor=self.colors['accent'],
+            lightcolor=self.colors['border'],
+            darkcolor=self.colors['border'],
+            insertcolor=self.colors['text']
+        )
+        style.map(
+            'Modern.TCombobox',
+            fieldbackground=[('readonly', field_bg)],
+            foreground=[('readonly', self.colors['text'])],
+            selectbackground=[('readonly', self.colors['primary'])],
+            selectforeground=[('readonly', self.colors['text'])]
+        )
+        style.configure(
+            'Modern.Vertical.TScrollbar',
+            background=self.colors['primary'],
+            troughcolor=self.colors['bg'],
+            bordercolor=self.colors['bg'],
+            arrowcolor=self.colors['text'],
+            darkcolor=self.colors['primary'],
+            lightcolor=self.colors['primary']
+        )
+
     def setup_ui(self):
-        """Modern arayüzü kurar"""
-        # Main container
+        """Modern arayuzu kurar."""
+        self.root.configure(bg=self.colors['bg'])
+        self.setup_ttk_styles()
+
         main_container = tk.Frame(self.root, bg=self.colors['bg'])
         main_container.pack(fill=tk.BOTH, expand=True)
-        
-        # Header
+
         self.create_header(main_container)
-        
-        # Content area
+
         content_frame = tk.Frame(main_container, bg=self.colors['bg'])
         content_frame.pack(fill=tk.BOTH, expand=True, padx=20, pady=10)
-        
-        # Left sidebar
+
         self.create_sidebar(content_frame)
-        
-        # Main content area
         self.create_main_content(content_frame)
-        
-        # Show welcome screen
         self.show_welcome_screen()
-        
+
+    def rebuild_ui(self):
+        """Tema degisimi sonrasi arayuzu koruyarak yeniden kurar."""
+        saved = {
+            'year': getattr(self, 'year_var', None).get() if hasattr(self, 'year_var') else 'Tum yillar',
+            'mode': getattr(self, 'mode_var', None).get() if hasattr(self, 'mode_var') else 'Aninda Cevap',
+            'order': getattr(self, 'order_var', None).get() if hasattr(self, 'order_var') else 'Rastgele',
+            'num': getattr(self, 'num_var', None).get() if hasattr(self, 'num_var') else '10',
+            'goto_year': getattr(self, 'goto_year_var', None).get() if hasattr(self, 'goto_year_var') else '2019',
+            'goto_q': getattr(self, 'goto_q_var', None).get() if hasattr(self, 'goto_q_var') else '1',
+        }
+
+        for widget in self.root.winfo_children():
+            widget.destroy()
+
+        self.setup_ui()
+
+        self.year_var.set(saved['year'])
+        self.mode_var.set(saved['mode'])
+        self.order_var.set(saved['order'])
+        self.num_var.set(saved['num'])
+        self.goto_year_var.set(saved['goto_year'])
+        self.goto_q_var.set(saved['goto_q'])
+        self.update_question_limit()
+        self._update_goto_question_list()
+
+        if self.questions:
+            self.update_stats()
+            self.load_button.config(text=f'Yuklendi: {len(self.questions)} soru', bg=self.colors['success'])
+            self.status_label.config(text='Hazir', fg=self.colors['success'])
+
+        if self.current_view == 'question' and self.quiz_questions:
+            self.show_question()
+        elif self.current_view == 'review' and hasattr(self, 'user_answers'):
+            self.show_review_screen()
+        elif self.current_view == 'results' and self.total_questions:
+            self.show_results()
+        elif self.current_view == 'specific' and self.current_specific_question:
+            self.show_specific_question(self.current_specific_question)
+        else:
+            self.show_welcome_screen()
+
+    def change_theme(self, event=None):
+        """Secilen temayi uygular."""
+        selected = self.theme_var.get()
+        if selected in self.theme_palettes:
+            self.current_theme = selected
+            self.colors = self.theme_palettes[selected].copy()
+            self.rebuild_ui()
+
     def create_header(self, parent):
         """Modern header oluşturur"""
         header = tk.Frame(parent, bg=self.colors['card'], height=80)
@@ -115,6 +237,16 @@ class ModernDKABQuiz:
         # Settings card
         settings_card = self.create_card(sidebar, "⚙️ Ayarlar")
         settings_card.pack(fill=tk.X, padx=2, pady=2)
+
+        tk.Label(settings_card, text="Tema:", font=('Segoe UI', 8), 
+                fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
+
+        self.theme_var = tk.StringVar(value=self.current_theme)
+        self.theme_combo = ttk.Combobox(settings_card, textvariable=self.theme_var,
+                                        values=list(self.theme_palettes.keys()), state="readonly",
+                                        width=14, style='Modern.TCombobox')
+        self.theme_combo.pack(padx=5, pady=(0, 2), fill=tk.X)
+        self.theme_combo.bind("<<ComboboxSelected>>", self.change_theme)
         
         # Year selection
         tk.Label(settings_card, text="Yıl:", font=('Segoe UI', 8), 
@@ -123,7 +255,7 @@ class ModernDKABQuiz:
         self.year_var = tk.StringVar(value="Tüm yıllar")
         years = ["Tüm yıllar"] + [str(year) for year in range(2013, 2026)]
         self.year_combo = ttk.Combobox(settings_card, textvariable=self.year_var, 
-                                       values=years, state="readonly", width=14)
+                                       values=years, state="readonly", width=14, style='Modern.TCombobox')
         self.year_combo.pack(padx=5, pady=0, fill=tk.X)
         self.year_combo.bind("<<ComboboxSelected>>", self.update_question_limit)
         
@@ -134,7 +266,7 @@ class ModernDKABQuiz:
         self.mode_var = tk.StringVar(value="Anında Cevap")
         mode_options = ["Anında Cevap", "Test Sonu Değerlendir"]
         self.mode_combo = ttk.Combobox(settings_card, textvariable=self.mode_var, 
-                                      values=mode_options, state="readonly", width=14)
+                                      values=mode_options, state="readonly", width=14, style='Modern.TCombobox')
         self.mode_combo.pack(padx=5, pady=0, fill=tk.X)
         
         # Question order selection
@@ -144,7 +276,7 @@ class ModernDKABQuiz:
         self.order_var = tk.StringVar(value="Rastgele")
         order_options = ["Rastgele", "Sıralı"]
         self.order_combo = ttk.Combobox(settings_card, textvariable=self.order_var, 
-                                       values=order_options, state="readonly", width=14)
+                                       values=order_options, state="readonly", width=14, style='Modern.TCombobox')
         self.order_combo.pack(padx=5, pady=0, fill=tk.X)
         
         # Question count
@@ -191,7 +323,7 @@ class ModernDKABQuiz:
         self.goto_year_var = tk.StringVar(value="2019")
         goto_years = [str(y) for y in range(2013, 2026)]
         self.goto_year_combo = ttk.Combobox(goto_card, textvariable=self.goto_year_var,
-                                            values=goto_years, state="readonly", width=14)
+                                            values=goto_years, state="readonly", width=14, style='Modern.TCombobox')
         self.goto_year_combo.pack(padx=5, pady=0, fill=tk.X)
         self.goto_year_combo.bind("<<ComboboxSelected>>", self._update_goto_question_list)
 
@@ -201,7 +333,7 @@ class ModernDKABQuiz:
         self.goto_q_var = tk.StringVar(value="1")
         self.goto_q_combo = ttk.Combobox(goto_card, textvariable=self.goto_q_var,
                                          values=[str(i) for i in range(1, 76)],
-                                         state="normal", width=14)
+                                         state="normal", width=14, style='Modern.TCombobox')
         self.goto_q_combo.pack(padx=5, pady=0, fill=tk.X)
 
         self.goto_btn = self.create_button(goto_card, "🔎 SORUYU AÇ",
@@ -214,7 +346,7 @@ class ModernDKABQuiz:
         self.main_container.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True)
         
         self.canvas = tk.Canvas(self.main_container, bg=self.colors['card'], highlightthickness=0)
-        self.scrollbar = ttk.Scrollbar(self.main_container, orient="vertical", command=self.canvas.yview)
+        self.scrollbar = ttk.Scrollbar(self.main_container, orient="vertical", command=self.canvas.yview, style="Modern.Vertical.TScrollbar")
         self.canvas.configure(yscrollcommand=self.scrollbar.set)
         
         self.scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
@@ -278,6 +410,7 @@ class ModernDKABQuiz:
         return color
         
     def show_welcome_screen(self):
+        self.current_view = "welcome"
         """Hoş geldin ekranını gösterir"""
         # Clear main content
         for widget in self.main_content.winfo_children():
@@ -568,6 +701,7 @@ Başarılar dilerim! 🌟
         self.show_question()
     
     def show_question(self):
+        self.current_view = "question"
         """Soruyu gösterir"""
         if self.current_index >= len(self.quiz_questions):
             # If we're in review mode, show per-question evaluation instead of plain results.
@@ -978,6 +1112,7 @@ Başarılar dilerim! 🌟
             self.show_review_screen()
     
     def show_review_screen(self):
+        self.current_view = "review"
         """Değerlendirme ekranını gösterir"""
         # Clear main content
         for widget in self.main_content.winfo_children():
@@ -1074,6 +1209,8 @@ Başarılar dilerim! 🌟
         self.show_specific_question(matches[0])
 
     def show_specific_question(self, question):
+        self.current_view = "specific"
+        self.current_specific_question = question
         """Tek bir soruyu inceleme modunda (cevap + açıklama göster) ekrana basar"""
         for widget in self.main_content.winfo_children():
             widget.destroy()
@@ -1085,7 +1222,7 @@ Başarılar dilerim! 🌟
 
         # Scrollable container
         canvas = tk.Canvas(card, bg=self.colors['card'], highlightthickness=0)
-        scrollbar = ttk.Scrollbar(card, orient="vertical", command=canvas.yview)
+        scrollbar = ttk.Scrollbar(card, orient="vertical", command=canvas.yview, style="Modern.Vertical.TScrollbar")
         canvas.configure(yscrollcommand=scrollbar.set)
         scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
         canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
@@ -1258,6 +1395,7 @@ Başarılar dilerim! 🌟
             self.show_question()
     
     def show_results(self):
+        self.current_view = "results"
         """Sonuçları gösterir"""
         # Clear main content
         for widget in self.main_content.winfo_children():
