@@ -49,52 +49,52 @@ class ModernDKABQuiz:
 
         self.theme_palettes = {
             "Gece Lacivert": {
-                'bg': '#111827',
-                'card': '#182235',
-                'accent': '#f43f5e',
-                'primary': '#1e3a5f',
-                'success': '#10b981',
+                'bg': '#0b1220',
+                'card': '#121c2e',
+                'accent': '#38bdf8',
+                'primary': '#1c2a44',
+                'success': '#22c55e',
                 'warning': '#f59e0b',
-                'danger': '#ef4444',
+                'danger': '#f87171',
                 'text': '#f8fafc',
-                'text_secondary': '#cbd5e1',
-                'border': '#334155'
+                'text_secondary': '#94a3b8',
+                'border': '#26354d'
             },
             "Zumrut": {
-                'bg': '#0b1f1a',
-                'card': '#12332b',
-                'accent': '#2dd4bf',
-                'primary': '#14532d',
+                'bg': '#081915',
+                'card': '#102923',
+                'accent': '#34d399',
+                'primary': '#183a31',
                 'success': '#22c55e',
                 'warning': '#fbbf24',
                 'danger': '#f87171',
                 'text': '#ecfdf5',
-                'text_secondary': '#bbf7d0',
-                'border': '#285b52'
+                'text_secondary': '#a7f3d0',
+                'border': '#214b41'
             },
             "Gun Batimi": {
-                'bg': '#2a1a1f',
-                'card': '#3a2530',
+                'bg': '#22161b',
+                'card': '#352129',
                 'accent': '#fb7185',
-                'primary': '#7c2d12',
+                'primary': '#4a2830',
                 'success': '#34d399',
                 'warning': '#f59e0b',
                 'danger': '#f87171',
                 'text': '#fff7ed',
-                'text_secondary': '#fed7aa',
-                'border': '#6b3b47'
+                'text_secondary': '#fdba74',
+                'border': '#5e3743'
             },
             "Acik Modern": {
-                'bg': '#eef2ff',
+                'bg': '#edf3ff',
                 'card': '#ffffff',
-                'accent': '#2563eb',
-                'primary': '#dbeafe',
+                'accent': '#0ea5e9',
+                'primary': '#e0ecff',
                 'success': '#16a34a',
                 'warning': '#d97706',
                 'danger': '#dc2626',
                 'text': '#0f172a',
-                'text_secondary': '#475569',
-                'border': '#cbd5e1'
+                'text_secondary': '#64748b',
+                'border': '#d6e2f3'
             }
         }
         self.current_theme = self.persisted_settings.get("theme", "Gece Lacivert")
@@ -103,11 +103,11 @@ class ModernDKABQuiz:
 
         # Font styles
         self.fonts = {
-            'title': ('Segoe UI', 24, 'bold'),
-            'subtitle': ('Segoe UI', 12),
-            'header': ('Segoe UI', 16, 'bold'),
+            'title': ('Bahnschrift SemiBold', 28),
+            'subtitle': ('Segoe UI Semilight', 13),
+            'header': ('Bahnschrift SemiBold', 16),
             'body': ('Segoe UI', 11),
-            'button': ('Segoe UI', 10, 'bold'),
+            'button': ('Bahnschrift SemiBold', 11),
             'small': ('Segoe UI', 9)
         }
 
@@ -224,7 +224,9 @@ class ModernDKABQuiz:
             arrowcolor=self.colors['accent'],
             lightcolor=self.colors['border'],
             darkcolor=self.colors['border'],
-            insertcolor=self.colors['text']
+            insertcolor=self.colors['text'],
+            relief='flat',
+            padding=6
         )
         style.map(
             'Modern.TCombobox',
@@ -240,7 +242,9 @@ class ModernDKABQuiz:
             bordercolor=self.colors['bg'],
             arrowcolor=self.colors['text'],
             darkcolor=self.colors['primary'],
-            lightcolor=self.colors['primary']
+            lightcolor=self.colors['primary'],
+            gripcount=0,
+            width=10
         )
 
     def setup_ui(self):
@@ -329,37 +333,62 @@ class ModernDKABQuiz:
 
     def create_header(self, parent):
         """Modern header oluşturur"""
-        header = tk.Frame(parent, bg=self.colors['card'], height=80)
-        header.pack(fill=tk.X, padx=20, pady=(20, 10))
+        header = tk.Frame(parent, bg=self.colors['card'], height=92, highlightthickness=1,
+                          highlightbackground=self.colors['border'])
+        header.pack(fill=tk.X, padx=22, pady=(22, 12))
         header.pack_propagate(False)
-        
-        # Title
+
+        accent_bar = tk.Frame(header, bg=self.colors['accent'], width=6)
+        accent_bar.pack(side=tk.LEFT, fill=tk.Y)
+
         title_frame = tk.Frame(header, bg=self.colors['card'])
-        title_frame.pack(expand=True, fill=tk.BOTH)
-        
-        title_label = tk.Label(title_frame, text="🎓 DKAB ÖABT PRATİK SINAVI", 
-                               font=self.fonts['title'], 
-                               fg=self.colors['text'], bg=self.colors['card'])
-        title_label.pack(side=tk.LEFT, padx=20, pady=20)
-        
-        subtitle_label = tk.Label(title_frame, text="2013-2025 Din Kültürü ve Ahlak Bilgisi Öğretmenliği", 
-                                 font=self.fonts['subtitle'], 
-                                 fg=self.colors['text_secondary'], bg=self.colors['card'])
-        subtitle_label.pack(side=tk.LEFT, padx=(0, 20), pady=25)
-        
-        # Status indicator
-        self.status_label = tk.Label(title_frame, text="🔴 Hazır Değil", 
-                                    font=self.fonts['body'], 
-                                    fg=self.colors['danger'], bg=self.colors['card'])
-        self.status_label.pack(side=tk.RIGHT, padx=20, pady=25)
+        title_frame.pack(side=tk.LEFT, expand=True, fill=tk.BOTH, padx=18)
+
+        badge = tk.Label(title_frame, text="DKAB ÖABT", font=('Bahnschrift SemiBold', 10),
+                         fg=self.colors['accent'], bg=self.colors['card'])
+        badge.pack(anchor=tk.W, pady=(12, 0))
+
+        title_label = tk.Label(
+            title_frame,
+            text="Pratik Sınav Paneli",
+            font=self.fonts['title'],
+            fg=self.colors['text'],
+            bg=self.colors['card']
+        )
+        title_label.pack(anchor=tk.W)
+
+        subtitle_label = tk.Label(
+            title_frame,
+            text="2013-2025 Din Kültürü ve Ahlak Bilgisi Öğretmenliği soru çalışma alanı",
+            font=self.fonts['subtitle'],
+            fg=self.colors['text_secondary'],
+            bg=self.colors['card']
+        )
+        subtitle_label.pack(anchor=tk.W, pady=(0, 12))
+
+        status_wrap = tk.Frame(header, bg=self.colors['primary'], highlightthickness=1,
+                               highlightbackground=self.colors['border'])
+        status_wrap.pack(side=tk.RIGHT, padx=18, pady=18)
+
+        self.status_label = tk.Label(
+            status_wrap,
+            text="🔴 Hazır Değil",
+            font=self.fonts['button'],
+            fg=self.colors['danger'],
+            bg=self.colors['primary'],
+            padx=14,
+            pady=10
+        )
+        self.status_label.pack()
         
     def create_sidebar(self, parent):
         """Sol sidebar oluşturur (Kaydırılabilir)"""
-        sidebar_outer = tk.Frame(parent, bg=self.colors['card'], width=260)
-        sidebar_outer.pack(side=tk.LEFT, fill=tk.Y, padx=(0, 8))
+        sidebar_outer = tk.Frame(parent, bg=self.colors['card'], width=284, highlightthickness=1,
+                                 highlightbackground=self.colors['border'])
+        sidebar_outer.pack(side=tk.LEFT, fill=tk.Y, padx=(0, 14))
         sidebar_outer.pack_propagate(False)
         
-        self.sidebar_canvas = tk.Canvas(sidebar_outer, bg=self.colors['card'], highlightthickness=0, width=240)
+        self.sidebar_canvas = tk.Canvas(sidebar_outer, bg=self.colors['card'], highlightthickness=0, width=262)
         self.sidebar_scrollbar = ttk.Scrollbar(sidebar_outer, orient="vertical", command=self.sidebar_canvas.yview, style="Modern.Vertical.TScrollbar")
         self.sidebar_canvas.configure(yscrollcommand=self.sidebar_scrollbar.set)
         
@@ -584,7 +613,8 @@ class ModernDKABQuiz:
         
     def create_main_content(self, parent):
         """Ana içerik alanı oluşturur (Kaydırılabilir)"""
-        self.main_container = tk.Frame(parent, bg=self.colors['card'])
+        self.main_container = tk.Frame(parent, bg=self.colors['card'], highlightthickness=1,
+                                       highlightbackground=self.colors['border'])
         self.main_container.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True)
         
         self.canvas = tk.Canvas(self.main_container, bg=self.colors['card'], highlightthickness=0)
@@ -764,16 +794,24 @@ class ModernDKABQuiz:
 
     def create_card(self, parent, title):
         """Modern kart oluşturur"""
-        card = tk.Frame(parent, bg=self.colors['card'], relief=tk.RAISED, bd=1)
+        card = tk.Frame(parent, bg=self.colors['card'], bd=0, highlightthickness=1,
+                        highlightbackground=self.colors['border'])
         
-        # Card header
-        header = tk.Frame(card, bg=self.colors['primary'], height=20)
+        header = tk.Frame(card, bg=self.colors['primary'], height=30)
         header.pack(fill=tk.X)
         header.pack_propagate(False)
-        
-        title_label = tk.Label(header, text=title, font=('Segoe UI', 8, 'bold'), 
-                              fg=self.colors['text'], bg=self.colors['primary'])
-        title_label.pack(pady=1)
+
+        accent = tk.Frame(header, bg=self.colors['accent'], width=4)
+        accent.pack(side=tk.LEFT, fill=tk.Y)
+
+        title_label = tk.Label(
+            header,
+            text=title,
+            font=('Bahnschrift SemiBold', 10),
+            fg=self.colors['text'],
+            bg=self.colors['primary']
+        )
+        title_label.pack(side=tk.LEFT, padx=10, pady=4)
         
         return card
         
@@ -783,6 +821,7 @@ class ModernDKABQuiz:
                           font=self.fonts['button'],
                           bg=color, fg=self.colors['text'],
                           relief=tk.FLAT, cursor="hand2",
+                          bd=0, padx=14, pady=10,
                           activebackground=self.darken_color(color),
                           activeforeground=self.colors['text'])
         
@@ -799,11 +838,19 @@ class ModernDKABQuiz:
         
     def lighten_color(self, color):
         """Rengi aydınlatır"""
-        return color
+        color = color.lstrip('#')
+        r = min(255, int(color[0:2], 16) + 18)
+        g = min(255, int(color[2:4], 16) + 18)
+        b = min(255, int(color[4:6], 16) + 18)
+        return f"#{r:02x}{g:02x}{b:02x}"
         
     def darken_color(self, color):
         """Rengi koyulaştırır"""
-        return color
+        color = color.lstrip('#')
+        r = max(0, int(color[0:2], 16) - 18)
+        g = max(0, int(color[2:4], 16) - 18)
+        b = max(0, int(color[4:6], 16) - 18)
+        return f"#{r:02x}{g:02x}{b:02x}"
         
     def show_welcome_screen(self):
         self.current_view = "welcome"
@@ -821,34 +868,51 @@ class ModernDKABQuiz:
         
         content_frame = tk.Frame(welcome_card, bg=self.colors['card'])
         content_frame.pack(expand=True, fill=tk.BOTH, padx=20, pady=20)
-        
-        welcome_text = """
-🎓 DKAB ÖABT PRATİK SINAVINA HOŞ GELDİNİZ!
 
-Bu modern uygulama ile 2013-2025 yılları arası Din Kültürü ve Ahlak Bilgisi 
-Öğretmenliği ÖABT sınav soruları üzerinde pratik yapabilirsin.
+        hero = tk.Frame(content_frame, bg=self.colors['primary'], highlightthickness=1,
+                        highlightbackground=self.colors['border'])
+        hero.pack(fill=tk.X, padx=16, pady=(8, 18))
 
-📋 Özellikler:
-• Modern ve şık arayüz
-• Rastgele soru seçimi
-• Yıl bazında pratik
-• Anlık sonuç ve açıklama
-• Görsel desteği
-• Detaylı istatistikler
-• İlerleme takibi
+        tk.Label(
+            hero,
+            text="DKAB ÖABT PRATİK SINAVINA HOŞ GELDİNİZ",
+            font=self.fonts['header'],
+            bg=self.colors['primary'],
+            fg=self.colors['text']
+        ).pack(anchor=tk.W, padx=20, pady=(18, 6))
 
-🚀 Başlamak için:
-1. Önce "SORULARI YÜKLE" butonuna tıklayın
-2. Yıl ve soru sayısını seçin
-3. "TESTİ BAŞLAT" butonuna tıklayın
+        tk.Label(
+            hero,
+            text="Soruları hızlıca filtreleyin, süreli test çözün ve sonuçları net biçimde değerlendirin.",
+            font=self.fonts['body'],
+            bg=self.colors['primary'],
+            fg=self.colors['text_secondary'],
+            justify=tk.LEFT
+        ).pack(anchor=tk.W, padx=20, pady=(0, 18))
 
-Başarılar dilerim! 🌟
-        """
-        
-        welcome_label = tk.Label(content_frame, text=welcome_text, 
-                                font=self.fonts['body'], bg=self.colors['card'], 
-                                fg=self.colors['text'], justify=tk.LEFT)
-        welcome_label.pack(expand=True, pady=30)
+        welcome_text = (
+            "Özellikler:\n"
+            "• Daha temiz ve odaklı çalışma ekranı\n"
+            "• Rastgele veya sıralı soru seçimi\n"
+            "• Yıl ve konu bazlı filtreleme\n"
+            "• Anında cevap ve süreli test desteği\n"
+            "• Açıklama, süre ve performans takibi\n\n"
+            "Başlamak için:\n"
+            "1. Sol panelden filtreleri seçin\n"
+            "2. Soru sayısını belirleyin\n"
+            "3. \"BAŞLAT\" düğmesiyle teste girin"
+        )
+
+        welcome_label = tk.Label(
+            content_frame,
+            text=welcome_text,
+            font=self.fonts['body'],
+            bg=self.colors['card'],
+            fg=self.colors['text'],
+            justify=tk.LEFT,
+            anchor=tk.NW
+        )
+        welcome_label.pack(fill=tk.BOTH, expand=True, padx=22, pady=(6, 24))
         
     def check_new_files(self):
         """Yeni eklenen dosyaları kontrol eder"""
