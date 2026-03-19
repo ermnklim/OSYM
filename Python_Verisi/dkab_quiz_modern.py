@@ -607,14 +607,39 @@ Başarılar dilerim! 🌟
         
     def update_dropdown_values(self, years, dersler):
         """Dropdown değerlerini günceller."""
+        current_year = self.year_var.get()
+        current_ders = self.ders_var.get()
+        current_goto_year = self.goto_year_var.get()
+        current_goto_ders = self.goto_ders_var.get()
+
         self.year_combo['values'] = years
         self.ders_combo['values'] = dersler
         self.goto_year_combo['values'] = sorted([y for y in years if y != "Tüm yıllar"], reverse=True)
         self.goto_ders_combo['values'] = dersler
-        if self.ders_var.get() not in dersler and dersler:
+
+        if current_year in years:
+            self.year_var.set(current_year)
+        elif years:
+            self.year_var.set(years[0])
+
+        if current_ders not in dersler and dersler:
             self.ders_var.set(dersler[0])
-        if self.goto_ders_var.get() not in dersler and dersler:
+        else:
+            self.ders_var.set(current_ders)
+
+        goto_years = list(self.goto_year_combo['values'])
+        if current_goto_year in goto_years:
+            self.goto_year_var.set(current_goto_year)
+        elif goto_years:
+            self.goto_year_var.set(goto_years[0])
+
+        if current_goto_ders not in dersler and dersler:
             self.goto_ders_var.set(dersler[0])
+        else:
+            self.goto_ders_var.set(current_goto_ders)
+
+        self.update_question_limit()
+        self._update_goto_question_list()
 
     def resolve_visual_path(self, raw_path: str, year: int) -> str:
         """Görsel için göreli/tam yolu uygulamadaki gerçek dosya yoluna çevirir."""
