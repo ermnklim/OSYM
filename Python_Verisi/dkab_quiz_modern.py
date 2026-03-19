@@ -534,6 +534,31 @@ Başarılar dilerim! 🌟
         if self.goto_ders_var.get() not in dersler and dersler:
             self.goto_ders_var.set(dersler[0])
 
+    def resolve_visual_path(self, raw_path: str, year: int) -> str:
+        """Görsel için göreli/tam yolu uygulamadaki gerçek dosya yoluna çevirir."""
+        cleaned = raw_path.strip().rstrip(']').strip()
+        if cleaned.startswith('[RESIM:'):
+            cleaned = cleaned.split(':', 1)[1].strip()
+
+        cleaned = cleaned.replace('/', os.sep).replace('\\', os.sep)
+        base_dir = r"C:\Users\osman\Desktop\OSYM"
+        filename = os.path.basename(cleaned)
+
+        candidates = []
+        if os.path.isabs(cleaned):
+            candidates.append(os.path.normpath(cleaned))
+        else:
+            candidates.append(os.path.normpath(os.path.join(base_dir, cleaned)))
+            candidates.append(os.path.normpath(os.path.join(base_dir, "Gorseller", str(year), filename)))
+            candidates.append(os.path.normpath(os.path.join(base_dir, "Gorseller", f"{year} ihl", filename)))
+            candidates.append(os.path.normpath(os.path.join(base_dir, "Gorseller", f"{year} IHL", filename)))
+
+        for candidate in candidates:
+            if os.path.exists(candidate):
+                return candidate
+
+        return candidates[0] if candidates else cleaned
+
     def parse_questions_from_file(self, file_path: str, year: int, subject: str = "DKAB") -> List[Dict]:
         """Dosyadan soruları parse eder"""
         questions = []
@@ -582,6 +607,9 @@ Başarılar dilerim! 🌟
                         soru_no = int(soru_no_str)
                     except ValueError:
                         soru_no = None
+                elif line.startswith('[RESIM:'):
+                    gorsel_var = True
+                    gorsel_dosyalari.append(self.resolve_visual_path(line, year))
                 elif line and not line.startswith('A)') and not line.startswith('B)') and not line.startswith('C)') and not line.startswith('D)') and not line.startswith('E)') and not line.startswith('Doğru Cevap:') and not line.startswith('Dogru Cevap:') and not line.startswith('DoÄŸru Cevap:') and not line.startswith('Do?ru Cevap:') and not line.startswith('Do??ru Cevap:') and not line.startswith('Açıklama:') and not line.startswith('Aciklama:') and not line.startswith('AÃ§Ä±klama:') and not line.startswith('A??klama:') and not line.startswith('A????klama:') and not line.startswith('Görsel') and not line.startswith('Gorsel') and not line.startswith('GÃ¶rsel') and not line.startswith('G?rsel') and not line.startswith('G??rsel') and not line.startswith('Dosya:') and not line.startswith('Konum:') and soru_no and not line.startswith('KONU:') and not line.startswith('YIL:') and not line.startswith('DERS:'):
                     soru_metni.append(line)
                 elif line.startswith('A)'):
@@ -610,7 +638,7 @@ Başarılar dilerim! 🌟
                     elif 'Dosya:' in line: dosya_adi = line.split('Dosya:')[1].strip()
                     
                     if dosya_adi:
-                        gorsel_dosyalari.append(f"C:\\Users\\osman\\Desktop\\OSYM\\Gorseller\\{year}\\{dosya_adi}")
+                        gorsel_dosyalari.append(self.resolve_visual_path(dosya_adi, year))
                 
                 i += 1
             
@@ -1314,12 +1342,19 @@ Başarılar dilerim! 🌟
             return
         try:
             year = int(self.goto_year_var.get())
+            ders = self.goto_ders_var.get()
             q_no = int(self.goto_q_var.get())
         except ValueError:
             messagebox.showwarning("Uyarı", "Geçerli bir yıl ve soru numarası girin!")
             return
 
-        matches = [q for q in self.questions if q['yil'] == year and q['soru_no'] == q_no]
+        filtered_questions = [q for q in self.questions if q['yil'] == year and q['ders'] == ders]
+        matches = [q for q in filtered_questions if q['soru_no'] == q_no]
+        if not matches and filtered_questions:
+            nums = sorted(set(q['soru_no'] for q in filtered_questions))
+            messagebox.showwarning("UyarÄ±", f"{ders} {year} yÄ±lÄ± {q_no}. soru bulunamadÄ±!\n"
+                                            f"Bu ders/yÄ±l iÃ§in yÃ¼klÃ¼ sorular: {nums}")
+            return
         if not matches:
             messagebox.showwarning("Uyarı", f"{year} yılı {q_no}. soru bulunamadı!\n"
                                             f"Bu yıla ait yüklü sorular: "
