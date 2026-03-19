@@ -434,6 +434,12 @@ class ModernDKABQuiz:
                                       width=5, font=('Segoe UI', 8))
         self.num_spinbox.pack(side=tk.LEFT)
         
+        self.max_btn = tk.Button(num_frame, text="MAX", font=('Segoe UI', 7, 'bold'),
+                                bg=self.colors.get('accent', '#3498db'), fg='white',
+                                relief=tk.FLAT, cursor="hand2",
+                                command=lambda: self.num_var.set(str(int(float(self.num_spinbox.cget('to'))))))
+        self.max_btn.pack(side=tk.LEFT, padx=(5, 0))
+        
         # Start button
         self.start_button = self.create_button(settings_card, "🚀 BAŞLAT", 
                                               self.start_quiz, self.colors['success'])
