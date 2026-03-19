@@ -2302,7 +2302,7 @@ Başarılar dilerim! 🌟
     
     def show_results(self):
         self.current_view = "results"
-        """Sonuçları gösterir"""
+        """Sonu?lar? g?sterir - show_review_screen ile ayn? stil"""
         self._store_current_question_time()
         if self.test_start_time is not None:
             self.total_elapsed_seconds = max(0, int(time.monotonic() - self.test_start_time))
@@ -2310,36 +2310,15 @@ Başarılar dilerim! 🌟
         self._stop_elapsed_tracking()
         self.remaining_seconds = 0
         self._set_status_ready()
-        # Clear main content
+
         for widget in self.main_content.winfo_children():
             widget.destroy()
-        
-        # Results card
-        results_card = self.create_card(self.main_content, "🎯 TEST SONUÇLARI")
+
+        results_card = self.create_card(self.main_content, "?? TEST DE?ERLEND?RME")
         results_card.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
-        
-        # Scrollable container for results
-        canvas = tk.Canvas(results_card, bg=self.colors['card'], highlightthickness=0)
-        scrollbar = ttk.Scrollbar(results_card, orient="vertical", command=canvas.yview, style="Modern.Vertical.TScrollbar")
-        canvas.configure(yscrollcommand=scrollbar.set)
-        scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
-        canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
-        content_frame = tk.Frame(canvas, bg=self.colors['card'])
-        win_id = canvas.create_window((0, 0), window=content_frame, anchor="nw")
-
-        def _on_frame_configure(e):
-            canvas.configure(scrollregion=canvas.bbox("all"))
-        def _on_canvas_configure(e):
-            canvas.itemconfig(win_id, width=e.width)
-        content_frame.bind("<Configure>", _on_frame_configure)
-        canvas.bind("<Configure>", _on_canvas_configure)
-        
-        # Mouse wheel scroll
-        def _on_mousewheel(e):
-            try: canvas.yview_scroll(int(-1 * (e.delta / 120)), "units")
-            except: pass
-        canvas.bind_all("<MouseWheel>", _on_mousewheel)
+        content_frame = tk.Frame(results_card, bg=self.colors['card'])
+        content_frame.pack(fill=tk.BOTH, expand=True, padx=20, pady=20)
 
         self.score = sum(
             1
@@ -2350,117 +2329,102 @@ Başarılar dilerim! 🌟
                 and item['question']['ders'] == q['ders']
                 and item['selected'] == q['dogru_cevap'])
         )
-        
-        # Score display
-        score_frame = tk.Frame(content_frame, bg=self.colors['primary'], relief=tk.RIDGE, bd=3)
-        score_frame.pack(fill=tk.X, pady=(10, 12), padx=10)
-        
-        score_text = f"{self.score}/{self.total_questions}"
-        percentage = (self.score / self.total_questions) * 100 if self.total_questions else 0.0
-        
-        tk.Label(score_frame, text=score_text, 
-                font=('Segoe UI', 38, 'bold'), bg=self.colors['primary'], fg=self.colors['text']).pack(padx=18, pady=(10, 4))
-        
-        tk.Label(score_frame, text=f"Başarı Oranı: %{percentage:.1f}", 
-                font=self.fonts['body'], bg=self.colors['primary'], fg=self.colors['text']).pack(pady=(0, 4))
-        
-        tk.Label(score_frame,
-                 text=f"Toplam Süre: {self._format_seconds(self.total_elapsed_seconds)}",
-                 font=self.fonts['small'], bg=self.colors['primary'], fg=self.colors['text_secondary']).pack(pady=(0, 10))
 
-        # Message
-        if percentage >= 80:
-            message = "🎉 MÜKEMMEL! ÇOK BAŞARILI!"
-            color = self.colors['success']
-        elif percentage >= 60:
-            message = "👏 İYİ! BAŞARILI, DEVAM ET!"
-            color = self.colors['success']
-        elif percentage >= 40:
-            message = "📚 ORTA! DAHA FAZLA ÇALIŞMALISIN!"
-            color = self.colors['warning']
-        else:
-            message = "💪 ÇALIŞMAN GEREKİYOR! VAZGEÇME!"
-            color = self.colors['danger']
-        
-        message_frame = tk.Frame(content_frame, bg=color, relief=tk.RIDGE, bd=2)
-        message_frame.pack(fill=tk.X, pady=(0, 12), padx=10)
-        
-        tk.Label(message_frame, text=message, 
-                font=self.fonts['header'], bg=color, fg=self.colors['text']).pack(pady=15)
-        
-        # --- DETAILED BREAKDOWN ---
-        breakdown_label = tk.Label(content_frame, text="📋 SORU DETAYLARI", 
-                                  font=self.fonts['body'], bg=self.colors['card'], fg=self.colors['text'])
-        breakdown_label.pack(pady=(8, 6))
-        
-        # Get answers from history
-        answered_data = []
-        for q in self.quiz_questions:
-            status = "İşaretlenmedi"
+        percentage = (self.score / self.total_questions) * 100 if self.total_questions else 0.0
+
+        score_frame = tk.Frame(content_frame, bg=self.colors['primary'], relief=tk.RIDGE, bd=2)
+        score_frame.pack(fill=tk.X, pady=(0, 15))
+
+        tk.Label(
+            score_frame,
+            text=f"SKOR: {self.score}/{self.total_questions} (%{percentage:.1f})",
+            font=self.fonts['header'],
+            bg=self.colors['primary'],
+            fg=self.colors['text']
+        ).pack(pady=15)
+
+        tk.Label(
+            score_frame,
+            text=f"Toplam S?re: {self._format_seconds(self.total_elapsed_seconds)}",
+            font=self.fonts['small'],
+            bg=self.colors['primary'],
+            fg=self.colors['text_secondary']
+        ).pack(pady=(0, 12))
+
+        review_text = tk.Text(
+            content_frame,
+            font=self.fonts['body'],
+            bg=self.colors['card'],
+            fg=self.colors['text'],
+            wrap=tk.WORD,
+            height=15,
+            relief=tk.FLAT,
+            padx=15,
+            pady=15
+        )
+        review_text.pack(fill=tk.BOTH, expand=True, pady=(0, 15))
+
+        review_content = "SORU DE?ERLEND?RMES?:\n" + "=" * 50 + "\n\n"
+
+        for i, q in enumerate(self.quiz_questions, 1):
+            status = "??aretlenmedi"
             selected_txt = "N/A"
             correct_txt = q['siklar'].get(q['dogru_cevap'], 'N/A')
             is_correct = False
-            
-            # Find in history
+            elapsed = self.question_times.get(self._question_key(q), 0)
+
             for item in self.test_history:
-                if (item['question']['yil'] == q['yil'] and 
-                    item['question']['soru_no'] == q['soru_no'] and
-                    item['question']['ders'] == q['ders']):
+                if (
+                    item['question']['yil'] == q['yil']
+                    and item['question']['soru_no'] == q['soru_no']
+                    and item['question']['ders'] == q['ders']
+                ):
                     selected_txt = q['siklar'].get(item['selected'], 'N/A')
                     is_correct = (item['selected'] == q['dogru_cevap'])
-                    status = "✅ DOĞRU" if is_correct else "❌ YANLIŞ"
+                    status = "? DO?RU" if is_correct else "? YANLI?"
                     break
-            
-            answered_data.append({
-                'q': q,
-                'status': status,
-                'is_correct': is_correct,
-                'selected': selected_txt,
-                'correct': correct_txt,
-                'elapsed': self.question_times.get(self._question_key(q), 0)
-            })
 
-        # List questions
-        for i, data in enumerate(answered_data, 1):
-            q = data['q']
-            row_bg = self.colors['primary'] if i % 2 == 0 else self.colors['card']
-            q_frame = tk.Frame(content_frame, bg=row_bg, relief=tk.RIDGE, bd=1)
-            q_frame.pack(fill=tk.X, padx=10, pady=2)
+            konu_display = (
+                f", Konu: {q['konu']}"
+                if q.get('konu') and q['konu'] != q['ders'] else ""
+            )
 
-            top_row = tk.Frame(q_frame, bg=row_bg)
-            top_row.pack(fill=tk.X, padx=10, pady=(8, 2))
+            review_content += (
+                f"Soru {i} (S?nav: {q['ders']}, Y?l: {q['yil']}, "
+                f"No: {q['soru_no']}{konu_display}) - {status}\n"
+            )
+            review_content += f"Soru: {q['soru_metni'][:80]}...\n"
+            review_content += f"Sizin cevab?n?z: {selected_txt}\n"
+            review_content += f"Do?ru cevap: {correct_txt}\n"
+            review_content += f"S?re: {self._format_seconds(elapsed)}\n"
 
-            status_color = self.colors['success'] if data['is_correct'] else self.colors['danger']
-            if data['status'] == "İşaretlenmedi":
-                status_color = self.colors['text_secondary']
+            if not is_correct and q.get('aciklama'):
+                review_content += f"A??klama: {q['aciklama'][:100]}...\n"
 
-            tk.Label(top_row, text=f"{i}. {q['ders']} {q['yil']} Soru {q['soru_no']}",
-                    font=('Segoe UI', 9, 'bold'), bg=row_bg, fg=self.colors['text']).pack(side=tk.LEFT, anchor=tk.W)
+            review_content += "-" * 50 + "\n\n"
 
-            info_bits = [data['status']]
-            if data['status'] != "İşaretlenmedi":
-                info_bits.append(f"Süre: {self._format_seconds(data['elapsed'])}")
-            tk.Label(top_row, text=" | ".join(info_bits),
-                    font=('Segoe UI', 8, 'bold'), bg=row_bg, fg=status_color).pack(side=tk.RIGHT, anchor=tk.E)
+        review_text.insert(tk.END, review_content)
+        review_text.config(state=tk.DISABLED)
 
-            if data['status'] != "İşaretlenmedi":
-                detail_text = f"Sizin: {data['selected'][:22]}...   Doğru: {data['correct'][:22]}..."
-                tk.Label(q_frame, text=detail_text, font=('Segoe UI', 8),
-                        bg=row_bg, fg=self.colors['text_secondary'],
-                        justify=tk.LEFT, anchor=tk.W, wraplength=760).pack(fill=tk.X, padx=10, pady=(0, 8))
-        
-        # Buttons
         button_frame = tk.Frame(content_frame, bg=self.colors['card'])
-        button_frame.pack(pady=30)
-        
-        new_test_btn = self.create_button(button_frame, "🔄 YENİ TEST", 
-                                          self.new_test, self.colors['success'])
+        button_frame.pack(fill=tk.X, pady=20)
+
+        new_test_btn = self.create_button(
+            button_frame,
+            "?? YEN? TEST",
+            self.new_test,
+            self.colors['success']
+        )
         new_test_btn.pack(side=tk.LEFT, padx=10, ipady=8)
-        
-        menu_btn = self.create_button(button_frame, "🏠 ANA MENÜ", 
-                                     self.show_welcome_screen, self.colors['text_secondary'])
+
+        menu_btn = self.create_button(
+            button_frame,
+            "?? ANA MEN?",
+            self.show_welcome_screen,
+            self.colors['text_secondary']
+        )
         menu_btn.pack(side=tk.LEFT, padx=10, ipady=8)
-    
+
     def new_test(self):
         """Yeni test başlatır"""
         self.start_quiz()
