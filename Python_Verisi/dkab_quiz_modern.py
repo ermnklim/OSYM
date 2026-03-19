@@ -1373,10 +1373,13 @@ Başarılar dilerim! 🌟
         card = self.create_card(
             self.main_content,
             f"📖  {question['ders']} {question['yil']} – Soru {question['soru_no']}")
-        card.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+        card.pack(fill=tk.X, padx=10, pady=10)
+
+        self.root.update_idletasks()
+        available_height = max(self.canvas.winfo_height() - 40, 500)
 
         # Scrollable container
-        canvas = tk.Canvas(card, bg=self.colors['card'], highlightthickness=0)
+        canvas = tk.Canvas(card, bg=self.colors['card'], highlightthickness=0, height=available_height)
         scrollbar = ttk.Scrollbar(card, orient="vertical", command=canvas.yview, style="Modern.Vertical.TScrollbar")
         canvas.configure(yscrollcommand=scrollbar.set)
         scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
