@@ -1167,22 +1167,35 @@ Başarılar dilerim! 🌟
             return
         
         question = self.quiz_questions[self.current_index]
-        dogru_sik = self.option_map[selected]
+        user_choice_letter = self.option_map[selected]
         
-        # Store the answer for later review
+        # Store the answer for later review (Update if exists)
         if not hasattr(self, 'user_answers'):
             self.user_answers = []
         
-        self.user_answers.append({
+        existing_ans = None
+        for ans in self.user_answers:
+            if (ans['question']['yil'] == question['yil'] and 
+                ans['question']['soru_no'] == question['soru_no'] and
+                ans['question']['ders'] == question['ders']):
+                existing_ans = ans
+                break
+        
+        answer_data = {
             'question': question,
-            'selected': selected,
-            'correct': dogru_sik,
-            'is_correct': dogru_sik == question['dogru_cevap']
-        })
+            'selected_option': user_choice_letter,
+            'correct_option': question['dogru_cevap'],
+            'is_correct': user_choice_letter == question['dogru_cevap']
+        }
+        
+        if existing_ans:
+            existing_ans.update(answer_data)
+        else:
+            self.user_answers.append(answer_data)
         
         # Color the selected option
         selected_button = self.option_buttons[selected]
-        if dogru_sik == question['dogru_cevap']:
+        if user_choice_letter == question['dogru_cevap']:
             selected_button.config(bg=self.colors['success'], fg='white')
             self.score += 1
         else:
@@ -1240,7 +1253,7 @@ Başarılar dilerim! 🌟
             q = answer['question']
             status = "✅ DOĞRU" if answer['is_correct'] else "❌ YANLIŞ"
             
-            review_content += f"Soru {i} (Yıl: {q['yil']}, No: {q['soru_no']}) - {status}\n"
+            review_content += f"Soru {i} (Sınav: {q['ders']}, Yıl: {q['yil']}, No: {q['soru_no']}) - {status}\n"
             review_content += f"Soru: {q['soru_metni'][:80]}...\n"
             review_content += f"Sizin cevabınız: {q['siklar'].get(answer['selected_option'], 'N/A')}\n"
             review_content += f"Doğru cevap: {q['siklar'].get(answer['correct_option'], 'N/A')}\n"
