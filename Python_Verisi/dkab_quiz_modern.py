@@ -122,6 +122,9 @@ class ModernDKABQuiz:
             "konu": "Tüm konular",
             "mode": "Anında Cevap",
             "time_limit": "10",
+            "time_hours": "0",
+            "time_minutes": "10",
+            "time_seconds": "0",
             "order": "Rastgele",
             "num": "10",
             "goto_year": "2019",
@@ -149,7 +152,10 @@ class ModernDKABQuiz:
             "ders": self.ders_var.get(),
             "konu": self.konu_var.get(),
             "mode": self.mode_var.get(),
-            "time_limit": self.time_limit_var.get(),
+            "time_limit": self.time_minutes_var.get(),
+            "time_hours": self.time_hours_var.get(),
+            "time_minutes": self.time_minutes_var.get(),
+            "time_seconds": self.time_seconds_var.get(),
             "order": self.order_var.get(),
             "num": self.num_var.get(),
             "goto_year": self.goto_year_var.get(),
@@ -171,7 +177,9 @@ class ModernDKABQuiz:
             self.ders_var,
             self.konu_var,
             self.mode_var,
-            self.time_limit_var,
+            self.time_hours_var,
+            self.time_minutes_var,
+            self.time_seconds_var,
             self.order_var,
             self.num_var,
             self.goto_year_var,
@@ -188,7 +196,9 @@ class ModernDKABQuiz:
         self.ders_var.set(self.persisted_settings.get("ders", "Tüm dersler"))
         self.konu_var.set(self.persisted_settings.get("konu", "Tüm konular"))
         self.mode_var.set(self.persisted_settings.get("mode", "Anında Cevap"))
-        self.time_limit_var.set(self.persisted_settings.get("time_limit", "10"))
+        self.time_hours_var.set(self.persisted_settings.get("time_hours", "0"))
+        self.time_minutes_var.set(self.persisted_settings.get("time_minutes", self.persisted_settings.get("time_limit", "10")))
+        self.time_seconds_var.set(self.persisted_settings.get("time_seconds", "0"))
         self.order_var.set(self.persisted_settings.get("order", "Rastgele"))
         self.num_var.set(self.persisted_settings.get("num", "10"))
         self.goto_year_var.set(self.persisted_settings.get("goto_year", "2019"))
@@ -260,7 +270,9 @@ class ModernDKABQuiz:
         saved = {
             'year': getattr(self, 'year_var', None).get() if hasattr(self, 'year_var') else 'Tum yillar',
             'mode': getattr(self, 'mode_var', None).get() if hasattr(self, 'mode_var') else 'Aninda Cevap',
-            'time_limit': getattr(self, 'time_limit_var', None).get() if hasattr(self, 'time_limit_var') else '10',
+            'time_hours': getattr(self, 'time_hours_var', None).get() if hasattr(self, 'time_hours_var') else '0',
+            'time_minutes': getattr(self, 'time_minutes_var', None).get() if hasattr(self, 'time_minutes_var') else '10',
+            'time_seconds': getattr(self, 'time_seconds_var', None).get() if hasattr(self, 'time_seconds_var') else '0',
             'order': getattr(self, 'order_var', None).get() if hasattr(self, 'order_var') else 'Rastgele',
             'num': getattr(self, 'num_var', None).get() if hasattr(self, 'num_var') else '10',
             'ders': getattr(self, 'ders_var', None).get() if hasattr(self, 'ders_var') else 'Tüm dersler',
@@ -279,7 +291,9 @@ class ModernDKABQuiz:
         self.ders_var.set(saved['ders'])
         self.konu_var.set(saved['konu'])
         self.mode_var.set(saved['mode'])
-        self.time_limit_var.set(saved['time_limit'])
+        self.time_hours_var.set(saved['time_hours'])
+        self.time_minutes_var.set(saved['time_minutes'])
+        self.time_seconds_var.set(saved['time_seconds'])
         self.order_var.set(saved['order'])
         self.num_var.set(saved['num'])
         self.goto_year_var.set(saved['goto_year'])
@@ -431,13 +445,33 @@ class ModernDKABQuiz:
         self.mode_combo.pack(padx=5, pady=0, fill=tk.X)
         self.mode_combo.bind("<<ComboboxSelected>>", self.on_mode_changed)
 
-        tk.Label(settings_card, text="Süre (dk):", font=('Segoe UI', 8),
+        tk.Label(settings_card, text="Süre (s/dk/sn):", font=('Segoe UI', 8),
                 fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
 
-        self.time_limit_var = tk.StringVar(value="10")
-        self.time_spinbox = tk.Spinbox(settings_card, from_=1, to=180, textvariable=self.time_limit_var,
-                                       width=5, font=('Segoe UI', 8))
-        self.time_spinbox.pack(padx=5, pady=0, anchor=tk.W)
+        self.time_hours_var = tk.StringVar(value="0")
+        self.time_minutes_var = tk.StringVar(value="10")
+        self.time_seconds_var = tk.StringVar(value="0")
+
+        time_frame = tk.Frame(settings_card, bg=self.colors['card'])
+        time_frame.pack(padx=5, pady=0, anchor=tk.W)
+
+        self.time_hour_spinbox = tk.Spinbox(time_frame, from_=0, to=23, textvariable=self.time_hours_var,
+                                            width=3, font=('Segoe UI', 8), format="%02.0f")
+        self.time_hour_spinbox.pack(side=tk.LEFT)
+        tk.Label(time_frame, text="s", font=('Segoe UI', 8),
+                fg=self.colors['text'], bg=self.colors['card']).pack(side=tk.LEFT, padx=(2, 6))
+
+        self.time_minute_spinbox = tk.Spinbox(time_frame, from_=0, to=59, textvariable=self.time_minutes_var,
+                                              width=3, font=('Segoe UI', 8), format="%02.0f")
+        self.time_minute_spinbox.pack(side=tk.LEFT)
+        tk.Label(time_frame, text="dk", font=('Segoe UI', 8),
+                fg=self.colors['text'], bg=self.colors['card']).pack(side=tk.LEFT, padx=(2, 6))
+
+        self.time_second_spinbox = tk.Spinbox(time_frame, from_=0, to=59, textvariable=self.time_seconds_var,
+                                              width=3, font=('Segoe UI', 8), format="%02.0f")
+        self.time_second_spinbox.pack(side=tk.LEFT)
+        tk.Label(time_frame, text="sn", font=('Segoe UI', 8),
+                fg=self.colors['text'], bg=self.colors['card']).pack(side=tk.LEFT, padx=(2, 0))
 
         # Question order selection
         tk.Label(settings_card, text="Sıra:", font=('Segoe UI', 8), 
@@ -683,10 +717,10 @@ class ModernDKABQuiz:
             else:
                 self._set_status_ready()
 
-    def _start_countdown(self, minutes):
+    def _start_countdown(self, total_seconds):
         """Süreli test için geri sayımı başlatır."""
         self._stop_countdown()
-        self.remaining_seconds = max(0, int(minutes) * 60)
+        self.remaining_seconds = max(0, int(total_seconds))
         if self.remaining_seconds <= 0:
             self._finish_timed_quiz()
             return
@@ -719,13 +753,13 @@ class ModernDKABQuiz:
 
     def on_mode_changed(self, event=None):
         """Mod değiştiğinde süre alanını etkinleştirir veya devre dışı bırakır."""
-        if not hasattr(self, "time_spinbox"):
+        if not hasattr(self, "time_hour_spinbox"):
             return
 
-        if self.mode_var.get() == "Süreli":
-            self.time_spinbox.config(state="normal")
-        else:
-            self.time_spinbox.config(state="disabled")
+        spinbox_state = "normal" if self.mode_var.get() == "Süreli" else "disabled"
+        self.time_hour_spinbox.config(state=spinbox_state)
+        self.time_minute_spinbox.config(state=spinbox_state)
+        self.time_second_spinbox.config(state=spinbox_state)
         self._set_status_ready()
 
     def create_card(self, parent, title):
@@ -1460,14 +1494,20 @@ Başarılar dilerim! 🌟
 
         if self._is_timed_quiz():
             try:
-                minutes = int(self.time_limit_var.get())
+                hours = int(self.time_hours_var.get())
+                minutes = int(self.time_minutes_var.get())
+                seconds = int(self.time_seconds_var.get())
             except ValueError:
                 messagebox.showwarning("Uyarı", "Geçerli bir süre girin!")
                 return
-            if minutes < 1:
-                messagebox.showwarning("Uyarı", "Süre en az 1 dakika olmalı!")
+            if hours < 0 or minutes < 0 or seconds < 0:
+                messagebox.showwarning("Uyarı", "Süre alanları negatif olamaz!")
                 return
-            self._start_countdown(minutes)
+            total_seconds = hours * 3600 + minutes * 60 + seconds
+            if total_seconds <= 0:
+                messagebox.showwarning("Uyarı", "Süre 0 saniyeden büyük olmalı!")
+                return
+            self._start_countdown(total_seconds)
         else:
             self.remaining_seconds = 0
             self._set_status_ready()
