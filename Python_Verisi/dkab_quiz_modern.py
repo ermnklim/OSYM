@@ -110,6 +110,7 @@ class ModernDKABQuiz:
             "theme": "Gece Lacivert",
             "year": "Tüm yıllar",
             "ders": "DKAB",
+            "konu": "Tüm konular",
             "mode": "Anında Cevap",
             "order": "Rastgele",
             "num": "10",
@@ -136,6 +137,7 @@ class ModernDKABQuiz:
             "theme": self.theme_var.get(),
             "year": self.year_var.get(),
             "ders": self.ders_var.get(),
+            "konu": self.konu_var.get(),
             "mode": self.mode_var.get(),
             "order": self.order_var.get(),
             "num": self.num_var.get(),
@@ -156,6 +158,7 @@ class ModernDKABQuiz:
             self.theme_var,
             self.year_var,
             self.ders_var,
+            self.konu_var,
             self.mode_var,
             self.order_var,
             self.num_var,
@@ -171,6 +174,7 @@ class ModernDKABQuiz:
         self.theme_var.set(self.persisted_settings.get("theme", self.current_theme))
         self.year_var.set(self.persisted_settings.get("year", "Tüm yıllar"))
         self.ders_var.set(self.persisted_settings.get("ders", "DKAB"))
+        self.konu_var.set(self.persisted_settings.get("konu", "Tüm konular"))
         self.mode_var.set(self.persisted_settings.get("mode", "Anında Cevap"))
         self.order_var.set(self.persisted_settings.get("order", "Rastgele"))
         self.num_var.set(self.persisted_settings.get("num", "10"))
@@ -244,6 +248,7 @@ class ModernDKABQuiz:
             'order': getattr(self, 'order_var', None).get() if hasattr(self, 'order_var') else 'Rastgele',
             'num': getattr(self, 'num_var', None).get() if hasattr(self, 'num_var') else '10',
             'ders': getattr(self, 'ders_var', None).get() if hasattr(self, 'ders_var') else 'DKAB',
+            'konu': getattr(self, 'konu_var', None).get() if hasattr(self, 'konu_var') else 'Tüm konular',
             'goto_year': getattr(self, 'goto_year_var', None).get() if hasattr(self, 'goto_year_var') else '2019',
             'goto_ders': getattr(self, 'goto_ders_var', None).get() if hasattr(self, 'goto_ders_var') else 'DKAB',
             'goto_q': getattr(self, 'goto_q_var', None).get() if hasattr(self, 'goto_q_var') else '1',
@@ -256,6 +261,7 @@ class ModernDKABQuiz:
 
         self.year_var.set(saved['year'])
         self.ders_var.set(saved['ders'])
+        self.konu_var.set(saved['konu'])
         self.mode_var.set(saved['mode'])
         self.order_var.set(saved['order'])
         self.num_var.set(saved['num'])
@@ -374,7 +380,7 @@ class ModernDKABQuiz:
         self.year_combo = ttk.Combobox(settings_card, textvariable=self.year_var, 
                                        values=years, state="readonly", width=14, style='Modern.TCombobox')
         self.year_combo.pack(padx=5, pady=0, fill=tk.X)
-        self.year_combo.bind("<<ComboboxSelected>>", self.update_question_limit)
+        self.year_combo.bind("<<ComboboxSelected>>", self.on_ders_changed)
 
         # Subject selection
         tk.Label(settings_card, text="Ders:", font=('Segoe UI', 8),
@@ -384,7 +390,17 @@ class ModernDKABQuiz:
         self.ders_combo = ttk.Combobox(settings_card, textvariable=self.ders_var,
                                        values=self.available_subjects, state="readonly", width=14, style='Modern.TCombobox')
         self.ders_combo.pack(padx=5, pady=0, fill=tk.X)
-        self.ders_combo.bind("<<ComboboxSelected>>", self.update_question_limit)
+        self.ders_combo.bind("<<ComboboxSelected>>", self.on_ders_changed)
+
+        # Konu selection
+        tk.Label(settings_card, text="Konu:", font=('Segoe UI', 8),
+                fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
+
+        self.konu_var = tk.StringVar(value="Tüm konular")
+        self.konu_combo = ttk.Combobox(settings_card, textvariable=self.konu_var,
+                                       values=["Tüm konular"], state="readonly", width=14, style='Modern.TCombobox')
+        self.konu_combo.pack(padx=5, pady=0, fill=tk.X)
+        self.konu_combo.bind("<<ComboboxSelected>>", self.update_question_limit)
         
         # Test mode selection
         tk.Label(settings_card, text="Mod:", font=('Segoe UI', 8), 
@@ -678,6 +694,38 @@ Başarılar dilerim! 🌟
 
         self.update_question_limit()
         self._update_goto_question_list()
+        self._update_konu_list()
+
+    def on_ders_changed(self, event=None):
+        """Ders değiştiğinde konu listesini ve soru limitini günceller."""
+        self._update_konu_list()
+        self.update_question_limit()
+
+    def _update_konu_list(self, event=None):
+        """Seçilen yıl ve derse göre mevcut konuları konu dropdown'ına yükler."""
+        if not self.questions or not hasattr(self, 'konu_combo'):
+            return
+
+        selected_year = self.year_var.get()
+        selected_ders = self.ders_var.get()
+
+        qs = self.questions
+        if selected_year != "Tüm yıllar":
+            try:
+                year = int(selected_year)
+                qs = [q for q in qs if q['yil'] == year]
+            except Exception:
+                pass
+        if selected_ders:
+            qs = [q for q in qs if q['ders'] == selected_ders]
+
+        konular = sorted(set(q['konu'] for q in qs if q.get('konu')))
+        values = ["Tüm konular"] + konular
+        self.konu_combo['values'] = values
+
+        current = self.konu_var.get()
+        if current not in values:
+            self.konu_var.set("Tüm konular")
 
     def resolve_visual_path(self, raw_path: str, year: int) -> str:
         """Görsel için göreli/tam yolu uygulamadaki gerçek dosya yoluna çevirir."""
@@ -739,6 +787,7 @@ Başarılar dilerim! 🌟
             options = {}
             dogru_cevap = None
             aciklama = ""
+            konu = ""
             gorsel_var = False
             gorsel_dosyalari = []
             
@@ -755,7 +804,9 @@ Başarılar dilerim! 🌟
                 elif line.startswith('[RESIM:'):
                     gorsel_var = True
                     gorsel_dosyalari.append(self.resolve_visual_path(line, year))
-                elif line and not line.startswith('A)') and not line.startswith('B)') and not line.startswith('C)') and not line.startswith('D)') and not line.startswith('E)') and not line.startswith('Doğru Cevap:') and not line.startswith('Dogru Cevap:') and not line.startswith('DoÄŸru Cevap:') and not line.startswith('Do?ru Cevap:') and not line.startswith('Do??ru Cevap:') and not line.startswith('Açıklama:') and not line.startswith('Aciklama:') and not line.startswith('AÃ§Ä±klama:') and not line.startswith('A??klama:') and not line.startswith('A????klama:') and not line.startswith('Görsel') and not line.startswith('Gorsel') and not line.startswith('GÃ¶rsel') and not line.startswith('G?rsel') and not line.startswith('G??rsel') and not line.startswith('Dosya:') and not line.startswith('Konum:') and soru_no and not line.startswith('KONU:') and not line.startswith('YIL:') and not line.startswith('DERS:'):
+                elif line.startswith('KONU:'):
+                    konu = line.split(':', 1)[1].strip()
+                elif line and not line.startswith('A)') and not line.startswith('B)') and not line.startswith('C)') and not line.startswith('D)') and not line.startswith('E)') and not line.startswith('Doğru Cevap:') and not line.startswith('Dogru Cevap:') and not line.startswith('DoÄŸru Cevap:') and not line.startswith('Do?ru Cevap:') and not line.startswith('Do??ru Cevap:') and not line.startswith('Açıklama:') and not line.startswith('Aciklama:') and not line.startswith('AÃ§Ä±klama:') and not line.startswith('A??klama:') and not line.startswith('A????klama:') and not line.startswith('Görsel') and not line.startswith('Gorsel') and not line.startswith('GÃ¶rsel') and not line.startswith('G?rsel') and not line.startswith('G??rsel') and not line.startswith('Dosya:') and not line.startswith('Konum:') and soru_no and not line.startswith('YIL:') and not line.startswith('DERS:'):
                     soru_metni.append(line)
                 elif line.startswith('A)'):
                     options['A'] = line[2:].strip()
@@ -791,7 +842,7 @@ Başarılar dilerim! 🌟
                 return {
                     "yil": year,
                     "ders": subject,
-                    "konu": subject,
+                    "konu": konu if konu else subject,
                     "soru_no": soru_no,
                     "soru_metni": '\n'.join(soru_metni).strip(),
                     "siklar": options,
@@ -807,8 +858,8 @@ Başarılar dilerim! 🌟
             
         return None
 
-    def get_question_limit_for_year(self, selected_year, selected_ders):
-        """Yıla ve derse göre maksimum soru sayısını döner."""
+    def get_question_limit_for_year(self, selected_year, selected_ders, selected_konu=None):
+        """Yıla, derse ve konuya göre maksimum soru sayısını döner."""
         if self.questions:
             qs = self.questions
             if selected_year != "Tüm yıllar":
@@ -820,15 +871,19 @@ Başarılar dilerim! 🌟
             
             if selected_ders:
                 qs = [q for q in qs if q['ders'] == selected_ders]
+
+            if selected_konu and selected_konu != "Tüm konular":
+                qs = [q for q in qs if q.get('konu') == selected_konu]
             
             return len(qs) if qs else 75
         return 75
 
     def update_question_limit(self, event=None):
-        """Seçilen yıla göre soru limitini günceller."""
+        """Seçilen yıla, derse ve konuya göre soru limitini günceller."""
         selected_year = self.year_var.get()
         selected_ders = self.ders_var.get()
-        max_questions = self.get_question_limit_for_year(selected_year, selected_ders)
+        selected_konu = self.konu_var.get() if hasattr(self, 'konu_var') else "Tüm konular"
+        max_questions = self.get_question_limit_for_year(selected_year, selected_ders, selected_konu)
         self.num_spinbox.config(to=max_questions)
 
         try:
@@ -881,7 +936,8 @@ Başarılar dilerim! 🌟
             num_questions = int(self.num_var.get())
             selected_year = self.year_var.get()
             selected_ders = self.ders_var.get()
-            max_questions = self.get_question_limit_for_year(selected_year, selected_ders)
+            selected_konu = self.konu_var.get() if hasattr(self, 'konu_var') else "Tüm konular"
+            max_questions = self.get_question_limit_for_year(selected_year, selected_ders, selected_konu)
             if num_questions < 1 or num_questions > max_questions:
                 messagebox.showwarning("Uyarı", f"Soru sayısı 1-{max_questions} arasında olmalı!")
                 return
@@ -889,10 +945,11 @@ Başarılar dilerim! 🌟
             messagebox.showwarning("Uyarı", "Geçerli bir soru sayısı girin!")
             return
         
-        # Filter questions by year and subject if selected
+        # Filter questions by year, subject, and konu if selected
         available_questions = self.questions
         selected_year = self.year_var.get()
         selected_ders = self.ders_var.get()
+        selected_konu = self.konu_var.get() if hasattr(self, 'konu_var') else "Tüm konular"
         
         if selected_year != "Tüm yıllar":
             year = int(selected_year)
@@ -900,6 +957,9 @@ Başarılar dilerim! 🌟
         
         if selected_ders:
             available_questions = [q for q in available_questions if q['ders'] == selected_ders]
+
+        if selected_konu and selected_konu != "Tüm konular":
+            available_questions = [q for q in available_questions if q.get('konu') == selected_konu]
             
         if not available_questions:
             messagebox.showwarning("Uyarı", "Seçilen kriterlere uygun soru bulunamadı!")
@@ -956,8 +1016,9 @@ Başarılar dilerim! 🌟
         progress_frame = tk.Frame(content_frame, bg=self.colors['card'])
         progress_frame.pack(fill=tk.X, pady=(0, 15))
         
+        konu_display = f" | Konu: {question['konu']}" if question.get('konu') and question['konu'] != question['ders'] else ""
         progress_text = tk.Label(progress_frame, 
-                                text=f"İlerleme: {self.current_index + 1}/{self.total_questions} | Sınav: {question['ders']} | Yıl: {question['yil']} | No: {question['soru_no']}", 
+                                text=f"İlerleme: {self.current_index + 1}/{self.total_questions} | Sınav: {question['ders']} | Yıl: {question['yil']} | No: {question['soru_no']}{konu_display}", 
                                 font=self.fonts['small'], 
                                 fg=self.colors['text_secondary'], bg=self.colors['card'])
         progress_text.pack(side=tk.LEFT)
@@ -1442,7 +1503,8 @@ Başarılar dilerim! 🌟
             q = answer['question']
             status = "✅ DOĞRU" if answer['is_correct'] else "❌ YANLIŞ"
             
-            review_content += f"Soru {i} (Sınav: {q['ders']}, Yıl: {q['yil']}, No: {q['soru_no']}) - {status}\n"
+            konu_display = f", Konu: {q['konu']}" if q.get('konu') and q['konu'] != q['ders'] else ""
+            review_content += f"Soru {i} (Sınav: {q['ders']}, Yıl: {q['yil']}, No: {q['soru_no']}{konu_display}) - {status}\n"
             review_content += f"Soru: {q['soru_metni'][:80]}...\n"
             review_content += f"Sizin cevabınız: {q['siklar'].get(answer['selected_option'], 'N/A')}\n"
             review_content += f"Doğru cevap: {q['siklar'].get(answer['correct_option'], 'N/A')}\n"
@@ -1553,8 +1615,9 @@ Başarılar dilerim! 🌟
         # --- Meta bilgi ---
         meta_frame = tk.Frame(inner, bg=self.colors['primary'], relief=tk.RIDGE, bd=1)
         meta_frame.pack(fill=tk.X, **pad)
+        konu_display = f"   |   📖 Konu: {question['konu']}" if question.get('konu') and question['konu'] != question['ders'] else ""
         tk.Label(meta_frame,
-                 text=f"📅 Sınav: {question['ders']}   |   📅 Yıl: {question['yil']}   |   🔢 Soru No: {question['soru_no']}",
+                 text=f"📅 Sınav: {question['ders']}   |   📅 Yıl: {question['yil']}   |   🔢 Soru No: {question['soru_no']}{konu_display}",
                  font=('Segoe UI', 10, 'bold'),
                  bg=self.colors['primary'], fg=self.colors['text']).pack(pady=8)
 

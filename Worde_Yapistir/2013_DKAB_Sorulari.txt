@@ -1,6 +1,7 @@
 DERS: DKAB
-KONU: İslam öncesi Arap toplumu ve Emeviler Dönemi toplumsal yapısı
 YIL: 2013
+
+KONU: İslam Tarihi / Siyer
 
 Soru 1:
 İslam öncesi Arap toplumu; hürler, köleler ve azatlılar şeklinde üç sınıftan oluşmaktaydı. Azatlılar, hürler ile köleler arasında bir statüye sahipti. Bir köle, sahibi tarafından azat edilirse azat edenin azatlısı olur ve onun kabilesinin bir üyesi sayılırdı. Bunlar, köleler gibi alınıp satılmazlar, fakat hürlerin haklarına da sahip olamazlardı. Bu toplumsal statü, Emeviler Dönemi'nde daha da genelleştirilmiş ve Arap olmayan yeni Müslümanları tanımlamak için kullanılmıştır.
@@ -17,6 +18,8 @@ Doğru Cevap: D
 
 ---SONRAKİ SORU---
 
+KONU: İslam Tarihi / Siyer
+
 Soru 2:
 Müslümanların Medine'ye hicreti sonrasında Arap kabileleri, Hz. Muhammet'ten kendilerine yeni dini anlatmaları için temsilciler gönderilmesini istiyordu. Adal ve Kâre kabileleri de bunlardandı. Hz. Muhammet onlara, aralarında Hubeyb b. Adiy'in de bulunduğu on sahabiden oluşan bir heyet gönderdi. Ancak yolda Lihyaoğulları'ndan silahlı bir birlik yollarını kesti ve Mekkelilere teslim etmek üzere onları esir almak istedi. Sahabiler buna karşı çıktı ve sonrasında meydana gelen çarpışmada çoğu şehit oldu.
 
@@ -31,6 +34,8 @@ E) Evtas
 Doğru Cevap: D
 
 ---SONRAKİ SORU---
+
+KONU: İslam Tarihi / Siyer
 
 Soru 3:
 Hz. Muhammet'in en sevdiği insanlar arasında yer alan Hz. Osman, onun iki kızıyla evlenme ayrıcalğını yaşamıştır. İlk eşi Rukiyye ile hicretten önce evlenmiş, Habeşistan hicretine onunla birlikte katılmıştır. Rukiyye, Bedir seferi sırasında hastalanıp vefat edince, Hz. Osman, bir yıl sonra Hz. Muhammet'in diğer kızı Ümmügülsüm'le evlenmiştir.
@@ -47,6 +52,8 @@ Doğru Cevap: B
 
 ---SONRAKİ SORU---
 
+KONU: Hadis
+
 Soru 4:
 Hz. Peygamber'e nispet edilen ve senedinin başından sonuna kadar sika raviler tarafından muttasıl olarak rivayet edilen hadis türü aşağıdakilerden hangisidir?
 
@@ -59,6 +66,8 @@ E) Mevkuf
 Doğru Cevap: C
 
 ---SONRAKİ SORU---
+
+KONU: Hadis
 
 Soru 5:
 Hafızalarda ve değişik yazı malzemeleri üzerinde dağınık hâlde bulunan hadis metinlerinin, herhangi bir sınıflandırmaya tabi tutulmaksızın bir araya getirilmesi aşağıdakilerden hangisi ile ifade edilmiştir?
@@ -73,6 +82,8 @@ Doğru Cevap: D
 
 ---SONRAKİ SORU---
 
+KONU: Hadis
+
 Soru 6:
 Hadislerin, sahabi adları altında sıralanması suretiyle oluşturulan eserler aşağıdakilerden hangisidir?
 
@@ -85,6 +96,8 @@ E) Zevaidler
 Doğru Cevap: B
 
 ---SONRAKİ SORU---
+
+KONU: Kur'an-ı Kerim ve Tecvid
 
 Soru 7:
 Kur'an-ı Kerim'in bir cüzünün dörtte birini oluşturan beş sayfalık bölümü, aşağıdakilerden hangisiyle ifade edilmektedir?
@@ -99,6 +112,8 @@ Doğru Cevap: A
 
 ---SONRAKİ SORU---
 
+KONU: Tefsir
+
 Soru 8:
 Sureler isimlerini, ihtiva ettikleri farklı bir kelimeden veya ayetlere yansıyan herhangi bir içerikten almıştır. Buna göre, aşağıdaki eşleştirmelerden hangisi yanlıştır?
 
@@ -111,6 +126,8 @@ E) Tekâsür – Çoklukla övünmenin eleştirilmesi
 Doğru Cevap: C
 
 ---SONRAKİ SORU---
+
+KONU: Tefsir
 
 Soru 9:
 Kur'an-ı Kerim, indiği dönemde konuşulan ortak dili merkeze almakla birlikte kimi zaman yaygın olarak kullanılmayan Arapça kelimelere yer vermiş, kimi zaman da kullanılmakta olan kelimelere yeni anlamlar yüklemiştir. Örneğin "kâfir" kelimesi sözlükte bir şeyin üzerini örten ve gizleyen anlamına gelir. Araplar, gündüzü örtüp gizlediği için geceye ve tohumun üzerini toprakla örttüğü için çiftçiye kâfir demişlerdir. Kur'an'da bu kelimeye yeni bir anlam yüklenmiş; Allah'ı, elçisini ve ona indirilen vahyi inkâr edenler, gerçeği bilinçli bir şekilde gizlemeye çalıştıkları için kâfir olarak isimlendirilmişlerdir.
@@ -127,6 +144,8 @@ Doğru Cevap: E
 
 ---SONRAKİ SORU---
 
+KONU: Tefsir
+
 Soru 10:
 Bir ayetin, kendisinden önceki veya sonraki ayetlerle oluşturduğu anlam bütünlüğü aşağıdakilerden hangisiyle ifade edilmektedir?
 
@@ -139,6 +158,8 @@ E) Mecaz
 Doğru Cevap: A
 
 ---SONRAKİ SORU---
+
+KONU: Tefsir
 
 Soru 11:
 Bir ayetin nerede, ne zaman, hangi olay veya kimler hakkında indirildiğini bilmek; ayetin ilahi maksada uygun şekilde yorumlanabilmesi, fıkhi hükümlerin çıkarılabilmesi, ayet ve sureler arasındaki uyumun tespit edilebilmesi bakımından önemlidir.
@@ -155,6 +176,8 @@ Doğru Cevap: B
 
 ---SONRAKİ SORU---
 
+KONU: Tefsir
+
 Soru 12:
 Kur'an-ı Kerim'in; ağırlıklı olarak Hz. Muhammet'ten, sahabeden ve tabiundan nakledilen sözlerle açıklandığı tefsirler, rivayet tefsirleri olarak tanımlanmıştır.
 
@@ -169,6 +192,8 @@ E) Süyuti – ed-Dürrü'l-Mensur
 Doğru Cevap: E
 
 ---SONRAKİ SORU---
+
+KONU: Kelam / Akaid
 
 Soru 13:
 Allah'ın zatına nispet edilen ve onun ne olduğunu ifade eden sıfatlar, sübuti sıfatlar olarak isimlendirilmiştir. Bu sıfatların sayısı Eşarilere göre yedi, Maturidilere göre ise sekizdir.
@@ -185,6 +210,8 @@ Doğru Cevap: B
 
 ---SONRAKİ SORU---
 
+KONU: Kelam / Akaid
+
 Soru 14:
 Allah'ın her türlü eksiklikten ve noksanlıktan uzak olduğunu ifade etmek için kullanılan terim aşağıdakilerden hangisidir?
 
@@ -198,6 +225,8 @@ Doğru Cevap: C
 
 ---SONRAKİ SORU---
 
+KONU: Kelam / Akaid
+
 Soru 15:
 İki tanrı varsayımına dayanarak Allah'ın birliğini temellendirmeye çalışan ve İslam kelamcıları tarafından Kur'an'dan hareketle geliştirilen delil aşağıdakilerden hangisidir?
 
@@ -210,6 +239,8 @@ E) Gaye ve Nizam
 Doğru Cevap: A
 
 ---SONRAKİ SORU---
+
+KONU: Kelam / Akaid
 
 Soru 16:
 Maturidi; haram ve helali, kendisinden (li-zatihi) veya başkasından (li-gayrihi) kaynaklanan nitelikler üzerinden değerlendirir. Ona göre zulüm, li-zatihi haramdır ve her ne surette olursa olsun kötüdür. Domuz etinin yenilmesindeki haramlık ise Allah'ın yasaklaması sebebiyle li-gayrihi bir durumdur. Li-zatihi olanlar, evrensel niteliktedir ve koşullara göre değişmez; bu yüzden akılla bilinebilir. Li-gayrihi olanlar ise çok sayıda alternatifin söz konusu olduğu bir alandır. Bu alternatifler arasında hangisinin insan için uygun olacağı, yalnızca Allah'ın bildirmesiyle anlaşılabilir.
@@ -226,6 +257,8 @@ Doğru Cevap: C
 
 ---SONRAKİ SORU---
 
+KONU: Fıkıh
+
 Soru 17:
 Hanefi fıkhında, müçtehidin; bir meselede, özel bir delil sebebiyle, o meselenin benzerlerinde verdiği hükümden vazgeçip başka bir çözümü benimsemesi, aşağıdakilerden hangisiyle adlandırılır?
 
@@ -238,6 +271,8 @@ E) Örf
 Doğru Cevap: B
 
 ---SONRAKİ SORU---
+
+KONU: Fıkıh
 
 Soru 18:
 İslam hukukunda, aksine bir hüküm veya delil bulunmadığı sürece kişinin hukuki ve cezai açıdan sorumlu tutulamayacağı esastır.
@@ -254,6 +289,8 @@ Doğru Cevap: B
 
 ---SONRAKİ SORU---
 
+KONU: Fıkıh
+
 Soru 19:
 Namaz esnasında bazı eksiklik veya yanlışlıkları telafi etmek amacıyla namaz sonunda yapılan secdeye sehiv secdesi denir.
 
@@ -268,6 +305,8 @@ E) Rükûnun terk edildiğini ikinci secdeden sonra hatırlamak
 Doğru Cevap: E
 
 ---SONRAKİ SORU---
+
+KONU: Fıkıh
 
 Soru 20:
 İbadetlerde fert ve toplum yararıyla açıklanabilir unsurlar ile taabbüdi nitelik taşıyan ve Allah'a bağlılığı temsil eden sembolik davranışlar genellikle bir arada bulunur. Ancak bazılarında fert ve toplum yararı, bazılarında ise taabbüdilik daha ön plandadır.
@@ -284,6 +323,8 @@ Doğru Cevap: D
 
 ---SONRAKİ SORU---
 
+KONU: İslam Felsefesi
+
 Soru 21:
 Hakikat, toplumun tüm kesimlerine açılmalıdır. Bu nedenle hakiki filozof, hem teorik bilgilere hem de bunları insanları mutluluğa yönlendirme doğrultusunda kullanma gücüne sahip olan kişidir.
 
@@ -298,6 +339,8 @@ E) Siyaset felsefesi
 Doğru Cevap: E
 
 ---SONRAKİ SORU---
+
+KONU: İslam Felsefesi
 
 Soru 22:
 I. Tanrı'nın, akıl tarafından kavranabileceğini belirtmeleri
@@ -318,11 +361,13 @@ Doğru Cevap: D
 
 ---SONRAKİ SORU---
 
+KONU: İslam Felsefesi
+
 Soru 23:
- Şihabüddin es-Sühreverdi (el-Maktul) tarafından kurulmuştur.
- Aristoteles felsefesine ve onu takip eden İslam filozoflarına karşı olumsuz bir bakışa sahiptir.
- Hakikatin, doğrudan sezgi ve bir iç aydınlanmayla elde edilebileceğini savunur.
- Yapısı ve öğretileri itibarıyla eklektiktir.
+ Şihabüddin es-Sühreverdi (el-Maktul) tarafından kurulmuştur.
+ Aristoteles felsefesine ve onu takip eden İslam filozoflarına karşı olumsuz bir bakışa sahiptir.
+ Hakikatin, doğrudan sezgi ve bir iç aydınlanmayla elde edilebileceğini savunur.
+ Yapısı ve öğretileri itibarıyla eklektiktir.
 
 Bu özelliklere sahip İslam felsefesi ekolü aşağıdakilerden hangisidir?
 
@@ -335,6 +380,8 @@ E) Bâtınilik
 Doğru Cevap: C
 
 ---SONRAKİ SORU---
+
+KONU: İslam Kültür ve Medeniyeti
 
 Soru 24:
 Allah'ın bütün eksikliklerden münezzeh olması ve hiçbir şeye benzememesi, İslam sanatında soyut bir anlayışın oluşmasına yol açmıştır.
@@ -351,6 +398,8 @@ Doğru Cevap: A
 
 ---SONRAKİ SORU---
 
+KONU: İslam Kültür ve Medeniyeti
+
 Soru 25:
 Müslüman Türklerin, mimari eserlerde genellikle yer verdikleri ortak öge aşağıdakilerden hangisidir?
 
@@ -363,6 +412,8 @@ E) Revak
 Doğru Cevap: B
 
 ---SONRAKİ SORU---
+
+KONU: İslam Kültür ve Medeniyeti
 
 Soru 26:
 Yazma eserlerde, sayfaların dağılmaması için eserin sırt kısmının örgü şeklinde dikilmesi aşağıdakilerden hangisiyle isimlendirilmektedir?
@@ -377,10 +428,12 @@ Doğru Cevap: A
 
 ---SONRAKİ SORU---
 
+KONU: İslam Mezhepleri ve Akımları
+
 Soru 27:
- Allah'ın zatından ayrı sıfatları yoktur.
- Kur'an yaratılmıştır.
- Allah'ın ahirette görülmesi imkânsızdır.
+ Allah'ın zatından ayrı sıfatları yoktur.
+ Kur'an yaratılmıştır.
+ Allah'ın ahirette görülmesi imkânsızdır.
 
 Bu görüşlere sahip inanç ekolü, aşağıdakilerden hangisidir?
 
@@ -393,6 +446,8 @@ E) Mutezile
 Doğru Cevap: E
 
 ---SONRAKİ SORU---
+
+KONU: İslam Mezhepleri ve Akımları
 
 Soru 28:
 Kapalı toplum yapısına sahip mezheplerde dinî yaşam, büyük bir gizlilik prensibi içerisinde yürütülmekte ve temel inanç esasları, mezhep mensubu olmayanlardan gizlenmektedir. Öyle ki mezhebin sırlarının ifşa edilmesi veya layık olmayan kimselere verilmesi emanete ihanet olarak kabul edilmektedir.
@@ -409,6 +464,8 @@ Doğru Cevap: D
 
 ---SONRAKİ SORU---
 
+KONU: Din Sosyolojisi
+
 Soru 29:
 Toplumsal değişme, zıtların etkileşimi üzerine kuruludur. İnsanlık tarihinin her aşaması, bir sonraki aşamanın tohumlarını bünyesinde barındırmakta, her yeni aşama da bir öncekinin karşıtı olarak varlık bulmaktadır.
 
@@ -423,6 +480,8 @@ E) Çatışmacı
 Doğru Cevap: C
 
 ---SONRAKİ SORU---
+
+KONU: Din Sosyolojisi
 
 Soru 30:
 Sosyal grup; birden fazla bireyin bir araya gelmesiyle oluşan, ortak amaçlara, değerlere, yazılı ve sözlü normlara sahip, rol ve statü dağılımının gerçekleştiği, üyelerinin aidiyet ve biz duygusu taşıdığı insanlar kümesidir.
@@ -439,6 +498,8 @@ Doğru Cevap: B
 
 ---SONRAKİ SORU---
 
+KONU: Din Psikolojisi
+
 Soru 31:
 Aşağıdakilerden hangisi, din psikolojisi araştırmalarında bilgiyi düzenleme ve yorumlama yaklaşımlarından değildir?
 
@@ -451,6 +512,8 @@ E) Teolojik
 Doğru Cevap: E
 
 ---SONRAKİ SORU---
+
+KONU: Din Psikolojisi
 
 Soru 32:
 Çocuklar, küçük yaşlardan itibaren dine karşı ilgi ve istek duyarlar. İlk dönemlerde dinî kavramların içeriğini anlamasalar da dualara ve ibadetlere karşı oldukça ilgilidirler. Evde büyüklerinin namaz kıldığını gören çocuklar, onlar gibi eğilip doğrulur ve dudaklarını dua okuyor gibi kıpırdatırlar. Yine aile büyüklerinden gördükleri şekilde sofraya besmele ile oturup şükrederek kalkarlar. Bu hareketleriyle aslında yetişkinleri taklit etmektedirler. Taklitleri sonucunda aile büyüklerinin mutlu olduğunu ve kendilerini takdir ettiğini gören çocuklar, bunları daha sık tekrar etmeye başlarlar.
@@ -467,11 +530,13 @@ Doğru Cevap: A
 
 ---SONRAKİ SORU---
 
+KONU: Dinler Tarihi
+
 Soru 33:
- Hindistan'da karşılaşılan bir inanç sistemidir.
- Kurucusu Guru Nanak'tır.
- Kutsal kitapları Adi-Granth'tır.
- Kendilerine özgü giyim tarzlarıyla dikkat çekerler.
+ Hindistan'da karşılaşılan bir inanç sistemidir.
+ Kurucusu Guru Nanak'tır.
+ Kutsal kitapları Adi-Granth'tır.
+ Kendilerine özgü giyim tarzlarıyla dikkat çekerler.
 
 Özellikleri verilen inanç sistemi aşağıdakilerden hangisidir?
 
@@ -485,9 +550,11 @@ Doğru Cevap: D
 
 ---SONRAKİ SORU---
 
+KONU: Dinler Tarihi
+
 Soru 34:
- İsrailoğullarının Mısır esaretinden kurtuluşları anısına kutlanır.
- Mayasız Ekmek Bayramı olarak da adlandırılır.
+ İsrailoğullarının Mısır esaretinden kurtuluşları anısına kutlanır.
+ Mayasız Ekmek Bayramı olarak da adlandırılır.
 
 Özellikleri verilen Yahudi bayramı aşağıdakilerden hangisidir?
 
@@ -501,6 +568,8 @@ Doğru Cevap: A
 
 ---SONRAKİ SORU---
 
+KONU: Dinler Tarihi
+
 Soru 35:
 Günümüzde farklı din mensuplarının birbirleriyle ilişkileri bağlamında sıkça kullanılan "dinler arası diyalog" ifadesi bir terim olarak aşağıdakilerin hangisinden sonra ortaya çıkmıştır?
 
@@ -513,6 +582,8 @@ E) Avrupa İnsan Hakları Sözleşmesi
 Doğru Cevap: D
 
 ---SONRAKİ SORU---
+
+KONU: Din Felsefesi
 
 Soru 36:
 Bazı düşünürler Tanrı'nın varlığını "Tanrı" kavramının tahlilinden hareketle temellendirmeye çalışmışlardır. Buna göre, Tanrı kendisinden daha mükemmeli düşünülemediği varlıktır. Aziz Anselmus bunu şu şekilde dile getirmiştir: "Tanrı ile en yüksek derecede kemale sahip bir varlığı kastetmekteyiz. Varlık bir kemaldir, öyleyse Tanrı vardır."
@@ -529,10 +600,12 @@ Doğru Cevap: D
 
 ---SONRAKİ SORU---
 
+KONU: Din Felsefesi
+
 Soru 37:
- Tanrı, âlemi var etmiştir ancak ona müdahale etmemektedir.
- Evrende mutlak bir determinizm vardır.
- İnsan için akıl yeterli olup vahye ihtiyaç yoktur.
+ Tanrı, âlemi var etmiştir ancak ona müdahale etmemektedir.
+ Evrende mutlak bir determinizm vardır.
+ İnsan için akıl yeterli olup vahye ihtiyaç yoktur.
 
 Bu görüşler, aşağıdaki Tanrı tasavvurlarından hangisine aittir?
 
@@ -545,6 +618,8 @@ E) Deizm
 Doğru Cevap: E
 
 ---SONRAKİ SORU---
+
+KONU: Din Eğitimi
 
 Soru 38:
 Eğitim türlerinin, gerçekleşme ortamlarına veya öğrenme biçimlerine göre bazı temel özellikleri verilmiştir:
@@ -566,6 +641,8 @@ Doğru Cevap: C
 
 ---SONRAKİ SORU---
 
+KONU: Din Eğitimi
+
 Soru 39:
 İlk dönem İslam devletlerinde, saraylarda halife ve üst düzey devlet erkânının çocuklarını eğitme görevi aşağıdakilerden hangisine verilmiştir?
 
@@ -578,6 +655,8 @@ E) Dersiam
 Doğru Cevap: D
 
 ---SONRAKİ SORU---
+
+KONU: Din Eğitimi
 
 Soru 40:
 Ülkemizde ilk ve orta dereceli okullarda din öğretiminin zorunlu olmasının yasal dayanağı aşağıdakilerden hangisidir?
@@ -592,6 +671,8 @@ Doğru Cevap: C
 
 ---SONRAKİ SORU---
 
+KONU: Din Eğitimi
+
 Soru 41:
 Çok kültürcülük ve din eğitiminde yeni arayışlar çerçevesinde; dinî öğrenme, dinden öğrenme ve din hakkında öğrenme şeklinde isimlendirilen üç yaklaşımı ortaya atan ve geliştiren bilim adamları aşağıdakilerin hangisinde birlikte verilmiştir?
 
@@ -604,6 +685,8 @@ E) Michael Grimmet – John Hull
 Doğru Cevap: E
 
 ---SONRAKİ SORU---
+
+KONU: Din Eğitimi
 
 Soru 42:
 Avrupa Birliği'ne üye ülkelerden bazılarında din eğitimi, devlet tarafından zorunlu olarak okutulan dersler arasında yer almakta, bazılarında da dinî kurumlara bırakılmaktadır. Bazılarında ise küçüklerin velilerinin, büyüklerin de kendilerinin talebi doğrultusunda verilmektedir. Bunlara rağmen ortak olan husus, her üye ülkenin din eğitimini verirken temel özgürlükleri gözetmesidir.
@@ -620,6 +703,8 @@ Doğru Cevap: D
 
 ---SONRAKİ SORU---
 
+KONU: Din Eğitimi
+
 Soru 43:
 Ey müminler! Bir topluluk diğer bir topluluğu alaya almasın. Belki de onlar kendilerinden daha iyidirler. Kadınlar da kadınları alaya almasın. Belki onlar kendilerinden daha iyidirler. Kendi kendinizi ayıplamayın, birbirinizi kötü lakaplarla çağırmayın. İmandan sonra fasıklık ne kötü bir isimdir. Kim de tevbe etmezse işte onlar zalimlerdir. (Hucurat, 11)
 
@@ -635,11 +720,13 @@ Doğru Cevap: E
 
 ---SONRAKİ SORU---
 
+KONU: Din Eğitimi
+
 Soru 44:
- Öğrencileri bir dinin inanırı yapmak temel hedeftir.
- Tek bir dinin hâkim olduğu toplumlarda uygulanır.
- Öğretim sürecinin katılımcıları aynı dinin mensubudur.
- Diğer dinlerin öğretimi, benimsenen din açısından yapılır.
+ Öğrencileri bir dinin inanırı yapmak temel hedeftir.
+ Tek bir dinin hâkim olduğu toplumlarda uygulanır.
+ Öğretim sürecinin katılımcıları aynı dinin mensubudur.
+ Diğer dinlerin öğretimi, benimsenen din açısından yapılır.
 
 Bu özelliklere sahip din öğretimi modeli aşağıdakilerden hangisidir?
 
@@ -652,6 +739,8 @@ E) Mezhepler arası öğrenme
 Doğru Cevap: A
 
 ---SONRAKİ SORU---
+
+KONU: Din Eğitimi
 
 Soru 45:
 Birtakım değerlerin kazandırılmasında akşam yemeklerini bir imkân olarak gören Ahmet Bey; her akşam yemeğinde, çocuklarının o gün yaşadıkları olayları dinlemekte ve kendi yaşadıklarını da onlarla paylaşmaktadır. O; bu tür paylaşımların, çocuklarının bazı değerleri kazanmalarına yardımcı olduğunu düşünmektedir.
@@ -668,6 +757,8 @@ Doğru Cevap: B
 
 ---SONRAKİ SORU---
 
+KONU: Din Eğitimi
+
 Soru 46:
 Yukarıda Din Kültürü ve Ahlak Bilgisi dersi 12. sınıf programında yer alan "Yaşayan Dinler ve Benzer Özellikleri" adlı 7. ünite için kullanılabilecek bir kavram haritası örneği verilmiştir.
 
@@ -683,6 +774,8 @@ Doğru Cevap: C
 
 ---SONRAKİ SORU---
 
+KONU: Din Eğitimi
+
 Soru 47:
 Okulda öğrencilerine "yardımseverlik" değerini kazandırmak isteyen bir öğretmen, bu kavramın ilk harflerini bir şifre veya anahtar sözcük olacak şekilde, anlamlı ve alt alta söz dizisi ya da cümle hâline getirir. Öğrencilerden verilen anahtar sözcüğün bulunmasını isteyen bu öğretmenin, değer öğretiminde aşağıdaki tekniklerden hangisini kullandığı söylenebilir?
 
@@ -695,6 +788,8 @@ E) Çember
 Doğru Cevap: B
 
 ---SONRAKİ SORU---
+
+KONU: Din Eğitimi
 
 Soru 48:
 "Tevekkül anlayışının toplumumuzda yanlış anlaşılma biçimlerini ve bunların nedenlerini fark eder." kazanımını hedefleyerek dersini planlayan bir din kültürü ve ahlak bilgisi öğretmeni, önce konuya dair bir hikâye okumuş, sonra hikâyede geçen durumu ve kişileri öğrencilerin canlandırmalarına rehberlik etmiş ve son olarak da hikâyede ele alınan durumu tartışmaya açarak olayın neden ve sonuçları üzerinde öğrencilerin görüşlerini almıştır.
@@ -711,6 +806,8 @@ Doğru Cevap: A
 
 ---SONRAKİ SORU---
 
+KONU: Din Eğitimi
+
 Soru 49:
 Aşağıdakilerden hangisi, Türkiye'de ortaöğretim Din Kültürü ve Ahlak Bilgisi öğretiminde benimsenen yaklaşım için söylenebilecek bir yargı değildir?
 
@@ -723,6 +820,8 @@ E) Dinî öğrenme modelini benimser.
 Doğru Cevap: E
 
 ---SONRAKİ SORU---
+
+KONU: Din Eğitimi
 
 Soru 50:
 Din öğretiminde kullanılan en temel yöntemlerden biri de tartışma yöntemidir. Bu yöntemde amaç, öğrenciyi ders konuları üzerinde daha önceden belirlenmiş şartlar dâhilinde tartışmaya sevk ederek ona bazı temel bilgileri kazandırmaktır. Ancak bu yöntemin din öğretiminde kullanılması birtakım sorunları da beraberinde getirmektedir.

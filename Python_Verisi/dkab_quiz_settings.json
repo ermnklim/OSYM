@@ -1,11 +1,12 @@
 {
   "theme": "Acik Modern",
-  "year": "Tüm yıllar",
-  "ders": "IHL",
-  "mode": "Anında Cevap",
+  "year": "2013",
+  "ders": "DKAB",
+  "konu": "Tüm konular",
+  "mode": "Test Sonu Değerlendir",
   "order": "Sıralı",
   "num": "4",
-  "goto_year": "2020",
-  "goto_ders": "IHL",
+  "goto_year": "2022",
+  "goto_ders": "DKAB",
   "goto_q": "1"
 }
