@@ -341,6 +341,15 @@ class ModernDKABQuiz:
         self.goto_year_combo.pack(padx=5, pady=0, fill=tk.X)
         self.goto_year_combo.bind("<<ComboboxSelected>>", self._update_goto_question_list)
 
+        tk.Label(goto_card, text="Ders:", font=('Segoe UI', 8),
+                fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
+
+        self.goto_ders_var = tk.StringVar(value="DKAB")
+        self.goto_ders_combo = ttk.Combobox(goto_card, textvariable=self.goto_ders_var,
+                                            values=["DKAB"], state="readonly", width=14, style='Modern.TCombobox')
+        self.goto_ders_combo.pack(padx=5, pady=0, fill=tk.X)
+        self.goto_ders_combo.bind("<<ComboboxSelected>>", self._update_goto_question_list)
+
         tk.Label(goto_card, text="Soru No:", font=('Segoe UI', 8),
                 fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
 
@@ -517,6 +526,7 @@ Başarılar dilerim! 🌟
         self.year_combo['values'] = years
         self.ders_combo['values'] = dersler
         self.goto_year_combo['values'] = sorted([y for y in years if y != "Tüm yıllar"], reverse=True)
+        self.goto_ders_combo['values'] = dersler
 
     def parse_questions_from_file(self, file_path: str, year: int, subject: str = "DKAB") -> List[Dict]:
         """Dosyadan soruları parse eder"""
@@ -768,7 +778,7 @@ Başarılar dilerim! 🌟
         progress_frame.pack(fill=tk.X, pady=(0, 15))
         
         progress_text = tk.Label(progress_frame, 
-                                text=f"İlerleme: {self.current_index + 1}/{self.total_questions} | Yıl: {question['yil']} | No: {question['soru_no']}", 
+                                text=f"İlerleme: {self.current_index + 1}/{self.total_questions} | Sınav: {question['ders']} | Yıl: {question['yil']} | No: {question['soru_no']}", 
                                 font=self.fonts['small'], 
                                 fg=self.colors['text_secondary'], bg=self.colors['card'])
         progress_text.pack(side=tk.LEFT)
@@ -1279,13 +1289,11 @@ Başarılar dilerim! 🌟
         menu_btn.pack(side=tk.LEFT, padx=10, ipady=8)
     
     def _update_goto_question_list(self, event=None):
-        """Seçilen yıla göre mevcut soru numaralarını günceller"""
+        """Seçilen yıla ve derse göre mevcut soru numaralarını günceller"""
         try:
             year = int(self.goto_year_var.get())
-            # For specific question lookup, we should probably check all subjects for that year 
-            # or add a subject selector to goto card as well.
-            # For simplicity, we'll list all question numbers for that year across all subjects.
-            nums = sorted(set(q['soru_no'] for q in self.questions if q['yil'] == year))
+            ders = self.goto_ders_var.get()
+            nums = sorted(set(q['soru_no'] for q in self.questions if q['yil'] == year and q['ders'] == ders))
             values = [str(n) for n in nums] if nums else [str(i) for i in range(1, 76)]
             self.goto_q_combo['values'] = values
             if values:
@@ -1323,7 +1331,7 @@ Başarılar dilerim! 🌟
 
         card = self.create_card(
             self.main_content,
-            f"📖  {question['yil']} – Soru {question['soru_no']}")
+            f"📖  {question['ders']} {question['yil']} – Soru {question['soru_no']}")
         card.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
 
         # Scrollable container
@@ -1357,7 +1365,7 @@ Başarılar dilerim! 🌟
         meta_frame = tk.Frame(inner, bg=self.colors['primary'], relief=tk.RIDGE, bd=1)
         meta_frame.pack(fill=tk.X, **pad)
         tk.Label(meta_frame,
-                 text=f"📅 Yıl: {question['yil']}   |   🔢 Soru No: {question['soru_no']}",
+                 text=f"📅 Sınav: {question['ders']}   |   📅 Yıl: {question['yil']}   |   🔢 Soru No: {question['soru_no']}",
                  font=('Segoe UI', 10, 'bold'),
                  bg=self.colors['primary'], fg=self.colors['text']).pack(pady=8)
 
