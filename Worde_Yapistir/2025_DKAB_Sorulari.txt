@@ -43,7 +43,7 @@ C) Ahad
 D) Meshur
 E) Saz
 
-Dogru Cevap: B
+Doğru Cevap: B
 
 ---SONRAKİ SORU---
 Soru 4:
@@ -61,7 +61,7 @@ C) أَعْوَارُ
 D) أَحْدَثَهُ
 E) لَبِدْ
 
-Dogru Cevap: D
+Doğru Cevap: D
 
 ---SONRAKİ SORU---
 Soru 5:
@@ -75,7 +75,7 @@ C) Mecaz
 D) Muskil
 E) Muphem
 
-Dogru Cevap: D
+Doğru Cevap: D
 
 ---SONRAKİ SORU---
 Soru 6:
@@ -89,7 +89,7 @@ C) Garibu'l-Kur'an
 D) Fezailu'l-Kur'an
 E) Vucuh ve Nezair
 
-Dogru Cevap: E
+Doğru Cevap: E
 
 ---SONRAKİ SORU---
 Soru 7:
@@ -103,7 +103,7 @@ C) Begavi'nin Mealimu't-Tenzil'ini
 D) Suyuti'nin ed-Durru'l-Mensur'unu
 E) Ebussuud'un Irsadu'l-Akli's-Selim'ini
 
-Dogru Cevap: E
+Doğru Cevap: E
 
 ---SONRAKİ SORU---
 Soru 8:
@@ -117,7 +117,7 @@ C) Antropomorfik
 D) Sembolik
 E) Tarihselcilik
 
-Dogru Cevap: B
+Doğru Cevap: B
 
 ---SONRAKİ SORU---
 Soru 9:
@@ -131,7 +131,7 @@ C) Ayetin mefhum ve tarihsel baglamini goz onune almasi
 D) Belli bir mezhebin gorusunu merkeze almasi
 E) Rivayet malzemesini ve onceki yorumlari dikkate almasi
 
-Dogru Cevap: D
+Doğru Cevap: D
 
 ---SONRAKİ SORU---
 Soru 10:
@@ -147,7 +147,7 @@ C) Yalniz III
 D) I ve II
 E) II ve III
 
-Dogru Cevap: C
+Doğru Cevap: C
 
 ---SONRAKİ SORU---
 Soru 11:
@@ -161,7 +161,7 @@ C) Hadis, Kutub-i Sitte'de yer almaktadir.
 D) Hz. Muhammed'e bes ravi ile ulastigi icin sened humasidir.
 E) Hz. Muhammed'in sozunu ifade ettigi icin kavli bir hadistir.
 
-Dogru Cevap: B
+Doğru Cevap: B
 
 ---SONRAKİ SORU---
 Soru 12:
@@ -175,7 +175,7 @@ C) Mustedrek
 D) Cem
 E) Zevaid
 
-Dogru Cevap: C
+Doğru Cevap: C
 
 ---SONRAKİ SORU---
 Soru 13:
@@ -189,7 +189,7 @@ C) Mudelles
 D) Maklub
 E) Munker
 
-Dogru Cevap: B
+Doğru Cevap: B
 
 ---SONRAKİ SORU---
 Soru 14:
@@ -203,7 +203,7 @@ C) Tedvin
 D) Tasnif
 E) Hifz
 
-Dogru Cevap: C
+Doğru Cevap: C
 
 ---SONRAKİ SORU---
 Soru 15:
@@ -217,7 +217,7 @@ C) Agri kesici hap yutmak
 D) Dilalti hapi kullanmak
 E) Goz damlasi kullanmak
 
-Dogru Cevap: C
+Doğru Cevap: C
 
 ---SONRAKİ SORU---
 Soru 16:
@@ -231,7 +231,7 @@ C) Pantolonundaki necaset namaza engel olmadigi gibi mest icin tekrar abdest alm
 D) Pantolonundaki necaseti gidersen ve mest icin tekrar abdest alirsan namaz kilabilirsin.
 E) Pantolonundaki necaset namaza engel degil ancak mesti cikarip tekrar abdest almalisin.
 
-Dogru Cevap: B
+Doğru Cevap: B
 
 ---SONRAKİ SORU---
 Soru 17:
@@ -245,7 +245,7 @@ C) Harac ve emval
 D) Tahriru'l-furu
 E) Tabakatu'l-fukaha
 
-Dogru Cevap: A
+Doğru Cevap: A
 
 ---SONRAKİ SORU---
 Soru 18:
@@ -259,7 +259,7 @@ C) Rusd
 D) Temyiz
 E) Gayr-i mumeyyiz cocukluk
 
-Dogru Cevap: D
+Doğru Cevap: D
 
 ---SONRAKİ SORU---
 Soru 19:
@@ -277,7 +277,7 @@ C) II ve III
 D) II ve IV
 E) III ve IV
 
-Dogru Cevap: E
+Doğru Cevap: E
 
 ---SONRAKİ SORU---
 Soru 20:
@@ -291,7 +291,7 @@ C) Muahede
 D) Kasame
 E) Vesayet
 
-Dogru Cevap: A
+Doğru Cevap: A
 
 ---SONRAKİ SORU---
 Soru 21:
@@ -305,7 +305,7 @@ C) 3 ay bekler. | Yarısını alır.
 D) Beklemez. | Tamamını alır.
 E) 3 ay bekler. | Alamaz.
 
-Dogru Cevap: A
+Doğru Cevap: A
 
 ---SONRAKİ SORU---
 Soru 22:
@@ -319,7 +319,7 @@ C) Tenzihi
 D) Subuti
 E) Haberi
 
-Dogru Cevap: D
+Doğru Cevap: D
 
 ---SONRAKİ SORU---
 Soru 23:
@@ -339,7 +339,7 @@ C) II ve III
 D) II ve IV
 E) III ve IV
 
-Dogru Cevap: C
+Doğru Cevap: C
 
 ---SONRAKİ SORU---
 Soru 24:
@@ -358,7 +358,7 @@ C) Mutezile - Haricilik - Murcie
 D) Haricilik - Esarilik - Mutezile
 E) Murcie - Mutezile - Esarilik
 
-Dogru Cevap: A
+Doğru Cevap: A
 
 ---SONRAKİ SORU---
 Soru 25:
@@ -372,7 +372,7 @@ C) Cehmiyye
 D) Kerramiyye
 E) Sia
 
-Dogru Cevap: B
+Doğru Cevap: B
 
 ---SONRAKİ SORU---
 Soru 26:
@@ -384,7 +384,7 @@ C) Insanin eylemlerini gerceklestirecegi guc, eylemden once insana verilmistir.
 D) Cuzi irade, insanin fiili yerine getirme veya terk etme ihtimallerinden birine yonelmesidir.
 E) Kulli irade, Allah tarafindan insana verilmis olan yapma ve yapmamayi tercih etme yetenegidir.
 
-Dogru Cevap: B
+Doğru Cevap: B
 
 ---SONRAKİ SORU---
 Soru 27:
@@ -398,7 +398,7 @@ C) Maturidiyye
 D) Mutezile
 E) Cebriyye
 
-Dogru Cevap: D
+Doğru Cevap: D
 
 ---SONRAKİ SORU---
 Soru 28:
@@ -410,7 +410,7 @@ C) Cebriyye
 D) Ismaililik
 E) Haricilik
 
-Dogru Cevap: B
+Doğru Cevap: B
 
 ---SONRAKİ SORU---
 Soru 29:
@@ -424,7 +424,7 @@ C) Istidrac
 D) Tevlid
 E) Tevelli
 
-Dogru Cevap: A
+Doğru Cevap: A
 
 ---SONRAKİ SORU---
 Soru 30:
@@ -438,7 +438,7 @@ C) Recat
 D) Hulul
 E) Tekammus
 
-Dogru Cevap: A
+Doğru Cevap: A
 
 ---SONRAKİ SORU---
 Soru 31:
@@ -450,7 +450,7 @@ C) Bireyler arasinda kulturel ve sosyal iliskilerin gelismesi
 D) Orf ve adetlerin yasatilip aktarilmasi
 E) Arap Yarimadasi'nda siyasi birligin saglanmasi
 
-Dogru Cevap: E
+Doğru Cevap: E
 
 ---SONRAKİ SORU---
 Soru 32:
@@ -468,7 +468,7 @@ C) Ebu Cehil
 D) Umeyye b. Halef
 E) Ebu Leheb
 
-Dogru Cevap: A
+Doğru Cevap: A
 
 ---SONRAKİ SORU---
 Soru 33:
@@ -482,7 +482,7 @@ C) Mustalikogullari Gazvesi
 D) Hendek Savasi
 E) Bedir Savasi
 
-Dogru Cevap: E
+Doğru Cevap: E
 
 ---SONRAKİ SORU---
 Soru 34:
@@ -500,7 +500,7 @@ C) IV - II - III - I
 D) III - II - I - IV
 E) IV - I - II - III
 
-Dogru Cevap: C
+Doğru Cevap: C
 
 ---SONRAKİ SORU---
 Soru 35:
@@ -517,7 +517,7 @@ C) I ve II
 D) I ve III
 E) II ve III
 
-Dogru Cevap: E
+Doğru Cevap: E
 
 ---SONRAKİ SORU---
 Soru 36:
@@ -531,7 +531,7 @@ C) Beda
 D) Fitne
 E) Ridde
 
-Dogru Cevap: E
+Doğru Cevap: E
 
 ---SONRAKİ SORU---
 Soru 37:
@@ -543,7 +543,7 @@ C) Selcuklular
 D) Fatimiler
 E) Osmanlilar
 
-Dogru Cevap: B
+Doğru Cevap: B
 
 ---SONRAKİ SORU---
 Soru 38:
@@ -557,7 +557,7 @@ C) Cizye
 D) Fey
 E) Humus
 
-Dogru Cevap: A
+Doğru Cevap: A
 
 ---SONRAKİ SORU---
 Soru 39:
@@ -574,7 +574,7 @@ C) Haris el-Muhasibi
 D) Kindi
 E) Nasiruddin et-Tusi
 
-Dogru Cevap: E
+Doğru Cevap: E
 
 ---SONRAKİ SORU---
 Soru 40:
@@ -591,7 +591,7 @@ C) Dehriyye
 D) Revakiyye
 E) Sabiiyye
 
-Dogru Cevap: C
+Doğru Cevap: C
 
 ---SONRAKİ SORU---
 Soru 41:
@@ -605,7 +605,7 @@ C) Estetik
 D) Fitrat
 E) Imkan
 
-Dogru Cevap: C
+Doğru Cevap: C
 
 ---SONRAKİ SORU---
 Soru 42:
@@ -622,7 +622,7 @@ C) Russell
 D) Kant
 E) Leibniz
 
-Dogru Cevap: A
+Doğru Cevap: A
 
 ---SONRAKİ SORU---
 Soru 43:
@@ -640,7 +640,7 @@ C) Etki
 D) Duygu
 E) Bilgi
 
-Dogru Cevap: B
+Doğru Cevap: B
 
 ---SONRAKİ SORU---
 Soru 44:
@@ -654,7 +654,7 @@ C) Dinin iktisadi tutumlarla iliskisi oldugunu ileri surdugune
 D) Dinin toplumsal yapida gerilimler uretebilecegini savunduguna
 E) Bazi olgularin ortaya ciktigi toplumla irtibati olduguna inandigina
 
-Dogru Cevap: D
+Doğru Cevap: D
 
 ---SONRAKİ SORU---
 Soru 45:
@@ -668,7 +668,7 @@ C) Dogmatik
 D) Ozerk
 E) Taklidi
 
-Dogru Cevap: D
+Doğru Cevap: D
 
 ---SONRAKİ SORU---
 Soru 46:
@@ -682,7 +682,7 @@ C) Nefis
 D) Kalp
 E) Secaat
 
-Dogru Cevap: C
+Doğru Cevap: C
 
 ---SONRAKİ SORU---
 Soru 47:
@@ -696,7 +696,7 @@ C) Evrensel
 D) Toplumsal
 E) Insani
 
-Dogru Cevap: E
+Doğru Cevap: E
 
 ---SONRAKİ SORU---
 Soru 48:
@@ -710,7 +710,7 @@ C) Encumen-i Danis - Meclis-i Mebusan
 D) Meclis-i Mebusan - Encumen-i Danis
 E) Kazaskerlik - Maarif Vekaleti
 
-Dogru Cevap: A
+Doğru Cevap: A
 
 ---SONRAKİ SORU---
 Soru 49:
@@ -724,7 +724,7 @@ C) Totem
 D) Klan
 E) Mit
 
-Dogru Cevap: C
+Doğru Cevap: C
 
 ---SONRAKİ SORU---
 Soru 50:
@@ -742,5 +742,5 @@ C) I ve III
 D) II ve IV
 E) III ve IV
 
-Dogru Cevap: B
+Doğru Cevap: B
 
