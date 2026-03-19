@@ -33,6 +33,7 @@ class ModernDKABQuiz:
         self.current_view = "welcome"
         self.current_specific_question = None
         self.subjects = []
+        self._next_timer = None
 
         self.theme_palettes = {
             "Gece Lacivert": {
@@ -958,22 +959,42 @@ Başarılar dilerim! 🌟
             # Review mode - just highlight selection, no colors, auto-advance after 2 seconds
             self.option_buttons[option_num].config(bg='white', fg=self.colors['bg'])
             
-            # Store the answer for later review
+            # Store the answer for later review (Update if already exists)
             if not hasattr(self, 'user_answers'):
                 self.user_answers = []
             
-            self.user_answers.append({
+            existing_ans = None
+            for ans in self.user_answers:
+                if (ans['question']['yil'] == question['yil'] and 
+                    ans['question']['soru_no'] == question['soru_no'] and
+                    ans['question']['ders'] == question['ders']):
+                    existing_ans = ans
+                    break
+            
+            answer_data = {
                 'question': question,
-                'selected_option': selected_sik,  # Store the actual letter (A, B, C, D, E)
+                'selected_option': selected_sik,
                 'correct_option': question['dogru_cevap'],
                 'is_correct': selected_sik == question['dogru_cevap']
-            })
+            }
+            
+            if existing_ans:
+                # Update existing entry
+                existing_ans.update(answer_data)
+            else:
+                # Add new entry
+                self.user_answers.append(answer_data)
+            
+            # Cancel any existing pending skip-timer
+            if self._next_timer:
+                self.root.after_cancel(self._next_timer)
+                self._next_timer = None
             
             # Auto-advance after 2 seconds
             if self.current_index < len(self.quiz_questions) - 1:
-                self.root.after(2000, self.next_question)
+                self._next_timer = self.root.after(2000, self.next_question)
             else:
-                self.root.after(2000, self.show_review_screen)
+                self._next_timer = self.root.after(2000, self.show_review_screen)
     
     def update_test_history(self, question, selected_sik):
         """Test geçmişini günceller"""
@@ -1457,11 +1478,17 @@ Başarılar dilerim! 🌟
 
     def next_question(self):
         """Sonraki soruya geçer"""
+        if self._next_timer:
+            self.root.after_cancel(self._next_timer)
+            self._next_timer = None
         self.current_index += 1
         self.show_question()
     
     def previous_question(self):
         """Önceki soruya döner"""
+        if self._next_timer:
+            self.root.after_cancel(self._next_timer)
+            self._next_timer = None
         if self.current_index > 0:
             self.current_index -= 1
             self.show_question()
