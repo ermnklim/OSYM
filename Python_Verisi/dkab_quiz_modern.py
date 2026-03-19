@@ -35,6 +35,9 @@ class ModernDKABQuiz:
         self.subjects = []
         self.available_subjects = ["DKAB", "IHL"]
         self._next_timer = None
+        self._countdown_job = None
+        self.remaining_seconds = 0
+        self.active_mode = None
         self.settings_file = os.path.join(os.path.dirname(__file__), "dkab_quiz_settings.json")
         self.persisted_settings = self.load_persisted_settings()
 
@@ -112,6 +115,7 @@ class ModernDKABQuiz:
             "ders": "Tüm dersler",
             "konu": "Tüm konular",
             "mode": "Anında Cevap",
+            "time_limit": "10",
             "order": "Rastgele",
             "num": "10",
             "goto_year": "2019",
@@ -139,6 +143,7 @@ class ModernDKABQuiz:
             "ders": self.ders_var.get(),
             "konu": self.konu_var.get(),
             "mode": self.mode_var.get(),
+            "time_limit": self.time_limit_var.get(),
             "order": self.order_var.get(),
             "num": self.num_var.get(),
             "goto_year": self.goto_year_var.get(),
@@ -160,6 +165,7 @@ class ModernDKABQuiz:
             self.ders_var,
             self.konu_var,
             self.mode_var,
+            self.time_limit_var,
             self.order_var,
             self.num_var,
             self.goto_year_var,
@@ -176,11 +182,13 @@ class ModernDKABQuiz:
         self.ders_var.set(self.persisted_settings.get("ders", "Tüm dersler"))
         self.konu_var.set(self.persisted_settings.get("konu", "Tüm konular"))
         self.mode_var.set(self.persisted_settings.get("mode", "Anında Cevap"))
+        self.time_limit_var.set(self.persisted_settings.get("time_limit", "10"))
         self.order_var.set(self.persisted_settings.get("order", "Rastgele"))
         self.num_var.set(self.persisted_settings.get("num", "10"))
         self.goto_year_var.set(self.persisted_settings.get("goto_year", "2019"))
         self.goto_ders_var.set(self.persisted_settings.get("goto_ders", "DKAB"))
         self.goto_q_var.set(self.persisted_settings.get("goto_q", "1"))
+        self.on_mode_changed()
 
     def setup_ttk_styles(self):
         """ttk bilesenlerini aktif temaya gore stillendirir."""
@@ -245,6 +253,7 @@ class ModernDKABQuiz:
         saved = {
             'year': getattr(self, 'year_var', None).get() if hasattr(self, 'year_var') else 'Tum yillar',
             'mode': getattr(self, 'mode_var', None).get() if hasattr(self, 'mode_var') else 'Aninda Cevap',
+            'time_limit': getattr(self, 'time_limit_var', None).get() if hasattr(self, 'time_limit_var') else '10',
             'order': getattr(self, 'order_var', None).get() if hasattr(self, 'order_var') else 'Rastgele',
             'num': getattr(self, 'num_var', None).get() if hasattr(self, 'num_var') else '10',
             'ders': getattr(self, 'ders_var', None).get() if hasattr(self, 'ders_var') else 'Tüm dersler',
@@ -263,11 +272,13 @@ class ModernDKABQuiz:
         self.ders_var.set(saved['ders'])
         self.konu_var.set(saved['konu'])
         self.mode_var.set(saved['mode'])
+        self.time_limit_var.set(saved['time_limit'])
         self.order_var.set(saved['order'])
         self.num_var.set(saved['num'])
         self.goto_year_var.set(saved['goto_year'])
         self.goto_ders_var.set(saved['goto_ders'])
         self.goto_q_var.set(saved['goto_q'])
+        self.on_mode_changed()
         self.update_question_limit()
         self._update_goto_question_list()
 
@@ -407,11 +418,20 @@ class ModernDKABQuiz:
                 fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
         
         self.mode_var = tk.StringVar(value="Anında Cevap")
-        mode_options = ["Anında Cevap", "Test Sonu Değerlendir"]
+        mode_options = ["Anında Cevap", "Test Sonu Değerlendir", "Süreli"]
         self.mode_combo = ttk.Combobox(settings_card, textvariable=self.mode_var, 
                                       values=mode_options, state="readonly", width=14, style='Modern.TCombobox')
         self.mode_combo.pack(padx=5, pady=0, fill=tk.X)
-        
+        self.mode_combo.bind("<<ComboboxSelected>>", self.on_mode_changed)
+
+        tk.Label(settings_card, text="Süre (dk):", font=('Segoe UI', 8),
+                fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
+
+        self.time_limit_var = tk.StringVar(value="10")
+        self.time_spinbox = tk.Spinbox(settings_card, from_=1, to=180, textvariable=self.time_limit_var,
+                                       width=5, font=('Segoe UI', 8))
+        self.time_spinbox.pack(padx=5, pady=0, anchor=tk.W)
+
         # Question order selection
         tk.Label(settings_card, text="Sıra:", font=('Segoe UI', 8), 
                 fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
@@ -518,6 +538,8 @@ class ModernDKABQuiz:
                                         fg=self.colors['warning'], bg=self.colors['card'],
                                         wraplength=180)
         self.yeni_dosya_label.pack(padx=5, pady=2, fill=tk.X)
+
+        self.on_mode_changed()
         
     def create_main_content(self, parent):
         """Ana içerik alanı oluşturur (Kaydırılabilir)"""
@@ -553,6 +575,103 @@ class ModernDKABQuiz:
         self.canvas.bind("<Enter>", lambda e: self.root.bind_all("<MouseWheel>", _on_main_mousewheel))
         self.canvas.bind("<Leave>", lambda e: self.root.unbind_all("<MouseWheel>"))
         
+    def _quiz_mode(self):
+        """Başlatılan testin modunu döndürür."""
+        return getattr(self, "active_mode", None) or self.mode_var.get()
+
+    def _uses_review_flow(self):
+        """Soruları sonradan değerlendiren modları belirtir."""
+        return self._quiz_mode() in ("Test Sonu Değerlendir", "Süreli")
+
+    def _is_timed_quiz(self):
+        """Geri sayım kullanan modu belirtir."""
+        return self._quiz_mode() == "Süreli"
+
+    def _stop_countdown(self):
+        """Aktif geri sayımı ve otomatik ilerlemeyi durdurur."""
+        if self._countdown_job:
+            try:
+                self.root.after_cancel(self._countdown_job)
+            except Exception:
+                pass
+            self._countdown_job = None
+        if self._next_timer:
+            try:
+                self.root.after_cancel(self._next_timer)
+            except Exception:
+                pass
+            self._next_timer = None
+
+    def _set_status_ready(self):
+        """Başlangıç durum yazısını geri getirir."""
+        if hasattr(self, "status_label"):
+            self.status_label.config(text="🟢 Hazır", fg=self.colors['success'])
+
+    def _format_seconds(self, seconds):
+        """Saniyeyi MM:SS formatına çevirir."""
+        seconds = max(0, int(seconds))
+        minutes, secs = divmod(seconds, 60)
+        return f"{minutes:02d}:{secs:02d}"
+
+    def _refresh_timer_labels(self):
+        """Ekrandaki süre göstergelerini günceller."""
+        if hasattr(self, "timer_text_var") and self.timer_text_var is not None:
+            self.timer_text_var.set(f"Kalan Süre: {self._format_seconds(self.remaining_seconds)}")
+
+        if hasattr(self, "status_label"):
+            if self._is_timed_quiz():
+                if self.remaining_seconds > 0:
+                    self.status_label.config(text=f"⏳ {self._format_seconds(self.remaining_seconds)}", fg=self.colors['warning'])
+                else:
+                    self.status_label.config(text="⏰ Süre doldu", fg=self.colors['danger'])
+            else:
+                self._set_status_ready()
+
+    def _start_countdown(self, minutes):
+        """Süreli test için geri sayımı başlatır."""
+        self._stop_countdown()
+        self.remaining_seconds = max(0, int(minutes) * 60)
+        if self.remaining_seconds <= 0:
+            self._finish_timed_quiz()
+            return
+        self._refresh_timer_labels()
+        self._countdown_job = self.root.after(1000, self._tick_countdown)
+
+    def _tick_countdown(self):
+        """Her saniye çalışan geri sayım döngüsü."""
+        self._countdown_job = None
+        if not self._is_timed_quiz():
+            return
+
+        self.remaining_seconds -= 1
+        if self.remaining_seconds <= 0:
+            self.remaining_seconds = 0
+            self._refresh_timer_labels()
+            self._finish_timed_quiz()
+            return
+
+        self._refresh_timer_labels()
+        self._countdown_job = self.root.after(1000, self._tick_countdown)
+
+    def _finish_timed_quiz(self):
+        """Süre bittiğinde testi sonlandırır."""
+        self._stop_countdown()
+        self.remaining_seconds = 0
+        self._refresh_timer_labels()
+        if self.quiz_questions:
+            self.show_results()
+
+    def on_mode_changed(self, event=None):
+        """Mod değiştiğinde süre alanını etkinleştirir veya devre dışı bırakır."""
+        if not hasattr(self, "time_spinbox"):
+            return
+
+        if self.mode_var.get() == "Süreli":
+            self.time_spinbox.config(state="normal")
+        else:
+            self.time_spinbox.config(state="disabled")
+        self._set_status_ready()
+
     def create_card(self, parent, title):
         """Modern kart oluşturur"""
         card = tk.Frame(parent, bg=self.colors['card'], relief=tk.RAISED, bd=1)
@@ -599,6 +718,9 @@ class ModernDKABQuiz:
     def show_welcome_screen(self):
         self.current_view = "welcome"
         """Hoş geldin ekranını gösterir"""
+        self._stop_countdown()
+        self.remaining_seconds = 0
+        self._set_status_ready()
         # Clear main content
         for widget in self.main_content.winfo_children():
             widget.destroy()
@@ -1233,7 +1355,9 @@ Başarılar dilerim! 🌟
         except ValueError:
             messagebox.showwarning("Uyarı", "Geçerli bir soru sayısı girin!")
             return
-        
+
+        self._stop_countdown()
+
         # Filter questions by year, subject, and konu if selected
         available_questions = self.questions
         selected_year = self.year_var.get()
@@ -1273,6 +1397,21 @@ Başarılar dilerim! 🌟
         self.current_index = 0
         self.score = 0
         self.total_questions = num_questions
+        self.active_mode = self.mode_var.get()
+
+        if self._is_timed_quiz():
+            try:
+                minutes = int(self.time_limit_var.get())
+            except ValueError:
+                messagebox.showwarning("Uyarı", "Geçerli bir süre girin!")
+                return
+            if minutes < 1:
+                messagebox.showwarning("Uyarı", "Süre en az 1 dakika olmalı!")
+                return
+            self._start_countdown(minutes)
+        else:
+            self.remaining_seconds = 0
+            self._set_status_ready()
         
         # Start quiz
         self.show_question()
@@ -1282,7 +1421,7 @@ Başarılar dilerim! 🌟
         """Soruyu gösterir"""
         if self.current_index >= len(self.quiz_questions):
             # If we're in review mode, show per-question evaluation instead of plain results.
-            if self.mode_var.get() == "Test Sonu Değerlendir":
+            if self._uses_review_flow():
                 self.show_review_screen()
             else:
                 self.show_results()
@@ -1311,6 +1450,14 @@ Başarılar dilerim! 🌟
                                 font=self.fonts['small'], 
                                 fg=self.colors['text_secondary'], bg=self.colors['card'])
         progress_text.pack(side=tk.LEFT)
+
+        if self._is_timed_quiz():
+            self.timer_text_var = tk.StringVar(value=f"Kalan Süre: {self._format_seconds(self.remaining_seconds)}")
+            timer_label = tk.Label(progress_frame,
+                                   textvariable=self.timer_text_var,
+                                   font=self.fonts['small'],
+                                   fg=self.colors['warning'], bg=self.colors['card'])
+            timer_label.pack(side=tk.RIGHT)
         
         # Progress bar visual
         progress_canvas = tk.Canvas(progress_frame, height=6, bg=self.colors['border'], highlightthickness=0)
@@ -1440,7 +1587,7 @@ Başarılar dilerim! 🌟
             next_btn.pack(side=tk.RIGHT, padx=5, ipady=2)
         else:
             finish_command = self.show_results
-            if self.mode_var.get() == "Test Sonu Değerlendir":
+            if self._uses_review_flow():
                 finish_command = self.show_review_screen
             finish_btn = self.create_button(nav_frame, "🏁", finish_command, self.colors['accent'])
             finish_btn.pack(side=tk.RIGHT, padx=5, ipady=2)
@@ -1453,7 +1600,7 @@ Başarılar dilerim! 🌟
         question = self.quiz_questions[self.current_index]
         
         # Check if already answered in Instant Mode
-        if self.mode_var.get() == "Anında Cevap":
+        if self._quiz_mode() == "Anında Cevap":
             for item in self.test_history:
                 if (item['question']['yil'] == question['yil'] and 
                     item['question']['soru_no'] == question['soru_no'] and
@@ -1474,7 +1621,7 @@ Başarılar dilerim! 🌟
         var.set(option_num)
         
         # Check test mode
-        if self.mode_var.get() == "Anında Cevap":
+        if self._quiz_mode() == "Anında Cevap":
             # Instant feedback mode - show result on same screen
             dogru_sik = self.option_map[option_num]
             
@@ -1533,7 +1680,8 @@ Başarılar dilerim! 🌟
             if self.current_index < len(self.quiz_questions) - 1:
                 self._next_timer = self.root.after(2000, self.next_question)
             else:
-                self._next_timer = self.root.after(2000, self.show_review_screen)
+                finish_target = self.show_results if self._quiz_mode() == "Süreli" else self.show_review_screen
+                self._next_timer = self.root.after(2000, finish_target)
     
     def update_test_history(self, question, selected_sik):
         """Test geçmişini günceller"""
@@ -1567,7 +1715,7 @@ Başarılar dilerim! 🌟
                         # Set the selection
                         self.option_vars[option_num].set(option_num)
                         
-                        if self.mode_var.get() == "Anında Cevap":
+                        if self._quiz_mode() == "Anında Cevap":
                             if is_correct:
                                 self.option_buttons[option_num].config(bg=self.colors['success'], fg='white')
                             else:
@@ -1756,6 +1904,9 @@ Başarılar dilerim! 🌟
     def show_review_screen(self):
         self.current_view = "review"
         """Değerlendirme ekranını gösterir"""
+        self._stop_countdown()
+        self.remaining_seconds = 0
+        self._set_status_ready()
         # Clear main content
         for widget in self.main_content.winfo_children():
             widget.destroy()
@@ -1863,6 +2014,9 @@ Başarılar dilerim! 🌟
         self.current_view = "specific"
         self.current_specific_question = question
         """Tek bir soruyu inceleme modunda (cevap + açıklama göster) ekrana basar"""
+        self._stop_countdown()
+        self.remaining_seconds = 0
+        self._set_status_ready()
         for widget in self.main_content.winfo_children():
             widget.destroy()
 
@@ -2058,6 +2212,9 @@ Başarılar dilerim! 🌟
     def show_results(self):
         self.current_view = "results"
         """Sonuçları gösterir"""
+        self._stop_countdown()
+        self.remaining_seconds = 0
+        self._set_status_ready()
         # Clear main content
         for widget in self.main_content.winfo_children():
             widget.destroy()
@@ -2088,6 +2245,16 @@ Başarılar dilerim! 🌟
             try: canvas.yview_scroll(int(-1 * (e.delta / 120)), "units")
             except: pass
         canvas.bind_all("<MouseWheel>", _on_mousewheel)
+
+        self.score = sum(
+            1
+            for q in self.quiz_questions
+            for item in self.test_history
+            if (item['question']['yil'] == q['yil']
+                and item['question']['soru_no'] == q['soru_no']
+                and item['question']['ders'] == q['ders']
+                and item['selected'] == q['dogru_cevap'])
+        )
         
         # Score display
         score_frame = tk.Frame(content_frame, bg=self.colors['primary'], relief=tk.RIDGE, bd=3)
