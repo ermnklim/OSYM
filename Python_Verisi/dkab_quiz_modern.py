@@ -2353,16 +2353,16 @@ Başarılar dilerim! 🌟
         
         # Score display
         score_frame = tk.Frame(content_frame, bg=self.colors['primary'], relief=tk.RIDGE, bd=3)
-        score_frame.pack(pady=20)
+        score_frame.pack(fill=tk.X, pady=(10, 12), padx=10)
         
         score_text = f"{self.score}/{self.total_questions}"
         percentage = (self.score / self.total_questions) * 100 if self.total_questions else 0.0
         
         tk.Label(score_frame, text=score_text, 
-                font=('Segoe UI', 48, 'bold'), bg=self.colors['primary'], fg=self.colors['text']).pack(padx=30, pady=20)
+                font=('Segoe UI', 38, 'bold'), bg=self.colors['primary'], fg=self.colors['text']).pack(padx=18, pady=(10, 4))
         
         tk.Label(score_frame, text=f"Başarı Oranı: %{percentage:.1f}", 
-                font=self.fonts['header'], bg=self.colors['primary'], fg=self.colors['text']).pack(pady=(0, 20))
+                font=self.fonts['body'], bg=self.colors['primary'], fg=self.colors['text']).pack(pady=(0, 4))
         
         tk.Label(score_frame,
                  text=f"Toplam Süre: {self._format_seconds(self.total_elapsed_seconds)}",
@@ -2383,15 +2383,15 @@ Başarılar dilerim! 🌟
             color = self.colors['danger']
         
         message_frame = tk.Frame(content_frame, bg=color, relief=tk.RIDGE, bd=2)
-        message_frame.pack(fill=tk.X, pady=20)
+        message_frame.pack(fill=tk.X, pady=(0, 12), padx=10)
         
         tk.Label(message_frame, text=message, 
                 font=self.fonts['header'], bg=color, fg=self.colors['text']).pack(pady=15)
         
         # --- DETAILED BREAKDOWN ---
         breakdown_label = tk.Label(content_frame, text="📋 SORU DETAYLARI", 
-                                  font=self.fonts['header'], bg=self.colors['card'], fg=self.colors['text'])
-        breakdown_label.pack(pady=(20, 10))
+                                  font=self.fonts['body'], bg=self.colors['card'], fg=self.colors['text'])
+        breakdown_label.pack(pady=(8, 6))
         
         # Get answers from history
         answered_data = []
@@ -2425,26 +2425,29 @@ Başarılar dilerim! 🌟
             q = data['q']
             row_bg = self.colors['primary'] if i % 2 == 0 else self.colors['card']
             q_frame = tk.Frame(content_frame, bg=row_bg, relief=tk.RIDGE, bd=1)
-            q_frame.pack(fill=tk.X, padx=20, pady=2)
-            
+            q_frame.pack(fill=tk.X, padx=10, pady=2)
+
+            top_row = tk.Frame(q_frame, bg=row_bg)
+            top_row.pack(fill=tk.X, padx=10, pady=(8, 2))
+
             status_color = self.colors['success'] if data['is_correct'] else self.colors['danger']
-            if data['status'] == "İşaretlenmedi": status_color = self.colors['text_secondary']
-            
-            tk.Label(q_frame, text=f"{i}. {q['ders']} {q['yil']} Soru {q['soru_no']}", 
-                    font=('Segoe UI', 9, 'bold'), bg=row_bg, fg=self.colors['text']).pack(side=tk.LEFT, padx=10, pady=10)
-            
-            tk.Label(q_frame, text=data['status'], 
-                    font=('Segoe UI', 9, 'bold'), bg=row_bg, fg=status_color).pack(side=tk.RIGHT, padx=10)
-            
-            # Details if answered
+            if data['status'] == "İşaretlenmedi":
+                status_color = self.colors['text_secondary']
+
+            tk.Label(top_row, text=f"{i}. {q['ders']} {q['yil']} Soru {q['soru_no']}",
+                    font=('Segoe UI', 9, 'bold'), bg=row_bg, fg=self.colors['text']).pack(side=tk.LEFT, anchor=tk.W)
+
+            info_bits = [data['status']]
             if data['status'] != "İşaretlenmedi":
-                detail_text = f"Sizin: {data['selected'][:30]}... | Doğru: {data['correct'][:30]}..."
-                tk.Label(q_frame, text=detail_text, font=('Segoe UI', 8), 
-                        bg=row_bg, fg=self.colors['text_secondary']).pack(side=tk.RIGHT, padx=20)
-                tk.Label(q_frame,
-                         text=f"Süre: {self._format_seconds(data['elapsed'])}",
-                         font=('Segoe UI', 8), bg=row_bg,
-                         fg=self.colors['text_secondary']).pack(side=tk.RIGHT, padx=(0, 10))
+                info_bits.append(f"Süre: {self._format_seconds(data['elapsed'])}")
+            tk.Label(top_row, text=" | ".join(info_bits),
+                    font=('Segoe UI', 8, 'bold'), bg=row_bg, fg=status_color).pack(side=tk.RIGHT, anchor=tk.E)
+
+            if data['status'] != "İşaretlenmedi":
+                detail_text = f"Sizin: {data['selected'][:22]}...   Doğru: {data['correct'][:22]}..."
+                tk.Label(q_frame, text=detail_text, font=('Segoe UI', 8),
+                        bg=row_bg, fg=self.colors['text_secondary'],
+                        justify=tk.LEFT, anchor=tk.W, wraplength=760).pack(fill=tk.X, padx=10, pady=(0, 8))
         
         # Buttons
         button_frame = tk.Frame(content_frame, bg=self.colors['card'])
