@@ -505,7 +505,7 @@ class ModernDKABQuiz:
         tk.Label(analiz_card, text="Yıl/Konu Dağılımı:", font=('Segoe UI', 8),
                 fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
         
-        self.analiz_combo = ttk.Combobox(analiz_card, values=["Özet", "Detaylı"],
+        self.analiz_combo = ttk.Combobox(analiz_card, values=["Özet", "Detaylı", "Benzer Sorular"],
                                           state="readonly", width=14, style='Modern.TCombobox')
         self.analiz_combo.pack(padx=5, pady=2, fill=tk.X)
         self.analiz_combo.set("Özet")
@@ -839,6 +839,60 @@ Başarılar dilerim! 🌟
                             tk.Label(konu_count_frame, text=f"{konu[:24]}: {count}",
                                     font=('Segoe UI', 9), bg=konu_bg, fg=self.colors['text'], width=22).pack(fill=tk.X)
                             added_topics += 1
+                            
+        elif hasattr(self, 'analiz_combo') and self.analiz_combo.get() == "Benzer Sorular":
+            tk.Label(content_frame, text="🔍 BENZER SORULAR AĞI (Eşleşme > %55)",
+                    font=('Segoe UI', 11, 'bold'), bg=self.colors['card'], fg=self.colors['text']).pack(pady=(20, 5))
+            
+            q_words = []
+            for q in all_parsed_questions:
+                text = re.sub(r'[^\w\s]', '', (q.get('soru_metni', '') + ' ' + str(q.get('siklar', {}))).lower())
+                q_words.append(set(text.split()))
+
+            similar_pairs = []
+            n_q = len(all_parsed_questions)
+            for i in range(n_q):
+                for j in range(i+1, n_q):
+                    w1, w2 = q_words[i], q_words[j]
+                    if not w1 or not w2: continue
+                    inter = len(w1.intersection(w2))
+                    union = len(w1.union(w2))
+                    sim = inter / union if union else 0
+                    if sim > 0.55:
+                        similar_pairs.append((sim, all_parsed_questions[i], all_parsed_questions[j]))
+            
+            similar_pairs.sort(key=lambda x: x[0], reverse=True)
+            
+            sim_frame = tk.Frame(content_frame, bg=self.colors['border'])
+            sim_frame.pack(padx=15, fill=tk.X, pady=5)
+            
+            if not similar_pairs:
+                tk.Label(sim_frame, text="Hiç benzer soru bulunamadı.", font=('Segoe UI', 10),
+                         bg=self.colors['card'], fg=self.colors['text']).pack(padx=1, pady=1, fill=tk.X)
+            else:
+                seen = set()
+                count = 0
+                for sim, q1, q2 in similar_pairs:
+                    pair_id = tuple(sorted([f"{q1['yil']}{q1['ders']}{q1['soru_no']}", f"{q2['yil']}{q2['ders']}{q2['soru_no']}"]))
+                    if pair_id in seen: continue
+                    seen.add(pair_id)
+                    
+                    bg_color = self.colors['card'] if count % 2 == 0 else self.colors['primary']
+                    
+                    row_f = tk.Frame(sim_frame, bg=bg_color)
+                    row_f.pack(fill=tk.X, padx=1, pady=1)
+                    
+                    btn_text = f"🎯 %{int(sim*100)} EŞLEŞME: {q1['yil']} {q1['ders']} (Soru {q1.get('soru_no','?')}) ↔ {q2['yil']} {q2['ders']} (Soru {q2.get('soru_no','?')})"
+                    tk.Label(row_f, text=btn_text, font=('Segoe UI', 10, 'bold'), bg=bg_color, fg=self.colors['text']).pack(anchor="w", padx=10, pady=(5, 2))
+                    
+                    t1 = q1.get('soru_metni', '').replace('\n', ' ')
+                    t2 = q2.get('soru_metni', '').replace('\n', ' ')
+                    tk.Label(row_f, text=f"• Soru A: {t1[:100]}...", font=('Segoe UI', 8), bg=bg_color, fg=self.colors['text'], justify="left").pack(anchor="w", padx=20, pady=1)
+                    tk.Label(row_f, text=f"• Soru B: {t2[:100]}...", font=('Segoe UI', 8), bg=bg_color, fg=self.colors['text'], justify="left").pack(anchor="w", padx=20, pady=(1, 5))
+                    
+                    count += 1
+                    if count >= 30:
+                        break
         
         back_btn = self.create_button(content_frame, "🔙 GERİ",
                                       self.show_welcome_screen, self.colors['text_secondary'])

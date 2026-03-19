@@ -399,19 +399,17 @@ Doğru Cevap: A
 
 Soru 25:
 KONU: Fıkıh
-Hanefilere göre zekâta tabi mallarda aranan yıllanma şartı;
-I. hasadı yapılmış buğday
-II. miras yoluyla elde edilen altın,
-III. kazı yoluyla elde edilen maden
-gibi mallardan hangileri için gereklidir?
+İbadet ya da hukuki sözleşmelerin rükünlerinden birinin ihlal edilmesi hâlinde butlan denilen hüküm ortaya çıkar. Bu ilkeye göre unutarak yeme içmenin orucu bozması gerekir. Zira bu durumda orucun rüknü olan imsak ihlal edilmiştir. Ancak Hanefiler, Hz. Muhammed'in "Oruçlu iken unutarak yiyip içen kimse, orucunu tamamlasın. Zira onu Allah yedirip içirmiştir." şeklindeki hadisine istinaden yerleşik kuraldan ayrılarak böyle birinin orucunun geçerli olacağına hükmetmiştir.
 
-A) Yalnız I
-B) Yalnız II
-C) I ve II
-D) I ve III
-E) II ve III
+Bu parçada Hanefiler tarafından verilen hükmün dayanağı aşağıdakilerden hangisidir?
 
-Doğru Cevap: C
+A) İstihsan
+B) Sedd-i zerai
+C) Örf
+D) İstishab
+E) Mesalih-i mürsele
+
+Doğru Cevap: A
 
 ---SONRAKI SORU---
 
@@ -1100,17 +1098,25 @@ Doğru Cevap: A
 
 Soru 64:
 KONU: Din Eğitimi
-Meslek dersleri öğretmeni Tarık Bey, derste “kul hakkı” konusunu aşağıdaki şekilde işler:
+İmam-hatip meslek dersleri öğretmenlerine yönelik;
 
-Girişte kısa bir film gösterir, kul hakkı kavramını tanımlar, konuyla ilgili ayetleri sıralar ve kul hakkının dindeki önemini vurgular. Ara özet yaptıktan sonra kul hakkına giren davranışları bazı resim ve örnek olaylar yardımıyla açıklar. Son olarak konunun anlaşılıp anlaşılmadığını tespit edebilmek için öğrencilere bazı sorular sorar ve anlaşılmayan hususları tekrar ederek dersi tamamlar.
+I. şehri tanıtma amaçlı bir geziye gitme,
+II. "Sınıf Yönetimi ve Etkili İletişim" konulu seminer programına katılma,
+III. güncel dinî meselelerin tartışıldığı panele iştirak etme
 
-Buna göre Tarık Bey derste ağırlıklı olarak aşağıdakilerden hangisini kullanmıştır?
+etkinlikleri, öğretmenlik mesleği uzmanlık alanlarından hangilerine karşılık gelmektedir?
 
-A) Sunuş yoluyla öğretim
-B) Buluş yoluyla öğretim
-C) Proje tabanlı öğretim
-D) Araştırma inceleme yoluyla öğretim
-E) Tam öğrenme modeli
+                I            II            III
+A)        Pedagojik       Genel kültür   Alan bilgisi
+           formasyon                       eğitimi
+B)        Pedagojik       Alan bilgisi   Genel kültür
+           formasyon       eğitimi
+C)        Genel kültür    Alan bilgisi   Pedagojik
+                              eğitimi     formasyon
+D)        Genel kültür    Pedagojik      Alan bilgisi
+                              formasyon    eğitimi
+E)        Alan bilgisi     Pedagojik      Genel kültür
+           eğitimi         formasyon
 
 Doğru Cevap: D
 
