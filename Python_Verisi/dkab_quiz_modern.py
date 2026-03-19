@@ -910,8 +910,16 @@ Başarılar dilerim! 🌟
     
     def select_option(self, var, option_num):
         """Seçenek seçildiğinde - moda göre davranır"""
-        # Save selection to history
         question = self.quiz_questions[self.current_index]
+        
+        # Check if already answered in Instant Mode
+        if self.mode_var.get() == "Anında Cevap":
+            for item in self.test_history:
+                if (item['question']['yil'] == question['yil'] and 
+                    item['question']['soru_no'] == question['soru_no'] and
+                    item['question']['ders'] == question['ders']):
+                    return
+        
         selected_sik = self.option_map[option_num]
         
         # Update or add to history
@@ -971,7 +979,9 @@ Başarılar dilerim! 🌟
         """Test geçmişini günceller"""
         # Find if this question is already in history
         for item in self.test_history:
-            if item['question']['yil'] == question['yil'] and item['question']['soru_no'] == question['soru_no']:
+            if (item['question']['yil'] == question['yil'] and 
+                item['question']['soru_no'] == question['soru_no'] and
+                item['question']['ders'] == question['ders']):
                 item['selected'] = selected_sik
                 return
         
@@ -984,13 +994,34 @@ Başarılar dilerim! 🌟
     def restore_selection_from_history(self, question):
         """Geçmişten seçimi geri yükler"""
         for item in self.test_history:
-            if item['question']['yil'] == question['yil'] and item['question']['soru_no'] == question['soru_no']:
+            if (item['question']['yil'] == question['yil'] and 
+                item['question']['soru_no'] == question['soru_no'] and
+                item['question']['ders'] == question['ders']):
+                
+                selected_sik = item['selected']
+                is_correct = (selected_sik == question['dogru_cevap'])
+                
                 # Find the option number for this selection
                 for option_num, sik_key in self.option_map.items():
-                    if sik_key == item['selected']:
+                    if sik_key == selected_sik:
                         # Set the selection
                         self.option_vars[option_num].set(option_num)
-                        self.option_buttons[option_num].config(bg='white', fg=self.colors['bg'])
+                        
+                        if self.mode_var.get() == "Anında Cevap":
+                            if is_correct:
+                                self.option_buttons[option_num].config(bg=self.colors['success'], fg='white')
+                            else:
+                                self.option_buttons[option_num].config(bg=self.colors['danger'], fg='white')
+                                # Also highlight correct one
+                                for opt_num, s_key in self.option_map.items():
+                                    if s_key == question['dogru_cevap']:
+                                        self.option_buttons[opt_num].config(bg=self.colors['success'], fg='white')
+                                        break
+                            # Show feedback on screen
+                            self.show_feedback_on_screen(question, is_correct)
+                        else:
+                            # Test/Review mode - generic highlight
+                            self.option_buttons[option_num].config(bg='white', fg=self.colors['bg'])
                         break
                 return
     
@@ -1446,8 +1477,28 @@ Başarılar dilerim! 🌟
         results_card = self.create_card(self.main_content, "🎯 TEST SONUÇLARI")
         results_card.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
         
-        content_frame = tk.Frame(results_card, bg=self.colors['card'])
-        content_frame.pack(expand=True, fill=tk.BOTH, padx=40, pady=40)
+        # Scrollable container for results
+        canvas = tk.Canvas(results_card, bg=self.colors['card'], highlightthickness=0)
+        scrollbar = ttk.Scrollbar(results_card, orient="vertical", command=canvas.yview, style="Modern.Vertical.TScrollbar")
+        canvas.configure(yscrollcommand=scrollbar.set)
+        scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+        canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+        content_frame = tk.Frame(canvas, bg=self.colors['card'])
+        win_id = canvas.create_window((0, 0), window=content_frame, anchor="nw")
+
+        def _on_frame_configure(e):
+            canvas.configure(scrollregion=canvas.bbox("all"))
+        def _on_canvas_configure(e):
+            canvas.itemconfig(win_id, width=e.width)
+        content_frame.bind("<Configure>", _on_frame_configure)
+        canvas.bind("<Configure>", _on_canvas_configure)
+        
+        # Mouse wheel scroll
+        def _on_mousewheel(e):
+            try: canvas.yview_scroll(int(-1 * (e.delta / 120)), "units")
+            except: pass
+        canvas.bind_all("<MouseWheel>", _on_mousewheel)
         
         # Score display
         score_frame = tk.Frame(content_frame, bg=self.colors['primary'], relief=tk.RIDGE, bd=3)
@@ -1481,6 +1532,59 @@ Başarılar dilerim! 🌟
         
         tk.Label(message_frame, text=message, 
                 font=self.fonts['header'], bg=color, fg=self.colors['text']).pack(pady=15)
+        
+        # --- DETAILED BREAKDOWN ---
+        breakdown_label = tk.Label(content_frame, text="📋 SORU DETAYLARI", 
+                                  font=self.fonts['header'], bg=self.colors['card'], fg=self.colors['text'])
+        breakdown_label.pack(pady=(20, 10))
+        
+        # Get answers from history
+        answered_data = []
+        for q in self.quiz_questions:
+            status = "İşaretlenmedi"
+            selected_txt = "N/A"
+            correct_txt = q['siklar'].get(q['dogru_cevap'], 'N/A')
+            is_correct = False
+            
+            # Find in history
+            for item in self.test_history:
+                if (item['question']['yil'] == q['yil'] and 
+                    item['question']['soru_no'] == q['soru_no'] and
+                    item['question']['ders'] == q['ders']):
+                    selected_txt = q['siklar'].get(item['selected'], 'N/A')
+                    is_correct = (item['selected'] == q['dogru_cevap'])
+                    status = "✅ DOĞRU" if is_correct else "❌ YANLIŞ"
+                    break
+            
+            answered_data.append({
+                'q': q,
+                'status': status,
+                'is_correct': is_correct,
+                'selected': selected_txt,
+                'correct': correct_txt
+            })
+
+        # List questions
+        for i, data in enumerate(answered_data, 1):
+            q = data['q']
+            row_bg = self.colors['primary'] if i % 2 == 0 else self.colors['card']
+            q_frame = tk.Frame(content_frame, bg=row_bg, relief=tk.RIDGE, bd=1)
+            q_frame.pack(fill=tk.X, padx=20, pady=2)
+            
+            status_color = self.colors['success'] if data['is_correct'] else self.colors['danger']
+            if data['status'] == "İşaretlenmedi": status_color = self.colors['text_secondary']
+            
+            tk.Label(q_frame, text=f"{i}. {q['ders']} {q['yil']} Soru {q['soru_no']}", 
+                    font=('Segoe UI', 9, 'bold'), bg=row_bg, fg=self.colors['text']).pack(side=tk.LEFT, padx=10, pady=10)
+            
+            tk.Label(q_frame, text=data['status'], 
+                    font=('Segoe UI', 9, 'bold'), bg=row_bg, fg=status_color).pack(side=tk.RIGHT, padx=10)
+            
+            # Details if answered
+            if data['status'] != "İşaretlenmedi":
+                detail_text = f"Sizin: {data['selected'][:30]}... | Doğru: {data['correct'][:30]}..."
+                tk.Label(q_frame, text=detail_text, font=('Segoe UI', 8), 
+                        bg=row_bg, fg=self.colors['text_secondary']).pack(side=tk.RIGHT, padx=20)
         
         # Buttons
         button_frame = tk.Frame(content_frame, bg=self.colors['card'])
