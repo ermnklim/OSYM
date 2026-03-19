@@ -253,6 +253,7 @@ class ModernDKABQuiz:
         self.update_question_limit()
         self._update_goto_question_list()
         self.show_welcome_screen()
+        self.root.after(200, lambda: self.load_questions(show_message=False))
 
     def rebuild_ui(self):
         """Tema degisimi sonrasi arayuzu koruyarak yeniden kurar."""
@@ -1076,7 +1077,7 @@ Başarılar dilerim! 🌟
                                       self.show_welcome_screen, self.colors['text_secondary'])
         back_btn.pack(pady=20, ipady=5)
         
-    def load_questions(self):
+    def load_questions(self, show_message=True):
         """Soruları yükler"""
         def load_in_background():
             try:
@@ -1110,7 +1111,7 @@ Başarılar dilerim! 🌟
                 self.root.after(0, lambda: self.update_dropdown_values(years_list, ders_list))
                 self.root.after(0, self.update_stats)
                 self.root.after(0, self.update_question_limit)
-                self.root.after(0, self.questions_loaded_successfully)
+                self.root.after(0, lambda: self.questions_loaded_successfully(show_message=show_message))
                 
             except Exception as e:
                 self.root.after(0, lambda: messagebox.showerror("Hata", f"Sorular yüklenirken hata oluştu: {e}"))
@@ -1118,12 +1119,13 @@ Başarılar dilerim! 🌟
         # Show loading message
         self.load_button.config(text="⏳ YÜKLENİYOR...", bg=self.colors['text_secondary'])
         self.root.after(100, load_in_background)
-        
-    def questions_loaded_successfully(self):
+
+    def questions_loaded_successfully(self, show_message=True):
         """Sorular başarıyla yüklendiğinde"""
         self.load_button.config(text=f"✅ {len(self.questions)} SORU YÜKLENDİ", bg=self.colors['success'])
         self.status_label.config(text="🟢 Hazır", fg=self.colors['success'])
-        messagebox.showinfo("Başarılı", f"Toplam {len(self.questions)} soru yüklendi!")
+        if show_message:
+            messagebox.showinfo("Başarılı", f"Toplam {len(self.questions)} soru yüklendi!")
         
     def update_dropdown_values(self, years, dersler):
         """Dropdown değerlerini günceller."""
