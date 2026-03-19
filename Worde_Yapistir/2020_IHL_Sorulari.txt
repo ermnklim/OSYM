@@ -3,6 +3,7 @@ KONU: Genel Kültür
 YIL: 2020
 
 Soru 1:
+KONU: Kur'an-ı Kerim ve Tecvid
 Kur'an-ı Kerim'de;
 • Huneyn Savaşı'nın nasıl gerçekleştiğinden bahseden,
 • Tebük Seferi'nin hazırlıkları ve münafıkların bu sefer esnasındaki tutumlarını anlatan,
@@ -20,6 +21,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 2:
+KONU: Kur'an-ı Kerim ve Tecvid
 Harf-i medden sonra sebeb-i medd olan hemze aynı kelimede yan yana bulunursa aşağıdaki tecvit kaidelerinden hangisi meydana gelir?
 
 A) Medd-i Lin
@@ -33,6 +35,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 3:
+KONU: Kur'an-ı Kerim ve Tecvid
 İdgam; çeşitli açılardan aralarında yakınlık bulunan harfler yan yana geldiğinde ve bunlardan ilki sakin, ikincisi harekeli olduğunda ilk harfin ikincisine katılarak okunmasıdır. İdgam kendi içinde türlüre ayrılır. Bunlardan biri mahreçleri veya sıfatları yahut hem mahreçleri hem sıfatları bakımından birbiriyle yakınlığı olan harflerin bir araya geldiği durumlarda birincisinin ikincisine idgam yapılmasıdır.
 
 Bu parçada bahsedilen idgam türü aşağıdakilerden hangisidir?
@@ -48,6 +51,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 4:
+KONU: Kur'an-ı Kerim ve Tecvid
 Kur'an-ı Kerim mushaf hâline getirildiğinde ayetler harekesiz, durak işaretleri belirtilmeden ve yazılışları benzer olan harfler noktasız yazıya geçirilmiştir. Ancak sonrasında ana dili Arapça olmayan Müslümanların Kur'an'ı yanlış okumalarının da etkisiyle bu tür işaretlerin konulmasına ihtiyaç duyulmuştur.
 
 Bu parçada bahsedilen faaliyetlerin kronolojik sırası aşağıdakilerin hangisinde verilmiştir?
@@ -63,6 +67,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 5:
+KONU: Kur'an-ı Kerim ve Tecvid
 Kur'an-ı Kerim okumasını yeni öğrenmeye başlayan Mert, Fussilet Suresi'nin 44. ayetine geldiğinde “الحجي” kelimesinin altında bilmediği bir işaret görür. Bunun ne anlama geldiğini öğretmenine sorar. Öğretmeni de ona “Burada arka arkaya iki hemze gelmiştir. İkinci hemzeyi, hemze ile elif arasında bir sesle okumak gerekir. Fakat bu "he" sesi gibi olmamalıdır.” cevabını verir.
 
 Bu parçada bahsedilen tecvit uygulaması aşağıdakilerden hangisidir?
@@ -78,6 +83,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 6:
+KONU: Tefsir
 İslam dünyasının XIX. yüzyıldan itibaren yaşadığı süreç ve geçirdiği değişimler, tefsirde gerek şekilsel gerekse muhteva bakımından önemli değişiklikler meydana getirmiştir. Bu dönem tefsirinde dikkat çeken hususlardan biri, Müslümanların sorunlarının büyük oranda Kur'an'dan uzaklaşma eğilimi olduğunun düşünülmesidir. Bu düşünceden hareketle toplumsal sorunlara Kur'an merkezli bir çözümün önerildiği tefsirler kaleme alınmıştır.
 
 Aşağıdakilerden hangisi bu parçada bahsedilen tefsirlere örnektir?
@@ -93,6 +99,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 7:
+KONU: Tefsir
 Hz. Muhammed'in vefatından sonra sahabelerin bir kısmı Medine'den ayrılarak farklı şehirlere gitmişler ve buralarda tefsir ilminin gelişmesine vesile olmuşlardır. Bu konuda Abdullah b. Mesud öne çıkmış ve orada yetiştirdiği öğrencilerle gittiği şehrin, bir ilim merkezi olmasını sağlamıştır.
 
 Bu parçada bahsedilen şehir aşağıdakilerden hangisidir?
@@ -108,6 +115,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 8:
+KONU: Tefsir
 Mearic Suresi'nin 19. ayetinde zikredilen "heluan" kelimesinin ne manaya geldiği ancak devamındaki "Kendisine kötülük dokunduğunda feryat eder. Ona hayır dokunduğunda ise cimrileşir." ayetinden anlaşılmaktadır. Buna göre "heluan", sabrı kıt anlamına gelmekte ve insanın yaratılış özelliklerinden birini belirtmektedir.
 
 Bu parçada bahsedilen durumu inceleyen Kur'an ilmi aşağıdakilerden hangisidir?
@@ -123,6 +131,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 9:
+KONU: Tefsir
 Mutezile kelamcısı Nazzam, Arap ediplerinin fesahat ve belagat itibarıyla Kur'an'ın bir benzerini meydana getirmelerini mümkün görür. Ancak bunun Allah tarafından engellendiğini ve bu sebeple de gerçekleşemeyeceğini ileri sürer.
 
 Bu parçada bahsedilen husus aşağıdaki Kur'an ilimlerinden hangisi ile ilişkilidir?
@@ -138,6 +147,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 10:
+KONU: Tefsir
 Bir ayetin sebeb-i nüzulüne dair birden fazla rivayet bulunabilmektedir. Müfessirler bunlardan hangisinin sahih olduğunu belirlemek için birçok kriterler kullanırlar.
 
 Aşağıdakilerden hangisi bu kriterlerden biri değildir?
@@ -153,6 +163,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 11:
+KONU: Tefsir
 Kur'an'da yemine çeşitli vesilelerle müracaat edilmiştir. Bundan maksat, bir yandan vahyin muhataplarının dikkatini çekmek diğer yandan da ilahî mesajın anlamını tekit etmektir. Bu yeminlerin üzerine yemin edilen varlığın kıymetini ve önemini gösterme gibi bir işleve sahip olduğu da kabul edilmektedir.
 
 Bu parçada bahsedilen konu aşağıdakilerden hangisinin kapsamına girmektedir?
@@ -168,6 +179,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 12:
+KONU: Hadis
 Murat Öğretmen hadis dersinde sınıfa öğrencilerin incelemesi için hadis kitapları getirmiş ve bunları öğrencilere vermiştir. Bu kitapları inceleyen Zeynep, kitaplardan birinin diğerlerinden farklı bir sistematiğe sahip olduğunu fark etmiştir. Diğerleri konularına göre tasnif edildiği hâlde incelediği bu kitapta hadisler, sahabe ravilerine göre sıralanmıştır. Zeynep, bu kitap türü hakkında öğretmenine müracaat ederek ayrıntılı bilgi talep etmiş, öğretmeni şu cevabı vermiştir: Bu kitabın tasnifinde raviler esas alınmış ve raviler, muhtelif kriterlere göre sıralanmıştır. Her birinden rivayet edilen hadisler, konularına bakılmaksızın isimleri altında belirtilmiştir.
 
 Buna göre Murat Öğretmen'in aşağıdaki açıklamalardan hangisiyle devam etmesi gerekir?
@@ -183,6 +195,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 13:
+KONU: Hadis
 Selim Öğretmen, hadis tasnif türlerini öğrencilerine daha iyi kavratabilmek için onlardan ödev hazırlamalarını ve bu ödevde fikhın temel konularını dikkate alarak bunların her birine dair bir menfi hadise yer vermelerini bekler. Öğrenciler de kütüphaneye giderek inanç konuları hariç taharetten vasiyete kadar sadece fıkhi konuları içeren bir hadis eser türüne bakar.
 
 Öğrencilerin başvurdukları hadis eser türü aşağıdakilerden hangisidir?
@@ -198,6 +211,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 14:
+KONU: Hadis
 Emevi yöneticilerinden Ömer b. Abdülaziz, birçok hadis âliminin vefatı üzerine hadislerin kaybolacağından endişelenmiştir. Bu sebeple valilere ve ülkedeki hadis âlimlerine mektuplar göndererek hadislerin toplanmasını emretmiş ve hadis konusundaki yetkinliğiyle bilinen bir âlimi de bu işin başına getirmiştir. Bundan dolayı genel bir kabul olarak resmî tedvin dönemi bu âlim ile başlatılır.
 
 Bu parçada bahsedilen âlim aşağıdakilerden hangisidir?
@@ -213,6 +227,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 15:
+KONU: Hadis
 Aynı konuda gelen bazı hadis rivayetlerinde ilk bakışta ihtilaf gibi görünen hususlar bulunabilmektedir. Muhaddisler, bu durumu “muhtelifü’l-hadis” başlığı altında değerlendirerek bu zıtlıkları gidermeye çalışmışlardır. Bu kapsamda;
 • her iki hadisin bazı özel hususlarla ilgili olduğu ve her ikisinin de geçerli olabileceğinin kabul edilmesi,
 • mana olarak uzlaşılmayacak ölçüde zıtlık içerenlerden birinin değerini feshettiğinin belirtilmesi,
@@ -232,6 +247,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 16:
+KONU: Hadis
 Bir hadis, Hammad b. Seleme→ Eyyub→ Muhammed b. Sirin→ Ebu Hureyre→Resulullah şeklindeki bir isnadla rivayet edilmektedir. Önceleri Hammad b. Seleme'nin bu hadisi rivayette tek kaldığı zannedilmiş ancak yapılan araştırma neticesinde aynı rivayetin -senedde yer alan Muhammed b. Sirin'den- Eyyub dışında başka bir ravi tarafından da rivayet edildiği tespit edilmiştir.
 
 Bu durumda sonradan tespit edilen rivayete verilen isim aşağıdakilerden hangisidir?
@@ -247,6 +263,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 17:
+KONU: Hadis
 Sahabe ve hadis rivayetleriyle ilgili;
 I. Bazı sahabeler sorumluluğundan korktukları için hadis rivayetinden kaçınmışlardır.
 II. Musannef türü eserlerde herhangi bir sahabenin rivayet ettiği hadisleri bir arada bulmak mümkündür.
@@ -265,6 +282,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 18:
+KONU: Hadis
 Hendek Savaşı sonrasında Benî Kureyza kabilesi üzerine düzenlenen seferde ikindi namazını kastederek Allah Resulü “Benî Kureyza'nın yaşadığı mevkiye varmadan namazınızı kılmayın.” buyurdu. Vaktin çıkacağını düşünen bazı sahabeler yolculuğun devamında namazlarını eda etti. Bazıları ise Allah Resulü'nün sözüne istinaden namazlarını Benî Kureyza yurduna kadar kılmadı. Bu durum kendisine iletildiğinde Hz. Muhammed herhangi bir şey söylemedi ve sessiz kaldı.
 
 Hz. Muhammed'in bu tavrı hangi sünnet türüne örnek gösterilir?
@@ -280,6 +298,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 19:
+KONU: Fıkıh
 Hanefilere göre zekâta tabi mallarda aranan yıllanma şartı;
 I. hasadı yapılmış buğday
 II. miras yoluyla elde edilen altın,
@@ -297,6 +316,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 20:
+KONU: Fıkıh
 I. Üç kez secde etmek
 II. Selam vermesi gerekirken ayağa kalkmak
 III. Fatiha'dan sonra Kur'an'dan bir miktar okuma vecibesini yerine getirmemek
@@ -314,6 +334,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 21:
+KONU: Fıkıh
 İhramlı iken Harem bölgesinde yapılması yasak olan şeylerin yapılmasına cinayet denir ve bu durum ceza gerektirir. Hac veya umrede vacip olan menasikten birinin mazeretsiz olarak terk edilmesi veya zamanında yapılmaması da ceza gerektirmesi açısından cinayet hükmündedir. Bu cinayetlerin bazısının işlenmesi durumunda kefaret ve ceza olarak büyükbaş hayvan (bedene) kesilmesi gerekir.
 
 Hanefilere göre aşağıdaki cinayetlerden hangisi bu kapsamdadır?
@@ -329,6 +350,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 22:
+KONU: Fıkıh
 Nisa Suresi'nde kimlerin hangi oranda mirastan pay alacakları ayrıntılı bir şekilde açıklanmıştır. Ayetlerden hareketle İslam hukukçuları da varislerin varlığına, sayısına ve yakınlığına göre başka kimselerin varis olup olamayacağını tespit etmişler. Öyle ki varis olma önceliğine sahip yakınların olması durumunda diğer bazı yakınlar mirastan sakıt olmuştur.
 
 Aşağıdakilerden hangisi bu duruma örnek oluşturmaz?
@@ -344,6 +366,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 23:
+KONU: Fıkıh
 İddet; boşanma, evliliğin feshi ve ölüm gibi sebeplerle evliliğin sona ermesi hâlinde kadının yeni bir evlilik yapmadan önce bekleme süresidir. Kadınların özel durumlarına göre bu bekleme süresi de farklılık gösterir. Örneğin Kur'an-ı Kerim, "... eşleri, kendi kendilerine dört ay on gün (iddet) beklerler. Sürelerini bitirince artık kendileri için meşru olan evlenmelerinde size bir günah yoktur..." (Bakara, 2:234) ifadesiyle bazı durumlardaki kadınların beklemeleri gereken sürenin dört ay on gün olduğunu bildirmiştir.
 
 Bu parçada bahsedilen iddet süresi hangi durumdaki kadınlar için geçerlidir?
@@ -359,6 +382,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 24:
+KONU: Fıkıh
 Salih Bey'e babasından bir yalı miras kalır. Bir müddet sonra paraya ihtiyaç duyar. Bunun üzerine yalıyı satılığa çıkarır. Müşteriye, 10 yıl içinde bedelini iade etmesi hâlinde yalıyı tekrar kendisine satmasını şart koşar. Müşteri, bu şartı kabul ederek alımı gerçekleştirir.
 
 Bu parçada sözü edilen akit çeşidi, aşağıdaki kavramlardan hangisiyle ifade edilir?
@@ -374,6 +398,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 25:
+KONU: Fıkıh
 Hanefilere göre zekâta tabi mallarda aranan yıllanma şartı;
 I. hasadı yapılmış buğday
 II. miras yoluyla elde edilen altın,
@@ -391,6 +416,7 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 Soru 26:
+KONU: Fıkıh
 Ali ve İsa, Ramazan ayında Adana'dan İstanbul'a yolculuğa çıkarlar. Ali, “Kim hasta olur veya yolculuk hâlinde bulunur da tutamadığı günler sayısınca başka günlerde kaza etsin.” (Bakara, 2:185) ayetini okuyarak orucun kazaya bırakılabileceğini söyler. Bunun üzerine İsa, namazın da kazaya bırakılmasını teklif eder. Fakat Ali, bunun geçersiz kıyas nedeniyle caiz olamayacağını söyler.
 
 Ali aşağıdaki şer’î delillerden hangisine aykırı olduğu için bunun geçersiz olduğunu söylemiştir?
@@ -406,6 +432,7 @@ Doğru Cevap: D
 ---SONRAKI SORU---
 
 Soru 27:
+KONU: Kelam / Akaid
 İslam âlimleri; “İnsan, yaratılışı itibarıyla Allah inancına sahiptir.”, “Âlem ve içindeki varlıklar sonradan yaratılmıştır.”, “Mümkün bir varlık olan âlem, var olmak için bir sebebe muhtaçtır.” ve “Tabiat, hayrette bırakan bir ahenk ve şaşmaz bir düzen içinde varlığını sürdürmektedir.” gibi kabullerden hareketle isbat-ı vacip delilleri ortaya koymuşlardır.
 
 Bu parçada aşağıdaki delillerden hangisine değinilmemiştir?
@@ -421,6 +448,7 @@ Doğru Cevap: E
 ---SONRAKI SORU---
 
 Soru 28:
+KONU: Kelam / Akaid
 Mutezile’ye göre Allah’ın görülebileceğini söylemek, O’nun insanın görme açısı içerisinde, uygun görme mesafesinde ve somut bir varlık olmasını kabul etmek demektir. Bu kabul ise Allah’ı sınırlı ve sonlu bir cisim olarak telakki etme anlamına gelir. Bu yüzden Allah’ın görülmesi ne dünyada ne de ahirette mümkündür.
 
 Bu parçada aşağıdaki akıl yürütme yöntemlerinden hangisi kullanılmıştır?
@@ -436,6 +464,7 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 Soru 29:
+KONU: Kelam / Akaid
 Eşari kelamında müteahhirun döneminin özellikleri ile ilgili;
 
 I. kelamın konularının çeşitlenmesi,
@@ -455,6 +484,7 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 Soru 30:
+KONU: Kelam / Akaid
 Hz. Muhammed’in vefatına yakın bir tarihte, peygamberlik iddiasında bulunanlar ortaya çıkmıştır. Bunlar çevresindekilere bu iddialarını ispat etmek amacıyla olağanüstü bir hadise gerçekleştirecekleri taahhüdünde bulunmuşlardır. Tek gözü görmeyen bir kişiye iyileşmesi için dua edeceği ve bu sayede iyileşeceği taahhüdü buna örnek verilebilir. Oysa bu iddia, o kişinin diğer gözünü de kaybetmesi ile sonuçlanmıştır.
 
 Bu durum aşağıdaki kavramlardan hangisi kapsamında değerlendirilir?
@@ -470,6 +500,7 @@ Doğru Cevap: E
 ---SONRAKI SORU---
 
 Soru 31:
+KONU: Kelam / Akaid
 Her ikisi de Ehl-i Sünnet kapsamında yer almasına karşın Eşarilik ile Maturidilik tüm inanç meselelerinde aynı görüşleri paylaşmamışlardır. Bunlardan biri Allah’ın fiili sıfatları konusudur.
 
 Söz konusu iki mezhebin bu konudaki görüşleriyle ilgili;
@@ -492,6 +523,7 @@ Doğru Cevap: B
 ---SONRAKI SORU---
 
 Soru 32:
+KONU: İslam Mezhepleri ve Akımları
 Nusayrilerle ilgili,
 
 I. Hızır inancı oldukça güçlüdür.
@@ -511,6 +543,7 @@ Doğru Cevap: E
 ---SONRAKI SORU---
 
 Soru 33:
+KONU: Kelam / Akaid
 Eşari gelenekte;
 
 • mezhebin ikinci kurucusu olarak takdim edilen,
@@ -530,6 +563,7 @@ Doğru Cevap: A
 ---SONRAKI SORU---
 
 Soru 34:
+KONU: İslam Mezhepleri ve Akımları
 İmamiyye’nin görüşleri arasında,
 
 I. Beda telakkisi haktır.
@@ -550,6 +584,7 @@ Doğru Cevap: B
 ---SONRAKI SORU---
 
 Soru 35:
+KONU: İslam Mezhepleri ve Akımları
 Aşağıdakilerden hangisi Haricileri nitelemek için kullanılan isimler arasında yer almaz?
 
 A) Mârika
@@ -563,6 +598,7 @@ Doğru Cevap: E
 ---SONRAKI SORU---
 
 Soru 36:
+KONU: İslam Mezhepleri ve Akımları
 Hz. Muhammed döneminde gerçekleşen;
 
 I. Reci,
@@ -583,6 +619,7 @@ Doğru Cevap: D
 ---SONRAKI SORU---
 
 Soru 37:
+KONU: İslam Mezhepleri ve Akımları
 Kadıyaniliğin kurucusu olan Mirza Gulam Ahmed’in dinî fikirlerinin oluşmasında;
 
 I. Hinduizm,
@@ -603,6 +640,7 @@ Doğru Cevap: B
 ---SONRAKI SORU---
 
 Soru 38:
+KONU: İslam Tarihi / Siyer
 Hz. Muhammed, hicretin ikinci yılında Abdullah b. Cahş komutasındaki sekiz kişilik bir müfrezeyi Kureyş’in durumunu tespit etmek üzere görevlendirdi. Müfreze, karşılaştıkları bir Kureyş kervanına ani bir baskında bulunup bir kişiyi öldürdü ve iki kişiyi de esir aldı. Bu olayın, haram ay olan Recep’in son günü mü yoksa Şaban’ın ilk günü mü olduğu belli değildi. Bu yüzden Yahudiler ve müşrikler, “Muhammed, haram ayda savaşıyor.” diye propagandaya başladılar.
 
 Söz konusu tartışmanın yaşandığı bu seriyye aşağıdakilerden hangisidir?
@@ -618,6 +656,7 @@ Doğru Cevap: A
 ---SONRAKI SORU---
 
 Soru 39:
+KONU: İslam Tarihi / Siyer
 Hz. Muhammed döneminde gerçekleşen bir sefer sırasında bazı Müslümanlara gerekli silah ve teçhizat sağlanamadı. Sefere katılamayacaklarını düşünen söz konusu kişiler, aşırı derecede üzülüp gözyaşı döktüler. İslam tarihinde “Bekkâûn” (çok ağlayanlar) olarak isimlendirilen bu Müslümanlara Kur’an-ı Kerim aracılığıyla sefere katılamadıkları için sorumlu olmadıkları bildirilmiştir.
 
 Bu parçada bahsedilen durum hangi sefer esnasında gerçekleşmiştir?
@@ -633,6 +672,7 @@ Doğru Cevap: D
 ---SONRAKI SORU---
 
 Soru 40:
+KONU: İslam Tarihi / Siyer
 İslam öncesi Arap devletleri içerisinde;
 
 • Suriye’de M.S. 200-636 yılları arasında varlığını sürdüren,
@@ -652,6 +692,7 @@ Doğru Cevap: A
 ---SONRAKI SORU---
 
 Soru 41:
+KONU: İslam Tarihi / Siyer
 Mekke’nin Müslümanlarca çok önem verilen bir yer olmasında aşağıdakilerden hangisinin etkili olduğu söylenemez?
 
 A) Uzun bir süre boyunca İslam Devleti’nin merkezi olması
@@ -665,6 +706,7 @@ Doğru Cevap: A
 ---SONRAKI SORU---
 
 Soru 42:
+KONU: İslam Tarihi / Siyer
 Hz. Muhammed döneminde gerçekleşen;
 
 I. Medine Sözleşmesi,
@@ -685,6 +727,7 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 Soru 43:
+KONU: İslam Tarihi / Siyer
 Hz. Ebu Bekir döneminde;
 
 • kadılık ve danışmanlık görevlerinde bulunan,
@@ -704,6 +747,7 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 Soru 44:
+KONU: İslam Tarihi / Siyer
 Abbasiler Dönemi'ndeki yerleşim birimleri arasında;
 
 • halife Mutasım tarafından kurulan,
@@ -723,6 +767,7 @@ Doğru Cevap: A
 ---SONRAKI SORU---
 
 Soru 45:
+KONU: İslam Kültür ve Medeniyeti
 Dinî musiki alanında araştırma yapmak üzere Tahran'a giden Mehmet, orada belli bir arkadaş çevresi edinir. Onların yardımıyla bölgede düzenlenen çeşitli dinî tören ve merasimlere iştirak eder. Bunlardan birinde "nevhâhan" adı verilen sanatkârlar tarafından irticali olarak okunan bir manzume dinler. Bu manzumede, Hz. Hüseyin’in üstün özellikleriyle onun ve yanındakilerin Kerbela'da şehit edilişinden duyulan üzüntünün dile getirildiğini fark eder.
 
 Mehmet'in dinlediği bu dinî musiki çeşidi aşağıdakilerden hangisidir?
@@ -738,6 +783,7 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 Soru 46:
+KONU: İslam Tarihi / Siyer
 İslam devlet görevlilerinden Hacib ile ilgili aşağıdaki bilgilerden hangisi yanlıştır?
 
 A) Şehirlerin güvenliğinden sorumlu en üst yöneticidir.
@@ -751,6 +797,7 @@ Doğru Cevap: A
 ---SONRAKI SORU---
 
 Soru 47:
+KONU: İslam Kültür ve Medeniyeti
 Aşağıdaki fotoğrafta içten kubbe, dıştan piramidal çatı ile örtülü çift katlı bir mezar anıtı yer alır.
 [RESIM: Gorseller/2020 ihl/2020_Soru_47.png]
 Bu yapı formu aşağıdakilerden hangisidir?
@@ -766,6 +813,7 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 Soru 48:
+KONU: İslam Kültür ve Medeniyeti
 İslam devletlerinde;
 
 • varlık sebebi "Emir bi'l-maruf nehiy anil-münker" ilkesinin yer aldığı ayetler olan,
@@ -785,6 +833,7 @@ Doğru Cevap: B
 ---SONRAKI SORU---
 
 Soru 49:
+KONU: İslam Felsefesi
 İslam düşünce geleneğinde, hakikat bilgisine ulaşmada en etkili yolun ne olduğu hususu üzerinde çok sayıda tartışma yaşanmış ve farklı yaklaşımlar ortaya çıkmıştır. Mutasavvıfların yaklaşımı bunlardan biridir. Onlara göre duyular veya akıl yoluyla elde edilen bilgiler yanıltıcıdır. Zira bunların mahiyeti tam olarak bilinememektedir. Mahiyeti tam olarak bilinemeyen şeylerin ise hakikat bilgisine aracılık etmesi düşünülemez. Mutasavvıflar, bu durumu “Kendisini dahi bilemeyen akıl, Allah'ı nasıl bilip tanıyacak?” şeklindeki sözleriyle dile getirirler. Bundan dolayı da hakikat bilgisinin keşif ve ilhamla aranması gerektiğini ifade ederler.
 
 Bu parçadan hareketle mutasavvıflarla ilgili aşağıdakilerden hangisi söylenemez?
@@ -800,6 +849,7 @@ Doğru Cevap: D
 ---SONRAKI SORU---
 
 Soru 50:
+KONU: İslam Felsefesi
 İslam ahlak felsefesinde;
 
 • ahlak ilminin amacını, erdemlerin mahiyetinin bilinmesi değil yaşanması olarak açıklayan,
@@ -820,6 +870,7 @@ Doğru Cevap: A
 ---SONRAKI SORU---
 
 Soru 51:
+KONU: Din Felsefesi
 Düşünce tarihinde Tanrı’nın varlığını kanıtlamaya yönelik birbirinden farklı deliller geliştirilmiştir. Bunlardan biri de kişisel tecrübelerden hareketle Tanrı’nın varlığını kanıtlamaya çalışan dinî tecrübe delilidir. Ancak bu delile; yapısı, gerçekleşme süreci ve hareket noktası itibarıyla delilin geçerli olmayacağına dair birçok eleştiri yöneltilmiştir.
 
 Aşağıdakilerden hangisi bu eleştirilerden biri değildir?
@@ -835,6 +886,7 @@ Doğru Cevap: B
 ---SONRAKI SORU---
 
 Soru 52:
+KONU: Din Felsefesi
 İbn Sina’ya göre "varlığın sadece duyusal varlıklardan ibaret olduğu ve duyu tecrübesine konu olmayan bir mekânda ya da konumda bulunmayan şeylerin var olmadığı" görüşü birçok açıdan problemlidir. Ona göre sadece duyu kapsamına giren şeyler var kabul edilirse, doğrudan duyumsamanın konusu olmayan şeylerin varlığı tartışma konusu olur. Örneğin sevgi, aşk ve korku gibi durumlar duyu tecrübesi ile bilinemez fakat bu durum onların var olmadığı anlamına gelmez.
 
 Parçaya göre bu yaklaşım hangi anlayışa eleştiri olarak öne sürülebilir?
@@ -850,6 +902,7 @@ Doğru Cevap: D
 ---SONRAKI SORU---
 
 Soru 53:
+KONU: Din Sosyolojisi
 Din sosyolojisi alanında ilk çalışma yapan düşünürlerin birçoğu, dinin ilahi olmadığını iddia ederek dinin kökeni konusunda çeşitli görüşler ileri sürmüşlerdir. Bu görüşlerden bazıları şunlardır:
 
 • Din; kutsal bilinen hayvan, bitki veya eşyanın kutsallaştırılması sonucu ortaya çıkmıştır.
@@ -870,6 +923,7 @@ Doğru Cevap: E
 ---SONRAKI SORU---
 
 Soru 54:
+KONU: Din Sosyolojisi
 Robert N. Bellah 1967 yılında bir makale kaleme almıştır. Bu makalesinde ABD’de yaşayan ve kiliseden uzaklaştığı düşünülen insanların bayrağa, Bağımsızlık Günü'ne ve Arlington Milli Kabristanı'na karşı hissettikleri bağlılık ve sadakati ele almıştır. Ona göre bu eğilimler çoğu zaman kendine bir kutsallık havasına bürünmektedir. O, bu durumu Hristiyanlığın geleneksel bağlamında olmasa da sekülerleşme sürecinde dinin yaşamaya devam eden farklı bir formu olarak değerlendirmektedir.
 
 Robert N. Bellah bu durumu aşağıdaki kavramlardan hangisiyle ifade etmektedir?
@@ -885,6 +939,7 @@ Doğru Cevap: E
 ---SONRAKI SORU---
 
 Soru 55:
+KONU: Din Psikolojisi
 İnsanların kendini dine veriş derecesi, dinî hayatı yaşamadaki dikkat, ilgi ve samimiyet yoğunluğu farklıdır. Ayrıca dinin gereklerine uymadaki asıl niyet ve ulaşılmak istenen amaç da kişiden kişiye değişmektedir. Bu kapsamda insanlar iç güdümlü ve dış güdümlü olmak üzere iki temel dindarlık tipine ayrılır. Dış güdümlü dindarlar için dinî değerler, daha çok kişisel ya da grupsal istek ve amaçlara ulaşmada elverişli ve yararlı bir araç durumundadır. Dinî değerleri özümsemiş, güçlü kişilik sahibi kimseler için din; bütün benliği kuşatıcı, her konuda tek referans kaynağıdır.
 
 Bu parçada bahsedilen düşünceyi ilk ortaya atan ve geliştiren din psikoloğu aşağıdakilerden hangisidir?
@@ -900,6 +955,7 @@ Doğru Cevap: A
 ---SONRAKI SORU---
 
 Soru 56:
+KONU: Din Psikolojisi
 Din psikolojisinin kurucularından biri olan William James'e göre inançlar doğru oldukları için işe yaramazlar, aksine işe yaradıkları için doğrudurlar. Örneğin bir insanın hayatında Tanrı inancı işe yarıyorsa yani bireyse mutluluğa ulaşmada ve psikolojik sağlığa kavuşmada pratik faydaya yol açıyorsa bu durumda inanan için Tanrı’nın varlığı pragmatik bir gerçekliktir.
 
 Bu parçadan hareketle William James’in aşağıdakilerden hangisini savunması beklenmez?
@@ -915,6 +971,7 @@ Doğru Cevap: B
 ---SONRAKI SORU---
 
 Soru 57:
+KONU: Din Eğitimi
 Osmanlı Dönemi'nde okula yeni başlayan çocuklar için genellikle pazartesi veya perşembe günleri olmak üzere bir tören düzenlenirdi. Önemli bir pedagojik değer taşıyan bu tören sayesinde çocukların eğitime daha fazla ilgi duymaları hedeflenirdi. Tören öncesinde çocuğun ailesi, bir gün önceden mektebin hocasına haber gönderir ve çocuklarının okula başlayacağını bildirirdi. Hoca, kararlaştırılan günde okuldaki diğer çocuklarla beraber yeni öğrencinin evine gider ve töreni gerçekleştirirdi. Törende öğrenciler sıraya dizilmiş vaziyette ve yüksek sesle ilahiler okurdu. Tören sonrasında ise okula başlayacak çocuk, önceden süslenerek hazırlanmış bir arabaya bindirilir ve yine koro hâlinde söylenen ilahiler eşliğinde evden çıkarılarak okula götürülürdü.
 
 Bu tören aşağıdakilerden hangisiyle isimlendirilir?
@@ -930,6 +987,7 @@ Doğru Cevap: E
 ---SONRAKI SORU---
 
 Soru 58:
+KONU: Din Eğitimi
 İslam eğitim geleneğinde;
 
 I. medreselerde derslerden sonra işlenen konuları tekrar eden,
@@ -950,6 +1008,7 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 Soru 59:
+KONU: Dinler Tarihi
 Hristiyan sakramentleri arasında;
 
 • İsa’nın çarmıha gerilmeden önce havarileriyle yediği son akşam yemeği anısına icra edilen,
@@ -969,6 +1028,7 @@ Doğru Cevap: E
 ---SONRAKI SORU---
 
 Soru 60:
+KONU: Dinler Tarihi
 Senkretik din tabiri farklı dinî geleneklerin inanç ve uygulamalarının bir araya gelmesiyle oluşan inançlar için kullanılmaktadır. Bu tarz bir inanç, İslam'ın tek tanrı anlayışı ile Hinduizm’in bazı görüşlerinin bir karışımı olarak XV. yüzyılda Pencap bölgesinde ortaya çıkmıştır.
 
 Bu parçada bahsedilen inanç sistemi aşağıdakilerden hangisidir?
@@ -984,6 +1044,7 @@ Doğru Cevap: E
 ---SONRAKI SORU---
 
 Soru 61:
+KONU: Din Eğitimi
 İmam-hatip lisesinde görevli Ali Öğretmen;
 
 • Dinler tarihi dersine başlamadan önce öğrencilere bir form dağıtarak hakkında bilgi sahibi oldukları dinleri, dinlerin ibadet yerlerini ve sembollerini yazmalarını ister.
@@ -1004,6 +1065,7 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 Soru 62:
+KONU: Din Eğitimi
 İmam-hatip lisesi temel dinî bilgiler dersinde Ayşe Öğretmen, “İbadet Hayatımız” ünitesini işlemek için sınıfı altı gruba ayırır. Her gruba abdest, namaz, oruç, zekât, hac, umre ve kurban ibadetlerinden birini verir. Ödev olarak bu konularla ilgili ayet ve hadisleri araştırıp yazmalarını ve görsel materyaller getirmelerini ister. Sonraki derste ise öğrencilere, getirdikleri materyalleri kullanarak bir pano hazırlatır. Her hafta bir grubu, ayet ve hadisleri sunacak şekilde görevlendirir.
 
 Buna göre Ayşe Öğretmen’in aşağıdaki öğretim ilkelerinden hangilerini göz önünde bulundurduğu söylenebilir?
@@ -1019,6 +1081,7 @@ Doğru Cevap: A
 ---SONRAKI SORU---
 
 Soru 63:
+KONU: Din Eğitimi
 Meslek dersleri öğretmeni Tarık Bey, derste “kul hakkı” konusunu aşağıdaki şekilde işler:
 
 Girişte kısa bir film gösterir, kul hakkı kavramını tanımlar, konuyla ilgili ayetleri sıralar ve kul hakkının dindeki önemini vurgular. Ara özet yaptıktan sonra kul hakkına giren davranışları bazı resim ve örnek olaylar yardımıyla açıklar. Son olarak konunun anlaşılıp anlaşılmadığını tespit edebilmek için öğrencilere bazı sorular sorar ve anlaşılmayan hususları tekrar ederek dersi tamamlar.
@@ -1036,6 +1099,7 @@ Doğru Cevap: A
 ---SONRAKI SORU---
 
 Soru 64:
+KONU: Din Eğitimi
 Meslek dersleri öğretmeni Tarık Bey, derste “kul hakkı” konusunu aşağıdaki şekilde işler:
 
 Girişte kısa bir film gösterir, kul hakkı kavramını tanımlar, konuyla ilgili ayetleri sıralar ve kul hakkının dindeki önemini vurgular. Ara özet yaptıktan sonra kul hakkına giren davranışları bazı resim ve örnek olaylar yardımıyla açıklar. Son olarak konunun anlaşılıp anlaşılmadığını tespit edebilmek için öğrencilere bazı sorular sorar ve anlaşılmayan hususları tekrar ederek dersi tamamlar.
@@ -1053,6 +1117,7 @@ Doğru Cevap: D
 ---SONRAKI SORU---
 
 Soru 65:
+KONU: Din Eğitimi
 İmam Hatip Lisesi Temel Dinî Bilgiler Dersi Öğretim Programı'nda yer alan,
 
 I. Abdest, boy abdesti ve teyemmümün alınışını açıklar.
@@ -1073,6 +1138,7 @@ Doğru Cevap: B
 ---SONRAKI SORU---
 
 Soru 66:
+KONU: Din Eğitimi
 İmam-hatip ortaokulunda görev yapan bir öğretmen, dönem boyunca aşağıdaki ölçme işlemlerini gerçekleştirmiştir:
 
 I. Kur’an-ı Kerim dersinin ilk haftasında öğrencileri, Kur’an-ı Kerim okumasını bilip bilmemelerine göre gruplara ayırmıştır.
@@ -1093,6 +1159,7 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 Soru 67:
+KONU: Din Eğitimi
 Fıkıh dersinde bir öğretmen, zekât vermek ile kurban kesmek için gerekli olan zenginlik ölçüsünün farklı olduğunu anlatır. Dersin sonunda ise öğrencilere “Zekât vermek ve kurban kesmek için gerekli zenginlik ölçüleri arasındaki farklar ve benzerliklerin neler olduğunu açıklayınız.” şeklinde bir soru sorar.
 
 Öğretmenin bu sorusu aşağıdakilerden hangisi kapsamında değerlendirilir?
@@ -1108,6 +1175,7 @@ Doğru Cevap: D
 ---SONRAKI SORU---
 
 Soru 68:
+KONU: Din Eğitimi
 İmam Hatip Lisesi Fıkıh Dersi Öğretim Programı’nda aşağıdaki hedeflerden hangisinin öğrencilere kazandırılması beklenmez?
 
 A) İbadetlerin yapılışları ile ilgili hükümleri açıklaması ve ibadetleri uygulaması
@@ -1121,6 +1189,7 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 Soru 69:
+KONU: Din Eğitimi
 İmam-hatip meslek dersleri öğretmeni ibadet konusunda öğrencilere şu bilgileri vermiştir: İbadet denilince öncelikle namaz, oruç, zekât ve hac gibi belirli şekli ve kurallı olan sorumluluklar akla gelmektedir. Ancak ibadetler sadece bunlarla sınırlı değildir. Allah’ın rızası için yapılan her davranış İslam’da ibadet olarak kabul edilir. Dolayısıyla ibadet; müminin kulluk görevini yerine getirmesi, Allah’ın emir ve yasaklarına uymasıdır.
 
 Bu ifadelerden hareketle öğretmenin aşağıdaki kazanımlardan hangisini merkeze aldığı söylenebilir?
@@ -1136,6 +1205,7 @@ Doğru Cevap: D
 ---SONRAKI SORU---
 
 Soru 70:
+KONU: Din Eğitimi
 Bir imam-hatip lisesi meslek dersleri öğretmeni;
 
 • Kur’an-ı Kerim dersinde öğrencileri, birbirlerine yardımcı olabilmeleri ve ekip hâlinde çalışabilmeleri için farklı okuma seviyelerinden oluşan gruplara ayırmış ve her grubu sınıfın ayrı bir bölgesine yerleştirmiştir.
@@ -1156,6 +1226,7 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 Soru 71:
+KONU: Din Eğitimi
 Fıkıh dersinde kullanılan;
 
 I. öğrencilerin ibadet ve fıkhi hükümler konusunda hazırbulunuşluklarını ölçme,
@@ -1176,6 +1247,7 @@ Doğru Cevap: B
 ---SONRAKI SORU---
 
 Soru 72:
+KONU: Din Eğitimi
 Sezai Öğretmen; hadis dersinde öğrencilerin derse ilgilerini artırmak, ödevleri aksatmalarını engellemek ve onları motive etmek istemektedir. Bu amaçla;
 
 I. hadis okuyan arkadaşını rahatsız eden öğrenciyi, sevdiği hadis drama etkinliğinden mahrum bırakmış,
@@ -1196,6 +1268,7 @@ Doğru Cevap: A
 ---SONRAKI SORU---
 
 Soru 73:
+KONU: Din Eğitimi
 İlahiyat fakültesi son sınıf öğrencisi Ahmet, öğretmenlik uygulaması dersi sonunda, uygulama okulundaki öğrencilerinden geri bildirim almak amacıyla son dersinde öğrencilere kâğıt dağıtmış ve isim yazmadan kendisini değerlendirmelerini istemiştir. Bu kâğıtlara öğrencilerin bir kısmı şu ifadeleri yazmıştır:
 
 • Dersimize geldiğiniz ilk gün pembe kapüşonlu hırkamı giymiştim. Bana “Sen! Pembeli” şeklinde seslendiniz. O günden sonra bana hep böyle hitap ediyorsunuz. Herkese farklı adlar takıyorsunuz.
@@ -1216,6 +1289,7 @@ Doğru Cevap: D
 ---SONRAKI SORU---
 
 Soru 74:
+KONU: Din Eğitimi
 “Meleklere İman” ünitesini işleyen bir öğretmen, meleklerin isimleri ve görevleriyle ilgili olarak öğrencilere bir eşleştirme testi uygulamıştır.
 
 Bu testte öğretmen, öğrencilerin hangi alan ve düzeydeki öğrenmelerini ölçmeyi amaçlamıştır?
@@ -1231,6 +1305,7 @@ Doğru Cevap: D
 ---SONRAKI SORU---
 
 Soru 75:
+KONU: Din Eğitimi
 Bir imam-hatip lisesi meslek dersleri öğretmeni;
 
 I. Kur’an-ı Kerim dersinde öğrencilerin Kur’an okuma becerilerini,

@@ -3,6 +3,7 @@ Bu testte 75 soru vardir.
 
 ---SONRAKI SORU---
 Soru 1:
+KONU: Kur'an-ı Kerim ve Tecvid
 Tecvit kaideleri ve bunlarin gerceklestigi harf gruplariyla ilgili;
 I. idgam-i bila gunne: lam (ل) ve ra (ر),
 II. idgam-i mutecaniseyn: gaf (ق) ve kef (ك),
@@ -17,6 +18,7 @@ Dogru Cevap: A
 
 ---SONRAKI SORU---
 Soru 2:
+KONU: Kur'an-ı Kerim ve Tecvid
 Kur'an-i Kerim'de, pes pese gelip birinde duruldugunda digerinde gecilmesi gereken ve genellikle diger vakif harflerinden birine uc nokta koyularak gosterilen vakif cesidi asagidakilerden hangisidir?
 A) Vakf-i mutlak
 B) Vakf-i mucevvez
@@ -27,6 +29,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 3:
+KONU: Kur'an-ı Kerim ve Tecvid
 Kur'an-ı Kerim'i okurken bazı kelimelerin altında küçük harflerle çeşitli kelimelerin veya harflerin yer aldığı görülür. Kelimenin aslına uygun bir şekilde düzgün telaffuz edilebilmesi için okuyucu tarafından bunlara dikkat edilmesi gerekir.
 Buna göre aşağıdaki açıklamalardan hangisi yanlıştır?
 
@@ -40,6 +43,7 @@ Doğru Cevap: C
 
 ---SONRAKI SORU---
 Soru 4:
+KONU: Kur'an-ı Kerim ve Tecvid
 الم * اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ *
 (Al-i Imran, 3:1-2)
 Verilen ayetlerde asagidaki medlerden hangisi bulunmamaktadir?
@@ -52,6 +56,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 5:
+KONU: Tefsir
 "Kendisine ayetlerimizi verdigimiz halde, onlardan siyrilip da seytanin kendisini pesine taktigi, bu yuzden de azginlardan olan kimsenin haberini onlara anlat." (Araf, 7:175) ayetinde kimler kastedildigi belli degildir.
 Bu parcada bahsedilen turden hususlari inceleyen Kur'an ilmi asagidakilerden hangisidir?
 A) Mubhematul-Kur'an
@@ -63,6 +68,7 @@ Dogru Cevap: A
 
 ---SONRAKI SORU---
 Soru 6:
+KONU: Tefsir
 "Ey Resul! Rabbinden sana indirileni teblig et. Eger bunu yapmazsan O'nun verdigi peygamberlik gorevini yapmamis olursun..." (Maide, 5:67) ayetinden maksadin Hz. Ali'nin imametinin insanlara teblig edilmesi oldugunu dolayisiyla bu ayetin Hz. Ali'nin, Hz. Muhammed'den sonra halife olmasi gerektiginin delili oldugunu iddia eden bir eser, asagidaki tefsir turlerinden hangisi kapsaminda degerlendirilir?
 A) Ilmi
 B) Fikhi
@@ -73,6 +79,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 7:
+KONU: Tefsir
 Her insan gibi mufessirlerin de mentesibi oldugu bir grup veya dusunce sistemi mevcuttur. Dolayisiyla Kur'an'i tefsir ederken bunlardan bagimsiz olmasi kolay degildir. Onlar; insanlari dogru yola iletmek, Kur'an'in modern bilimlerle ve cagdas gelismelerle uyumlu oldugunu gostermek veya bagli bulundugu grubun gorusunu one cikartmak gibi sebeplerle ayetleri baglamindan kopararak yorumlayabilir. Bundan kacinmak icin yapilmasi gereken Kur'an'i kendi butunlugu icinde, nazil oldugu ortami ve bu ortama sahit olan kisilerin bilgi ve goruslerini merkeze alarak tefsir etmektir.
 Bu ifadeleri kullanan bir kisinin asagidaki tefsir turlerinden hangisini savundugu soylenebilir?
 A) Dirayet
@@ -84,6 +91,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 8:
+KONU: Tefsir
 Kur'an'da baska bir ayette aciklanmasi, herkes tarafindan bilinmesi, belirtilmesinde fayda bulunmamasi gibi sebeplerle bazi sahis ve yer isimleri acikca zikredilmemis; bunlari nitelemek uzere cesitli kelime veya kelime gruplari kullanilmistir.
 Asagidakilerden hangisi bunlar arasynda yer almaz?
 A) Zamirler
@@ -95,6 +103,7 @@ Dogru Cevap: E
 
 ---SONRAKI SORU---
 Soru 9:
+KONU: Tefsir
 Asagidakilerden hangisi tefsirde sahabeye verilen onemin sebepleri arasinda yer almaz?
 A) Hz. Muhammed'le gorusme ve bilmediklerini ona sorup ogrenme imkanina sahip olmalari
 B) Kendi dilleriyle nazil oldugu icin Kur'an'in uslup ve inceliklerini iyi anlamalari
@@ -105,6 +114,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 10:
+KONU: Hadis
 Enes b. Malik'ten soyle bir rivayet nakledilmistir: Bir bedevi Medine'ye geldi ve dedi ki: Ey Muhammed, bize elcin geldi ve senin Allah tarafindan gonderildigini soyledi; sen boyle diyormussun. Hz. Muhammed "Evet dogru." deyince bedevi Allah'a ve Islam'in sartlarina dair bircok soru yoneltti; sorularinin cevabini aldiktan sonra ayrildi. Bu rivayete gore bedevi, Hz. Muhammed'in elcisinden ogrendigi bilgilerle yetinmemis, bizzat kendisinden duymak icin uzun bir yolculukla Hz. Muhammed'in huzuruna gelmistir.
 Bu olay hadis ilminde asagidakilerden hangisine ornek teskil eder?
 A) Ali isnadin onemine
@@ -116,6 +126,7 @@ Dogru Cevap: A
 
 ---SONRAKI SORU---
 Soru 11:
+KONU: Hadis
 Buhari'nin Sahih isimli eserini okumaya baslayan Hatice, Bedu'l-Halk basligi altinda, senedinde sahabe disindaki butun ravileri hazfedilmis bir hadis okur.
 Hatice'nin okudugu bu hadis, senedi acisindan asagidaki turlerden hangisine girmektedir?
 A) Muallel
@@ -127,6 +138,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 12:
+KONU: Hadis
 Oruc tutma ile ilgili hadisleri arastiran Ahmet, metinleri birbirinden farkli iki hadisle karsilasmistir. Hadislerin birinde "Tesrik gunleri yiyip icme gunudur." ifadesi yer alirken digerinde "Arefe gunu ve tesrik gunleri yiyip icme gunleridir." ifadesi bulunmaktadir. Ahmet, bu hadislerden hangisinin digerine gore one ciktigini anlamak icin ravilerini incelemistir. Bunun sonucunda ilk hadisin sika ravilerden olusan bircok farkli senedle rivayet edildigini, ikincisinin ise sika ravilerden olusmakla birlikte tek bir senedle nakledildigini fark etmistir.
 Buna gore Ahmet'in tespit ettigi bu iki rivayete verilen isimler asagidakilerin hangisinde dogru siralanmistir?
 A) Maruf - munker
@@ -138,6 +150,7 @@ Dogru Cevap: B
 
 ---SONRAKI SORU---
 Soru 13:
+KONU: Hadis
 Bu sorunun metni kaynak metinde net olarak yer almamaktadir.
 A) [Metin eksik]
 B) [Metin eksik]
@@ -148,6 +161,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 14:
+KONU: Hadis
 Sahabenin bir kisminin gunumuze ulasan rivayet ettigi hadis sayisi binin uzerindedir. Muksirun olarak tanimlanan bu sahabelerin isimlerini Suyuti su sekilde belirtmektedir: Ebu Hureyre, Abdullah b. Omer, Enes b. Malik, Hz. Aise, Abdullah b. Abbas, Cabir b. Abdullah ve Ebu Said el-Hudri. Bu kisilerin diger bircok sahabeye nispetle daha fazla hadis rivayet etmelerinde cesitli etkenler rol oynamistir.
 Asagidakilerden hangisi bu etkenlerden biri degildir?
 A) Hz. Muhammed'le gecirdikleri zaman dilimi
@@ -159,6 +173,7 @@ Dogru Cevap: E
 
 ---SONRAKI SORU---
 Soru 15:
+KONU: Fıkıh
 Islam hukukunda, daha once hukum bulunmayan, benzeri bir ornegin de yasanmadigi durumlarda kanun koyucularin Islam hukukunun genel prensipleri dogrultusunda halkin menfaatine gore hukumler koyabilecegi kabul edilmistir. Ihtiyac duyulmasi halinde zenginlere vergi konulmasi, gerekli durumlarda sanatkar, ciftci ve benzerlerinin ecri misil ile calismaya zorlanmasi, calisma saatlerinin ve ucretlerinin sinirlanmasi gibi hususlarda getirilen hukumler bunlara ornektir.
 Bu parcada bahsedilen konu Islam hukukunun asagidaki delillerinden hangisiyle ilgilidir?
 A) Istihsan
@@ -170,6 +185,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 16:
+KONU: Fıkıh
 Kurban organizasyonu yapan bir kurulus, internet uzerinden odemenin yapilabildigi bir sistem gelistirmistir. Isteyenler bu siteyi ziyaret ederek bir sozlesme okumakta ve ardindan odemeyi yaparak islemlerini tamamlamaktadir. Bu sozlesmede, alinan para miktarinin sadece kurban edilecek hayvanin bedeli olmadigi, organizasyon masraflarinin da bu miktara dahil oldugu ayrica artacak paranin da yardim olarak alinacagi acikca ifade edilmistir.
 Bu parcada bahsedilen sozlesme asagidaki akit ikililerinden hangisini icermektedir?
 A) Vekalet - hibe
@@ -181,6 +197,7 @@ Dogru Cevap: A
 
 ---SONRAKI SORU---
 Soru 17:
+KONU: Fıkıh
 Sedd-i zerai ile ilgili olarak,
 I. Islam hukukunun asli delilleri arasinda kabul edilir.
 II. Kotuluklere goturmesi sebebiyle bazi yollarin ve davranislarin yasaklanmasi seklinde tanimlanir.
@@ -195,6 +212,7 @@ Dogru Cevap: B
 
 ---SONRAKI SORU---
 Soru 18:
+KONU: Fıkıh
 Ehliyet engeli olmayan her Muslumanin ramazan ayinda oruc tutmasi farzdir. Ancak sarii, yolcuyu bu hukumden ayri tutmus ve daha sonra kaza etmesi sartiyla ona oruc tutmama izni vermistir. Benzer sekilde domuz eti ve les yenmesi aslen haram olmakla birlikte zorunluluk halinde yenmesine yine sarii tarafindan izin verilmistir.
 Bu parcada verilen ornekler asagidaki kavram ikililerinden hangisi kapsaminda degerlendirilir?
 A) Rukun - mani
@@ -206,6 +224,7 @@ Dogru Cevap: E
 
 ---SONRAKI SORU---
 Soru 19:
+KONU: Fıkıh
 Sakarya'da yasayan Mahmut, ramazan ayinda evinde iftar vaktinin girmesini beklemektedir. Bu sirada kulagina ezan sesi gelir ve abdestli oldugu icin once namaz kilip sonra yemek yemeye karar verir. Bir hurma yiyerek orucunu acar ve namazini kilmaya baslar. Ancak onun duydugu ezan sesi televizyondan gelmistir ve Ankara icindir. Mahmut, namazin 3. rekatindayken Sakarya icin ezan okunur. Mahmut, namazini tamamlar ve caminin imamina kendisinin Hanefi oldugunu soyleyerek orucunun ve namazinin gecerliligini sorar.
 Imamin asagidaki cevaplardan hangisini vermesi beklenir?
 A) Her ikisi de gecersizdir; oruc kaza edilmeli, namaz ise tekrar kilinmalidir.
@@ -217,6 +236,7 @@ Dogru Cevap: A
 
 ---SONRAKI SORU---
 Soru 20:
+KONU: Fıkıh
 Bir rivayete gore Hz. Muhammed, Medine'ye hicret ettiginde Yahudilerin oruc tuttuklarini gormus ve bu orucun anlamini sormustu. Yahudiler, bu gunun onemli oldugunu, Allah'in Musa'yi ve Israilogullari'ni dusmanlarindan bu gunde kurtardigini, oruc tutmalarinin da bundan kaynaklandigini soylemisti. Bunun uzerine o, "Ben Musa'ya sizden daha yakinim." diyerek bu gun oruc tutulmasini emretmistir. Cahiliyye Araplarinin da tuttugu rivayet edilen bu oruc ramazan orucu farz kilinincaya kadar duzenli tutulmus, ramazan orucu farz kilinca bir yukumluluk olmaktan cikarilmis fakat nafile olarak isteyenler tutmaya devam etmistir.
 Bu parcada bahsedilen oruc asagidakilerden hangisidir?
 A) Sevval
@@ -228,6 +248,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 21:
+KONU: Fıkıh
 Kafile baskani havaalaninda toplanmis olan haci adaylarina ucaga binmeden once nasil ihrama gireceklerini anlatmis ve ibadetler oncesinde niyetin onemini vurgulamistir. Haccin cesitlerini acikladiktan sonra, ilk olarak Mekke'ye gideceklerini ve umre yapar yapmaz hic vakit kaybetmeden Arafat'ta vakfeye durmak uzere yola cikacaklarini hatirlatmistir.
 Buna gore haci adaylarinin;
 I. ifrad,
@@ -243,6 +264,7 @@ Dogru Cevap: B
 
 ---SONRAKI SORU---
 Soru 22:
+KONU: Kelam / Akaid
 Insan iradesi ve bu iradenin fiillerdeki rolu, Islam dusunce tarihinin en cok konusulan konularindan biri olmustur. Bu konuda bazi dusunurler, fiilleri kesb edenin insan, yaratanin Allah oldugunu ifade ederek hem Allah'in kudretine hem de insanin sorumluluguna vurgu yapmistir. Ayrica kula, Allah tarafindan yapma veya yapmamayi tercih etme araci olarak cuzi iradenin verildigini soylemislerdir. Insanin fiillerinin ancak cuzi irade ve Allah'in yaratmasiyla gerceklesebilecegini dolayisiyla irade etmesi sebebiyle sorumlulugun insanda oldugunu savunmuslardir.
 Bu parcada gorusleri verilen dusunurlerin mensup oldugu itikadi mezhep asagidakilerden hangisidir?
 A) Kaderiyye
@@ -254,6 +276,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 23:
+KONU: Kelam / Akaid
 Gazali'ye gore bir seyi bilmek farkli, ona guc yetirmek farkli, irade ise daha farkli bir seydir. Allah'in ilmindeki seye once irade, sonra da kudret taalluk eder ve o sey olur. Ozunde notr bir vasif olan kudretin, varlik sahnesine cikabilmesi irade ile mumkundur. Bu irade hadis degil, kadimdir.
 Buna gore Gazali'nin, Allah'in fiilini asagidakilerden hangisi olarak tanimlamasi beklenir?
 A) O'nun iradesi ve kudreti sonucu ortaya cikan seydir.
@@ -265,6 +288,7 @@ Dogru Cevap: A
 
 ---SONRAKI SORU---
 Soru 24:
+KONU: Kelam / Akaid
 Selim Ogretmen Allah'in sifatlarini anlattigi bir derste Allah'in eli, yuzu, gozu gibi ifadelerden ne anladiklarini sormustur. Ogrencilerden biri soz alarak; "Ogretmenim! Allah hakkinda bu tur ifadelerin kullanilmasini ben dogru bulmuyorum. Bence bu ifadeleri Allah hakkinda kullanmaniz hic dogru degil." diyerek itirazini dile getirmistir. Bunun uzerine Selim Ogretmen, "Evet, bu ifadelerin zahiri olarak anlasilmalari durumunda cismani vasiflar Allah'a atfediliyormus gibi gorunuyor. Bu ifadeler Kur'an-i Kerim'de yer almasaydi bunlari Allah icin kesinlikle kullanmazdik." seklinde cevap vermistir.
 Selim Ogretmen bu derste asagidaki ilahi sifat turlerinden hangisini islemektedir?
 A) Nefsi
@@ -276,6 +300,7 @@ Dogru Cevap: B
 
 ---SONRAKI SORU---
 Soru 25:
+KONU: Kelam / Akaid
 Allah, kullarina bir seyi yapip yapmama gucu vermistir. Dolayisiyla insan hurdur ve kendi fiilinin yaraticisidir. Eger insan herhangi bir seyi yapip yapmama hurriyetine sahip olmasaydi isledigi iyi ve kotu amellerden mukafat veya ceza gormesi manasiz olurdu. Ayrica insanin fiilleri ezeli yazgi ile belirlenmis ve Allah insanlari bu fiilleri yapmaya zorlamis olsaydi fiillerinden dolayi insanin cezalandirilmasi zulüm olarak gorulurdu.
 Bu parcada vurgulanan konu, Mutezile'nin bes temel esasindan hangisi kapsaminda degerlendirilir?
 A) Emir bi'l-maruf nehiy ani'l-munker
@@ -287,6 +312,7 @@ Dogru Cevap: E
 
 ---SONRAKI SORU---
 Soru 26:
+KONU: Kelam / Akaid
 Aleme dikkatlice baktigimda her seyin insan tabiatina uygun bir sekilde yaratildigini ve ona hizmet ettigini goruyorum. Havadaki oksijen, tam olarak insanoglunun hayatiyetini surdurmesine imkan verecek oranda... Ayni sekilde bitki ve hayvanlar da insanin beslenmesine uygun bir sekilde var edilmis gibi... Bu gozlemlerim bana, mahlukat icerisinde insana ozel bir ilgi ve ihtimam gosterildigini hissettiriyor. Bu ise sadece, her seyin yaraticisi olan Yuce bir varligin lutfuyla aciklanabilir. Boyle bir varlik, Yuce Allah'tan baskasi olamaz.
 Bu akil yurutmede asagidaki isbat-i vacip delillerinden hangisinin merkeze alindigi soylenebilir?
 A) Fitrat
@@ -298,6 +324,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 27:
+KONU: Kelam / Akaid
 "Allah hicbir zaman yoklugu dusunulemeyen, herhangi bir mekana, sebebe, mucit ve muessire ihtiyac duymayan, ezeli ve ebedi, vacibul-vucud olan yegane varliktir." sozuyle dersine baslayan bir ogretmenin, asagidaki sifatlardan hangisine vurgu yaptigi soylenebilir?
 A) Ilim
 B) Kudret
@@ -308,6 +335,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 28:
+KONU: Kelam / Akaid
 Islamiyet'i ilk kabul eden sahabelerden biri olan Habbab b. Eret'in oglu Abdullah ve esi, yolculuk esnasinda bir grup tarafindan alikonuldu. Ona, Hz. Ali hakkinda ne dusundugu sorulunca Abdullah, bu sahabe hakkinda olumsuz bir ifade kullanmadi ve bu nedenle olduruldu. Cunku bu gruba gore Hz. Ali, Allah'in hukmu disinda bir hakemin hukmunu kabul ederek kufre girmis, onu hakli goren herkes de ayni sucu desteklemis oldugu icin oldurulmeliydi.
 Bu grup asagidaki ekollerden hangisine mensuptur?
 A) Mutezile
@@ -319,6 +347,7 @@ Dogru Cevap: E
 
 ---SONRAKI SORU---
 Soru 29:
+KONU: İslam Mezhepleri ve Akımları
 Haritada bir mezhebin mensuplarının, nüfusun çoğunluğunu veya bir kısmını oluşturduğu yerler renkli olarak gösterilmiştir.
 Bu haritada nüfus yoğunluğu verilen mezhep aşağıdakilerden hangisidir?
 
@@ -335,6 +364,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 30:
+KONU: İslam Mezhepleri ve Akımları
 Egitim amacli Amerika'ya giden Aydin, orada Lubnan'dan gelmis, Hamza isminde biriyle tanisir. Hamza'ya Lubnan'daki dini gruplar hakkinda soru sorar. O, kendilerinin bu ulkede 150-200 bin civarinda bir nufuslari oldugunu, diger Muslumanlardan ve din mensuplarindan ayristiklarini soyler. Ayrica Hamza, Allah'in birliginin onlar icin cok onemli oldugunu ancak Allah yuceliginden dolayi kelimelere dokulemeyeceginden bazi kisilere hulul veya tecelli ederek insanlara yaklastigini savunur. Hakim bi-Emrillah'in Tanri'nin tecelli ettigi kisilerden biri oldugunu ve onun dini hukumleri belirleyebilecegini ileri surer.
 Bu parcadan hareketle Hamza'nin asagidaki mezheplerden hangisine mensup oldugu soylenebilir?
 A) Yezidilik
@@ -346,6 +376,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 31:
+KONU: İslam Mezhepleri ve Akımları
 Nefsimizi her turlu arzu ve istekten temiz tutar, butun manevi kabiliyetlerimizi samimiyet ve israrla Allah'a yonlendirirsek aradaki perdeler kalkar, hakikati oldugu gibi goruruz. Buna ispat degil de marifet demek daha dogru olur. Nitekim Kur'an-i Kerim'de "Ey iman edenler, eger Allah'tan korkarsaniz O, size hak ile batili ayirt edecek bir anlayis ihsan eder..." (Enfal, 8:29) buyurularak en dogru bilginin ancak Allah tarafindan belirli kisilere verilecegi ifade edilmektedir.
 Bu ifadeleri kullanan bir kisinin hakikate ulasmada asagidaki yollardan hangisini savundugu soylenebilir?
 A) Fitrat
@@ -357,6 +388,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 32:
+KONU: İslam Tarihi / Siyer
 Hendek Savasi sirasinda Medine Vesikasi'na aykiri hareket ederek Muslumanlarla olan antlasmasini bozan kabile asagidakilerden hangisidir?
 A) Kurayza
 B) Kaynuka
@@ -367,6 +399,7 @@ Dogru Cevap: A
 
 ---SONRAKI SORU---
 Soru 33:
+KONU: İslam Tarihi / Siyer
 Ebu Ubeyde b. Cerrah komutasinda Medine'den hareket eden askeri birlik, sefer sirasinda azigi tukenince "habat" adi verilen agac yapraklarini su ile islatarak yemek zorunda kaldi. Musluman askerler varilacak yere ulastiklarinda ise aciklarini sahile vurmus balikla gidermek durumunda kaldilar. Bu sure zarfinda Kureys kervanlarini gozetleyen Muslumanlar herhangi bir catismaya girmeden Medine'ye geri donduler.
 Bu parcada sozu edilen seriyye asagidakilerden hangisidir?
 A) Sifulbahr
@@ -378,6 +411,7 @@ Dogru Cevap: A
 
 ---SONRAKI SORU---
 Soru 34:
+KONU: İslam Tarihi / Siyer
 Rivayete gore Hz. Muhammed, olumunden kisa sure once yasadigi hastalik sirasinda "Bana bir divit ve kagit getirin de size bir sey yazdirayim ki benden sonra yanlisliga dusmeyesiniz." demistir. Bunun uzerine orada bulunanlar aralarinda tartismaya baslamislardir. Hz. Muhammed bu tartismalar uzerine isteginden vazgecmis ve daha sonra da bu konuyu tekrar gundeme getirmemistir.
 Bu olay Islam tarihinde asagidakilerden hangisiyle isimlendirilmektedir?
 A) Kirtas Hadisesi
@@ -389,6 +423,7 @@ Dogru Cevap: A
 
 ---SONRAKI SORU---
 Soru 35:
+KONU: İslam Tarihi / Siyer
 Hz. Muhammed bir savas oncesinde ordusunu konumlandirmak icin talimat verdi. Hubab b. Munzir Hz. Muhammed'e gelerek "Ey Allah'in Resulu! Burayi karargah olarak siz mi sectiniz yoksa bu yer vahiyle mi bildirildi?" dedi. Hz. Muhammed "Hayir, bu benim kendi takdirimdir." cevabini verdi. Bunun uzerine Hubab, "Su kuyunun basinda orduyu konumlandirmak daha uygundur. Cunku oraya karargah kurdugumuz takdirde bizim suyumuz olur; dusmanin ise olmaz. Bu da bizi ustun kilar." seklinde gorusunu belirtti.
 Bu parcada anlatilan olay hangi gazve esnasinda gerceklesmistir?
 A) Beni Mustalik
@@ -400,6 +435,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 36:
+KONU: İslam Tarihi / Siyer
 Halifeliginin son yillarinda Hz. Osman'in bazi uygulamalarina karsi elestiri ve soylentiler artmistir. Bu durum karsisinda Halife, 654 yili hac donusunde valileri Medine'ye cagirarak bir toplanti yapmistir. Bu toplantida valilerden, kendisine iletilen sikayetlere iliskin cozum onerilerini sunmalarini istemistir. Bunun uzerine valiler sikayetlerin bir tertip oldugunu ileri surerek gecici ve sorunlarin temeline inmeyen oneriler sunmuslardir.
 Asagidakilerden hangisi bu oneriler arasinda yer almaz?
 A) Muhaliflerin cihatla mesgul edilmesi
@@ -411,6 +447,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 37:
+KONU: İslam Tarihi / Siyer
 Sasaniler'in elindeki genis ve verimli topraklardan olusan Sevad arazilerine ilk akinlar Hz. Ebu Bekir doneminde baslamistir. Bu akinlar Hz. Omer devrinde 642 yilinda Sasaniler'in hakim oldugu topraklarin buyuk kisminin fethedilmesiyle sonuclanmistir.
 Asagidakilerden hangisi bu surecte gerceklesen savaslardan biri degildir?
 A) Kadisiye
@@ -422,6 +459,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 38:
+KONU: İslam Tarihi / Siyer
 Islam oncesi Arap toplumunun inanclariyla ilgili,
 I. Putlarin Allah katinda araci oldugu dusunuluyordu.
 II. Yaratici bir tanrinin varligi kabul ediliyordu.
@@ -436,6 +474,7 @@ Dogru Cevap: E
 
 ---SONRAKI SORU---
 Soru 39:
+KONU: İslam Tarihi / Siyer
 Tarihte gerceklesen pek cok yenilik donemin sartlari geregi ortaya cikmistir. Bu durum egitim kurumlari icin de gecerlidir. Ornegin bazi egitim kurumlari kendi fikir ve ideolojilerini yaymak, farkli fikir ve goruslerle mucadele etmek gibi gerekcelerle kurulmustur. Bagdat Nizamiye Medresesi de sunni gorusu merkeze alarak karsit gorusu savunan bir medresenin etkisini azaltmak ve yaydigi goruslerle mucadele etmek icin acilmistir.
 Bagdat Nizamiyesinin acilisinda etkili olan bu medrese asagidakilerden hangisidir?
 A) Mustansiriyye
@@ -447,6 +486,7 @@ Dogru Cevap: B
 
 ---SONRAKI SORU---
 Soru 40:
+KONU: İslam Tarihi / Siyer
 756 yilinda Endulus Emevi Devleti, I. Abdurrahman tarafindan kurulmustur. Bolgenin ilmi ve kulturel anlamda zenginlesmesinde onemli rol oynamis bu devlet, ortaya cikan ic karisikliklar sebebiyle 1031 yilinda yikilmis ve Emevi sulalesi Kurtuba'dan surulmustur. Boylece ulkede merkezi idare ortadan kalkmis ve "muluku't-tavaif" adi verilen irili ufakli pek cok beylik ortaya cikmistir.
 Asagidakilerden hangisi bu beyliklerden biri degildir?
 A) Amiriler
@@ -458,6 +498,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 41:
+KONU: İslam Kültür ve Medeniyeti
 Muslumanlar ilahi kelam olmasi sebebiyle Kur'an-i Kerim'e ozel bir onem vermislerdir. Bu onem sadece onun emirlerinin uygulanmasi ve hayata tatbik edilmesiyle sinirli degildir. Ayni zamanda yogun bir estetik kaygiyi da beraberinde getirmistir. Muslumanlar, onun kagidindan cildine, murekkebinden yazisina kadar her unsurunu guzellestirmek icin caba sarf etmislerdir. Kur'an mushaflarinin ilk sayfalarinin farkli renkler ve figurlerle suslenmesi bunun dikkat cekici ornegini olusturmaktadir.
 Bu ornekle kastedilen susleme sanati asagidakilerden hangisidir?
 A) Murakka
@@ -469,6 +510,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 42:
+KONU: İslam Kültür ve Medeniyeti
 Islam'da putlara tapma yasak oldugu icin putlastirmaya goturecek insan tasvirlerinin yapilmasi da uygun gorulmemistir. Bu nedenle Hz. Muhammed'in resminin cizilmesi de yasaklanmistir. Bundan dolayi Muslumanlar, Hz. Muhammed'i gorenlerin anlattiklarindan yola cikarak onun fiziki ozelliklerini iceren eserler uretmislerdir. Bu eserlerden biri husnuhat ile yazilan genellikle dort halifenin isminin de yer aldigi levha seklindeki suslemelerdir.
 Bu suslemelere verilen isim asagidakilerden hangisidir?
 A) Munacat
@@ -480,6 +522,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 43:
+KONU: İslam Felsefesi
 Gazali felsefe ile ilgili olarak yazdigi eserde Messaiyyun'un bazi konularda bidata dustugunu; Allah'in sadece kullileri bilmesi, alemin kidemi ve ahirette yaratilmanin mahiyeti hususundaki gorusleri sebebiyle de kufre girdiklerini iddia etmistir. Gazali'nin bu eserine Ibn Rusd cevap vermis ve bu konuda Gazali'nin konulari iyi anlamadigini ve doneminin sartlarini dikkate alarak eserini yazdigini ileri surmustur. Bu tartisma gelenegi Fatih Sultan Mehmet zamaninda tekrar gundeme getirilmis, Hocazade ve Alaeddin Ali et-Tusi tarafindan ayni konuda kitaplar yazilmistir.
 Bu parcada bahsedilen tartisma gelenegi asagidaki kavramlardan hangisiyle ifade edilmektedir?
 A) Vahdet-i vucud
@@ -491,6 +534,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 44:
+KONU: İslam Felsefesi
 Islam dusunce geleneginde felsefe Orta Cag'da en guclu donemini yasamistir. Bu donemde Musluman filozoflar tarafindan ozgun sekilde yorumlanan Antik Yunan Felsefesi tercumeler araciligiyla Bati'ya aktarilmistir. Bununla birlikte Islam toplumunda felsefeye ve filozoflara karsi zaman zaman olumsuz tavir da soz konusu olmustur. Bu sebeple bazi filozoflar, halk ve yoneticilerin tepkisine maruz kalmis hatta yasadiklari yerden surulmus veya hapse atilmislardir.
 Bu tavrin ortaya cikmasinda asagidakilerden hangisinin etkili oldugu soylenemez?
 A) Felsefenin Muslumanlara gayrimuslim toplumlardan intikal etmis olmasi
@@ -502,6 +546,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 45:
+KONU: İslam Felsefesi
 Islam dusunce geleneginde;
 * tip ve kimya alanlarindaki calismalariyla one cikan,
 * Tabiiyyun Ekolu'nun en onemli temsilcisi kabul edilen,
@@ -516,6 +561,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 46:
+KONU: Din Felsefesi
 Dini tecrube delili dogrulugunu kendi icinde tasiyan bir delillendirme bicimidir. Yani onun, dogrulugunu delillendirebilmek icin bir dis destege ihtiyaci yoktur. Ancak bu delilin gecerliligini ortaya koymak icin de bazi yontemlerin bulundugu soylenebilir. Ornegin bunlardan biri yasanan tecrubenin yasayan kisi uzerindeki etkisidir. Buna gore tecrubeyi yasayan kisinin tecrube sonrasi karakterinde meydana gelen olumlu etki, yasanan tecrubenin gecerli bir dini tecrube oldugunun isaretlerindendir.
 Bu parcadan hareketle dini tecrube deliliyle ilgili asagidakilerin hangisine ulasilamaz?
 A) Kisinin imaninin kuvvetlenmesine yardimci olur.
@@ -527,6 +573,7 @@ Dogru Cevap: B
 
 ---SONRAKI SORU---
 Soru 47:
+KONU: Din Felsefesi
 Anthony Flew'e gore "Tanri beni seviyor." diyen bir mumini hicbir sey inancindan donduremez; o, nimet icinde yuzse de cesitli belalara ugrasa da her durumda hikmet gorebilir. Cunku teizmin onermeleri her turlu gozlemi kendi lehine yorumlamakta ve onlari kendilerini hakli gosteren veriler olarak gormektedir. Flew'e gore bir hukum, teizmde oldugu gibi hicbir seyi disarida birakmiyorsa ayni zamanda hicbir seyi de ispatlamiyor demektir. Dolayisiyla dini hukumler bilgilerimize yeni bir sey katmayan, bilissel icerikten yoksun hukumlardir.
 Dini onermelerle ilgili olarak Flew'in bu parcada verilen cozumleme yontemi asagidakilerden hangisiyle isimlendirilmektedir?
 A) Linguistik yaklasim
@@ -538,6 +585,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 48:
+KONU: Din Felsefesi
 Murat, cok sevdigi ve kendisinden cok fazla bilgi edindigi hocasinin sarhos bir surucunun carpmasi sonucu olmesiyle oldukca sarsilir. Bu olay uzerine Allah ve kotuluk konusunda dusunmeye baslar. Ancak bir taraftan da bu dusuncelerinden rahatsiz olur. Ilahiyat fakultesinde doktora yapan arkadasi Ahmet'e giderek "Allah guclu ve iyi ise neden bu tur olaylar yasaniyor? Neden alemde bu kadar kotuluk var?" diye sorar. Arkadasi ona "Senin kotuluk olarak adlandirdigin husus soguk gibi, karanlik gibi. Yani nasil ki isik olmadigi durumu karanlik, sicakligin olmadigi durumu soguk olarak niteliyorsak kotulugu de boyle anlamaliyiz. Dolayisiyla somut bir varligi olmayan kotuluk tamamen bizim bakis acimizdan kaynaklanmaktadir." seklinde cevap verir.
 Ahmet'in bu cevabi kotuluk probleminin cozumuyle ilgili asagidaki yaklasimlardan hangisini yansitmaktadir?
 A) Kotulugun insan eseri oldugu
@@ -549,6 +597,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 49:
+KONU: Din Sosyolojisi
 Emile Durkheim'a gore din, onemli fonksiyonlara sahip toplumsal bir olgudur. Bunlarin bazilari felsefe ve bilim tarafindan yerine getirilse de insanlari bir arada tutma ve hayata anlam verme gibi fonksiyonlarini surdurmeye devam etmektedir. Ayrica Durkheim, kusaklarin degisimiyle birbirlerine aktardiklari ve maddi olmayan bir guc oldugunu kabul ederek ona kolektif bilinc adini verir. Toplum, kolektif bilincin kendisidir. Dolayisiyla toplum bazi olgulari kutsal ve bazi larini da kutsal olmayan olgular olarak tanimlayip dini yaratir. Durkheim'a gore totemizm dinin en basit ve en ilkel bicimidir ve ilkel dinler zamanla bicim degistirerek gunumuzun kurumsal, evrensel dinlerini olusturmuslardir.
 Bu parcadan hareketle Durkheim'la ilgili asagidakilerin hangisi soylenemez?
 A) Evrimci bir din anlayisina sahiptir.
@@ -560,6 +609,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 50:
+KONU: Din Sosyolojisi
 Islam geleneginde bazi dusunurler, cografi faktorlerin toplumsal hayat uzerindeki etkisinden bahseder. Bu dusunurlerden biri, dunyayi yedi iklim bolgesine ayirir ve toplumlarin gelismisliklerini bu iklim kosullarina gore degerlendirir. Ona gore cografi faktorun etkisi sadece fiziksel kosullar uzerinde degil kisisel kabiliyetler ile dini, ahlaki ve manevi hayat uzerinde de gorulur. Dunyani yedi iklim bolgesinde ilahi dinlerin dogusuna en uygun yerlerin kultur ve medeniyete en elverisli noktalar oldugunu savunur.
 Bu parcadaki gorusu savunan dusunur asagidakilerden hangisidir?
 A) Ibn Haldun
@@ -571,6 +621,7 @@ Dogru Cevap: A
 
 ---SONRAKI SORU---
 Soru 51:
+KONU: Din Sosyolojisi
 Kuresellesme, oncelikle kitle iletisim teknolojilerinin de etkisiyle ekonomik alanda liberallesmeyi beraberinde getirmistir. Daha sonra sosyal bilimlerin diger alanlarinda da benzer degisimlere yol acmistir. Ornegin bu surecte dinler ulusal sinirlari asarak uluslararasi duzeyde etkilesimlere girmis, dini inanc ve din anlayislariyla ilgili ozgurlukcu yorumlar ve algilar ortaya cikmaya baslamistir.
 Bu parcadan hareketle kuresellesmeyle ilgili asagidakilerin hangisi soylenemez?
 A) Yeni dini hareketlerin yayginlasmasina katkida bulunmustur.
@@ -582,6 +633,7 @@ Dogru Cevap: B
 
 ---SONRAKI SORU---
 Soru 52:
+KONU: Din Psikolojisi
 Tanri yuceltilmis babadan baska bir sey degildir ve tanri olarak etiketlenmis olan insani ozelliklerin evrensel bir yansimasidir. Tanri imaji, cocukluktaki ana baba algilari deneyiminin yorumlanmasi suretiyle yeniden insa edildigi "baba" imajinin yuceltilmesinin urunudur. Bunu ortaya cikaran dinamik ise hayatin belirsizlik ve guclukleri karsisinda varolussal caresizlik duygularini teskin ve telafi etme arzusu ve ihtiyacidir.
 Bu gorus asagidaki dusunurlerden hangisine aittir?
 A) Max Weber
@@ -593,6 +645,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 53:
+KONU: Din Psikolojisi
 Dini ogretiler hayatta cekilen sikintilari dini arinma ve olgunlasma icin onemli bir firsat olarak aciklar. Din insanlara anlamsiz, haksiz ve adaletsiz gibi gorunen durumlarla karsilasildiginda, anlami korumaya ve donusturmeye yonelik yeni bir bilissel yorumlama sistemi sunar. Agir bir hastalik, basarisizlik ya da yakin kaybi gibi durumlar dini acidan yepyeni bir anlam kazanabilir. Yasanan bu tur sarsici olaylarda kisinin anlami korumasi ve yeniden insa etmesi icin dini ve manevi degerlerin onemli bir rolu vardir.
 Bu parcada anlatilan husus, din psikolojisinde asagidaki kavramlardan hangisiyle aciklanmaktadir?
 A) Mistik deneyim
@@ -604,6 +657,7 @@ Dogru Cevap: B
 
 ---SONRAKI SORU---
 Soru 54:
+KONU: Din Psikolojisi
 "Inandigim dini ilkeler sozde kalmamali, hayatimda karsilik bulmalidir. Bu ilkeler durustlugu gerektiriyorsa durust olmaliyim ve durustlugu bir hayat tarzina donusturmeliyim." diyen bir kisinin, bu sozuyle dindarligin hangi boyutuna vurgu yaptigi soylenebilir?
 A) Bilgi
 B) Etki
@@ -614,6 +668,7 @@ Dogru Cevap: B
 
 ---SONRAKI SORU---
 Soru 55:
+KONU: Din Eğitimi
 * Islam oncesi donemden itibaren faaliyet gosteren bir egitim kurumudur.
 * Okuma-yazma, siir, Kur'an ve temel dini bilgiler ogretilmektedir.
 * Hz. Omer doneminde binicilik, yuzme ve darbimesel ogretimine de yer verilmistir.
@@ -627,6 +682,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 56:
+KONU: Din Eğitimi
 Ilk defa boyanmis bir yun, boyanin rengini oyle saglam bir tarzda alir ve emer ki onu bir daha baska bir renge boyamak kolay olmaz. Yas bir agac kolayca bukulerek cember haline getirilebilir. Fakat kuruduktan sonra bu agaci tekrar eski haline getirmek istersek kirilir. Tipki bunun gibi ilk izlenimler de insan ruhunda oyle saglam, kuvvetli ve derin etkiler meydana getirir ki onlari beyinden sokup cikarmak adeta imkansizdir.
 Comenius'un Buyuk Didaktika'sinda yer alan bu ifadelerle cocuga, dini bilgilerin kucuk yaslardan itibaren verilmesi gerektigini savunan bir egitimcinin asagidaki temellerden hangisine dikkat cektigi soylenebilir?
 A) Kulturel
@@ -638,6 +694,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 57:
+KONU: Din Eğitimi
 6 yasindaki Busra, anne-babasi namaz kilarken yanlarina gider. Yaptiklari hareketleri tekrar eder. Bu esnada da sessizce bir seyler okur. Namazdan sonra annesi kizindan ne okudugunu tekrarlamasini ister. Annesi kizinin Ihlas Suresi'ni okudugunu anlar ve bunun uzerine nasil ogrendigini sorar. O da "Bir gun ben evde oyun oynarken agabeyim surekli olarak bu sozleri soyluyordu. Ben de tekrar ettim ve aklimda kaldi." diye cevap verir.
 Buna gore Busra'nin ogrenme sekli, asagidaki egitim turlerinden hangisinin alanina girer?
 A) Orgun
@@ -649,6 +706,7 @@ Dogru Cevap: B
 
 ---SONRAKI SORU---
 Soru 58:
+KONU: Din Eğitimi
 Dinler ve temel ozellikleriyle ilgili tablo orijinal PDF'de gorsel olarak verilmistir.
 I: Vedalar - Hindistan
 II: Kojiki-Nihongi - Japonya
@@ -663,6 +721,7 @@ Dogru Cevap: E
 
 ---SONRAKI SORU---
 Soru 59:
+KONU: Din Eğitimi
 Yasayan dunya dinleri arasynda;
 * MO VI. asirda Mahavira tarafindan sistemlestirilen,
 * Vedalar'in otoritesine ve bunlardan kaynaklanan uygulamalara karsi cikan,
@@ -678,6 +737,7 @@ Dogru Cevap: B
 
 ---SONRAKI SORU---
 Soru 60:
+KONU: Din Eğitimi
 Asagidakilerden hangisi Yahudilere gore peygamber degildir?
 A) Yesu
 B) Malaki
@@ -688,6 +748,7 @@ Dogru Cevap: E
 
 ---SONRAKI SORU---
 Soru 61:
+KONU: Din Eğitimi
 2018 yilinda yayimlanan Din Kulturu ve Ahlak Bilgisi Ogretim Programi'nda (9, 10, 11 ve 12. Siniflar) yer alan asagidaki unitelerden hangisi Turkiye Yeterlilikler Cercevesi'nde (TYC) belirtilen "sosyal ve vatandaslikla ilgili yetkinlikler" kapsaminda degerlendirilebilir?
 A) Hz. Muhammed ve Genclik
 B) Islam ve Ibadet
@@ -698,6 +759,7 @@ Dogru Cevap: E
 
 ---SONRAKI SORU---
 Soru 62:
+KONU: Din Eğitimi
 Kur'an-i Kerim dersinde Mert Ogretmen sinifinda Kur'an okuma becerisi daha iyi olan her bir ogrenciyi bir arkadasiyla eslestirmis ve birbirlerine yardimci olmalari konusunda gorevlendirmistir. Ayrica siniftaki ogrencileri dort gruba ayirmis ve programda yer alan surelerin okunusu, anlami ve kisa tefsiri konusunda gruplardan birer sunum yapmalarini istemistir.
 Bu parcaya gore Mert Ogretmen'in dersinde uyguladigi yaklasim ve yontemlerle ilgili asagidakilerden hangisi soylenemez?
 A) Grup calismalari yoluyla is birligini esas alan bir sinif ortami olusturmayi amaclamaktadir.
@@ -709,6 +771,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 63:
+KONU: Din Eğitimi
 Kur'an-i Kerim dersinde elif-ba konularini Programli Ogretim Modeli'ne gore isleyen bir ogretmen sirasiyla su asamalari takip etmistir:
 * Ogretecegi konulari harfler, harekeler ve medler seklinde ayirmistir.
 * Harfleri ogrenen ogrencileri harekelere, harekeleri ogrenen ogrencileri ise medlere gecirmistir.
@@ -723,6 +786,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 64:
+KONU: Din Eğitimi
 "Evrendeki mukemmel duzen ile Allah'in varligi ve birligi arasinda iliski kurar." kazanimini islemek isteyen bir din kulturu ve ahlak bilgisi ogretmeni, asagidaki coklu zeka turlerinden hangisini kullandiginda daha etkili bir ogrenme gerceklestirmis olur?
 A) Ritmik - icsel
 B) Ritmik - mantiksal
@@ -733,6 +797,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 65:
+KONU: Din Eğitimi
 Bir din kulturu ve ahlak bilgisi ogretmeni, ogrencilere Islam'in yasakladigi aliskanliklardan biri olan ickiyi anlatacagi derse, alkol bagimliligi konusunda tedavi gormus bir kisiyi davet eder. Bu kisiden bagimliligi surecinde karsilastigi problemleri ve yasadigi sikintilari ogrencilerle paylasmasini ve onlarin konuyla ilgili sorularina cevap vermesini ister. Boylece ogrencilerin, ickinin hem insan iliskileri hem de saglikla ilgili ortaya cikarabilecegi sorunlar hakkinda bilgi sahibi olmalarini amaclar.
 Ogretmenin bu derste uyguladigi yontem/teknik asagidakilerden hangisidir?
 A) Gosterip yaptirma
@@ -744,6 +809,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 66:
+KONU: Din Eğitimi
 Kur'an-i Kerim dersinde ogrencilerin yasayabilecegi asagidaki sorunlardan hangisi, ileriye ket vurmaya ornek verilebilir?
 A) Be (ب) harfinden sonra te (ت) harfini ogrenen bir ogrencinin be (ب) harfini tanimakta zorluk cekmesi
 B) Ayni derste be (ب), te (ت) ve peltek se (ث) harflerini ogrenen ogrencilerin bu harfleri karistirmasi
@@ -754,6 +820,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 67:
+KONU: Din Eğitimi
 Din kulturu ve ahlak bilgisi dersi ogretim programi icin hazirlanan tasarida 4. sinif "Hz. Muhammed'i Taniyalim" unitesi icin yazilan asagidaki kazanimlardan hangisi bilissel alanin daha ust seviyesine karsilik gelmektedir?
 A) Hz. Muhammed'in (s.a.v.) aile buyuklerini tanir.
 B) Hz. Muhammed'in (s.a.v.) Mekke ve Medine yillarini ozetler.
@@ -764,6 +831,7 @@ Dogru Cevap: E
 
 ---SONRAKI SORU---
 Soru 68:
+KONU: Din Eğitimi
 "Cocuk cocuktur, yetiskin degildir. O, butun safligiyla, sevimliligiyle, acikligiyla ama ayni zamanda butun sinirliligiyla cocuktur. O halde din ona, 'cocugun dini' olarak sunulmalidir; hazir, bitmis, ozet, soyut bir ogreti sistemi olarak veya ihata edilemez bir buyukluk olarak sunulamaz."
 Bu ifadeleri kullanan bir kisinin din ogretimi sureciyle ilgili asagidakilerden hangisini soylemesi beklenmez?
 A) Ogrenenin ihtiyaclari merkeze alinmalidir.
@@ -775,6 +843,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 69:
+KONU: Din Eğitimi
 Dersinde "Toplumda kader ve kaza ile ilgili yaygin olan yanlis anlayislari sorgular." kazanimini gerceklestirmeyi amaclayan bir din kulturu ve ahlak bilgisi ogretmeni problem cozme yonteminden yararlanmak ister. Bu amacla toplumda gozlenen yanlis kader anlayislarinin neden oldugu bes problem durumu belirler. Her problem durumuyla ilgili bir arastirma takimi olusturduktan sonra problem durumlarini onlarla paylasir ve sorunlara cozum uretmelerini ister.
 Buna gore ogretmenin, sinifi asagidaki oturma duzenlerinden hangisine gore yerlestirmesi en uygun olur?
 A) Bireysel
@@ -786,6 +855,7 @@ Dogru Cevap: E
 
 ---SONRAKI SORU---
 Soru 70:
+KONU: Din Eğitimi
 Kur'an-i Kerim dersi ogretim programi icin yaratma basamaginda kazanim yazmak isteyen bir alan uzmaninin asagidaki kazanimlardan hangisini yazmasi uygun olur?
 A) Tecvit kaidelerinden hareketle yeni bir okuma bicimi gelistirir.
 B) Harfleri mahreclerine uygun olarak okur.
@@ -796,6 +866,7 @@ Dogru Cevap: A
 
 ---SONRAKI SORU---
 Soru 71:
+KONU: Din Eğitimi
 2018 yilinda yayimlanan Din Kulturu ve Ahlak Bilgisi Dersi Ogretim Programi'nda (Ilkokul 4 ve Ortaokul 5, 6, 7 ve 8. Siniflar) yer alan asagidaki kazanimlardan hangisinin ogrencinin empati duygusunu gelistirmeye yonelik oldugu soylenebilir?
 A) Melekleri, ozellikleri ve gorevlerine gore siniflandirir.
 B) Ramazan ayi ve orucla ilgili kavramlari orneklerle aciklar.
@@ -806,6 +877,7 @@ Dogru Cevap: E
 
 ---SONRAKI SORU---
 Soru 72:
+KONU: Din Eğitimi
 "Peygamber ve Ilahi Kitap Inanci" unitesi icin hazirlanan yapilandirilmis grid asagida verilmistir.
 1. Hz. Suleyman  2. Hz. Musa  3. Hz. Isa
 4. Hz. Sit       5. Hz. Nuh   6. Hz. Lut
@@ -820,6 +892,7 @@ Dogru Cevap: B
 
 ---SONRAKI SORU---
 Soru 73:
+KONU: Din Eğitimi
 8. sinif din kulturu ve ahlak bilgisi dersinde bir ogretmen, duyussal alana ait "Hz. Muhammed'in merhametli ve affedici olusunu davranislarinda yansitmaya ozen gosterir." kazanimini cesitli etkinliklerle islemistir. Unite sonunda ise bu kazanimin ogrencilerde ne duzeyde gerceklestigini olcmek istemistir.
 Buna gore ogretmenin asagidakilerden hangisini kullanmasi daha uygun olur?
 A) Af ve merhamet konularini iceren coktan secmeli test uygulamasi
@@ -831,6 +904,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 74:
+KONU: Din Eğitimi
 2018 yilinda yayimlanan Din Kulturu ve Ahlak Bilgisi Dersi Ogretim Programi (Ilkokul 4 ve Ortaokul 5, 6, 7 ve 8. Siniflar); sinif, unite, konu, kazanim, aciklama ve anahtar kavram gibi bilgileri icermektedir.
 Buna gore programda yer alan "6.5.2. Dini bayramlarin ve onemli gun ve gecelerin toplumsal butunlesmeye olan katkisini yorumlar." kazanimindaki "6.5.2." sayilarinin ifade ettigi hususlar asagidakilerin hangisinde dogru siralanmistir?
 A) Unite - konu - kazanim
@@ -842,6 +916,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 75:
+KONU: Din Eğitimi
 Beceri temelli ogrenme, 2018 yilinda yayimlanan Din Kulturu ve Ahlak Bilgisi Dersi (Ilkokul 4 ve Ortaokul 5, 6, 7 ve 8. Siniflar) Ogretim Programi'nin gelistirilmesinde dikkate alinan yaklasimlardan biridir. Bu yaklasimda ogrencilerin dini ve ahlaki kavramlari arastirma, sorgulama, yorumlama ve kulturel farkindalik kazanma gibi bazi temel becerileri gelistirmeleri amaclanmaktadir.
 Asagidakilerden hangisi bu yaklasimi dikkate alan bir din kulturu ve ahlak bilgisi ogretmeninin gerceklestirebilecegi etkinliklerden biri olamaz?
 A) Kur'an mealinin nasil kullanilacagini gosterme

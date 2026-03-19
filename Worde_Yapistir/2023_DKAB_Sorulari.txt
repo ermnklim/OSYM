@@ -3,6 +3,7 @@ KONU: (kıraat/tecvid - Kur’an ilimleri ağırlıklı)
 YIL: 2023
 
 Soru 1:
+KONU: Kur'an-ı Kerim ve Tecvid
 
 I.   قِرْطَاسُ
 II.  مِصْرُ
@@ -24,6 +25,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 2:
+KONU: Kur'an-ı Kerim ve Tecvid
 (Hud, 11:42)
 يَا بَنِيَّ أَرْكَبْ مَعَنَا
 Bu ayette, sakin olan ba harfinden sonra harekeli bir mim geldiği için ba, mim’e idgam edilerek okunur.
@@ -43,6 +45,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 3:
+KONU: Kur'an-ı Kerim ve Tecvid
 Kur'an okuma ve tecvit dersinde kıraatin tanımını yapan Ertuğrul Hoca, daha sonra kıraat çeşitlerini anlatmış ve öğrencilerinin konuyu öğrenip öğrenmediklerini ölçmek için “Senedi sahih olmakla birlikte yazım bakımından Hz. Osman mushafına veya Arap dili gramerine uygunluk arz etmeyen kıraatlere ne ad verilmektedir?” şeklinde soru sormuştur.
 
 Bu soruya öğrencilerin vermesi beklenen cevap aşağıdakilerden hangisidir?
@@ -60,6 +63,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 4:
+KONU: Kur'an-ı Kerim ve Tecvid
 Hz. Muhammed’in vefatından sonraki dönemde ayetlerin farklı şekillerde okunması özellikle Medine dışındaki Müslümanlar arasında kıraat ihtilaflarına sebep olmuştur. Bunun üzerine Hz. Osman bir komisyon kurarak belirli ilkeler çerçevesinde Kur’an’ın çoğaltılmasını istemiştir.
 
 Aşağıdakilerden hangisi bu ilkelerden biridir?
@@ -77,6 +81,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 5:
+KONU: Tefsir
 Şiraz baş kadılığı görevinde bulundum. Tefsir alanında XIII. yüzyılda yazdığım eserde ayetleri açıklarken itikadi konularda Ehlisünnet’in, fıkhi konularda Şafiî’nin görüşlerini benimserim. En çok yararlandığım tefsirlerin başında el-Keşşaf gelmekle birlikte ondaki Mutezili fikirlere katılmam. Hatta bir yönüyle onu çoğu kez eleştiririm. Ara sıra İsrailiyata yer verdiğim ve surelerin faziletine dair mevzu rivayetleri naklettiğim için eleştirilirim. Osmanlı medreselerinde okutulan tefsirim hakkında birçok şerh ve haşiye yazılmıştır.
 
 Kendisini bu şekilde anlatan müfessir ve tefsiri aşağıdakilerden hangisidir?
@@ -93,6 +98,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 6:
+KONU: Tefsir
 “Altı üstüne gelmiş bir şehre uğrayan kimseyi (görmedin mi)? O ‘Allah, burayı ölümünden sonra nasıl diriltecek (acaba)?’ demişti. Bunun üzerine, Allah onu öldürüp yüzyıl ölü bıraktı, sonra diriltti ve ona sordu: ‘Ne kadar (ölü) kaldın?’ O, ‘Bir gün veya bir günden daha az kaldım.’ diye cevap verdi.” (Bakara, 2:259) ayetinde şehre uğrayan kişinin ismi açıkça söylenmemiş, yerine zamir kullanılmıştır.
 
 Bu parçada bahsedilen hususu araştıran Kur’an ilmi aşağıdakilerden hangisidir?
@@ -110,6 +116,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 7:
+KONU: Tefsir
 • “O, gökten bir su indirmiştir de vadiler kendi miktarlarınca sel olmuştur. Sel de yüze çıkan bir köpük yüklenip götürmüştür. Bir ziynet veya meta aramak için ateşte üzerine (körükleyip) yaktıkları şeylerden (madenlerden) de bunun gibi bir köpük (posa) hâsıl olur. İşte Allah, hak ile batılı böyle çarpıştırır. Ama köpük atılır gider. İnsanlara fayda verecek olan şeye gelince işte bu, yeryüzünde kalır…” (Rad, 13:17)
 • “Güneş’e ve onun aydınlığına andolsun, onu izlediğinde Ay’a andolsun, onu ortaya çıkardığında gündüze andolsun, onu bürüdüğünde geceye andolsun, göğe ve onu bina edene andolsun, yere ve onu yayıp döşeyene andolsun.” (Şems, 91:1-6)
 
@@ -128,6 +135,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 8:
+KONU: Tefsir
 I. Uydurma rivayetlere yer verilmesi
 II. İsrailiyata sık başvurulması
 III. Cahiliye şiirinden yararlanılması
@@ -147,6 +155,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 9:
+KONU: Tefsir
 Bir âlim tefsirinde; ayetlerdeki cümlelerin grameri hakkında açıklama yapmış, ayetlerin yorumunda dilsel tahlillere başvurmuş ve kevni ayetleri bilimsel gelişmeler ışığında yorumlamıştır. Diğer fırkalara karşı Ehlisünnet düşüncesini savunmuş, ayetlerden hareketle insanları züht ve takvaya yöneltmek için ahlaki değerlendirmelerde bulunmuştur.
 
 Bu parçaya göre müfessirin aşağıdaki yöntemlerden hangisini kullandığı söylenemez?
@@ -164,6 +173,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 10:
+KONU: Hadis
 I. Mucem tarzı eser oluşturmak
 II. Nasih ve mensuh hadisleri inceleyen şerh yazmak
 III. Hadislerin söylenme sebeplerine dair kitap telif etmek
@@ -184,6 +194,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 11:
+KONU: Hadis
 Hadislerin yazıyla kaydedilmeye başlandığı dönemde, hadisi sema ve kıraat yoluyla değil de doğrudan yazılı malzemelerden alan kimseler olmuştur. Bu yolla elde edilen hadislerde noktalama ve hareke hatası yapılmakta, hadisin senedinde veya metninde birtakım okuma hataları olabilmektedir. Bu şekilde hadis rivayet eden raviler cerh-tadil âlimleri tarafından tenkit edilmiş ve bu kişiler için de özel bir kavram kullanılmıştır.
 
 Bu parçada bahsedilen kavram aşağıdakilerden hangisidir?
@@ -201,6 +212,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 12:
+KONU: Hadis
 Ahmet, bir hadisin sıhhatini tespit etmek amacıyla senedde yer alan ravileri incelemek ister. Bunun için rical kitaplarında hadisin ravilerinin zabtına yönelik sorgulamaları gerçekleştirirken şu soruların cevaplarını arar:
 * Aşırı dikkatsiz veya dalgın birisi mi?
 * Güvenilir ravilere aykırı rivayette bulunmuş mu?
@@ -222,6 +234,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 13:
+KONU: Hadis
 Muvatta isimli eseri okuyan bir öğrenci bazı rivayetlerde İmam Malik’in “Hz. Peygamber şöyle buyurdu.” diyerek hadis naklettiğini görmüştür. İmam Malik’in Hz. Muhammed’i görmüş gibi nakletmesini garipseyen öğrenci bu durumu öğretmenine sormuştur. Öğretmen “İmam Malik isnaddaki iki raviyi atlamıştır.” diyerek cevap vermiştir.
 
 Bu parçada bahsedilen hadis türü aşağıdakilerden hangisidir?
@@ -239,6 +252,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 14:
+KONU: Hadis
 660 yılında Yemen’de doğduğu bilinen Hemmam b. Münebbih gençliğinde hadis öğrenmek için Medine’ye geldi. Medine’de kaldığı sürede birçok sahabeden hadis aldı. Ancak onun asıl şöhreti günümüze kadar ulaşan ilk eserlerden biri olan es-Sahîfetü’s-Sahiha’yı yazmış olmasıdır. O, bu eserinde hadiste öne çıkan bir sahabeden aldığı 139 hadisi rivayet etmiştir.
 
 Bu sahabe aşağıdakilerden hangisidir?
@@ -256,6 +270,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 15:
+KONU: Fıkıh
 Zekâtın şartları arasında yer alan;
 I. yıllanma,
 II. tam mülkiyet,
@@ -277,6 +292,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 16:
+KONU: Fıkıh
 “Allah, çocuklarınızın miras payı hakkında şöyle davranmanızı istiyor…” (Nisa, 4:11) ayeti her çocuğun mirasçı olacağı hükmünü getirmektedir. Bununla birlikte Hz. Muhammed’in “Katil mirasçı olamaz.” hadisi ebeveynlerini öldüren çocukların bu hükmün kapsamı dışında bırakmaktadır.
 
 Bu örnekte, sünnetin Kur’an karşısında öne çıkan fonksiyonu aşağıdakilerden hangisidir?
@@ -294,6 +310,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 17:
+KONU: Fıkıh
 • Sa’y yaparken koşar adımlarla yürümek
 • Bazı ihram yasaklarının ihlali durumunda büyükbaş hayvan kesmek
 • Tavaf esnasında canlı ve çalımlı bir şekilde yürümek
@@ -314,6 +331,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 18:
+KONU: Fıkıh
 Ali, zekât vermek için gerekli olan zenginlik ölçüsüne sahiptir. Ancak Ali’nin ödemesi gereken borçları da bulunmaktadır. Ali bu durumda ne yapması gerektiğini sormak için müftüye başvurur. Müftü borç miktarının mal varlığını nisabın altına düşürdüğünü belirterek Ali’ye zekât mükellefi olmadığını söyler.
 
 Bu örnekteki zekât vermeme sebebini ifade eden kavram aşağıdakilerden hangisidir?
@@ -331,6 +349,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 19:
+KONU: Fıkıh
 I. Anne karnındaki çocuk – Eksik eda ehliyeti
 II. Gayri mümeyyiz çocuk – Eksik vücub ehliyeti
 III. Mümeyyiz çocuk – Tam vücub ve eksik eda ehliyeti
@@ -351,6 +370,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 20:
+KONU: Fıkıh
 Tazir cezalarıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?
 
 A) Miktar ve keyfiyeti nasla belirlenmiştir.
@@ -366,6 +386,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 21:
+KONU: Fıkıh
 İslam aile kurumuna büyük önem vermiştir. Bu kapsamda hem sağlıklı bir yuva kurulması hem de evliliğin sürdürülmesi için çözüm önerilerinde bulunmuştur. Bunlardan biri de aile içinden hakem belirleme uygulamasıdır. Bu konu ayette şöyle ifade edilmiştir: “Eğer karı-kocanın aralarının açılmasından endişe duyarsanız erkeğin ailesinden bir hakem ve kadının ailesinden bir hakem gönderin. Bunlar uzlaştırmak isterse Allah onların arasını bulur. Çünkü Allah her şeyi bilen, her şeyden haberdar olandır.” (Nisa, 4:35)
 
 Aşağıdakilerden hangisi bu ayette getirilen çözüm önerisinin faydaları arasında görülemez?
@@ -383,6 +404,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 22:
+KONU: Kelam / Akaid
 Kelam âlimleri, Allah’ın varlığı ve birliğini açıklamak için Kur’an’dan ve sünnetten çıkardıkları delilleri bilimsel araştırma ve teknolojik gelişmelere paralel olarak açıklamaya çalışmıştır. Yaşanan dönemin bilgi birikimine göre farklı şekillerde isimlendirilen bu deliller tarihî süreçte kelam ilminin önemli araştırma konularından biri olmuştur.
 
 Bu parçada bahsedilen faaliyet aşağıdaki kavramların hangisi kapsamında değerlendirilir?
@@ -400,6 +422,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 23:
+KONU: Kelam / Akaid
 Bir kişi Hasan Basri’nin meclisine gelerek ona büyük günah işleyen kimsenin durumunu sormuş, aynı mecliste bulunan öğrencisi Vasıl b. Ata da hocasının cevap vermesini beklemeden “Büyük günah işleyen kişi ne mümindir ne de kâfirdir…” şeklinde soruyu cevaplamıştır. Bu olay Mutezile’nin ortaya çıkış sebeplerinden biri olarak değerlendirilmiş ve Vasıl’ın bu görüşü Mutezile Mezhebi’nin beş temel esasından birini oluşturmuştur.
 
 Bu parçada bahsedilen Mutezile esası aşağıdakilerden hangisidir?
@@ -417,6 +440,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 24:
+KONU: Kelam / Akaid
 Allah elbette adildir. Bununla birlikte ilahi adaletin beşerî akılla kavranması her zaman mümkün değildir. Bu yüzden Allah’ın kendi mülkünde dilediğini yapması zulüm olarak değerlendirilemez asıl zulüm O’nun, fiillerinde sınırlandırılması ve bazı fiillerin O’na vacip kılınmasıdır.
 
 Bu görüşü;
@@ -439,6 +463,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 25:
+KONU: Kelam / Akaid
 Tefsir kaynaklarında yer alan bilgilere göre Hz. Musa, gençlik çağına gelince bir Kıpti’nin ölümüne sebep olduğundan Firavun’un sarayından ayrılıp Medyen civarına gider. Bu yolculuk sırasında, hayvanlarını sulamak için herkesin ayrılmasını bekleyen çoban kızlarla karşılaşır ve onlara yardım eder. Bu iyiliğin karşılığında onu, babaları Hz. Şuayb’a götüren kızlar onun kendilerine yardım ettiğini, doğru sözlü birisi olduğunu söyler ve bir çoban tutmak istiyorsa ondan daha fazla güvenebileceği kimsenin olmadığını ifade eder. Hz. Musa, Hz. Şuayb’a söz verdiği gibi on yıl süreyle burada çobanlık yapar ve kızların biriyle evlenir. Bu sürenin sonunda bölgeden ayrılıp Mısır’a giderken yolda peygamberlikle görevlendirilir. Mısır’da Firavun’a gider ve onu Allah’a inanmaya davet eder. Firavun ve adamlarıyla girdiği sözlü tartışmadan zekâsı sayesinde, sihirbazlarla girdiği mücadeleden de Allah’ın bahşettiği mucizelerin yardımıyla galip çıkar. Böylece sihirbazların da hidayetine vesile olur.
 
 Bu parçadan peygamberlikle ilgili aşağıdaki sıfatların hangisine ulaşılamaz?
@@ -456,6 +481,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 26:
+KONU: Kelam / Akaid
 Gazali ile birlikte felsefe ve mantık konuları da kelama dâhil edilmiş ve kelamın konuları genişlemiştir. Bu süreçte daha önce kelamda kullanılan deliller mantık süzgecinden geçirilmiş ve Gazali sonrası dönemde bunlardan bazıları muteber kabul edilmemiştir.
 
 Buna göre mütekaddimun döneminde kullanılan;
@@ -478,6 +504,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 27:
+KONU: Kelam / Akaid
 Efal-i ibad meselesinin nasıl anlaşılacağı kelam ekollerinin uluhiyet ve sıfat anlayışlarıyla doğrudan ilişkilidir. Fiilin meydana gelişinde insana gerçek anlamda hiçbir rol vermeyen Cebriye ile fiilin ilahi müdahale olmaksızın kul tarafından gerçekleştirildiğini söyleyen Mutezile’ye karşı Ehli sünnet kelamçıları orta bir yol izlemeyi tercih etmiştir.
 
 Kelam ekollerinin bu mesele hakkındaki görüşleri aşağıdaki ilahi sıfatlardan hangisiyle yakından ilişkilidir?
@@ -495,6 +522,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 28:
+KONU: İslam Mezhepleri ve Akımları
 Beyrut’a giden bir turist izlenimlerini şu şekilde aktarmaktadır: Çok kimlikli ve çok kültürlü bu şehri dolaşırken zaman zaman bazı yerlerde asılı; yeşil, kırmızı, sarı, mavi ve beyaz olmak üzere beş renkten oluşan bayraklar gördüm. Sorduğumda bu beş rengin dinî bir grubu temsil ettiği ve onların inançlarında önemli bir konuma sahip olan beş hududa karşılık geldiği cevabını aldım. Bu hududların sırasıyla külli akıl, külli nefs, kelime, sabık ve tali olarak isimlendirildiğini; bu bilgilerin, mezhebin sistemleşmesinde önemli rolü olan Hamza b. Ali’nin risalelerinde yer aldığını öğrendim.
 
 Bu parçada bahsedilen dinî grup aşağıdakilerden hangisidir?
@@ -512,6 +540,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 29:
+KONU: İslam Mezhepleri ve Akımları
 Mezhepler, savundukları görüşler sebebiyle mensuplarınca veya muhaliflerince farklı isimlerle anılmıştır. Örneğin Mutezile’ye;
 • kulun kendi fiillerini yaratmaya kadir olduğunu savunmaları,
 • “Allah şerri yaratmaz.” iddiasında bulunmaları,
@@ -535,6 +564,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 30:
+KONU: İslam Mezhepleri ve Akımları
 Haricilik içinde;
 • ismini kurucusundan alan,
 • Ehl-i Dave, el-Kaade, Vehbiyye, Ehl-i İstikame gibi isimlerle de anılan,
@@ -556,6 +586,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 31:
+KONU: İslam Mezhepleri ve Akımları
 İslam mezhepleri içerisinde yer alan;
 I. Mürcie,
 II. Matüridiye,
@@ -576,6 +607,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 32:
+KONU: İslam Tarihi / Siyer
 Hicretten 33 yıl önce Yemen’den Mekke’ye gelen bir tüccar Kureyş’in Sehm kabilesinden As b. Vail’e satmış olduğu malın parasını alamaz. Mağdur Yemenli bunun üzerine Kureyşlilerden kendisine yardımcı olmalarını ister. Onun çağrısına ilk cevap veren Teym kabilesi reisi Abdullah b. Cudan olur. Daha sonra Teym’in eski müttefikleri Haşimoğulları, Muttaliboğulları, Esedoğulları ve Zühreoğulları da kendisine katıldıklarını ilan ederek toplanırlar ve Mekke’de haksızlığa uğrayan herkese yardımcı olacaklarına dair Hilfü’l-Fudul adı verilen bir cemiyet kurarlar.
 
 Bu cemiyete Haşimoğullarını temsilen aşağıdakilerden hangisi katılmıştır?
@@ -593,6 +625,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 33:
+KONU: İslam Tarihi / Siyer
 İslam’ın Mekke döneminde gerçekleşen;
 I. Hz. Hatice’nin vefatı,
 II. İsra ve Miraç,
@@ -614,6 +647,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 34:
+KONU: İslam Tarihi / Siyer
 Halid b. Velid’le ilgili aşağıdaki bilgilerden hangisi yanlıştır?
 
 A) Uhud Savaşı’nda birliğiyle arkadan saldırarak Müslümanların ağır kayıplar vermesine sebep olmuştur.
@@ -629,6 +663,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 35:
+KONU: İslam Tarihi / Siyer
 Dört Halife Dönemi’nde Müslümanlar ekonomik, siyasi ve sosyal açıdan büyük bir ilerleme kaydetmiştir. Bununla birlikte daha ilk halife Hz. Ebu Bekir’den itibaren hem Müslümanların kendi aralarında hem de Müslümanlar ile diğer dinlere mensup kişiler arasında çeşitli sorunlar ortaya çıkmıştır. İlk halife Hz. Ebu Bekir’den dördüncü halife Hz. Ali’ye kadar her biri İslam toplumunun birliğini ve refahını sağlamak için bu sorunları ortadan kaldırmaya çalışmıştır.
 
 Aşağıdakilerden hangisi bu sorunlara örnek verilemez?
@@ -646,6 +681,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 36:
+KONU: İslam Tarihi / Siyer
 Müslümanların Uhud Savaşı’nda yaşadıkları sıkıntı, İslam düşmanlarını umutlandırdı. Nitekim bir Yahudi kabilesi bu olaydan sonra Müslümanlarla yapmış olduğu antlaşmayı bozdu ve sonrasında da Hz. Muhammed’e suikast tertip etti. Bu tuzakları Allah’ın bildirmesi sayesinde Hz. Muhammed kurtuldu ve bu Yahudi kabilesini bulundukları yerden sürdü. Onların bu durumu Kur’an-ı Kerim’de şu şekilde karşılık bulmuştur: “O, kitap ehlinden inkâr edenleri ilk toplu sürgünde yurtlarından çıkarandır. Siz onların çıkacaklarını sanmamıştınız. Onlar da kalelerinin kendilerini Allah’tan koruyacağını sanmışlardı. Ama Allah’ın emri onlara ummadıkları yerden geldi. O, yüreklerine korku düşürdü. Öyle ki, evlerini kendi elleriyle, hem de müminlerin elleriyle yıkıyorlardı. Ey basiret sahipleri, ibret alın.” (Haşr, 59:2)
 
 Bu ayette bahsedilen Yahudi grubu aşağıdakilerden hangisidir?
@@ -663,6 +699,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 37:
+KONU: İslam Tarihi / Siyer
 Emevi yönetimi Arap ırkçılığına dayalı bir yönetim anlayışı benimsemiş ve başkenti Bizans etkisinin hissedildiği Şam’a taşımıştır. Emevileri yıkarak iktidara gelen Abbasilerin ilk icraatlarından biri başkenti Şam’dan Bağdat’a taşımak olmuştur. Böylece devlet üzerindeki Arap ve Bizans etkisi iddiaları ortadan kalkmıştır. Bununla birlikte bu dönemde farklı bir grup yönetimde ağırlığını artırmıştır. Öyle ki Abbasiler, İslam kültürünü bu grubun etkisine sokmakla itham edilmiştir.
 
 Bu parçada bahsedilen grup aşağıdakilerden hangisidir?
@@ -680,6 +717,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 38:
+KONU: İslam Kültür ve Medeniyeti
 • Geometrik bir tasarımın üçüncü boyuta aktarılmış uygulamasıdır.
 • Petekler dizisi ya da hücreler hâlinde istiflenmiş görüntü verir.
 • Bulunduğu yerde hem taşıyıcı hem süsleyici işlev görür.
@@ -700,6 +738,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 39:
+KONU: İslam Kültür ve Medeniyeti
 Minyatür sanatının özellikleriyle ilgili,
 I. Estetik görünümlerinin yanı sıra tarihî belge niteliği taşır.
 II. Eserde anlatılan konunun daha iyi anlaşılmasına katkıda bulunur.
@@ -720,6 +759,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 40:
+KONU: İslam Kültür ve Medeniyeti
 Cumhuriyet Dönemi düşünürlerinden;
 • Kur’an, fıkıh, kelam gibi İslami ilimlerin yanında felsefe ve tarih gibi alanlardaki çalışmalarıyla da tanınan,
 • İslam Mütefekkirleri ile Garp Mütefekkirleri Arasında Mukayese ve Yeni İlm-i Kelam gibi eserler yazan,
@@ -740,6 +780,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 41:
+KONU: İslam Kültür ve Medeniyeti
 Tarihte yaşamış önemli şahısların tanıtıldığı tabakat türü eserlerden, söz konusu kişilerle ilgili aşağıdaki bilgilerden hangisine ulaşılamaz?
 
 A) Nesep ve aileleri
@@ -755,6 +796,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 42:
+KONU: İslam Kültür ve Medeniyeti
 Hz. Muhammed döneminden itibaren ezan sesinin uzak mesafelere ulaştırılmasına çaba gösterilmiştir. Bu amaçla ilk olarak Emevi valisi Mesleme b. Muhalled tarafından Mısır’da camiye eklenen minareler, başlarda belli bir forma sahip değildir. Sonraki süreçte yapıldıkları bölgede bulunan malzemelerden de yararlanarak çeşitli formlarda yapılmaya başlanmıştır. Örneğin İspanya ve Mısır’da taş; Suriye ve Anadolu’da taş ve tuğla; Irak, İran ve Afganistan’da tuğla gibi malzemelerin kullanıldığı görülmektedir. Genellikle gövdeleri yuvarlak, dört köşe, sade yahut bezemeli olan minareler İslam dünyasının doğusunda ve batısında farklı özellikler kazanmıştır. Zamanla dinî mimarinin en önemli unsurlarından biri hâline gelen minarelerin en güzel örneklerine Osmanlı döneminde ulaşılmıştır.
 
 Bu parçadan hareketle İslam mimarisi hakkında aşağıdaki yargıların hangisine ulaşılamaz?
@@ -772,6 +814,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 43:
+KONU: İslam Felsefesi
 İslam düşünce geleneği içinde ilimlerin sınıflandırılması konusunda pek çok eser kaleme alınmıştır. Bu konuda eser yazanlardan biri olan Farabi; Aristo ve Kindi’den daha kapsamlı bir tasnif yapmıştır. O, eserinde her bir ilmin teorik ve pratik açıdan değerini belirterek eğitim ve öğretimdeki önemine işaret etmiştir. İlimleri önce dil, mantık, matematik, fizik-metafizik ve medeni ilimler (siyaset) olmak üzere beş ana başlık altında sınıflandırmış sonra da her bir ilmin kapsamına giren alt ilimleri sıralamıştır.
 
 Farabi’nin bu parçada bahsedilen eseri aşağıdakilerden hangisidir?
@@ -789,6 +832,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 44:
+KONU: İslam Felsefesi
 İslam düşüncesinde;
 • varlığın mevcudiyeti meselesinde sudur nazariyesini benimseyen,
 • doğa bilimleri, metafizik ve tıp alanında önemli eserler kaleme alan,
@@ -810,6 +854,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 45:
+KONU: Din Felsefesi
 İlahiyat fakültesi öğrencileri Mehmet ile Hasan dünyadaki açlık ve savaşlar üzerine sohbet eder. Sohbet sırasında Mehmet, çok sayıda Afrikalı çocuğun açlık ve savaşlar sebebiyle ölümle karşı karşıya olduğundan bahsederek Allah’ın müdahale etmeyişini sorgular. Bundan hareketle o, âlemdeki bu işleyişin Allah’ın adil ve rahmet oluşuyla nasıl bağdaştırılabileceğini Hasan’a sorar. Hasan da çeşitli din âlimlerinin görüşlerinden hareketle Mehmet’e konuyla ilgili açıklamalarda bulunur.
 
 Bu parçada bahsedilen husus aşağıdaki din felsefesi konularından hangisiyle ilgilidir?
@@ -827,6 +872,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 46:
+KONU: Din Felsefesi
 I. Aristo – deizm,
 II. Spinoza – teizm,
 III. Whitehead – panenteizm
@@ -846,6 +892,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 47:
+KONU: Din Felsefesi
 Özgür varlıkların mümkün dünyaların en iyisinde günah işleyeceklerini önceden bilmesi, Tanrı’nın günahları önceden belirlediği dolayısıyla özgürlüklerin altını oyduğu anlamına gelmez. Bunun yerine Tanrı mümkün en iyi dünyayı seçmekle özgürce seçilmiş günah dâhil, bu dünyada tüm olanlara rıza göstermiş olur. Dünya günah ve kötülük içermesine rağmen mümkün dünyaların en mükemmelidir.
 
 Leibniz’in bu görüşleri aşağıdaki İslam düşünürlerinden hangisinin kötülük problemiyle ilgili görüşlerini yansıtmaktadır?
@@ -863,6 +910,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 48:
+KONU: Din Felsefesi
 Din felsefesi yapmak, dinin temel iddiaları hakkında bazı ilkeler bağlamında düşünmek ve konuşmaktır. Bunlardan herhangi birinin ihlal edilmesi dine felsefi bir bakış açısı anlamına gelen din felsefesi disiplinin dışına çıkmak anlamına gelecektir. Örneğin Tanrı’nın varlığına dair kozmolojik ve ontolojik delili kendisine problem olarak belirleyen felsefecisi bu delilleri ortaya koyarken sadece Anselm, İbn Rüşd gibi düşünürlere temas edip bu delilleri eleştiren Kant’ı görmezden gelmesi durumunda din felsefesinin ilkelerinden birini ihlal etmiş olacaktır.
 
 Bu parçada din felsefesinin aşağıdaki ilkelerinden hangisinin ihlaline dikkat çekilmektedir?
@@ -880,6 +928,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 49:
+KONU: Din Sosyolojisi
 Sosyologlar, toplumsal değişimin yasalarını ifade etmek için çeşitli yaklaşımlar geliştirmiştir. Bunlardan biri, toplumların döngüsel bir süreçte doğduğunu, büyüdüğünü ve sonunda ortadan kalktığını savunarak tarihin hareketinin de döngüsel olduğunu; toplumların yükseliş ve çöküşlerinin sürekli dairevi bir hareket izlediğini ifade eder.
 
 Bu parçada bahsedilen toplumsal değişim kuramı aşağıdakilerden hangisidir?
@@ -897,6 +946,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 50:
+KONU: Din Sosyolojisi
 Din ile toplum ilişkilerini analiz etmek isteyen bir araştırmacı çalışmalarında belli bir din tanımını esas alması gerekir. Din sosyolojisiyle ilgilenen ilk düşünürler de bu konuya önem vermiş ve kendi sosyoloji yaklaşımlarını yansıtan din tanımları yapmışlardır. Örneğin Durkheim’a göre din, sosyal tecrübenin bir yansımasıdır. Toplumun kolektif şuurunun temelini de dinî inançlar oluşturur. Din, sosyal dayanışmanın en önemli faktörüdür ve dolayısıyla toplumsal kurumların kaynağıdır. Diğer bir sosyal bilimci Yinger ise dini “Bir grup insanın, hayatın temel problemlerine çözümler bulmak amacıyla vasıta olarak kullandığı inanç ve pratikler sistemi.” olarak tarif etmiştir. Görüldüğü gibi her iki düşünür de yaptıkları tanımlarda dinin günlük hayata ve bireyin anlam dünyasına yansıyan yönünü öne çıkarmıştır.
 
 Din hakkında yapılan bu tanımlar aşağıdaki kavramlardan hangisiyle nitelendirilebilir?
@@ -914,6 +964,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 51:
+KONU: Din Sosyolojisi
 Din sosyolojisi alanında çalışma yapan M. Müller, E. Durkheim, A. Comte, H. Spencer ve E. B. Taylor gibi ilk düşünürlerin çoğu antropoloji vb. farklı alanlarda uzmandı. Dolayısıyla bu düşünürler din sosyolojisine de kendi bilim dallarına ve bakış açılarına uygun olarak yaklaşmışlar ve genellikle dinin kökeni ve kaynağı ile ilgilenmişlerdir. Ayrıca bu kişiler dinin kaynağının ilahi olmadığını savunmuş ve bu konuda çeşitli görüşler ileri sürmüşlerdir.
 
 Aşağıdakilerden hangisi bu kişilerin dinin kökeniyle ilgili öne sürdükleri görüşler arasında yer almaz?
@@ -931,6 +982,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 52:
+KONU: Din Sosyolojisi
 İnsanın gerçek hayatta elde etmeyi arzulayıp da ulaşamadığı pek çok şey vardır. Bu durumun oluşturacağı tatminsizlik, mahrumiyet ve gerginlik insanı telafi edici davranışa zorlar. Bu durum da insanı dine yönlendirir. Nitekim din konusunda ileri sürülen psikolojik ve sosyolojik pek çok teori de dinî davranışı mahrumiyete bağlar. Dolayısıyla insanlar tarafından üretilen din bunalmış insanın iç çekişi, acımasız dünyanın kalbi ve ruhsuz durumların ruhudur.
 
 Bu parçada ileri sürülen görüş, aşağıdaki düşünürlerden hangisine aittir?
@@ -948,6 +1000,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 53:
+KONU: Din Sosyolojisi
 Lee Kirkpatrick’e göre Tanrı ister lafzı ister ruhsal manada olsun, insanı her zaman tehlikelerden koruyan ve ona güvenlik hissi veren bir baba gibidir. Hemen hemen bütün dinî geleneklerde Tanrı’nın güvenilir bir sığınak olduğuna işaret eden Kirkpatrick, dinin özellikle stres ve diğer güçlüklerle başa çıkmaya yardımcı bir faktör olduğuna ve bireye biçtiği güvenlik hissi sağladığına dikkat çekmiştir. Ayrıca ilk dönem gelişim süreçleri ile din arasındaki ilişkinin ergenlik ve yetişkinlik dönemi dindarlığına etkisi olduğunu da savunarak tanrı fikrinin gelişimine dair bir teori geliştirmiştir.
 
 Kirkpatrick’in geliştirdiği bu teori aşağıdakilerden hangisidir?
@@ -965,6 +1018,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 54:
+KONU: Din Psikolojisi
 Aşağıdakilerden hangisi din psikolojisinin çalışma konularından biri değildir?
 
 A) Dinî inançların doğruluk değerine dair yargıda bulunmak
@@ -980,6 +1034,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 55:
+KONU: Dinler Tarihi
 I. İsa Mesih’in insani ve ilahi olmak üzere iki tabiata (diofizit) sahip olduğuna inanırlar.
 II. İbadetlerinde secde ve rükûya benzer uygulamalar vardır.
 III. Kadıköy Konsili’nde alınan kararlara itiraz etmiş ve bağımsız bir kilise olarak varlıklarını sürdürmüşlerdir.
@@ -999,6 +1054,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 56:
+KONU: Dinler Tarihi
 Geleneksel Türk inançlarında tanrı anlayışı merkezî bir konuma sahiptir. Türklerin imparatorluk dönemlerine ait yazıtlarda Gök Tanrı, tüm azameti ile birinci planda yer alır. Bu yazıtlardaki ifadelerden kozmik düzenin, toplumun organizasyonunun ve insanın kaderinin Tanrı’ya bağlı olduğu anlaşılmaktadır. Göktürklerde Tanrı “yaratıcı” ve “kadir-i mutlak” olarak algılanmıştır. Ezelî ve ebedî olan, hakanlara kut ve güç veren O’dur. Bununla birlikte bu inanca dair ibadetler, mabetler, resim ve heykellerle karşılaşılmamıştır.
 
 Bu parçadan hareketle geleneksel Türk inancı hakkında aşağıdakilerin hangisine ulaşılabilir?
@@ -1016,6 +1072,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 57:
+KONU: Dinler Tarihi
 Orta Doğu bölgesi dinî çeşitlilik bakımından oldukça zengindir. Bu bölgede ortaya çıkan dinlerden biri gnostik özelliğiyle dikkat çekmektedir. Bu bağlamda ışık âlemi ve karanlık âlem şeklinde düalist bir anlayışa sahiptir. Bu dine göre yaşamın temel hedefi, yeryüzünde hapsolmuş ruhun arındırılarak ışık âlemine ulaşmasıdır. Bu çerçevede önemli bir ritüel olarak vaftiz uygulaması bulunmaktadır. Vaftiz olan kişinin içinde bulunduğu manevi kirden arınacağına ve ilahi bilgiye ulaşacağına inanılır.
 
 Bu parçada bahsedilen din aşağıdakilerden hangisidir?
@@ -1033,6 +1090,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 58:
+KONU: Din Eğitimi
 Din eğitimi alanında doktora yapan bir öğrenci, tezini yazarken Türkiye ile karşılaştırma yapmak üzere yabancı ülkelerdeki eğitim yaklaşımlarını inceler. Bu çerçevede ziyarette bulunduğu ülkelerle ilgili olarak şu şekilde notlar alır:
 I. Amerika: Öğrencilerin dinlerle ilgili doğru bilgi sahibi olmaları önemsenmektedir. Devlet okullarında verilen din eğitimi, tarafsız bir bilgilendirme üzerine kuruludur.
 II. İtalya: Din eğitimi, öğrencilerle aynı dine mensup kişiler tarafından verilmektedir. Eğitimin merkezinde, mensup bulunulan din yer almaktadır.
@@ -1053,6 +1111,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 59:
+KONU: Din Eğitimi
 Dinî gelişim yaşa göre farklılık gösterebilir. Örneğin çocuklar 7-12 yaş arasında öğrendiklerini birtakım somut şemalar içerisine yerleştirmeye çalışır. Bu dönemde dine ilişkin soruların gerçekçi bir şekilde cevaplandırılması, ilerleyen dönemlerde ortaya çıkan anlam arayışında dine yer açar ve din eğitimini daha işlevsel kılar.
 
 Bu parçada din eğitiminin aşağıdaki temellerinden hangisi öne çıkmaktadır?
@@ -1070,6 +1129,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 60:
+KONU: Din Eğitimi
 Aşağıdakilerden hangisi, 3 Mart 1924 tarihli Tevhid-i Tedrisat Kanunu’nun din eğitimi ve hizmetleriyle ilgili hükümlerinden biri değildir?
 
 A) Darülfünun bünyesinde bir ilahiyat fakültesinin tesis edilmesi
@@ -1085,6 +1145,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 61:
+KONU: Din Eğitimi
 Din kültürü ve ahlak bilgisi dersi çocuk ve gençlerin sağlıklı düşünen bireyler olarak yetişmelerinde millî eğitimin genel amaçları doğrultusunda kritik rol oynar. Bu bağlamda Din Kültürü ve Ahlak Bilgisi Dersi (4-8. Sınıflar) Öğretim Programı’nda “iş sağlığı ve güvenliği”, “haksız kazanç”, “zararlı alışkanlıklar” ve “aile kurumunun önemi” gibi konuların gündeme getirilmesi istenir.
 
 Aşağıdaki kazanımlardan hangisi millî eğitimin genel amaçlarına bu parçada geçen konular kapsamında daha fazla katkı sağlar?
@@ -1102,6 +1163,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 62:
+KONU: Din Eğitimi
 Aşağıdakilerden hangisi Din Kültürü ve Ahlak Bilgisi Dersi (9-12. Sınıflar) Öğretim Programı’nın genel amaç ve hedefleri arasında yer almaz?
 
 A) Öğrencilere adalet, dostluk, dürüstlük, özdenetim vb. değerlerin kazandırılması
@@ -1117,6 +1179,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 63:
+KONU: Din Eğitimi
 Ankara’nın Ayaş ilçesinde, eğitim öğretim yılı başında din kültürü ve ahlak bilgisi öğretmenleri zümre toplantısı gerçekleştirilmiş ve zümrede, yıllık plan hazırlanırken bölgede eğitimle ilgili yaşanan sorunlara dikkat edilmesinin gerekliliği üzerinde durulmuştur. Din kültürü ve ahlak bilgisi öğretmeni Ahmet Bey de zümrede alınan kararlar doğrultusunda ünitelendirilmiş yıllık planını hazırlamıştır. Bu planda; çalıştığı köyde öğrencilerin mayıs ayından sonra tarla işlerinde ailelerine yardım ettiklerinden okula devamlarının azalması, eğitim öğretim yılı içerisinde hafta içine denk gelen resmî tatil gün sayısının geçen yıla oranla fazla olması, belirli dinî ve millî günlere denk gelen derslerde konuya dair bilgilere yer verilmesi, oruç ibadetiyle ilgili ünitenin ramazan ayına denk gelen dönemde işlenmesi gibi hususları göz önünde bulundurmuştur.
 
 Buna göre aşağıdakilerden hangisi Ahmet Bey’in plan hazırlarken dikkate aldığı hususlardan biri değildir?
@@ -1134,6 +1197,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 64:
+KONU: Din Eğitimi
 2018 yılında yenilenen Din Kültürü ve Ahlak Bilgisi Dersi (9-12. Sınıflar) Öğretim Programı’nda bazı önemli değişiklikler yapılmıştır. Bunlardan biri de 12. sınıfta “Güncel Dinî Meseleler” isimli bir ünitenin yer almasıdır. Bu ünitede öğrencilerin, dersi yaşadıkları hayatla bağdaştırmaları ve böylece derse yönelik ilgi ve motivasyonlarının artırılması amaçlanmaktadır.
 
 Aşağıdakilerden hangisi bu amacı gerçekleştirmek üzere ünitede yer verilen konulardan biri değildir?
@@ -1151,6 +1215,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 65:
+KONU: Din Eğitimi
 Bir din kültürü ve ahlak bilgisi öğretmeni, 11. sınıf “Yahudilik ve Hıristiyanlık” ünitesinde yer alan “Yahudiliğin doğuşunu ve gelişim sürecini özetler.” kazanımını işlerken sınıfa bir haham davet eder. Haham, ilk önce Yahudiliğin tarihçesi, inanç esasları, ritüelleri, sembolleri ve kutsal mekânları hakkında görseller ve dinî metinler kullanarak bir sunum yapar. Ardından Yahudilerin kitap ve peygamber anlayışına ilişkin Tevrat’tan bir pasaj okur ve bu pasaj bağlamında öğrencilere günümüz Yahudi mezheplerine ilişkin fikirlerini sorar. Onların konuyla ilgili görüşlerini dinledikten sonra kendi değerlendirmesini yaparak dersi bitirir.
 
 Bu derste kullanılan yöntem/teknikler aşağıdakilerin hangisinde birlikte verilmiştir?
@@ -1168,6 +1233,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 66:
+KONU: Din Eğitimi
 Ali Öğretmen, “Hz. Muhammed ve Gençlik” ünitesini işlerken
 • anlam çözümleme tablosu, hikâye, şiir ve video hazırlamıştır.
 • Hz. Muhammed’in gençlik yıllarındaki erdemli davranışlarını öğrencilerin hayatı ile ilişkilendirerek onun örnek alınmasını teşvik etmiştir.
@@ -1189,6 +1255,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 67:
+KONU: Din Eğitimi
 Kur’an-ı Kerim dersine giren bir öğretmenin yaptığı aşağıdaki uygulamalardan hangisi öğrenciyi tanımaya yönelik değerlendirme kapsamındadır?
 
 A) Öğrencileri gruplandırabilmek için mevcut bilgilerini yoklamak
@@ -1204,6 +1271,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 68:
+KONU: Din Eğitimi
 Bir öğretim üyesi ölçme ve değerlendirme dersinde her öğrenciden İslam inanç esasları dersi için doğru-yanlış testine uygun maddeler yazmasını istemiştir. Öğrencilerin yazdığı maddeleri şu iki kritere göre incelemiştir:
 Kriter A: Her madde kesin doğru ya da yanlış olacak önermelerden oluşmalıdır.
 Kriter B: Her madde ile yalnızca bir önermenin doğruluğu veya yanlışlığı ölçülmelidir.
@@ -1232,6 +1300,7 @@ Kriter A: II ve IV; Kriter B: I ve III.
 ---SONRAKİ SORU---
 
 Soru 69:
+KONU: Din Eğitimi
 Bir din kültürü ve ahlak bilgisi öğretmeni, dersinde konuların yeterince anlaşılıp anlaşılmadığını tespit etmek ve eksik kalan hususların daha iyi anlaşılmasını sağlamak amacıyla çember tekniğini uygulamayı planlar. Bu doğrultuda önce 10 kişilik bir tartışma grubu oluşturur. Ardından tartışmayı yönetecek bir lider ve ortaya çıkan görüşleri yazacak bir sekreter seçer. Grupta yer alan öğrencileri çember şeklinde oturtarak tartışmayı başlatır. Öğrenciler kendilerine sorulan sorulara belirlenen süre içerisinde cevap verir ve tartışmanın sonunda ana noktalar vurgulanarak ders bitirilir.
 
 Öğretmenin uyguladığı bu tekniğin, aşağıdaki kazanımlardan hangisinin gerçekleştirilmesine en az uygun olacağı söylenebilir?
@@ -1249,6 +1318,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 70:
+KONU: Din Eğitimi
 Ayşe Öğretmen din kültürü ve ahlak bilgisi dersinde infak konusunda bir kavram haritası planlamaktadır. Bu amaçla öncelikle “infak” kavramını tahtaya yazar ve öğrencilere, “İnfak denilince aklınıza neler geliyor?” şeklinde bir soru sorar. Onlardan gelen cevaplar üzerinde doğru ya da yanlış şeklinde herhangi bir yorumda bulunmadan tüm cevapları infak kavramının altında listeler. Öğretmenin buradaki amacı öğrencilerin katılımını yüksek tutmak ve infakla ilgili olduğunu düşündükleri kavramları tespit etmektir.
 
 Ayşe Öğretmen’in yapmış olduğu bu etkinlik, kavram haritası ile öğretim uygulamasının hangi aşamasını ifade etmektedir?
@@ -1266,6 +1336,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 71:
+KONU: Din Eğitimi
 Din kültürü ve ahlak bilgisi öğretmeni Melike Hanım, derste öğrencilere İslam ve Bilim İlişkisi konusunu ana hatlarıyla anlatır. Ardından Müslümanların bilim alanına yaptığı katkıları anlatan bir video izletir. Dersin sonunda ise öğrencileri gruplara ayırarak her bir gruptan İslam medeniyetinde öne çıkan eğitim kurumlarından birini araştırmalarını ve sonraki derste sunmalarını ister.
 
 Melike Hanım’ın bu derste başvurduğu zekâ alanları aşağıdakilerin hangisinde sırasıyla verilmiştir?
@@ -1283,6 +1354,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 72:
+KONU: Din Eğitimi
 Yavuz Öğretmen dersinde “Gıda maddeleri ve bağımlılık konusundaki dinî ve ahlaki ilkeleri açıklar.” kazanımını 5E Öğretim Modeli’ne göre işlemeyi planlamaktadır. Dersin başında öğrencilere İslam’a göre hangi yiyeceklerin haram olduğunu ve bunların haram olma sebeplerinin neler olabileceğini sorar. Ders kitaplarından ve ellerindeki imkânlardan yararlanarak konuyla ilgili fikir oluşturmalarını ve düşüncelerini serbestçe ifade etmelerini ister. Daha sonra bağımlılık yapan maddelerle ilgili hem dinî kaynaklardan hem de yapılan bilimsel araştırmalardan örnekler vererek konuyu geliştirir. Bu aşamada öğretmen öğrencilere rehberlik ederek konuyu tam olarak öğrenmelerini sağlamaya çalışır ve ilave bilgilerle destekler. Dersin sonunda ise öğrencilerden öğrendiklerini çevreleriyle paylaşmalarını ister. Ayrıca günlük hayatlarında da bunlara dikkat etmelerinin hem sağlık açısından hem de dinî açıdan doğru olacağını ifade eder.
 
 Yavuz Öğretmen bu derste 5E Öğretim Modeli’nin hangi aşamasına yönelik bir etkinlik gerçekleştirmemiştir?
@@ -1300,6 +1372,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 73:
+KONU: Din Eğitimi
 Bir din kültürü ve ahlak bilgisi öğretmeni,
 I. “Zararlı alışkanlıkların başlama sebeplerini sorgular.” kazanımını işlemek üzere altı şapkalı düşünme tekniğinin uygulanma aşamasında sırası gelmeden görüşünü paylaşan bir öğrencisine; “Bir dakika, önce diğer arkadaşının fikrini almalıyız. Lütfen konuşmak için sıramızın gelmesini bekleyelim.” der.
 II. “Mimarimizde yer alan dinî motifleri inceler.” kazanımını işlemek üzere düzenlemek istediği cami gezisi için öğrencileri gruplara ayırır, grup liderlerini belirler ve grupların gezi boyunca uyması gereken kuralları söyler.
@@ -1319,6 +1392,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 74:
+KONU: Din Eğitimi
 Dersinde “İslam medeniyetinde bilim ve düşüncenin gelişim sürecini değerlendirir.” kazanımını işlemek isteyen bir din kültürü ve ahlak bilgisi öğretmeni, öğrencileri gruplara ayırır. Her bir gruptan tarih, felsefe, coğrafya, tıp, astronomi, matematik, fizik, kimya gibi alanlarda katkılar sunan Müslüman bilim adamlarının hayatlarını araştırmalarını ve bu kişilerin sundukları katkıyı sınıf ortamında tartışmalarını ister. Öğrencilerin grup çalışmasında zamanı verimli kullanabilmeleri açısından izlemeleri gereken yönergeyi şöyle açıklar: (I) Bütün gruplar, öncelikle kendilerine verilen alanlarda hangi Müslüman bilim adamının hangi açıdan katkı sunduğunu araştırmalı (II) daha sonra bu bilim adamlarının başka hangi alanlarda çalışmalar yaptığını ve eserler yazdığını ortaya koymalı (III) son olarak da bu kişilerin yetiştirdiği önemli öğrencileri tespit etmelidir. Bütün gruplar bu çalışmaları yaparken kendisini bu işi yapmaktan alıkoyacak ikincil işleri arka plana atmalı, bütün dikkatini bu konuya vermeli ve mutlaka ilk iki öncülle ilgili sunum yapmalıdır. III. öncül konusunda sunum yapmak zorunlu değildir.
 
 Bu derste öğretmen aşağıdaki zaman yönetimi yaklaşımlarından hangisini merkeze almıştır?
@@ -1336,6 +1410,7 @@ Açıklama:
 ---SONRAKİ SORU---
 
 Soru 75:
+KONU: Din Eğitimi
 Bir Kur’an kursu öğreticisi öğrencilerini gruplandırıp onlara yönelik bir öğretim programı hazırlarken nelere dikkat etmesi gerektiği hususunda din kültürü ve ahlak bilgisi öğretmeninden yardım ister. Öğretmen; “Öğrencileri gruplandırırken onların sahip olduğu özelliklerin tümünü göz önünde bulundurmalısın. Öğrencilerin yaşlarıyla birlikte daha önce neler öğrendiklerini, ilgilerini, tutumlarını bir bütün olarak dikkate almalısın.” şeklinde tavsiyede bulunur.
 
 Bu parçada gelişim ve öğrenmeyle ilgili aşağıdaki kavramlardan hangisi öne çıkmaktadır?

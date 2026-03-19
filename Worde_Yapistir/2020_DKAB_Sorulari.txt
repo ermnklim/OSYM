@@ -3,6 +3,7 @@ KONU: Genel Kültür
 YIL: 2020
 
 Soru 1:
+KONU: Kur'an-ı Kerim ve Tecvid
 Kur'an-ı Kerim okurken Kur'an okumayı bilen herkesin fark edebileceği açık hatalara lahn-ı celî denir. Buna göre;
 I. ba ( ب) harfini, nun ( ن) harfi ile karıştırmak,
 II. medd-i munfasılı bir elif miktarı çekmek,
@@ -21,6 +22,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 2:
+KONU: Kur'an-ı Kerim ve Tecvid
 Kur'an okuma ve tecvit dersinde öğretmen, Fatiha Suresi'ni okurken نستعين (nesteînu) kelimesinin sonunda sükun üzere durmuştur. Son harfin harekesinin ötre olduğunu göstermek için dudaklarını ileriye götürmüştür. Öğretmenin bu uygulaması aşağıdakilerden hangisidir?
 
 A) Sekte
@@ -34,6 +36,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 3:
+KONU: Kur'an-ı Kerim ve Tecvid
 Yukarıda verilen surede tecvit kaidelerinden hangisi bulunmamaktadır?
 
 A) Kalkale
@@ -52,6 +55,7 @@ Konum: C:\Users\osman\Desktop\OSYM\Gorseller\2020\2020_Soru_03.png
 ---SONRAKİ SORU---
 
 Soru 4:
+KONU: Kur'an-ı Kerim ve Tecvid
 Kur'an-ı Kerim'de, meydana gelecek bütün varlık ve olayların, gökte ve yerde küçük büyük ne varsa hepsinin insanların ecelleri ile fertlerin ve milletlerin başına gelecek musibetlerin tamamının, Allah'ın ilminde yer aldığı ve bunların kaydedildiği anlatılır. Fakat bu kayıt işlemi ve kaydın yapıldığı yerin mahiyeti bilinmediği için hakkında bilgi verilmeden bu durum belirli kavramlarla ifade edilir. Aşağıdakilerden hangisi bu hususla ilgili kavramlardan biri değildir?
 
 A) Kelimullah
@@ -65,6 +69,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 5:
+KONU: Tefsir
 Kur'an-ı Kerim'de bulunan bazı kelimeler birden çok anlama sahiptir. Öyle ki bir kelimenin bir ayetteki manasıyla aynı kelimenin diğer ayetlerde geçen manası farklı olabilmektedir. Bu durum tefsir ilminde "vücuh" kavramıyla ifade edilir. Örneğin bazı müfessirlere göre hüda kelimesi türevleri ile birlikte on yedi farklı anlamda kullanılmıştır. Beyan, iman, delil ve peygamber bu anlamlardan bazılarıdır. Aşağıdakilerden hangisi bu parçada bahsedilen kelimelerden biri değildir?
 
 A) Islah
@@ -78,6 +83,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 6:
+KONU: Tefsir
 Dirayet tefsirinin önde gelen temsilcilerinden;
  ayetleri çeşitli ilimlerle ilişkilendirerek açıklayan,
  kelam ve tefsir başta olmak üzere farklı alanlarda eserler yazan,
@@ -94,6 +100,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 7:
+KONU: Tefsir
 Tefsirin tarihî gelişim sürecinde;
  rey ve yoruma az başvurulduğu,
  Kur'an'ın baştan sona tefsir edilmesi yerine ihtiyaç ortaya çıktıkça ilgili ayetlerin açıklandığı,
@@ -112,6 +119,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 8:
+KONU: Tefsir
 "Birçok âlim, tabiat hakkındaki bilgiler ile matematik ve mantık gibi bilimleri Kur'an'a isnad ederek sınırı aşmıştır. Hâlbuki Kur'an'ı en iyi bilen sahabe ve tabiundan hiç kimse böyle bir iddiada bulunmamıştır. Onlar sadece Kur'an'da yer alan tevhidle ilgili delilleri, teklifî hükümleri, ahiret ahvalini ve bunlarla ilgili konuları açıklamışlardır. Evet, Kur'an bazı bilgiler ihtiva etmektedir ancak bunlar Arapların bildikleri hususlarla sınırlıdır." İbrahim b. Musa eş-Şatıbi'nin bu ifadeleriyle aşağıdaki tefsir türlerinden hangisini eleştirdiği söylenebilir?
 
 A) Fıkhi
@@ -125,6 +133,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 9:
+KONU: Tefsir
 Kelam ve fıkıh yönüyle bilinen Beyzavi asıl şöhretini Envarü't-Tenzil ve Esrarü't-Tevil adlı tefsir eserine borçludur. Bu tefsirini yazarken pek çok kaynaktan yararlanmakla birlikte özellikle Kur'an'ın icazını, lafız ve terkipplerin edebî tahlilini, lügat ve belâgat kaidelerini öne çıkarma gibi hususlarda kendisinden önce yaşamış bir müfessirin eserinden oldukça etkilenmiştir. Öyle ki Beyzavi'nin tefsiri, bu eserin özeti olarak görülmüştür. Buna göre Beyzavi'nin etkilendiği bu eser aşağıdakilerden hangisidir?
 
 A) Zemahşeri'nin el-Keşşaf'ı
@@ -138,6 +147,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 10:
+KONU: Hadis
 Ahmet Öğretmen, öğrencilerine iman konusuyla ilgili on hadisin Arapçasını yazmalarını ödev olarak verir. Hangi tür eserlerin kendileri için kolaylık sağlayacağını söyleyerek onlara yol gösterir. Bu amaçla ilk bölümünde iman konusunun ele alındığı bir hadis türü hakkında bilgi verir ve onları bu tür eserlere yönlendirir. Bu parçada Ahmet Öğretmen'in, hakkında bilgi verdiği hadis türü aşağıdakilerden hangisidir?
 
 A) Müsned
@@ -151,6 +161,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 11:
+KONU: Hadis
 Sahabeler içerisinde binden fazla hadis rivayet edenler bulunmaktadır. "Muksirun" olarak isimlendirilen bu kişiler, Suyuti'nin verdiği bilgiye göre Hz. Aişe, Ebu Hureyre, Abdullah b. Ömer, Enes b. Malik, Abdullah b. Abbas, Cabir b. Abdullah ve Ebu Said el-Hudri olmak üzere toplam yedi kişidir. Ancak bu kişilere göre çok daha erken tarihlerde İslam'a girmelerine ve Hz. Muhammed ile görüşme imkânına sahip olmalarına rağmen, muksiruna girememiş pek çok sahabe bulunmaktadır. Aşağıdakilerden hangisi bu durumun sebepleri arasında gösterilemez?
 
 A) Yönetim ve idare işleri ile meşgul olmaları
@@ -164,6 +175,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 12:
+KONU: Hadis
 Ebu Hureyre, "Ölüyü yıkayan, boy abdesti; cenazeyi taşıyan ise abdest alsın." sözünü Hz. Muhammed'e isnad ederek aktarmıştır. Bu sözü Abdullah b. Abbas işittiğinde "Kuru odunu taşımaktan dolayı neden bize abdest gereksin?" diyerek itiraz etmiştir. Hz. Aişe de Ebu Hureyre'nin bu rivayetine "Müslümanların ölüsü pis midir, bir odunu taşıyan kimseye ne lazım gelir?" diyerek karşı çıkmıştır. Her iki sahabe de bu sözün bu hâli ile Hz. Muhammed'e nispet edilmesine karşı çıkmışlardır. Bu parçada merkeze alınan metin tenkit yöntemi aşağıdakilerden hangisidir?
 
 A) Kur'an'ın genel esaslarına aykırılık
@@ -177,6 +189,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 13:
+KONU: Hadis
 Tebei tabiîn nesline mensup bir kişinin doğrudan Hz. Muhammed'den aktardığı hadisler aşağıdakilerden hangisiyle isimlendirilir?
 
 A) Mürsel
@@ -195,6 +208,7 @@ Konum: C:\Users\osman\Desktop\OSYM\Gorseller\2020\2020_Soru_13.png
 ---SONRAKİ SORU---
 
 Soru 14:
+KONU: Hadis
 Buhari, bir hadisi Muhammed b. Beşşar → Yahya b. Said el-Kattan → Şu'be b. el-Haccac → Ebu't-Teyyah → Enes b. Malik → Hz. Muhammed isnadıyla nakletmiştir. Bu isnadı inceleyen biri, hadis usulü bilgileri çerçevesinde şu değerlendirmelerde bulunmuştur:
 I. Bu hadis merfudur.
 II. Müntehası Buhari'dir.
@@ -212,6 +226,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 15:
+KONU: Fıkıh
 I. Kurban Bayramı'nın 3. günü
 II. Ramazan Bayramı'nın 2. günü
 III. Kadının nifas günü
@@ -228,6 +243,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 16:
+KONU: Fıkıh
 Hz. Muhammed farklı vesilelerle nafile namazlar kılmış ve kıldırmıştır. Bu şekilde birkaç gün üst üste kıldığı nafile bir namazı sahabelerin de kıldıklarını fark etmiş ve bunun üzerine evine giderek yalnız başına kılmaya başlamıştır. Onların kılma isteğini görünce de: "Sizin bu namazı kılmak hususundaki arzuzun farkındayım, bunu size kıldırmam için bir engel de yoktur. Fakat bu namazın size farz kılınmasından endişe ettiğim için çıkıp kıldırmadım... Farz namazlar dışında, kişinin kıldığı en faziletli namaz, evinde kıldığı namazdır." buyurmuştur. Hz. Ömer devrine kadar isteyen kişinin tek başına kıldığı bu namaz, onun emriyle cemaatle kılınmaya başlanmıştır. Bu parçada bahsedilen namaz aşağıdakilerden hangisidir?
 
 A) Teravih
@@ -241,6 +257,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 17:
+KONU: Fıkıh
 Kurbanlık olması için alınacak bir hayvanda;
 I. doğuştan boynuzunun bulunmaması,
 II. şaşı olması,
@@ -259,6 +276,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 18:
+KONU: Fıkıh
 Yeni bir buzdolabı alan Dilşad Hanım, ertesi gün ürün eve teslim edilmediği için beyaz eşya bayisini arar ve bunun sebebini sorar. Telefonu açan satıcı, "Nakliye ücrete dâhil değildir. Nakliye ücretini ödemenizi bekliyoruz. Ödediğiniz takdirde evinize teslim edeceğiz." şeklinde cevap verir. Dilşad Hanım ise buna itiraz ederek nakliyenin bayiye ait olduğu ile ilgili yerleşik bir uygulama bulunduğunu belirtir. Ancak telefonda bir çözüme ulaşamazlar. Dilşad Hanım tereddüt ederek konunun dinî hükmünü bir müftüye danışır. Müftü, sözleşmede buna dair bir belirleme yoksa nakliyenin bayiye ait olduğuna dair yerleşik uygulama sebebiyle Dilşad Hanım'ın haklı olduğunu belirtir. Bu parçaya göre müftünün verdiği karar aşağıdaki kaidelerden hangisine dayanmaktadır?
 
 A) Örfle tayin, nas ile tayin gibidir.
@@ -272,6 +290,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 19:
+KONU: Fıkıh
 İslam ticaret hukukunda normal bir arz talep dengesinin olduğu dönemlerde fiyatların piyasa tarafından belirlenmesi, bir ilke olarak kabul edilmiştir. Tüccarların, fiyatları fahiş bir şekilde arttırdığı durumlarda ise yetkili makamların piyasaya müdahale ederek fiyatları belirlemesinde de bir sakınca görülmemiştir. Bu parçada bahsedilen müdahale aşağıdaki kavramlardan hangisiyle ifade edilir?
 
 A) Selem
@@ -285,6 +304,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 20:
+KONU: Fıkıh
 İslam hukuku öğretim üyesi Ahmet Bey, dersinde içtihat hakkında şu açıklamayı yapmıştır: "İslam hukukunun büyük bir kısmı içtihat kaynaklıdır. İçtihat; konulmuş olan hükümleri anlamayı ve açıklamayı ifade eder. Öyle ki kıyas, istihsan ve istislah gibi içtihat metotları, hükmü ilkten koyan değil, naslarda potansiyel olarak var olduğu düşünülen hükümleri açığa çıkaran mekanizmalar şeklinde değerlendirilmişlerdir. İçtihat yoluyla değişen şartlara uygun olarak hükümlerin ortaya konması mümkün olmakta bununla birlikte çoğunlukla zanni olması nedeniyle müçtehitler değişik sonuçlara ulaşabilmektedir." Ahmet Bey'in bu ifadelerinden aşağıdaki yargıların hangisine ulaşılamaz?
 
 A) İslam hukukunun gelişiminde âlimlerin çabasının rolü büyüktür.
@@ -298,6 +318,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 21:
+KONU: Fıkıh
 "Leş, kan, domuz eti... size haram kılındı." (Maide, 5:3) ayetinde sadece "kan" ifadesi kullanılırken "De ki: Bana vahyolunan Kur'an-ı Kerim'de bir kimsenin yiyecekleri arasında leş, akıtılmış kan, domuz eti -ki necistir- ya da Allah'tan başkası adına kesilmiş bir hayvandan başka haram kılınmış bir şey bulamıyorum." (En'am, 6:145) ayetinde ise "akıtılmış kan" ifadesi yer almıştır. Bu iki ayeti ele alan fıkıh âlimleri, ikinci ayette geçen "akıtılmış" vasfının birinci ayetteki "kan" ifadesine de hamledileceğini ve bütün kanların değil sadece "akıtılmış kan"ın haram olduğunu belirtmişlerdir. Bu parçada bahsedilen lafız türleri aşağıdakilerden hangileridir?
 
 A) Hakikat - Mecaz
@@ -311,6 +332,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 22:
+KONU: Kelam / Akaid
 Hz. Osman'ın halifeliğinin ikinci altı yıllık kısmında bazı ihtilaflar yaşanmıştır. Bu ihtilaflar, Hz. Osman'ın vefatından sonra da devam etmiş ve Müslümanlar arasında iç savaşa sebep olmuştur. Savaşan tarafların Müslüman olmaları sebebiyle savaşlara katılanların durumunun ne olacağı hususu, âlimler arasında tartışmalara neden olmuştur. Mürcie olarak isimlendirilen bir grup âlim, onların bu dünyada mümin olarak kabul edilmesi ve öbür dünyadaki durumlarının ise Allah'a bırakılması gerektiğini savunmuştur. Mürcie'nin bu görüşünün amacı aşağıdakilerden hangisidir?
 
 A) Müslüman toplumdaki ayrışma ve tekfir olaylarının önüne geçmek
@@ -324,6 +346,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 23:
+KONU: Kelam / Akaid
 Zat-sıfat ilişkisi, İslam düşünce geleneğinde ilk dönemlerden itibaren tartışılmaya başlanan ve üzerinde çok sayıda görüş ortaya atılan bir konudur. Bunlardan biri de Mutezile tarafından ileri sürülen ve Allah'ın zatını sıfatlardan soyutlamayı esas alan görüştür. Bu görüş, tenzihe dayalı tevhid ilkesini esas almakta ve Allah'ın zatından başka, varlıkla nitelenebilecek kadîm sıfatlara sahip olması düşüncesine karşı çıkmaktadır. Mutezile'nin bu görüşü aşağıdaki kavramlardan hangisiyle ifade edilir?
 
 A) Tecsim
@@ -337,6 +360,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 24:
+KONU: Kelam / Akaid
 Ehl-i Sünnet kelamcıları olağanüstü olayları, kimin elinde ve hangi şartlarda meydana geldiğine göre mucize, irhas, keramet, meunet, istidrac ve ihanet gibi kavramlarla isimlendirir. Aşağıdakilerden hangisi bu olayların tümü için geçerli bir yargıdır?
 
 A) Allah'ın salih kullarının elinde meydana gelirler.
@@ -350,6 +374,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 25:
+KONU: Kelam / Akaid
 Kur'an-ı Kerim'de, geçmişte yaşanmış bazı ibret verici olayların anlatıldığı kıssalar yer almaktadır. Bu kıssalarda genellikle peygamberlerin tevhit mücadelesi anlatılmakta ve bu çerçevede yirmi beş peygambere atıfta bulunulmaktadır. Bunların yanında Kur'an'da kendisinden övgüyle bahsedilmesine ve başından geçenlere yer verilmesine karşın peygamber olup olmadıkları tartışmalı bazı isimler de söz konusudur. Aşağıdakilerden hangisi bu isimlerden biridir?
 
 A) Hz. Eyüp
@@ -363,6 +388,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 26:
+KONU: Kelam / Akaid
 Kelam eserlerinde, birbirini takip eden fiillerin nasıl meydana geldiği ve bu tür fiillerin neticesinde sorumluluğun kime ait olduğu hususu, ele alınan tartışma konularından biridir. Örneğin bir kimse birine bir ok atsa ve ok isabet etse bunun neticesinde önce bir yaralanma sonra da ölüm gerçekleşirse bu durumda ölüme neden olan fiil hangisidir ve bunun sorumluluğu kimdedir? Bu parçada bahsedilen tartışma kelam ilminin hangi konusu kapsamındadır?
 
 A) Tevlid ve tevellüd
@@ -376,6 +402,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 27:
+KONU: Kelam / Akaid
 İslam tarihinde insanın iradesi ve bu iradenin ihtiyarî fiillerdeki rolü konusunda çeşitli görüşler ortaya atılmıştır. Bu görüşler, sonraki dönemlerde çeşitli kelam ekolleri tarafından sahiplenilerek sistemleştirilmiştir. Bu noktada birbirine zıt iki görüş ön plana çıkmıştır. Birinci görüş, kulun fiillerinde hür bir iradeye ve fiili gerçekleştirebilecek güce sahip olduğunu savunurken ikinci görüşte ise ilahi irade merkeze alınmış ve kulun hem irade etme hem de gerçekleştirme bakımından fiillerinde hiçbir tasarrufunun söz konusu olmadığı ileri sürülmüştür. Aşağıdakilerden hangisinde birbirine zıt bu iki görüşü benimseyen kişiler sırasıyla verilmiştir?
 
 A) Hasan el-Basri - Câhız
@@ -389,6 +416,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 28:
+KONU: İslam Mezhepleri ve Akımları
 Vehhabilik, Muhammed b. Abdülvehhab tarafından Arap Yarımadası'nda ortaya çıkan dinî ve siyasi bir harekettir. Osmanlı'yı parçalamak isteyen yabancı desteği, Bedevi kabilecilik kültürü, Sufilere tepki olarak gelişen katı nasçılık, Necd bölgesindeki yönetim zafiyeti ve Hanbeli din algısını ortadan kaldırma isteği gibi çeşitli faktörlerin etkili olduğu söylenemez.
 
 A) Osmanlı'yı parçalamak isteyen yabancı desteği
@@ -402,6 +430,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 29:
+KONU: İslam Mezhepleri ve Akımları
 İslam dünyasında ortaya çıkan;
  Mirza Hüseyin Ali tarafından kurulan,
  kutsal kitapları el-Akdes'in, kendisinden önce gelen tüm kutsal kitapları neshettiğini öne süren,
@@ -420,6 +449,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 30:
+KONU: İslam Mezhepleri ve Akımları
 İsmaililer benimsedikleri görüşler veya tabi oldukları kişiler üzerinden birçok farklı kavramla adlandırılmıştır. Bu kavramlar bazen mezhep mensuplarının bir kısmı için kullanılırken bazen de tamamını nitelemek üzere kullanılmıştır. Aşağıdakilerden hangisi bu kavramlar arasında gösterilemez?
 
 A) Talimiyye
@@ -433,6 +463,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 31:
+KONU: İslam Mezhepleri ve Akımları
 Ahmediyye'ye mensup olanlar Mirza Gulam Ahmed'in beklenmedik vefatı sonrasında Hâkim Nureddin'e tabi olmuşlardır. Nureddin sonrası süreçte ise kimin halife olacağı konusunda ihtilaf ortaya çıkmış ve iki ana kola ayrılma gerçekleşmiştir. Bunlardan biri, Mirza Gulam Ahmed'in nebi olduğu görüşünü reddederek onun bir müceddid olduğunu savunan gruptur. Bu parçada bahsedilen grup, aşağıdaki şehirlerden hangisine nispetle isimlendirilmiştir?
 
 A) Lahore
@@ -446,6 +477,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 32:
+KONU: İslam Tarihi / Siyer
 Hz. Muhammed, Huzaa kabilesi reislerinden biri olan Haris b. Ebu Dırar'ın savaş hazırlığı kapsamında at ve silah satın aldığını ayrıca bazı kabileleri yanına alarak Medine üzerine yürümeyi planladığını haber aldı. Bu haberin doğruluğunu teyit amacıyla Büreyde b. Husayb'ı casus olarak gönderdi. O da haberin doğruluğunu öğrenerek Hz. Muhammed'e bildirdi. Bunun üzerine Hz. Muhammed bin kişilik bir güçle Medine'den ayrıldı. Müreysi kuyusunun başında Haris b. Ebu Dırar ile karşı karşıya gelindi. İslam'a davet edilmesine rağmen Haris, bunu kabul etmeyerek hemen saldırıya geçti. Ancak Hz. Muhammed'in karşısında tutunamayarak ağır bir yenilgiye uğradı. Bu parçada sözü edilen gazve aşağıdakilerden hangisidir?
 
 A) Hamraülesed
@@ -459,6 +491,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 33:
+KONU: İslam Tarihi / Siyer
 Arap kabileleri arasında siyasi, sosyal veya psikolojik sebeplerden dolayı bir tartışma meydana gelir ve bu, savaşa yol açabilirdi. Bu savaş; olayın geçtiği yere, sebebe veya sonuca göre farklı isimlerle anılırdı. Yevmü Buâs, Yevmü Zû-Kar ve Yevmü Ficâr bu isimlere örnek verilebilir. Bu parçada bahsedilen savaşlara verilen isim aşağıdakilerden hangisidir?
 
 A) Mesalibü'l-Arab
@@ -472,6 +505,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 34:
+KONU: İslam Tarihi / Siyer
 Müşriklerin Mekke'de Müslümanlara boykot uygulama sebepleri arasında;
 I. Müslümanların sayısının giderek çoğalması,
 II. Müslümanların saldırılara karşı koymaya başlamaları,
@@ -490,6 +524,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 35:
+KONU: İslam Tarihi / Siyer
 Hz. Muhammed, Medine döneminde İslam'ı öğrenmeyi talep edenlere öğreticiler göndermiştir. Bu öğreticilerin başına bazen olumsuz olaylar gelmiştir. Bir seferinde Mersed b. Ebu Mersed başkanlığında gönderilen on kişilik öğretici heyeti Hüzeyl kabilesine mensup Lihyanoğullarından yüz kişilik bir grubun saldırısına maruz kalmıştır. Saldırı sonucunda heyet üyelerinden sekiz sahabe şehit edilmiş iki sahabe ise Mekkeli müşriklere teslim edilmiştir. Bu parçada bahsedilen olay aşağıdakilerden hangisidir?
 
 A) Reci Olayı
@@ -503,6 +538,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 36:
+KONU: İslam Tarihi / Siyer
 Hz. Ali ile Muaviye b. Ebu Süfyan arasında cereyan eden Sıffin Savaşı esnasında zor durumda kalan Muaviye, Amr b. As'ın teklifiyle Kur'an-ı Kerim sahifelerini askerlerin mızraklarına taktırarak savaşı durdurmaya teşebbüs etmiş ve bunda da başarılı olmuştur. Savaşın durmasından sonra iki taraftan birer kişi seçilerek bunların vereceği karar ile sorunun çözüme kavuşturulması yoluna gidilmiştir. Bu parçada bahsedilen çözüm yolu İslam tarihinde hangi isimle adlandırılmaktadır?
 
 A) Hılf
@@ -516,6 +552,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 37:
+KONU: İslam Tarihi / Siyer
 751 yılında Müslüman Araplar ile Karluk Türklerinin Çin ordusuna karşı mücadele ettiği savaştır. Bu savaşta esir alınan Çinlilerden kâğıt imalatı öğrenilmiştir. Ayrıca Araplar ve Türkler arasında ortaya çıkan yakınlaşmanın da etkisiyle İslamiyet Türkler arasında hızla yayılmıştır. Bu parçada bahsedilen savaş aşağıdakilerden hangisidir?
 
 A) Köprü Talas
@@ -529,6 +566,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 38:
+KONU: İslam Tarihi / Siyer
 "Müslümanlarla Hristiyanların, Araplarla Avrupalıların bir dünya içinde gittikçe kaynaştığı şu zamanda İslam'ın Avrupa'ya yaptığı tesiri incelemek son derece isabetli bir çalışmadır. Orta Çağ Hristiyan yazarlarının zihinlerinde tablosunu çizdikleri İslam'ın, tamamen iftira mahsulü olduğu çoktandır bilinmektedir. Geçen asır boyunca araştırmacıların yaptıkları tetkikler sayesinde Batılıların gözleri önünde daha objektif bir şekil belirmektedir. Fakat biz Avrupalıların kör gözü, İslam kültürüne olan borcumuzu görmeye manidir. Geçmişten gelen mirasımıza İslam'ın yaptığı tesirin kıymet ve kadrini bazen küçümsüyor bazen de tamamen görmezden geliyoruz. Müslümanlarla daha iyi münasebetler kurabilmek için borçlarımızın tamamını itirafa mecburuz. Onu saklamak ve inkâr etmek sahte bir gurur alametidir." Montgomery Watt'ın bu sözlerinden aşağıdakilerin hangisi çıkarılamaz?
 
 A) Avrupalıların İslam'a yönelik önyargılarının bulunduğu
@@ -542,6 +580,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 39:
+KONU: İslam Tarihi / Siyer
 Hat, İslam'ın ilk yıllarından itibaren Kur'an-ı Kerim'e gösterilen saygı ve sevginin bir yansıması olarak oldukça önemsenmiş ve zamanla müstakil bir sanat dalına dönüşmüştür. Bu sanat dalında, farklı kültür ve medeniyetlerin de etkisiyle pek çok yazı türü ortaya çıkmıştır. Buna göre aşağıdakilerden hangisi bu yazı türleri arasında yer almaz?
 
 A) Kufi
@@ -555,6 +594,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 40:
+KONU: İslam Tarihi / Siyer
 İslam mimarisinin önemli örneklerinden;
  Nasıriler tarafından inşa edilen,
  Endülüs'teki İslâm süsleme sanatının zirvesi kabul edilen,
@@ -572,6 +612,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 41:
+KONU: İslam Tarihi / Siyer
 İslam devletlerinde idarecilerle halk arasında yapılan seçim veya bağlılık karakteri taşıyan akde, biat adı verilir. Hz. Muhammed döneminde çoğunlukla dinî hükümlere bağlı kalmak ve peygambere itaat etmek anlamında kullanılan biat, Hz. Ebu Bekir'in halife seçilmesinden sonra siyasi bir mahiyet kazanarak devlet başkanını seçme veya bu makama gelmiş kişiye bağlılık sunma anlamında kullanılmıştır. Tarafların her biri için hukuki sonuçlar doğuran biat, grup hâlinde veya teker teker gerçekleştirilebilir. Bu parçadan hareketle biatla ilgili aşağıdakilerden hangisi söylenemez?
 
 A) Karşılıklı yükümlülükleri olan bir sözleşmedir.
@@ -585,6 +626,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 42:
+KONU: İslam Tarihi / Siyer
 Müslümanlar fethettikleri bölgelerde ilim ve kültür merkezleri tesis etmeye büyük önem vermişlerdir. Bu şehirlerden biri Abbasi Halifesi Ebu Ca'fer el-Mansur tarafından kurulmuş ve uzun süre Abbasilerin hilafet merkezi olarak kalmıştır. Nizamiye ve Müstansıriyye medreseleri ile meşhurdur. XIII. yüzyılın ortalarında Moğol saldırıları ile büyük bir tahribata uğramış ve bir daha ihtişamlı günlerine geri dönememiştir. Bu parçada bahsedilen şehir aşağıdakilerden hangisidir?
 
 A) Buhara
@@ -598,6 +640,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 43:
+KONU: İslam Felsefesi
 İslam felsefesi öğretim üyesi Cemil Bey, dersinde İslam filozoflarının varlıkla ilgili görüşlerinden bahsederken şu değerlendirmelerde bulunmuştur: "Kozmik varlık, değişen ve değişmeyen olmak üzere iki kısma ayrılır. Fizik, değişen; metafizik ise değişmeyen varlıkların bilgisini içerir. Teorik planda varlığın ilk sebebini ve en son gayesini araştıran metafizik, aynı zamanda varlık hakkında külli bilgiler sunar ve insanı ilk sebebin bilgisine götürür. Dolayısıyla, yalnızca sebepleri bilinebilen bilgiler gerçek bilgi vasfını haizdir." Buna göre Cemil Bey aşağıdakilerden hangisini vurgulamaktadır?
 
 A) Sebebin bilgisi sebeplinin bilgisinden daha değerlidir.
@@ -611,6 +654,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 44:
+KONU: İslam Felsefesi
 Tarık b. Ziyad döneminde fethedilen Endülüs bölgesi Müslüman idaresine geçtikten sonra önemli bir ilim merkezi hâline gelmiştir. Özellikle X. yüzyıldan sonra bu bölgede felsefe alanında birçok düşünür yetişmiştir. Aşağıdakilerden hangisi bu düşünürlere örnek verilemez?
 
 A) İbn Tufeyl
@@ -624,6 +668,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 45:
+KONU: İslam Felsefesi
 Casiye Suresi'nin 24. ayetinde "...Hayat sadece yaşadığımızdan ibarettir. Ölürüz ve yaşarız, bizi ancak zaman helak eder." şeklinde ifadeler kullanan bir gruptan bahsedilmektedir. Aynı surenin 26. ayetinde ise "...Allah sizi yaşatıyor. Sonra sizi öldürecek sonra da kendisinde şüphe olmayan kıyamet gününde sizi bir araya getirecek ama insanların çoğu bilmez." ifadesiyle söz konusu grup eleştirilmektedir. Bu parçada eleştirilen grup aşağıdakilerden hangisidir?
 
 A) Dehriyyun
@@ -637,6 +682,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 46:
+KONU: Din Felsefesi
 Düşünürler ve Tanrı'nın varlığına dair meşhur oldukları delillerle ilgili;
 I. İbn Rüşd - İnayet ve ihtira,
 II. İbn Sina - Dinî tecrübe,
@@ -655,6 +701,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 47:
+KONU: Din Felsefesi
 Tarihte pek çok kişi çeşitli gerekçelerle ateistlikle suçlanmıştır. Örneğin tanrı kavramı Yehova'dan daha geniş olduğu için Spinoza, Yunan popüler tanrılarını reddettiği ve bir tür monoteizme yöneldiği için Sokrates ve Romalıların tanrı kavramlarını kabul etmedikleri için ilk Hristiyanlar ateistlikle suçlanmışlardır. Bu parçada aşağıdakilerden hangisi vurgulanmaktadır?
 
 A) Bir kişinin ateist olarak nitelenmesi çoğu kez yaşadığı çevrenin dinî kabulleriyle ilgilidir.
@@ -668,6 +715,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 48:
+KONU: Din Felsefesi
 Kötülük problemi, antik felsefeden günümüze kadar felsefecilerin ve kelamcıların gündemini meşgul etmiştir. Bu kapsamda "Tanrı kötülüğü önlemek istiyor da önleyemiyor mu? O hâlde güçsüzdür. Önleyebiliyor da önlemek mi istemiyor? O hâlde iyi niyetli değildir. Hem önlemek istiyor hem de önleyebiliyorsa bu kadar kötülük nasıl var olabiliyor?" gibi sorulara birçok felsefeci veya kelamcı tarafından cevap aranmıştır. Bu parçada bahsedilen soruların temel hareket noktası aşağıdakilerden hangisidir?
 
 A) Âlemin kadim olup olmadığı
@@ -681,6 +729,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 49:
+KONU: Din Sosyolojisi
 Erken dönem din sosyolojisiyle ilgilenen düşünürlerin çoğu dine karşı olumsuz bir yaklaşıma sahip olmuşlar; din-toplum ilişkilerini niteliksel ve niceliksel gelişme içerisinde ele alarak ilerlemeci ve modernleşmeci bir bakış açısıyla yorumlamışlardır. Bu sosyologların çoğu, modernleşme ve dünyevileşmeyle birlikte dinî inancın zayıflayacağını öne sürmüşlerdir. Onlara göre din, insanların hayata ve doğaya akılla ve bilimle anlam veremedikleri bir dönemin ürünüdür. Bilim ilerledikçe insanların dine olan ilgileri de azalacaktır. Aşağıdaki din sosyologlarından hangisinin bu türden bir düşünceyi savunduğu söylenemez?
 
 A) Auguste Comte
@@ -694,6 +743,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 50:
+KONU: Din Sosyolojisi
 Hadariler, huzur ve rahatlık döşeğine sere serpe uzanmışlar, nimet ve refah denizine dalmışlar; mallarını ve canlarını savunma işini kendilerini idare eden valilerine ve hükümdarlarına havale etmişlerdir. Onlardaki bu hâl, nesilden nesile sürüp gitmiş ve bu durum tabiatlarında mevcut bir huy ve karakter hâline gelmiştir. Bedeviler ise toplumdan ayrı kalıp tek başlarına yaşadıkları arazide vahşi ve yabani bir duruma geldikleri, koruyucudan uzak kaldıkları, surlar ve kapılarla muhafaza edilen yerlerde yaşamadıkları için kendilerini muhafaza işi ile bizzat meşgul olmuşlardır. Bu parçada aşağıdakilerden hangisi vurgulanmaktadır?
 
 A) Birey ve toplumun karakterinde yaşam şartları etkili olmaktadır.
@@ -707,6 +757,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 51:
+KONU: Din Sosyolojisi
 I. Dinlerin ortaya çıkışındaki toplumsal sebeplerin araştırılması
 II. Din ve toplum arasındaki etkileşimin incelenmesi
 III. Dinî yaşantının ana ilkelerinin belirlenmesi
@@ -724,6 +775,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 52:
+KONU: Din Psikolojisi
 Üniversite sınavına hazırlanan Mehmet, son dönemlerde dinî inancı ile ilgili bazı sorgulamalarda bulunmaktadır. Zaman zaman "Melekler gerçekten var mı?" diye düşünmekte, bu şüphe duygusundan dolayı kendini suçlamakta ve günahkâr hissetmektedir. Mehmet'in dinî alanda yaşadığı bu ikilemler, Erikson'un Psikososyal Gelişim Kuramı'ndaki hangi çatışmaya karşılık gelmektedir?
 
 A) Girişkenliğe karşı suçluluk
@@ -737,6 +789,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 53:
+KONU: Din Psikolojisi
 Aşağıdakilerden hangisi din psikolojisinin amaçları arasında yer almaz?
 
 A) Dindarlık ve ruh sağlığı ilişkisini incelemek
@@ -750,6 +803,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 54:
+KONU: Din Psikolojisi
 Din psikolojisinin öncü isimleri ve temel görüşleriyle ilgili aşağıdaki eşleştirmelerden hangisi yanlıştır?
 
 A) William James - Önemli olan inancın işlevidir. Herhangi bir inanç kişiye fayda sağlıyorsa bu inanç kıymetli ve önemlidir.
@@ -763,6 +817,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 55:
+KONU: Din Eğitimi
 Osmanlı döneminde medreselerden mezun olan öğrenciler, aldıkları eğitime uygun görevlere atanmak için sıra beklerlerdi. Göreve atanıncaya kadar özellikle ramazan ayında köy ve kasabalara giderek toplumu irşad ederlerdi. Böylece görevleriyle ilgili bir tür ön uygulama yapmış olurlardı. Daha sonra sırası gelenler alt dereceli medreselere atanır ve zamanla terfileri yapılırdı. Bu parçada bahsedilen uygulama aşağıdakilerden hangisi ile ifade edilir?
 
 A) Tedrisat
@@ -776,6 +831,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 56:
+KONU: Din Eğitimi
 Medresedeki görevliler ve bu kişilerin yaptıkları görevlerle ilgili;
 I. Talebe-i ulum - Öğrenim gören öğrenci,
 II. Dersiâm - Halka açık olan dersleri veren görevli,
@@ -793,6 +849,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 57:
+KONU: Din Eğitimi
 Cumhuriyet Dönemi'nin ilk din öğretimi programı 1924 tarihli İlk Mektep Kur'ân-ı Kerim ve Din Dersleri Programı'dır. Bu programda çocuklara İslam dini hakkında temel bilgileri vermek suretiyle İslam'ı sevdirmek ve benimsetmek hedeflenmiştir. Bu programda benimsenen yaklaşım aşağıdakilerden hangisidir?
 
 A) Mezhepler üstü
@@ -806,6 +863,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 58:
+KONU: Dinler Tarihi
 Protestanlığın temel özellikleriyle ilgili;
 I. Kutsal kitabı yorumlama yetkisi kiliseye aittir.
 II. Papanın yanılmaz olduğu kabul edilemez.
@@ -824,6 +882,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 59:
+KONU: Dinler Tarihi
 Bir kurtarıcının gelerek kötülükleri ortadan kaldıracağı inancı pek çok dinde olduğu gibi Hinduizm'de de vardır. Ancak bu dinde, diğer dinlerden farklı olarak Tanrı'nın gelişi kıyametin habercisi değildir. Onlara göre Tanrı Vişnu; kötülüklerin arttığı ve dinî değerlerin zayıfladığı dönemlerde bedenleşerek yeryüzüne iner, Hinduizmi yok olmaktan kurtarır, kötüleri cezalandırır, evrendeki düzeni yeniden tesis eder ve makamına geri döner. Bu parçada bahsedilen inanç aşağıdaki kavramlardan hangisiyle ifade edilmektedir?
 
 A) Avidya
@@ -837,6 +896,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 60:
+KONU: Dinler Tarihi
 Yeni dinî hareketlerden;
  Tanrı'nın birliğini savunarak teslisi reddeden,
  ibadet esnasında resim, heykel ve haç gibi nesnelerin kullanılmasına karşı çıkan,
@@ -855,6 +915,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 61:
+KONU: Din Eğitimi
 Hz. Muhammed, kendisine "Amellerin en hayırlısı hangisidir?" sorusunu soran sahabelere çeşitli cevaplar vermiştir. Örneğin asık suratlı bir kişiye "İnsanlara güler yüz göstermendir.", merhametsiz bir kişiye "Anne ve babana hürmet etmendir.", cimri bir kişiye ise "İnsanlara su içirmen ve yemek yedirmendir." cevabını vermiştir. Buna göre Hz. Muhammed'in yaklaşımı, aşağıdaki öğretim ilkelerinin hangisi kapsamında değerlendirilir?
 
 A) Yakından uzağa
@@ -868,6 +929,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 62:
+KONU: Din Eğitimi
 Gelişim özellikleri dikkate alındığında 3-6 yaş çocukluk dönemi din eğitimiyle ilgili aşağıdakilerden hangisi yanlıştır?
 
 A) Bilişsel öğrenme merkezli din eğitimi tercih edilmelidir.
@@ -881,6 +943,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 63:
+KONU: Din Eğitimi
 Milli Eğitim Bakanlığı, 2017 yılında Öğretmenlik Mesleği Genel Yeterliklerini belirlemiş, bu yeterliklerin açılımı olarak da Din Kültürü ve Ahlak Bilgisi Öğretmeni Özel Alan Yeterlikleri başlığı altında altı temel alan oluşturmuştur. Din olgusu alanında "Öğrencilerin farklı din ve inanışları tanımalarına rehberlik edebilme" yeterliği de bunlardan biridir. Buna göre bir din kültürü ve ahlak bilgisi öğretmeninin bu yeterlik kapsamında aşağıdaki davranışlardan hangisini göstermesi beklenmez?
 
 A) Din ve inançları ana kaynaklarına dayalı olarak inceleme ve araştırma alışkanlığı kazandıracak etkinlikler düzenleme
@@ -894,6 +957,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 64:
+KONU: Din Eğitimi
 Eğitim psikologları insanın gelişiminde kalıtımın mı yoksa çevrenin mi belirleyici olduğu konusunda farklı görüşlere sahiptirler. Genel kabul her ikisinin de etkili olduğudur; gelişimin bazı alanlarında kalıtımın, bazı alanlarında ise çevrenin daha etkili olduğu şeklindedir. Nitekim Hz. Muhammed'in sözlerinde de bu iki faktörün birlikte etkili olduğuna dair ifadeler bulmak mümkündür. Aşağıdaki hadislerden hangisi bu parçada bahsedilen duruma örnek verilebilir?
 
 A) Çocuklarınızdan yedi yaşına geldiklerinde namaz kılmalarını isteyin.
@@ -907,6 +971,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 65:
+KONU: Din Eğitimi
 7. sınıf din kültürü ve ahlak bilgisi dersine giren bir öğretmen "Dünya ve Ahiret Hayatı" konusunu işlemek için öğrencilerine şu açıklamayı yapar: "Arkadaşlar! Şimdi sizinle hayatı anlamlandırmada ahiret hayatının önem üzerine bir tartışma yapacağız. Önce sınıfta sıralardan büyük bir çember oluşturacağız, bu büyük çemberin içine ondan daha küçük bir çember yerleştireceğiz. İç çemberde, tartışmada gönüllü olan arkadaşlarımız yer alacak. Sınıfın geri kalan kısmına ise büyük çemberde yer vereceğiz. Tartışmanın başlangıcında büyük çemberde yer alan ancak ilerleyen vakitlerde fikrini değiştirip tartışmaya aktif olarak katılmak isteyen arkadaşlarımız için küçük çemberde yer ayıracağız." Bu parçaya göre öğretmenin uygulayacağı teknik aşağıdakilerden hangisidir?
 
 A) Kartopu
@@ -920,6 +985,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 66:
+KONU: Din Eğitimi
 Din kültürü ve ahlak bilgisi dersinde öğretmen, öğrencilerin tevekkül kavramıyla ilgili bazı yanlış bilgilere sahip olduklarını tespit eder. Bu kavramla ilgili yanılgıları belirginleştirecek ve doğru bilgiye ulaştıracak bir materyale ihtiyaç duyar. Bu amaçla öğrencilerin biri doğru, diğerleri yanlış olmak üzere farklı fikirlerini konuşma baloncuğu şeklinde gösterebileceği bir materyal hazırlamanın uygun olacağını düşünür. Buna göre öğretmeni amacına ulaştıracak en uygun materyal aşağıdakilerden hangisidir?
 
 A) Kavram ağı
@@ -933,6 +999,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 67:
+KONU: Din Eğitimi
 Bir din kültürü ve ahlak bilgisi öğretmeni, dersinde israf konusunu işlerken altı şapkalı düşünme tekniğini grup çalışmasında kullanmak ister. Bu amaçla sınıfı gruplara ayırır ve her gruba bir şapka rengi verir. Grupların şapka rengine göre hazırlamış oldukları sunum ve materyalleri paylaşmalarını ister. Birinci grup, ülkemizde son on yılda israf edilen su ve gıda verilerini istatistiksel olarak sunup dünya genelinde açlık sıkıntısı çeken ülkelerin ihtiyaç duydukları gıda ve su miktarlarıyla karşılaştırır. İkinci grup ise israfı engellemek için birey ve toplum tarafından yapılması gerekenlere özgün çözümler üretip olaya farklı bir bakış açısı geliştirir. Bu grupların temsil ettiği şapka renkleri aşağıdakilerden hangisidir?
 
 A) Birinci Grup İkinci Grup
@@ -951,6 +1018,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 68:
+KONU: Din Eğitimi
 Fatma Öğretmen, Kur'an-ı Kerim dersinde öğrencilerin sure ezberlerini düzenli bir şekilde vermelerini sağlamak istemektedir. Bu amaçla ezberini zamanında yapan öğrencilerin isimlerini "Sınıfın Yıldızları" olarak adlandırdığı bir tabloya asarak diğer öğrencileri ezber yapmaya teşvik etmektedir. Fatma Öğretmen'in bu uygulaması, Sosyal Öğrenme Kuramı'na göre aşağıdaki kavramlardan hangisiyle ifade edilir?
 
 A) Dolaylı ceza
@@ -964,6 +1032,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 69:
+KONU: Din Eğitimi
 4. sınıf din kültürü ve ahlak bilgisi dersinde Ömer Öğretmen, "Din güzel ahlaktır." konusunda öğrencilerin dinleme becerilerini geliştirmeyi hedefler. Bu amaçla önce sınıfa ahlakın tanımını ve ahlaki davranışların neler olduğunu sorar ve aldığı cevapları tahtaya yazar. Daha sonra öğrencilerine ahlaki davranışlarla ilgili bazı kelimelerin boş bırakıldığı bir çalışma kâğıdı dağıtır. Çalışma kâğıdını nasıl dolduracaklarına dair ilkeleri okur ve bu ilkeleri uygulamalarını ister. Devamında çalışma metnini seslendirir. Öğrencilerinden okuduğu metinde eksik bırakılan boşlukları doldurmalarını, dersin sonunda ise her konunun ana hatlarını birkaç cümleyle anlatmalarını ister. Aşağıdakilerden hangisi Ömer Öğretmen'in bu derste uyguladığı etkili dinleme becerileri geliştirme tekniklerinden biri değildir?
 
 A) Bağlamdan yararlanma
@@ -977,6 +1046,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 70:
+KONU: Din Eğitimi
 Horace Bursnell'in, "Hiçbir gerçek, salt kelimelerle öğretilemez, entelektüel ve mantıki yöntemlerle yorumlanamaz; gerçek, bilinmeden önce bağlam içinde yaşanmalıdır." ilkesini esas alan bir öğretmenin ders planında aşağıdaki yöntemlerden hangisini öncelikli olarak kullanması beklenir?
 
 A) Küçük grup tartışması
@@ -990,6 +1060,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 71:
+KONU: Din Eğitimi
 Kur'an-ı Kerim dersine giren bir öğretmen, öğrencilerin Arap harflerini telaffuz etmekte zorlandıklarını görmüş ve bu amaçla bir dizi etkinlik planlamıştır. Öğretmen, ilk olarak harfleri ikişer ikişer akıllı tahtada göstermiş ve ardından da öğrencilere dinletmiştir. Devamında bu harflerin mahreçlerini açıklayarak kendisi seslendirmiş ve her bir harfin okunuşundan sonra bütün sınıfın kendisini tekrar etmesini, son olarak da öğrencilerin aynanın karşısına geçip bu harfleri telaffuz etmelerini istemiştir. Bu öğretmenin aşağıdaki zekâ türlerinden hangisine başvurduğu söylenemez?
 
 A) Ritmik
@@ -1003,6 +1074,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 72:
+KONU: Din Eğitimi
 Bir din kültürü ve ahlak bilgisi öğretmeni "Medine'ye hicretin sebep ve sonuçlarını irdeler." kazanımını bir kavram haritası kullanarak işlemek ister. Buna göre öğretmenin aşağıdaki kavram haritası türlerinden hangisini kullanması en uygun olur?
 
 A) Hiyerarşik
@@ -1016,6 +1088,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 73:
+KONU: Din Eğitimi
 İlahiyat fakültesi dinî musiki dersi öğretim üyesi Ayşe Hanım, derslerinde öğrencilerine musikideki farklı makamları öğretmiştir. Öğrencilerden birine hicaz makamında ezan okutmuş, aynı öğrenciden bu ezanı rast makamında yeniden okumasını istemiştir. Buna göre Ayşe Hanım öğrencilerine psikomotor alanın hangi basamağında bir yetkinlik kazandırmayı amaçlamaktadır?
 
 A) Yaratma
@@ -1029,6 +1102,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 74:
+KONU: Din Eğitimi
 2018 Din Kültürü ve Ahlak Bilgisi Dersi Öğretim Programı'nda (İlkokul 4 ve Ortaokul 5, 6, 7 ve 8. sınıflar) yer alan aşağıdaki kazanımlardan hangisi öncelikli olarak sosyal ve vatandaşlıkla ilgili yetkinlikleri geliştirmeye yöneliktir?
 
 A) Zararlı alışkanlıkların başlama sebeplerini sorgular.
@@ -1042,6 +1116,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 75:
+KONU: BİLİNMEYEN KONU
 Bu soru iptal edilmiştir.
 
 Doğru Cevap: İPTAL
