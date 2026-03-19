@@ -3,6 +3,7 @@ KONU: Genel Kültür
 YIL: 2017
 
 Soru 1:
+KONU: İslam Tarihi / Siyer
 Medine Dönemi askerî faaliyetleri ve mücadele edilen gruplarla ilgili olarak;
 I. Mute Savaşı - Kureyş
 II. Huneyn Gazvesi - Hevazin
@@ -21,6 +22,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 2:
+KONU: İslam Tarihi / Siyer
 Müşriklerin lideri Ebu Süfyan Bedir Gazvesi'nin intikamını almak üzere savaştan iki buçuk ay kadar sonra iki yüz kişilik silahlı birlikle Medine'ye doğru harekete geçer. Ancak şehre doğrudan saldırmaya cesaret edemez ve dış mahallelere saldırır. Bu saldırıda bir hurma bahçesinde çalışan iki Müslümanı öldürür. Olayın Medine'de duyulmasının ardından Hz. Muhammed hemen otuz süvari ve yüz yirmi yayadan oluşan askerî birlikle onun peşine düşer. Bunu haber alan Ebu Süfyan sefere çıkarken yanına erzak olarak aldığı kavrulmuş un torbalarını da bırakarak hızla kaçar. Müslümanlar da onun uzaklaştığını öğrenince Medine'ye geri dönerler. Bu parçada anlatılan gazve aşağıdakilerden hangisidir?
 
 A) Batn-ı Nahle
@@ -34,6 +36,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 3:
+KONU: İslam Tarihi / Siyer
 Hz. Muhammed öncesi dönemde yeni doğanların sütanneye verilmesinde çocukların;
 I. kabileler arası savaş ve baskınlara karşı güvende olmalarının sağlanması,
 II. çölün sağlıklı havasında büyümelerinin istenmesi,
@@ -51,6 +54,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 4:
+KONU: Hadis
 Hadis tahammül yollarından;
 I. kendisinden rivayet etmesi için hocanın, öğrencisine bir kitap veya yazılı bir metin vermesine,
 II. hocanın icazetten söz etmeksizin belli bir hadis veya hadis kitabı için sadece "Benim rivayetim işte budur." diye açıklamada bulunmasına,
@@ -68,6 +72,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 5:
+KONU: Hadis
 Üsame b. Zeyd'in anlattığına göre bir sefer sırasında Müslümanlar yakaladıkları bir müşriği tam öldürecekleri sırada adam "Lâ ilahe illallah" der. Onlar, bunu ölüm korkusu sebebiyle söylediğini düşünürler ve adamı öldürürler. Olay Hz. Muhammed'e anlatılınca o, "Kalbini yarıp baktınız da mı korktuğu için böyle söylediğini anladınız? Kıyamet günü bu söz karşınıza çıktığında ne yapacaksınız?" diyerek sahabeleri yaptıkları sebebiyle kınar. Bu hadisten aşağıdakilerin hangisine ulaşılabilir?
 
 A) Ölüm anında edilen imanın Allah katında geçersizliğine
@@ -81,6 +86,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 6:
+KONU: Hadis
 Aşağıdakilerden hangisi konularına göre (ale'le-ebvab) tasnif edilmiş hadis eserleri arasında yer almaz?
 
 A) İmam Malik'in Muvatta'ı
@@ -94,6 +100,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 7:
+KONU: Tefsir
 Büşra Öğretmen seçmeli Kur'an-ı Kerim dersinde, öğrencilerinin bazı şeyleri daha kolay ezberleyebilmesi için kodlama yöntemine başvurmuştur. Bu çerçevede tahtaya 􀆇ِ ْ 􀆈 􀆄ٍ 􀆅ْ 􀆆َ 􀆂􀆁 􀆃ُ şeklinde bir kodlama yazmıştır. Buna göre, Büşra Öğretmen'in aşağıdakilerden hangisini öğrettiği söylenebilir?
 
 A) İzhar harflerini
@@ -107,6 +114,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 8:
+KONU: Kur'an-ı Kerim ve Tecvid
 Hz. İsa ile ilgili rivayetlerde dile getirilen aşağıdaki hususlardan hangisi Kur'an-ı Kerim'de yer almamaktadır?
 
 A) Babasız olarak dünyaya geldiği
@@ -120,6 +128,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 9:
+KONU: Kur'an-ı Kerim ve Tecvid
 Kur'an-ı Kerim'de, Hz. Zekeriyya'nın "... Bana kendi tarafından; bana ve Yakub hanedanına varis olacak bir çocuk bağışla ve onu hoşnutluğuna ulaşmış bir kimse kıl!" (Meryem, 19:5-6) şeklinde dua ettiği bildirilmekte ve Yakub'un karısı kısır olduğu hâlde Allah'ın ona bir çocuk bahşettiği ve adının Allah tarafından konulduğu dile getirilmektedir. Bu parçada söz edilen çocuğun ismi aşağıdakilerden hangisidir?
 
 A) Hz. Şit
@@ -133,6 +142,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 10:
+KONU: Tefsir
 Kur'an-ı Kerim'de kişi, olay veya yer isimleri çoğu kez açık olarak dile getirilmemiş; bunlardan bahsedilirken ism-i işaret, ism-i mevsul, zamir, cins isimleri, belirsiz zaman ve mekân zarfları kullanılmıştır. Hz. Ebu Bekir'in "sıddık" olarak nitelenmesi bu duruma örnektir. Bu parçada bahsedilen husus aşağıdaki Kur'an ilimlerinden hangisiyle ilgilidir?
 
 A) İcazü'l-Kur'an
@@ -146,6 +156,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 11:
+KONU: Tefsir
 Elmalılı Muhammed Hamdi Yazır'ın Hak Dini Kur'an Dili adını taşıyan çalışması, Türkçe tefsir yazım faaliyetinin en özgün örneklerindendir. Toplamda on ciltten oluşan bu hacimli çalışma, ayetlere oldukça farklı açılardan yorumlar getirmiştir. Bunu yaparken de Fahreddin Razi'nin Mefatihu'l-Gayb'ı başta olmak üzere, Taberi'nin Camiu'l-Beyan'ı, Zemahşeri'nin Keşşaf'ı, Ragıb el-İsfahani'nin el-Müfredat'ı, Ebu Hayyan'ın Bahrü'l-Muhit'i, Alusi'nin Ruhu'l-Meani'si ve Cessas'ın Ahkamü'l-Kur'an'ı gibi belli başlı âlimlerin eserlerinden faydalanmıştır. Buna göre söz konusu tefsirle ilgili olarak aşağıdakilerden hangisi söylenemez?
 
 A) Dirayet yönü ağır basmaktadır.
@@ -159,6 +170,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 12:
+KONU: Tefsir
 Bir kısım müfessirler, Kur'an-ı Kerim'deki bazı kelimelerin mecazi anlamda kullanıldığını, bunların gerçek anlamlarının esas alınması durumunda teşbih ve tecsime düşülebileceğini, bu yüzden de yorumlanması gerektiğini ileri sürmüşlerdir. Buna karşın bazı müfessirler ise tevilin, Allah'ın kelamına müdahale anlamına geleceğini ileri sürerek bu tür kelimelerin hakiki manasında anlaşılması gerektiğini savunmuşlar; ve bunların yorumunu yapmaktan kaçınmışlardır. Aşağıdakilerin hangisi parçada bahsedilen türden bir kelimedir?
 
 A) Zikir
@@ -172,6 +184,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 13:
+KONU: Kelam / Akaid
 "Eğer dedikleri gibi, Allah'la beraber başka tanrılar da bulunsaydı, o takdirde bu ilahlar arşın sahibi olmaya yol ararlardı." (İsra, 17: 42) Bu ayet, Allah'ın varlığını temellendirmek için kullanılan aşağıdaki delillerden hangisine örnek oluşturmaktadır?
 
 A) Temanu
@@ -185,6 +198,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 14:
+KONU: Kelam / Akaid
 Kelamcıların duyu verilerini bilgi edinmede temel üç kaynaktan biri sayması, dış gerçekliğe ne kadar önem verdiklerinin bir göstergesidir. Bu, tercih konusu olmanın ötesinde aslında bir gerekliliktir; zira dış dünya ancak bu gerçekliği ile gerçek bir varlığa yani Allah'a işaret edebilir. Öyle ki Allah, varlığının ve birliğinin delillerini kevni birer ayet olarak kozmosa serpiştirmiştir; bu nedenle dış gerçeklikle dolaysız olarak ilişki kurmanın araçları durumundaki duyu verileri aynı zamanda Allah'ın kudretini ve azametini idrak etme vesileleridir. Buna göre, kelamcılarla ilgili olarak aşağıdakilerden hangisi söylenemez?
 
 A) Somuttan hareketle soyut olanı delillendirmişlerdir.
@@ -198,6 +212,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 15:
+KONU: Kelam / Akaid
 Bir şeye hüsün ve kubuh vasfının verilmesinde,
 I. Eşarilik nakli merkeze almıştır.
 II. Mutezile aklın belirleyici olduğunu ileri sürmüştür.
@@ -215,6 +230,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 16:
+KONU: Kelam / Akaid
 Hz. İsa'nın beşikte iken konuşması, olağanüstü olaylarla ilgili aşağıdaki kavramlardan hangisiyle ifade edilmektedir?
 
 A) İrhas
@@ -228,6 +244,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 17:
+KONU: Fıkıh
 Namaz, vakte bağlı bir ibadettir ve her namaz için geniş bir zaman dilimi söz konusudur. Ancak gün içerisinde namaz kılmanın uygun görülmediği vakitler de vardır. Bu vakitlerde hiçbir nafile namaz kılınmamakta farz namazlarının da sadece biri, mekruh olarak nitelenen bu vakitlerde kılınabilmektedir. Bu namaz aşağıdakilerden hangisidir?
 
 A) Sabah
@@ -241,6 +258,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 18:
+KONU: Fıkıh
 Şafiilere göre abdestle ilgili olarak;
 I. niyet etmek,
 II. sıraya uymak,
@@ -259,6 +277,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 19:
+KONU: Fıkıh
 İslam'ın temel emirleri arasınde yer alan;
 I. namaz,
 II. zekât,
@@ -277,6 +296,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 20:
+KONU: Fıkıh
 Ahmet KPSS'den istediği notu alıp memur olarak atanması durumunda küçükbaş bir hayvan kesmeyi adamıştır. Dileğinin gerçekleşmesi üzerine de adağını yerine getirerek bir koyun kesmiş ve bunun etinin bir miktarını dağıtmış, bir miktarını ise ailesiyle birlikte yemiştir. Ancak bir arkadaşı ona bazı tür kurbanlardan sahibinin yememesi gerektiğine dair bir bilgi verince kendi adak kurbanının durumunu merak etmiş ve bir imama sormuştur. Buna göre, imamın aşağıdaki cevaplardan hangisini vermesi beklenir?
 
 A) İslam'a göre fakir olduğun için kendi adağından yemende bir sakınca yoktur.
@@ -290,6 +310,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 21:
+KONU: İslam Kültür ve Medeniyeti
 Hüsnühat, Arap harflerinden doğarak İslam Medeniyeti'nde müstakil ve olağanüstü bir mevki kazanan güzel yazı sanatına verilen isimdir. İslam'ın ilk yıllarından itibaren Kur'an-ı Kerim'e verilen değerin bir göstergesi olarak gelişen bu sanat dalında pek çok tür ortaya çıkmıştır ve bunların önemli bir kısmı Osmanlı Dönemi'nde gelişerek zirveye ulaşmıştır. Buna göre, aşağıdakilerden hangisi Osmanlı'da zirveye ulaşan bu türlere örnek verilemez?
 
 A) Sülüs
@@ -303,6 +324,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 22:
+KONU: İslam Kültür ve Medeniyeti
 İslam devletlerinde, ticaretin gelişmesine çok önem verilmiştir. Bu amaçla ticaret yolları üzerinde ve şehirlerin içinde tüccarların barınması ve konaklaması için binalar; ayrıca tüccarların mallarını rahatça alıp satabilecekleri çarşı ve pazarlar inşa edilmiştir. Bu yapıların bir kısmında sadece belirli malların satışı yapılırken bazılarında ise pek çok ürün yer almış, hatta bir kısmında üretim de yapılmıştır. Aşağıdakilerden hangisi parçada bahsedilen amaçlarla yapılmış eserler arasında yer almaz?
 
 A) Arasta
@@ -316,6 +338,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 23:
+KONU: İslam Kültür ve Medeniyeti
 "İnsanlardan alırken ölçüp tarttıklarında tam, onlara vermek için ölçüp tarttıklarında ise noksan yapan hilekârlara yazıklar olsun! Onlar düşünmezler mi ki, büyük bir günde diriltilecekler! Öyle bir gün ki, insanlar o gün âlemlerin Rabbinin huzurunda divan duracaklardır." (Mutaffifin, 83:1-6) Bu ayette vurgulanan ahlaki kavram aşağıdakilerden hangisidir?
 
 A) Eşitlik
@@ -329,6 +352,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 24:
+KONU: İslam Felsefesi
 İslam filozofları ve öne çıktıkları görüşlerle ilgili olarak aşağıdaki eşleştirmelerden hangisi yanlıştır?
 
 A) Farabi - Toplum tiplerini sınıflandırarak ideal toplumun filozoflar/peygamberler tarafından yönetilen erdemli toplum olduğunu dile getirmiştir.
@@ -342,6 +366,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 25:
+KONU: İslam Felsefesi
 Gazali'ye göre tabii bir olayın gerçek sebebi veya hakiki faili Tanrı'dır. Ona göre bir şeyle aynı anda var olmak o şey tarafından meydana getirilmiş olmayı gerektirmez. Örneğin, ona göre ateşle karşılaşması durumunda pamuğun yanmasının faili ateş değil bizzat Tanrı'dır. Dolayısıyla yanma olayını iradesiyle yaratan Tanrı, aynı şekilde yanma olayını yaratmayabilir ve ateşle karşılaşan pamuğun yanmaması da yanması kadar doğaldır. Burada akla aykırı bir durum söz konusu değildir. Gazali bu parçada aşağıdakilerden hangisini ispatlamaya çalışmaktadır?
 
 A) Risaletin sürekliliğini
@@ -355,6 +380,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 26:
+KONU: İslam Felsefesi
 Gazali, hayatının bir döneminde felsefeye ilgi duymuş, iki yıl süreyle Farabi ve İbni Sina gibi filozofların eserlerini incelemiştir. O, bazı konularda bu filozofların hatalarını ortaya koymak amacıyla Tehafütü'l-Felasife'yi yazmış ve bu eserinde onların bazı hususlarda küfre girdiklerini öne sürmüştür. Bu hususlar arasında;
 I. âlemin ezeliliği,
 II. Allah'ın cüz'ileri bilmesinin niteliği,
@@ -373,6 +399,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 27:
+KONU: İslam Mezhepleri ve Akımları
 Allah'ın pek çok sıfatı vardır; ancak bu sıfatlar O'nun zatından ayrı düşünülmemelidir. Aksi takdirde O'nun zatından bağımsız başka ezelî varlıklar olduğu neticesi çıkar ki bu, tevhide aykırıdır. Bu sebeple, Allah hakkında konuşurken "Allah, kudret sahibidir." denmemeli; "Kâdirdir." denmelidir. Bu görüşlere sahip bir kimsenin aşağıdaki düşünce ekollerinden hangisine mensup olması beklenir?
 
 A) Sıfatiyye
@@ -386,6 +413,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 28:
+KONU: İslam Mezhepleri ve Akımları
 Tarihsel süreçte yaşanan ve toplumsal muhayyilede kalıcı izler bırakan bazı olayların, mezheplerin doğuşuna doğrudan tesir ettiği, hatta asırlar boyunca varlığını koruyacak bir kimlik inşasının temelini oluşturduğu görülmektedir. Kerbela olayı bu durumun en dikkat çeken örneklerinden biridir. Öyle ki bu olay hem Şiiliğin oluşumunu tetiklemiş hem de zamanla Şii kimliğin ana sabitelerinden biri hâline gelmiştir. Buna göre, aşağıdaki eşleştirmelerden hangisi arasında benzer bir ilişki söz konusudur?
 
 A) Nehrevan Savaşı - Haricilik
@@ -399,6 +427,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 29:
+KONU: İslam Kültür ve Medeniyeti
 Dede Garkın sayesinde Vefailik Tarikatı, Alaeddin Keykubad'ın takdirini kazanmış ve bu sayede oldukça güçlenmiştir. Ancak onun halifelerinden Baba İlyas'ın sürekli Anadolu Selçuklu yönetimini eleştirmesi ve özellikle dinî bilgisi zayıf kişileri etkileyerek dinî-siyasi bir isyan başlatması tarikat için dönüm noktası olmuştur. Bu olay bir taraftan devletin güçsüz düşerek Moğolların Anadolu'yu istilasına zemin hazırlarken diğer taraftan da tarikatın devlet tarafından takibe uğrayarak zayıflamasına ve etkisini kaybetmesine yol açmıştır. Bu parçaya göre, dinî duyguları kullanarak insanları etkilemeye çalışan kişilerle ilgili aşağıdakilerin hangisi söylenemez?
 
 A) Yöneticilerin iyi niyetlerini istismar edebilirler.
@@ -412,6 +441,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 30:
+KONU: Din Sosyolojisi
  "Göklerin ve yerin yaratılması, dillerinizin ve renklerinizin çeşitli olması da O'nun varlığının ve kudretinin delillerindendir. Şüphesiz bunda bilenler için ibretler vardır." (Rum, 30:22)
  "...Allah dileseydi hepinizi bir tek ümmet yapardı. Fakat size verdiği nimetler içinde sizi sınamak istedi." (Maide, 5:48)
 Bu ayetlerde aşağıdakilerin hangisine dikkat çekildiği söylenebilir?
@@ -427,6 +457,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 31:
+KONU: Din Psikolojisi
 Yapılan bilimsel araştırmalara göre dinî gelişim açısından;
  dinî değerlere daha fazla bağlanıldığı,
  ibadetlerde azalmaların görülebilmesine rağmen inançta tevekkül ve teslimiyetin ağır bastığı,
@@ -444,6 +475,7 @@ Doğru Cevap: E
 ---SONRAKİ SORU---
 
 Soru 32:
+KONU: Din Psikolojisi
 Kohlberg'in ahlaki gelişim kuramına göre kişilerin iyi-kötü, doğru-yanlış gibi kültürel kural ve değerlere sıkı sıkıya bağlı oldukları bir dönem vardır. Bu dönemde kurallar, ödül-ceza gibi fiziksel sonuçlarına göre ya da bu kuralları ortaya koyan kişilerin fiziksel gücüne göre değerlendirilir. Bu dönemdeki kişilerin kurallara uyması, itaat ve ceza eğilimi ile saf çıkarcı yönelimden kaynaklanmaktadır. Bu dönemdeki kişilerin ahlaki gelişim düzeyi Kohlberg'e göre aşağıdakilerin hangisiyle nitelenir?
 
 A) Geleneksel
@@ -457,6 +489,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 33:
+KONU: Din Felsefesi
 İnsan, hissî ve maddi her şeye bakınca görür ki, o şey belli bir şekilde ve belli bir miktarda ortaya konulmuştur. Bütün bu hususlar o şeyden beklenen menfaate ve gayeye uygundur. Belli bir menfaatin mevcut olması için bütün bu şeylerin yekdiğerine uygunluğunun tesadüf olması mümkün değildir. İşte bundan kesin bir şekilde anlaşılıyor ki o şeyi yapan bir Yaratıcı, bir sanatkâr vardır. O da Allah'tır. Bu ifadelerle, İbn Rüşd'ün Tanrı'nın varlığıyla ilgili aşağıdaki delillerden hangisini savunduğu söylenebilir?
 
 A) İnayet
@@ -470,6 +503,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 34:
+KONU: Din Felsefesi
 Tanrı anlayışları arasında;
  Tanrı-âlem ikiliğini ortadan kaldıran,
  Tanrı'nın her şeyi ihtiva ettiğini ve O'nun her şey olduğunu savunan,
@@ -487,6 +521,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 35:
+KONU: Din Eğitimi
 1949 yılında açılan Ankara Üniversitesi İlahiyat Fakültesi'nin ihtiyaca cevap verememesi üzerine 1959 ile 1980 yılları arasında İstanbul, Konya, Kayseri, İzmir, Erzurum, Bursa, Samsun ve Yozgat'ta Yüksek İslam Enstitüleri açılmıştır. Bu enstitülerle ilgili olarak aşağıda verilen bilgilerden hangisi yanlıştır?
 
 A) Diyanet İşleri Başkanlığı'na bağlı olarak kurulmuşlardır.
@@ -500,6 +535,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 36:
+KONU: Din Eğitimi
 Eğitimden beklenen temel görevlerin başında, fertlerin bütün yeteneklerini ortaya çıkarıp geliştirmek ve temel duygu ve ihtiyaçlarını uyumlu bir şekilde doyurmak gelmektedir. Yine eğitim, bireyin özgürleştirilmesi, kendini gerçekleştirmesi ve insani olgunluğunu kazanması gibi hedeflere sahiptir. Buradan hareketle din eğitiminin, insanın bu temel ihtiyaçlarını karşılama ve bu sayede kendini gerçekleştirmesine yardımcı olma gibi çok önemli bir fonksiyonu yerine getirdiği söylenebilir. Bu parça din eğitiminin aşağıdaki temellerinden hangisiyle ilgilidir?
 
 A) İnsani
@@ -513,6 +549,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 37:
+KONU: Dinler Tarihi
 Hint alt kıtasında ortaya çıkan inanç sistemleri arasında;
  dört temel hakikat ve sekiz dilimli yol öğretisini savunan,
  karma ve samsara çarkından kurtuluşu hedefleyen,
@@ -530,6 +567,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 38:
+KONU: Dinler Tarihi
 Yahudi kutsal günleri arasında;
  Mısır'dan çıktıktan sonra kırk yıl çölde dolaşılması anısına kutlanan,
  sekiz gün süren ve eğlence yönü ağır basan,
@@ -547,6 +585,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 39:
+KONU: Dinler Tarihi
 Hristiyanlık, Miladi 1. yüzyılda Roma hâkimiyetinde bulunan Kudüs'te ortaya çıkmıştır. Yahudi bir çevrede ortaya çıkması, ilk inananların Yahudi olması ve Hz. İsa'nın "Ben İsrail evinin kaybolmuş koyunlarından başkasına gönderilmedim." ifadesi, Hristiyanlığın bir anlamda Yahudiliğin devamı olarak şekillenmesini beraberinde getirmiştir. Bu çerçevede Yahudilikteki bazı ibadet ve uygulamalar şekil değiştirerek Hristiyanlığa taşınmıştır. Örneğin, Yahudilikte Tanrı ile yapılan ahdin sembolü olarak görülen sünnet uygulaması, şekil ve muhteva değiştirerek Hristiyanlığa da geçmiştir. Bu uygulamanın Hristiyanlıktaki karşılığı aşağıdakilerden hangisidir?
 
 A) Vaftiz
@@ -560,6 +599,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 40:
+KONU: Dinler Tarihi
 Kur'an-ı Kerim'de ismi geçen inanç grupları arasında;
  birbirleriyle rekabet hâlinde olduğu kabul edilen düalist bir tanrı anlayışını benimseyen,
  dinî yıkanma/vaftiz uygulamasına oldukça önem veren,
@@ -577,6 +617,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 41:
+KONU: Din Eğitimi
 Aşağıdakilerden hangisi, din eğitiminde ezber öğrenmeden ziyade anlamlı öğrenmenin tercih edilmesinin nedenleri arasında gösterilemez?
 
 A) Öğrenmenin kısa zamanda gerçekleşmesi
@@ -590,6 +631,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 42:
+KONU: Din Felsefesi
  "İsa, 'Ben tek yol, tek hakikat ve tek yaşamım, ben aracı olmadıkça kimse Baba'ya ulaşamaz.' dedi." (Yuhanna, 14:6)
  "Başka hiç kimse için kurtuluş yoktur. Çünkü göğün altında, insanlar arasında bizi kurtarabilecek verilmiş başka bir ad yoktur." (Resullerin İşleri, 4:12)
 İncillerde yer alan bu ayetlerden hareketle Hristiyanlığın aşağıdaki yaklaşımlardan hangisini savunduğu söylenebilir?
@@ -605,6 +647,7 @@ Doğru Cevap: D
 ---SONRAKİ SORU---
 
 Soru 43:
+KONU: Din Eğitimi
 Bir Din Kültürü ve Ahlak Bilgisi öğretmeni, derse başlarken şöyle bir hikâye anlatmıştır: 12 yaşındaki Ömer, okul dışında bir arkadaş grubuyla vakit geçirmeye başlar. Arkadaşlarıyla oyun oynarken zamanın nasıl geçtiğini fark etmez ve eve geç kalır; ancak babasının kızacağından endişe ederek onun izin vereceği bir arkadaşının evinde olduğunu söyler; böylece azarlanmaktan kurtulur. Bu yalanın işe yaradığını görünce de artık eve dönüş saatine hiç dikkat etmez olur. Bu yalanı, eve geldiği bir akşam, misafirliğe gittiğini söylediği arkadaşını evlerinde gördüğü güne kadar devam eder... Öğretmen hikâyeyi bitirince öğrencilerin fikrini sormuş, onların konu ile ilgili çözüm önerilerini ve görüşlerini dinledikten sonra kendi değerlendirmesini yaparak dersi bitirmiştir. Öğretmenin bu derste aşağıdaki yöntemlerden hangisini merkeze aldığı söylenebilir?
 
 A) Örnek olay
@@ -618,6 +661,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 44:
+KONU: Din Eğitimi
 Din öğretiminde sıklıkla kullanılan tekniklerden biri de beyin fırtınasıdır. Bu teknik öğrencilerin az da olsa bilgilerinin olduğu, ilgilerini çeken ve farklı fikirler ortaya atabilecekleri bir konuda serbestçe ve eşit söz hakkı verilerek gerçekleştirilmeli ve bu yöntemde zaman kullanımına dikkat edilmelidir. Buna göre, aşağıdaki konuların hangisinde bu tekniğin kullanılması uygun değildir?
 
 A) Haccın Müslümanların birlik ve beraberliğine katkıları
@@ -631,6 +675,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 45:
+KONU: Din Eğitimi
 Bir Din Kültürü ve Ahlak Bilgisi öğretmeni "Oruç İbadeti" ünitesini işlemek üzere öğrencilere ve konuya uygun bir yöntem belirlemeye çalışmaktadır. Öncelikle o, öğrencilerin bu derste bir yandan konuyu öğrenirken diğer taraftan kendilerini ifade etme, düşüncelerini geliştirme ve farklı düşüncelere saygı duyma nitelikleri kazanmalarını hedeflemektedir. Öğretmen, planlama aşamasında öğrencilerin çevrelerindeki kişilerin çoğunun oruç tuttuğunu ve konu hakkında bilgi ve ilgilerinin oldukça fazla olduğunu tespit etmiştir. Bunun üzerine, şu şekilde bir yol takip etmiştir: Bir hafta önceden konuyu öğrencilerine bildirmiş ve hazırlıklı olarak derse gelmelerini söylemiştir. Ders sırasında ise her öğrenciye fikrini söyleme, kendi fikrini savunma ve karşılıklı olarak birbirlerinin fikirlerini değerlendirme imkânı vermiş ve bu şekilde dersini işlemiştir. Öğretmenin bu derste, aşağıdaki yöntemlerden hangisini merkeze aldığı söylenebilir?
 
 A) Tartışma
@@ -644,6 +689,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 46:
+KONU: Din Eğitimi
 Din Kültürü ve Ahlak Bilgisi öğretmeni Sema Hanım, İslam dininin yasakladığı kötü alışkanlıklardan biri olan uyuşturucuyu anlatacağı derse konuyu iyi bilen uzmanlar getirmek ister. Bu amaçla emniyet ve sağlık müdürlüklerinden talepte bulunur ve onlardan gelen uzmanlarla birlikte derse girer. Sağlık müdürlüğünden gelen uzman uyuşturucunun sağlıkla ilgili zararlarını bilimsel verilerle anlatır, emniyetten gelen uzman da uyuşturucun kişiye ve topluma verdiği zararlara dair istatistiki bilgiler sunar.
 
 Bu derste Sema Öğretmen’in aşağıdaki yöntemlerden hangisini uyguladığı söylenebilir?
@@ -659,6 +705,7 @@ Doğru Cevap: C
 ---SONRAKİ SORU---
 
 Soru 47:
+KONU: Din Eğitimi
 Bir Din Kültürü ve Ahlak Bilgisi öğretmeni "Namaz İbadeti" ünitesini farklı yöntem ve teknikler kullanarak işlemek istemektedir. O, bu kapsamda;
  ilk derste namazla ilgili ayetleri ve hadisleri söylemiş ve namazın farz kılınışı ile ilgili tarihî süreci anlatmış,
  ikinci derste öğrencileri, yakındaki camiye götürerek önce kendisi abdest almış, onların da kendisi gibi abdest almalarını söylemiş; daha sonra öğrencilerle birlikte camiye girmiş ve burada namaz ibadetiyle ilgili bölümleri göstererek bilgi vermiş,
@@ -676,6 +723,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 48:
+KONU: Din Eğitimi
 Din eğitimi alanında doktora yapan bir öğrenci, burslu olarak Almanya'ya gider. Öğrencinin çalışma konusu, Avrupa ülkelerindeki eğitim yaklaşımlarını yerinde incelemek ve aralarındaki farklılıkları tespit etmektir. Bu çerçevede ikamet ettiği ülkenin yanı sıra Avusturya ve Çekya'ya da kısa süreli ziyaretler gerçekleştirir ve gözlemlerde bulunur. Araştırmasının final raporunda ilgili ülkelerin din eğitimi ile ilgili yaklaşımları konusunda şu tespitleri kayda geçirir:
  Almanya: Öğrencilerin din ve dinlerle ilgili doğru bilgi sahibi olmaları önemsenmektedir. Devlet okullarında verilen din eğitimi, tarafsız bir bilgilendirme üzerine kuruludur.
  Avusturya: Din eğitimi, öğrencilerle aynı dine mensup kişiler tarafından verilmektedir. Eğitimin merkezinde mensup bulunulan din yer almaktadır.
@@ -693,6 +741,7 @@ Doğru Cevap: B
 ---SONRAKİ SORU---
 
 Soru 49:
+KONU: Din Eğitimi
 Din öğreniminin gerçekleştiği eğitim türleri içinde;
  doğal ortam içinde kendiliğinden oluşan,
  olumlu yönde olabileceği gibi olumsuz yönde de sonuçlar veren,
@@ -710,6 +759,7 @@ Doğru Cevap: A
 ---SONRAKİ SORU---
 
 Soru 50:
+KONU: Din Eğitimi
 19. ve 20. yüzyıldan itibaren, özellikle Batı Dünyası'nda Hristiyanlığın tek doğru din olduğu anlayışı sorgulanmaya başlanmıştır. Bu kapsamda diğer dinlerin de doğru olabileceği, Tanrı herkesi seviyorsa Hristiyanlık dışındaki yolları da doğru kabul edeceği, bütün dinlerin Tanrı'ya ulaşmanın farklı yolları olabileceği düşüncesi ortaya atılmıştır. Bu düşüncenin ortaya çıkmasında aşağıdakilerden hangisinin etkisi yoktur?
 
 A) Avrupa'ya farklı din ve kültürlere mensup pek çok kişinin göç etmesi
