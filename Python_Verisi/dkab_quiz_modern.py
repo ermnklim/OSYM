@@ -10,6 +10,7 @@ from tkinter import ttk, messagebox, filedialog
 import json
 import random
 import os
+import time
 from typing import Dict, List, Tuple
 import threading
 
@@ -36,7 +37,12 @@ class ModernDKABQuiz:
         self.available_subjects = ["DKAB", "IHL"]
         self._next_timer = None
         self._countdown_job = None
+        self._elapsed_job = None
         self.remaining_seconds = 0
+        self.test_start_time = None
+        self.question_start_time = None
+        self.total_elapsed_seconds = 0
+        self.question_times = {}
         self.active_mode = None
         self.settings_file = os.path.join(os.path.dirname(__file__), "dkab_quiz_settings.json")
         self.persisted_settings = self.load_persisted_settings()
@@ -587,6 +593,55 @@ class ModernDKABQuiz:
         """Geri sayım kullanan modu belirtir."""
         return self._quiz_mode() == "Süreli"
 
+    def _question_key(self, question):
+        """Soruyu benzersiz şekilde anahtarlar."""
+        return (question.get('yil'), question.get('ders'), question.get('soru_no'))
+
+    def _start_elapsed_tracking(self):
+        """Test ve soru sürelerini canlı izlemeyi başlatır."""
+        self.test_start_time = time.monotonic()
+        self.question_start_time = self.test_start_time
+        self.total_elapsed_seconds = 0
+        self.question_times = {}
+        self._stop_elapsed_tracking()
+        self._elapsed_job = self.root.after(1000, self._tick_elapsed)
+
+    def _stop_elapsed_tracking(self):
+        """Canlı süre takibini durdurur."""
+        if self._elapsed_job:
+            try:
+                self.root.after_cancel(self._elapsed_job)
+            except Exception:
+                pass
+            self._elapsed_job = None
+
+    def _store_current_question_time(self):
+        """Mevcut soruda harcanan süreyi birikimli olarak kaydeder."""
+        if self.question_start_time is None or not self.quiz_questions:
+            return
+
+        question = self.quiz_questions[self.current_index]
+        elapsed = max(0, int(time.monotonic() - self.question_start_time))
+        key = self._question_key(question)
+        self.question_times[key] = self.question_times.get(key, 0) + elapsed
+        self.question_start_time = time.monotonic()
+
+    def _tick_elapsed(self):
+        """Test ekranındaki canlı süre gösterimini günceller."""
+        self._elapsed_job = None
+        if self.current_view != "question" or self.question_start_time is None:
+            return
+
+        current_elapsed = max(0, int(time.monotonic() - self.question_start_time))
+        self.total_elapsed_seconds = max(0, int(time.monotonic() - self.test_start_time)) if self.test_start_time else 0
+
+        if hasattr(self, "elapsed_text_var") and self.elapsed_text_var is not None:
+            self.elapsed_text_var.set(f"Geçen Süre: {self._format_seconds(self.total_elapsed_seconds)}")
+        if hasattr(self, "question_elapsed_text_var") and self.question_elapsed_text_var is not None:
+            self.question_elapsed_text_var.set(f"Bu Soru: {self._format_seconds(current_elapsed)}")
+
+        self._elapsed_job = self.root.after(1000, self._tick_elapsed)
+
     def _stop_countdown(self):
         """Aktif geri sayımı ve otomatik ilerlemeyi durdurur."""
         if self._countdown_job:
@@ -719,6 +774,7 @@ class ModernDKABQuiz:
         self.current_view = "welcome"
         """Hoş geldin ekranını gösterir"""
         self._stop_countdown()
+        self._stop_elapsed_tracking()
         self.remaining_seconds = 0
         self._set_status_ready()
         # Clear main content
@@ -1398,6 +1454,7 @@ Başarılar dilerim! 🌟
         self.score = 0
         self.total_questions = num_questions
         self.active_mode = self.mode_var.get()
+        self._start_elapsed_tracking()
 
         if self._is_timed_quiz():
             try:
@@ -1432,6 +1489,7 @@ Başarılar dilerim! 🌟
             widget.destroy()
         
         question = self.quiz_questions[self.current_index]
+        self.question_start_time = time.monotonic()
         
         # Question card
         question_card = self.create_card(self.main_content, f"📝 Soru {self.current_index + 1}/{self.total_questions}")
@@ -1450,6 +1508,24 @@ Başarılar dilerim! 🌟
                                 font=self.fonts['small'], 
                                 fg=self.colors['text_secondary'], bg=self.colors['card'])
         progress_text.pack(side=tk.LEFT)
+
+        time_info_frame = tk.Frame(content_frame, bg=self.colors['card'])
+        time_info_frame.pack(fill=tk.X, pady=(0, 10))
+
+        self.elapsed_text_var = tk.StringVar(
+            value=f"Geçen Süre: {self._format_seconds(self.total_elapsed_seconds)}"
+        )
+        self.question_elapsed_text_var = tk.StringVar(value="Bu Soru: 00:00")
+
+        tk.Label(time_info_frame,
+                 textvariable=self.elapsed_text_var,
+                 font=self.fonts['small'],
+                 fg=self.colors['text_secondary'], bg=self.colors['card']).pack(side=tk.LEFT)
+
+        tk.Label(time_info_frame,
+                 textvariable=self.question_elapsed_text_var,
+                 font=self.fonts['small'],
+                 fg=self.colors['warning'], bg=self.colors['card']).pack(side=tk.LEFT, padx=(15, 0))
 
         if self._is_timed_quiz():
             self.timer_text_var = tk.StringVar(value=f"Kalan Süre: {self._format_seconds(self.remaining_seconds)}")
@@ -1904,7 +1980,11 @@ Başarılar dilerim! 🌟
     def show_review_screen(self):
         self.current_view = "review"
         """Değerlendirme ekranını gösterir"""
+        self._store_current_question_time()
+        if self.test_start_time is not None:
+            self.total_elapsed_seconds = max(0, int(time.monotonic() - self.test_start_time))
         self._stop_countdown()
+        self._stop_elapsed_tracking()
         self.remaining_seconds = 0
         self._set_status_ready()
         # Clear main content
@@ -1929,6 +2009,10 @@ Başarılar dilerim! 🌟
         
         tk.Label(score_frame, text=f"SKOR: {self.score}/{self.total_questions} (%{percentage:.1f})", 
                 font=self.fonts['header'], bg=self.colors['primary'], fg=self.colors['text']).pack(pady=15)
+
+        tk.Label(score_frame,
+                 text=f"Toplam Süre: {self._format_seconds(self.total_elapsed_seconds)}",
+                 font=self.fonts['small'], bg=self.colors['primary'], fg=self.colors['text_secondary']).pack(pady=(0, 12))
         
         # Questions review
         review_text = tk.Text(content_frame, font=self.fonts['body'], 
@@ -1948,6 +2032,7 @@ Başarılar dilerim! 🌟
             review_content += f"Soru: {q['soru_metni'][:80]}...\n"
             review_content += f"Sizin cevabınız: {q['siklar'].get(answer['selected_option'], 'N/A')}\n"
             review_content += f"Doğru cevap: {q['siklar'].get(answer['correct_option'], 'N/A')}\n"
+            review_content += f"Süre: {self._format_seconds(self.question_times.get(self._question_key(q), 0))}\n"
             
             if not answer['is_correct'] and q['aciklama']:
                 review_content += f"Açıklama: {q['aciklama'][:100]}...\n"
@@ -2014,7 +2099,11 @@ Başarılar dilerim! 🌟
         self.current_view = "specific"
         self.current_specific_question = question
         """Tek bir soruyu inceleme modunda (cevap + açıklama göster) ekrana basar"""
+        self._store_current_question_time()
+        if self.test_start_time is not None:
+            self.total_elapsed_seconds = max(0, int(time.monotonic() - self.test_start_time))
         self._stop_countdown()
+        self._stop_elapsed_tracking()
         self.remaining_seconds = 0
         self._set_status_ready()
         for widget in self.main_content.winfo_children():
@@ -2194,6 +2283,7 @@ Başarılar dilerim! 🌟
 
     def next_question(self):
         """Sonraki soruya geçer"""
+        self._store_current_question_time()
         if self._next_timer:
             self.root.after_cancel(self._next_timer)
             self._next_timer = None
@@ -2202,6 +2292,7 @@ Başarılar dilerim! 🌟
     
     def previous_question(self):
         """Önceki soruya döner"""
+        self._store_current_question_time()
         if self._next_timer:
             self.root.after_cancel(self._next_timer)
             self._next_timer = None
@@ -2212,7 +2303,11 @@ Başarılar dilerim! 🌟
     def show_results(self):
         self.current_view = "results"
         """Sonuçları gösterir"""
+        self._store_current_question_time()
+        if self.test_start_time is not None:
+            self.total_elapsed_seconds = max(0, int(time.monotonic() - self.test_start_time))
         self._stop_countdown()
+        self._stop_elapsed_tracking()
         self.remaining_seconds = 0
         self._set_status_ready()
         # Clear main content
@@ -2269,6 +2364,10 @@ Başarılar dilerim! 🌟
         tk.Label(score_frame, text=f"Başarı Oranı: %{percentage:.1f}", 
                 font=self.fonts['header'], bg=self.colors['primary'], fg=self.colors['text']).pack(pady=(0, 20))
         
+        tk.Label(score_frame,
+                 text=f"Toplam Süre: {self._format_seconds(self.total_elapsed_seconds)}",
+                 font=self.fonts['small'], bg=self.colors['primary'], fg=self.colors['text_secondary']).pack(pady=(0, 10))
+
         # Message
         if percentage >= 80:
             message = "🎉 MÜKEMMEL! ÇOK BAŞARILI!"
@@ -2317,7 +2416,8 @@ Başarılar dilerim! 🌟
                 'status': status,
                 'is_correct': is_correct,
                 'selected': selected_txt,
-                'correct': correct_txt
+                'correct': correct_txt,
+                'elapsed': self.question_times.get(self._question_key(q), 0)
             })
 
         # List questions
@@ -2341,6 +2441,10 @@ Başarılar dilerim! 🌟
                 detail_text = f"Sizin: {data['selected'][:30]}... | Doğru: {data['correct'][:30]}..."
                 tk.Label(q_frame, text=detail_text, font=('Segoe UI', 8), 
                         bg=row_bg, fg=self.colors['text_secondary']).pack(side=tk.RIGHT, padx=20)
+                tk.Label(q_frame,
+                         text=f"Süre: {self._format_seconds(data['elapsed'])}",
+                         font=('Segoe UI', 8), bg=row_bg,
+                         fg=self.colors['text_secondary']).pack(side=tk.RIGHT, padx=(0, 10))
         
         # Buttons
         button_frame = tk.Frame(content_frame, bg=self.colors['card'])
