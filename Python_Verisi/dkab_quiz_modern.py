@@ -35,6 +35,8 @@ class ModernDKABQuiz:
         self.subjects = []
         self.available_subjects = ["DKAB", "IHL"]
         self._next_timer = None
+        self.settings_file = os.path.join(os.path.dirname(__file__), "dkab_quiz_settings.json")
+        self.persisted_settings = self.load_persisted_settings()
 
         self.theme_palettes = {
             "Gece Lacivert": {
@@ -86,7 +88,7 @@ class ModernDKABQuiz:
                 'border': '#cbd5e1'
             }
         }
-        self.current_theme = "Gece Lacivert"
+        self.current_theme = self.persisted_settings.get("theme", "Gece Lacivert")
         self.colors = self.theme_palettes[self.current_theme].copy()
         self.root.configure(bg=self.colors['bg'])
 
@@ -101,6 +103,80 @@ class ModernDKABQuiz:
         }
 
         self.setup_ui()
+
+    def load_persisted_settings(self):
+        """Kaydedilen ayarlari diskten okur."""
+        defaults = {
+            "theme": "Gece Lacivert",
+            "year": "Tüm yıllar",
+            "ders": "DKAB",
+            "mode": "Anında Cevap",
+            "order": "Rastgele",
+            "num": "10",
+            "goto_year": "2019",
+            "goto_ders": "DKAB",
+            "goto_q": "1",
+        }
+        try:
+            if os.path.exists(self.settings_file):
+                with open(self.settings_file, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                if isinstance(data, dict):
+                    defaults.update({k: str(v) for k, v in data.items() if v is not None})
+        except Exception:
+            pass
+        return defaults
+
+    def save_persisted_settings(self):
+        """Mevcut ayarlari diske yazar."""
+        if not hasattr(self, "theme_var"):
+            return
+
+        data = {
+            "theme": self.theme_var.get(),
+            "year": self.year_var.get(),
+            "ders": self.ders_var.get(),
+            "mode": self.mode_var.get(),
+            "order": self.order_var.get(),
+            "num": self.num_var.get(),
+            "goto_year": self.goto_year_var.get(),
+            "goto_ders": self.goto_ders_var.get(),
+            "goto_q": self.goto_q_var.get(),
+        }
+        self.persisted_settings.update(data)
+        try:
+            with open(self.settings_file, "w", encoding="utf-8") as f:
+                json.dump(self.persisted_settings, f, ensure_ascii=False, indent=2)
+        except Exception:
+            pass
+
+    def bind_settings_persistence(self):
+        """Ayar degisikliklerini otomatik kaydeder."""
+        vars_to_watch = [
+            self.theme_var,
+            self.year_var,
+            self.ders_var,
+            self.mode_var,
+            self.order_var,
+            self.num_var,
+            self.goto_year_var,
+            self.goto_ders_var,
+            self.goto_q_var,
+        ]
+        for var in vars_to_watch:
+            var.trace_add("write", lambda *_: self.save_persisted_settings())
+
+    def apply_persisted_settings(self):
+        """Kaydedilen ayarlari arayuze uygular."""
+        self.theme_var.set(self.persisted_settings.get("theme", self.current_theme))
+        self.year_var.set(self.persisted_settings.get("year", "Tüm yıllar"))
+        self.ders_var.set(self.persisted_settings.get("ders", "DKAB"))
+        self.mode_var.set(self.persisted_settings.get("mode", "Anında Cevap"))
+        self.order_var.set(self.persisted_settings.get("order", "Rastgele"))
+        self.num_var.set(self.persisted_settings.get("num", "10"))
+        self.goto_year_var.set(self.persisted_settings.get("goto_year", "2019"))
+        self.goto_ders_var.set(self.persisted_settings.get("goto_ders", "DKAB"))
+        self.goto_q_var.set(self.persisted_settings.get("goto_q", "1"))
 
     def setup_ttk_styles(self):
         """ttk bilesenlerini aktif temaya gore stillendirir."""
@@ -154,6 +230,10 @@ class ModernDKABQuiz:
 
         self.create_sidebar(content_frame)
         self.create_main_content(content_frame)
+        self.apply_persisted_settings()
+        self.bind_settings_persistence()
+        self.update_question_limit()
+        self._update_goto_question_list()
         self.show_welcome_screen()
 
     def rebuild_ui(self):
@@ -165,6 +245,7 @@ class ModernDKABQuiz:
             'num': getattr(self, 'num_var', None).get() if hasattr(self, 'num_var') else '10',
             'ders': getattr(self, 'ders_var', None).get() if hasattr(self, 'ders_var') else 'DKAB',
             'goto_year': getattr(self, 'goto_year_var', None).get() if hasattr(self, 'goto_year_var') else '2019',
+            'goto_ders': getattr(self, 'goto_ders_var', None).get() if hasattr(self, 'goto_ders_var') else 'DKAB',
             'goto_q': getattr(self, 'goto_q_var', None).get() if hasattr(self, 'goto_q_var') else '1',
         }
 
@@ -179,6 +260,7 @@ class ModernDKABQuiz:
         self.order_var.set(saved['order'])
         self.num_var.set(saved['num'])
         self.goto_year_var.set(saved['goto_year'])
+        self.goto_ders_var.set(saved['goto_ders'])
         self.goto_q_var.set(saved['goto_q'])
         self.update_question_limit()
         self._update_goto_question_list()
