@@ -32,6 +32,7 @@ class ModernDKABQuiz:
         self.test_history = []
         self.current_view = "welcome"
         self.current_specific_question = None
+        self.subjects = []
 
         self.theme_palettes = {
             "Gece Lacivert": {
@@ -160,6 +161,7 @@ class ModernDKABQuiz:
             'mode': getattr(self, 'mode_var', None).get() if hasattr(self, 'mode_var') else 'Aninda Cevap',
             'order': getattr(self, 'order_var', None).get() if hasattr(self, 'order_var') else 'Rastgele',
             'num': getattr(self, 'num_var', None).get() if hasattr(self, 'num_var') else '10',
+            'ders': getattr(self, 'ders_var', None).get() if hasattr(self, 'ders_var') else 'Hepsi',
             'goto_year': getattr(self, 'goto_year_var', None).get() if hasattr(self, 'goto_year_var') else '2019',
             'goto_q': getattr(self, 'goto_q_var', None).get() if hasattr(self, 'goto_q_var') else '1',
         }
@@ -170,6 +172,7 @@ class ModernDKABQuiz:
         self.setup_ui()
 
         self.year_var.set(saved['year'])
+        self.ders_var.set(saved['ders'])
         self.mode_var.set(saved['mode'])
         self.order_var.set(saved['order'])
         self.num_var.set(saved['num'])
@@ -258,6 +261,16 @@ class ModernDKABQuiz:
                                        values=years, state="readonly", width=14, style='Modern.TCombobox')
         self.year_combo.pack(padx=5, pady=0, fill=tk.X)
         self.year_combo.bind("<<ComboboxSelected>>", self.update_question_limit)
+
+        # Subject selection
+        tk.Label(settings_card, text="Ders:", font=('Segoe UI', 8),
+                fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
+
+        self.ders_var = tk.StringVar(value="Hepsi")
+        self.ders_combo = ttk.Combobox(settings_card, textvariable=self.ders_var,
+                                       values=["Hepsi"], state="readonly", width=14, style='Modern.TCombobox')
+        self.ders_combo.pack(padx=5, pady=0, fill=tk.X)
+        self.ders_combo.bind("<<ComboboxSelected>>", self.update_question_limit)
         
         # Test mode selection
         tk.Label(settings_card, text="Mod:", font=('Segoe UI', 8), 
@@ -454,21 +467,35 @@ Başarılar dilerim! 🌟
         """Soruları yükler"""
         def load_in_background():
             try:
+                import re
                 base_path = r"C:\Users\osman\Desktop\OSYM\Worde_Yapistir"
                 loaded_questions = []
+                unique_subjects = set()
+                found_years = set()
                 
-                for year in range(2013, 2026):
-                    file_path = os.path.join(base_path, f"{year}_DKAB_Sorulari.txt")
-                    if os.path.exists(file_path):
-                        year_questions = self.parse_questions_from_file(file_path, year)
-                        loaded_questions.extend(year_questions)
-                        print(f"{year} yılından {len(year_questions)} soru yüklendi")
+                if os.path.exists(base_path):
+                    for filename in os.listdir(base_path):
+                        match = re.search(r"(\d{4})_(.+)_Sorulari\.txt", filename)
+                        if match:
+                            year = int(match.group(1))
+                            subject = match.group(2)
+                            file_path = os.path.join(base_path, filename)
+                            year_questions = self.parse_questions_from_file(file_path, year, subject)
+                            loaded_questions.extend(year_questions)
+                            found_years.add(str(year))
+                            unique_subjects.add(subject)
+                            print(f"{year} {subject} sınavından {len(year_questions)} soru yüklendi")
                 
                 self.questions = loaded_questions
-                self.update_stats()
-                self.root.after(0, self.update_question_limit)
+                self.subjects = sorted(list(unique_subjects))
                 
-                # Update UI in main thread
+                # Update UI elements
+                years_list = ["Tüm yıllar"] + sorted(list(found_years), reverse=True)
+                ders_list = ["Hepsi"] + self.subjects
+                
+                self.root.after(0, lambda: self.update_dropdown_values(years_list, ders_list))
+                self.root.after(0, self.update_stats)
+                self.root.after(0, self.update_question_limit)
                 self.root.after(0, self.questions_loaded_successfully)
                 
             except Exception as e:
@@ -484,8 +511,14 @@ Başarılar dilerim! 🌟
         self.status_label.config(text="🟢 Hazır", fg=self.colors['success'])
         messagebox.showinfo("Başarılı", f"Toplam {len(self.questions)} soru yüklendi!")
         
-    def parse_questions_from_file(self, file_path: str, year: int) -> List[Dict]:
-        """Dosyadan sorular? parse eder"""
+    def update_dropdown_values(self, years, dersler):
+        """Dropdown değerlerini günceller."""
+        self.year_combo['values'] = years
+        self.ders_combo['values'] = dersler
+        self.goto_year_combo['values'] = sorted([y for y in years if y != "Tüm yıllar"], reverse=True)
+
+    def parse_questions_from_file(self, file_path: str, year: int, subject: str = "DKAB") -> List[Dict]:
+        """Dosyadan soruları parse eder"""
         questions = []
         
         try:
@@ -500,7 +533,7 @@ Başarılar dilerim! 🌟
             
             for block in soru_blocks:
                 if 'Soru ' in block and ('Doğru Cevap:' in block or 'Dogru Cevap:' in block or 'DoÄŸru Cevap:' in block or 'Do?ru Cevap:' in block or 'Do??ru Cevap:' in block):
-                    question = self.parse_single_question(block, year)
+                    question = self.parse_single_question(block, year, subject)
                     if question:
                         questions.append(question)
                         
@@ -509,7 +542,7 @@ Başarılar dilerim! 🌟
             
         return questions
 
-    def parse_single_question(self, text: str, year: int) -> Dict:
+    def parse_single_question(self, text: str, year: int, subject: str = "DKAB") -> Dict:
         """Tek soruyu parse eder"""
         try:
             lines = text.strip().split('\n')
@@ -527,7 +560,11 @@ Başarılar dilerim! 🌟
                 line = lines[i].strip()
                 
                 if line.startswith('Soru ') and ':' in line:
-                    soru_no = int(line.split()[1].replace(':', ''))
+                    soru_no_str = line.split()[1].replace(':', '')
+                    try:
+                        soru_no = int(soru_no_str)
+                    except ValueError:
+                        soru_no = None
                 elif line and not line.startswith('A)') and not line.startswith('B)') and not line.startswith('C)') and not line.startswith('D)') and not line.startswith('E)') and not line.startswith('Doğru Cevap:') and not line.startswith('Dogru Cevap:') and not line.startswith('DoÄŸru Cevap:') and not line.startswith('Do?ru Cevap:') and not line.startswith('Do??ru Cevap:') and not line.startswith('Açıklama:') and not line.startswith('Aciklama:') and not line.startswith('AÃ§Ä±klama:') and not line.startswith('A??klama:') and not line.startswith('A????klama:') and not line.startswith('Görsel') and not line.startswith('Gorsel') and not line.startswith('GÃ¶rsel') and not line.startswith('G?rsel') and not line.startswith('G??rsel') and not line.startswith('Dosya:') and not line.startswith('Konum:') and soru_no and not line.startswith('KONU:') and not line.startswith('YIL:') and not line.startswith('DERS:'):
                     soru_metni.append(line)
                 elif line.startswith('A)'):
@@ -546,23 +583,16 @@ Başarılar dilerim! 🌟
                     aciklama = line.split(':', 1)[1].strip()
                 elif 'Görsel Notu:' in line or 'Gorsel Notu:' in line or 'GÃ¶rsel Notu:' in line or 'G?rsel Notu:' in line or 'G??rsel Notu:' in line or 'Görsel dosyası:' in line or 'Gorsel dosyasi:' in line or 'GÃ¶rsel dosyasÄ±:' in line or 'G?rsel dosyas?:' in line or 'G??rsel dosyas??:' in line or 'Dosya:' in line:
                     gorsel_var = True
-                    if 'Görsel dosyası:' in line:
-                        dosya_adi = line.split('Görsel dosyası:')[1].strip()
-                        gorsel_dosyalari.append(f"C:\\Users\\osman\\Desktop\\OSYM\\Gorseller\\{year}\\{dosya_adi}")
-                    elif 'GÃ¶rsel dosyasÄ±:' in line:
-                        dosya_adi = line.split('GÃ¶rsel dosyasÄ±:')[1].strip()
-                        gorsel_dosyalari.append(f"C:\\Users\\osman\\Desktop\\OSYM\\Gorseller\\{year}\\{dosya_adi}")
-                    elif 'G?rsel dosyas?:' in line:
-                        dosya_adi = line.split('G?rsel dosyas?:')[1].strip()
-                        gorsel_dosyalari.append(f"C:\\Users\\osman\\Desktop\\OSYM\\Gorseller\\{year}\\{dosya_adi}")
-                    elif 'Gorsel dosyasi:' in line:
-                        dosya_adi = line.split('Gorsel dosyasi:')[1].strip()
-                        gorsel_dosyalari.append(f"C:\\Users\\osman\\Desktop\\OSYM\\Gorseller\\{year}\\{dosya_adi}")
-                    elif 'G??rsel dosyas??:' in line:
-                        dosya_adi = line.split('G??rsel dosyas??:')[1].strip()
-                        gorsel_dosyalari.append(f"C:\\Users\\osman\\Desktop\\OSYM\\Gorseller\\{year}\\{dosya_adi}")
-                    elif 'Dosya:' in line:
-                        dosya_adi = line.split('Dosya:')[1].strip()
+                    # Look globally in lines or just this line if it's there
+                    dosya_adi = ""
+                    if 'Görsel dosyası:' in line: dosya_adi = line.split('Görsel dosyası:')[1].strip()
+                    elif 'GÃ¶rsel dosyasÄ±:' in line: dosya_adi = line.split('GÃ¶rsel dosyasÄ±:')[1].strip()
+                    elif 'G?rsel dosyas?:' in line: dosya_adi = line.split('G?rsel dosyas?:')[1].strip()
+                    elif 'Gorsel dosyasi:' in line: dosya_adi = line.split('Gorsel dosyasi:')[1].strip()
+                    elif 'G??rsel dosyas??:' in line: dosya_adi = line.split('G??rsel dosyas??:')[1].strip()
+                    elif 'Dosya:' in line: dosya_adi = line.split('Dosya:')[1].strip()
+                    
+                    if dosya_adi:
                         gorsel_dosyalari.append(f"C:\\Users\\osman\\Desktop\\OSYM\\Gorseller\\{year}\\{dosya_adi}")
                 
                 i += 1
@@ -570,8 +600,8 @@ Başarılar dilerim! 🌟
             if soru_no and len(options) >= 2 and dogru_cevap:
                 return {
                     "yil": year,
-                    "ders": "DKAB",
-                    "konu": "DKAB",
+                    "ders": subject,
+                    "konu": subject,
                     "soru_no": soru_no,
                     "soru_metni": '\n'.join(soru_metni).strip(),
                     "siklar": options,
@@ -587,26 +617,28 @@ Başarılar dilerim! 🌟
             
         return None
 
-    def get_question_limit_for_year(self, selected_year):
-        """Yila veya tum yillara gore maksimum soru sayisini doner."""
-        if selected_year == "Tüm yıllar":
-            return 75
-
+    def get_question_limit_for_year(self, selected_year, selected_ders):
+        """Yıla ve derse göre maksimum soru sayısını döner."""
         if self.questions:
-            try:
-                year = int(selected_year)
-                year_count = len([q for q in self.questions if q['yil'] == year])
-                if year_count > 0:
-                    return year_count
-            except Exception:
-                pass
-
+            qs = self.questions
+            if selected_year != "Tüm yıllar":
+                try:
+                    year = int(selected_year)
+                    qs = [q for q in qs if q['yil'] == year]
+                except Exception:
+                    pass
+            
+            if selected_ders != "Hepsi":
+                qs = [q for q in qs if q['ders'] == selected_ders]
+            
+            return len(qs) if qs else 75
         return 75
 
     def update_question_limit(self, event=None):
-        """Secilen yila gore soru limitini gunceller."""
+        """Seçilen yıla göre soru limitini günceller."""
         selected_year = self.year_var.get()
-        max_questions = self.get_question_limit_for_year(selected_year)
+        selected_ders = self.ders_var.get()
+        max_questions = self.get_question_limit_for_year(selected_year, selected_ders)
         self.num_spinbox.config(to=max_questions)
 
         try:
@@ -630,18 +662,18 @@ Başarılar dilerim! 🌟
         
         year_dist = {}
         for q in self.questions:
-            year = q['yil']
-            year_dist[year] = year_dist.get(year, 0) + 1
+            key = f"{q['yil']} {q['ders']}"
+            year_dist[key] = year_dist.get(key, 0) + 1
         
         self.stats_text.config(state=tk.NORMAL)
         self.stats_text.delete(1.0, tk.END)
         
         stats_text = f"📊 TOPLAM SORU: {len(self.questions)}\n\n"
-        stats_text += "📅 Yıllara göre dağılım:\n"
+        stats_text += "📅 Sınav bazlı dağılım:\n"
         stats_text += "-" * 30 + "\n"
         
-        for year in sorted(year_dist.keys()):
-            stats_text += f"  {year}: {year_dist[year]} soru\n"
+        for key in sorted(year_dist.keys(), reverse=True):
+            stats_text += f"  {key}: {year_dist[key]} soru\n"
         
         stats_text += "\n" + "=" * 30 + "\n"
         stats_text += f"🎯 Hazır: {len(self.questions)} soru"
@@ -658,7 +690,8 @@ Başarılar dilerim! 🌟
         try:
             num_questions = int(self.num_var.get())
             selected_year = self.year_var.get()
-            max_questions = self.get_question_limit_for_year(selected_year)
+            selected_ders = self.ders_var.get()
+            max_questions = self.get_question_limit_for_year(selected_year, selected_ders)
             if num_questions < 1 or num_questions > max_questions:
                 messagebox.showwarning("Uyarı", f"Soru sayısı 1-{max_questions} arasında olmalı!")
                 return
@@ -666,16 +699,21 @@ Başarılar dilerim! 🌟
             messagebox.showwarning("Uyarı", "Geçerli bir soru sayısı girin!")
             return
         
-        # Filter questions by year if selected
+        # Filter questions by year and subject if selected
         available_questions = self.questions
         selected_year = self.year_var.get()
+        selected_ders = self.ders_var.get()
         
         if selected_year != "Tüm yıllar":
             year = int(selected_year)
-            available_questions = [q for q in self.questions if q['yil'] == year]
-            if not available_questions:
-                messagebox.showwarning("Uyarı", f"{year} yılı için soru bulunamadı!")
-                return
+            available_questions = [q for q in available_questions if q['yil'] == year]
+        
+        if selected_ders != "Hepsi":
+            available_questions = [q for q in available_questions if q['ders'] == selected_ders]
+            
+        if not available_questions:
+            messagebox.showwarning("Uyarı", "Seçilen kriterlere uygun soru bulunamadı!")
+            return
         
         if len(available_questions) < num_questions:
             num_questions = len(available_questions)
@@ -1179,6 +1217,9 @@ Başarılar dilerim! 🌟
         """Seçilen yıla göre mevcut soru numaralarını günceller"""
         try:
             year = int(self.goto_year_var.get())
+            # For specific question lookup, we should probably check all subjects for that year 
+            # or add a subject selector to goto card as well.
+            # For simplicity, we'll list all question numbers for that year across all subjects.
             nums = sorted(set(q['soru_no'] for q in self.questions if q['yil'] == year))
             values = [str(n) for n in nums] if nums else [str(i) for i in range(1, 76)]
             self.goto_q_combo['values'] = values
@@ -1359,8 +1400,8 @@ Başarılar dilerim! 🌟
             acik_text.insert(tk.END, question['aciklama'])
             acik_text.config(state=tk.DISABLED)
 
-        # --- Komşu soru butonları ---
-        year_qs = sorted([q for q in self.questions if q['yil'] == question['yil']],
+        # --- Komşu soru butonları (aynı ders içinde) ---
+        year_qs = sorted([q for q in self.questions if q['yil'] == question['yil'] and q['ders'] == question['ders']],
                          key=lambda q: q['soru_no'])
         idx = next((i for i, q in enumerate(year_qs) if q['soru_no'] == question['soru_no']), None)
 
