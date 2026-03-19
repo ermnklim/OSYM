@@ -2302,7 +2302,7 @@ Başarılar dilerim! 🌟
     
     def show_results(self):
         self.current_view = "results"
-        """Sonu?lar? g?sterir - show_review_screen ile ayn? stil"""
+        """Sonuçları gösterir - show_review_screen ile aynı stil"""
         self._store_current_question_time()
         if self.test_start_time is not None:
             self.total_elapsed_seconds = max(0, int(time.monotonic() - self.test_start_time))
@@ -2314,7 +2314,7 @@ Başarılar dilerim! 🌟
         for widget in self.main_content.winfo_children():
             widget.destroy()
 
-        results_card = self.create_card(self.main_content, "?? TEST DE?ERLEND?RME")
+        results_card = self.create_card(self.main_content, "📋 TEST DEĞERLENDİRME")
         results_card.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
 
         content_frame = tk.Frame(results_card, bg=self.colors['card'])
@@ -2345,7 +2345,7 @@ Başarılar dilerim! 🌟
 
         tk.Label(
             score_frame,
-            text=f"Toplam S?re: {self._format_seconds(self.total_elapsed_seconds)}",
+            text=f"Toplam Süre: {self._format_seconds(self.total_elapsed_seconds)}",
             font=self.fonts['small'],
             bg=self.colors['primary'],
             fg=self.colors['text_secondary']
@@ -2364,10 +2364,10 @@ Başarılar dilerim! 🌟
         )
         review_text.pack(fill=tk.BOTH, expand=True, pady=(0, 15))
 
-        review_content = "SORU DE?ERLEND?RMES?:\n" + "=" * 50 + "\n\n"
+        review_content = "SORU DEĞERLENDİRMESİ:\n" + "=" * 50 + "\n\n"
 
         for i, q in enumerate(self.quiz_questions, 1):
-            status = "??aretlenmedi"
+            status = "İşaretlenmedi"
             selected_txt = "N/A"
             correct_txt = q['siklar'].get(q['dogru_cevap'], 'N/A')
             is_correct = False
@@ -2381,7 +2381,7 @@ Başarılar dilerim! 🌟
                 ):
                     selected_txt = q['siklar'].get(item['selected'], 'N/A')
                     is_correct = (item['selected'] == q['dogru_cevap'])
-                    status = "? DO?RU" if is_correct else "? YANLI?"
+                    status = "✅ DOĞRU" if is_correct else "❌ YANLIŞ"
                     break
 
             konu_display = (
@@ -2390,16 +2390,16 @@ Başarılar dilerim! 🌟
             )
 
             review_content += (
-                f"Soru {i} (S?nav: {q['ders']}, Y?l: {q['yil']}, "
+                f"Soru {i} (Sınav: {q['ders']}, Yıl: {q['yil']}, "
                 f"No: {q['soru_no']}{konu_display}) - {status}\n"
             )
             review_content += f"Soru: {q['soru_metni'][:80]}...\n"
-            review_content += f"Sizin cevab?n?z: {selected_txt}\n"
-            review_content += f"Do?ru cevap: {correct_txt}\n"
-            review_content += f"S?re: {self._format_seconds(elapsed)}\n"
+            review_content += f"Sizin cevabınız: {selected_txt}\n"
+            review_content += f"Doğru cevap: {correct_txt}\n"
+            review_content += f"Süre: {self._format_seconds(elapsed)}\n"
 
             if not is_correct and q.get('aciklama'):
-                review_content += f"A??klama: {q['aciklama'][:100]}...\n"
+                review_content += f"Açıklama: {q['aciklama'][:100]}...\n"
 
             review_content += "-" * 50 + "\n\n"
 
@@ -2411,7 +2411,7 @@ Başarılar dilerim! 🌟
 
         new_test_btn = self.create_button(
             button_frame,
-            "?? YEN? TEST",
+            "🔄 YENİ TEST",
             self.new_test,
             self.colors['success']
         )
@@ -2419,7 +2419,7 @@ Başarılar dilerim! 🌟
 
         menu_btn = self.create_button(
             button_frame,
-            "?? ANA MEN?",
+            "🏠 ANA MENÜ",
             self.show_welcome_screen,
             self.colors['text_secondary']
         )
