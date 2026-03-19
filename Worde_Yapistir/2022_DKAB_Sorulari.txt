@@ -15,8 +15,6 @@ E) بُنْيَانٌ
 
 Doğru Cevap: E
 
-Açıklama: "Bunyan" kelimesinde nun-ı sakin ile ya harfi aynı kelime içinde yer alır. Bu durumda idgam değil, kelimenin aslını korumak için izhar uygulanır (Bu kurala İzhar-ı Mutlak denir).
-
 ---SONRAKI SORU---
 Soru 2:
 Kur'an-i Kerim tilaveti sirasinda mana acisindan vakfetmenin gerekli veya isabetsiz oldugu yerleri belirtmek uzere konan isaretlere "secavend" denir. Secavend, vakif yerlerini tespit edip bu konuda "Ilelu'l-Vukuf" adli eseri yazan Salih'e nispetle verilmis bir isimdir.
@@ -27,7 +25,6 @@ C) Ebu'l-Esved ed-Dueli
 D) Muhammed b. Tayfur
 E) Haccac b. Yusuf
 Dogru Cevap: D
-Aciklama: Secavend adi, vakif isaretleriyle ilgili calismalariyla taninan Muhammed b. Tayfur es-Secavendi'ye nispet edilir.
 
 ---SONRAKI SORU---
 Soru 3:
@@ -44,7 +41,6 @@ C) II ve III
 D) II ve IV
 E) III ve IV
 Dogru Cevap: D
-Aciklama: Idgamda harfler arasindaki yakinlik veya benzerlik onemlidir. Bu iliskiyi gosteren kavramlar "mutekarib" ve "mutecanis"tir.
 
 ---SONRAKI SORU---
 Soru 4:
@@ -58,7 +54,6 @@ C) Munfasil - Lazim - Lin
 D) Ariz - Lazim - Munfasil
 E) Lazim - Muttasil - Lin
 Dogru Cevap: C
-Aciklama: Farkli kelimede gelen hemze munfasil meddi, sukun-i lazim meddi lazimi, fethadan sonra vav sakin gelmesi ise lin meddi ifade eder.
 
 ---SONRAKI SORU---
 Soru 5:
@@ -70,7 +65,6 @@ C) Taberi
 D) Maturidi
 E) Ibn Ebi Hatim
 Dogru Cevap: C
-Aciklama: Bu ozellikler, rivayetleri senetleriyle aktarip ardindan tercih yapan Taberi'nin tefsir usulunu yansitmaktadir.
 
 ---SONRAKI SORU---
 Soru 6:
@@ -82,7 +76,6 @@ C) Isari
 D) Mevzui
 E) Ilmi
 Dogru Cevap: D
-Aciklama: Bir konuyu Kur'an'in butununde sistemli bicimde ele alan tefsir turu mevzui tefsirdir.
 
 ---SONRAKI SORU---
 Soru 7:
@@ -94,7 +87,6 @@ C) Esbab-i nuzul
 D) Munasebatul-Kur'an
 E) Muskilul-Kur'an
 Dogru Cevap: B
-Aciklama: Parçada mubhemat, esbab-i nuzul, munasebat ve muskil konularina deginilirken yeminler konusu olan Aksamul-Kur'an'a deginilmemistir.
 
 ---SONRAKI SORU---
 Soru 8:
@@ -106,7 +98,6 @@ C) Nasih ve mensuh
 D) Muskilul-Kur'an
 E) Garibul-Kur'an
 Dogru Cevap: E
-Aciklama: Kur'an'da gecen anlami az bilinen, kokeni tartisilan veya aciklanmaya ihtiyac duyan kelimeler Garibul-Kur'an kapsaminda incelenir.
 
 ---SONRAKI SORU---
 Soru 9:
@@ -118,7 +109,6 @@ C) Garibul-Kur'an
 D) Emsalul-Kur'an
 E) Kasasul-Kur'an
 Dogru Cevap: B
-Aciklama: Kur'an'in benzerinin getirilememesi, ustun uslubu ve mucize olusu Icazul-Kur'an konusudur.
 
 ---SONRAKI SORU---
 Soru 10:
@@ -130,7 +120,6 @@ C) Tesbit
 D) Tehzib
 E) Serh
 Dogru Cevap: C
-Aciklama: Hadislerin sahabilerden ve tabiinden toplanip hafizada korunarak rivayet edildigi ilk donem, tesbit donemi olarak adlandirilir.
 
 ---SONRAKI SORU---
 Soru 11:
@@ -142,7 +131,6 @@ C) Mahfuz
 D) Maruf
 E) Muhkem
 Dogru Cevap: E
-Aciklama: Anlami acik olan, yoruma veya celiskiyi gidermeye ihtiyac gostermeyen hadisler muhkem hadis olarak isimlendirilir.
 
 ---SONRAKI SORU---
 Soru 12:
@@ -156,7 +144,6 @@ C) Bidatu'r-ravi
 D) Ittihamu'r-ravi bi'l-kizb
 E) Cehaletu'r-ravi
 Dogru Cevap: A
-Aciklama: Ravinin isim, sened veya metinde yanilmasi ve yanlis nakilde bulunmasi "vehm" olarak adlandirilir.
 
 ---SONRAKI SORU---
 Soru 13:
@@ -168,7 +155,6 @@ C) Ricalul-hadis
 D) Muhteliful-hadis
 E) Esbabu vurudi'l-hadis
 Dogru Cevap: E
-Aciklama: Parçada garibul-hadis, illetul-hadis, ricalul-hadis ve muhteliful-hadis alanlarina deginilirken esbabu vurudi'l-hadis yer almamistir.
 
 ---SONRAKI SORU---
 Soru 14:
@@ -180,7 +166,6 @@ C) Sahih li-gayrihi
 D) Hukmen maruf
 E) Hasen li-zatihi
 Dogru Cevap: C
-Aciklama: Tek basina sahih seviyesinde olmayan bir rivayetin baska guclu tariklerle desteklenerek sahih seviyesine cikmasi sahih li-gayrihi olarak adlandirilir.
 
 ---SONRAKI SORU---
 Soru 15:
@@ -192,7 +177,6 @@ C) Cift yonlu bir yaptirima sahip olmasi
 D) Meseleci bir yontemle olusturulmasi
 E) Hukumlerinin asamali olarak ortaya konmus olmasi
 Dogru Cevap: C
-Aciklama: Islam hukukunda yaptirimlar hem dunyevi hem uhrevi nitelik tasiyabilir. Bu durum cift yonlu yaptirim ozelligini gosterir.
 
 ---SONRAKI SORU---
 Soru 16:
@@ -204,7 +188,6 @@ C) Hanbeli
 D) Hanefi
 E) Zahiri
 Dogru Cevap: D
-Aciklama: Hanefi mezhebi madenleri bu sekilde siniflandirir ve eritilmeye elverisli olmayan veya sivi haldeki bazilarini zekata tabi gormez.
 
 ---SONRAKI SORU---
 Soru 17:
@@ -216,7 +199,6 @@ C) Istisnab
 D) Orf
 E) Icma
 Dogru Cevap: E
-Aciklama: Ummetin bir meselede ortak goruste bulusmasini huccet kabul eden delil icmadir.
 
 ---SONRAKI SORU---
 Soru 18:
@@ -228,7 +210,6 @@ C) Nas sebebiyle
 D) Orf sebebiyle
 E) Kapali kiyas sebebiyle
 Dogru Cevap: A
-Aciklama: Genel kurala gore dogacak zorlugu gidermek ve ihtiyaci karsilamak icin verilen bu hukum, zaruret ve ihtiyac sebebiyle istihsana ornektir.
 
 ---SONRAKI SORU---
 Soru 19:
@@ -240,7 +221,6 @@ C) Fatiha'yi okumak
 D) Farzlar arasinda siraya uymak
 E) Tadil-i erkana riayet etmek
 Dogru Cevap: A
-Aciklama: Rukuda tesbih getirmek namazin farzlarindan sayilmamistir. Diger seceneklerde mezhepler arasinda farkli degerlendirmeler bulunur.
 
 ---SONRAKI SORU---
 Soru 20:
@@ -256,7 +236,6 @@ C) II ve III
 D) II ve IV
 E) III ve IV
 Dogru Cevap: C
-Aciklama: Hanefilere gore Ramazan orucunda kasten yeme icme ve cinsel iliski kefareti gerektirir. Yanilarak iftar etmek veya basta hic niyet etmemek ayni kapsamda degerlendirilmez.
 
 ---SONRAKI SORU---
 Soru 21:
@@ -268,7 +247,6 @@ C) Bir yilin sonunda elinde kalan 350 bin TL uzerinden zekat verir.
 D) Bir yil boyunca elinde duran 150 bin TL uzerinden zekat verir.
 E) Sene basinda elinde olan 300 bin TL uzerinden zekat verir.
 Dogru Cevap: C
-Aciklama: Sorudaki verilere gore zekata tabi malin esasini elde bulunan nakit olusturmaktadir. Binek araba zekata tabi degildir; bu soruda dogru secenek, yil sonunda elde kalan 350 bin TL uzerinden zekat verilmesidir.
 
 ---SONRAKI SORU---
 Soru 22:
@@ -280,7 +258,6 @@ C) Sabiilik
 D) Zeydiyye
 E) Nusayrilik
 Dogru Cevap: A
-Aciklama: Kelam kaynaklarinda nubuvveti aklen gerekli gormeyen ve bu yonde gorusler ileri suren grup Berahime olarak anilir.
 
 ---SONRAKI SORU---
 Soru 23:
@@ -292,7 +269,6 @@ C) Aslah
 D) Tevlid
 E) Ahval
 Dogru Cevap: B
-Aciklama: Bir seyin sonradan var olmadigi, onceden gizli halde bulunup ortaya ciktigi anlayisi kumun kavramiyla ifade edilir.
 
 ---SONRAKI SORU---
 Soru 24:
@@ -304,7 +280,6 @@ C) Namutenahi
 D) Kemal
 E) Ihtira
 Dogru Cevap: E
-Aciklama: Evren ve canlilardaki sanat, duzen ve uygunluktan hareketle yaraticiya ulasan delil ihtira delilidir.
 
 ---SONRAKI SORU---
 Soru 25:
@@ -316,7 +291,6 @@ C) Ikrar
 D) Inzar
 E) Ivaz
 Dogru Cevap: A
-Aciklama: Buyuk gunah isleyenin hukumunun Allah'a birakilmasi ve amelin imanin asli unsurundan ayrilmasi yonundeki dusunce irca olarak adlandirilir.
 
 ---SONRAKI SORU---
 Soru 26:
@@ -328,7 +302,6 @@ C) Cuveyni
 D) Cehm b. Safvan
 E) 
 Dogru Cevap: D
-Aciklama: Cennet ve cehennemin ebediligi konusunda farkli yorumlar ileri suren ve bu gorusle anilan isim Cehm b. Safvan'dir.
 
 ---SONRAKI SORU---
 Soru 27:
@@ -339,7 +312,6 @@ C) Dogru dusunmenin ilke ve yontemlerini ogretmek
 D) Dogru yolu arayani irsat etmek ve inkarciyi susturmak
 E) Dinin ozunu ortaya koyarak ikna edici aciklamalarda bulunmak
 Dogru Cevap: C
-Aciklama: Dogru dusunmenin ilke ve yontemlerini ogretmek daha cok mantik ilminin amacidir; kelam ilminin dogrudan amaci degildir.
 
 ---SONRAKI SORU---
 Soru 28:
@@ -351,7 +323,6 @@ C) Murcie
 D) Mucessime
 E) Kaderiyye
 Dogru Cevap: E
-Aciklama: Insanin fiillerinde ozgur oldugunu ve kudret sahibi kilindigini vurgulayan erken donem grup Kaderiyye'dir.
 
 ---SONRAKI SORU---
 Soru 29:
@@ -363,7 +334,6 @@ C) Murcie
 D) Esariyye
 E) Cehmiyye
 Dogru Cevap: A
-Aciklama: Buyuk gunah isleyeni kufr-i nimet halinde goren, fakat onu dogrudan musrik saymayan yaklasim Ibaziyye'ye aittir.
 
 ---SONRAKI SORU---
 Soru 30:
@@ -375,7 +345,6 @@ C) Beda
 D) Mehdi
 E) Recat
 Dogru Cevap: D
-Aciklama: Hem Babilik hem Kadiyanilik gibi hareketlerin ortaya cikisinda mehdi inanci etkili olmustur.
 
 ---SONRAKI SORU---
 Soru 31:
@@ -390,7 +359,6 @@ C) I ve II
 D) I ve III
 E) II ve III
 Dogru Cevap: C
-Aciklama: Murcie ve Maturidiye, ameli imanin asli unsuru saymaz; buyuk gunah isleyen kisinin imandan cikmayacagini savunur.
 
 ---SONRAKI SORU---
 Soru 32:
@@ -402,7 +370,6 @@ C) Hamza b. Abdulmuttalib
 D) Ebu Leheb
 E) Zubeyr b. Abdulmuttalib
 Dogru Cevap: E
-Aciklama: Hilfu'l-Fudul toplulugunda Hasimogullarini Zubeyr b. Abdulmuttalib temsil etmistir.
 
 ---SONRAKI SORU---
 Soru 33:
@@ -418,7 +385,6 @@ C) II, IV, III, I
 D) III, I, IV, II
 E) III, IV, I, II
 Dogru Cevap: E
-Aciklama: Hz. Omer'in Musluman olmasi boykottan once, Hz. Hatice'nin vefati boykottan sonra, Isra ve Mirac ise onun ardindan gerceklesmistir.
 
 ---SONRAKI SORU---
 Soru 34:
@@ -429,7 +395,6 @@ C) Hudeybiye Antlasmasi ile Mekke'nin Fethi arasindaki surecte Islam'a girmistir
 D) Mute Savasi'nda gosterdigi basarilar sebebiyle Hz. Muhammed tarafindan "seyfullah" lakabi verilmistir.
 E) Komutan olarak girdigi Ecnadeyn Savasi'nda Bizans'a karsi buyuk bir zafer kazanmistir.
 Dogru Cevap: B
-Aciklama: Habesistan'a goc eden Muslumanlarin geri istenmesi icin gonderilen kisi Halid b. Velid degil, Amr b. As ile Abdullah b. Ebi Reb'a idi.
 
 ---SONRAKI SORU---
 Soru 35:
@@ -441,7 +406,6 @@ C) Valilerin cesitli uygulamalarindan duyulan rahatsizliklar
 D) Yasanan bolluktan sonra ortaya cikan ekonomik sikintilarin yol actigi toplumsal huzursuzluklar
 E) Haricilerin, kendileri gibi dusunmeyen Muslumanlara yaptigi baski ve saldirilar
 Dogru Cevap: A
-Aciklama: Arap irkciligina dayali dislayici yonetim anlayisi daha cok Emeviler donemiyle iliskilidir; Dort Halife Donemi'nin temel sorunlari arasinda sayilmaz.
 
 ---SONRAKI SORU---
 Soru 36:
@@ -453,7 +417,6 @@ C) Hayberliler
 D) Fedek Yahudileri
 E) Kurayzaogullari
 Dogru Cevap: B
-Aciklama: Hz. Muhammed'e suikast girisiminde bulunan ve Medine'den surgun edilen topluluk Nadiroglullari'dir.
 
 ---SONRAKI SORU---
 Soru 37:
@@ -465,7 +428,6 @@ C) Berberiler
 D) Kaysiler
 E) Farslilar
 Dogru Cevap: E
-Aciklama: Abbasiler doneminde ozellikle Fars kulturunun devlet ve kultur hayati uzerindeki etkisi artmistir.
 
 ---SONRAKI SORU---
 ---SONRAKI SORU---
