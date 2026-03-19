@@ -1,6 +1,24 @@
 DERS: DKAB
-KONU: İslam Tarihi, Hadis, Kur'an, Kelam, Fıkıh, Felsefe, Sanat, Din Sosyolojisi ve Öğretim
 YIL: 2015
+
+2015 DKAB ÖABT Soru Dağılımı
+Konu	Sorular
+Din Eğitimi	8 (39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50)
+Dinler Tarihi	6 (36, 37, 38)
+Din Psikolojisi	6 (29, 32, 33, 34, 35, 50)
+İslam Tarihi / Siyer	4 (1, 2, 3)
+Tefsir	4 (7, 8, 11, 12)
+Fıkıh	4 (17, 18, 19, 20)
+Hadis	3 (4, 5, 6)
+İslam Mezhepleri ve Akımları	3 (16, 27, 28)
+Kelam / Akaid	3 (13, 14, 15)
+İslam Kültür ve Medeniyeti	3 (24, 25, 26)
+Din Felsefesi	3 (39, 41, 42)
+İslam Felsefesi	2 (21, 22, 23)
+Din Sosyolojisi	2 (29, 30, 31)
+Kur'an-ı Kerim ve Tecvid	2 (9, 10)
+
+---SONRAKİ SORU---
 
 Soru 1:
 İslam öncesi Arap toplumuna, olumsuz bazı dini ve ahlaki özellikleri sebebiyle Cahiliye ismi verilmiştir. Bununla birlikte Hz. Muhammed'in, Cahiliye dönemi Araplarının kültürel yapısını ve değerlerini tamamen reddetmediği, İslam'ın temel hükümlerine aykırı olmayan bazı hususları kabul ettiği görülmektedir. Bu çerçevede İslam öncesi dönemde güzel kabul edilen bazı ahlaki davranışlar İslam'da da yaşatılmıştır.
