@@ -835,17 +835,20 @@ Doğru Cevap: B
 
 ---SONRAKI SORU---
 Soru 72:
-2018 Din Kulturu ve Ahlak Bilgisi Dersi (4-8. Siniflar) Ogretim Programi'nin "Programin Uygulanmasina/Kitap Yazimina Iliskin Ilke ve Aciklamalar" basligi altinda;
-* Ogrenciler, konularda gecen ayet ve hadisler ile unite sonlarinda yer alan sure ve dualari ezberlemeye zorlanmaz.
-* Din, vicdan ve dusunce ozgurlugunu zedeleyici yaklasim, tutum ve davranislardan uzak durulur. Bu baglamda ogrenciler dini duygu ve dusuncelerini aciklamaya, bilgi ve kultur sahibi olduklari dini pratikleri yerine getirmeye zorlanmaz.
-ifadeleri yer almaktadir.
-Buna gore din kulturu ve ahlak bilgisi dersiyle ilgili asagidaki yargilardan hangisine ulasilamaz?
-A) Isteyen ogrenciler ayet, hadis ve dualari ezberleyebilirler.
-B) Ogrenciler inandiklari dinin inanc ve kabullerini paylasabilirler.
-C) Uygulamaya dayali ogretim vazgecilmez bir unsurdur.
-D) Evrensel insan haklari standartlarini gozetmek onemsenmektedir.
-E) Farkli dini dusunce ve goruslere saygili bir tutum gelistirilmesi hedeflenmektedir.
-Dogru Cevap: B
+2018 Din Kültürü ve Ahlak Bilgisi Dersi (4-8. Sınıflar) Öğretim Programı'nın "Programın Uygulanmasına/Kitap Yazımına İlişkin İlke ve Açıklamalar" başlığı altında;
+* Öğrenciler; konularda geçen ayet ve hadisler ile ünite sonlarında yer alan sure ve duaları ezberlemeye zorlanmaz.
+* Din, vicdan ve düşünce özgürlüğünü zedeleyici yaklaşım, tutum ve davranışlardan uzak durulur. Bu bağlamda öğrenciler dinî duygu ve düşüncelerini açıklamaya, bilgi ve kültür sahibi oldukları dinî pratikleri yerine getirmeye zorlanmaz.
+ifadeleri yer almaktadır.
+
+Buna göre din kültürü ve ahlak bilgisi dersiyle ilgili aşağıdaki yargılardan hangisine ulaşılamaz?
+
+A) İsteyen öğrenciler ayet, hadis ve duaları ezberleyebilirler.
+B) Öğrenciler inandıkları dinin inanç ve kabullerini paylaşabilirler.
+C) Uygulamaya dayalı öğretim vazgeçilmez bir unsurdur.
+D) Evrensel insan hakları standartlarını gözetmek önemsenmektedir.
+E) Farklı dinî düşünce ve görüşlere saygılı bir tutum geliştirilmesi hedeflenmektedir.
+
+Doğru Cevap: C
 
 ---SONRAKI SORU---
 Soru 73:

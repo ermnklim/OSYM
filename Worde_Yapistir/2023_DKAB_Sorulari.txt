@@ -202,17 +202,17 @@ Açıklama:
 
 Soru 12:
 Ahmet, bir hadisin sıhhatini tespit etmek amacıyla senedde yer alan ravileri incelemek ister. Bunun için rical kitaplarında hadisin ravilerinin zabtına yönelik sorgulamaları gerçekleştirirken şu soruların cevaplarını arar:
-• Aşırı dikkatsiz veya dağınık birisi mi?
-• Güvenilir ravilere aykırı rivayette bulunmuş mu?
-• Çok fazla hata etmiş mi?
-• Hafızası zayıf mı?
+* Aşırı dikkatsiz veya dalgın birisi mi?
+* Güvenilir ravilere aykırı rivayette bulunmuş mu?
+* Çok fazla hata etmiş mi?
+* Hafızası zayıf mı?
 
-Bu parçada aşağıdaki kavramların hangisinden bahsedilmemektedir?
+Bu parçada aşağıdaki kavramların hangisinden <u>bahsedilmemektedir</u>?
 
-A) Muhalefetü’s-sikat
+A) Muhalefetü's-sikat
 B) Vehim
-C) Fartü’l-gafle
-D) Kesretü’l-galat
+C) Fartü'l-gafle
+D) Kesretü'l-galat
 E) Su-i hıfz
 
 Doğru Cevap: B
