@@ -498,6 +498,27 @@ class ModernDKABQuiz:
                                            self.open_specific_question, self.colors['accent'])
         self.goto_btn.pack(padx=5, pady=5, fill=tk.X, ipady=2)
         
+        # --- Analiz Kartı ---
+        analiz_card = self.create_card(sidebar, "📈 Analiz")
+        analiz_card.pack(fill=tk.X, padx=2, pady=2)
+        
+        tk.Label(analiz_card, text="Yıl/Konu Dağılımı:", font=('Segoe UI', 8),
+                fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
+        
+        self.analiz_combo = ttk.Combobox(analiz_card, values=["Özet", "Detaylı"],
+                                          state="readonly", width=14, style='Modern.TCombobox')
+        self.analiz_combo.pack(padx=5, pady=2, fill=tk.X)
+        self.analiz_combo.set("Özet")
+        
+        analiz_btn = self.create_button(analiz_card, "📊 ANALİZİ GÖSTER",
+                                        self.show_analysis, self.colors['primary'])
+        analiz_btn.pack(padx=5, pady=2, fill=tk.X, ipady=2)
+        
+        self.yeni_dosya_label = tk.Label(analiz_card, text="", font=('Segoe UI', 7),
+                                        fg=self.colors['warning'], bg=self.colors['card'],
+                                        wraplength=180)
+        self.yeni_dosya_label.pack(padx=5, pady=2, fill=tk.X)
+        
     def create_main_content(self, parent):
         """Ana içerik alanı oluşturur (Kaydırılabilir)"""
         self.main_container = tk.Frame(parent, bg=self.colors['card'])
@@ -615,6 +636,234 @@ Başarılar dilerim! 🌟
                                 font=self.fonts['body'], bg=self.colors['card'], 
                                 fg=self.colors['text'], justify=tk.LEFT)
         welcome_label.pack(expand=True, pady=30)
+        
+    def check_new_files(self):
+        """Yeni eklenen dosyaları kontrol eder"""
+        import re
+        import json
+        from datetime import datetime
+        
+        base_path = r"C:\Users\osman\Desktop\OSYM\Worde_Yapistir"
+        last_check_file = os.path.join(os.path.dirname(__file__), "last_check.json")
+        
+        try:
+            if os.path.exists(last_check_file):
+                with open(last_check_file, 'r', encoding='utf-8') as f:
+                    last_check = json.load(f)
+            else:
+                last_check = {"files": {}, "last_run": ""}
+        except:
+            last_check = {"files": {}, "last_run": ""}
+        
+        current_files = {}
+        new_files = []
+        
+        if os.path.exists(base_path):
+            for filename in os.listdir(base_path):
+                match = re.search(r"(\d{4})_(.+)_Sorulari\.txt", filename)
+                if match:
+                    file_path = os.path.join(base_path, filename)
+                    mod_time = os.path.getmtime(file_path)
+                    current_files[filename] = mod_time
+                    
+                    if filename not in last_check.get("files", {}):
+                        new_files.append(filename)
+                    elif last_check["files"].get(filename, 0) != mod_time:
+                        new_files.append(f"{filename} (güncellendi)")
+        
+        last_check["files"] = current_files
+        last_check["last_run"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        try:
+            with open(last_check_file, 'w', encoding='utf-8') as f:
+                json.dump(last_check, f, ensure_ascii=False, indent=2)
+        except:
+            pass
+        
+        return new_files
+        
+    def show_analysis(self):
+        """Analiz ekranını gösterir"""
+        self.current_view = "analysis"
+        import re
+        from collections import defaultdict
+        
+        for widget in self.main_content.winfo_children():
+            widget.destroy()
+        
+        new_files = self.check_new_files()
+        if new_files and hasattr(self, 'yeni_dosya_label'):
+            self.yeni_dosya_label.config(text=f"🔔 Yeni: {', '.join(new_files[:2])}")
+        
+        analiz_card = self.create_card(self.main_content, "📈 SORU ANALİZİ")
+        analiz_card.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+        
+        canvas = tk.Canvas(analiz_card, bg=self.colors['card'], highlightthickness=0)
+        scrollbar = ttk.Scrollbar(analiz_card, orient="vertical", command=canvas.yview, style="Modern.Vertical.TScrollbar")
+        canvas.configure(yscrollcommand=scrollbar.set)
+        scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+        canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        
+        content_frame = tk.Frame(canvas, bg=self.colors['card'])
+        win_id = canvas.create_window((0, 0), window=content_frame, anchor="nw")
+        
+        def _on_frame_configure(e):
+            canvas.configure(scrollregion=canvas.bbox("all"))
+        def _on_canvas_configure(e):
+            canvas.itemconfig(win_id, width=e.width)
+        content_frame.bind("<Configure>", _on_frame_configure)
+        canvas.bind("<Configure>", _on_canvas_configure)
+        
+        def _on_mousewheel(e):
+            try: canvas.yview_scroll(int(-1 * (e.delta / 120)), "units")
+            except: pass
+        canvas.bind_all("<MouseWheel>", _on_mousewheel)
+        
+        base_path = r"C:\Users\osman\Desktop\OSYM\Worde_Yapistir"
+        years_data = defaultdict(lambda: defaultdict(int))
+        konu_data = defaultdict(lambda: defaultdict(int))
+        total_questions = 0
+        all_parsed_questions = []
+        
+        if os.path.exists(base_path):
+            for filename in os.listdir(base_path):
+                match = re.search(r"(\d{4})_(.+)_Sorulari\.txt", filename)
+                if match:
+                    year = int(match.group(1))
+                    subject = match.group(2)
+                    questions = self.parse_questions_from_file(os.path.join(base_path, filename), year, subject)
+                    all_parsed_questions.extend(questions)
+                    total_questions += len(questions)
+                    for q in questions:
+                        years_data[q['yil']][q['ders']] += 1
+                        konu_data[q['konu']][q['ders']] += 1
+        
+        header_frame = tk.Frame(content_frame, bg=self.colors['primary'], relief=tk.RIDGE, bd=2)
+        header_frame.pack(fill=tk.X, padx=15, pady=15)
+        
+        tk.Label(header_frame, text=f"📊 Toplam: {total_questions} Soru",
+                font=('Segoe UI', 12, 'bold'), bg=self.colors['primary'], fg=self.colors['text']).pack(pady=5)
+        
+        if new_files:
+            tk.Label(header_frame, text=f"🔔 Yeni dosya: {', '.join(new_files[:2])}",
+                    font=('Segoe UI', 9), bg=self.colors['warning'], fg=self.colors['bg']).pack(pady=3)
+        
+        tk.Label(content_frame, text="📅 YILLARA GÖRE DAĞILIM",
+                font=('Segoe UI', 11, 'bold'), bg=self.colors['card'], fg=self.colors['text']).pack(pady=(15, 5))
+        
+        table_frame = tk.Frame(content_frame, bg=self.colors['border'])
+        table_frame.pack(padx=15, fill=tk.X)
+        
+        headers = ["Yıl", "DKAB", "IHL", "Toplam"]
+        for i, h in enumerate(headers):
+            tk.Label(table_frame, text=h, font=('Segoe UI', 9, 'bold'),
+                    bg=self.colors['primary'], fg=self.colors['text'], width=12).grid(row=0, column=i, padx=1, pady=1)
+        
+        sorted_years = sorted(years_data.keys(), reverse=True)
+        for row_idx, year in enumerate(sorted_years, 1):
+            dkab = years_data[year]["DKAB"]
+            ihl = years_data[year]["IHL"]
+            bg = self.colors['card'] if row_idx % 2 == 0 else self.colors['primary']
+            for col_idx, val in enumerate([str(year), str(dkab), str(ihl), str(dkab+ihl)]):
+                tk.Label(table_frame, text=val, font=('Segoe UI', 9),
+                        bg=bg, fg=self.colors['text'], width=12).grid(row=row_idx, column=col_idx, padx=1, pady=1)
+        
+        tk.Label(content_frame, text="📚 KONULARA GÖRE DAĞILIM",
+                font=('Segoe UI', 11, 'bold'), bg=self.colors['card'], fg=self.colors['text']).pack(pady=(20, 5))
+        
+        konu_table = tk.Frame(content_frame, bg=self.colors['border'])
+        konu_table.pack(padx=15, fill=tk.X)
+        
+        konu_headers = ["Konu", "DKAB", "IHL", "Toplam"]
+        for i, h in enumerate(konu_headers):
+            tk.Label(konu_table, text=h, font=('Segoe UI', 9, 'bold'),
+                    bg=self.colors['primary'], fg=self.colors['text'], width=18).grid(row=0, column=i, padx=1, pady=1)
+        
+        konu_totals = {}
+        for konu in konu_data:
+            dkab = konu_data[konu]["DKAB"]
+            ihl = konu_data[konu]["IHL"]
+            konu_totals[konu] = dkab + ihl
+        
+        sorted_konular = sorted(konu_totals.items(), key=lambda x: x[1], reverse=True)
+        
+        for row_idx, (konu, total) in enumerate(sorted_konular, 1):
+            dkab = konu_data[konu]["DKAB"]
+            ihl = konu_data[konu]["IHL"]
+            bg = self.colors['card'] if row_idx % 2 == 0 else self.colors['primary']
+            for col_idx, val in enumerate([konu[:16], str(dkab), str(ihl), str(total)]):
+                tk.Label(konu_table, text=val, font=('Segoe UI', 8),
+                        bg=bg, fg=self.colors['text'], width=18).grid(row=row_idx, column=col_idx, padx=1, pady=1)
+        
+        # Bilinmeyen konular listesi
+        unknown_questions = [(q['yil'], q['ders'], q['soru_no']) for q in all_parsed_questions if q.get('konu') in ['BİLİNMEYEN KONU', '', None] or not q.get('konu')]
+        if unknown_questions:
+            tk.Label(content_frame, text="⚠️ BİLİNMEYEN KONU SORULARI",
+                    font=('Segoe UI', 11, 'bold'), bg=self.colors['card'], fg=self.colors['danger']).pack(pady=(20, 5))
+            
+            unknown_frame = tk.Frame(content_frame, bg=self.colors['danger'])
+            unknown_frame.pack(padx=15, fill=tk.X)
+            
+            unknown_text = "Bu soruların KONU etiketi bulunamadı:\n"
+            for yil, ders, no in unknown_questions:
+                unknown_text += f"  • {yil} {ders} - Soru {no}\n"
+            
+            unknown_label = tk.Label(unknown_frame, text=unknown_text.strip(),
+                    font=('Segoe UI', 9), bg=self.colors['danger'], fg='white', justify=tk.LEFT)
+            unknown_label.pack(padx=10, pady=10)
+        
+        # 3. Tablo: YIL x DERS x KONU matris
+        tk.Label(content_frame, text="📊 YIL × DERS × KONU DAĞILIMI",
+                font=('Segoe UI', 11, 'bold'), bg=self.colors['card'], fg=self.colors['text']).pack(pady=(20, 5))
+        
+        yil_ders_konu_data = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
+        for q in all_parsed_questions:
+            if q.get('konu') and q.get('konu') not in ['BİLİNMEYEN KONU', '']:
+                yil_ders_konu_data[q['yil']][q['ders']][q['konu']] += 1
+        
+        matris_canvas = tk.Canvas(content_frame, bg=self.colors['card'], highlightthickness=0, height=300)
+        matris_scroll = ttk.Scrollbar(content_frame, orient="vertical", command=matris_canvas.yview, style="Modern.Vertical.TScrollbar")
+        matris_canvas.configure(yscrollcommand=matris_scroll.set)
+        matris_scroll.pack(side=tk.RIGHT, fill=tk.Y)
+        matris_canvas.pack(fill=tk.X, padx=15)
+        
+        matris_inner = tk.Frame(matris_canvas, bg=self.colors['card'])
+        matris_canvas.create_window((0, 0), window=matris_inner, anchor="nw")
+        
+        matris_inner.bind("<Configure>", lambda e: matris_canvas.configure(scrollregion=matris_canvas.bbox("all")))
+        
+        sorted_years = sorted(yil_ders_konu_data.keys(), reverse=True)
+        sorted_konular_list = sorted(set(k for y in sorted_years for d in yil_ders_konu_data[y].keys() for k in yil_ders_konu_data[y][d].keys()))
+        
+        all_ders = set()
+        for y in sorted_years:
+            for d in yil_ders_konu_data[y].keys():
+                all_ders.add(d)
+        all_ders = sorted(all_ders)
+        
+        for row_idx, year in enumerate(sorted_years):
+            row_bg = self.colors['primary'] if row_idx % 2 == 0 else self.colors['card']
+            
+            for col_idx, ders in enumerate(all_ders):
+                col_bg = self.colors['success'] if col_idx % 2 == 0 else self.colors['primary']
+                
+                header_frame = tk.Frame(matris_inner, bg=col_bg, relief=tk.RIDGE, bd=1)
+                header_frame.grid(row=row_idx * (len(sorted_konular_list) + 2), column=col_idx, padx=1, pady=1, sticky="nsew")
+                
+                tk.Label(header_frame, text=f"{year} {ders}",
+                        font=('Segoe UI', 8, 'bold'), bg=col_bg, fg='white').pack(pady=2)
+                
+                konu_count_frame = tk.Frame(header_frame, bg=col_bg)
+                konu_count_frame.pack()
+                
+                for konu_row_idx, konu in enumerate(sorted_konular_list):
+                    count = yil_ders_konu_data[year][ders].get(konu, 0)
+                    konu_bg = self.colors['card'] if konu_row_idx % 2 == 0 else '#e0e0e0'
+                    tk.Label(konu_count_frame, text=f"{konu[:12]}: {count}",
+                            font=('Segoe UI', 7), bg=konu_bg, fg=self.colors['text']).pack(fill=tk.X)
+        
+        back_btn = self.create_button(content_frame, "🔙 GERİ",
+                                      self.show_welcome_screen, self.colors['text_secondary'])
+        back_btn.pack(pady=20, ipady=5)
         
     def load_questions(self):
         """Soruları yükler"""
