@@ -793,51 +793,52 @@ Başarılar dilerim! 🌟
                     font=('Segoe UI', 9), bg=self.colors['danger'], fg='white', justify=tk.LEFT)
             unknown_label.pack(padx=10, pady=10)
         
-        # 3. Tablo: YIL x DERS x KONU matris
-        tk.Label(content_frame, text="📊 YIL × DERS × KONU DAĞILIMI",
-                font=('Segoe UI', 11, 'bold'), bg=self.colors['card'], fg=self.colors['text']).pack(pady=(20, 5))
-        
-        yil_ders_konu_data = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
-        for q in all_parsed_questions:
-            if q.get('konu') and q.get('konu') not in ['BİLİNMEYEN KONU', '']:
-                yil_ders_konu_data[q['yil']][q['ders']][q['konu']] += 1
-        
-        matris_inner = tk.Frame(content_frame, bg=self.colors['card'])
-        matris_inner.pack(fill=tk.X, padx=15, pady=5)
-        
-        sorted_years = sorted(yil_ders_konu_data.keys(), reverse=True)
-        sorted_konular_list = sorted(set(k for y in sorted_years for d in yil_ders_konu_data[y].keys() for k in yil_ders_konu_data[y][d].keys()))
-        
-        all_ders = set()
-        for y in sorted_years:
-            for d in yil_ders_konu_data[y].keys():
-                all_ders.add(d)
-        all_ders = sorted(all_ders)
-        
-        for row_idx, year in enumerate(sorted_years):
-            row_bg = self.colors['primary'] if row_idx % 2 == 0 else self.colors['card']
+        if hasattr(self, 'analiz_combo') and self.analiz_combo.get() == "Detaylı":
+            # 3. Tablo: YIL x DERS x KONU matris
+            tk.Label(content_frame, text="📊 YIL × DERS × KONU DAĞILIMI",
+                    font=('Segoe UI', 11, 'bold'), bg=self.colors['card'], fg=self.colors['text']).pack(pady=(20, 5))
             
-            for col_idx, ders in enumerate(all_ders):
-                col_bg = self.colors['success'] if col_idx % 2 == 0 else self.colors['primary']
+            yil_ders_konu_data = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
+            for q in all_parsed_questions:
+                if q.get('konu') and q.get('konu') not in ['BİLİNMEYEN KONU', '']:
+                    yil_ders_konu_data[q['yil']][q['ders']][q['konu']] += 1
+            
+            matris_inner = tk.Frame(content_frame, bg=self.colors['card'])
+            matris_inner.pack(fill=tk.X, padx=15, pady=5)
+            
+            sorted_years = sorted(yil_ders_konu_data.keys(), reverse=True)
+            sorted_konular_list = sorted(set(k for y in sorted_years for d in yil_ders_konu_data[y].keys() for k in yil_ders_konu_data[y][d].keys()))
+            
+            all_ders = set()
+            for y in sorted_years:
+                for d in yil_ders_konu_data[y].keys():
+                    all_ders.add(d)
+            all_ders = sorted(all_ders)
+            
+            for row_idx, year in enumerate(sorted_years):
+                row_bg = self.colors['primary'] if row_idx % 2 == 0 else self.colors['card']
                 
-                header_frame = tk.Frame(matris_inner, bg=col_bg, relief=tk.RIDGE, bd=1)
-                header_frame.grid(row=row_idx, column=col_idx, padx=2, pady=4, sticky="nw")
-                
-                tk.Label(header_frame, text=f"{year} {ders}",
-                        font=('Segoe UI', 10, 'bold'), bg=col_bg, fg='white').pack(pady=4)
-                
-                konu_count_frame = tk.Frame(header_frame, bg=self.colors['card'])
-                konu_count_frame.pack(fill=tk.BOTH, expand=True, padx=4, pady=4)
-                
-                bg_cycle = [self.colors['card'], self.colors['border']]
-                added_topics = 0
-                for konu in sorted_konular_list:
-                    count = yil_ders_konu_data[year][ders].get(konu, 0)
-                    if count > 0:
-                        konu_bg = bg_cycle[added_topics % 2]
-                        tk.Label(konu_count_frame, text=f"{konu[:24]}: {count}",
-                                font=('Segoe UI', 9), bg=konu_bg, fg=self.colors['text'], width=22).pack(fill=tk.X)
-                        added_topics += 1
+                for col_idx, ders in enumerate(all_ders):
+                    col_bg = self.colors['success'] if col_idx % 2 == 0 else self.colors['primary']
+                    
+                    header_frame = tk.Frame(matris_inner, bg=col_bg, relief=tk.RIDGE, bd=1)
+                    header_frame.grid(row=row_idx, column=col_idx, padx=2, pady=4, sticky="nw")
+                    
+                    tk.Label(header_frame, text=f"{year} {ders}",
+                            font=('Segoe UI', 10, 'bold'), bg=col_bg, fg='white').pack(pady=4)
+                    
+                    konu_count_frame = tk.Frame(header_frame, bg=self.colors['card'])
+                    konu_count_frame.pack(fill=tk.BOTH, expand=True, padx=4, pady=4)
+                    
+                    bg_cycle = [self.colors['card'], self.colors['border']]
+                    added_topics = 0
+                    for konu in sorted_konular_list:
+                        count = yil_ders_konu_data[year][ders].get(konu, 0)
+                        if count > 0:
+                            konu_bg = bg_cycle[added_topics % 2]
+                            tk.Label(konu_count_frame, text=f"{konu[:24]}: {count}",
+                                    font=('Segoe UI', 9), bg=konu_bg, fg=self.colors['text'], width=22).pack(fill=tk.X)
+                            added_topics += 1
         
         back_btn = self.create_button(content_frame, "🔙 GERİ",
                                       self.show_welcome_screen, self.colors['text_secondary'])
