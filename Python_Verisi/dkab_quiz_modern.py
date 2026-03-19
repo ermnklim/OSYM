@@ -109,7 +109,7 @@ class ModernDKABQuiz:
         defaults = {
             "theme": "Gece Lacivert",
             "year": "Tüm yıllar",
-            "ders": "DKAB",
+            "ders": "Tüm dersler",
             "konu": "Tüm konular",
             "mode": "Anında Cevap",
             "order": "Rastgele",
@@ -173,7 +173,7 @@ class ModernDKABQuiz:
         """Kaydedilen ayarlari arayuze uygular."""
         self.theme_var.set(self.persisted_settings.get("theme", self.current_theme))
         self.year_var.set(self.persisted_settings.get("year", "Tüm yıllar"))
-        self.ders_var.set(self.persisted_settings.get("ders", "DKAB"))
+        self.ders_var.set(self.persisted_settings.get("ders", "Tüm dersler"))
         self.konu_var.set(self.persisted_settings.get("konu", "Tüm konular"))
         self.mode_var.set(self.persisted_settings.get("mode", "Anında Cevap"))
         self.order_var.set(self.persisted_settings.get("order", "Rastgele"))
@@ -247,7 +247,7 @@ class ModernDKABQuiz:
             'mode': getattr(self, 'mode_var', None).get() if hasattr(self, 'mode_var') else 'Aninda Cevap',
             'order': getattr(self, 'order_var', None).get() if hasattr(self, 'order_var') else 'Rastgele',
             'num': getattr(self, 'num_var', None).get() if hasattr(self, 'num_var') else '10',
-            'ders': getattr(self, 'ders_var', None).get() if hasattr(self, 'ders_var') else 'DKAB',
+            'ders': getattr(self, 'ders_var', None).get() if hasattr(self, 'ders_var') else 'Tüm dersler',
             'konu': getattr(self, 'konu_var', None).get() if hasattr(self, 'konu_var') else 'Tüm konular',
             'goto_year': getattr(self, 'goto_year_var', None).get() if hasattr(self, 'goto_year_var') else '2019',
             'goto_ders': getattr(self, 'goto_ders_var', None).get() if hasattr(self, 'goto_ders_var') else 'DKAB',
@@ -386,9 +386,9 @@ class ModernDKABQuiz:
         tk.Label(settings_card, text="Ders:", font=('Segoe UI', 8),
                 fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
 
-        self.ders_var = tk.StringVar(value="DKAB")
+        self.ders_var = tk.StringVar(value="Tüm dersler")
         self.ders_combo = ttk.Combobox(settings_card, textvariable=self.ders_var,
-                                       values=self.available_subjects, state="readonly", width=14, style='Modern.TCombobox')
+                                       values=["Tüm dersler"] + self.available_subjects, state="readonly", width=14, style='Modern.TCombobox')
         self.ders_combo.pack(padx=5, pady=0, fill=tk.X)
         self.ders_combo.bind("<<ComboboxSelected>>", self.on_ders_changed)
 
@@ -672,8 +672,9 @@ Başarılar dilerim! 🌟
         current_goto_year = self.goto_year_var.get()
         current_goto_ders = self.goto_ders_var.get()
 
+        keys_with_all = ["Tüm dersler"] + dersler
         self.year_combo['values'] = years
-        self.ders_combo['values'] = dersler
+        self.ders_combo['values'] = keys_with_all
         self.goto_year_combo['values'] = sorted([y for y in years if y != "Tüm yıllar"], reverse=True)
         self.goto_ders_combo['values'] = dersler
 
@@ -682,8 +683,8 @@ Başarılar dilerim! 🌟
         elif years:
             self.year_var.set(years[0])
 
-        if current_ders not in dersler and dersler:
-            self.ders_var.set(dersler[0])
+        if current_ders not in keys_with_all and keys_with_all:
+            self.ders_var.set(keys_with_all[0])
         else:
             self.ders_var.set(current_ders)
 
@@ -722,7 +723,7 @@ Başarılar dilerim! 🌟
                 qs = [q for q in qs if q['yil'] == year]
             except Exception:
                 pass
-        if selected_ders:
+        if selected_ders and selected_ders != "Tüm dersler":
             qs = [q for q in qs if q['ders'] == selected_ders]
 
         konular = sorted(set(q['konu'] for q in qs if q.get('konu')))
@@ -875,7 +876,7 @@ Başarılar dilerim! 🌟
                 except Exception:
                     pass
             
-            if selected_ders:
+            if selected_ders and selected_ders != "Tüm dersler":
                 qs = [q for q in qs if q['ders'] == selected_ders]
 
             if selected_konu and selected_konu != "Tüm konular":
@@ -961,7 +962,7 @@ Başarılar dilerim! 🌟
             year = int(selected_year)
             available_questions = [q for q in available_questions if q['yil'] == year]
         
-        if selected_ders:
+        if selected_ders and selected_ders != "Tüm dersler":
             available_questions = [q for q in available_questions if q['ders'] == selected_ders]
 
         if selected_konu and selected_konu != "Tüm konular":
