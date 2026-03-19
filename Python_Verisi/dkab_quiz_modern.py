@@ -316,10 +316,40 @@ class ModernDKABQuiz:
         self.status_label.pack(side=tk.RIGHT, padx=20, pady=25)
         
     def create_sidebar(self, parent):
-        """Sol sidebar oluşturur"""
-        sidebar = tk.Frame(parent, bg=self.colors['card'], width=240)
-        sidebar.pack(side=tk.LEFT, fill=tk.Y, padx=(0, 8))
-        sidebar.pack_propagate(False)
+        """Sol sidebar oluşturur (Kaydırılabilir)"""
+        sidebar_outer = tk.Frame(parent, bg=self.colors['card'], width=260)
+        sidebar_outer.pack(side=tk.LEFT, fill=tk.Y, padx=(0, 8))
+        sidebar_outer.pack_propagate(False)
+        
+        self.sidebar_canvas = tk.Canvas(sidebar_outer, bg=self.colors['card'], highlightthickness=0, width=240)
+        self.sidebar_scrollbar = ttk.Scrollbar(sidebar_outer, orient="vertical", command=self.sidebar_canvas.yview, style="Modern.Vertical.TScrollbar")
+        self.sidebar_canvas.configure(yscrollcommand=self.sidebar_scrollbar.set)
+        
+        self.sidebar_scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+        self.sidebar_canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        
+        sidebar = tk.Frame(self.sidebar_canvas, bg=self.colors['card'])
+        self.sidebar_canvas_window = self.sidebar_canvas.create_window((0, 0), window=sidebar, anchor="nw")
+        
+        sidebar.bind("<Configure>", lambda e: self.sidebar_canvas.configure(scrollregion=self.sidebar_canvas.bbox("all")))
+        self.sidebar_canvas.bind("<Configure>", lambda e: self.sidebar_canvas.itemconfig(self.sidebar_canvas_window, width=e.width))
+
+        def _on_sidebar_mousewheel(event):
+            try:
+                # Windows delta is 120, Linux may vary, but we use a common approach
+                delta = event.delta if hasattr(event, 'delta') else 0
+                if delta == 0 and hasattr(event, 'num'): # Linux support
+                    if event.num == 4: delta = 120
+                    elif event.num == 5: delta = -120
+                self.sidebar_canvas.yview_scroll(int(-1*(delta/120)), "units")
+            except Exception:
+                pass
+
+        # Sidebar'a mouse girince mousewheel'i ona bağla
+        sidebar.bind("<Enter>", lambda e: self.root.bind_all("<MouseWheel>", _on_sidebar_mousewheel))
+        sidebar.bind("<Leave>", lambda e: self.root.unbind_all("<MouseWheel>"))
+        self.sidebar_canvas.bind("<Enter>", lambda e: self.root.bind_all("<MouseWheel>", _on_sidebar_mousewheel))
+        self.sidebar_canvas.bind("<Leave>", lambda e: self.root.unbind_all("<MouseWheel>"))
         
         # Settings card
         settings_card = self.create_card(sidebar, "⚙️ Ayarlar")
@@ -464,13 +494,21 @@ class ModernDKABQuiz:
         self.main_content.bind("<Configure>", lambda e: self.canvas.configure(scrollregion=self.canvas.bbox("all")))
         self.canvas.bind("<Configure>", lambda e: self.canvas.itemconfig(self.canvas_window, width=e.width))
         
-        def _on_mousewheel(event):
+        def _on_main_mousewheel(event):
             try:
-                self.canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+                delta = event.delta if hasattr(event, 'delta') else 0
+                if delta == 0 and hasattr(event, 'num'):
+                    if event.num == 4: delta = 120
+                    elif event.num == 5: delta = -120
+                self.canvas.yview_scroll(int(-1*(delta/120)), "units")
             except Exception:
                 pass
                 
-        self.canvas.bind_all("<MouseWheel>", _on_mousewheel)
+        # İçerik alanına mouse girince mousewheel'i ona bağla
+        self.main_content.bind("<Enter>", lambda e: self.root.bind_all("<MouseWheel>", _on_main_mousewheel))
+        self.main_content.bind("<Leave>", lambda e: self.root.unbind_all("<MouseWheel>"))
+        self.canvas.bind("<Enter>", lambda e: self.root.bind_all("<MouseWheel>", _on_main_mousewheel))
+        self.canvas.bind("<Leave>", lambda e: self.root.unbind_all("<MouseWheel>"))
         
     def create_card(self, parent, title):
         """Modern kart oluşturur"""
