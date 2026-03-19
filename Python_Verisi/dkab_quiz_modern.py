@@ -237,12 +237,12 @@ class ModernDKABQuiz:
         )
         style.configure(
             'Modern.Vertical.TScrollbar',
-            background=self.colors['primary'],
+            background=self.colors['accent'],
             troughcolor=self.colors['bg'],
-            bordercolor=self.colors['bg'],
+            bordercolor=self.colors['border'],
             arrowcolor=self.colors['text'],
-            darkcolor=self.colors['primary'],
-            lightcolor=self.colors['primary'],
+            darkcolor=self.darken_color(self.colors['accent']),
+            lightcolor=self.lighten_color(self.colors['accent']),
             gripcount=0,
             width=10
         )
