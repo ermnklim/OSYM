@@ -33,6 +33,7 @@ class ModernDKABQuiz:
         self.current_view = "welcome"
         self.current_specific_question = None
         self.subjects = []
+        self.available_subjects = ["DKAB", "IHL"]
         self._next_timer = None
 
         self.theme_palettes = {
@@ -162,7 +163,7 @@ class ModernDKABQuiz:
             'mode': getattr(self, 'mode_var', None).get() if hasattr(self, 'mode_var') else 'Aninda Cevap',
             'order': getattr(self, 'order_var', None).get() if hasattr(self, 'order_var') else 'Rastgele',
             'num': getattr(self, 'num_var', None).get() if hasattr(self, 'num_var') else '10',
-            'ders': getattr(self, 'ders_var', None).get() if hasattr(self, 'ders_var') else 'Hepsi',
+            'ders': getattr(self, 'ders_var', None).get() if hasattr(self, 'ders_var') else 'DKAB',
             'goto_year': getattr(self, 'goto_year_var', None).get() if hasattr(self, 'goto_year_var') else '2019',
             'goto_q': getattr(self, 'goto_q_var', None).get() if hasattr(self, 'goto_q_var') else '1',
         }
@@ -267,9 +268,9 @@ class ModernDKABQuiz:
         tk.Label(settings_card, text="Ders:", font=('Segoe UI', 8),
                 fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
 
-        self.ders_var = tk.StringVar(value="Hepsi")
+        self.ders_var = tk.StringVar(value="DKAB")
         self.ders_combo = ttk.Combobox(settings_card, textvariable=self.ders_var,
-                                       values=["Hepsi"], state="readonly", width=14, style='Modern.TCombobox')
+                                       values=self.available_subjects, state="readonly", width=14, style='Modern.TCombobox')
         self.ders_combo.pack(padx=5, pady=0, fill=tk.X)
         self.ders_combo.bind("<<ComboboxSelected>>", self.update_question_limit)
         
@@ -346,7 +347,7 @@ class ModernDKABQuiz:
 
         self.goto_ders_var = tk.StringVar(value="DKAB")
         self.goto_ders_combo = ttk.Combobox(goto_card, textvariable=self.goto_ders_var,
-                                            values=["DKAB"], state="readonly", width=14, style='Modern.TCombobox')
+                                            values=self.available_subjects, state="readonly", width=14, style='Modern.TCombobox')
         self.goto_ders_combo.pack(padx=5, pady=0, fill=tk.X)
         self.goto_ders_combo.bind("<<ComboboxSelected>>", self._update_goto_question_list)
 
@@ -498,10 +499,11 @@ Başarılar dilerim! 🌟
                 
                 self.questions = loaded_questions
                 self.subjects = sorted(list(unique_subjects))
+                self.available_subjects = [subject for subject in ["DKAB", "IHL"] if subject in unique_subjects] or ["DKAB", "IHL"]
                 
                 # Update UI elements
                 years_list = ["Tüm yıllar"] + sorted(list(found_years), reverse=True)
-                ders_list = ["Hepsi"] + self.subjects
+                ders_list = self.available_subjects
                 
                 self.root.after(0, lambda: self.update_dropdown_values(years_list, ders_list))
                 self.root.after(0, self.update_stats)
@@ -527,6 +529,10 @@ Başarılar dilerim! 🌟
         self.ders_combo['values'] = dersler
         self.goto_year_combo['values'] = sorted([y for y in years if y != "Tüm yıllar"], reverse=True)
         self.goto_ders_combo['values'] = dersler
+        if self.ders_var.get() not in dersler and dersler:
+            self.ders_var.set(dersler[0])
+        if self.goto_ders_var.get() not in dersler and dersler:
+            self.goto_ders_var.set(dersler[0])
 
     def parse_questions_from_file(self, file_path: str, year: int, subject: str = "DKAB") -> List[Dict]:
         """Dosyadan soruları parse eder"""
@@ -639,7 +645,7 @@ Başarılar dilerim! 🌟
                 except Exception:
                     pass
             
-            if selected_ders != "Hepsi":
+            if selected_ders:
                 qs = [q for q in qs if q['ders'] == selected_ders]
             
             return len(qs) if qs else 75
@@ -719,7 +725,7 @@ Başarılar dilerim! 🌟
             year = int(selected_year)
             available_questions = [q for q in available_questions if q['yil'] == year]
         
-        if selected_ders != "Hepsi":
+        if selected_ders:
             available_questions = [q for q in available_questions if q['ders'] == selected_ders]
             
         if not available_questions:
