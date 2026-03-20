@@ -374,6 +374,20 @@ Doğru Cevap: C
 
 Soru 27:
 KONU: Kelam / Akaid
+Günümüzde ezanın "eşhedü enne aliyyen veliyyullah" ifadesi eklenerek okunduğu ülke aşağıdakilerden hangisidir?
+
+A) İran
+B) Ürdün
+C) Umman
+D) Katar
+E) Cezayir
+
+Doğru Cevap: A
+
+---SONRAKI SORU---
+
+Soru 28:
+KONU: Kelam / Akaid
 Aşağıdakilerden hangisi kelam ilminin doğuşuna doğrudan etki eden sebeplerden biri değildir?
 
 A) Hz. Muhammed'in vefatıyla dinî sorulara farklı cevaplar verilmesi
@@ -386,7 +400,7 @@ Doğru Cevap: B
 
 ---SONRAKI SORU---
 
-Soru 28:
+Soru 29:
 KONU: Kelam / Akaid
 1523'te Balıkesir'de doğan İmam Birgivi, önemli kişilerden ders almış ve birçok eseri bulunan bir âlimdir. Onun en bilinen eseri *et-Tarikatü'l-Muhammediyye'dir*. Bu eserinde toplumun ıslahını sağlamaya çalışmış, bazı mutasavvıfların bid'at ve aşırılıklarını eleştirmiştir. Ayrıca iman ve amelin birbirinden ayrı olduğunu, imanın artıp eksilmeyeceğini ve imanda istisna olamayacağını dile getirmiştir. Bu bilgilere göre Birgivi'nin aşağıdaki mezheplerden hangisine mensup olduğu söylenebilir?
 
@@ -400,7 +414,7 @@ Doğru Cevap: B
 
 ---SONRAKI SORU---
 
-Soru 29:
+Soru 30:
 KONU: Kelam / Akaid
 Büyük günah işleyen kişinin bu dünyada nasıl nitelendirileceği ve ahiretteki durumu üzerine pek çok mezhep hüküm beyan etmiş ve farklı tutumlar benimsemiştir. Mutezile'nin ise el-menzile peyne'l-menzileteyn adı altında bir inanç esası olarak aldığı bu mesele sonraki süreçte kelam eserlerinde önemli bir konu başlığına dönüşmüştür. Bu konu, kelam literatüründe aşağıdaki başlıkların hangisi kapsamında değerlendirilir?
 
@@ -414,7 +428,7 @@ Doğru Cevap: A
 
 ---SONRAKI SORU---
 
-Soru 30:
+Soru 31:
 KONU: Kelam / Akaid
 Müslüman âlimler arasında bilginin kaynakları konusunu ilk ele alan kişilerden biri Ebu Mansur el-Matüridi'dir. Ona göre; I. duyular, II. keşf, III. haber, IV. ilham hususlarından hangileri güvenilir bilgi kaynağıdır?
 
@@ -428,7 +442,7 @@ Doğru Cevap: C
 
 ---SONRAKI SORU---
 
-Soru 31:
+Soru 32:
 KONU: Kelam / Akaid
 Selefiyye'nin müteşabihlerle ilgili; * naslarda belirtildiği hâli ile kabul edip inanmak, * yorum yapmamak, * kalben bile meşgul olmamak, * soru sormamak ilkelerini aşağıdaki kavramlardan hangisi karşılamaz?
 
@@ -442,7 +456,7 @@ Doğru Cevap: C
 
 ---SONRAKI SORU---
 
-Soru 32:
+Soru 33:
 KONU: Kelam / Akaid
 Aşağıdakilerden hangisi Kur'an-ı Kerim'de ahiret hayatıyla ilgili kullanılan isimlerden biri değildir?
 
@@ -456,9 +470,9 @@ Doğru Cevap: E
 
 ---SONRAKI SORU---
 
-Soru 33:
+Soru 34:
 KONU: Kelam / Akaid
-Mutazile'nin; I. rüyetullah, II. insan iradesi ve kader III. İlahi sıfatlar ile ilgili görüşlerinden hangilerinde Cehmiyye'den etkilendiği söylenebilir?
+Mutezile'nin; I. rüyetullah, II. insan iradesi ve kader III. İlahi sıfatlar ile ilgili görüşlerinden hangilerinde Cehmiyye'den etkilendiği söylenebilir?
 
 A) Yalnız I
 B) Yalnız II
@@ -470,7 +484,7 @@ Doğru Cevap: D
 
 ---SONRAKI SORU---
 
-Soru 34:
+Soru 35:
 KONU: İslam Mezhepleri ve Akımları
 Aşağıdakilerden hangisinde, ilk dört halifenin meşruiyeti hakkında İslam düşünce ekollerinin görüşü yanlış verilmiştir?
 
@@ -484,7 +498,7 @@ Doğru Cevap: A
 
 ---SONRAKI SORU---
 
-Soru 35:
+Soru 36:
 KONU: İslam Mezhepleri ve Akımları
 Şiiilerin Hz. Ali'nin imameti hakkında ileri sürdüğü deliller arasında; I. Garanik, II. Gadir-i Hum, III. Kırtas, IV. Bi'r-i Maune hadiselerinden hangileri yer almaktadır?
 
@@ -498,7 +512,7 @@ Doğru Cevap: C
 
 ---SONRAKI SORU---
 
-Soru 36:
+Soru 37:
 KONU: İslam Mezhepleri ve Akımları
 Hasan ala Zikrihisselam, takipçilerini hicri 17 Ramazan 559/8 Ağustos 1164 tarihinde Alamut'ta toplayarak kendisini gizli imamın daisi ve hücceti olarak takdim etti. Bu toplantı vesilesiyle verdiği hutbede kıyametin koptuğunu, şeriatın yükümlülüklerinin kalktığını, adına konuştuğu gizli imamın ise kaimü'l-kıyamet olduğunu iddia etti. Bu iddiayı benimseyen topluluk aşağıdakilerden hangisidir?
 
@@ -512,19 +526,6 @@ Doğru Cevap: E
 
 ---SONRAKI SORU---
 
-Soru 37:
-KONU: İslam Tarihi / Siyer
-Günümüzde ezanın "eşhedü enne aliyyen veliyyullah" ifadesi eklenerek okunduğu ülke aşağıdakilerden hangisidir?
-
-A) İran
-B) Ürdün
-C) Umman
-D) Katar
-E) Cezayir
-
-Doğru Cevap: A
-
----SONRAKI SORU---
 
 Soru 38:
 KONU: İslam Tarihi / Siyer
