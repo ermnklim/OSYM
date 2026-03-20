@@ -1,16 +1,16 @@
 {
   "theme": "Acik Modern",
-  "year": "2023",
-  "ders": "IHL",
-  "konu": "Tüm konular",
-  "mode": "Test Sonu Değerlendir",
+  "year": "Tüm yıllar",
+  "ders": "Tüm dersler",
+  "konu": "İslam Tarihi / Siyer",
+  "mode": "Anında Cevap",
   "time_limit": "0",
   "time_hours": "0",
   "time_minutes": "0",
   "time_seconds": "15",
   "order": "Sıralı",
-  "num": "34",
-  "goto_year": "2022",
+  "num": "75",
+  "goto_year": "2023",
   "goto_ders": "IHL",
-  "goto_q": "74"
+  "goto_q": "1"
 }
