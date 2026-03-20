@@ -14,11 +14,11 @@
   "goto_ders": "IHL",
   "goto_q": "1",
   "speech_voice": "Piper Türkçe DFKI (Orta)",
-  "speech_rate": "1.00",
+  "speech_rate": "0.75",
   "speech_read_question": "1",
   "speech_read_options": "1",
   "speech_read_answer": "1",
-  "speech_wait_ms": "1250",
+  "speech_wait_ms": "1500",
   "speech_auto_mode": "Soru ve şıkları oku",
   "speech_feedback_mode": "Söyleme"
 }

@@ -530,6 +530,139 @@ class ModernDKABQuiz:
             return bool(fallback)
         return str(raw_value).strip().lower() in {"1", "true", "evet", "yes", "on"}
 
+    def _contains_arabic_text(self, text):
+        return bool(re.search(r"[\u0600-\u06FF]", str(text or "")))
+
+    def _transliterate_arabic_text(self, text):
+        base_map = {
+            "ا": "a",
+            "أ": "e",
+            "إ": "i",
+            "آ": "a",
+            "ٱ": "a",
+            "ب": "b",
+            "ت": "t",
+            "ث": "s",
+            "ج": "c",
+            "ح": "h",
+            "خ": "h",
+            "د": "d",
+            "ذ": "z",
+            "ر": "r",
+            "ز": "z",
+            "س": "s",
+            "ش": "ş",
+            "ص": "s",
+            "ض": "d",
+            "ط": "t",
+            "ظ": "z",
+            "ع": "a",
+            "غ": "g",
+            "ف": "f",
+            "ق": "g",
+            "ك": "k",
+            "ل": "l",
+            "م": "m",
+            "ن": "n",
+            "ه": "h",
+            "ة": "e",
+            "و": "v",
+            "ي": "y",
+            "ى": "a",
+            "ئ": "i",
+            "ؤ": "u",
+            "ء": "",
+        }
+        vowel_map = {
+            "َ": "a",
+            "ِ": "i",
+            "ُ": "u",
+            "ً": "",
+            "ٍ": "",
+            "ٌ": "",
+            "ْ": "",
+        }
+        punctuation_map = str.maketrans({
+            "،": " ",
+            "؛": " ",
+            "؟": " ",
+            "ـ": "",
+            "(": " ",
+            ")": " ",
+        })
+
+        text = str(text or "").translate(punctuation_map)
+        text = re.sub(r"[\u0660-\u0669\d]+", " ", text)
+
+        result = []
+        i = 0
+        while i < len(text):
+            char = text[i]
+
+            if char == "ّ":
+                if result:
+                    result.append(result[-1])
+                i += 1
+                continue
+
+            if char in vowel_map:
+                result.append(vowel_map[char])
+                i += 1
+                continue
+
+            if char == "ا" and result and result[-1].endswith("a"):
+                i += 1
+                continue
+
+            if char == "و":
+                prev = result[-1] if result else ""
+                next_char = text[i + 1] if i + 1 < len(text) else ""
+                if prev.endswith("u"):
+                    i += 1
+                    continue
+                if next_char in {"َ", "ِ", "ُ"}:
+                    result.append("v")
+                else:
+                    result.append("u" if not prev else "v")
+                i += 1
+                continue
+
+            if char == "ي":
+                prev = result[-1] if result else ""
+                next_char = text[i + 1] if i + 1 < len(text) else ""
+                if prev.endswith("i"):
+                    result.append("i")
+                elif prev.endswith("a"):
+                    result.append("y")
+                elif next_char in {"َ", "ِ", "ُ"}:
+                    result.append("y")
+                else:
+                    result.append("i" if not prev else "y")
+                i += 1
+                continue
+
+            if char in base_map:
+                result.append(base_map[char])
+            else:
+                result.append(char)
+
+            i += 1
+
+        transliterated = "".join(result)
+        transliterated = re.sub(r"\s+", " ", transliterated)
+        transliterated = re.sub(r"aa+", "a", transliterated)
+        transliterated = re.sub(r"ii+", "ii", transliterated)
+        transliterated = re.sub(r"uu+", "u", transliterated)
+        transliterated = re.sub(r"\balşş", "eşş", transliterated, flags=re.IGNORECASE)
+        transliterated = re.sub(r"\bvalss", "vess", transliterated, flags=re.IGNORECASE)
+        transliterated = re.sub(r"\bguray", "gurey", transliterated, flags=re.IGNORECASE)
+        transliterated = re.sub(r"\bkuray", "kurey", transliterated, flags=re.IGNORECASE)
+        transliterated = re.sub(r"\bgureyşi\b", "gureyş", transliterated, flags=re.IGNORECASE)
+        transliterated = re.sub(r"\bliilafi\b", "liilefi", transliterated, flags=re.IGNORECASE)
+        transliterated = re.sub(r"\biilafihim\b", "iilefihim", transliterated, flags=re.IGNORECASE)
+        transliterated = re.sub(r"\brihlaea\b", "rihlete", transliterated, flags=re.IGNORECASE)
+        return transliterated.strip()
+
     def _initial_speech_status_text(self):
         if self.speech_engine.is_available():
             return "Çevrimdışı Türkçe ses hazır."
@@ -576,6 +709,8 @@ class ModernDKABQuiz:
         ]
         for pattern, replacement in abbreviation_rules:
             normalized = re.sub(pattern, replacement, normalized, flags=re.IGNORECASE)
+        if self._contains_arabic_text(normalized):
+            normalized = self._transliterate_arabic_text(normalized)
         return " ".join(normalized.split())
 
     def _option_read_label(self, option_letter):
