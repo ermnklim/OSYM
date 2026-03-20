@@ -2362,7 +2362,7 @@ class ModernDKABQuiz:
                 continue
             is_correct = (harf == question['dogru_cevap'])
             bg = self.colors['success'] if is_correct else self.colors['border']
-            fg = 'white'
+            fg = 'white' if is_correct else self.colors['text']
             prefix = "✅" if is_correct else "  "
             sik_btn = tk.Label(siklar_frame,
                                text=f"{prefix} {harf}) {val}",
