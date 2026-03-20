@@ -1856,7 +1856,7 @@ class ModernDKABQuiz:
                 self.show_feedback_on_screen(question, False)
         else:
             # Review mode - just highlight selection, no colors, auto-advance after 2 seconds
-            self.option_buttons[option_num].config(bg='white', fg=self.colors['bg'])
+            self.option_buttons[option_num].config(bg=self.colors['accent'], fg='white')
             
             # Store the answer for later review (Update if already exists)
             if not hasattr(self, 'user_answers'):
@@ -1942,7 +1942,7 @@ class ModernDKABQuiz:
                             self.show_feedback_on_screen(question, is_correct)
                         else:
                             # Test/Review mode - generic highlight
-                            self.option_buttons[option_num].config(bg='white', fg=self.colors['bg'])
+                            self.option_buttons[option_num].config(bg=self.colors['accent'], fg='white')
                         break
                 return
     
