@@ -1762,6 +1762,12 @@ class ModernDKABQuiz:
                                 font=('Segoe UI', 9, 'bold'), bg=self.colors['card'], fg=self.colors['text'])
         counter_label.pack(side=tk.LEFT, expand=True)
         
+        # Testi Bitir button (only in review flow modes: Test Sonu Değerlendir and Süreli)
+        if self._uses_review_flow():
+            finish_test_btn = self.create_button(nav_frame, "🛑 TESTİ BİTİR", 
+                                                self.confirm_finish_test, self.colors['danger'])
+            finish_test_btn.pack(side=tk.RIGHT, padx=5, ipady=2)
+        
         # Next button (always show)
         if self.current_index < len(self.quiz_questions) - 1:
             next_btn = self.create_button(nav_frame, "→", 
@@ -1776,6 +1782,31 @@ class ModernDKABQuiz:
         
         # Restore selection from history if exists
         self.restore_selection_from_history(question)
+    
+    def confirm_finish_test(self):
+        """Testi bitirmek için onay dialogu gösterir"""
+        answered = len(self.user_answers) if hasattr(self, 'user_answers') else 0
+        unanswered = self.total_questions - answered
+        
+        if unanswered > 0:
+            result = messagebox.askyesno(
+                "Emin misiniz?",
+                f"Testi bitirmek istediğinizden emin misiniz?\n\n"
+                f"Yanıtlanan soru: {answered}\n"
+                f"Yanıtlanmayan soru: {unanswered}\n\n"
+                f"Yanıtlanmayan sorular değerlendirilmeyecektir."
+            )
+        else:
+            result = messagebox.askyesno(
+                "Emin misiniz?",
+                "Testi bitirmek istediğinizden emin misiniz?"
+            )
+        
+        if result:
+            if self._uses_review_flow():
+                self.show_review_screen()
+            else:
+                self.show_results()
     
     def select_option(self, var, option_num):
         """Seçenek seçildiğinde - moda göre davranır"""
