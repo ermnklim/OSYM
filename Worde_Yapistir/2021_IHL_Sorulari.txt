@@ -135,20 +135,6 @@ Doğru Cevap: D
 ---SONRAKI SORU---
 
 Soru 10:
-KONU: Kur'an-ı Kerim ve Tecvid
-Aşağıdakilerden hangisi huruf-ı mukattaanın anlamı ve Kur'an'da bulunmasıyla hikmetiyle ilgili olarak âlimler tarafından ileri sürülen görüşlerden biri değildir?
-
-A) Başında bulundukları surenin ismi oldukları
-B) Ehl-i kitapla ilgili mesajlar içerdikleri
-C) Yemin anlamına geldikleri
-D) Konuya dikkat çekmek amacıyla nazil oldukları
-E) Allah'ın isim ve sıfatlarına işaret ettikleri
-
-Doğru Cevap: B
-
----SONRAKI SORU---
-
-Soru 11:
 KONU: Tefsir
 Aşağıdaki tefsirler ve bu tefsirlerdeki yorum ve açıklamalarda merkeze alınan mezhep eşleştirmelerinden hangisi yanlıştır?
 
@@ -162,17 +148,31 @@ Doğru Cevap: D
 
 ---SONRAKI SORU---
 
-Soru 12:
+Soru 11:
 KONU: Tefsir
 Allah Kur'an-ı Kerim'i insanları hidayete sevk etmek için göndermiştir. Ancak Kur'an, bu hidayet fonksiyonu göz ardı edilerek gereksiz dilsel izahlar ve rivayetlerle tefsir edilmiştir. Ayrıca insan, yalnızca kitap ve sünnetten hesaba çekilecektir. Müslümanların geçmişte söylenmiş sözlere bağlılıktan kurtulmaları gerekmektedir. Bu nedenle Kur'an'ın temel amacına uygun olarak insanları, hayatın tüm alanlarında hidayete yönlendirecek ve ortaya çıkan yeni problemlere çözümler üretecek nitelikte tefsirler yazılmalıdır. Bu ifadeleri kullanan bir kişinin aşağıdaki tefsir türlerinden hangisini savunduğu söylenebilir?
 
 A) İlmî
-B) Felsefî
+B) Felsefi
 C) İşari
 D) Fıkhi
 E) İçtimai
 
 Doğru Cevap: E
+
+---SONRAKI SORU---
+
+Soru 12:
+KONU: Kur'an-ı Kerim ve Tecvid
+Aşağıdakilerden hangisi huruf-ı mukattaanın anlamı ve Kur'an'da bulunmasıyla hikmetiyle ilgili olarak âlimler tarafından ileri sürülen görüşlerden biri değildir?
+
+A) Başında bulundukları surenin ismi oldukları
+B) Ehlikitapla ilgili mesajlar içerdikleri
+C) Yemin anlamına geldikleri
+D) Konuya dikkat çekmek amacıyla nazil oldukları
+E) Allah'ın isim ve sıfatlarına işaret ettikleri
+
+Doğru Cevap: B
 
 ---SONRAKI SORU---
 
