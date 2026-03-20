@@ -12,6 +12,7 @@ import random
 import os
 import sys
 import time
+import re
 from pathlib import Path
 from typing import Dict, List, Tuple
 import threading
@@ -232,6 +233,11 @@ class OfflineTurkishTTS:
             with wave.open(str(output_path), "wb") as wav_file:
                 voice.synthesize_wav(text, wav_file, syn_config=syn_config)
 
+            with wave.open(str(output_path), "rb") as wav_file:
+                frame_rate = wav_file.getframerate()
+                frame_count = wav_file.getnframes()
+                duration_seconds = (frame_count / frame_rate) if frame_rate else 0.0
+
             if token != self._request_token:
                 try:
                     output_path.unlink()
@@ -245,7 +251,7 @@ class OfflineTurkishTTS:
             )
 
             if on_ready:
-                on_ready(output_path)
+                on_ready(output_path, duration_seconds)
         except Exception as exc:
             self._last_error = str(exc)
             if on_error:
@@ -291,6 +297,8 @@ class ModernDKABQuiz:
         self.speech_status_var = tk.StringVar(
             value=self._initial_speech_status_text()
         )
+        self._speech_sequence_job = None
+        self._speech_sequence_token = 0
         self.persisted_settings = self.load_persisted_settings()
 
         self.theme_palettes = {
@@ -379,8 +387,10 @@ class ModernDKABQuiz:
             "goto_q": "1",
             "speech_voice": self.speech_engine.get_default_voice_label(),
             "speech_rate": "1.00",
-            "speech_auto_mode": "Sadece soru",
-            "speech_feedback_mode": "Söyleme",
+            "speech_read_question": "1",
+            "speech_read_options": "0",
+            "speech_read_answer": "0",
+            "speech_wait_ms": "450",
         }
         try:
             if os.path.exists(self.settings_file):
@@ -414,8 +424,10 @@ class ModernDKABQuiz:
             "goto_q": self.goto_q_var.get(),
             "speech_voice": self.speech_voice_var.get(),
             "speech_rate": f"{self.speech_rate_var.get():.2f}",
-            "speech_auto_mode": self.speech_auto_mode_var.get(),
-            "speech_feedback_mode": self.speech_feedback_mode_var.get(),
+            "speech_read_question": "1" if self.speech_read_question_var.get() else "0",
+            "speech_read_options": "1" if self.speech_read_options_var.get() else "0",
+            "speech_read_answer": "1" if self.speech_read_answer_var.get() else "0",
+            "speech_wait_ms": str(int(self.speech_wait_ms_var.get())),
         }
         self.persisted_settings.update(data)
         try:
@@ -442,8 +454,10 @@ class ModernDKABQuiz:
             self.goto_q_var,
             self.speech_voice_var,
             self.speech_rate_var,
-            self.speech_auto_mode_var,
-            self.speech_feedback_mode_var,
+            self.speech_read_question_var,
+            self.speech_read_options_var,
+            self.speech_read_answer_var,
+            self.speech_wait_ms_var,
         ]
         for var in vars_to_watch:
             var.trace_add("write", lambda *_: self.save_persisted_settings())
@@ -479,15 +493,42 @@ class ModernDKABQuiz:
         except ValueError:
             saved_rate = 1.0
         self.speech_rate_var.set(max(0.7, min(1.6, saved_rate)))
-        self.speech_auto_mode_var.set(
-            self.persisted_settings.get("speech_auto_mode", "Sadece soru")
+        self.speech_read_question_var.set(
+            self._read_bool_setting(
+                self.persisted_settings,
+                "speech_read_question",
+                fallback=self.persisted_settings.get("speech_auto_mode", "Sadece soru") != "Kapalı",
+            )
         )
-        self.speech_feedback_mode_var.set(
-            self.persisted_settings.get("speech_feedback_mode", "Söyleme")
+        self.speech_read_options_var.set(
+            self._read_bool_setting(
+                self.persisted_settings,
+                "speech_read_options",
+                fallback=self.persisted_settings.get("speech_auto_mode") == "Soru ve şıkları oku",
+            )
         )
+        self.speech_read_answer_var.set(
+            self._read_bool_setting(
+                self.persisted_settings,
+                "speech_read_answer",
+                fallback=self.persisted_settings.get("speech_feedback_mode") == "Doğru cevabı söyle",
+            )
+        )
+        try:
+            saved_wait_ms = int(self.persisted_settings.get("speech_wait_ms", "450"))
+        except ValueError:
+            saved_wait_ms = 450
+        self.speech_wait_ms_var.set(max(0, min(5000, saved_wait_ms)))
+        self.update_speech_wait_label()
         self.update_speech_rate_label()
         self._set_speech_status(self._initial_speech_status_text())
         self.on_mode_changed()
+
+    def _read_bool_setting(self, data, key, fallback=False):
+        raw_value = data.get(key)
+        if raw_value is None:
+            return bool(fallback)
+        return str(raw_value).strip().lower() in {"1", "true", "evet", "yes", "on"}
 
     def _initial_speech_status_text(self):
         if self.speech_engine.is_available():
@@ -504,6 +545,12 @@ class ModernDKABQuiz:
                 f"Okuma Hızı: {self.speech_rate_var.get():.2f}x"
             )
 
+    def update_speech_wait_label(self, *_):
+        if hasattr(self, "speech_wait_value_var"):
+            self.speech_wait_value_var.set(
+                f"Sonraki soruya geçiş: {int(self.speech_wait_ms_var.get())} ms"
+            )
+
     def _set_speech_status(self, text):
         if hasattr(self, "speech_status_var"):
             self.speech_status_var.set(text)
@@ -518,7 +565,18 @@ class ModernDKABQuiz:
         return self.speech_voice_choices[0][0]
 
     def _normalize_speech_text(self, text):
-        return " ".join(str(text or "").replace("\n", " ").split())
+        normalized = str(text or "").replace("\n", " ")
+        abbreviation_rules = [
+            (r"\bHz\.\s*", "Hazreti "),
+            (r"\b(?:s\.a\.v\.|s\.a\.s\.|sav\.|sas\.)\s*", "sallallahu aleyhi ve sellem "),
+            (r"\b(?:r\.a\.|ra\.)\s*", "radıyallahu anh "),
+            (r"\b(?:a\.s\.|as\.)\s*", "aleyhisselam "),
+            (r"\b(?:k\.s\.|ks\.)\s*", "kuddise sirruhu "),
+            (r"\b(?:c\.c\.|cc\.)\s*", "celle celaluhu "),
+        ]
+        for pattern, replacement in abbreviation_rules:
+            normalized = re.sub(pattern, replacement, normalized, flags=re.IGNORECASE)
+        return " ".join(normalized.split())
 
     def _option_read_label(self, option_letter):
         option_names = {
@@ -530,11 +588,15 @@ class ModernDKABQuiz:
         }
         return option_names.get(option_letter, option_letter)
 
-    def build_question_audio_text(self, question, include_options=False, include_answer=False):
-        parts = [
-            f"Soru {question.get('soru_no', self.current_index + 1)}.",
-            self._normalize_speech_text(question.get("soru_metni", "")),
-        ]
+    def build_question_audio_text(self, question, include_question=True, include_options=False):
+        parts = []
+
+        if include_question:
+            question_text = self._normalize_speech_text(question.get("soru_metni", ""))
+            if question_text:
+                parts.append(
+                    f"Soru {question.get('soru_no', self.current_index + 1)}. {question_text}"
+                )
 
         if include_options:
             for option_letter in ("A", "B", "C", "D", "E"):
@@ -544,15 +606,6 @@ class ModernDKABQuiz:
                         f"{self._option_read_label(option_letter)} şıkkı. "
                         f"{self._normalize_speech_text(option_text)}"
                     )
-
-        if include_answer:
-            correct_option = question.get("dogru_cevap")
-            correct_text = question.get("siklar", {}).get(correct_option, "")
-            if correct_option and correct_text:
-                parts.append(
-                    f"Doğru cevap {self._option_read_label(correct_option)} şıkkı. "
-                    f"{self._normalize_speech_text(correct_text)}"
-                )
 
         return " ".join(part for part in parts if part)
 
@@ -567,7 +620,37 @@ class ModernDKABQuiz:
             f"{self._normalize_speech_text(correct_text)}"
         )
 
-    def speak_text(self, text, status_prefix="Ses okunuyor"):
+    def _cancel_speech_sequence(self):
+        self._speech_sequence_token += 1
+        if self._speech_sequence_job:
+            try:
+                self.root.after_cancel(self._speech_sequence_job)
+            except Exception:
+                pass
+            self._speech_sequence_job = None
+
+    def _is_sequence_token_current(self, token):
+        return token == self._speech_sequence_token
+
+    def _schedule_sequence_step(self, delay_ms, token, callback):
+        if not self._is_sequence_token_current(token):
+            return
+
+        def _run():
+            self._speech_sequence_job = None
+            if self._is_sequence_token_current(token):
+                callback()
+
+        self._speech_sequence_job = self.root.after(max(0, int(delay_ms)), _run)
+
+    def _auto_read_is_enabled(self):
+        return any([
+            self.speech_read_question_var.get(),
+            self.speech_read_options_var.get(),
+            self.speech_read_answer_var.get(),
+        ])
+
+    def speak_text(self, text, status_prefix="Ses okunuyor", on_finished=None, sequence_token=None):
         voice_id = self._selected_speech_voice_id()
         if not voice_id:
             self._set_speech_status("Türkçe ses modeli bulunamadı.")
@@ -575,19 +658,32 @@ class ModernDKABQuiz:
 
         self._set_speech_status(f"{status_prefix}...")
 
-        def on_ready(_):
+        def on_ready(_, duration_seconds):
             self.root.after(
                 0,
                 lambda: self._set_speech_status(
                     f"{status_prefix}. Durdur ile kesebilirsin."
                 ),
             )
+            if on_finished:
+                delay_ms = int(max(0.25, duration_seconds + 0.25) * 1000)
+                token = sequence_token if sequence_token is not None else self._speech_sequence_token
+                self.root.after(
+                    0,
+                    lambda: self._schedule_sequence_step(delay_ms, token, on_finished),
+                )
 
         def on_error(error_message):
             self.root.after(
                 0,
                 lambda: self._set_speech_status(f"Ses hatası: {error_message}"),
             )
+            if on_finished:
+                token = sequence_token if sequence_token is not None else self._speech_sequence_token
+                self.root.after(
+                    0,
+                    lambda: self._schedule_sequence_step(400, token, on_finished),
+                )
 
         started = self.speech_engine.speak(
             text,
@@ -598,8 +694,13 @@ class ModernDKABQuiz:
         )
         if not started:
             self._set_speech_status("Ses başlatılamadı.")
+            if on_finished:
+                token = sequence_token if sequence_token is not None else self._speech_sequence_token
+                self._schedule_sequence_step(400, token, on_finished)
 
-    def stop_speech(self, reset_status=True):
+    def stop_speech(self, reset_status=True, cancel_sequence=True):
+        if cancel_sequence:
+            self._cancel_speech_sequence()
         self.speech_engine.stop()
         if reset_status:
             self._set_speech_status(self._initial_speech_status_text())
@@ -611,28 +712,127 @@ class ModernDKABQuiz:
         self.speak_text(sample_text, status_prefix="Türkçe ses testi oynatılıyor")
 
     def maybe_auto_read_question(self, question):
-        auto_mode = self.speech_auto_mode_var.get()
-        if auto_mode == "Kapalı":
+        if self.current_view != "question":
+            return
+
+        if not self._auto_read_is_enabled():
             self._set_speech_status(self._initial_speech_status_text())
             return
 
-        include_options = auto_mode == "Soru ve şıkları oku"
-        speech_text = self.build_question_audio_text(
+        self._cancel_speech_sequence()
+        sequence_token = self._speech_sequence_token
+        first_text = self.build_question_audio_text(
             question,
-            include_options=include_options,
-            include_answer=False,
+            include_question=self.speech_read_question_var.get(),
+            include_options=self.speech_read_options_var.get(),
         )
-        self.speak_text(speech_text, status_prefix="Soru otomatik okunuyor")
+
+        if first_text:
+            self.speak_text(
+                first_text,
+                status_prefix="Otomatik okuma sürüyor",
+                on_finished=lambda q=question, t=sequence_token: self._continue_auto_read_sequence(q, t),
+                sequence_token=sequence_token,
+            )
+        else:
+            self._continue_auto_read_sequence(question, sequence_token)
+
+    def _store_user_answer(self, question, selected_option):
+        if not hasattr(self, 'user_answers'):
+            self.user_answers = []
+
+        answer_data = {
+            'question': question,
+            'selected_option': selected_option,
+            'correct_option': question['dogru_cevap'],
+            'is_correct': selected_option == question['dogru_cevap']
+        }
+
+        for existing_answer in self.user_answers:
+            if (
+                existing_answer['question']['yil'] == question['yil']
+                and existing_answer['question']['soru_no'] == question['soru_no']
+                and existing_answer['question']['ders'] == question['ders']
+            ):
+                existing_answer.update(answer_data)
+                return existing_answer
+
+        self.user_answers.append(answer_data)
+        return answer_data
+
+    def _auto_mark_correct_answer(self, question):
+        correct_option = question['dogru_cevap']
+        correct_button_num = next(
+            (option_num for option_num, option_key in self.option_map.items() if option_key == correct_option),
+            None,
+        )
+        if correct_button_num is None:
+            return
+
+        already_answered = any(
+            item['question']['yil'] == question['yil']
+            and item['question']['soru_no'] == question['soru_no']
+            and item['question']['ders'] == question['ders']
+            for item in self.test_history
+        )
+
+        self.update_test_history(question, correct_option)
+        self._store_user_answer(question, correct_option)
+
+        for key, var in self.option_vars.items():
+            var.set("")
+            self.option_buttons[key].config(bg=self.colors['border'], fg=self.colors['text'])
+
+        self.option_vars[correct_button_num].set(correct_button_num)
+        self.option_buttons[correct_button_num].config(bg=self.colors['success'], fg='white')
+
+        if self._quiz_mode() == "Anında Cevap":
+            if not already_answered:
+                self.score += 1
+
+    def _continue_auto_read_sequence(self, question, sequence_token):
+        if not self._is_sequence_token_current(sequence_token):
+            return
+
+        if self.speech_read_answer_var.get():
+            self._auto_mark_correct_answer(question)
+            self.speak_text(
+                self.build_answer_audio_text(question),
+                status_prefix="Doğru cevap okunuyor",
+                on_finished=lambda q=question, t=sequence_token: self._advance_after_auto_read(q, t),
+                sequence_token=sequence_token,
+            )
+        else:
+            self._advance_after_auto_read(question, sequence_token)
+
+    def _advance_after_auto_read(self, question, sequence_token):
+        if not self._is_sequence_token_current(sequence_token):
+            return
+
+        def _move_next():
+            if not self._is_sequence_token_current(sequence_token):
+                return
+
+            if self.current_index < len(self.quiz_questions) - 1:
+                self.current_index += 1
+                self.show_question()
+            else:
+                if self._uses_review_flow():
+                    self.show_review_screen()
+                else:
+                    self.show_results()
+
+        self._schedule_sequence_step(self.speech_wait_ms_var.get(), sequence_token, _move_next)
 
     def speak_question_only(self, question):
         self.speak_text(
-            self.build_question_audio_text(question, include_options=False),
+            self.build_question_audio_text(question, include_question=True, include_options=False),
             status_prefix="Soru okunuyor",
         )
 
     def speak_question_and_options(self, question):
         self.speak_text(
-            self.build_question_audio_text(question, include_options=True),
+            self.build_question_audio_text(question, include_question=True, include_options=True),
             status_prefix="Soru ve şıklar okunuyor",
         )
 
@@ -643,16 +843,11 @@ class ModernDKABQuiz:
         )
 
     def speak_answer_feedback(self, question, is_correct):
-        feedback_mode = self.speech_feedback_mode_var.get()
-        if feedback_mode == "Söyleme":
+        if not self.speech_read_answer_var.get():
             return
 
-        if feedback_mode == "Doğru / yanlış":
-            speech_text = "Cevabın doğru." if is_correct else "Cevabın yanlış."
-        else:
-            result_text = "Cevabın doğru." if is_correct else "Cevabın yanlış."
-            speech_text = f"{result_text} {self.build_answer_audio_text(question)}"
-
+        result_text = "Cevabın doğru." if is_correct else "Cevabın yanlış."
+        speech_text = f"{result_text} {self.build_answer_audio_text(question)}"
         self.speak_text(speech_text, status_prefix="Cevap geri bildirimi okunuyor")
 
     def create_speech_controls(self, parent, question):
@@ -1051,33 +1246,50 @@ class ModernDKABQuiz:
         )
         self.speech_voice_combo.pack(padx=5, pady=0, fill=tk.X)
 
-        tk.Label(speech_card, text="Otomatik okuma:", font=('Segoe UI', 8),
+        tk.Label(speech_card, text="Test boyunca sırayla oku:", font=('Segoe UI', 8),
                 fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(4, 0))
 
-        self.speech_auto_mode_var = tk.StringVar(value="Sadece soru")
-        self.speech_auto_mode_combo = ttk.Combobox(
-            speech_card,
-            textvariable=self.speech_auto_mode_var,
-            values=["Kapalı", "Sadece soru", "Soru ve şıkları oku"],
-            state="readonly",
-            width=18,
-            style='Modern.TCombobox'
-        )
-        self.speech_auto_mode_combo.pack(padx=5, pady=0, fill=tk.X)
+        speech_tick_frame = tk.Frame(speech_card, bg=self.colors['card'])
+        speech_tick_frame.pack(fill=tk.X, padx=5, pady=(2, 2))
 
-        tk.Label(speech_card, text="Cevap geri bildirimi:", font=('Segoe UI', 8),
-                fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(4, 0))
+        self.speech_read_question_var = tk.BooleanVar(value=True)
+        self.speech_read_options_var = tk.BooleanVar(value=False)
+        self.speech_read_answer_var = tk.BooleanVar(value=False)
 
-        self.speech_feedback_mode_var = tk.StringVar(value="Söyleme")
-        self.speech_feedback_combo = ttk.Combobox(
-            speech_card,
-            textvariable=self.speech_feedback_mode_var,
-            values=["Söyleme", "Doğru / yanlış", "Doğru cevabı söyle"],
-            state="readonly",
-            width=18,
-            style='Modern.TCombobox'
+        checkbutton_style = {
+            "bg": self.colors['card'],
+            "fg": self.colors['text'],
+            "activebackground": self.colors['card'],
+            "activeforeground": self.colors['text'],
+            "selectcolor": self.colors['primary'],
+            "anchor": tk.W,
+            "font": ('Segoe UI', 8),
+            "highlightthickness": 0,
+        }
+
+        self.speech_question_check = tk.Checkbutton(
+            speech_tick_frame,
+            text="Soru",
+            variable=self.speech_read_question_var,
+            **checkbutton_style,
         )
-        self.speech_feedback_combo.pack(padx=5, pady=0, fill=tk.X)
+        self.speech_question_check.pack(fill=tk.X)
+
+        self.speech_options_check = tk.Checkbutton(
+            speech_tick_frame,
+            text="Şıklar",
+            variable=self.speech_read_options_var,
+            **checkbutton_style,
+        )
+        self.speech_options_check.pack(fill=tk.X)
+
+        self.speech_answer_check = tk.Checkbutton(
+            speech_tick_frame,
+            text="Cevap",
+            variable=self.speech_read_answer_var,
+            **checkbutton_style,
+        )
+        self.speech_answer_check.pack(fill=tk.X)
 
         tk.Label(speech_card, text="Okuma hızı:", font=('Segoe UI', 8),
                 fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(4, 0))
@@ -1102,6 +1314,31 @@ class ModernDKABQuiz:
         self.speech_rate_var.trace_add("write", self.update_speech_rate_label)
 
         tk.Label(speech_card, textvariable=self.speech_rate_value_var, font=('Segoe UI', 8),
+                fg=self.colors['text_secondary'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(0, 4))
+
+        tk.Label(speech_card, text="Bekleme süresi:", font=('Segoe UI', 8),
+                fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(2, 0))
+
+        self.speech_wait_ms_var = tk.IntVar(value=450)
+        self.speech_wait_value_var = tk.StringVar(value="Sonraki soruya geçiş: 450 ms")
+        self.speech_wait_scale = tk.Scale(
+            speech_card,
+            from_=0,
+            to=5000,
+            resolution=250,
+            orient=tk.HORIZONTAL,
+            variable=self.speech_wait_ms_var,
+            showvalue=False,
+            highlightthickness=0,
+            bg=self.colors['card'],
+            fg=self.colors['text'],
+            troughcolor=self.colors['primary'],
+            activebackground=self.colors['accent']
+        )
+        self.speech_wait_scale.pack(padx=5, pady=(0, 0), fill=tk.X)
+        self.speech_wait_ms_var.trace_add("write", self.update_speech_wait_label)
+
+        tk.Label(speech_card, textvariable=self.speech_wait_value_var, font=('Segoe UI', 8),
                 fg=self.colors['text_secondary'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(0, 4))
 
         speech_buttons = tk.Frame(speech_card, bg=self.colors['card'])
@@ -1129,9 +1366,11 @@ class ModernDKABQuiz:
 
         if not self.speech_engine.is_available():
             self.speech_voice_combo.config(state="disabled")
-            self.speech_auto_mode_combo.config(state="disabled")
-            self.speech_feedback_combo.config(state="disabled")
+            self.speech_question_check.config(state=tk.DISABLED)
+            self.speech_options_check.config(state=tk.DISABLED)
+            self.speech_answer_check.config(state=tk.DISABLED)
             self.speech_rate_scale.config(state=tk.DISABLED)
+            self.speech_wait_scale.config(state=tk.DISABLED)
             self.preview_voice_button.config(state=tk.DISABLED, cursor="arrow")
             self.stop_voice_button.config(state=tk.DISABLED, cursor="arrow")
         
@@ -2416,6 +2655,7 @@ class ModernDKABQuiz:
     
     def select_option(self, var, option_num):
         """Seçenek seçildiğinde - moda göre davranır"""
+        self._cancel_speech_sequence()
         question = self.quiz_questions[self.current_index]
         
         # Check if already answered in Instant Mode
@@ -2663,6 +2903,7 @@ class ModernDKABQuiz:
     
     def check_answer(self):
         """Cevabı kontrol eder - sadece review mod için"""
+        self._cancel_speech_sequence()
         # Get selected option
         selected = None
         for key, var in self.option_vars.items():
