@@ -9,8 +9,12 @@
   "time_minutes": "0",
   "time_seconds": "15",
   "order": "Sıralı",
-  "num": "75",
+  "num": "106",
   "goto_year": "2023",
   "goto_ders": "IHL",
-  "goto_q": "1"
+  "goto_q": "1",
+  "speech_voice": "Piper Türkçe DFKI (Orta)",
+  "speech_rate": "1.00",
+  "speech_auto_mode": "Soru ve şıkları oku",
+  "speech_feedback_mode": "Söyleme"
 }
