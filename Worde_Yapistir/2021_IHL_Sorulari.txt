@@ -999,6 +999,20 @@ Doğru Cevap: E
 ---SONRAKI SORU---
 
 Soru 72:
+KONU: Din Psikolojisi
+Aysel Hanım, 15 yaşındaki oğlunun giderek ibadetlerden uzaklaştığını düşünmektedir. Oğlu ibadetlerin anlamsız geldiğini söyleyerek Allah, din, peygamber gibi konularda sorular soruyor. Aysel Hanım'ın oğlunun gelişim özellikleri dikkate alındığında, aşağıdakilerden hangisi verilebilecek bir tavsiye olamaz?
+
+A) Uygun sosyal ortamlar oluşturulması
+B) Dinî kurumlar ve din görevlilerinden faydalanılması
+C) İyi özdeşim modelleri sunulması
+D) Empati yapılması
+E) Uygun görülmeyen davranışların doğrudan hedef alınması
+
+Doğru Cevap: E
+
+---SONRAKI SORU---
+
+Soru 73:
 KONU: Din Eğitimi
 Değerlerimiz, din kültürü ve ahlak bilgisi öğretim programının perspektifini oluşturan ilkeler toplamı olarak kabul edilmiştir. Aşağıdakilerden hangisi bu kök değerler arasında yer almaz?
 
@@ -1012,7 +1026,7 @@ Doğru Cevap: D
 
 ---SONRAKI SORU---
 
-Soru 73:
+Soru 74:
 KONU: Din Eğitimi
 Din öğretimi kendine özgü kavramsal çerçevesi olan bir yapıya sahiptir. 2018 yılında yayımlanan programda her bir üniteyle ilgili "anahtar kavramlar"a yer verilmiştir. Aşağıdaki ünitelerden hangisinin "örf, âdet, mimari, musiki, edebiyat, Mescid-i Aksâ" anahtar kavramları çerçevesinde işleneceği söylenebilir?
 
@@ -1026,7 +1040,7 @@ Doğru Cevap: D
 
 ---SONRAKI SORU---
 
-Soru 74:
+Soru 75:
 KONU: Din Eğitimi
 2018 yılında yayımlanan "Din Kültürü ve Ahlak Bilgisi Dersi Öğretim Programı'nda (Ortaöğretim 9, 10, 11 ve 12. Sınıflar)" bilgi verilen aşağıdaki hususların hangisine "Anadolu İmam Hatip Lisesi Meslek Dersleri Öğretim Programları"nda yer verilmemiştir?
 
@@ -1037,17 +1051,3 @@ D) Kazanımların sınıf düzeyi, konu ve kazanım sırası şeklinde aşamalı
 E) Ölçme ve değerlendirme yaklaşımlarıyla ölçme ve değerlendirme uygulamalarına yön veren ilkelere
 
 Doğru Cevap: D
-
----SONRAKI SORU---
-
-Soru 75:
-KONU: Din Psikolojisi
-Aysel Hanım, 15 yaşındaki oğlunun giderek ibadetlerden uzaklaştığını düşünmektedir. Oğlu ibadetlerin anlamsız geldiğini söyleyerek Allah, din, peygamber gibi konularda sorular soruyor. Aysel Hanım'ın oğlunun gelişim özellikleri dikkate alındığında, aşağıdakilerden hangisi verilebilecek bir tavsiye olamaz?
-
-A) Uygun sosyal ortamlar oluşturulması
-B) Dinî kurumlar ve din görevlilerinden faydalanılması
-C) İyi özdeşim modelleri sunulması
-D) Empati yapılması
-E) Uygun görülmeyen davranışların doğrudan hedef alınması
-
-Doğru Cevap: E
