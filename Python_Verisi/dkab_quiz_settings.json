@@ -1,7 +1,7 @@
 {
   "theme": "Acik Modern",
-  "year": "Tüm yıllar",
-  "ders": "Tüm dersler",
+  "year": "2023",
+  "ders": "IHL",
   "konu": "Tüm konular",
   "mode": "Test Sonu Değerlendir",
   "time_limit": "0",
@@ -9,7 +9,7 @@
   "time_minutes": "0",
   "time_seconds": "15",
   "order": "Rastgele",
-  "num": "75",
+  "num": "34",
   "goto_year": "2023",
   "goto_ders": "IHL",
   "goto_q": "1"

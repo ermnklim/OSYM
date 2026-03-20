@@ -3,1049 +3,550 @@ KONU: Genel Kültür
 YIL: 2023
 
 Soru 1:
-KONU: 
+KONU: Kur'an-ı Kerim ve Tecvid
+Bu ayetlerdeki altı çizili kelimelerde bulunan tecvit kuralları aşağıdakilerin hangisinde verilmiştir?
 
+A) Medd-i muttasıl – medd-i lazım
+B) Medd-i tabii – medd-i lazım
+C) Medd-i arız – medd-i tabii
+D) Medd-i arız – medd-i lin
+E) Medd-i lin – medd-i muttasıl
 
-A) 
-B) 
-C) 
-D) 
-E) 
+Doğru Cevap: E
 
-Doğru Cevap: 
-
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 2:
-KONU: 
+KONU: Kur'an-ı Kerim ve Tecvid
+Numaralanmış terkiplerin hangilerinde hem "ihfa" hem de "dudak izharı" bulunmaktadır?
 
+A) Yalnız I
+B) Yalnız II
+C) Yalnız III
+D) I ve II
+E) II ve III
 
-A) 
-B) 
-C) 
-D) 
-E) 
+Doğru Cevap: B
 
-Doğru Cevap: 
-
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 3:
-KONU: 
+KONU: Kur'an-ı Kerim ve Tecvid
+Öğretmen Kur'an-ı Kerim dersinin sözlü sınavında Yusuf'a: "Bir şeyi bir tarafa doğru eğmek ve meylettirmek gibi anlamlara gelen bu kelime, fethada ve onu takip eden elifte ortaya çıkan telaffuz değişikliği anlamında bir kıraat terimidir. Diğer bir ifadeyle kıraat ilminde fethayı kesreye ve elif ya harfine yaklaştırarak seslendirmek anlamına gelmektedir." açıklamasını yapmış ve ona bu açıklamaya uygun düşen tecvit kuralının ne olduğunu sormuştur.
 
+Bu parçada bahsedilen soruya Yusuf'un vermesi gereken cevap aşağıdakilerden hangisidir?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) İmale
+B) Sekte
+C) İklab
+D) Revm
+E) İşmam
 
-Doğru Cevap: 
+Doğru Cevap: A
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 4:
-KONU: 
+KONU: Kur'an-ı Kerim ve Tecvid
+Tecvit dersinde öğretmen tahtaya "وَاللَّهُ" ve "إِنَّ اللَّهَ" kelimelerini yazarak "Allah" lafzındaki lam harfinin nasıl okunması gerektiğini öğrencilere sorar. Öğrencilerden bazıları şu cevapları verir:
+• Begüm: Lafzatullahtan önceki harf kalın olduğu için lam harfi kalın okunmalıdır.
+• Burak: Lafzatullahtaki lam harfinin kendisi ince olduğu için lam harfi ince okunmalıdır.
+• Dilara: Lafzatullahtan önceki harfin harekesi üstün olduğu için lam harfi kalın okunmalıdır.
+• Elif: Lafzatullah hususi bir kelime olduğu için burada herhangi bir kaide aranmaz.
+• Hasan: Lafzatullahtan sonraki harfin harekesi ötre olduğu için lam harfi kalın okunmalıdır.
+Buna göre hangi öğrencinin vermiş olduğu cevap doğrudur?
 
+A) Begüm
+B) Burak
+C) Dilara
+D) Elif
+E) Hasan
 
-A) 
-B) 
-C) 
-D) 
-E) 
+Doğru Cevap: C
 
-Doğru Cevap: 
-
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 5:
-KONU: 
+KONU: Kur'an-ı Kerim ve Tecvid
+Kur'an-ı Kerim dersinde,
+• Can, tahkikle okurken كَرِيمٌ kelimesindeki ر harfini uzatarak okumuştur.
+• Zehra, وَاجْعَلْنَا kelimesinde ل harfini üstün harekesiyle okumuştur.
+• Ayşe, كَرِيمًا kelimesinde كَرِيمٌ diye durmuştur.
+• Buğra, ام از تَانُوا kelimesinde ر harfini kalın okumuştur.
+Buna göre okuyuş hatası yapanlar aşağıdakilerden hangisinde verilmiştir?
 
+A) Can ve Zehra
+B) Ayşe ve Buğra
+C) Zehra ve Buğra
+D) Can ve Buğra
+E) Zehra ve Ayşe
 
-A) 
-B) 
-C) 
-D) 
-E) 
+Doğru Cevap: E
 
-Doğru Cevap: 
-
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 6:
-KONU: 
+KONU: Tefsir
+Sahabeler arasında;
+• Kur'an hafızlarının önde gelenlerinden olup müşriklere karşı Kur'an'ı açıktan ilk okuyan,
+• fıkıh ve lügat ilimlerinde çalışmalar yapmakla birlikte daha çok kıraat ve tefsir ilminde ön plana çıkan,
+• Hz. Osman döneminde Kufe'de Kur'an öğreticiliği yaparak Irak tefsir ekolünün temelini atan,
+• Hasan Basri ve Katade gibi pek çok öğrenci yetiştiren
+kişi aşağıdakilerden hangisidir?
 
+A) Übey b. Kab
+B) Abdullah b. Abbas
+C) Abdullah b. Mesud
+D) Abdullah b. Zübeyr
+E) İbn Şihab ez-Zühri
 
-A) 
-B) 
-C) 
-D) 
-E) 
+Doğru Cevap: C
 
-Doğru Cevap: 
-
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 7:
-KONU: 
+KONU: Tefsir
+Kur'an tefsiriyle alakalı öne çıkan kavramlardan biri tevildir. Bu kavram genel olarak farklı anlamlara gelme ihtimali olan ayetleri zahirinden koparmadan yorumlamak şeklinde tanımlanmaktadır. Kaynaklarda tevilin kendine özgü farklı türlerinin bulunduğu da ifade edilmektedir. Örneğin bazı ayetlerle alakalı sufilerin keşif ve ilham yoluyla ulaştıkları bilgi, bir tevil türü olarak kabul edilmektedir.
 
+Bu parçada bahsedilen tevil türü aşağıdakilerden hangisi kapsamında değerlendirilmektedir?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) İrfani
+B) Beyani
+C) Burhani
+D) Lügavi
+E) İçtimai
 
-Doğru Cevap: 
+Doğru Cevap: A
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 8:
-KONU: 
+KONU: Tefsir
+Kur'an-ı Kerim'de çeşitli anlamlarda kullanılan kelimeler bulunmaktadır. "...O hâlde, kim tağutu tanımayıp Allah'a inanırsa kopmak bilmeyen sapasağlam bir kulpa yapışmıştır..." (Bakara, 2:256); "Andolsun biz, her ümmete 'Allah'a kulluk edin, tağuttan kaçının.' diye peygamber gönderdik..." (Nahl, 16:36) gibi farklı ayetlerde geçen tağut kelimesi bu duruma örnek verilebilir. Söz konusu kelime; müfessirlerce geçtiği ayetlerde "şeytan", "nefis", "put" gibi çeşitli şekillerde açıklanmıştır.
 
+Bu parçada bahsedilen hususu inceleyen Kur'an ilmi aşağıdakilerden hangisidir?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) Mübhematü'l-Kur'an
+B) Mücmel ve mübeyyen
+C) Aksamü'l-Kur'an
+D) Fezailü'l-Kur'an
+E) Vücuh ve nezair
 
-Doğru Cevap: 
+Doğru Cevap: E
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 9:
-KONU: 
+KONU: Tefsir
+Tefsir dersinde Kur'an ilimleri konusunu işleyecek olan öğretmen, dersin başında tahtaya şu ayetleri yazar:
+• "De ki: Andolsun, insanlar ve cinler bu Kur'an'ın bir benzerini getirmek üzere toplasalar ve birbirlerine de destek olsalar yine onun benzerini getiremezler." (İsra, 17:88)
+• "Eğer kulumuza (Muhammed'e) indirdiğimiz (Kur'an) hakkında şüphede iseniz haydi onun benzeri bir sure getirin ve eğer doğru söyleyenler iseniz Allah'tan başka şahitlerinizi çağırın." (Bakara, 2:23)
+Buna göre öğretmenin aşağıdaki Kur'an ilimlerinin hangisinden bahsetmesi beklenir?
 
+A) Nasih ve mensuh
+B) İ'cazü'l-Kur'an
+C) Mübhematü'l-Kur'an
+D) Mücmel ve mübeyyen
+E) Fezailü'l-Kur'an
 
-A) 
-B) 
-C) 
-D) 
-E) 
+Doğru Cevap: B
 
-Doğru Cevap: 
-
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 10:
-KONU: 
+KONU: Tefsir
+Çeşitli sebeplerden dolayı Kur'an ayetleri arasında ihtilaf ve çelişki gibi görünen hususlar bulunmaktadır. Bu konu Kur'an ilimlerinden müşkilü'l-Kur'an kapsamında ele alınmakta ve ihtilaf olarak görülen durumun nedenlerine yönelik çeşitli gerekçeler ileri sürülmektedir.
 
+Aşağıdakilerden hangisi bu gerekçelerden biri değildir?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) Tekid edatlarının birbirinin yerine kullanılması
+B) Müşterek lafızların kullanılması
+C) Bir oluşumun farklı aşamalarının bulunması
+D) Kıraat farklılıkları
+E) Hakiki veya mecazi mana ihtimali
 
-Doğru Cevap: 
+Doğru Cevap: A
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 11:
-KONU: 
+KONU: Tefsir
+İslam'ın yayılması ve Arap olmayan unsurların İslam'a girmesiyle bir taraftan Kur'an'ın indiği dönemdeki dil safiyetini kaybetmeye başlamış, diğer taraftan Arapçayı anlayanların oranı azalmıştır. Bunun yanında çeşitli düşüncelerle ortaya çıkan grupların Kur'an'ı serbest şekilde yorumlama arzuları devreye girmiştir. Bu durum Kur'an lafızlarının delaletini ve dil inceliklerini öne çıkararak anlam kaymalarını ve yanlış yorumlamaları engelleyecek tefsir eserlerinin yazılmasına ortam hazırlamıştır.
 
+Bu parçada bahsedilen durum aşağıdaki tefsir çeşitlerinden hangisinin önemli hâle gelmesini sağlamıştır?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) Lügavi
+B) Mezhebî
+C) Dirayet
+D) Rivayet
+E) İlmî
 
-Doğru Cevap: 
+Doğru Cevap: A
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 12:
-KONU: 
+KONU: Tefsir
+Her insan gibi müfessirlerin de kendilerine ait bir bakış açısı vardır. Dolayısıyla Kur'an'ı tefsir ederken bundan bağımsız olmaları her zaman mümkün değildir. Onlar farkında olmadan kendi grubunun görüşünü öne çıkarmak, insanları doğru yola iletmek, Kur'an'ın modern bilimlerle ve çağdaş gelişmelerle uyumlu olduğunu göstermek gibi sebeplerle ayetleri bağlamından kopararak yorumlayabilir. Bundan kaçınmak için yapılması gereken, Kur'an'ı kendi bütünlüğü içinde, nazil olduğu ortamı ve bu ortama şahit olan kişilerin verdiği bilgileri merkeze alarak tefsir etmektir.
 
+Bu görüşleri savunan bir kişinin tefsirde aşağıdaki ilkelerden hangisini savunması beklenmez?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) Kur'an'ın, Kur'an'la tefsirine itibar etmek
+B) Mezhebî ve ilmî tefsir metotlarını öncelemek
+C) Sahabe açıklamalarını dikkate almak
+D) Hadislere başvurmak
+E) Sebeb-i nüzul bilgisinden yararlanmak
 
-Doğru Cevap: 
+Doğru Cevap: B
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 13:
-KONU: 
+KONU: Hadis
+Maktu hadisle ilgili olarak,
+I. Tabiun ve tebeü't-tabiinin söz ve fiilleridir.
+II. Tabiunun sahabeyi atlayarak Hz. Muhammed'den rivayet ettiği hadistir.
+III. İlk dönemlerde isnadı muttasıl olmayan munkatı anlamında kullanılmıştır.
+ifadelerinden hangileri doğrudur?
 
+A) Yalnız II
+B) Yalnız III
+C) I ve II
+D) I ve III
+E) II ve III
 
-A) 
-B) 
-C) 
-D) 
-E) 
+Doğru Cevap: D
 
-Doğru Cevap: 
-
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 14:
-KONU: 
+KONU: Hadis
+Hz. Osman'ın şehit edilmesinden sonra Müslümanlar arasında ortaya çıkan iç savaşlar fitne olarak adlandırılır. Bu süreçte yaşanan siyasi ve itikadi kamplaşmalar, ilimlerin oluşmasına ve gelişmesine etki etmiştir. Örneğin hadis ilminde fitne olaylarından sonra yaygınlaşan hadis uydurmacılığına karşı bazı uygulamalar başlatılmıştır.
 
+Aşağıdakilerden hangisi bu uygulamalardan biri değildir?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) Hadis rivayetinde isnadın kullanılması
+B) Müstakil hadis usulü eserlerinin kaleme alınması
+C) Uydurma rivayetleri toplayan kitapların yazılması
+D) Cerh ve tadil faaliyetinin uygulanması
+E) Güvenilir hadis kaynaklarının telif edilmesi
 
-Doğru Cevap: 
+Doğru Cevap: B
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 15:
-KONU: 
+KONU: Hadis
+Hadislerin doğru anlaşılması için hadis metninde yer alan ve nadir kullanılan kelimelerin açıklanması önemlidir. Aynı şekilde hadisler, söylenmelerine neden olan sosyokültürel zemin ve ait oldukları tarihî bağlam ışığında kendi gerçekliğine uygun olarak anlaşılmalıdır.
 
+Bu parçada bahsedilen hususları inceleyen hadis ilimleri aşağıdakilerin hangisinde verilmiştir?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) Fıkhü'l-hadis – Garibü'l-hadis
+B) Muhtelifü'l-hadis – Fıkhü'l-hadis
+C) İlelü'l-hadis – Muhtelifü'l-hadis
+D) Garibü'l-hadis – Esbabü vürudi'l-hadis
+E) Esbabü vürudi'l-hadis – İlelü'l-hadis
 
-Doğru Cevap: 
+Doğru Cevap: D
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 16:
-KONU: 
+KONU: Hadis
+Bir hadis, her nesilde yalan üzere birleşmelerini aklın mümkün görmeyeceği sayıda çok ravi tarafından bizzat işitme ve görmeye dayanarak nakledildiğinde mütevatir ismini almaktadır. Bu tür hadislerin birçok özelliği bulunmaktadır.
 
+Aşağıdakilerden hangisi bu özelliklerden biri değildir?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) Lafzen ve manen olmak üzere iki türü vardır.
+B) Dinî yönden kesin bilgi ifade ederler.
+C) Ravilerden bir veya birkaçındaki zayıflık, hadisin sıhhatine zarar vermez.
+D) Sened tenkidine tabi tutulmazlar.
+E) İtikadi konularda delil olup olamayacağı tartışmalıdır.
 
-Doğru Cevap: 
+Doğru Cevap: E
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 17:
-KONU: 
+KONU: Hadis
+Hadis usulünde;
+• zayıf ravinin kendisinden daha güvenilir raviye muhalefet etmesi,
+• büyük günah işleyen ravinin nakletmesi,
+• zayıf bir ravinin tek başına rivayet etmesi
+gibi kusurlar barındıran hadisler aşağıdakilerden hangisiyle nitelendirilmektedir?
 
+A) Müdrec
+B) Münker
+C) Muallel
+D) Müdelles
+E) Mevzu
 
-A) 
-B) 
-C) 
-D) 
-E) 
+Doğru Cevap: B
 
-Doğru Cevap: 
-
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 18:
-KONU: 
+KONU: Hadis
+Hadis âlimleri ilk bakışta birbiriyle zıt gibi görünen hadisleri birtakım prensipler geliştirerek izah etmeye çalışmışlardır. Örneğin bir hadiste "İki kulle (yaklaşık 200 litre) miktarına ulaşınca su pislik tutmaz." denilirken bir başka hadiste "Rengi ve tadı değişmedikçe su pislik tutmaz." buyrulmaktadır. Bu iki rivayette suyun pis olup olmaması hususunda miktar ile renk ve tadın değişmesi şeklinde iki farklı ölçüt vermektedir. Bu hadisler arasındaki ihtilafı İmam Şafii şöyle gidermiştir: İki kulleden az olan su, rengi ve tadı değişsin değişmesin içine pislik düşünce pislenir. İki kulleden fazla olunca, rengi ve tadı değişmedikçe pis olmaz.
 
+İmam Şafii bu iki hadis arasındaki ihtilafı aşağıdaki yöntemlerden hangisiyle gidermiştir?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) Cem ve telif
+B) Tercih
+C) Tevakkuf
+D) Nesh
+E) Terk
 
-Doğru Cevap: 
+Doğru Cevap: A
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 19:
-KONU: 
+KONU: Fıkıh
+Fıkıh mezheplerinde hüküm çıkarılırken Kitab, sünnet, icma, sahabe kavli, kıyas, istihsan, örf, istishab gibi delillerden yararlanılmıştır. Bu delillerden bazıları bütün mezhepler tarafından kullanılırken bazılarının kullanımında mezhepler arasında farklılıklar bulunmaktadır.
 
+Buna göre aşağıdaki mezheplerden hangisi kıyas karşıtlığıyla tanınmıştır?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) Hanefi
+B) Maliki
+C) Şafii
+D) Hanbeli
+E) Zahirî
 
-Doğru Cevap: 
+Doğru Cevap: E
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 20:
-KONU: 
+KONU: Fıkıh
+Hanefilere göre aşağıdaki durumların hangisinde kişinin imamlık yapması uygundur?
 
+A) İma ile namaz kılan kişinin namazı rükû ve secde yaparak kılana imamlık yapması
+B) Özürlü olarak abdest alan kişinin özürsüz abdest alana imamlık yapması
+C) Nafile namaz kılan kişinin farz namaz kılana imamlık yapması
+D) Kadının arada perde varken erkeklere imamlık yapması
+E) Mesh yapan kişinin ayağını yıkayarak abdest alana imamlık yapması
 
-A) 
-B) 
-C) 
-D) 
-E) 
+Doğru Cevap: E
 
-Doğru Cevap: 
-
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 21:
-KONU: 
+KONU: Fıkıh
+İslam hukukuna göre kişi, bir birey olarak anne karnında bulunduğu andan itibaren dikkate alınmaya başlanır. Cenin dönemi olarak ifade edilen bu evrede kişi, birtakım haklara ehil olması nedeniyle eksik/nakıs vücub ehliyetine sahip kabul edilir.
 
+Bu evredeki kişi için aşağıdakilerden hangisi söylenemez?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) Kendisine yapılan vasiyet geçerlidir.
+B) Kendisine yapılan vakıf geçerlidir.
+C) Herhangi bir sorumluluğu yoktur.
+D) Hakları elde etmesi, sağ olarak dünyaya gelmesine bağlıdır.
+E) Ölü doğması hâlinde hakları anne babasına geçer.
 
-Doğru Cevap: 
+Doğru Cevap: E
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 22:
-KONU: 
+KONU: Fıkıh
+Hanefilere göre satın alınan evin dışını ve bazı odalarını görmüş olmak, alıcının "görme muhayyerliği" hakkını düşürür. Fakat sonraki Hanefi fakihleri bazı bölgelerde evlerin farklı özelliklere sahip odalardan oluşması ve odaların farklı yapı ve işlevlere sahip olması sebebiyle bu görüşten ayrılmış, bütün odaların görülmüş olması gerektiğini belirtmiş aksi hâlde "görme muhayyerliği" hakkının düşmeyeceğini hükme bağlamışlardır.
 
+Hanefi fakihlerin aşağıdaki delillerden hangisine dayanarak böyle bir hüküm değişikliğine gittikleri söylenebilir?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) Örf
+B) İstishab
+C) Kıyas
+D) Nesh
+E) Şeru men kablena
 
-Doğru Cevap: 
+Doğru Cevap: A
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 23:
-KONU: 
+KONU: Fıkıh
+Mücahit ile Melike öğrenci olarak gittikleri Mısır'da tanışır ve evlenmeye karar verirler. Ailelerinin de rızasını aldıktan sonra Mısır'da yetkili makamlara müracaat ederler ve evlilik için gün belirlenir. Nikâh günü çift evlendirme merkezine gider. Ancak şahitlik yapacak olan arkadaşları son anda bir engel sebebiyle gelemez. Görevli uzun süre bekleyemeyeceğini söyleyince şahit olmadan nikâhın kıyılmasına razı olurlar.
 
+Hanefilere göre bu nikâhın hükmü aşağıdakilerden hangisidir?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) Batıl
+B) Fasit
+C) Sahih
+D) Garar
+E) Mekruh
 
-Doğru Cevap: 
+Doğru Cevap: B
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 24:
-KONU: 
+KONU: Fıkıh
+İslam miras hukukuna göre aşağıdakilerden hangisi mirasçılık engellerinden biri değildir?
 
+A) Varisin köle olması
+B) Varisin murisini haksız bir şekilde öldürmesi
+C) Muris ile varisin dinlerinin farklı olması
+D) Varisin temyiz çağına ulaşmamış olması
+E) Muris ile varisin aynı anda vefat etmiş olması
 
-A) 
-B) 
-C) 
-D) 
-E) 
+Doğru Cevap: D
 
-Doğru Cevap: 
-
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 25:
-KONU: 
+KONU: Fıkıh
+Kocası kendisinden önce ölmüş olan Ayşe Hanım vefat ettiğinde annesi, babası, iki kızı, bir oğlu, erkek kardeşi ve dedesi hayattadır. Yakınları techiz ve tekfin işlemlerinin ardından bir araya gelerek kalan mirası İslam hukukuna göre paylaşırlar.
 
+Bu paylaşımla ilgili aşağıda verilen bilgilerden hangisi yanlıştır?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) Erkek ve kız çocuklar asabe sıfatıyla kalanı paylaşırlar.
+B) Baba hayatta olduğu için dede mirastan pay alamaz.
+C) Ölenin kardeşi mirastan pay alamaz.
+D) Mirasçılar arasında anne bulunmasaydı babanın alacağı miktar artardı.
+E) Anne ve babanın hissesi eşittir.
 
-Doğru Cevap: 
+Doğru Cevap: D
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 26:
-KONU: 
+KONU: Fıkıh
+İsmail, sabah namazı için abdest alırken burnunun kanadığını fark eder. Bir müddet beklemesine rağmen kan durmaz ve gün boyu akmaya devam eder. Ancak İsmail gün içerisinde hem vakit hem de kaza namazlarını kılmak istemektedir.
 
+Hanefi mezhebine göre İsmail'in yapması gereken aşağıdakilerden hangisidir?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) Aynı vakitte kılsa da her namaz için ayrı abdest alması gerekir.
+B) Her vakit namazı için ayrı abdest alması gerekir.
+C) Namazlarını kılmayıp özrü geçince kaza kılması gerekir.
+D) Namazlarını teyemmümle kılması gerekir.
+E) Abdestini bozan başka bir durum olmadığı sürece abdesti gün boyunca geçerlidir.
 
-Doğru Cevap: 
+Doğru Cevap: B
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 27:
-KONU: 
+KONU: İslam Tarihi / Siyer
+"O hâlde sen de diğer ülü'l-azm resullerin sabrettiği gibi sabret." (Ahkâf, 46:35) ayetinde geçen ve tebliğ vazifesini karşılaştığı tüm zorluklara rağmen metanet ve sabırla yürüten ülü'l-azm peygamberlerin kimler olduğu âlimler tarafından tartışılmıştır. Başka bir ayette Allah'ın kendilerinden sağlam bir söz aldığından bahsedilen beş peygamberin bu ülü'l-azm peygamberler olduğu ileri sürülmüştür.
 
+Aşağıdakilerden hangisi bu peygamberlerden biri değildir?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) Hz. Eyüp
+B) Hz. Nuh
+C) Hz. İbrahim
+D) Hz. Musa
+E) Hz. İsa
 
-Doğru Cevap: 
+Doğru Cevap: A
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 28:
-KONU: 
+KONU: Kelam / Akaid
+Hz. Muhammed'in vefatından sonra Müslümanlar arasında bazı konularda fikir ayrılıkları ortaya çıkmıştır. Bu ayrılıklar, İslam coğrafyasının genişlemesi, farklı inanç ve kültürlere mensup insanlarla karşılaşılması, tercüme faaliyetleriyle Antik Yunan ve kadim dinlerin birikiminin İslami bünyeye taşınması gibi sebeplerle giderek artmıştır. Müslümanlar kendi aralarındaki ihtilaflar konusunda muarızlarını ikna etmek, gayrimüslimlere karşı da İslam'ı savunmak adına inançlarını temellendirmek için bir arayışa girmişler ve sonuçta bu çabalar bir ilmî disiplinin teşekkülüne vesile olmuştur.
 
+Bu parçada bahsedilen ilim dalı aşağıdakilerden hangisidir?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) Fıkıh
+B) İslam felsefesi
+C) Kelam
+D) Tefsir
+E) Hadis
 
-Doğru Cevap: 
+Doğru Cevap: C
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 29:
-KONU: 
+KONU: Kelam / Akaid
+Mutezile'ye göre Allah'ın kelamı arazdır. Allah, araz olan harf ve sesleri bir mahalde yaratmak suretiyle mütekellim olur. Bu sebeple Allah'ın fiili olan kelamı; kadim ve ezelî değil hâdistir.
 
+Bu parçadaki görüş aşağıdaki tartışmaların hangisine doğrudan etki etmiştir?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) Salah-aslah
+B) Halku'l-Kur'an
+C) Hüsün-kubuh
+D) Kûmun-zuhur
+E) Ahval
 
-Doğru Cevap: 
+Doğru Cevap: B
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 30:
-KONU: 
+KONU: Kelam / Akaid
+Teceddüd-i emsal terimi, cismi oluşturan araz ve cevherlerin her an yok olmasının hemen ardından yenilenmesi suretiyle varlığını sürdürmesi anlamına gelmektedir. Birçok kelamcı Allah'ın dışındaki varlıkların sürekliliklerini açıklamada bu terimi kullanmıştır. Onlara göre Allah, varlıkların mevcudiyetini sürdürmelerinde sürekli aktiftir. "Göklerde ve yerde bulunanların hepsi O'ndan ister. O, her an yaratma hâlindedir." (Rahman, 55:29) ayetinin de bu gerçeğe işaret ettiğini savunurlar.
 
+Bu parçada bahsedilen görüş aşağıdaki tanrı tasavvurlarından hangisinin geçersiz olduğunu ortaya koymaktadır?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) Deizm
+B) Henoteizm
+C) Dualizm
+D) Agnostisizm
+E) Panenteizm
 
-Doğru Cevap: 
+Doğru Cevap: A
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 31:
-KONU: 
+KONU: Kelam / Akaid
+Kelamın önemi ve değeri konusunda farklı görüşler ileri sürülmüştür. Çoğunluğunu hadisçilerin teşkil ettiği Selef âlimleriyle bazı sufiler ve filozoflar kelama karşı olumsuz bir tavır takınmış, hem kullanılan yöntem hem de deliller açısından kelamı eleştirmiştir. Onlara göre kelam, muhaliflerin temel kabullerini dikkate alarak gerçeğe aykırı bulduğu fikirleri reddeden bir tartışma yöntemine dayandığı için varlığa ilişkin problemlere çözüm getirememiş, düşünce alanında üretici olamamış hatta derinleşmeyi de engellemiştir. Ayrıca onlar kelamın Müslümanlar arasında fikir ayrılıklarını körüklediği, dinî hayatı zayıflattığı, Müslümanların birbirini tekfir etmesine yol açtığı ithamında bulunmuşlardır.
 
+Bu parçada bahsedilen yaklaşım aşağıdaki âlimlerden hangisine ait olamaz?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) İbn Teymiyye
+B) İbn Rüşd
+C) İmam Şafii
+D) Malik b. Enes
+E) Ebü'l-Muin en-Nesefi
 
-Doğru Cevap: 
+Doğru Cevap: E
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 32:
-KONU: 
+KONU: Kelam / Akaid
+Aşağıdaki kelami konulardan hangisinin daha erken bir dönemde ortaya çıktığı ve tartışıldığı söylenebilir?
 
+A) Rüyetullah
+B) Halku'l-Kur'an
+C) Mürtekib-i kebire
+D) Teklif-i ma la yutak
+E) İmanda istisna
 
-A) 
-B) 
-C) 
-D) 
-E) 
+Doğru Cevap: C
 
-Doğru Cevap: 
-
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 33:
-KONU: 
+KONU: Kelam / Akaid
+İmanın biri asli diğeri de zait iki rüknü söz konusudur. Asli rükün kalp ile tasdik, zait rükün de dil ile ikrardır. Kalp ile tasdik olmadığı takdirde imanın varlığından söz edilemez; bununla birlikte sadece tasdik olarak kalmış bir imanı sahibinden başka kimse bilemez. Dil ile ikrar, asıl rükne zait bir rükün olarak bu noktada önemli ve gereklidir. Bu sayede kişinin mümin olup olmadığına ve hakkında İslam ahkâmının uygulanıp uygulanmayacağına karar verilebilir.
 
+Bu iman anlayışı aşağıdaki mezheplerden hangisine aittir?
 
-A) 
-B) 
-C) 
-D) 
-E) 
+A) Vehhabilik
+B) Mutezile
+C) Matüridilik
+D) Haricilik
+E) Zeydiye
 
-Doğru Cevap: 
+Doğru Cevap: C
 
----SONRAKİ SORU---
+---SONRAKI SORU---
 
 Soru 34:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 35:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 36:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 37:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 38:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 39:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 40:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 41:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 42:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 43:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 44:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 45:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 46:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 47:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 48:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 49:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 50:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 51:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 52:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 53:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 54:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 55:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 56:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 57:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 58:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 59:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 60:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 61:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 62:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 63:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 64:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 65:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 66:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 67:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 68:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 69:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 70:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 71:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 72:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 73:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 74:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
-
----SONRAKİ SORU---
-
-Soru 75:
-KONU: 
-
-
-A) 
-B) 
-C) 
-D) 
-E) 
-
-Doğru Cevap: 
+KONU: İslam Mezhepleri ve Akımları
+İsmailiye'nin imametle ilgili görüşleri arasında,
+I. İmamların masumiyeti yoktur.
+II. Her devrin bir natık ve bir şamit peygamber veya imamı vardır.
+III. Hakikat ancak imamın öğretmesiyle bilinebilir.
+yargılarından hangileri bulunmaktadır?
+
+A) Yalnız II
+B) I ve II
+C) I ve III
+D) II ve III
+E) I, II ve III
+
+Doğru Cevap: D
