@@ -49,10 +49,10 @@ KONU: Kur'an-ı Kerim ve Tecvid
 Tecvit kurallarından kalkale aşağıdakilerin hangisinde bulunmamaktadır?
 
 A) سُبْحَانَكَ
-B) أَطْوَارُ
-C) الْقُرْبَى
-D) أَقْرَأْيَا
-E) الْقَبْلُ
+B) أَطْوَارًا
+C) اِقْتَرَبَ
+D) أَتْرَابًا
+E) أَقْبَلَ
 
 Doğru Cevap: D
 
