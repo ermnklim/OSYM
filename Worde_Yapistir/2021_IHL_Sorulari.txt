@@ -1,7 +1,3 @@
-DERS: İHL
-KONU: Genel Kültür
-YIL: 2021
-
 Soru 1:
 KONU: Kur'an-ı Kerim ve Tecvid
 Kur'an-ı Kerim'de yer alan vakıf işaretlerinden bazılarında durmak da geçmek de caizdir. Aşağıdaki durak işaretlerinden hangisi bunlara örnek oluşturmaz?
@@ -526,7 +522,6 @@ Doğru Cevap: E
 
 ---SONRAKI SORU---
 
-
 Soru 38:
 KONU: İslam Tarihi / Siyer
 İslam tarihinde ilk inşa edilen mescit aşağıdakilerden hangisidir?
@@ -808,20 +803,6 @@ Doğru Cevap: A
 ---SONRAKI SORU---
 
 Soru 58:
-KONU: Din Psikolojisi
-Aysel Hanım, 15 yaşındaki oğlunun giderek ibadetlerden uzaklaştığını düşünmektedir. Oğlu ibadetlerin anlamsız geldiğini söyleyerek Allah, din, peygamber gibi konularda sorular soruyor. Aysel Hanım'ın oğlunun gelişim özellikleri dikkate alındığında, aşağıdakilerden hangisi verilebilecek bir tavsiye olamaz?
-
-A) Uygun sosyal ortamlar oluşturulması
-B) Dinî kurumlar ve din görevlilerinden faydalanılması
-C) İyi özdeşim modelleri sunulması
-D) Empati yapılması
-E) Uygun görülmeyen davranışların doğrudan hedef alınması
-
-Doğru Cevap: E
-
----SONRAKI SORU---
-
-Soru 59:
 KONU: Din Eğitimi
 Kutsal ve aşkın bir varlıktan gelen her şeyin de kutsal olacağı açıktır. Vahiy de böyledir ve içeriği evrenseldir. İlk nesiller tarafından nasıl anlaşıldıysa bugün de aynı şekilde anlaşılmalıdır. Bu görüşleri savunan bir din eğitimcisinin aşağıdaki yaklaşımlardan hangisini benimsediği söylenebilir?
 
@@ -835,203 +816,7 @@ Doğru Cevap: A
 
 ---SONRAKI SORU---
 
-Soru 60:
-KONU: Din Eğitimi
-Kur'an-ı Kerim dersinde "idgam-ı mea'l-gunne"yi öğretmek isteyen bir öğretmen, öğrencilerinden kuralı bir örnek üzerinde tanımlamalarını, açıklamalarını ve gösterdiği şekilde uygulamalarını ister. Buna göre öğrencilerin aşağıdaki etkinliklerden hangisini yapması beklenmez?
-
-A) Uygulamanın olduğu benzer metinleri tahtaya yazmaları
-B) İlk kelimenin sonunda "sakin nun" ondan sonra "ye, mim, nun, vav" harflerinin geldiğini dile getirmeleri
-C) "Sakin nun"un, uygulamanın olduğu harflere katılarak şeddeli okunacağını söylemeleri
-D) Farklı örneklerle sesin genizde nasıl tutulduğunu göstermeleri
-E) İfadenin geçtiği ayetlerden bir kısmının mealini okumaları
-
-Doğru Cevap: E
-
----SONRAKI SORU---
-
-Soru 61:
-KONU: Din Eğitimi
-"Hz. Muhammed'in davetinin Mekke dönemini değerlendirir." kazanımına yönelik ders işlemeyi planlayan bir din kültürü ve ahlak bilgisi öğretmeni Hz. Muhammed'in risaletten hicrete kadar yaşadığı olayları sırasıyla göstermek ve boykotun sebep sonuçlarını karşılaştırmak amacıyla iki farklı kavram haritasından yararlanmak ister. Buna göre öğretmenin aşağıdaki kavram haritası türlerinden hangilerini sırasıyla kullanması en uygun olur?
-
-A) Akış çizelgesi - balık kılçığı
-B) Zincir - hiyerarşik
-C) Hiyerarşik - dönen diyagram
-D) Akış çizelgesi - hiyerarşik
-E) Zincir - dönen diyagram
-
-Doğru Cevap: A
-
----SONRAKI SORU---
-
-Soru 62:
-KONU: Din Eğitimi
-"İslam ve Barış" konusunu işleyen bir din kültürü ve ahlak bilgisi öğretmeni, derste anlaşılmayan veya eksik kalan kısımların giderilmesi için bir etkinlik düzenler. Bu etkinlikte sınıfı, birisi soru soran diğeri de cevap veren olmak üzere iki gruba ayırır. Sonra gruplara hazırlık süresi verir ve moderatörlüğünde karşılıklı soru-cevap yaptırır. Öğretmenin bu etkinlikte kullandığı yöntem/teknik aşağıdakilerden hangisidir?
-
-A) Zıt panel
-B) Panel
-C) Münazara
-D) Açık oturum
-E) Beyin fırtınası
-
-Doğru Cevap: A
-
----SONRAKI SORU---
-
-Soru 63:
-KONU: Din Eğitimi
-Geleneksel yaklaşım, sınıfı öğretmenin öğrencilerine mesaj gönderdiği bir radyo yayın stüdyosu olarak görürken yapılandırmacı yaklaşım öğrencilerin iş yaptıkları, iletişim kurdukları ve anlamlı öğrenme sonuçlarına ulaştıkları bir öğrenme laboratuvarı olarak kabul eder. Buna göre aşağıdakilerden hangisi, yapılandırmacı yaklaşımı merkeze alan bir imam-hatip lisesi meslek dersleri öğretmeninin yapabileceği en uygun etkinliktir?
-
-A) Hz. Muhammed'in Hz. Hatice ile evlilik sürecini özetleyen bir sunum yapmak
-B) Hz. Muhammed'in aile bireylerini tanıtan bir soy ağacı hazırlamak
-C) Hz. Muhammed'in aile fertlerinin güzel davranış örneklerine yer veren kısa film izletmek
-D) Hz. Muhammed'in peygamberlik yönüyle ilgili özelliklerini ayetlerle örneklendirmek
-E) Hz. Hasan ve Hz. Hüseyin'in ahlaki erdemlerini ko edinen bir canlandırma yaptırmak
-
-Doğru Cevap: E
-
----SONRAKI SORU---
-
-Soru 64:
-KONU: Din Eğitimi
-Aşağıdakilerden hangisi Kur'an-ı Kerim dersini tam öğrenme modelini merkeze alarak işleyen bir öğretmenin yapabileceği uygulamalara örnek verilemez?
-
-A) Okuması iyi olan öğrencilerden, geride kalan öğrencilere yardım etmelerini istemek
-B) Farklı etkinlikler yaparak okumada zayıf olan öğrencilerin eksikliklerini gidermeye çalışmak
-C) Bazı konuları öğrenmekte zorlanan öğrenciler için konuyu tekrarlamak
-D) Hızlı ezber yapan öğrencilere müfredat dışında ilave ezber yaptırmak
-E) Öğrencilere bireysel öğrenme hızlarını dikkate alarak okuma zamanı sunmak
-
-Doğru Cevap: D
-
----SONRAKI SORU---
-
-Soru 65:
-KONU: Din Eğitimi
-2018 yılında yayımlanan Dinler Tarihi Dersi Öğretim Programı, imam hatip lisesi öğrencilerinin fenomenolojik bir yaklaşımla dinleri öğrenmelerini hedeflemektedir. Aşağıdakilerden hangisi bu hedeflerden biri değildir?
-
-A) Farklı din mensuplarıyla sağlıklı iletişim kurma ve birlikte yaşama becerisi kazandırma
-B) Türkiye'deki dinleri ve dinî grupları tanıtma
-C) Dinlerin birbirine olan üstünlüklerini ortaya koyma
-D) Dinleri, ortaya çıktığı ve yayıldığı coğrafi bölgelere göre tasnif etme
-E) İstismarcı dinî akım ve anlayışları tanıtma
-
-Doğru Cevap: C
-
----SONRAKI SORU---
-
-Soru 66:
-KONU: Din Eğitimi
-İmam-hatip lisesi meslek dersleri öğretmeni Bilal Bey Kur'an-ı Kerim dersinde öncelikle öğrencilerin sene başındaki seviyelerini belirlemek için bazı faaliyetler yapmıştır. Sene sonunda da öğrencilerin sene başındaki durumları üzerinden ulaştıkları seviyeyi tespit etmek için çoktan seçmeli bir test uygulamıştır. Buna göre Bilal Öğretmen'in hangi ilkeyi göz ardı ettiği söylenebilir?
-
-A) Bireylerin ölçme ve değerlendirmeye konu olan özelliklerini, süreç içindeki değişimleri dikkate alarak ölçmek esastır.
-B) Eğitim sadece "bilme" için değil, "hissetme" ve "yapma" için de verilir; dolayısıyla sadece bilişsel ölçümler yeterli kabul edilemez.
-C) Eğitimde ölçme ve değerlendirme uygulamaları eğitimin ayrılmaz bir parçasıdır ve eğitim süreci boyunca yapılır.
-D) Öğrencinin akademik gelişimi tek bir yöntemle veya teknikle ölçülüp değerlendirilmez.
-E) Ölçme ve değerlendirmede kazanım ve açıklamaların sınırları esas alınır.
-
-Doğru Cevap: B
-
----SONRAKI SORU---
-
-Soru 67:
-KONU: Din Eğitimi
-Aşağıdakilerden hangisi imam-hatip lisesi hitabet ve mesleki uygulama dersinde sürece dayalı ölçme değerlendirme yapmak isteyen bir öğretmenin kullanabileceği uygulamalardan biri değildir?
-
-A) Öğrenciye yaptığı mesleki uygulamaların yer aldığı bir ürün dosyası hazırlatmak
-B) Verdiği her hutbeden sonra öğrenciye öz değerlendirme formu doldurtmak
-C) Öğrencinin sınıfta yaptığı her bir vaaz sunumunun ardından akran değerlendirmesi yaptırmak
-D) Hutbe dualarının ezber takibinin yapıldığı kontrol listesi hazırlamak
-E) Dinî törenlerde yapılan duaların öğrenilme düzeyini belirleyerek not vermek için sözlü yoklama yapmak
-
-Doğru Cevap: E
-
----SONRAKI SORU---
-
-Soru 68:
-KONU: Din Eğitimi
-İmam-hatip lisesinde Arapça dersinde bir öğretmen sınıf düzenini sağlamak amacıyla; I. İlk derste öğrencilere sınıfa mutlaka kitap ve defter getirmeleri gerektiğini söylemiş, II. etkileşimli tahtaya yansıttığı Arapça metinleri defterine yazmayan öğrencileri okul yönetimine bildirmiş, III. Arapça en güzel kompozisyon yazan beş öğrenciyi sırayla sınıf başkanı yaparak ödüllendirmiştir. Öğretmenin yaptığı bu uygulamalardan hangileri tepkisel/geleneksel sınıf yönetimi kapsamında yer alır?
-
-A) Yalnız I
-B) Yalnız II
-C) Yalnız III
-D) I ve II
-E) II ve III
-
-Doğru Cevap: E
-
----SONRAKI SORU---
-
-Soru 69:
-KONU: Din Eğitimi
-Kur'an-ı Kerim dersinde öğretmenin, harflerin mahreçlerini nasıl okuduğunu, okurken dudak ve dişlerin aldığı durumu izleyen öğrenciler aşağıdaki psikomotor öğrenme alanı basamaklarının hangisi düzeyinde bir öğrenme gerçekleştirirler?
-
-A) Yaratma
-B) Kılavuzla yapma
-C) Algılama
-D) Beceri hâline getirme
-E) Duruma uyma
-
-Doğru Cevap: C
-
----SONRAKI SORU---
-
-Soru 70:
-KONU: Din Eğitimi
-İmam-hatip lisesi meslek dersleri öğretmeninin, 12. sınıf Kur'an-ı Kerim dersinde uyguladığı aşağıdaki örneklerden hangisi pekiştireç seçiminde ve kullanımında dikkat edilmesi gereken hususlara uygundur?
-
-A) Ezberini tam okuyan bir öğrencisine hem aferin deyip hem sınıfa alkışlatıp hem de çikolata vermesi
-B) Öğrendiği tecvit kurallarını eksiksiz uygulayan öğrencisine bir sonraki hafta aferin demesi
-C) Sureyi yazma ödevini yerine getiren öğrencilerin defterlerine gülen yüz etiketi yapıştırması
-D) Kitapta yer alan bulmaca etkinliğini ilk bitiren öğrenciyi dönem sonu uygulayacağı yazılı yoklamadan muaf tutması
-E) Belirledikleri sınıf kurallarına uyan öğrencilere bazen çikolata verirken bazen onları tebrik etmesi bazen de "Bu güzel bir davranış!" gibi sözler söylemesi
-
-Doğru Cevap: E
-
----SONRAKI SORU---
-
-Soru 71:
-KONU: Din Eğitimi
-Değerlerimiz, din kültürü ve ahlak bilgisi öğretim programının perspektifini oluşturan ilkeler toplamı olarak kabul edilmiştir. Aşağıdakilerden hangisi bu kök değerler arasında yer almaz?
-
-A) Vatanseverlik
-B) Adalet
-C) Sorumluluk
-D) Bireysellik
-E) Öz denetim
-
-Doğru Cevap: D
-
----SONRAKI SORU---
-
-Soru 72:
-KONU: Din Eğitimi
-Din öğretimi kendine özgü kavramsal çerçevesi olan bir yapıya sahiptir. 2018 yılında yayımlanan programda her bir üniteyle ilgili "anahtar kavramlar"a yer verilmiştir. Aşağıdaki ünitelerden hangisinin "örf, âdet, mimari, musiki, edebiyat, Mescid-i Aksâ" anahtar kavramları çerçevesinde işleneceği söylenebilir?
-
-A) Temel Değerlerimiz
-B) Din ve Hayat
-C) Güzel Ahlak
-D) Çevremizde Dinin İzleri
-E) Günlük Hayattaki Dinî İfadeler
-
-Doğru Cevap: D
-
----SONRAKI SORU---
-
-Soru 73:
-KONU: Din Eğitimi
-2018 yılında yayımlanan "Din Kültürü ve Ahlak Bilgisi Dersi Öğretim Programı'nda (Ortaöğretim 9, 10, 11 ve 12. Sınıflar)" bilgi verilen aşağıdaki hususların hangisine "Anadolu İmam Hatip Lisesi Meslek Dersleri Öğretim Programları"nda yer verilmemiştir?
-
-A) Her bir ünitenin işlenişi için ayrılabilecek süreye
-B) Türkiye Yeterlilikler Çerçevesi'nde (TYÇ) belirlenen 8 anahtar yetkinliğe
-C) Kazanımların işlenişinde dikkat edilmesi gereken konu ve sınırlamalarla ilgili açıklamalara
-D) Kazanımların sınıf düzeyi, konu ve kazanım sırası şeklinde aşamalı kodlanmasına
-E) Ölçme ve değerlendirme yaklaşımlarıyla ölçme ve değerlendirme uygulamalarına yön veren ilkelere
-
-Doğru Cevap: D
-
----SONRAKI SORU---
-
-Soru 74:
+Soru 59:
 KONU: Dinler Tarihi
 Aşağıdakilerin hangisi Hint dinlerinden Caynizm ve Budizm'in benzerliklerinden biri değildir?
 
@@ -1045,7 +830,7 @@ Doğru Cevap: B
 
 ---SONRAKI SORU---
 
-Soru 75:
+Soru 60:
 KONU: Dinler Tarihi
 Hristiyanlık içinde; * gelenekten ziyade kutsal kitabı merkeze alan, * kiliselerinde resim ve heykele karşı çıkan, * papanın otoritesini reddeden, * sakramentlerden sadece vaftiz ve komünyonu kutsal kabul eden mezhep aşağıdakilerden hangisidir?
 
@@ -1056,3 +841,213 @@ D) Gregoryan
 E) Kıpti
 
 Doğru Cevap: B
+
+---SONRAKI SORU---
+
+Soru 61:
+KONU: Din Eğitimi
+Kur'an-ı Kerim dersinde "idgam-ı mea'l-gunne"yi öğretmek isteyen bir öğretmen, öğrencilerinden kuralı bir örnek üzerinde tanımlamalarını, açıklamalarını ve gösterdiği şekilde uygulamalarını ister. Buna göre öğrencilerin aşağıdaki etkinliklerden hangisini yapması beklenmez?
+
+A) Uygulamanın olduğu benzer metinleri tahtaya yazmaları
+B) İlk kelimenin sonunda "sakin nun" ondan sonra "ye, mim, nun, vav" harflerinin geldiğini dile getirmeleri
+C) "Sakin nun"un, uygulamanın olduğu harflere katılarak şeddeli okunacağını söylemeleri
+D) Farklı örneklerle sesin genizde nasıl tutulduğunu göstermeleri
+E) İfadenin geçtiği ayetlerden bir kısmının mealini okumaları
+
+Doğru Cevap: E
+
+---SONRAKI SORU---
+
+Soru 62:
+KONU: Din Eğitimi
+"Hz. Muhammed'in davetinin Mekke dönemini değerlendirir." kazanımına yönelik ders işlemeyi planlayan bir din kültürü ve ahlak bilgisi öğretmeni Hz. Muhammed'in risaletten hicrete kadar yaşadığı olayları sırasıyla göstermek ve boykotun sebep sonuçlarını karşılaştırmak amacıyla iki farklı kavram haritasından yararlanmak ister. Buna göre öğretmenin aşağıdaki kavram haritası türlerinden hangilerini sırasıyla kullanması en uygun olur?
+
+A) Akış çizelgesi - balık kılçığı
+B) Zincir - hiyerarşik
+C) Hiyerarşik - dönen diyagram
+D) Akış çizelgesi - hiyerarşik
+E) Zincir - dönen diyagram
+
+Doğru Cevap: A
+
+---SONRAKI SORU---
+
+Soru 63:
+KONU: Din Eğitimi
+"İslam ve Barış" konusunu işleyen bir din kültürü ve ahlak bilgisi öğretmeni, derste anlaşılmayan veya eksik kalan kısımların giderilmesi için bir etkinlik düzenler. Bu etkinlikte sınıfı, birisi soru soran diğeri de cevap veren olmak üzere iki gruba ayırır. Sonra gruplara hazırlık süresi verir ve moderatörlüğünde karşılıklı soru-cevap yaptırır. Öğretmenin bu etkinlikte kullandığı yöntem/teknik aşağıdakilerden hangisidir?
+
+A) Zıt panel
+B) Panel
+C) Münazara
+D) Açık oturum
+E) Beyin fırtınası
+
+Doğru Cevap: A
+
+---SONRAKI SORU---
+
+Soru 64:
+KONU: Din Eğitimi
+Geleneksel yaklaşım, sınıfı öğretmenin öğrencilerine mesaj gönderdiği bir radyo yayın stüdyosu olarak görürken yapılandırmacı yaklaşım öğrencilerin iş yaptıkları, iletişim kurdukları ve anlamlı öğrenme sonuçlarına ulaştıkları bir öğrenme laboratuvarı olarak kabul eder. Buna göre aşağıdakilerden hangisi, yapılandırmacı yaklaşımı merkeze alan bir imam-hatip lisesi meslek dersleri öğretmeninin yapabileceği en uygun etkinliktir?
+
+A) Hz. Muhammed'in Hz. Hatice ile evlilik sürecini özetleyen bir sunum yapmak
+B) Hz. Muhammed'in aile bireylerini tanıtan bir soy ağacı hazırlamak
+C) Hz. Muhammed'in aile fertlerinin güzel davranış örneklerine yer veren kısa film izletmek
+D) Hz. Muhammed'in peygamberlik yönüyle ilgili özelliklerini ayetlerle örneklendirmek
+E) Hz. Hasan ve Hz. Hüseyin'in ahlaki erdemlerini ko edinen bir canlandırma yaptırmak
+
+Doğru Cevap: E
+
+---SONRAKI SORU---
+
+Soru 65:
+KONU: Din Eğitimi
+Aşağıdakilerden hangisi Kur'an-ı Kerim dersini tam öğrenme modelini merkeze alarak işleyen bir öğretmenin yapabileceği uygulamalara örnek verilemez?
+
+A) Okuması iyi olan öğrencilerden, geride kalan öğrencilere yardım etmelerini istemek
+B) Farklı etkinlikler yaparak okumada zayıf olan öğrencilerin eksikliklerini gidermeye çalışmak
+C) Bazı konuları öğrenmekte zorlanan öğrenciler için konuyu tekrarlamak
+D) Hızlı ezber yapan öğrencilere müfredat dışında ilave ezber yaptırmak
+E) Öğrencilere bireysel öğrenme hızlarını dikkate alarak okuma zamanı sunmak
+
+Doğru Cevap: D
+
+---SONRAKI SORU---
+
+Soru 66:
+KONU: Din Eğitimi
+2018 yılında yayımlanan Dinler Tarihi Dersi Öğretim Programı, imam hatip lisesi öğrencilerinin fenomenolojik bir yaklaşımla dinleri öğrenmelerini hedeflemektedir. Aşağıdakilerden hangisi bu hedeflerden biri değildir?
+
+A) Farklı din mensuplarıyla sağlıklı iletişim kurma ve birlikte yaşama becerisi kazandırma
+B) Türkiye'deki dinleri ve dinî grupları tanıtma
+C) Dinlerin birbirine olan üstünlüklerini ortaya koyma
+D) Dinleri, ortaya çıktığı ve yayıldığı coğrafi bölgelere göre tasnif etme
+E) İstismarcı dinî akım ve anlayışları tanıtma
+
+Doğru Cevap: C
+
+---SONRAKI SORU---
+
+Soru 67:
+KONU: Din Eğitimi
+İmam-hatip lisesi meslek dersleri öğretmeni Bilal Bey Kur'an-ı Kerim dersinde öncelikle öğrencilerin sene başındaki seviyelerini belirlemek için bazı faaliyetler yapmıştır. Sene sonunda da öğrencilerin sene başındaki durumları üzerinden ulaştıkları seviyeyi tespit etmek için çoktan seçmeli bir test uygulamıştır. Buna göre Bilal Öğretmen'in hangi ilkeyi göz ardı ettiği söylenebilir?
+
+A) Bireylerin ölçme ve değerlendirmeye konu olan özelliklerini, süreç içindeki değişimleri dikkate alarak ölçmek esastır.
+B) Eğitim sadece "bilme" için değil, "hissetme" ve "yapma" için de verilir; dolayısıyla sadece bilişsel ölçümler yeterli kabul edilemez.
+C) Eğitimde ölçme ve değerlendirme uygulamaları eğitimin ayrılmaz bir parçasıdır ve eğitim süreci boyunca yapılır.
+D) Öğrencinin akademik gelişimi tek bir yöntemle veya teknikle ölçülüp değerlendirilmez.
+E) Ölçme ve değerlendirmede kazanım ve açıklamaların sınırları esas alınır.
+
+Doğru Cevap: B
+
+---SONRAKI SORU---
+
+Soru 68:
+KONU: Din Eğitimi
+Aşağıdakilerden hangisi imam-hatip lisesi hitabet ve mesleki uygulama dersinde sürece dayalı ölçme değerlendirme yapmak isteyen bir öğretmenin kullanabileceği uygulamalardan biri değildir?
+
+A) Öğrenciye yaptığı mesleki uygulamaların yer aldığı bir ürün dosyası hazırlatmak
+B) Verdiği her hutbeden sonra öğrenciye öz değerlendirme formu doldurtmak
+C) Öğrencinin sınıfta yaptığı her bir vaaz sunumunun ardından akran değerlendirmesi yaptırmak
+D) Hutbe dualarının ezber takibinin yapıldığı kontrol listesi hazırlamak
+E) Dinî törenlerde yapılan duaların öğrenilme düzeyini belirleyerek not vermek için sözlü yoklama yapmak
+
+Doğru Cevap: E
+
+---SONRAKI SORU---
+
+Soru 69:
+KONU: Din Eğitimi
+İmam-hatip lisesinde Arapça dersinde bir öğretmen sınıf düzenini sağlamak amacıyla; I. İlk derste öğrencilere sınıfa mutlaka kitap ve defter getirmeleri gerektiğini söylemiş, II. etkileşimli tahtaya yansıttığı Arapça metinleri defterine yazmayan öğrencileri okul yönetimine bildirmiş, III. Arapça en güzel kompozisyon yazan beş öğrenciyi sırayla sınıf başkanı yaparak ödüllendirmiştir. Öğretmenin yaptığı bu uygulamalardan hangileri tepkisel/geleneksel sınıf yönetimi kapsamında yer alır?
+
+A) Yalnız I
+B) Yalnız II
+C) Yalnız III
+D) I ve II
+E) II ve III
+
+Doğru Cevap: E
+
+---SONRAKI SORU---
+
+Soru 70:
+KONU: Din Eğitimi
+Kur'an-ı Kerim dersinde öğretmenin, harflerin mahreçlerini nasıl okuduğunu, okurken dudak ve dişlerin aldığı durumu izleyen öğrenciler aşağıdaki psikomotor öğrenme alanı basamaklarının hangisi düzeyinde bir öğrenme gerçekleştirirler?
+
+A) Yaratma
+B) Kılavuzla yapma
+C) Algılama
+D) Beceri hâline getirme
+E) Duruma uyma
+
+Doğru Cevap: C
+
+---SONRAKI SORU---
+
+Soru 71:
+KONU: Din Eğitimi
+İmam-hatip lisesi meslek dersleri öğretmeninin, 12. sınıf Kur'an-ı Kerim dersinde uyguladığı aşağıdaki örneklerden hangisi pekiştireç seçiminde ve kullanımında dikkat edilmesi gereken hususlara uygundur?
+
+A) Ezberini tam okuyan bir öğrencisine hem aferin deyip hem sınıfa alkışlatıp hem de çikolata vermesi
+B) Öğrendiği tecvit kurallarını eksiksiz uygulayan öğrencisine bir sonraki hafta aferin demesi
+C) Sureyi yazma ödevini yerine getiren öğrencilerin defterlerine gülen yüz etiketi yapıştırması
+D) Kitapta yer alan bulmaca etkinliğini ilk bitiren öğrenciyi dönem sonu uygulayacağı yazılı yoklamadan muaf tutması
+E) Belirledikleri sınıf kurallarına uyan öğrencilere bazen çikolata verirken bazen onları tebrik etmesi bazen de "Bu güzel bir davranış!" gibi sözler söylemesi
+
+Doğru Cevap: E
+
+---SONRAKI SORU---
+
+Soru 72:
+KONU: Din Eğitimi
+Değerlerimiz, din kültürü ve ahlak bilgisi öğretim programının perspektifini oluşturan ilkeler toplamı olarak kabul edilmiştir. Aşağıdakilerden hangisi bu kök değerler arasında yer almaz?
+
+A) Vatanseverlik
+B) Adalet
+C) Sorumluluk
+D) Bireysellik
+E) Öz denetim
+
+Doğru Cevap: D
+
+---SONRAKI SORU---
+
+Soru 73:
+KONU: Din Eğitimi
+Din öğretimi kendine özgü kavramsal çerçevesi olan bir yapıya sahiptir. 2018 yılında yayımlanan programda her bir üniteyle ilgili "anahtar kavramlar"a yer verilmiştir. Aşağıdaki ünitelerden hangisinin "örf, âdet, mimari, musiki, edebiyat, Mescid-i Aksâ" anahtar kavramları çerçevesinde işleneceği söylenebilir?
+
+A) Temel Değerlerimiz
+B) Din ve Hayat
+C) Güzel Ahlak
+D) Çevremizde Dinin İzleri
+E) Günlük Hayattaki Dinî İfadeler
+
+Doğru Cevap: D
+
+---SONRAKI SORU---
+
+Soru 74:
+KONU: Din Eğitimi
+2018 yılında yayımlanan "Din Kültürü ve Ahlak Bilgisi Dersi Öğretim Programı'nda (Ortaöğretim 9, 10, 11 ve 12. Sınıflar)" bilgi verilen aşağıdaki hususların hangisine "Anadolu İmam Hatip Lisesi Meslek Dersleri Öğretim Programları"nda yer verilmemiştir?
+
+A) Her bir ünitenin işlenişi için ayrılabilecek süreye
+B) Türkiye Yeterlilikler Çerçevesi'nde (TYÇ) belirlenen 8 anahtar yetkinliğe
+C) Kazanımların işlenişinde dikkat edilmesi gereken konu ve sınırlamalarla ilgili açıklamalara
+D) Kazanımların sınıf düzeyi, konu ve kazanım sırası şeklinde aşamalı kodlanmasına
+E) Ölçme ve değerlendirme yaklaşımlarıyla ölçme ve değerlendirme uygulamalarına yön veren ilkelere
+
+Doğru Cevap: D
+
+---SONRAKI SORU---
+
+Soru 75:
+KONU: Din Psikolojisi
+Aysel Hanım, 15 yaşındaki oğlunun giderek ibadetlerden uzaklaştığını düşünmektedir. Oğlu ibadetlerin anlamsız geldiğini söyleyerek Allah, din, peygamber gibi konularda sorular soruyor. Aysel Hanım'ın oğlunun gelişim özellikleri dikkate alındığında, aşağıdakilerden hangisi verilebilecek bir tavsiye olamaz?
+
+A) Uygun sosyal ortamlar oluşturulması
+B) Dinî kurumlar ve din görevlilerinden faydalanılması
+C) İyi özdeşim modelleri sunulması
+D) Empati yapılması
+E) Uygun görülmeyen davranışların doğrudan hedef alınması
+
+Doğru Cevap: E
