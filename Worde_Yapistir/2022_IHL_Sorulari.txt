@@ -1081,6 +1081,7 @@ Doğru Cevap: A
 Soru 74:
 KONU: Din Eğitimi
 Verilen tanılayıcı dallanmış ağaca göre aşağıdaki yargıların hangisine ulaşılamaz?
+Dosya: 2022_ihl_74.png
 A) 2 nolu çıkışa ulaşan öğrenci tam puan almıştır.
 B) 6 nolu çıkışa ulaşan öğrenci iki önermeye doğru cevap vermiştir.
 C) 3 nolu çıkışa ulaşan öğrenci bir önermeye doğru cevap vermiştir.
