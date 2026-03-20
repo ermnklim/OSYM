@@ -277,7 +277,13 @@ class ModernDKABQuiz:
         self.current_view = "welcome"
         self.current_specific_question = None
         self.subjects = []
-        self.available_subjects = ["DKAB", "IHL"]
+        self.available_subjects = [
+            "DKAB",
+            "IHL",
+            "DHBT Lisans",
+            "DHBT Önlisans",
+            "DHBT Ortaöğretim",
+        ]
         self._next_timer = None
         self._countdown_job = None
         self._elapsed_job = None
@@ -1987,7 +1993,7 @@ class ModernDKABQuiz:
                 match = re.search(r"(\d{4})_(.+)_Sorulari\.txt", filename)
                 if match:
                     year = int(match.group(1))
-                    subject = match.group(2)
+                    subject = self.format_subject_label(match.group(2))
                     questions = self.parse_questions_from_file(os.path.join(base_path, filename), year, subject)
                     all_parsed_questions.extend(questions)
                     total_questions += len(questions)
@@ -2011,17 +2017,18 @@ class ModernDKABQuiz:
         table_frame = tk.Frame(content_frame, bg=self.colors['border'])
         table_frame.pack(padx=15, fill=tk.X)
         
-        headers = ["Yıl", "DKAB", "IHL", "Toplam"]
+        analysis_subjects = sorted({q['ders'] for q in all_parsed_questions})
+        headers = ["Yıl"] + analysis_subjects + ["Toplam"]
         for i, h in enumerate(headers):
             tk.Label(table_frame, text=h, font=('Segoe UI', 11, 'bold'),
                     bg=self.colors['primary'], fg=self.colors['text'], width=16).grid(row=0, column=i, padx=1, pady=1)
         
         sorted_years = sorted(years_data.keys(), reverse=True)
         for row_idx, year in enumerate(sorted_years, 1):
-            dkab = years_data[year]["DKAB"]
-            ihl = years_data[year]["IHL"]
+            subject_counts = [years_data[year][subject] for subject in analysis_subjects]
+            total_count = sum(subject_counts)
             bg = self.colors['card'] if row_idx % 2 == 0 else self.colors['primary']
-            for col_idx, val in enumerate([str(year), str(dkab), str(ihl), str(dkab+ihl)]):
+            for col_idx, val in enumerate([str(year)] + [str(c) for c in subject_counts] + [str(total_count)]):
                 tk.Label(table_frame, text=val, font=('Segoe UI', 11),
                         bg=bg, fg=self.colors['text'], width=16).grid(row=row_idx, column=col_idx, padx=1, pady=1)
         
@@ -2031,24 +2038,21 @@ class ModernDKABQuiz:
         konu_table = tk.Frame(content_frame, bg=self.colors['border'])
         konu_table.pack(padx=15, fill=tk.X)
         
-        konu_headers = ["Konu", "DKAB", "IHL", "Toplam"]
+        konu_headers = ["Konu"] + analysis_subjects + ["Toplam"]
         for i, h in enumerate(konu_headers):
             tk.Label(konu_table, text=h, font=('Segoe UI', 11, 'bold'),
                     bg=self.colors['primary'], fg=self.colors['text'], width=24).grid(row=0, column=i, padx=1, pady=1)
         
         konu_totals = {}
         for konu in konu_data:
-            dkab = konu_data[konu]["DKAB"]
-            ihl = konu_data[konu]["IHL"]
-            konu_totals[konu] = dkab + ihl
+            konu_totals[konu] = sum(konu_data[konu][subject] for subject in analysis_subjects)
         
         sorted_konular = sorted(konu_totals.items(), key=lambda x: x[1], reverse=True)
         
         for row_idx, (konu, total) in enumerate(sorted_konular, 1):
-            dkab = konu_data[konu]["DKAB"]
-            ihl = konu_data[konu]["IHL"]
+            subject_counts = [konu_data[konu][subject] for subject in analysis_subjects]
             bg = self.colors['card'] if row_idx % 2 == 0 else self.colors['primary']
-            for col_idx, val in enumerate([konu[:24], str(dkab), str(ihl), str(total)]):
+            for col_idx, val in enumerate([konu[:24]] + [str(c) for c in subject_counts] + [str(total)]):
                 tk.Label(konu_table, text=val, font=('Segoe UI', 10),
                         bg=bg, fg=self.colors['text'], width=24).grid(row=row_idx, column=col_idx, padx=1, pady=1)
         
@@ -2174,6 +2178,18 @@ class ModernDKABQuiz:
                                       self.show_welcome_screen, self.colors['text_secondary'])
         back_btn.pack(pady=20, ipady=5)
         
+    def format_subject_label(self, subject):
+        """Dosya adindaki ders etiketini ekranda gosterilecek forma cevirir."""
+        subject = str(subject or "").replace("_", " ").strip()
+        replacements = {
+            "Onlisans": "Önlisans",
+            "Ortaogretim": "Ortaöğretim",
+            "ogretim": "öğretim",
+        }
+        for source, target in replacements.items():
+            subject = subject.replace(source, target)
+        return subject
+
     def load_questions(self, show_message=True):
         """Soruları yükler"""
         def load_in_background():
@@ -2189,7 +2205,7 @@ class ModernDKABQuiz:
                         match = re.search(r"(\d{4})_(.+)_Sorulari\.txt", filename)
                         if match:
                             year = int(match.group(1))
-                            subject = match.group(2)
+                            subject = self.format_subject_label(match.group(2))
                             file_path = os.path.join(base_path, filename)
                             year_questions = self.parse_questions_from_file(file_path, year, subject)
                             loaded_questions.extend(year_questions)
@@ -2199,7 +2215,7 @@ class ModernDKABQuiz:
                 
                 self.questions = loaded_questions
                 self.subjects = sorted(list(unique_subjects))
-                self.available_subjects = [subject for subject in ["DKAB", "IHL"] if subject in unique_subjects] or ["DKAB", "IHL"]
+                self.available_subjects = sorted(list(unique_subjects)) or list(self.available_subjects)
                 
                 # Update UI elements
                 years_list = ["Tüm yıllar"] + sorted(list(found_years), reverse=True)
