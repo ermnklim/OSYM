@@ -73,22 +73,9 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 Soru 6:
-KONU: Kur'an-ı Kerim ve Tecvid
-Aşağıdakilerden hangisi huruf-ı mukattaanın anlamı ve Kur'an'da bulunmasıyla hikmetiyle ilgili olarak âlimler tarafından ileri sürülen görüşlerden biri değildir?
-
-A) Başında bulundukları surenin ismi oldukları
-B) Ehl-i kitapla ilgili mesajlar içerdikleri
-C) Yemin anlamına geldikleri
-D) Konuya dikkat çekmek amacıyla nazil oldukları
-E) Allah'ın isim ve sıfatlarına işaret ettikleri
-
-Doğru Cevap: B
-
----SONRAKI SORU---
-
-Soru 7:
 KONU: Tefsir
-Enfal Suresi'nin 48. ayetinde Şeytan'ın müşriklere "...Ben sizden uzağım. Çünkü ben sizin görmediğiniz şeyler görüyorum..." dediği aktarılmaktadır. Ancak ayetteki "görmediğiniz şeyler" ifadesinden neye ya da kime işaret edildiği anlaşılmamaktadır. Müfessirler aynı surenin 9. ayetinde yer alan "Hatırlayın ki siz Rabbinizden yardım istiyordunuz. O da 'Ben size ard arda bin melekle yardım ediyorum.' diye cevap vermişti." ifadesinden meleklerin kastedildiği sonucunu çıkarmaktadırlar. Bu parçada bahsedilen husus aşağıdaki Kur'an ilimlerinden hangisine örnek oluşturur?
+Enfal Suresi'nin 48. ayetinde Şeytan'ın müşriklere "...Ben sizden uzağım. Çünkü ben sizin görmediğiniz şeyler görüyorum..." dediği aktarılmaktadır. Ancak ayetteki "görmediğiniz şeyler" ifadesinden neye ya da kime işaret edildiği anlaşılmamaktadır. Müfessirler aynı surenin 9. ayetinde yer alan "Hatırlayın ki siz Rabbinizden yardım istiyordunuz. O da 'Ben size ard arda bin melekle yardım ediyorum.' diye cevap vermişti." ifadesinden meleklerin kastedildiği sonucunu çıkarmaktadırlar.
+Bu parçada bahsedilen husus aşağıdaki Kur'an ilimlerinden hangisine örnek oluşturur?
 
 A) Mücmel ve mübeyyen
 B) Vücuh ve nezair
@@ -100,9 +87,10 @@ Doğru Cevap: A
 
 ---SONRAKI SORU---
 
-Soru 8:
+Soru 7:
 KONU: Tefsir
-Kur'an-ı Kerim'de ruhları kabzedenin bazen melekler ve elçiler olduğu (Enam, 6:61/ Nahl, 16:28) bazen ölüm meleği olduğu (Secde, 32:11) bazen de bizzat Allah olduğu (Zümer, 39:42) ifade edilmiştir. İlk bakışta ihtilaf gibi görünen bu türden ayetleri âlimler incelemişler ve söz konusu ihtilafı gidermenin yollarını aramışlardır. Bu parçada bahsedilen Kur'an ilmi aşağıdakilerden hangisidir?
+Kur'an-ı Kerim'de ruhları kabzedenin bazen melekler ve elçiler olduğu (Enam, 6:61/ Nahl, 16:28) bazen ölüm meleği olduğu (Secde, 32:11) bazen de bizzat Allah olduğu (Zümer, 39:42) ifade edilmiştir. İlk bakışta ihtilaf gibi görünen bu türden ayetleri âlimler incelemişler ve söz konusu ihtilafı gidermenin yollarını aramışlardır. Âlimlerin bu çabaları müstakil bir Kur'an ilminin ortaya çıkmasına vesile olmuştur.
+Bu parçada bahsedilen Kur'an ilmi aşağıdakilerden hangisidir?
 
 A) Mübhematü'l-Kur'an
 B) Garibü'l-Kur'an
@@ -114,9 +102,10 @@ Doğru Cevap: E
 
 ---SONRAKI SORU---
 
-Soru 9:
+Soru 8:
 KONU: Tefsir
-Kur'an'da bazı yer, zaman, şahıs ve konuların ism-i işaretler, ism-i mevsuller, zamirler, cins isimler, sıfatlarla ifade edildiği görülür. "Namazlara, özellikle de orta namaza devam edin!" (Bakara 2:238) ayeti bu duruma örnek verilebilir. Bu ayette "orta namaz" ile hangi namazın kastedildiği net değildir. Ancak Hz. Muhammed bu namazın ikindi namazı olduğunu açıklamış böylece kapalı olan ifade açıklık kazanmıştır. Bu parçada Hz. Muhammed'in tefsir yöntemlerinden hangisi örneklendirilmiştir?
+Kur'an'da bazı yer, zaman, şahıs ve konuların ism-i işaretler, ism-i mevsuller, zamirler, cins isimler, sıfatlarla ifade edildiği görülür. "Namazlara, özellikle de orta namaza devam edin!" (Bakara 2:238) ayeti bu duruma örnek verilebilir. Bu ayette "orta namaz" ile hangi namazın kastedildiği net değildir. Ancak Hz. Muhammed bu namazın ikindi namazı olduğunu açıklamış böylece kapalı olan ifade açıklık kazanmıştır.
+Bu parçada Hz. Muhammed'in tefsir yöntemlerinden hangisi örneklendirilmiştir?
 
 A) Neshin tespiti
 B) Müphemin tafsili
@@ -128,9 +117,12 @@ Doğru Cevap: B
 
 ---SONRAKI SORU---
 
-Soru 10:
+Soru 9:
 KONU: Tefsir
-"Sana şarap ve kumar hakkında soru sorarlar..." (Bakara, 2:219) "...Peygamber hanımlarından bir şey istediğinizde perde arkasından isteyin..." (Ahzab, 33:53) "Ebu Leheb'in elleri kuyuşun. Kurudu zaten." (Tebbet, 111:1) Bu ayetlerin doğru anlaşılmasında aşağıdaki Kur'an ilimlerinden hangisine öncelikle müracaat edilmesi beklenir?
+* "Sana şarap ve kumar hakkında soru sorarlar..." (Bakara, 2:219)
+* "...Peygamber hanımlarından bir şey istediğinizde perde arkasından isteyin..." (Ahzab, 33:53)
+* "Ebu Leheb'in elleri kurusun. Kurudu zaten." (Tebbet, 111:1)
+Bu ayetlerin doğru anlaşılmasında aşağıdaki Kur'an ilimlerinden hangisine öncelikle müracaat edilmesi beklenir?
 
 A) Fezailü'l-Kur'an
 B) Vücuh ve nezair
@@ -139,6 +131,20 @@ D) Esbab-ı nüzul
 E) İcazü'l-Kur'an
 
 Doğru Cevap: D
+
+---SONRAKI SORU---
+
+Soru 10:
+KONU: Kur'an-ı Kerim ve Tecvid
+Aşağıdakilerden hangisi huruf-ı mukattaanın anlamı ve Kur'an'da bulunmasıyla hikmetiyle ilgili olarak âlimler tarafından ileri sürülen görüşlerden biri değildir?
+
+A) Başında bulundukları surenin ismi oldukları
+B) Ehl-i kitapla ilgili mesajlar içerdikleri
+C) Yemin anlamına geldikleri
+D) Konuya dikkat çekmek amacıyla nazil oldukları
+E) Allah'ın isim ve sıfatlarına işaret ettikleri
+
+Doğru Cevap: B
 
 ---SONRAKI SORU---
 
