@@ -533,6 +533,29 @@ class ModernDKABQuiz:
     def _contains_arabic_text(self, text):
         return bool(re.search(r"[\u0600-\u06FF]", str(text or "")))
 
+    def _replace_roman_numerals_for_speech(self, text):
+        roman_map = {
+            "I": "1",
+            "II": "2",
+            "III": "3",
+            "IV": "4",
+            "V": "5",
+            "VI": "6",
+            "VII": "7",
+            "VIII": "8",
+            "IX": "9",
+            "X": "10",
+            "XI": "11",
+            "XII": "12",
+        }
+
+        pattern = re.compile(
+            r"(?<![A-Za-zÇĞİÖŞÜçğıöşü])"
+            r"(XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)"
+            r"(?![A-Za-zÇĞİÖŞÜçğıöşü])"
+        )
+        return pattern.sub(lambda match: roman_map.get(match.group(1), match.group(1)), text)
+
     def _transliterate_arabic_text(self, text):
         base_map = {
             "ا": "a",
@@ -699,6 +722,7 @@ class ModernDKABQuiz:
 
     def _normalize_speech_text(self, text):
         normalized = str(text or "").replace("\n", " ")
+        normalized = self._replace_roman_numerals_for_speech(normalized)
         abbreviation_rules = [
             (r"\bHz\.\s*", "Hazreti "),
             (r"\b(?:s\.a\.v\.|s\.a\.s\.|sav\.|sas\.)\s*", "sallallahu aleyhi ve sellem "),
