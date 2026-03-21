@@ -19,6 +19,11 @@ import threading
 import wave
 
 try:
+    from similarity_analyzer import build_similarity_report, filter_questions
+except ImportError:
+    from Python_Verisi.similarity_analyzer import build_similarity_report, filter_questions
+
+try:
     import winsound
 except ImportError:
     winsound = None
@@ -2160,58 +2165,286 @@ class ModernDKABQuiz:
                             added_topics += 1
                             
         elif hasattr(self, 'analiz_combo') and self.analiz_combo.get() == "Benzer Sorular":
-            tk.Label(content_frame, text="🔍 BENZER SORULAR AĞI (Eşleşme > %55)",
-                    font=('Segoe UI', 11, 'bold'), bg=self.colors['card'], fg=self.colors['text']).pack(pady=(20, 5))
-            
-            q_words = []
-            for q in all_parsed_questions:
-                text = re.sub(r'[^\w\s]', '', (q.get('soru_metni', '') + ' ' + str(q.get('siklar', {}))).lower())
-                q_words.append(set(text.split()))
+            selected_year, selected_subject, selected_topic = self.get_analysis_filter_values(include_year=True)
+            scope_questions = filter_questions(
+                all_parsed_questions,
+                year=selected_year,
+                subject=selected_subject,
+                topic=selected_topic,
+            )
+            history_questions = filter_questions(
+                all_parsed_questions,
+                year=None,
+                subject=selected_subject,
+                topic=selected_topic,
+            )
+            report = build_similarity_report(scope_questions, history_questions=history_questions)
 
-            similar_pairs = []
-            n_q = len(all_parsed_questions)
-            for i in range(n_q):
-                for j in range(i+1, n_q):
-                    w1, w2 = q_words[i], q_words[j]
-                    if not w1 or not w2: continue
-                    inter = len(w1.intersection(w2))
-                    union = len(w1.union(w2))
-                    sim = inter / union if union else 0
-                    if sim > 0.55:
-                        similar_pairs.append((sim, all_parsed_questions[i], all_parsed_questions[j]))
-            
-            similar_pairs.sort(key=lambda x: x[0], reverse=True)
-            
-            sim_frame = tk.Frame(content_frame, bg=self.colors['border'])
-            sim_frame.pack(padx=15, fill=tk.X, pady=5)
-            
-            if not similar_pairs:
-                tk.Label(sim_frame, text="Hiç benzer soru bulunamadı.", font=('Segoe UI', 10),
-                         bg=self.colors['card'], fg=self.colors['text']).pack(padx=1, pady=1, fill=tk.X)
+            tk.Label(content_frame, text="🔍 BENZER SORULAR VE ÇIKIŞ EĞİLİMİ",
+                    font=('Segoe UI', 11, 'bold'), bg=self.colors['card'], fg=self.colors['text']).pack(pady=(20, 5))
+            tk.Label(
+                content_frame,
+                text="Seçili filtreye göre benzer soru kalıpları, sık çıkan soru tipleri, alt konu ipuçları ve veri tabanlı muhtemel başlıklar gösterilir.",
+                font=('Segoe UI', 9),
+                bg=self.colors['card'],
+                fg=self.colors['text_secondary'],
+                wraplength=780,
+                justify="left",
+            ).pack(padx=15, pady=(0, 8), anchor="w")
+
+            tk.Label(
+                content_frame,
+                text=self.format_analysis_scope_text(report['scope_total'], report['history_total']),
+                font=('Segoe UI', 9, 'bold'),
+                bg=self.colors['primary'],
+                fg=self.colors['text'],
+                anchor="w",
+                justify="left",
+            ).pack(fill=tk.X, padx=15, pady=(0, 10), ipady=5)
+
+            if not scope_questions:
+                tk.Label(
+                    content_frame,
+                    text="Bu filtrede analiz edilecek soru bulunamadı. Yıl, ders veya konu filtresini biraz genişletip tekrar deneyin.",
+                    font=('Segoe UI', 10),
+                    bg=self.colors['card'],
+                    fg=self.colors['text'],
+                    wraplength=780,
+                    justify="left",
+                ).pack(padx=15, pady=10, anchor="w")
             else:
-                seen = set()
-                count = 0
-                for sim, q1, q2 in similar_pairs:
-                    pair_id = tuple(sorted([f"{q1['yil']}{q1['ders']}{q1['soru_no']}", f"{q2['yil']}{q2['ders']}{q2['soru_no']}"]))
-                    if pair_id in seen: continue
-                    seen.add(pair_id)
-                    
-                    bg_color = self.colors['card'] if count % 2 == 0 else self.colors['primary']
-                    
-                    row_f = tk.Frame(sim_frame, bg=bg_color)
-                    row_f.pack(fill=tk.X, padx=1, pady=1)
-                    
-                    btn_text = f"🎯 %{int(sim*100)} EŞLEŞME: {q1['yil']} {q1['ders']} (Soru {q1.get('soru_no','?')}) ↔ {q2['yil']} {q2['ders']} (Soru {q2.get('soru_no','?')})"
-                    tk.Label(row_f, text=btn_text, font=('Segoe UI', 10, 'bold'), bg=bg_color, fg=self.colors['text']).pack(anchor="w", padx=10, pady=(5, 2))
-                    
-                    t1 = q1.get('soru_metni', '').replace('\n', ' ')
-                    t2 = q2.get('soru_metni', '').replace('\n', ' ')
-                    tk.Label(row_f, text=f"• Soru A: {t1[:100]}...", font=('Segoe UI', 8), bg=bg_color, fg=self.colors['text'], justify="left").pack(anchor="w", padx=20, pady=1)
-                    tk.Label(row_f, text=f"• Soru B: {t2[:100]}...", font=('Segoe UI', 8), bg=bg_color, fg=self.colors['text'], justify="left").pack(anchor="w", padx=20, pady=(1, 5))
-                    
-                    count += 1
-                    if count >= 30:
-                        break
+                summary_frame = tk.Frame(content_frame, bg=self.colors['border'])
+                summary_frame.pack(fill=tk.X, padx=15, pady=5)
+
+                left_col = tk.Frame(summary_frame, bg=self.colors['card'])
+                left_col.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=1, pady=1)
+
+                right_col = tk.Frame(summary_frame, bg=self.colors['card'])
+                right_col.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=(0, 1), pady=1)
+
+                tk.Label(left_col, text="📌 Öne Çıkan Soru Tipleri",
+                        font=('Segoe UI', 10, 'bold'), bg=self.colors['card'], fg=self.colors['text']).pack(anchor="w", padx=10, pady=(8, 4))
+                for row in report['question_types'][:6]:
+                    tk.Label(
+                        left_col,
+                        text=f"• {row['question_type']}: {row['count']} soru",
+                        font=('Segoe UI', 9),
+                        bg=self.colors['card'],
+                        fg=self.colors['text'],
+                        justify="left",
+                    ).pack(anchor="w", padx=14, pady=1)
+
+                right_title = "📚 Kapsamdaki Konular"
+                right_rows = report['topic_counts'][:6]
+                if selected_topic:
+                    right_title = "🧩 Alt Konu İpuçları"
+                    right_rows = []
+
+                tk.Label(right_col, text=right_title,
+                        font=('Segoe UI', 10, 'bold'), bg=self.colors['card'], fg=self.colors['text']).pack(anchor="w", padx=10, pady=(8, 4))
+
+                if right_rows:
+                    for row in right_rows:
+                        tk.Label(
+                            right_col,
+                            text=f"• {row['topic']}: {row['count']} soru",
+                            font=('Segoe UI', 9),
+                            bg=self.colors['card'],
+                            fg=self.colors['text'],
+                            justify="left",
+                        ).pack(anchor="w", padx=14, pady=1)
+                else:
+                    for item in report['subtopics_by_topic'][:4]:
+                        phrase_text = ", ".join(item['phrases']) if item['phrases'] else "Belirgin alt konu bulunamadı"
+                        tk.Label(
+                            right_col,
+                            text=f"• {item['topic']}: {phrase_text}",
+                            font=('Segoe UI', 9),
+                            bg=self.colors['card'],
+                            fg=self.colors['text'],
+                            wraplength=360,
+                            justify="left",
+                        ).pack(anchor="w", padx=14, pady=1)
+
+                subtopic_frame = tk.Frame(content_frame, bg=self.colors['border'])
+                subtopic_frame.pack(fill=tk.X, padx=15, pady=(10, 5))
+
+                tk.Label(subtopic_frame, text="🧭 Konu ve Alt Konu İpuçları",
+                        font=('Segoe UI', 10, 'bold'), bg=self.colors['card'], fg=self.colors['text']).pack(anchor="w", padx=10, pady=(8, 4))
+
+                if report['subtopics_by_topic']:
+                    for item in report['subtopics_by_topic'][:6]:
+                        phrase_text = ", ".join(item['phrases']) if item['phrases'] else "Belirgin alt konu bulunamadı"
+                        tk.Label(
+                            subtopic_frame,
+                            text=f"• {item['topic']}: {phrase_text}",
+                            font=('Segoe UI', 9),
+                            bg=self.colors['card'],
+                            fg=self.colors['text'],
+                            wraplength=760,
+                            justify="left",
+                        ).pack(anchor="w", padx=14, pady=1)
+                else:
+                    tk.Label(
+                        subtopic_frame,
+                        text="Bu kapsamda yeterli alt konu ipucu bulunamadı.",
+                        font=('Segoe UI', 9),
+                        bg=self.colors['card'],
+                        fg=self.colors['text'],
+                    ).pack(anchor="w", padx=14, pady=(0, 8))
+
+                cluster_frame = tk.Frame(content_frame, bg=self.colors['border'])
+                cluster_frame.pack(fill=tk.X, padx=15, pady=(10, 5))
+
+                tk.Label(cluster_frame, text="🧠 Tekrarlayan ÖSYM Soru Kalıpları",
+                        font=('Segoe UI', 10, 'bold'), bg=self.colors['card'], fg=self.colors['text']).pack(anchor="w", padx=10, pady=(8, 4))
+
+                if report['clusters']:
+                    for index, cluster in enumerate(report['clusters'][:6], 1):
+                        years_text = ", ".join(str(year) for year in cluster['years'][:6]) if cluster['years'] else "?"
+                        phrase_text = ", ".join(cluster['phrases']) if cluster['phrases'] else "Alt konu ipucu yok"
+                        cluster_text = (
+                            f"{index}. {cluster['topic'] or 'Konu yok'} | {cluster['question_type']} | "
+                            f"{cluster['size']} soru | Yıllar: {years_text} | Alt konu: {phrase_text}"
+                        )
+                        tk.Label(
+                            cluster_frame,
+                            text=cluster_text,
+                            font=('Segoe UI', 9),
+                            bg=self.colors['card'],
+                            fg=self.colors['text'],
+                            wraplength=760,
+                            justify="left",
+                        ).pack(anchor="w", padx=14, pady=2)
+                else:
+                    tk.Label(
+                        cluster_frame,
+                        text="Belirgin tekrar eden soru kalıbı bulunamadı.",
+                        font=('Segoe UI', 9),
+                        bg=self.colors['card'],
+                        fg=self.colors['text'],
+                    ).pack(anchor="w", padx=14, pady=(0, 8))
+
+                prediction_frame = tk.Frame(content_frame, bg=self.colors['border'])
+                prediction_frame.pack(fill=tk.X, padx=15, pady=(10, 5))
+
+                tk.Label(prediction_frame, text="📈 Çıkması Muhtemel Başlıklar",
+                        font=('Segoe UI', 10, 'bold'), bg=self.colors['card'], fg=self.colors['text']).pack(anchor="w", padx=10, pady=(8, 4))
+                tk.Label(
+                    prediction_frame,
+                    text="Bu alan kesin tahmin değildir; geçmiş tekrar, yıl yayılımı ve son yıllardaki görünme sıklığına göre veri tabanlı bir öncelik listesi üretir.",
+                    font=('Segoe UI', 8),
+                    bg=self.colors['card'],
+                    fg=self.colors['text_secondary'],
+                    wraplength=760,
+                    justify="left",
+                ).pack(anchor="w", padx=14, pady=(0, 6))
+
+                if report['likely_topics'] and not selected_topic:
+                    for row in report['likely_topics'][:6]:
+                        years_text = ", ".join(str(year) for year in row['years'][-5:]) if row['years'] else "?"
+                        tk.Label(
+                            prediction_frame,
+                            text=f"• {row['topic']} | skor {row['score']:.1f} | toplam {row['count']} | son yıllar katkısı {row['recent_count']} | yıllar: {years_text}",
+                            font=('Segoe UI', 9),
+                            bg=self.colors['card'],
+                            fg=self.colors['text'],
+                            wraplength=760,
+                            justify="left",
+                        ).pack(anchor="w", padx=14, pady=1)
+
+                if report['likely_subtopics']:
+                    subtopic_title = "Muhtemel alt konular"
+                    if selected_topic:
+                        subtopic_title = f"Muhtemel alt konular ({selected_topic})"
+
+                    tk.Label(
+                        prediction_frame,
+                        text=subtopic_title,
+                        font=('Segoe UI', 9, 'bold'),
+                        bg=self.colors['card'],
+                        fg=self.colors['text'],
+                    ).pack(anchor="w", padx=14, pady=(8, 3))
+
+                    for row in report['likely_subtopics'][:6]:
+                        years_text = ", ".join(str(year) for year in row['years'][-4:]) if row['years'] else "?"
+                        tk.Label(
+                            prediction_frame,
+                            text=f"• {row['subtopic']} | skor {row['score']:.1f} | tekrar {row['count']} | yıllar: {years_text}",
+                            font=('Segoe UI', 9),
+                            bg=self.colors['card'],
+                            fg=self.colors['text'],
+                            wraplength=760,
+                            justify="left",
+                        ).pack(anchor="w", padx=18, pady=1)
+
+                pair_frame = tk.Frame(content_frame, bg=self.colors['border'])
+                pair_frame.pack(fill=tk.X, padx=15, pady=(10, 5))
+
+                tk.Label(pair_frame, text="🎯 Güçlü Benzer Soru Eşleşmeleri",
+                        font=('Segoe UI', 10, 'bold'), bg=self.colors['card'], fg=self.colors['text']).pack(anchor="w", padx=10, pady=(8, 4))
+
+                if not report['similar_pairs']:
+                    tk.Label(
+                        pair_frame,
+                        text="Bu filtrede güçlü benzer soru çifti bulunamadı.",
+                        font=('Segoe UI', 9),
+                        bg=self.colors['card'],
+                        fg=self.colors['text'],
+                    ).pack(anchor="w", padx=14, pady=(0, 8))
+                else:
+                    for pair in report['similar_pairs'][:12]:
+                        q1 = pair['q1']
+                        q2 = pair['q2']
+                        overlap_text = ", ".join(pair['overlap_terms']) if pair['overlap_terms'] else "Belirgin ortak anahtar yok"
+                        header_text = (
+                            f"• %{int(pair['score'] * 100)} eşleşme | "
+                            f"{q1['yil']} {q1['ders']} Soru {q1['soru_no']} ↔ "
+                            f"{q2['yil']} {q2['ders']} Soru {q2['soru_no']}"
+                        )
+                        meta_text = (
+                            f"  Konu: {q1['konu'] or '-'} / {q2['konu'] or '-'} | "
+                            f"Tip: {q1['question_type']} / {q2['question_type']} | "
+                            f"Ortak izler: {overlap_text}"
+                        )
+                        preview_1 = (q1['soru_metni'] or "").replace('\n', ' ')[:110]
+                        preview_2 = (q2['soru_metni'] or "").replace('\n', ' ')[:110]
+
+                        tk.Label(
+                            pair_frame,
+                            text=header_text,
+                            font=('Segoe UI', 9, 'bold'),
+                            bg=self.colors['card'],
+                            fg=self.colors['text'],
+                            justify="left",
+                        ).pack(anchor="w", padx=14, pady=(2, 0))
+                        tk.Label(
+                            pair_frame,
+                            text=meta_text,
+                            font=('Segoe UI', 8),
+                            bg=self.colors['card'],
+                            fg=self.colors['text_secondary'],
+                            wraplength=760,
+                            justify="left",
+                        ).pack(anchor="w", padx=18, pady=(0, 1))
+                        tk.Label(
+                            pair_frame,
+                            text=f"  A: {preview_1}...",
+                            font=('Segoe UI', 8),
+                            bg=self.colors['card'],
+                            fg=self.colors['text'],
+                            wraplength=760,
+                            justify="left",
+                        ).pack(anchor="w", padx=18, pady=0)
+                        tk.Label(
+                            pair_frame,
+                            text=f"  B: {preview_2}...",
+                            font=('Segoe UI', 8),
+                            bg=self.colors['card'],
+                            fg=self.colors['text'],
+                            wraplength=760,
+                            justify="left",
+                        ).pack(anchor="w", padx=18, pady=(0, 3))
         
         back_btn = self.create_button(content_frame, "🔙 GERİ",
                                       self.show_welcome_screen, self.colors['text_secondary'])
@@ -2228,6 +2461,45 @@ class ModernDKABQuiz:
         for source, target in replacements.items():
             subject = subject.replace(source, target)
         return subject
+
+    def get_analysis_filter_values(self, include_year=True):
+        """Analiz ekraninda kullanilacak mevcut filtreleri dondurur."""
+        year = None
+        subject = None
+        topic = None
+
+        if include_year and hasattr(self, 'year_var'):
+            selected_year = self.year_var.get()
+            if selected_year not in ("Tüm yıllar", "Tum yillar", ""):
+                year = selected_year
+
+        if hasattr(self, 'ders_var'):
+            selected_subject = self.ders_var.get()
+            if selected_subject not in ("Tüm dersler", "Tum dersler", ""):
+                subject = selected_subject
+
+        if hasattr(self, 'konu_var'):
+            selected_topic = self.konu_var.get()
+            if selected_topic not in ("Tüm konular", "Tum konular", ""):
+                topic = selected_topic
+
+        return year, subject, topic
+
+    def format_analysis_scope_text(self, scope_total, history_total=None, include_year=True):
+        """Aktif filtre kapsamını analiz ekranında gösterilecek metne dönüştürür."""
+        year, subject, topic = self.get_analysis_filter_values(include_year=include_year)
+
+        parts = [
+            f"Yıl: {year if year else 'Tüm yıllar'}",
+            f"Ders: {subject if subject else 'Tüm dersler'}",
+            f"Konu: {topic if topic else 'Tüm konular'}",
+            f"Havuz: {scope_total} soru",
+        ]
+
+        if history_total is not None and history_total != scope_total:
+            parts.append(f"Tahmin havuzu: {history_total} soru")
+
+        return " | ".join(parts)
 
     def load_questions(self, show_message=True):
         """Soruları yükler"""

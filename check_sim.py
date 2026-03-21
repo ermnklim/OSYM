@@ -1,67 +1,191 @@
-import os, re
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
-base_path = r'C:\Users\osman\Desktop\OSYM\Worde_Yapistir'
+import argparse
+import os
+import re
+from typing import Dict, List
 
-all_qs = []
-for file in os.listdir(base_path):
-    m = re.search(r'(\d{4})_(.+)_Sorulari\.txt', file)
-    if not m: continue
-    
-    y = int(m.group(1))
-    d = m.group(2)
-    with open(os.path.join(base_path, file), 'r', encoding='utf-8') as f:
-        blocks = f.read().split('---SONRAKİ SORU---')
-    
-    for b in blocks:
-        lines = b.strip().split('\n')
-        if not lines or not lines[0]: continue
-        
-        no = '?'
-        m_no = re.search(r'Soru\s+(\d+)', b)
-        if m_no: no = m_no.group(1)
-        
-        m_k = re.search(r'KONU:\s*(.+)', b)
-        k = m_k.group(1).strip() if m_k else ''
-        
-        text = []
-        for l in lines:
-            l = l.strip()
-            if not l or re.match(r'^(DERS:|KONU:|YIL:|Soru\s+\d+|Doğru Cevap:|A\)|B\)|C\)|D\)|E\)|Görsel Notu:|Dosya:|Konum:)', l):
+from Python_Verisi.similarity_analyzer import build_similarity_report, filter_questions
+
+
+BASE_PATH = r"C:\Users\osman\Desktop\OSYM\Worde_Yapistir"
+
+
+def format_subject_label(subject: str) -> str:
+    subject = str(subject or "").replace("_", " ").strip()
+    replacements = {
+        "Onlisans": "Önlisans",
+        "Ortaogretim": "Ortaöğretim",
+        "ogretim": "öğretim",
+    }
+    for source, target in replacements.items():
+        subject = subject.replace(source, target)
+    return subject
+
+
+def parse_questions() -> List[Dict]:
+    questions: List[Dict] = []
+
+    for filename in sorted(os.listdir(BASE_PATH)):
+        match = re.search(r"(\d{4})_(.+)_Sorulari\.txt", filename)
+        if not match:
+            continue
+
+        year = int(match.group(1))
+        subject = format_subject_label(match.group(2))
+        file_path = os.path.join(BASE_PATH, filename)
+
+        with open(file_path, "r", encoding="utf-8") as handle:
+            content = handle.read()
+
+        content = content.replace("---SONRAKİ SORU---", "---SONRAKI SORU---")
+        content = content.replace("---SONRAKÄ° SORU---", "---SONRAKI SORU---")
+        content = content.replace("---SONRAKÃ„Â° SORU---", "---SONRAKI SORU---")
+
+        for block in content.split("---SONRAKI SORU---"):
+            if "Soru " not in block:
                 continue
-            text.append(l)
-        
-        if text:
-            full_text = ' '.join(text).lower()
-            full_text = re.sub(r'[^\w\s]', '', full_text)  # remove punctuation
-            words = set(full_text.split())
-            if words:
-                all_qs.append({'y': y, 'd': d, 'no': no, 'k': k, 'words': words, 'raw': ' '.join(text)[:60]})
 
-print(f"Total questions: {len(all_qs)}")
+            lines = [line.strip() for line in block.splitlines() if line.strip()]
+            if not lines:
+                continue
 
-similar = []
-for i in range(len(all_qs)):
-    for j in range(i+1, len(all_qs)):
-        w1, w2 = all_qs[i]['words'], all_qs[j]['words']
-        inter = len(w1.intersection(w2))
-        union = len(w1.union(w2))
-        sim = inter / union if union else 0
-        if sim > 0.65:
-            similar.append((sim, all_qs[i], all_qs[j]))
+            soru_no = "?"
+            topic = ""
+            question_lines = []
+            options = {}
 
-similar.sort(key=lambda x: x[0], reverse=True)
-print("Top similar questions:")
-# remove duplicates (where same text appears multiple times)
-seen = set()
-count = 0
-for sim, q1, q2 in similar:
-    pair_id = tuple(sorted([f"{q1['y']}{q1['d']}{q1['no']}", f"{q2['y']}{q2['d']}{q2['no']}"]))
-    if pair_id in seen: continue
-    seen.add(pair_id)
-    
-    print(f"\n{sim:.2f} | {q1['y']} {q1['d']} S:{q1['no']} ({q1['k']}) -- {q2['y']} {q2['d']} S:{q2['no']} ({q2['k']})")
-    print(f"Q1: {q1['raw']}...")
-    print(f"Q2: {q2['raw']}...")
-    
-    count += 1
-    if count >= 10: break
+            for line in lines:
+                if line.startswith("Soru ") and ":" in line:
+                    match_no = re.search(r"Soru\s+(\d+)", line)
+                    if match_no:
+                        soru_no = int(match_no.group(1))
+                elif line.startswith("KONU:"):
+                    topic = line.split(":", 1)[1].strip()
+                elif re.match(r"^[ABCDE]\)", line):
+                    options[line[0]] = line[2:].strip()
+                elif line.startswith(("DERS:", "YIL:", "Dogru Cevap:", "Doğru Cevap:", "Aciklama:", "Açıklama:", "Gorsel", "Görsel", "Dosya:", "Konum:", "[RESIM:")):
+                    continue
+                else:
+                    question_lines.append(line)
+
+            if question_lines and soru_no != "?" and len(options) >= 2:
+                questions.append(
+                    {
+                        "yil": year,
+                        "ders": subject,
+                        "konu": topic,
+                        "soru_no": soru_no,
+                        "soru_metni": " ".join(question_lines),
+                        "siklar": options,
+                    }
+                )
+
+    return questions
+
+
+def print_section(title: str) -> None:
+    print(f"\n{title}")
+    print("-" * len(title))
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Benzer soru ve konu egilimi analizi")
+    parser.add_argument("--yil", help="Belirli bir yil filtrele")
+    parser.add_argument("--ders", help="Belirli bir ders filtrele. Ornek: DKAB, IHL, DHBT Lisans")
+    parser.add_argument("--konu", help="Belirli bir konu filtrele")
+    args = parser.parse_args()
+
+    all_questions = parse_questions()
+    scope_questions = filter_questions(
+        all_questions,
+        year=args.yil,
+        subject=args.ders,
+        topic=args.konu,
+    )
+    history_questions = filter_questions(
+        all_questions,
+        year=None,
+        subject=args.ders,
+        topic=args.konu,
+    )
+    report = build_similarity_report(scope_questions, history_questions=history_questions)
+
+    print("Benzer Soru ve Cikis Egilimi Analizi")
+    print("====================================")
+    print(f"Filtrelenen soru: {report['scope_total']}")
+    print(f"Tahmin havuzu: {report['history_total']}")
+    print(f"Yil filtresi: {args.yil or 'Tum yillar'}")
+    print(f"Ders filtresi: {args.ders or 'Tum dersler'}")
+    print(f"Konu filtresi: {args.konu or 'Tum konular'}")
+
+    if not scope_questions:
+        print("\nBu filtrede soru bulunamadi.")
+        return
+
+    print_section("One Cikan Soru Tipleri")
+    for row in report["question_types"][:8]:
+        print(f"- {row['question_type']}: {row['count']}")
+
+    print_section("Kapsamdaki Konular")
+    for row in report["topic_counts"][:8]:
+        print(f"- {row['topic']}: {row['count']}")
+
+    print_section("Konu ve Alt Konu Ipuclari")
+    for item in report["subtopics_by_topic"][:8]:
+        phrases = ", ".join(item["phrases"]) if item["phrases"] else "Belirgin alt konu bulunamadi"
+        print(f"- {item['topic']}: {phrases}")
+
+    print_section("Tekrarlayan OSYM Kaliplari")
+    if not report["clusters"]:
+        print("- Belirgin tekrar eden kalip bulunamadi.")
+    else:
+        for cluster in report["clusters"][:8]:
+            years_text = ", ".join(str(year) for year in cluster["years"]) if cluster["years"] else "?"
+            phrase_text = ", ".join(cluster["phrases"]) if cluster["phrases"] else "Alt konu ipucu yok"
+            print(
+                f"- {cluster['topic'] or 'Konu yok'} | {cluster['question_type']} | "
+                f"{cluster['size']} soru | yillar: {years_text} | alt konu: {phrase_text}"
+            )
+
+    print_section("Cikmasi Muhtemel Konular")
+    if not args.konu:
+        for row in report["likely_topics"][:8]:
+            years_text = ", ".join(str(year) for year in row["years"][-5:]) if row["years"] else "?"
+            print(
+                f"- {row['topic']} | skor {row['score']:.1f} | tekrar {row['count']} | "
+                f"son yillar {row['recent_count']} | yillar: {years_text}"
+            )
+
+    print_section("Cikmasi Muhtemel Alt Konular")
+    if not report["likely_subtopics"]:
+        print("- Belirgin alt konu sinyali bulunamadi.")
+    else:
+        for row in report["likely_subtopics"][:8]:
+            years_text = ", ".join(str(year) for year in row["years"][-4:]) if row["years"] else "?"
+            print(
+                f"- {row['subtopic']} | skor {row['score']:.1f} | tekrar {row['count']} | yillar: {years_text}"
+            )
+
+    print_section("Guclu Benzer Soru Eslesmeleri")
+    if not report["similar_pairs"]:
+        print("- Guclu eslesme bulunamadi.")
+    else:
+        for pair in report["similar_pairs"][:12]:
+            q1 = pair["q1"]
+            q2 = pair["q2"]
+            overlap = ", ".join(pair["overlap_terms"]) if pair["overlap_terms"] else "Belirgin ortak iz yok"
+            print(
+                f"- %{int(pair['score'] * 100)} | "
+                f"{q1['yil']} {q1['ders']} Soru {q1['soru_no']} ({q1['konu']}) <-> "
+                f"{q2['yil']} {q2['ders']} Soru {q2['soru_no']} ({q2['konu']})"
+            )
+            print(f"  Tipler: {q1['question_type']} / {q2['question_type']}")
+            print(f"  Ortak izler: {overlap}")
+            print(f"  A: {(q1['soru_metni'] or '')[:110]}...")
+            print(f"  B: {(q2['soru_metni'] or '')[:110]}...")
+
+
+if __name__ == "__main__":
+    main()
