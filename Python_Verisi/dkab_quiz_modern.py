@@ -2953,16 +2953,7 @@ class ModernDKABQuiz:
         selected_konu = self.konu_var.get() if hasattr(self, 'konu_var') else "Tüm konular"
         max_questions = self.get_question_limit_for_year(selected_year, selected_ders, selected_konu)
         self.num_spinbox.config(to=max_questions)
-
-        try:
-            current_value = int(self.num_var.get())
-        except ValueError:
-            current_value = 10
-
-        if current_value > max_questions:
-            self.num_var.set(str(max_questions))
-        elif current_value < 1:
-            self.num_var.set('1')
+        self.num_var.set(str(max_questions if max_questions >= 1 else 1))
 
     def update_stats(self):
         """İstatistikleri günceller"""

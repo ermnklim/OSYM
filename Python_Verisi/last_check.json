@@ -1,19 +1,22 @@
 {
   "files": {
     "2013_DKAB_Sorulari.txt": 1773921002.5308807,
-    "2014_DHBT_Lisans_Sorulari.txt": 1774088788.4634542,
-    "2014_DHBT_Onlisans_Sorulari.txt": 1774088788.5111883,
-    "2014_DHBT_Ortaogretim_Sorulari.txt": 1774095561.8579552,
+    "2014_DHBT_Lisans_Sorulari.txt": 1774096384.391849,
+    "2014_DHBT_Onlisans_Sorulari.txt": 1774096384.4379637,
+    "2014_DHBT_Ortak_Sorulari.txt": 1774096255.948311,
+    "2014_DHBT_Ortaogretim_Sorulari.txt": 1774096384.4379637,
     "2014_DKAB_Sorulari.txt": 1773922121.4394746,
     "2015_DKAB_Sorulari.txt": 1773924096.7527473,
-    "2016_DHBT_Lisans_Sorulari.txt": 1774088788.6094341,
-    "2016_DHBT_Onlisans_Sorulari.txt": 1774088788.665933,
-    "2016_DHBT_Ortaogretim_Sorulari.txt": 1774088788.7197313,
+    "2016_DHBT_Lisans_Sorulari.txt": 1774096384.4442458,
+    "2016_DHBT_Onlisans_Sorulari.txt": 1774096384.4472399,
+    "2016_DHBT_Ortak_Sorulari.txt": 1774096255.9508393,
+    "2016_DHBT_Ortaogretim_Sorulari.txt": 1774096384.4497783,
     "2016_DKAB_Sorulari.txt": 1773924157.5136461,
     "2017_DKAB_Sorulari.txt": 1773924318.2904716,
-    "2018_DHBT_Lisans_Sorulari.txt": 1774088788.7639039,
-    "2018_DHBT_Onlisans_Sorulari.txt": 1774088788.808524,
-    "2018_DHBT_Ortaogretim_Sorulari.txt": 1774088788.847778,
+    "2018_DHBT_Lisans_Sorulari.txt": 1774096384.4524062,
+    "2018_DHBT_Onlisans_Sorulari.txt": 1774096384.453925,
+    "2018_DHBT_Ortak_Sorulari.txt": 1774096255.9555545,
+    "2018_DHBT_Ortaogretim_Sorulari.txt": 1774096384.4575057,
     "2018_DKAB_Sorulari.txt": 1773924318.2929628,
     "2019_DKAB_Sorulari.txt": 1773927237.8930202,
     "2019_IHL_Sorulari.txt": 1773931012.3910556,
@@ -28,5 +31,5 @@
     "2024_DKAB_Sorulari.txt": 1773925412.4342666,
     "2025_DKAB_Sorulari.txt": 1774090408.6819074
   },
-  "last_run": "2026-03-21 15:21:32"
+  "last_run": "2026-03-21 15:42:02"
 }
