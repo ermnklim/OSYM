@@ -1217,7 +1217,26 @@ class ModernDKABQuiz:
             self._cancel_speech_sequence()
         self.speech_engine.stop()
         if reset_status:
-            self._set_speech_status(self._initial_speech_status_text())
+            if self.current_view == "question" and self._auto_read_is_enabled():
+                self._set_speech_status("Ses durduruldu. Devam Et ile bu sorudan tekrar baslayip test sonuna kadar ilerler.")
+            else:
+                self._set_speech_status(self._initial_speech_status_text())
+
+    def resume_auto_read(self):
+        if self.current_view != "question" or not getattr(self, "quiz_questions", None):
+            self._set_speech_status("Devam etmek icin once aktif bir soru acin.")
+            return
+
+        if not self._auto_read_is_enabled():
+            self._set_speech_status("Otomatik devam icin soldaki Soru, Siklar veya Cevap seceneklerinden en az biri acik olmali.")
+            return
+
+        if self.current_index >= len(self.quiz_questions):
+            self._set_speech_status("Aktif soru bulunamadi.")
+            return
+
+        question = self.quiz_questions[self.current_index]
+        self.maybe_auto_read_question(question)
 
     def preview_speech_voice(self):
         sample_text = (
@@ -1396,6 +1415,7 @@ class ModernDKABQuiz:
             ("Soruyu Oku", lambda q=question: self.speak_question_only(q), self.colors['accent']),
             ("Soru + Şıklar", lambda q=question: self.speak_question_and_options(q), self.colors['primary']),
             ("Cevabı Oku", lambda q=question: self.speak_correct_answer(q), self.colors['warning']),
+            ("Devam Et", self.resume_auto_read, self.colors['success']),
             ("Durdur", self.stop_speech, self.colors['danger']),
         ]
 
@@ -1884,6 +1904,14 @@ class ModernDKABQuiz:
         )
         self.preview_voice_button.pack(side=tk.LEFT, fill=tk.X, expand=True, ipady=2)
 
+        self.resume_voice_button = self.create_button(
+            speech_buttons,
+            "Devam Et",
+            self.resume_auto_read,
+            self.colors['success']
+        )
+        self.resume_voice_button.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=(5, 0), ipady=2)
+
         self.stop_voice_button = self.create_button(
             speech_buttons,
             "Durdur",
@@ -1904,6 +1932,7 @@ class ModernDKABQuiz:
             self.speech_rate_scale.config(state=tk.DISABLED)
             self.speech_wait_scale.config(state=tk.DISABLED)
             self.preview_voice_button.config(state=tk.DISABLED, cursor="arrow")
+            self.resume_voice_button.config(state=tk.DISABLED, cursor="arrow")
             self.stop_voice_button.config(state=tk.DISABLED, cursor="arrow")
         
         # Statistics card
