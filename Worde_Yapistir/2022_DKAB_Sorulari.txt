@@ -552,7 +552,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 44:
-KONU: Din Felsefesi
+KONU: İslam Felsefesi
 Felsefede tartisilan onemli meselelerden biri, varligin nasil mevcudiyet kazandigidir. Islam dusunce geleneginde buna iliskin farkli teoriler one surulmustur. Bunlardan biri, Tanri'nin birligini ve basitligini koruma kaygisiyla gelistirilmistir. Bu teori; ezeli olan ile sonradan olan, mutlak bir olan ile coklugu icinde barindiran, zorunlu olan ile mumkun olan, yaratan ile yaratilan arasindaki kategorik ayrimi ve iliskiyi hiyerarsik bir sistem icinde belirlemeyi amaclamaktadir. Bu varlik kazanma surecinde belirleyici ve baslatici olan ilke, Tanri'nin kendini bilmesi ve dusunmesidir.
 Bu parcada bahsedilen teori asagidakilerden hangisidir?
 A) Yoktan yaratma
@@ -564,7 +564,7 @@ Dogru Cevap: B
 
 ---SONRAKI SORU---
 Soru 45:
-KONU: Din Felsefesi
+KONU: İslam Felsefesi
 Islam felsefesi, dusunce tarihinde onemli roller oynamistir. Basta Yunan dusuncesi olmak uzere unutulmaya yuz tutmus antik dusunce gelenegini Islam metafizigi baglaminda ozgun bir sekilde yorumlamistir. Kur'an ve Sunnet'in ogretilerini rasyonel temelli yorumlayarak Islam dusunce geleneginin olusumuna katkida bulunmustur. XI. yuzyildan itibaren Bati dillerine yapilan tercumelerle Yahudi ve Hristiyan dusuncelerinin gelisimine tesir etmistir. Bu ve benzer nedenlerden dolayi Islam dusuncesinin bilinmesi sadece Muslumanlar icin degil, Batililar icin de onemli olup uzerinde calisilmaya devam edilmektedir.
 Bu parcadan Islam felsefesiyle ilgili asagidakilerden hangisi soylenemez?
 A) Felsefi gelenekler arasinda kopru vazifesi gormustur.
@@ -645,7 +645,7 @@ Dogru Cevap: C
 
 ---SONRAKI SORU---
 Soru 51:
-KONU: Din Sosyolojisi ve Psikolojisi
+KONU: Din Sosyolojisi
 Asabiyet Ibn Haldun'un sosyal dayanismayi aciklamak amaciyla gelistirdigi bir kavramdir. O, asabiyeti sebep ve nesep asabiyeti olmak uzere ikiye ayirir. Sebep asabiyetini ayni kultur ortaminda yasamaktan kaynaklanan ve ortak bir ideal icin bir araya gelen bireylerin olusturdugu birliktelik olarak tanimlar.
 Buna gore
 I. siyasi parti,
@@ -662,7 +662,7 @@ Dogru Cevap: D
 
 ---SONRAKI SORU---
 Soru 52:
-KONU: Din Sosyolojisi ve Psikolojisi
+KONU: Din Psikolojisi
 Din psikolojisi alaninda genclerin dindarlik duzeylerinin satin alma davranislarina etkisi uzerine tez hazirlayan bir ogrenci, arastirma konusuyla ilgili olarak belli sayida katilimcinin goruslerine ulasmak durumundadir. Ogrenci hedefledigi tum kitleye ulasmada gucluk nedeniyle orneklem adi verilen ve ana kitleyi temsil eden daha kucuk bir grup uzerinden anket, mulakat vb. teknikler kullanarak arastirmasini yurutmustur.
 Buna gore ogrencinin basvurdugu bilimsel arastirma yontemi asagidakilerden hangisidir?
 A) Tarama
@@ -674,7 +674,7 @@ Dogru Cevap: A
 
 ---SONRAKI SORU---
 Soru 53:
-KONU: Din Sosyolojisi ve Psikolojisi
+KONU: Din Psikolojisi
 Modern insanin en buyuk sorununu, anlam ihtiyaci ve arzusunun engellenmesi olarak gorur. Logoterapi adini verdigi bir yaklasim cercevesinde goruslerini dile getirir. Ona gore logoterapinin amaci, insanin anlam arzusunu tatmin etmek ve insani cagin hastaligi olarak gordugu anlamsizliktan kurtarmaktir. Bu goruslerini Insanin Anlam Arayisi ve Duyulmayan Anlam Cigrigi isimli eserlerinde ele alir.
 Bu parcada bahsedilen dusunur asagidakilerden hangisidir?
 A) Viktor Frankl
@@ -686,7 +686,7 @@ Dogru Cevap: A
 
 ---SONRAKI SORU---
 Soru 54:
-KONU: Din Sosyolojisi ve Psikolojisi
+KONU: Din Psikolojisi
 Yapisalciligin psikoloji konularini daraltmasina tepki olarak dogmus bir ekoldur. John Dewey ve William James onemli temsilcilerindendir. Onlara gore zihnin ne oldugundan cok ne yaptigi ve faaliyetleri uzerinde durmak gerekir. Onlar bu goruslerini din psikolojisi alanina tasiyarak din ve Tanri inancinin gercekliginden ziyade insan hikinatindaki etkisi ve faydasi uzerinde durmuslardir.
 Bu parcada bahsedilen yaklasim asagidakilerden hangisidir?
 A) Davranisci

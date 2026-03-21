@@ -723,7 +723,7 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 Soru 45:
-KONU: Kur'an-ı Kerim ve Sanat
+KONU: İslam Kültür ve Medeniyeti
 Kur’an-ı Kerim-sanat ilişkisiyle ilgili,
 I. Çinî sanatı, ayetlerin mimari eserlere yansıtılması amacıyla geliştirilmiştir.
 II. Mushafların kapaklarını güzelleştirme çabası ebru sanatının doğmasına vesile olmuştur.
@@ -743,7 +743,7 @@ Doğru Cevap: E
 ---SONRAKI SORU---
 
 Soru 46:
-KONU: Türk İslam Edebiyatı
+KONU: İslam Kültür ve Medeniyeti
 İnsanlığa rahmet olarak gönderilen Hz. Muhammed, tarih boyunca Müslümanlar tarafından örnek alınmış ve onu sevmek dinî bir görev olarak kabul edilmiştir. Türkler de İslam’ı kabul ettikten sonra Hz. Muhammed’e yürekten bağlanmış ve onun sevgisini gönüllerinde hissetmişlerdir. Bu sevginin bir yansıması olarak kültürümüzde Hz. Muhammed’i övme amacıyla birçok şiir kaleme alınmıştır.
 
 Bu şiirlere verilen isim aşağıdakilerden hangisidir?
@@ -759,7 +759,7 @@ Doğru Cevap: B
 ---SONRAKI SORU---
 
 Soru 47:
-KONU: İslam Sanatları ve Mimari
+KONU: İslam Kültür ve Medeniyeti
 Osmanlı padişah ve hanedan üyelerinin birçoğu başta İstanbul olmak üzere çeşitli şehirlerde camiler inşa ettirmişlerdir. Bu camilerin diğer paşaların ve devletin ileri gelenlerinin yaptırdığı camilerden ayırt edici özellikleri; içlerinde padişahların namaz kılması için ayrılmış sultan mahfili bulunması, birden fazla minarenin ve minarelerde birden fazla şerefenin yer almasıdır. Sultan veya onların en yakınları tarafından yaptırılmaları sebebiyle bu camilere selatin camileri denilmiştir.
 
 Aşağıdakilerden hangisi bu parçada bahsedilen camilere örnek verilemez?
@@ -1023,7 +1023,7 @@ Doğru Cevap: E
 ---SONRAKI SORU---
 
 Soru 63:
-KONU: Hadis
+KONU: Din Eğitimi
 Bir imam hatip lisesi meslek dersleri öğretmeni “Hadis Tarihi” ve “Hadis Çeşitleri” ünitelerini işledikten sonra öğrencilerin kavram yanılgılarını, eksik ve yanlış öğrenmelerini tespit etmek amacıyla şu şekilde bir yapılandırılmış grid hazırlamış ve “Kaynağına göre hadis çeşitleri hangileridir?” sorusunu sormuştur.
 
 1. Kutsi
@@ -1056,7 +1056,7 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 Soru 64:
-KONU: Siyer Öğretimi
+KONU: Din Eğitimi
 Hz. Muhammed’in hayatı dersini yürüten bir öğretmen, öğretim sürecini öğrenci merkezli etkinliklerle zenginleştirmeyi hedeflemekte ve süreç temelli değerlendirme teknikleri arasında yer alan portfolyodan yararlanmak istemektedir. Bu kapsamda öğrencilerine bir dönem boyunca Hz. Muhammed’in doğduğu çevre, aile büyükleri, çocukluk ve gençlik yıllarında yaşadıkları, erdemli davranışları, peygamber oluşu ve peygamberliği döneminde öne çıkan olaylarla ilgili çeşitli etkinlikler hazırlayacaklarını söyler ve onlardan hazırladıkları etkinlikleri birer aylık periyotlarda sunmalarını ister. Öğretmen süreç içerisinde öğrencilerin yaptığı sunumları dosyalar ve dönem sonunda bir klasör hâlinde hem kendilerinin hem de velilerinin incelemeleri için onlara dağıtır.
 
 Aşağıdakilerden hangisi öğretmenin bu uygulama kapsamında hedeflediği yararlardan biri olamaz?
@@ -1072,7 +1072,7 @@ Doğru Cevap: E
 ---SONRAKI SORU---
 
 Soru 65:
-KONU: Hadis
+KONU: Din Eğitimi
 Aşağıdaki ifadelerden hangisinin hadis dersi “Hadis Tarihi” ünitesi için hazırlanan bir öz değerlendirme formunda yer alması uygun olmaz?
 
 A) Sahabe ve tabiunun hadis rivayetindeki rolünü açıklayabilirim.
@@ -1102,7 +1102,7 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 Soru 67:
-KONU: Ölçme ve Değerlendirme
+KONU: Din Eğitimi
 Aşağıdakilerden hangisi Kur’an-ı Kerim dersinde yapılan bir ölçmede tesadüfi hataya örnek oluşturmaz?
 
 A) Öğrencilerin Yasin Suresi ezberini okurken heyecandan 3. sayfadaki bir ayeti 6. sayfadaki benzer bir ayetle karıştırması
@@ -1116,7 +1116,7 @@ Doğru Cevap: D
 ---SONRAKI SORU---
 
 Soru 68:
-KONU: Ölçme ve Değerlendirme
+KONU: Din Eğitimi
 Hitabet ve mesleki uygulama dersi “Cami içi ve cami dışı din hizmetlerini uygular.” kazanımının gerçekleşme durumunu ölçmek isteyen bir imam hatip lisesi meslek dersleri öğretmeninin kullanabileceği en uygun değerlendirme yöntemi aşağıdakilerden hangisi olabilir?
 
 A) Akran değerlendirme
@@ -1130,7 +1130,7 @@ Doğru Cevap: D
 ---SONRAKI SORU---
 
 Soru 69:
-KONU: Değerler Eğitimi
+KONU: Din Eğitimi
 Değerler eğitimi konusunda çeşitli yaklaşımlar geliştirilmiştir. Bu yaklaşımlardan biri; değerlerin göreceli olmadığı, evrensel değerlerin varlığı ve okulun değerleri benimsemesi gereken kurum olduğu şeklindeki üç ön kabul üzerine kuruludur. Bu yaklaşımda amaç, yetişmekte olan nesilleri etkilemek ve yönlendirmektir. Zira gençlerin değer kaybı, değer yabancılaşması ve değer krizi gibi durumlarla karşılaşmaması için toplumun hâkim değerlerinin onlara kazandırılması gerekir. Bu yaklaşımda değerler bilgi, duygu ve gönüllülük merkezli olarak düzenlenebilir.
 
 Bu parçada bahsedilen değerler eğitimi yaklaşımı aşağıdakilerden hangisidir?
@@ -1146,7 +1146,7 @@ Doğru Cevap: D
 ---SONRAKI SORU---
 
 Soru 70:
-KONU: Tefsir
+KONU: Din Eğitimi
 İmam hatip lisesi meslek dersleri öğretmeni tefsir dersinde “Vahyin yazılması, korunması ve çoğaltılması ile ilgili süreci açıklar.” kazanımını işledikten sonra öğrencilerine bir çalışma kâğıdı verir.
 
 Tefsir Dersi Öğretim Programı’na göre, aşağıdaki sorulardan hangisi bu çalışma kâğıdının kapsamı dışındadır?
@@ -1178,7 +1178,7 @@ Doğru Cevap: A
 ---SONRAKI SORU---
 
 Soru 72:
-KONU: Öğretim Yöntem ve Teknikleri
+KONU: Din Eğitimi
 İmam hatip lisesi meslek dersleri öğretmeni Kur’an-ı Kerim dersinde öğrenci başarısını artırmak için şu şekilde bir yaklaşım sergilemiştir:
 
 • Öncelikle konuları harf, mahreç, hareke, uzatma, idgam vb. şeklinde küçük parçalara bölmüştür.
@@ -1199,7 +1199,7 @@ Doğru Cevap: A
 ---SONRAKI SORU---
 
 Soru 73:
-KONU: Siyer
+KONU: Din Eğitimi
 Bir imam hatip lisesi meslek dersleri öğretmeni, “Risaletin Mekke Dönemi” ünitesini işlemeye başlamadan önce öğrencilerinin ön bilgilerini yoklamak ister. Bu amaçla öğrencilerine “Hz. Muhammed’in tebliğinin Mekke dönemi hakkında neler biliyorsunuz?” sorusunu yöneltir.
 
 Buna göre aşağıdaki cevaplardan hangisini veren öğrencinin konuyla ilgili bir kavram yanılgısına sahip olduğu söylenebilir?
@@ -1229,7 +1229,7 @@ Doğru Cevap: E
 ---SONRAKI SORU---
 
 Soru 75:
-KONU: Öğretim Yöntem ve Teknikleri
+KONU: Din Eğitimi
 Kur’an-ı Kerim dersinde öğrencilerden Beyyine Suresi’ni tecvit kurallarına göre ezberlemelerini isteyen Mutlu Bey, öğrencilerin ezberlerini yaptığını ancak büyük çoğunluğunun sureyi tecvit kurallarına uygun şekilde okuyamadığını fark eder. Öğrencilerine bunun nedenini sorduğunda onlar, bir önceki derse giren öğretmenin tecvit kuralları üzerinde durmadığını söyler.
 
 Bu parçadaki durumun ortaya çıkmasının, öncelikle Mutlu Bey’in tam öğrenme modelinde izlemesi gereken aşağıdaki aşamalardan hangisini eksik yapması ile ilgili olduğu söylenebilir?

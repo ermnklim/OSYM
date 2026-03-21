@@ -668,7 +668,7 @@ Doğru Cevap: A
 
 ---SONRAKİ SORU---
 Soru 43:
-KONU: Din Sosyolojisi ve Psikolojisi
+KONU: Din Sosyolojisi
 Bir din sosyologu, Muslumanlarin hac ibadetini nasil ifa ettiklerini katilimli gozlem yoluyla incelemeye karar verir. Bunun icin once hacla ilgili temel kavramlari ve uygulamalari ogrenir. Hac ibadetini yerine getirirken de su notlari alir:
 • Haceru'l-Esved tasini selamladik.
 • Kabe'nin etrafinda yedi tur donduk.
@@ -687,7 +687,7 @@ Doğru Cevap: B
 
 ---SONRAKİ SORU---
 Soru 44:
-KONU: Din Sosyolojisi ve Psikolojisi
+KONU: Din Sosyolojisi
 Din sosyolojisinin kurucularindan biri olan Max Weber, dinin sosyal kurumlarla ve ozellikle ekonomi ile iliskisine odaklanmistir. Weber, Avrupa'da akilciligin yukselisini kapitalizm, burokrasi ve bilimin gelismesiyle iliskilendirmistir. Ayrica o, Protestan Ahlaki ve Kapitalizmin Ruhu isimli calismasinda dinin sadece kapitalizmin yukselisine katkisını degil inanca dayali hayatin rasyonel ve sistemli seyrini de ortaya koymustur.
 
 Bu parcadan M. Weber ile ilgili asagidakilerden hangisine ulasilamaz?
@@ -702,7 +702,7 @@ Doğru Cevap: D
 
 ---SONRAKİ SORU---
 Soru 45:
-KONU: Din Sosyolojisi ve Psikolojisi
+KONU: Din Psikolojisi
 Din psikolojisiyle ilgilenen bircok arastirmaci dindarlik tiplerini ve dini yonelimi farkli siniflandirmalara tabi tutarak incelemistir. Bunlardan biri de itaatin ve kurallarin one ciktigi, dinin daha cok gorunumune ve diger insanlarin bakisina gore sekillendirildigi, icsellestirilmeden bir arac olarak goruldugu dini yonelimdir. Bu tur bir dini yonelim bireyin hayatinda genellikle olumsuz etki yapmakta ve ruh sagligina faydadan cok zarar verebilmektedir.
 
 Asagidakilerden hangisi bu tur dini yonelim icin kullanilan kavramlardan biri degildir?
@@ -717,7 +717,7 @@ Doğru Cevap: D
 
 ---SONRAKİ SORU---
 Soru 46:
-KONU: Din Sosyolojisi ve Psikolojisi
+KONU: Din Psikolojisi
 Musluman dusunurlerden pek cogu insanin duygu, dusunce ve davranislarini iceren sureclerle ilgilenmislerdir. Bu kapsamda kimi zaman insanin ozunu dile getirmek icin kimi zaman da ondaki iyi ve kotu huylarin, ilahi ve sufli duygularin butununu ya da kaynagini ifade etmek icin bir kavram kullanmislardir. Insanin icsel sureclerini de bu kavramin etrafinda ele almislaridir.
 
 Bu parcada bahsedilen kavram asagidakilerden hangisidir?
