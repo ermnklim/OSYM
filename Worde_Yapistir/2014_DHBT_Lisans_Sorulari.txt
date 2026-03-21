@@ -1,5 +1,5 @@
 DERS: DHBT Lisans
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2014
 
 Soru 1:
@@ -17,7 +17,7 @@ Doğru Cevap: A
 ---SONRAKI SORU---
 
 DERS: DHBT Lisans
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2014
 
 Soru 2:
@@ -35,7 +35,7 @@ Doğru Cevap: E
 ---SONRAKI SORU---
 
 DERS: DHBT Lisans
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2014
 
 Soru 3:
@@ -544,7 +544,7 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 DERS: DHBT Lisans
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2014
 
 Soru 31:
@@ -562,7 +562,7 @@ Doğru Cevap: D
 ---SONRAKI SORU---
 
 DERS: DHBT Lisans
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2014
 
 Soru 32:
@@ -580,7 +580,7 @@ Doğru Cevap: B
 ---SONRAKI SORU---
 
 DERS: DHBT Lisans
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2014
 
 Soru 33:

@@ -24,17 +24,42 @@ KONULAR = [
     "Tefsir",
     "Hadis",
     "Fıkıh",
+    "Fıkıh Usulü",
     "Kelam / Akaid",
     "İslam Mezhepleri ve Akımları",
-    "İslam Tarihi / Siyer",
+    "İslam Tarihi",
+    "Siyer",
     "İslam Kültür ve Medeniyeti",
     "İslam Felsefesi",
     "Din Felsefesi",
     "Din Sosyolojisi",
     "Din Psikolojisi",
     "Din Eğitimi",
-    "Dinler Tarihi"
+    "Dinler Tarihi",
+    "İslam Ahlakı ve Tasavvuf",
+    "Mezhepler Tarihi",
+    "Din Hizmetleri ve Hitabet",
 ]
+
+TOPIC_ALIASES = {
+    "Akaid / Kelam": "Kelam / Akaid",
+    "Kelam / Akaid": "Kelam / Akaid",
+    "Kur’an-ı Kerim ve Tecvid": "Kur'an-ı Kerim ve Tecvid",
+    "Kur'an-i Kerim ve Tecvid": "Kur'an-ı Kerim ve Tecvid",
+    "İslam Tarihi / Siyer": "İslam Tarihi",
+    "Islam Tarihi": "İslam Tarihi",
+    "İslam Ahlaki ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
+    "Islam Ahlaki ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
+    "?slam Ahlak? ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
+    "Mezhepler tarihi": "Mezhepler Tarihi",
+}
+
+
+def normalize_topic_name(topic: str) -> str:
+    topic = (topic or "").strip()
+    if not topic:
+        return ""
+    return TOPIC_ALIASES.get(topic, topic)
 
 def get_file_mod_time(file_path):
     try:
@@ -113,7 +138,7 @@ def parse_single_question(text: str, year: int, subject: str = "DKAB") -> Dict:
         
         soru_no = None
         soru_metni = []
-        konu = ""
+        topic_candidates = []
         
         for line in lines:
             line = line.strip()
@@ -125,10 +150,20 @@ def parse_single_question(text: str, year: int, subject: str = "DKAB") -> Dict:
                 except ValueError:
                     soru_no = None
             elif line.startswith('KONU:'):
-                konu = line.split(':', 1)[1].strip()
+                normalized_topic = normalize_topic_name(line.split(':', 1)[1].strip())
+                if normalized_topic:
+                    topic_candidates.append(normalized_topic)
             elif soru_no and not any(line.startswith(x) for x in ['A)', 'B)', 'C)', 'D)', 'E)', 'Doğru', 'Dogru', 'Açıklama', 'Aciklama', '[RESIM', 'Görsel', 'Gorsel']):
                 soru_metni.append(line)
-        
+
+        konu = ""
+        for candidate in topic_candidates:
+            if candidate in KONULAR:
+                konu = candidate
+                break
+        if not konu and topic_candidates:
+            konu = topic_candidates[-1]
+
         if soru_no:
             return {
                 "yil": year,

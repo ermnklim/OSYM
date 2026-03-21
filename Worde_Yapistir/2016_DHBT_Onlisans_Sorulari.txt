@@ -338,7 +338,7 @@ Doğru Cevap: E
 ---SONRAKI SORU---
 
 DERS: DHBT Önlisans
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2016
 
 Soru 20:
@@ -599,7 +599,7 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 DERS: DHBT Önlisans
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2016
 
 Soru 34:
@@ -617,7 +617,7 @@ Doğru Cevap: A
 ---SONRAKI SORU---
 
 DERS: DHBT Önlisans
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2016
 
 Soru 35:

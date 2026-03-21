@@ -338,7 +338,7 @@ Doğru Cevap: E
 ---SONRAKI SORU---
 
 DERS: DHBT Ortaöğretim
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2016
 
 Soru 20:
@@ -579,7 +579,7 @@ Doğru Cevap: B
 ---SONRAKI SORU---
 
 DERS: DHBT Ortaöğretim
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2016
 
 Soru 33:
@@ -597,7 +597,7 @@ Doğru Cevap: D
 ---SONRAKI SORU---
 
 DERS: DHBT Ortaöğretim
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2016
 
 Soru 34:
@@ -615,7 +615,7 @@ Doğru Cevap: A
 ---SONRAKI SORU---
 
 DERS: DHBT Ortaöğretim
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2016
 
 Soru 35:

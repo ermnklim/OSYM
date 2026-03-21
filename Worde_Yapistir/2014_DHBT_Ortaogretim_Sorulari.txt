@@ -1,5 +1,5 @@
 DERS: DHBT Ortaöğretim
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2014
 
 Soru 1:
@@ -17,7 +17,7 @@ Doğru Cevap: A
 ---SONRAKI SORU---
 
 DERS: DHBT Ortaöğretim
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2014
 
 Soru 2:
@@ -35,7 +35,7 @@ Doğru Cevap: E
 ---SONRAKI SORU---
 
 DERS: DHBT Ortaöğretim
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2014
 
 Soru 3:
@@ -544,7 +544,7 @@ Doğru Cevap: B
 ---SONRAKI SORU---
 
 DERS: DHBT Ortaöğretim
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2014
 
 Soru 31:

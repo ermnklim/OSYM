@@ -3,7 +3,6 @@ KONU: Siyer
 YIL: 2018
 
 Soru 1:
-KONU: Buas Savaşı
 
 İslam'ın doğduğu yıllarda Medine'de Evs ve Hazreç adlarında iki Arap kabilesi bulunuyordu ve bunlar arasında sürekli savaşlar yaşanmaktaydı. Özellikle hicretten 5-6 yıl kadar önce meydana gelen savaş çok şiddetli olmuş, iki taraf da büyük kayıplar vermişti. Bu savaşın etkisiyle her iki kabile de İslam'ı kolaylıkla ve hızlı bir şekilde benimsemiş ve Hz. Muhammed'i Medine'ye çağırarak İslam devletinin temellerinin atılmasını sağlamıştır.
 
@@ -24,7 +23,6 @@ KONU: Siyer
 YIL: 2018
 
 Soru 2:
-KONU: Haşimoğullarına Boykot
 
 Mekkeli müşrikler, 616 yılında akrabalarının Hz. Muhammed'e olan desteğini kırmak amacıyla Haşimoğullarına ve Müslümanlara boykot uygulamaya başlar. Bu amaçla, Hz. Muhammed kendilerine teslim edilinceye veya öldürülünceye kadar onlarla alışveriş yapmamak, kız alıp vermemek, konuşmamak ve oturup kalkmamak üzere kendi aralarında kararlar alır ve bu kararları Kâbe'nin duvarına asarlar. Ancak müşrikler istedikleri sonucu alamadıkları hâlde, yaklaşık üç yıl sonra boykotu kaldırmaya karar verirler.
 
@@ -45,7 +43,6 @@ KONU: Siyer
 YIL: 2018
 
 Soru 3:
-KONU: Gizli Davet Dönemi
 
 Aşağıdakilerden hangisi Hz. Muhammed'in İslam'a daveti gizli yaptığı dönemin özelliklerinden biri değildir?
 
@@ -64,7 +61,6 @@ KONU: Siyer
 YIL: 2018
 
 Soru 4:
-KONU: Haşimoğullarının Hz. Muhammed'i Koruması – Asabiyet
 
 Mekkeli müşriklerin her türlü engelleme çabasına rağmen Müslümanların hiçbiri dininden dönmüyor, aksine sayıları da giderek artıyor ve gün geçtikçe güçleniyorlardı. Bunun üzerine Hz. Muhammed'i öldürmeden İslam'ı ortadan kaldıramayacaklarını düşündüler ve Haşimoğullarının lideri konumundaki Ebu Talip'e giderek Hz. Muhammed'i kendilerine teslim etmesi karşılığında istediği şeyleri verebileceklerini belirtiler. Ancak hem Ebu Talip hem de Haşimoğullarının çoğu, İslam'ı kabul etmemiş olmalarına rağmen Hz. Muhammed'i her şart ve durumda sonuna kadar savunacaklarını bildirdiler.
 
@@ -85,7 +81,6 @@ KONU: Siyer
 YIL: 2018
 
 Soru 5:
-KONU: Hz. Muhammed Döneminde İnşa Edilen Mescitler – Dırar Mescidi
 
 Aşağıdakilerden hangisi Hz. Muhammed Dönemi'nde Müslümanlar tarafından yapılan ve içinde Hz. Muhammed'in de bizzat namaz kıldığı mescitler arasında yer almaz?
 
@@ -104,7 +99,6 @@ KONU: Kur'an-ı Kerim ve Tecvid
 YIL: 2018
 
 Soru 6:
-KONU: Helak Edilen Kavimler
 
 Kur'an-ı Kerim'de özellikle Mekki surelerde yer alan kıssalarda peygamberlerin tevhid mücadelesi anlatılmakta ve kavimlerinin onların tebliğine karşı gösterdikleri direnç dile getirilmektedir. Özellikle bazı kavimlerin bu inkârcı tutumlarında ısrar ettiklerinden bahsedilmekte ve yaptıklarının sonucunda da Allah'ın onları helak ettiğine dikkat çekilmektedir.
 
@@ -125,7 +119,6 @@ KONU: Kur'an-ı Kerim ve Tecvid
 YIL: 2018
 
 Soru 7:
-KONU: Ayette İsmi Açıkça Geçen Sahabe – Hz. Zeyd
 
 Kur'an-ı Kerim'deki birçok ayet, doğrudan Hz. Muhammed Dönemi'nde gerçekleşen olaylara binaen nazil olmuştur. Bu ayetlerde genellikle olaylar öne çıkarılmış ve ilgili kişilerin isimleri açıkça zikredilmemiştir. Bu durumun tek bir istisnası olarak nazil olan bir ayette ilgili sahabenin adı açıkça zikredilmiştir.
 
@@ -146,7 +139,6 @@ KONU: Kur'an-ı Kerim ve Tecvid
 YIL: 2018
 
 Soru 8:
-KONU: Fer-i Medlerin Uzatma Sebebi – Hemze
 
 Uzatma harfleri olan vav (و)، ya (ي)، elif (ا) harflerinden herhangi birisinin bulunduğu yerde tabii meddin uzatma ölçüsünden daha fazla uzatmayı gerektiren bir sebep olursa buna fer-i med denir. Fer-i medlerin oluşmasının hemze ve sükûn olmak üzere iki sebebi vardır.
 
@@ -167,7 +159,6 @@ KONU: Kur'an-ı Kerim ve Tecvid
 YIL: 2018
 
 Soru 9:
-KONU: Muavvizeteyn – Felak ve Nas Sureleri
 
 Muavvizeteyn adı verilen Felak ve Nas surelerinde, kendilerinden Allah'a sığınılması gereken bazı hususlardan bahsedilmektedir.
 
@@ -188,7 +179,6 @@ KONU: Kur'an-ı Kerim ve Tecvid
 YIL: 2018
 
 Soru 10:
-KONU: Kur'an'ın İç Düzeninde Tevkifî Olan Hususlar
 
 Kur'an-ı Kerim'in iç düzeni ile ilgili olarak; I. ayetlerin tertibi, II. surelerin mushaftaki sırası, III. surelerin isimleri hususlarından hangilerinin tevkifî olduğunda âlimler arasında ittifak vardır?
 
@@ -207,7 +197,6 @@ KONU: Fıkıh
 YIL: 2018
 
 Soru 11:
-KONU: Teşrik Tekbirlerinin Zamanı – Hanefi Mezhebi
 
 Hanefi mezhebine göre, teşrik tekbirlerinin başlangıç ve bitiş zamanlarıyla ilgili olarak aşağıdakilerden hangisi doğrudur?
 
@@ -226,7 +215,6 @@ KONU: Fıkıh
 YIL: 2018
 
 Soru 12:
-KONU: Teyemmümün Şartları – Hanefi Mezhebi
 
 Bir Müslüman, İslam'ın temel ibadetlerini yapma noktasında zaman zaman çeşitli zorluklarla karşılaşabilir. Ancak bu, onun Allah'a karşı kulluk görevini yerine getirmesini ortadan kaldırmaz. Çünkü İslam, bu durumlarda çeşitli kolaylıklar getirmiştir. Örneğin abdest alma imkânı olmadığında teyemmümü emretmiş fakat bunun uygulamasını çeşitli şartlara bağlamıştır.
 
@@ -247,7 +235,6 @@ KONU: Fıkıh
 YIL: 2018
 
 Soru 13:
-KONU: Hac – Ziyaret Tavafı
 
 "İnsanlar arasında haccı ilan et ki gerek yaya olarak gerekse uzak yollardan gelen yorgun develer üzerinde sana gelsinler. Gelsinler ki kendilerine ait birtakım menfaatlere şahit olsunlar ... Sonra kirlerini gidersinler, adaklarını yerine getirsinler ve Beyt-i Atik'i (Kâbe'yi) tavaf etsinler." (Hac, 22:27-29)
 
@@ -268,7 +255,6 @@ KONU: Fıkıh
 YIL: 2018
 
 Soru 14:
-KONU: Oruç Niyetinin Geçerliliği – Hanefi Mezhebi
 
 Ramazan ayında imsak vaktinin 04.00 ve güneşin doğuşunun 06.00 olduğu bir yerleşim yerinde oruca niyet eden beş kişinin niyet vakitleri tabloda işaretlenmiştir. (K: bir önceki gün ikindi ezanından önce, L: bir önceki gün akşam ezanından önce, M: bir önceki gün gece yarısından önce, N: sabah 04.00'te, O: sabah 06.30'da)
 
@@ -289,7 +275,6 @@ KONU: Fıkıh
 YIL: 2018
 
 Soru 15:
-KONU: Zekât Oranları – Hanefilere Göre
 
 Hanefilere göre; I. maden ve defineler, II. ticari eşyalar, III. tarım ürünleri, IV. altın ve gümüş şeklindeki malların hangilerinde zekât, kırkta bir (%2,5) oranında verilmelidir?
 
@@ -308,7 +293,6 @@ KONU: İslam Ahlakı ve Tasavvuf
 YIL: 2018
 
 Soru 16:
-KONU: Hz. Ebu Bekir'in Savaş Öğütleri – Meşveret
 
 Hz. Ebu Bekir, Üsame b. Zeyd'in komutasında sefere çıkacak olan Müslümanlara şu şekilde öğütte bulunmuştur: "Size sekiz şey tavsiye edeceğim ki, bunlara uyunuz: Hainlik yapmayınız. Vefasızlık etmeyiniz. Haddi aşmayınız. Kimsenin uzuvlarını kesmeyiniz. Çocukları, kadınları ve yaşlıları öldürmeyiniz. Hurma ağaçlarını kesip yakmayınız. Koyun, inek ve deve gibi hayvanları gıdadan başka bir maksat için kesmeyiniz. Yolda manastırlara çekilmiş insanlara rastlayacaksınız, onları kendi hâllerine bırakınız."
 
@@ -329,7 +313,6 @@ KONU: İslam Ahlakı ve Tasavvuf
 YIL: 2018
 
 Soru 17:
-KONU: Haset, Tecessüs ve Suizan
 
 Aynı iş yerinde çalışan Ali ve Süleyman, görevde yükselme sınavına girerler. Sınav sonuçları açıklandığında Süleyman, Ali'nin kazanıp kendisinin kazanamadığını görür. Bu durumu hazmedemeyen Süleyman, Ali'nin hakkıyla kazanamayacağını, belki de amirlerinin onu haksız bir şekilde kazandırmış olabileceğini düşünür. Bu düşünceyle Ali'yi amirlerinin gözünden düşürmek için fırsat kollar ve onun kusurlarını araştırmaya başlar.
 
@@ -346,11 +329,10 @@ Doğru Cevap: D
 ---SONRAKI SORU---
 
 DERS: DHBT Önlisans
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2018
 
 Soru 18:
-KONU: Gazali'nin Tabiat Anlayışı – Allah'ın Müstakil İradesi
 
 Filozoflara göre tabiat, Allah'ın belirlediği kanunlarla işleyişine devam etmektedir. Bu nedenle ateş, insanı daima yakar. Filozofları belli noktalarda eleştiren Gazali'ye göre ise tabiattaki işleyiş bizzat Allah'ın müstakil iradesi ile olmaktadır. Hz. İbrahim örneğinde görüldüğü gibi ateş, sadece Allah ona yakma özelliği verdiğinde yakabilir; bu özelliği vermediğinde ise yakamaz. Dolayısıyla yakma, ateşin zorunlu bir özelliği değildir.
 
@@ -367,11 +349,10 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 DERS: DHBT Önlisans
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2018
 
 Soru 19:
-KONU: Peygamberlerin Birbirleriyle İlişkileri
 
 Kur'an-ı Kerim'de ismi geçen peygamberlerden bazılarının akraba oldukları, bazılarının birbirleriyle karşılaştıkları ve bazılarının da aynı dönemde tebliğ vazifesini sürdürdükleri bilinmektedir.
 
@@ -388,11 +369,10 @@ Doğru Cevap: E
 ---SONRAKI SORU---
 
 DERS: DHBT Önlisans
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2018
 
 Soru 20:
-KONU: Melekler – Mikail
 
 Melekler içerisinde; isminin "Allah'ın kulcağızı" manasına geldiği rivayet edilen, görevi açıklanmamakla birlikte ismi Kur'an-ı Kerim'de yer alan, Yahudilerce kendilerinin koruyucusu olarak kabul edilen melek aşağıdakilerden hangisidir?
 
@@ -411,7 +391,6 @@ KONU: Fıkıh
 YIL: 2018
 
 Soru 21:
-KONU: Gurre Tazminatı
 
 Hz. Muhammed Dönemi'nde gerçekleşen bir kavgada hamile bir kadın bebeğini düşürmüştür. Bu olay kendisine aktarıldığında Hz. Muhammed, düşürülen cenin için tazminata hükmetmiştir. Onun bu hükmü, ilerleyen süreçte "Anne rahmindeki çocuğun müessir bir fiil, tehdit, korkutma veya ilaç kullanımı sonucu düşürülmesi hâlinde, failin mali tazminat ödemesi gerekir." şeklindeki hükmün dayanağını oluşturmuştur.
 
@@ -432,7 +411,6 @@ KONU: Fıkıh Usulü
 YIL: 2018
 
 Soru 22:
-KONU: Li-Gayrihi Haram
 
 Haram, kendi içinde "li-aynihi" ve "li-gayrihi" şeklinde ikiye ayrılır. Bunlardan li-gayrihi haram, aslında helal ve meşru olmakla birlikte haram kılınmasını gerektiren başka bir sebepten dolayı yapılması yasaklanan fiillerdir.
 
@@ -453,7 +431,6 @@ KONU: Fıkıh
 YIL: 2018
 
 Soru 23:
-KONU: Haritada Fıkıh Mezhebi – Malikilik
 
 Haritada bir fıkıh mezhebinin mensuplarının, nüfusun çoğunluğunu veya önemli bir kısmını oluşturduğu yerler renkli olarak gösterilmiştir. (Haritada Kuzey Afrika ve Batı Afrika ağırlıklı bölgeler işaretlidir.)
 
@@ -472,12 +449,12 @@ Bu soru resim/görsel içeriyor.
 Dosya: 2018_DHBT_Harita_Malikilik.png
 
 ---SONRAKI SORU---
+
 DERS: DHBT Önlisans
 KONU: Hadis
 YIL: 2018
 
 Soru 24:
-KONU: Hadis Literatürü – Zevaid, Müstahrec, Muhtasar
 
 Temel hadis kaynaklarının çoğu hicri ikinci ve üçüncü yüzyıllarda ortaya çıkmış ve sonraki süreçte bunlar üzerine farklı çalışmalar yapılmıştır. Bu çalışmalarda; I. Bir kaynakta olup da diğerlerinde bulunmayan hadisler derlenmiştir. II. Bir kaynaktaki hadislerin farklı senedleri tespit edilmiştir. III. Bir eserdeki hadislerin bazıları seçilerek daha kısa bir eser ortaya çıkarılmıştır.
 
@@ -498,7 +475,6 @@ KONU: Hadis
 YIL: 2018
 
 Soru 25:
-KONU: Sened ve Ravi Tenkidi
 
 Sened ve ravi tenkidiyle ilgili olarak; I. Güvenirliğin en önemli ölçütlerinden biridir. II. Hadislerin tedviniyle birlikte ortaya çıkmıştır. III. İsnadın âlî olması tercih sebebidir. yargılarından hangileri doğrudur?
 
@@ -517,7 +493,6 @@ KONU: Hadis
 YIL: 2018
 
 Soru 26:
-KONU: Musahhaf Hadis
 
 Süleymaniye Kütüphanesi'nde yazma hadis nüshalarını inceleyen ilahiyat öğrencisi Mehmet, okumaya çalıştığı hadis metninde Arapça olarak yazılan "arş" kelimesinin cümledeki bağlama tam olarak uymadığını fark etmiş ve bu hadisi diğer kaynaklardan kontrol etme ihtiyacı hissetmiştir. İncelemeleri sonucunda "arş" kelimesinin aslında ötreli olarak "urş" şeklinde yazılması gerektiğini tespit etmiş ve ilk okuduğu kaynakta hadisin hatalı kaydedildiğini anlamıştır.
 
@@ -538,7 +513,6 @@ KONU: İslam Tarihi
 YIL: 2018
 
 Soru 27:
-KONU: Ridde Olaylarının Nedenleri
 
 Hz. Ebu Bekir halife seçildikten sonra yaşanan ridde olaylarının temelinde; I. bazı kabilelerin Kureyş'i kendilerine rakip olarak görmeleri, II. bedevi kabilelerinin devletin nizam ve intizamına uyum sağlayamamaları, III. merkezden uzakta yaşayan kabilelerin ganimetlerden yeterince pay alamadıklarını iddia etmeleri nedenlerinden hangilerinin yer aldığı söylenebilir?
 
@@ -557,7 +531,6 @@ KONU: İslam Tarihi
 YIL: 2018
 
 Soru 28:
-KONU: Fey Gelirleri – Hz. Ömer Dönemi
 
 Hz. Ömer, elde edilen gelirleri halka dağıtmak üzere divan teşkilatını kurmuş ve oluşturduğu listeler ışığında her sene atiyye adı altında müslümanlara bir ödeme yapmıştır. Bu dağıtımda da İslam'a girişte öncelik, Hz. Muhammed'e yakınlık ve İslam'a hizmet etme gibi hususları dikkate almıştır.
 
@@ -578,7 +551,6 @@ KONU: İslam Tarihi
 YIL: 2018
 
 Soru 29:
-KONU: Emevilerin Yıkılmasında Ehl-i Kitabın Rolü
 
 Aşağıdakilerden hangisinin Emevilerin zayıflaması ve yıkılmasında önemli bir etkisinin olduğu söylenemez?
 
@@ -597,7 +569,6 @@ KONU: Tefsir
 YIL: 2018
 
 Soru 30:
-KONU: Kur'an İlimleri – Aksamü'l-Kur'an
 
 İmam Hatip lisesi öğrencisi Merve, öğretmeninin tavsiyesiyle Kur'an-ı Kerim'in metnini ve mealini karşılaştırmalı olarak okumaktadır. Notlarından bazıları şunlardır: kimi ayetlerde şefaatin sadece Allah'a ait olduğu, kimi ayetlerde ise başka varlıklara da şefaat hakkı verileceği ifade ediliyor; kimi ayetlerde bahsedilen olaylarda isimleri zikredilmeyen kişiler kimlerdir; Kur'an'da yer alan bazı kelimelerin Arapça olup olmadığını nereden öğrenebilirim; bazı ayetlerde farklı anlamlarda kullanılan kelimelerle ilgili hangi kaynaktan bilgi edinebilirim.
 
@@ -618,7 +589,6 @@ KONU: Tefsir
 YIL: 2018
 
 Soru 31:
-KONU: İşari Tefsir
 
 Tefsir edebiyatında; şahsi tecrübe ve ilhama dayanarak Kur'an'ı yorumlamaya çalışan, ayetlerin zahiri manalarının arkasında hakiki manalar olduğunu ileri süren, Sülemi'nin Hakaiku't-Tefsir adlı eseri ilk örnekleri arasında yer alan tefsir türü aşağıdakilerden hangisidir?
 
@@ -637,7 +607,6 @@ KONU: Tefsir
 YIL: 2018
 
 Soru 32:
-KONU: İbn Kesir – Rivayet Tefsirinin Öncüsü
 
 İslam âlimleri arasında; Tefsiru'l-Kur'ani'l-Azim adlı tefsiriyle meşhur olan, rivayet tefsirinin öncülerinden kabul edilen, eserinde yer verdiği rivayetleri isnadlarıyla birlikte nakleden müfessir aşağıdakilerden hangisidir?
 
@@ -652,11 +621,10 @@ Doğru Cevap: C
 ---SONRAKI SORU---
 
 DERS: DHBT Önlisans
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2018
 
 Soru 33:
-KONU: Maturidiyye – Kulların Fiilleri
 
 Kulların fiillerinin, biri insana diğeri Allah'a dönük iki yönü söz konusudur. Bunlar kazanılmaları ve icra edilmeleri yönünden insana, yaratılmaları yönünden ise Allah'a nispet edilir. Fiillerin Allah tarafından yaratılması kişinin sorumluluğunu ortadan kaldırmaz. Zira onların gerçekleşmesini mümkün kılacak düzeyde bir irade ve güç insana fiil anında Allah tarafından verilir. İnsan bu gücü, istediği şekilde kullanabilir. Bu nedenle insan, yaptıklarından sorumlu olur; mükâfat veya cezayı hak eder.
 
@@ -673,11 +641,10 @@ Doğru Cevap: A
 ---SONRAKI SORU---
 
 DERS: DHBT Önlisans
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2018
 
 Soru 34:
-KONU: Mutezile – Rızık Tanımı
 
 Sistematik kelam dersinde rızık konusunu ele alan Safa Hoca'ya, öğrencilerinden biri "Hocam, rızık: 'kişinin faydalanmaktan men edilmediği imkânlar' şeklinde tarif edilemez mi?" sorusunu yöneltmiştir. Safa Hoca da "Evet, rızkı senin aktardığın gibi tanımlayanlar da var; üstelik bunlara göre haram kazanç rızık olarak bile değerlendirilemez." diyerek bu görüşü savunan bir mezhep olduğunu söylemiştir.
 
@@ -694,11 +661,10 @@ Doğru Cevap: D
 ---SONRAKI SORU---
 
 DERS: DHBT Önlisans
-KONU: Akaid / Kelam
+KONU: Kelam / Akaid
 YIL: 2018
 
 Soru 35:
-KONU: Teceddüd-i Emsal Teorisi
 
 Allah'ın evreni sonradan yarattığı ve devamlılığını sağladığı anlayışı, kelamcıların düşünce sisteminin merkezini oluşturur. Ancak bu noktada hâdis ve değişken oldukları kabul edilen varlığın yapı taşları cevher ve arazların nasıl olup da sürekliliğini koruduğu ve ilahi iradenin buna müdahalesinin nasıllığı, çözülmesi gereken bir problem olarak ortaya çıkmıştır. Bunun çözümü olarak bazı kelamcılar, "O, her an yaratma hâlindedir." (Rahman, 55:29) ayetini de delil göstererek Allah tarafından arazların her bir zaman diliminde sürekli yenilendikleri şeklinde bir teori geliştirmişlerdir.
 
@@ -719,7 +685,6 @@ KONU: Mezhepler Tarihi
 YIL: 2018
 
 Soru 36:
-KONU: Nusayrilikte Şehadet – Hicab ve Bab
 
 Nusayriler'in "Ben şehadet ederim ki Ali b. Ebu Talip dışında ilah, ---- dışında hicab, ---- dışında bab yoktur." şeklindeki şehadetlerinde hicab ve bab olarak belirtilen kişiler aşağıdakilerin hangisinde doğru sıralanmıştır?
 
@@ -738,7 +703,6 @@ KONU: Mezhepler Tarihi
 YIL: 2018
 
 Soru 37:
-KONU: İbazilik – Yaşadığı Ülkeler
 
 İslam Mezhepleri Tarihi doktora öğrencisi, "Günümüz İbazilerinde Sosyal Yaşam" konulu bir tez çalışması yapmak istediğinde aşağıdaki ülkelerin hangisine gitmesi beklenmez?
 
@@ -757,7 +721,6 @@ KONU: Dinler Tarihi
 YIL: 2018
 
 Soru 38:
-KONU: Hristiyanlığın Kutsal Kitabı
 
 Hristiyanlığın kutsal kitabı ile ilgili olarak; I. Eski Ahit, Tanrı'nın Hz. Musa ile Sina'da yaptığı sözleşmeyi simgelemektedir. II. Eski Ahit, Kitab-ı Mukaddes'te Yeni Ahit'e nazaran daha ayrıcalıklı bir konuma sahiptir. III. Yeni Ahit, sadece kanonik olarak kabul edilen dört incilden oluşmaktadır. yargılarından hangileri doğrudur?
 
@@ -776,7 +739,6 @@ KONU: Dinler Tarihi
 YIL: 2018
 
 Soru 39:
-KONU: Mecusilik
 
 İslamiyetten önce var olan dinler arasında; İran'ın eski inanç ve geleneklerinden etkilenerek ortaya çıkan, Sasani İmparatorluğu tarafından resmî din olarak benimsenen, monoteist bir yapıya sahipken sonra düalist bir özellik kazanan, İran'ın yanı sıra Bahreyn, Yemen ve Umman gibi bölgelere de yayılan inanç sistemi aşağıdakilerden hangisidir?
 
@@ -795,7 +757,6 @@ KONU: Din Hizmetleri ve Hitabet
 YIL: 2018
 
 Soru 40:
-KONU: Hitabet İlkeleri – Ayetlerden Çıkarılan Dersler
 
 I. "Ona yumuşak söz söyleyin. Belki öğüt alır yahut sakınır." (Taha, 20:44) II. "Siz kitabı okuduğunuz hâlde insanlara iyiliği emredip kendinizi unutuyor musunuz?..." (Bakara, 2:44) III. "Ey iman edenler! Size bir fasık haber getirirse bilmeyerek bir topluluğa zarar verip yaptığınıza pişman olmamak için o haberin doğruluğunu araştırın." (Hucurat, 49:6)
 

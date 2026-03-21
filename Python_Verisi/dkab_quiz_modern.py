@@ -25,6 +25,45 @@ except ImportError:
 
 PIPER_IMPORT_ERROR = None
 
+ALLOWED_DHBT_TOPICS = [
+    "Kur'an-ı Kerim ve Tecvid",
+    "Tefsir",
+    "Hadis",
+    "Fıkıh",
+    "Fıkıh Usulü",
+    "Kelam / Akaid",
+    "İslam Mezhepleri ve Akımları",
+    "İslam Tarihi",
+    "Siyer",
+    "İslam Kültür ve Medeniyeti",
+    "İslam Felsefesi",
+    "Din Felsefesi",
+    "Din Sosyolojisi",
+    "Din Psikolojisi",
+    "Din Eğitimi",
+    "Dinler Tarihi",
+    "İslam Ahlakı ve Tasavvuf",
+    "Mezhepler Tarihi",
+    "Din Hizmetleri ve Hitabet",
+]
+
+TOPIC_SORT_ORDER = {
+    topic: index for index, topic in enumerate(ALLOWED_DHBT_TOPICS)
+}
+
+TOPIC_ALIASES = {
+    "Akaid / Kelam": "Kelam / Akaid",
+    "Kelam / Akaid": "Kelam / Akaid",
+    "Kur’an-ı Kerim ve Tecvid": "Kur'an-ı Kerim ve Tecvid",
+    "Kur'an-i Kerim ve Tecvid": "Kur'an-ı Kerim ve Tecvid",
+    "İslam Tarihi / Siyer": "İslam Tarihi",
+    "Islam Tarihi": "İslam Tarihi",
+    "İslam Ahlaki ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
+    "Islam Ahlaki ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
+    "?slam Ahlak? ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
+    "Mezhepler tarihi": "Mezhepler Tarihi",
+}
+
 
 def _bootstrap_project_venv_packages():
     script_dir = Path(__file__).resolve().parent
@@ -2301,7 +2340,14 @@ class ModernDKABQuiz:
         if selected_ders and selected_ders != "Tüm dersler":
             qs = [q for q in qs if q['ders'] == selected_ders]
 
-        konular = sorted(set(q['konu'] for q in qs if q.get('konu')))
+        konular = sorted(
+            {
+                self.normalize_topic_name(q.get('konu'))
+                for q in qs
+                if self.normalize_topic_name(q.get('konu')) in ALLOWED_DHBT_TOPICS
+            },
+            key=lambda topic: (TOPIC_SORT_ORDER.get(topic, len(ALLOWED_DHBT_TOPICS)), topic),
+        )
         values = ["Tüm konular"] + konular
         self.konu_combo['values'] = values
 
@@ -2381,7 +2427,7 @@ class ModernDKABQuiz:
             "Islam Tarihi": "İslam Tarihi",
         }
 
-        return replacements.get(topic, topic)
+        return TOPIC_ALIASES.get(topic, replacements.get(topic, topic))
 
     def parse_single_question(self, text: str, year: int, subject: str = "DKAB") -> Dict:
         """Tek soruyu parse eder"""
@@ -2393,7 +2439,7 @@ class ModernDKABQuiz:
             options = {}
             dogru_cevap = None
             aciklama = ""
-            konu = ""
+            topic_candidates = []
             gorsel_var = False
             gorsel_dosyalari = []
             
@@ -2435,7 +2481,9 @@ class ModernDKABQuiz:
                     gorsel_var = True
                     gorsel_dosyalari.append(self.resolve_visual_path(line, year))
                 elif line.startswith('KONU:'):
-                    konu = self.normalize_topic_name(line.split(':', 1)[1].strip())
+                    normalized_topic = self.normalize_topic_name(line.split(':', 1)[1].strip())
+                    if normalized_topic:
+                        topic_candidates.append(normalized_topic)
                 elif (
                     line
                     and not line.startswith(('A)', 'B)', 'C)', 'D)', 'E)'))
@@ -2479,6 +2527,14 @@ class ModernDKABQuiz:
                 
                 i += 1
             
+            konu = ""
+            for candidate in topic_candidates:
+                if candidate in ALLOWED_DHBT_TOPICS:
+                    konu = candidate
+                    break
+            if not konu and topic_candidates:
+                konu = topic_candidates[-1]
+
             if soru_no and len(options) >= 2 and dogru_cevap:
                 return {
                     "yil": year,
