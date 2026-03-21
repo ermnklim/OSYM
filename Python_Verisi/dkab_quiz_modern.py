@@ -2348,16 +2348,40 @@ class ModernDKABQuiz:
             content = content.replace('---SONRAK?? SORU---', '---SONRAKI SORU---')
             soru_blocks = content.split('---SONRAKI SORU---')
             
+            answer_markers = (
+                'Doğru Cevap:',
+                'Dogru Cevap:',
+                'DoÄŸru Cevap:',
+                'Do?ru Cevap:',
+                'Do??ru Cevap:',
+            )
+
             for block in soru_blocks:
-                if 'Soru ' in block and ('Doğru Cevap:' in block or 'Dogru Cevap:' in block or 'DoÄŸru Cevap:' in block or 'Do?ru Cevap:' in block or 'Do??ru Cevap:' in block):
+                if 'Soru ' in block and any(marker in block for marker in answer_markers):
                     question = self.parse_single_question(block, year, subject)
                     if question:
                         questions.append(question)
                         
         except Exception as e:
-            print(f"Parse hatas? {year}: {e}")
+            print(f"Parse hatasi {year}: {e}")
             
         return questions
+
+    def normalize_topic_name(self, topic: str) -> str:
+        """Konu adlarindaki bozuk karakterleri ve bilinen varyasyonlari duzeltir."""
+        topic = (topic or "").strip()
+        if not topic:
+            return ""
+
+        replacements = {
+            "?slam Ahlak? ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
+            "Islam Ahlaki ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
+            "İslam Ahlaki ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
+            "Kur'an-i Kerim ve Tecvid": "Kur'an-ı Kerim ve Tecvid",
+            "Islam Tarihi": "İslam Tarihi",
+        }
+
+        return replacements.get(topic, topic)
 
     def parse_single_question(self, text: str, year: int, subject: str = "DKAB") -> Dict:
         """Tek soruyu parse eder"""
@@ -2373,6 +2397,30 @@ class ModernDKABQuiz:
             gorsel_var = False
             gorsel_dosyalari = []
             
+            answer_prefixes = (
+                'Doğru Cevap:',
+                'Dogru Cevap:',
+                'DoÄŸru Cevap:',
+                'Do?ru Cevap:',
+                'Do??ru Cevap:',
+            )
+            explanation_prefixes = (
+                'Açıklama:',
+                'Aciklama:',
+                'AÃ§Ä±klama:',
+                'A??klama:',
+                'A????klama:',
+            )
+            visual_prefixes = (
+                'Görsel',
+                'Gorsel',
+                'GÃ¶rsel',
+                'G?rsel',
+                'G??rsel',
+                'Dosya:',
+                'Konum:',
+            )
+
             i = 0
             while i < len(lines):
                 line = lines[i].strip()
@@ -2387,8 +2435,17 @@ class ModernDKABQuiz:
                     gorsel_var = True
                     gorsel_dosyalari.append(self.resolve_visual_path(line, year))
                 elif line.startswith('KONU:'):
-                    konu = line.split(':', 1)[1].strip()
-                elif line and not line.startswith('A)') and not line.startswith('B)') and not line.startswith('C)') and not line.startswith('D)') and not line.startswith('E)') and not line.startswith('Doğru Cevap:') and not line.startswith('Dogru Cevap:') and not line.startswith('DoÄŸru Cevap:') and not line.startswith('Do?ru Cevap:') and not line.startswith('Do??ru Cevap:') and not line.startswith('Açıklama:') and not line.startswith('Aciklama:') and not line.startswith('AÃ§Ä±klama:') and not line.startswith('A??klama:') and not line.startswith('A????klama:') and not line.startswith('Görsel') and not line.startswith('Gorsel') and not line.startswith('GÃ¶rsel') and not line.startswith('G?rsel') and not line.startswith('G??rsel') and not line.startswith('Dosya:') and not line.startswith('Konum:') and soru_no and not line.startswith('YIL:') and not line.startswith('DERS:'):
+                    konu = self.normalize_topic_name(line.split(':', 1)[1].strip())
+                elif (
+                    line
+                    and not line.startswith(('A)', 'B)', 'C)', 'D)', 'E)'))
+                    and not line.startswith(answer_prefixes)
+                    and not line.startswith(explanation_prefixes)
+                    and not line.startswith(visual_prefixes)
+                    and soru_no
+                    and not line.startswith('YIL:')
+                    and not line.startswith('DERS:')
+                ):
                     soru_metni.append(line)
                 elif line.startswith('A)'):
                     options['A'] = line[2:].strip()
@@ -2400,9 +2457,9 @@ class ModernDKABQuiz:
                     options['D'] = line[2:].strip()
                 elif line.startswith('E)'):
                     options['E'] = line[2:].strip()
-                elif line.startswith('Doğru Cevap:') or line.startswith('Dogru Cevap:') or line.startswith('DoÄŸru Cevap:') or line.startswith('Do?ru Cevap:') or line.startswith('Do??ru Cevap:'):
+                elif line.startswith(answer_prefixes):
                     dogru_cevap = line.split(':', 1)[1].strip()
-                elif line.startswith('Açıklama:') or line.startswith('Aciklama:') or line.startswith('AÃ§Ä±klama:') or line.startswith('A??klama:') or line.startswith('A????klama:'):
+                elif line.startswith(explanation_prefixes):
                     aciklama = line.split(':', 1)[1].strip()
                 elif 'Görsel Notu:' in line or 'Gorsel Notu:' in line or 'GÃ¶rsel Notu:' in line or 'G?rsel Notu:' in line or 'G??rsel Notu:' in line or 'Görsel dosyası:' in line or 'Gorsel dosyasi:' in line or 'GÃ¶rsel dosyasÄ±:' in line or 'G?rsel dosyas?:' in line or 'G??rsel dosyas??:' in line or 'Dosya:' in line:
                     gorsel_var = True
@@ -2424,7 +2481,7 @@ class ModernDKABQuiz:
                 return {
                     "yil": year,
                     "ders": subject,
-                    "konu": konu if konu else subject,
+                    "konu": self.normalize_topic_name(konu) if konu else subject,
                     "soru_no": soru_no,
                     "soru_metni": '\n'.join(soru_metni).strip(),
                     "siklar": options,
@@ -2436,7 +2493,7 @@ class ModernDKABQuiz:
                     "tablo_dosyalari": []
                 }
         except Exception as e:
-            print(f"Parse hatas?: {e}")
+            print(f"Parse hatasi: {e}")
             
         return None
 
