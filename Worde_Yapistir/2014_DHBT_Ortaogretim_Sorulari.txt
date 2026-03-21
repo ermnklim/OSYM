@@ -716,18 +716,6 @@ YIL: 2014
 Soru 40:
 Cami içi din hizmetlerinden sayılan vaaz ve hutbe, planlamasından sunumuna kadar özen isteyen etkinliklerdendir. Bu sürecin belki de en önemli kısmı konu seçimidir. Zira konu seçimi, vaazın veya hutbenin genel akışına ve sunum şekline yön vermektedir. Bundan dolayı bir din görevlisinin pek çok konu içerisinden bir tanesinde karar kılma sürecinde gözetmesi gereken kimi hususlar söz konusudur.
 Aşağıdakilerden hangisi bu hususlardan biri değildir?
-Fıkıh
-Fıkıh Usulü
-Kur'an-ı Kerim ve Tecvid
-Tefsir
-Hadis
-Siyer
-İslam Tarihi
-İslam Ahlakı ve Tasavvuf
-Dinler Tarihi
-Mezhepler Tarihi
-Din Hizmetleri ve Hitabet konulara ayır. yanlış konu varsa düzelt. ve bunları da diğer textler gibi düzgün şekilde düzenle her sınavı yılı ayrı ayrı olarak. dhbt lisans ,ortaoğretim,önlisans sınavları olarak kategorize et ve scripte sınav olarak dhbt  lisans,ortaöğretim,önlisans olarak ekle.  textleri de her sınav ve yıl için ayrı ayrı düzenle
-
 A) Muhatap kitlenin özelliği
 B) Ülkenin içinde bulunduğu şartlar
 C) Konunun güncelliği
