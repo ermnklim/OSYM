@@ -2856,11 +2856,7 @@ class ModernDKABQuiz:
         return os.path.exists(os.path.join(base_path, f"{year}_DHBT_Ortak_Sorulari.txt"))
 
     def should_skip_dhbt_common_question(self, year: int, subject: str, soru_no: int) -> bool:
-        if soru_no > 20:
-            return False
-        if subject not in {"DHBT Lisans", "DHBT Önlisans", "DHBT Ortaöğretim"}:
-            return False
-        return self.has_dhbt_common_file(year)
+        return False
 
     def get_analysis_filter_values(self, include_year=True):
         """Analiz ekraninda kullanilacak mevcut filtreleri dondurur."""

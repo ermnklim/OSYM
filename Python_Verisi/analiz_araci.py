@@ -80,11 +80,7 @@ def has_dhbt_common_file(year: int) -> bool:
 
 
 def should_skip_dhbt_common_question(year: int, subject: str, soru_no: int) -> bool:
-    if soru_no > 20:
-        return False
-    if subject not in {"DHBT Lisans", "DHBT Önlisans", "DHBT Ortaöğretim"}:
-        return False
-    return has_dhbt_common_file(year)
+    return False
 
 def get_file_mod_time(file_path):
     try:
