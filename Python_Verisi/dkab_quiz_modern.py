@@ -1902,7 +1902,8 @@ class ModernDKABQuiz:
             self.preview_speech_voice,
             self.colors['accent']
         )
-        self.preview_voice_button.pack(side=tk.LEFT, fill=tk.X, expand=True, ipady=2)
+        self.preview_voice_button.config(font=('Segoe UI', 7, 'bold'), padx=6, pady=5)
+        self.preview_voice_button.pack(side=tk.LEFT, fill=tk.X, expand=True, ipady=1)
 
         self.resume_voice_button = self.create_button(
             speech_buttons,
@@ -1910,7 +1911,8 @@ class ModernDKABQuiz:
             self.resume_auto_read,
             self.colors['success']
         )
-        self.resume_voice_button.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=(5, 0), ipady=2)
+        self.resume_voice_button.config(font=('Segoe UI', 7, 'bold'), padx=6, pady=5)
+        self.resume_voice_button.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=(4, 0), ipady=1)
 
         self.stop_voice_button = self.create_button(
             speech_buttons,
@@ -1918,7 +1920,8 @@ class ModernDKABQuiz:
             self.stop_speech,
             self.colors['danger']
         )
-        self.stop_voice_button.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=(5, 0), ipady=2)
+        self.stop_voice_button.config(font=('Segoe UI', 7, 'bold'), padx=6, pady=5)
+        self.stop_voice_button.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=(4, 0), ipady=1)
 
         tk.Label(speech_card, textvariable=self.speech_status_var, font=('Segoe UI', 7),
                 fg=self.colors['text_secondary'], bg=self.colors['card'],
