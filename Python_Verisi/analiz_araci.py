@@ -224,8 +224,11 @@ def generate_analysis_text():
     new_files = check_new_files()
     
     total = len(questions)
-    dkab_total = sum(v["DKAB"] for v in years_data.values())
-    ihl_total = sum(v["IHL"] for v in years_data.values())
+    all_subjects = sorted({subject for year_map in years_data.values() for subject in year_map.keys()})
+    subject_totals = {
+        subject: sum(year_map.get(subject, 0) for year_map in years_data.values())
+        for subject in all_subjects
+    }
     
     text = []
     text.append("=" * 70)
@@ -244,41 +247,42 @@ def generate_analysis_text():
     text.append("📊 GENEL İSTATİSTİKLER")
     text.append("-" * 50)
     text.append(f"Toplam Soru Sayısı: {total}")
-    text.append(f"  - DKAB: {dkab_total} soru")
-    text.append(f"  - IHL:  {ihl_total} soru")
+    for subject in all_subjects:
+        text.append(f"  - {subject}: {subject_totals[subject]} soru")
     text.append("")
     
     text.append("📅 YILLARA GÖRE DAĞILIM")
     text.append("-" * 50)
-    text.append(f"{'Yıl':<8} {'DKAB':<10} {'IHL':<10} {'Toplam':<10}")
+    header = f"{'Yıl':<8}" + "".join(f" {subject:<18}" for subject in all_subjects) + f" {'Toplam':<10}"
+    text.append(header)
     text.append("-" * 50)
     
     sorted_years = sorted(years_data.keys(), reverse=True)
     for year in sorted_years:
-        dkab = years_data[year]["DKAB"]
-        ihl = years_data[year]["IHL"]
-        text.append(f"{year:<8} {dkab:<10} {ihl:<10} {dkab+ihl:<10}")
+        row_counts = [years_data[year].get(subject, 0) for subject in all_subjects]
+        row = f"{year:<8}" + "".join(f" {count:<18}" for count in row_counts) + f" {sum(row_counts):<10}"
+        text.append(row)
     
     text.append("-" * 50)
     text.append("")
     
     text.append("📚 KONULARA GÖRE DAĞILIM (GENEL)")
     text.append("-" * 50)
-    text.append(f"{'Konu':<35} {'DKAB':<8} {'IHL':<8} {'Toplam':<8}")
+    konu_header = f"{'Konu':<35}" + "".join(f" {subject:<12}" for subject in all_subjects) + f" {'Toplam':<8}"
+    text.append(konu_header)
     text.append("-" * 50)
     
     konu_totals = {}
     for konu in konu_data:
-        dkab = konu_data[konu]["DKAB"]
-        ihl = konu_data[konu]["IHL"]
-        konu_totals[konu] = dkab + ihl
+        konu_totals[konu] = sum(konu_data[konu].get(subject, 0) for subject in all_subjects)
     
     sorted_konular = sorted(konu_totals.items(), key=lambda x: x[1], reverse=True)
     
     for konu, total_konu in sorted_konular:
-        dkab = konu_data[konu]["DKAB"]
-        ihl = konu_data[konu]["IHL"]
-        text.append(f"{konu:<35} {dkab:<8} {ihl:<8} {total_konu:<8}")
+        row = f"{konu:<35}" + "".join(
+            f" {konu_data[konu].get(subject, 0):<12}" for subject in all_subjects
+        ) + f" {total_konu:<8}"
+        text.append(row)
     
     text.append("-" * 50)
     text.append("")
@@ -316,69 +320,41 @@ def generate_analysis_text():
     text.append("=" * 70)
     text.append("")
     
-    text.append("📋 YIL × KONU MATRİSİ (DKAB)")
-    text.append("-" * 70)
-    
-    dkab_konular = set()
-    dkab_years = sorted(set(y for y in years_data.keys() if years_data[y]["DKAB"] > 0), reverse=True)
-    for konu in konu_data:
-        if konu_data[konu]["DKAB"] > 0:
-            dkab_konular.add(konu)
-    
-    header = f"{'Konu':<30}"
-    for year in dkab_years:
-        header += f" {year:<8}"
-    text.append(header)
-    text.append("-" * 70)
-    
-    for konu in sorted_konular:
-        if isinstance(konu, tuple):
-            konu_name = konu[0]
-        else:
-            konu_name = konu
-        
-        row = f"{konu_name[:28]:<30}"
-        for year in dkab_years:
-            count = 0
-            for q in questions:
-                if q['yil'] == year and q['konu'] == konu_name and q['ders'] == 'DKAB':
-                    count += 1
-            row += f" {count:<8}"
-        text.append(row)
-    
-    text.append("-" * 70)
-    text.append("")
-    
-    text.append("📋 YIL × KONU MATRİSİ (IHL)")
-    text.append("-" * 70)
-    
-    ihl_years = sorted(set(y for y in years_data.keys() if years_data[y]["IHL"] > 0), reverse=True)
-    if ihl_years:
-        header = f"{'Konu':<30}"
-        for year in ihl_years:
-            header += f" {year:<8}"
-        text.append(header)
+    for subject in all_subjects:
+        text.append(f"📋 YIL × KONU MATRİSİ ({subject})")
         text.append("-" * 70)
-        
-        for konu in sorted_konular:
-            if isinstance(konu, tuple):
-                konu_name = konu[0]
-            else:
-                konu_name = konu
-            
-            row = f"{konu_name[:28]:<30}"
-            for year in ihl_years:
-                count = 0
-                for q in questions:
-                    if q['yil'] == year and q['konu'] == konu_name and q['ders'] == 'IHL':
-                        count += 1
-                row += f" {count:<8}"
-            text.append(row)
-    else:
-        text.append("IHL verisi bulunamadı.")
-    
-    text.append("-" * 70)
-    text.append("")
+
+        subject_years = sorted(
+            set(y for y in years_data.keys() if years_data[y].get(subject, 0) > 0),
+            reverse=True,
+        )
+        if subject_years:
+            header = f"{'Konu':<30}"
+            for year in subject_years:
+                header += f" {year:<8}"
+            text.append(header)
+            text.append("-" * 70)
+
+            subject_topics = [
+                konu_name
+                for konu_name, _ in sorted_konular
+                if konu_data[konu_name].get(subject, 0) > 0
+            ]
+
+            for konu_name in subject_topics:
+                row = f"{konu_name[:28]:<30}"
+                for year in subject_years:
+                    count = 0
+                    for q in questions:
+                        if q['yil'] == year and q['konu'] == konu_name and q['ders'] == subject:
+                            count += 1
+                    row += f" {count:<8}"
+                text.append(row)
+        else:
+            text.append(f"{subject} verisi bulunamadı.")
+
+        text.append("-" * 70)
+        text.append("")
     
     text.append("=" * 70)
     text.append("Analiz tamamlandı.")

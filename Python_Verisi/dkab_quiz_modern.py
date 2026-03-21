@@ -546,6 +546,7 @@ class ModernDKABQuiz:
         self.available_subjects = [
             "DKAB",
             "IHL",
+            "MBSTS",
             "DHBT Ortak (1-20)",
             "DHBT Lisans",
             "DHBT Önlisans",
@@ -2842,6 +2843,7 @@ class ModernDKABQuiz:
         """Dosya adindaki ders etiketini ekranda gosterilecek forma cevirir."""
         subject = str(subject or "").replace("_", " ").strip()
         replacements = {
+            "MBSTS": "MBSTS",
             "Onlisans": "Önlisans",
             "Ortaogretim": "Ortaöğretim",
             "ogretim": "öğretim",
@@ -3072,14 +3074,24 @@ class ModernDKABQuiz:
             topics=[],
         )
 
-        konular = sorted(
-            {
-                self.normalize_topic_name(q.get('konu'))
-                for q in qs
-                if self.normalize_topic_name(q.get('konu')) in ALLOWED_DHBT_TOPICS
-            },
-            key=lambda topic: (TOPIC_SORT_ORDER.get(topic, len(ALLOWED_DHBT_TOPICS)), topic),
+        normalized_topics = {
+            self.normalize_topic_name(q.get('konu'))
+            for q in qs
+            if self.normalize_topic_name(q.get('konu'))
+        }
+
+        selected_subjects = set(self._selected_subjects())
+        is_dhbt_only = bool(selected_subjects) and all(
+            subject.startswith("DHBT") for subject in selected_subjects
         )
+
+        if is_dhbt_only:
+            konular = sorted(
+                {topic for topic in normalized_topics if topic in ALLOWED_DHBT_TOPICS},
+                key=lambda topic: (TOPIC_SORT_ORDER.get(topic, len(ALLOWED_DHBT_TOPICS)), topic),
+            )
+        else:
+            konular = sorted(normalized_topics)
         self.konu_filter.set_values(konular)
         self._set_filter_selection("konu", [konu for konu in self._selected_topics() if konu in konular])
 
