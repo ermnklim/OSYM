@@ -467,8 +467,11 @@ E) Şafiilik
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+Görsel Notu:
+Bu soru resim/görsel içeriyor.
+Dosya: 2018_DHBT_Harita_Malikilik.png
 
+---SONRAKI SORU---
 DERS: DHBT Önlisans
 KONU: Hadis
 YIL: 2018
