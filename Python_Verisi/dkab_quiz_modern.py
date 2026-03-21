@@ -3561,6 +3561,7 @@ class ModernDKABQuiz:
         
         for i, (key, value) in enumerate(options, 1):
             self.option_map[str(i)] = key
+            display_label = f"{key})"
             
             option_frame = tk.Frame(options_frame, bg=self.colors['card'])
             option_frame.pack(fill=tk.X, pady=8)
@@ -3569,7 +3570,7 @@ class ModernDKABQuiz:
             var = tk.StringVar()
             self.option_vars[str(i)] = var
             
-            option_btn = tk.Button(option_frame, text=f"{i}) {value}", 
+            option_btn = tk.Button(option_frame, text=f"{display_label} {value}", 
                                  font=self.fonts['body'],
                                  bg=self.colors['border'], fg=self.colors['text'],
                                  relief=tk.FLAT, cursor="hand2",
