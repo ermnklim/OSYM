@@ -18,10 +18,23 @@ def format_subject_label(subject: str) -> str:
         "Onlisans": "Önlisans",
         "Ortaogretim": "Ortaöğretim",
         "ogretim": "öğretim",
+        "DHBT Ortak": "DHBT Ortak (1-20)",
     }
     for source, target in replacements.items():
         subject = subject.replace(source, target)
     return subject
+
+
+def has_dhbt_common_file(year: int) -> bool:
+    return os.path.exists(os.path.join(BASE_PATH, f"{year}_DHBT_Ortak_Sorulari.txt"))
+
+
+def should_skip_dhbt_common_question(year: int, subject: str, soru_no: int) -> bool:
+    if soru_no > 20:
+        return False
+    if subject not in {"DHBT Lisans", "DHBT Önlisans", "DHBT Ortaöğretim"}:
+        return False
+    return has_dhbt_common_file(year)
 
 
 def parse_questions() -> List[Dict]:
@@ -70,7 +83,12 @@ def parse_questions() -> List[Dict]:
                 else:
                     question_lines.append(line)
 
-            if question_lines and soru_no != "?" and len(options) >= 2:
+            if (
+                question_lines
+                and soru_no != "?"
+                and len(options) >= 2
+                and not should_skip_dhbt_common_question(year, subject, int(soru_no))
+            ):
                 questions.append(
                     {
                         "yil": year,

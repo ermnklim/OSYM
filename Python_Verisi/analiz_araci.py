@@ -61,6 +61,31 @@ def normalize_topic_name(topic: str) -> str:
         return ""
     return TOPIC_ALIASES.get(topic, topic)
 
+
+def format_subject_label(subject: str) -> str:
+    subject = str(subject or "").replace("_", " ").strip()
+    replacements = {
+        "Onlisans": "Önlisans",
+        "Ortaogretim": "Ortaöğretim",
+        "ogretim": "öğretim",
+        "DHBT Ortak": "DHBT Ortak (1-20)",
+    }
+    for source, target in replacements.items():
+        subject = subject.replace(source, target)
+    return subject
+
+
+def has_dhbt_common_file(year: int) -> bool:
+    return os.path.exists(os.path.join(EXAM_DIR, f"{year}_DHBT_Ortak_Sorulari.txt"))
+
+
+def should_skip_dhbt_common_question(year: int, subject: str, soru_no: int) -> bool:
+    if soru_no > 20:
+        return False
+    if subject not in {"DHBT Lisans", "DHBT Önlisans", "DHBT Ortaöğretim"}:
+        return False
+    return has_dhbt_common_file(year)
+
 def get_file_mod_time(file_path):
     try:
         return os.path.getmtime(file_path)
@@ -164,7 +189,7 @@ def parse_single_question(text: str, year: int, subject: str = "DKAB") -> Dict:
         if not konu and topic_candidates:
             konu = topic_candidates[-1]
 
-        if soru_no:
+        if soru_no and not should_skip_dhbt_common_question(year, subject, soru_no):
             return {
                 "yil": year,
                 "ders": subject,
@@ -186,7 +211,7 @@ def analyze_all_exams():
             match = re.search(r"(\d{4})_(.+)_Sorulari\.txt", filename)
             if match:
                 year = int(match.group(1))
-                subject = match.group(2)
+                subject = format_subject_label(match.group(2))
                 file_path = os.path.join(EXAM_DIR, filename)
                 questions = parse_questions_from_file(file_path, year, subject)
                 all_questions.extend(questions)

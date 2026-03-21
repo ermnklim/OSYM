@@ -324,6 +324,7 @@ class ModernDKABQuiz:
         self.available_subjects = [
             "DKAB",
             "IHL",
+            "DHBT Ortak (1-20)",
             "DHBT Lisans",
             "DHBT Önlisans",
             "DHBT Ortaöğretim",
@@ -1632,6 +1633,17 @@ class ModernDKABQuiz:
                                          state="normal", width=14, style='Modern.TCombobox')
         self.goto_q_combo.pack(padx=5, pady=0, fill=tk.X)
 
+        self.goto_hint_label = tk.Label(
+            goto_card,
+            text="",
+            font=('Segoe UI', 7),
+            fg=self.colors['text_secondary'],
+            bg=self.colors['card'],
+            wraplength=180,
+            justify=tk.LEFT,
+        )
+        self.goto_hint_label.pack(anchor=tk.W, padx=5, pady=(2, 4), fill=tk.X)
+
         self.goto_btn = self.create_button(goto_card, "🔎 SORUYU AÇ",
                                            self.open_specific_question, self.colors['accent'])
         self.goto_btn.pack(padx=5, pady=5, fill=tk.X, ipady=2)
@@ -2457,10 +2469,22 @@ class ModernDKABQuiz:
             "Onlisans": "Önlisans",
             "Ortaogretim": "Ortaöğretim",
             "ogretim": "öğretim",
+            "DHBT Ortak": "DHBT Ortak (1-20)",
         }
         for source, target in replacements.items():
             subject = subject.replace(source, target)
         return subject
+
+    def has_dhbt_common_file(self, year: int) -> bool:
+        base_path = r"C:\Users\osman\Desktop\OSYM\Worde_Yapistir"
+        return os.path.exists(os.path.join(base_path, f"{year}_DHBT_Ortak_Sorulari.txt"))
+
+    def should_skip_dhbt_common_question(self, year: int, subject: str, soru_no: int) -> bool:
+        if soru_no > 20:
+            return False
+        if subject not in {"DHBT Lisans", "DHBT Önlisans", "DHBT Ortaöğretim"}:
+            return False
+        return self.has_dhbt_common_file(year)
 
     def get_analysis_filter_values(self, include_year=True):
         """Analiz ekraninda kullanilacak mevcut filtreleri dondurur."""
@@ -2807,7 +2831,12 @@ class ModernDKABQuiz:
             if not konu and topic_candidates:
                 konu = topic_candidates[-1]
 
-            if soru_no and len(options) >= 2 and dogru_cevap:
+            if (
+                soru_no
+                and len(options) >= 2
+                and dogru_cevap
+                and not self.should_skip_dhbt_common_question(year, subject, soru_no)
+            ):
                 return {
                     "yil": year,
                     "ders": subject,
@@ -3618,8 +3647,30 @@ class ModernDKABQuiz:
             self.goto_q_combo['values'] = values
             if values:
                 self.goto_q_combo.set(values[0])
+            self._update_goto_hint(ders, nums)
         except Exception:
             pass
+
+    def _update_goto_hint(self, ders, nums):
+        """Soruya Git alaninda secilen dersin soru araligini aciklar."""
+        if not hasattr(self, 'goto_hint_label'):
+            return
+
+        if not nums:
+            self.goto_hint_label.config(text="Bu seçim için yüklü soru bulunamadı.")
+            return
+
+        min_no = min(nums)
+        max_no = max(nums)
+
+        if ders == "DHBT Ortak (1-20)":
+            hint = "Ortak blok gösteriliyor. Bu bölümde yalnızca 1-20 arası sorular var."
+        elif ders in {"DHBT Lisans", "DHBT Önlisans", "DHBT Ortaöğretim"}:
+            hint = f"Bu ders için özel bölüm gösteriliyor. Kullanılabilir soru aralığı: {min_no}-{max_no}."
+        else:
+            hint = f"Kullanılabilir soru aralığı: {min_no}-{max_no}."
+
+        self.goto_hint_label.config(text=hint)
 
     def open_specific_question(self):
         """Seçilen yıl ve numaradaki soruyu doğrudan görüntüler"""
