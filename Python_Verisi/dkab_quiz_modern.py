@@ -439,6 +439,18 @@ class OfflineTurkishTTS:
             except OSError:
                 pass
 
+    def cleanup_all_cache(self):
+        try:
+            wav_files = list(self.cache_dir.glob("speech_*.wav"))
+        except Exception:
+            return
+
+        for wav_file in wav_files:
+            try:
+                wav_file.unlink()
+            except OSError:
+                pass
+
     def _speed_to_length_scale(self, speed_value):
         speed_value = max(0.7, min(1.6, float(speed_value)))
         return round(1.0 / speed_value, 3)
@@ -1428,6 +1440,7 @@ class ModernDKABQuiz:
 
     def on_close(self):
         self.stop_speech(reset_status=False)
+        self.speech_engine.cleanup_all_cache()
         self.root.destroy()
 
     def setup_ttk_styles(self):

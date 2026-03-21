@@ -27,3 +27,5 @@ ENV/
 *.tmp
 *~
 .DS_Store
+Python_Verisi/tts_models/piper/cache/
+Python_Verisi/tts_models/piper/cache/*.wav
