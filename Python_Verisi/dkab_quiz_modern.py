@@ -69,6 +69,216 @@ TOPIC_ALIASES = {
     "Mezhepler tarihi": "Mezhepler Tarihi",
 }
 
+ALL_YEARS_LABEL = "Tüm yıllar"
+ALL_DERSLER_LABEL = "Tüm dersler"
+ALL_KONULAR_LABEL = "Tüm konular"
+MULTI_VALUE_SEPARATOR = " || "
+
+
+class MultiSelectFilter:
+    def __init__(self, parent, *, textvariable, all_label, values=None, command=None, colors=None):
+        self.parent = parent
+        self.textvariable = textvariable
+        self.all_label = all_label
+        self.command = command
+        self.colors = colors or {}
+        self.values = list(values or [])
+        self.selected_values = []
+        self.popup = None
+        self.option_vars = {}
+
+        self.button = tk.Button(
+            parent,
+            textvariable=self.textvariable,
+            anchor="w",
+            relief="solid",
+            bd=1,
+            padx=8,
+            pady=6,
+            bg=self.colors.get("primary", "#ffffff"),
+            fg=self.colors.get("text", "#000000"),
+            activebackground=self.colors.get("primary", "#ffffff"),
+            activeforeground=self.colors.get("text", "#000000"),
+            highlightthickness=0,
+            command=self.open_panel,
+        )
+
+    def pack(self, *args, **kwargs):
+        self.button.pack(*args, **kwargs)
+
+    def destroy_popup(self):
+        if self.popup and self.popup.winfo_exists():
+            self.popup.destroy()
+        self.popup = None
+        self.option_vars = {}
+
+    def get_selected(self):
+        return list(self.selected_values)
+
+    def set_values(self, values):
+        self.values = list(values or [])
+        self.selected_values = [value for value in self.selected_values if value in self.values]
+        self._refresh_label()
+        self._refresh_popup_options()
+
+    def set_selected(self, values, notify=False):
+        clean_values = []
+        seen = set()
+        for value in values or []:
+            if value in self.values and value not in seen:
+                clean_values.append(value)
+                seen.add(value)
+        self.selected_values = clean_values
+        self._refresh_label()
+        self._refresh_popup_options()
+        if notify and self.command:
+            self.command()
+
+    def open_panel(self):
+        if self.popup and self.popup.winfo_exists():
+            self.popup.lift()
+            self.popup.focus_force()
+            return
+
+        self.popup = tk.Toplevel(self.parent)
+        self.popup.title(self.all_label)
+        self.popup.transient(self.parent.winfo_toplevel())
+        self.popup.resizable(False, False)
+        self.popup.configure(bg=self.colors.get("card", "#ffffff"))
+        self.popup.protocol("WM_DELETE_WINDOW", self.destroy_popup)
+
+        self.parent.update_idletasks()
+        x = self.button.winfo_rootx()
+        y = self.button.winfo_rooty() + self.button.winfo_height() + 2
+        self.popup.geometry(f"320x340+{x}+{y}")
+
+        header = tk.Label(
+            self.popup,
+            text=f"Secim: {self.all_label}",
+            anchor="w",
+            bg=self.colors.get("card", "#ffffff"),
+            fg=self.colors.get("text", "#000000"),
+            font=("Segoe UI", 9, "bold"),
+        )
+        header.pack(fill=tk.X, padx=10, pady=(10, 6))
+
+        list_frame = tk.Frame(self.popup, bg=self.colors.get("border", "#d0d0d0"))
+        list_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=(0, 8))
+
+        canvas = tk.Canvas(
+            list_frame,
+            bg=self.colors.get("card", "#ffffff"),
+            highlightthickness=0,
+            bd=0,
+        )
+        scrollbar = ttk.Scrollbar(list_frame, orient="vertical", command=canvas.yview, style="Modern.Vertical.TScrollbar")
+        canvas.configure(yscrollcommand=scrollbar.set)
+
+        scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+        canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+        self.options_container = tk.Frame(canvas, bg=self.colors.get("card", "#ffffff"))
+        self.options_window = canvas.create_window((0, 0), window=self.options_container, anchor="nw")
+
+        self.options_container.bind(
+            "<Configure>",
+            lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
+        )
+        canvas.bind(
+            "<Configure>",
+            lambda e: canvas.itemconfigure(self.options_window, width=e.width)
+        )
+
+        controls = tk.Frame(self.popup, bg=self.colors.get("card", "#ffffff"))
+        controls.pack(fill=tk.X, padx=10, pady=(0, 10))
+
+        tk.Button(
+            controls,
+            text="Tumunu Sec",
+            command=self.select_all,
+            bg=self.colors.get("accent", "#dddddd"),
+            fg=self.colors.get("text", "#000000"),
+            relief="flat",
+        ).pack(side=tk.LEFT)
+        tk.Button(
+            controls,
+            text="Temizle",
+            command=self.clear_selection,
+            bg=self.colors.get("primary", "#eeeeee"),
+            fg=self.colors.get("text", "#000000"),
+            relief="flat",
+        ).pack(side=tk.LEFT, padx=6)
+        tk.Button(
+            controls,
+            text="Kapat",
+            command=self.destroy_popup,
+            bg=self.colors.get("success", "#22c55e"),
+            fg=self.colors.get("text", "#000000"),
+            relief="flat",
+        ).pack(side=tk.RIGHT)
+
+        self._refresh_popup_options()
+
+    def _refresh_popup_options(self):
+        if not self.popup or not self.popup.winfo_exists() or not hasattr(self, "options_container"):
+            return
+
+        for child in self.options_container.winfo_children():
+            child.destroy()
+
+        self.option_vars = {}
+        for value in self.values:
+            var = tk.BooleanVar(value=value in self.selected_values)
+            self.option_vars[value] = var
+            chk = tk.Checkbutton(
+                self.options_container,
+                text=value,
+                variable=var,
+                anchor="w",
+                command=self._on_option_toggled,
+                bg=self.colors.get("card", "#ffffff"),
+                fg=self.colors.get("text", "#000000"),
+                selectcolor=self.colors.get("primary", "#ffffff"),
+                activebackground=self.colors.get("card", "#ffffff"),
+                activeforeground=self.colors.get("text", "#000000"),
+                highlightthickness=0,
+            )
+            chk.pack(fill=tk.X, padx=8, pady=2)
+
+    def _on_option_toggled(self):
+        self.selected_values = [
+            value for value in self.values
+            if self.option_vars.get(value) and self.option_vars[value].get()
+        ]
+        self._refresh_label()
+        if self.command:
+            self.command()
+
+    def _refresh_label(self):
+        if not self.selected_values:
+            label = self.all_label
+        elif len(self.selected_values) == 1:
+            label = self.selected_values[0]
+        elif len(self.selected_values) <= 3:
+            label = ", ".join(self.selected_values)
+        else:
+            label = f"{len(self.selected_values)} secim yapildi"
+        self.textvariable.set(label)
+
+    def select_all(self):
+        self.selected_values = list(self.values)
+        self._refresh_label()
+        self._refresh_popup_options()
+        if self.command:
+            self.command()
+
+    def clear_selection(self):
+        self.selected_values = []
+        self._refresh_label()
+        self._refresh_popup_options()
+        if self.command:
+            self.command()
+
 
 def _bootstrap_project_venv_packages():
     script_dir = Path(__file__).resolve().parent
@@ -423,9 +633,9 @@ class ModernDKABQuiz:
         """Kaydedilen ayarlari diskten okur."""
         defaults = {
             "theme": "Gece Lacivert",
-            "year": "Tüm yıllar",
-            "ders": "Tüm dersler",
-            "konu": "Tüm konular",
+            "year": ALL_YEARS_LABEL,
+            "ders": ALL_DERSLER_LABEL,
+            "konu": ALL_KONULAR_LABEL,
             "mode": "Anında Cevap",
             "time_limit": "10",
             "time_hours": "0",
@@ -516,9 +726,9 @@ class ModernDKABQuiz:
     def apply_persisted_settings(self):
         """Kaydedilen ayarlari arayuze uygular."""
         self.theme_var.set(self.persisted_settings.get("theme", self.current_theme))
-        self.year_var.set(self.persisted_settings.get("year", "Tüm yıllar"))
-        self.ders_var.set(self.persisted_settings.get("ders", "Tüm dersler"))
-        self.konu_var.set(self.persisted_settings.get("konu", "Tüm konular"))
+        self.year_var.set(self.persisted_settings.get("year", ALL_YEARS_LABEL))
+        self.ders_var.set(self.persisted_settings.get("ders", ALL_DERSLER_LABEL))
+        self.konu_var.set(self.persisted_settings.get("konu", ALL_KONULAR_LABEL))
         self.mode_var.set(self.persisted_settings.get("mode", "Anında Cevap"))
         self.time_hours_var.set(self.persisted_settings.get("time_hours", "0"))
         self.time_minutes_var.set(self.persisted_settings.get("time_minutes", self.persisted_settings.get("time_limit", "10")))
@@ -572,8 +782,102 @@ class ModernDKABQuiz:
         self.speech_wait_ms_var.set(max(0, min(5000, saved_wait_ms)))
         self.update_speech_wait_label()
         self.update_speech_rate_label()
+        self._restore_filter_widgets_from_vars()
         self._set_speech_status(self._initial_speech_status_text())
         self.on_mode_changed()
+
+    def _serialize_multi_values(self, values, all_label):
+        clean_values = [str(value) for value in values or [] if str(value).strip()]
+        return MULTI_VALUE_SEPARATOR.join(clean_values) if clean_values else all_label
+
+    def _deserialize_multi_values(self, raw_value, all_label):
+        text = str(raw_value or "").strip()
+        if not text or text == all_label:
+            return []
+        if MULTI_VALUE_SEPARATOR in text:
+            return [item for item in text.split(MULTI_VALUE_SEPARATOR) if item]
+        if "," in text and text != all_label:
+            return [item.strip() for item in text.split(",") if item.strip()]
+        return [text]
+
+    def _set_filter_selection(self, key, values):
+        values = list(values or [])
+        if key == "year":
+            self.year_var.set(self._serialize_multi_values(values, ALL_YEARS_LABEL))
+            if hasattr(self, "year_filter"):
+                self.year_filter.set_selected(values)
+        elif key == "ders":
+            self.ders_var.set(self._serialize_multi_values(values, ALL_DERSLER_LABEL))
+            if hasattr(self, "ders_filter"):
+                self.ders_filter.set_selected(values)
+        elif key == "konu":
+            self.konu_var.set(self._serialize_multi_values(values, ALL_KONULAR_LABEL))
+            if hasattr(self, "konu_filter"):
+                self.konu_filter.set_selected(values)
+
+    def _restore_filter_widgets_from_vars(self):
+        if hasattr(self, "year_filter"):
+            self.year_filter.set_selected(
+                self._deserialize_multi_values(self.year_var.get(), ALL_YEARS_LABEL)
+            )
+        if hasattr(self, "ders_filter"):
+            self.ders_filter.set_selected(
+                self._deserialize_multi_values(self.ders_var.get(), ALL_DERSLER_LABEL)
+            )
+        if hasattr(self, "konu_filter"):
+            self.konu_filter.set_selected(
+                self._deserialize_multi_values(self.konu_var.get(), ALL_KONULAR_LABEL)
+            )
+
+    def _selected_years(self):
+        return self._deserialize_multi_values(self.year_var.get(), ALL_YEARS_LABEL)
+
+    def _selected_subjects(self):
+        return self._deserialize_multi_values(self.ders_var.get(), ALL_DERSLER_LABEL)
+
+    def _selected_topics(self):
+        return self._deserialize_multi_values(self.konu_var.get(), ALL_KONULAR_LABEL)
+
+    def _on_year_filter_changed(self):
+        if hasattr(self, "year_filter"):
+            self.year_var.set(self._serialize_multi_values(self.year_filter.get_selected(), ALL_YEARS_LABEL))
+        self.on_ders_changed()
+
+    def _on_ders_filter_changed(self):
+        if hasattr(self, "ders_filter"):
+            self.ders_var.set(self._serialize_multi_values(self.ders_filter.get_selected(), ALL_DERSLER_LABEL))
+        self.on_ders_changed()
+
+    def _on_konu_filter_changed(self):
+        if hasattr(self, "konu_filter"):
+            self.konu_var.set(self._serialize_multi_values(self.konu_filter.get_selected(), ALL_KONULAR_LABEL))
+        self.update_question_limit()
+
+    def _apply_question_filters(self, questions, years=None, subjects=None, topics=None):
+        filtered = list(questions)
+        selected_years = years if years is not None else self._selected_years()
+        selected_subjects = subjects if subjects is not None else self._selected_subjects()
+        selected_topics = topics if topics is not None else self._selected_topics()
+
+        if selected_years:
+            year_set = set()
+            for year in selected_years:
+                try:
+                    year_set.add(int(year))
+                except Exception:
+                    pass
+            if year_set:
+                filtered = [q for q in filtered if q['yil'] in year_set]
+
+        if selected_subjects:
+            subject_set = set(selected_subjects)
+            filtered = [q for q in filtered if q['ders'] in subject_set]
+
+        if selected_topics:
+            topic_set = set(selected_topics)
+            filtered = [q for q in filtered if q.get('konu') in topic_set]
+
+        return filtered
 
     def _read_bool_setting(self, data, key, fallback=False):
         raw_value = data.get(key)
@@ -1194,6 +1498,7 @@ class ModernDKABQuiz:
         self.year_var.set(saved['year'])
         self.ders_var.set(saved['ders'])
         self.konu_var.set(saved['konu'])
+        self._restore_filter_widgets_from_vars()
         self.mode_var.set(saved['mode'])
         self.time_hours_var.set(saved['time_hours'])
         self.time_minutes_var.set(saved['time_minutes'])
@@ -1336,32 +1641,49 @@ class ModernDKABQuiz:
         tk.Label(settings_card, text="Yıl:", font=('Segoe UI', 8), 
                 fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
         
-        self.year_var = tk.StringVar(value="Tüm yıllar")
-        years = ["Tüm yıllar"]
-        self.year_combo = ttk.Combobox(settings_card, textvariable=self.year_var, 
-                                       values=years, state="readonly", width=14, style='Modern.TCombobox')
-        self.year_combo.pack(padx=5, pady=0, fill=tk.X)
-        self.year_combo.bind("<<ComboboxSelected>>", self.on_ders_changed)
+        self.year_var = tk.StringVar(value=ALL_YEARS_LABEL)
+        self.year_display_var = tk.StringVar(value=ALL_YEARS_LABEL)
+        self.year_filter = MultiSelectFilter(
+            settings_card,
+            textvariable=self.year_display_var,
+            all_label=ALL_YEARS_LABEL,
+            values=[],
+            command=self._on_year_filter_changed,
+            colors=self.colors,
+        )
+        self.year_filter.pack(padx=5, pady=0, fill=tk.X)
 
         # Subject selection
         tk.Label(settings_card, text="Ders:", font=('Segoe UI', 8),
                 fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
 
-        self.ders_var = tk.StringVar(value="Tüm dersler")
-        self.ders_combo = ttk.Combobox(settings_card, textvariable=self.ders_var,
-                                       values=["Tüm dersler"] + self.available_subjects, state="readonly", width=14, style='Modern.TCombobox')
-        self.ders_combo.pack(padx=5, pady=0, fill=tk.X)
-        self.ders_combo.bind("<<ComboboxSelected>>", self.on_ders_changed)
+        self.ders_var = tk.StringVar(value=ALL_DERSLER_LABEL)
+        self.ders_display_var = tk.StringVar(value=ALL_DERSLER_LABEL)
+        self.ders_filter = MultiSelectFilter(
+            settings_card,
+            textvariable=self.ders_display_var,
+            all_label=ALL_DERSLER_LABEL,
+            values=self.available_subjects,
+            command=self._on_ders_filter_changed,
+            colors=self.colors,
+        )
+        self.ders_filter.pack(padx=5, pady=0, fill=tk.X)
 
         # Konu selection
         tk.Label(settings_card, text="Konu:", font=('Segoe UI', 8),
                 fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
 
-        self.konu_var = tk.StringVar(value="Tüm konular")
-        self.konu_combo = ttk.Combobox(settings_card, textvariable=self.konu_var,
-                                       values=["Tüm konular"], state="readonly", width=14, style='Modern.TCombobox')
-        self.konu_combo.pack(padx=5, pady=0, fill=tk.X)
-        self.konu_combo.bind("<<ComboboxSelected>>", self.update_question_limit)
+        self.konu_var = tk.StringVar(value=ALL_KONULAR_LABEL)
+        self.konu_display_var = tk.StringVar(value=ALL_KONULAR_LABEL)
+        self.konu_filter = MultiSelectFilter(
+            settings_card,
+            textvariable=self.konu_display_var,
+            all_label=ALL_KONULAR_LABEL,
+            values=[],
+            command=self._on_konu_filter_changed,
+            colors=self.colors,
+        )
+        self.konu_filter.pack(padx=5, pady=0, fill=tk.X)
         
         # Test mode selection
         tk.Label(settings_card, text="Mod:", font=('Segoe UI', 8), 
@@ -2493,19 +2815,19 @@ class ModernDKABQuiz:
         topic = None
 
         if include_year and hasattr(self, 'year_var'):
-            selected_year = self.year_var.get()
-            if selected_year not in ("Tüm yıllar", "Tum yillar", ""):
-                year = selected_year
+            selected_years = self._selected_years()
+            if selected_years:
+                year = ", ".join(selected_years)
 
         if hasattr(self, 'ders_var'):
-            selected_subject = self.ders_var.get()
-            if selected_subject not in ("Tüm dersler", "Tum dersler", ""):
-                subject = selected_subject
+            selected_subjects = self._selected_subjects()
+            if selected_subjects:
+                subject = ", ".join(selected_subjects)
 
         if hasattr(self, 'konu_var'):
-            selected_topic = self.konu_var.get()
-            if selected_topic not in ("Tüm konular", "Tum konular", ""):
-                topic = selected_topic
+            selected_topics = self._selected_topics()
+            if selected_topics:
+                topic = ", ".join(selected_topics)
 
         return year, subject, topic
 
@@ -2577,26 +2899,19 @@ class ModernDKABQuiz:
         
     def update_dropdown_values(self, years, dersler):
         """Dropdown değerlerini günceller."""
-        current_year = self.year_var.get()
-        current_ders = self.ders_var.get()
+        current_years = self._selected_years()
+        current_dersler = self._selected_subjects()
         current_goto_year = self.goto_year_var.get()
         current_goto_ders = self.goto_ders_var.get()
 
-        keys_with_all = ["Tüm dersler"] + dersler
-        self.year_combo['values'] = years
-        self.ders_combo['values'] = keys_with_all
-        self.goto_year_combo['values'] = sorted([y for y in years if y != "Tüm yıllar"], reverse=True)
+        available_years = [y for y in years if y != ALL_YEARS_LABEL]
+        self.year_filter.set_values(available_years)
+        self.ders_filter.set_values(dersler)
+        self.goto_year_combo['values'] = sorted(available_years, reverse=True)
         self.goto_ders_combo['values'] = dersler
 
-        if current_year in years:
-            self.year_var.set(current_year)
-        elif years:
-            self.year_var.set(years[0])
-
-        if current_ders not in keys_with_all and keys_with_all:
-            self.ders_var.set(keys_with_all[0])
-        else:
-            self.ders_var.set(current_ders)
+        self._set_filter_selection("year", [year for year in current_years if year in available_years])
+        self._set_filter_selection("ders", [ders for ders in current_dersler if ders in dersler])
 
         goto_years = list(self.goto_year_combo['values'])
         if current_goto_year in goto_years:
@@ -2623,45 +2938,52 @@ class ModernDKABQuiz:
 
     def _available_years_for_subject(self, subject, include_all=False):
         years = sorted({str(q['yil']) for q in self.questions}, reverse=True)
-        if subject and subject != "Tüm dersler":
-            years = sorted({str(q['yil']) for q in self.questions if q['ders'] == subject}, reverse=True)
-        return (["Tüm yıllar"] + years) if include_all else years
+        selected_subjects = []
+        if isinstance(subject, (list, tuple, set)):
+            selected_subjects = [item for item in subject if item]
+        elif subject and subject != ALL_DERSLER_LABEL:
+            selected_subjects = [subject]
+        if selected_subjects:
+            years = sorted({str(q['yil']) for q in self.questions if q['ders'] in selected_subjects}, reverse=True)
+        return ([ALL_YEARS_LABEL] + years) if include_all else years
 
     def _available_subjects_for_year(self, year, include_all=False):
         dersler = sorted({q['ders'] for q in self.questions})
-        if year and year != "Tüm yıllar":
-            try:
-                year_int = int(year)
-                dersler = sorted({q['ders'] for q in self.questions if q['yil'] == year_int})
-            except Exception:
-                pass
-        return (["Tüm dersler"] + dersler) if include_all else dersler
+        selected_years = []
+        if isinstance(year, (list, tuple, set)):
+            selected_years = [item for item in year if item]
+        elif year and year != ALL_YEARS_LABEL:
+            selected_years = [year]
+        if selected_years:
+            year_ints = set()
+            for item in selected_years:
+                try:
+                    year_ints.add(int(item))
+                except Exception:
+                    pass
+            if year_ints:
+                dersler = sorted({q['ders'] for q in self.questions if q['yil'] in year_ints})
+        return ([ALL_DERSLER_LABEL] + dersler) if include_all else dersler
 
     def _sync_filter_dropdowns(self):
         """Ana filtrelerde sadece gerçekte var olan yıl/ders kombinasyonlarını gösterir."""
         if not self.questions:
             return
 
-        selected_year = self.year_var.get()
-        selected_ders = self.ders_var.get()
+        selected_years = self._selected_years()
+        selected_dersler = self._selected_subjects()
 
-        allowed_years = self._available_years_for_subject(selected_ders, include_all=True)
-        self.year_combo['values'] = allowed_years
-        if selected_year not in allowed_years:
-            selected_year = allowed_years[0] if allowed_years else "Tüm yıllar"
-            self.year_var.set(selected_year)
+        allowed_years = self._available_years_for_subject(selected_dersler, include_all=False)
+        self.year_filter.set_values(allowed_years)
+        self._set_filter_selection("year", [year for year in selected_years if year in allowed_years])
 
-        allowed_subjects = self._available_subjects_for_year(selected_year, include_all=True)
-        self.ders_combo['values'] = allowed_subjects
-        if selected_ders not in allowed_subjects:
-            selected_ders = allowed_subjects[0] if allowed_subjects else "Tüm dersler"
-            self.ders_var.set(selected_ders)
+        allowed_subjects = self._available_subjects_for_year(self._selected_years(), include_all=False)
+        self.ders_filter.set_values(allowed_subjects)
+        self._set_filter_selection("ders", [ders for ders in selected_dersler if ders in allowed_subjects])
 
-        # Ders düzeltildiyse yıl listesini bir kez daha bu yeni derse göre netleştir.
-        allowed_years = self._available_years_for_subject(self.ders_var.get(), include_all=True)
-        self.year_combo['values'] = allowed_years
-        if self.year_var.get() not in allowed_years:
-            self.year_var.set(allowed_years[0] if allowed_years else "Tüm yıllar")
+        allowed_years = self._available_years_for_subject(self._selected_subjects(), include_all=False)
+        self.year_filter.set_values(allowed_years)
+        self._set_filter_selection("year", [year for year in self._selected_years() if year in allowed_years])
 
     def _sync_goto_dropdowns(self):
         """Soruya Git alaninda yalnizca mevcut sınav kombinasyonlarini gosterir."""
@@ -2690,21 +3012,15 @@ class ModernDKABQuiz:
 
     def _update_konu_list(self, event=None):
         """Seçilen yıl ve derse göre mevcut konuları konu dropdown'ına yükler."""
-        if not self.questions or not hasattr(self, 'konu_combo'):
+        if not self.questions or not hasattr(self, 'konu_filter'):
             return
 
-        selected_year = self.year_var.get()
-        selected_ders = self.ders_var.get()
-
-        qs = self.questions
-        if selected_year != "Tüm yıllar":
-            try:
-                year = int(selected_year)
-                qs = [q for q in qs if q['yil'] == year]
-            except Exception:
-                pass
-        if selected_ders and selected_ders != "Tüm dersler":
-            qs = [q for q in qs if q['ders'] == selected_ders]
+        qs = self._apply_question_filters(
+            self.questions,
+            years=self._selected_years(),
+            subjects=self._selected_subjects(),
+            topics=[],
+        )
 
         konular = sorted(
             {
@@ -2714,12 +3030,8 @@ class ModernDKABQuiz:
             },
             key=lambda topic: (TOPIC_SORT_ORDER.get(topic, len(ALLOWED_DHBT_TOPICS)), topic),
         )
-        values = ["Tüm konular"] + konular
-        self.konu_combo['values'] = values
-
-        current = self.konu_var.get()
-        if current not in values:
-            self.konu_var.set("Tüm konular")
+        self.konu_filter.set_values(konular)
+        self._set_filter_selection("konu", [konu for konu in self._selected_topics() if konu in konular])
 
     def resolve_visual_path(self, raw_path: str, year: int) -> str:
         """Görsel için göreli/tam yolu uygulamadaki gerçek dosya yoluna çevirir."""
@@ -2929,28 +3241,18 @@ class ModernDKABQuiz:
     def get_question_limit_for_year(self, selected_year, selected_ders, selected_konu=None):
         """Yıla, derse ve konuya göre maksimum soru sayısını döner."""
         if self.questions:
-            qs = self.questions
-            if selected_year != "Tüm yıllar":
-                try:
-                    year = int(selected_year)
-                    qs = [q for q in qs if q['yil'] == year]
-                except Exception:
-                    pass
-            
-            if selected_ders and selected_ders != "Tüm dersler":
-                qs = [q for q in qs if q['ders'] == selected_ders]
-
-            if selected_konu and selected_konu != "Tüm konular":
-                qs = [q for q in qs if q.get('konu') == selected_konu]
-            
+            selected_years = selected_year if isinstance(selected_year, (list, tuple, set)) else self._deserialize_multi_values(selected_year, ALL_YEARS_LABEL)
+            selected_dersler = selected_ders if isinstance(selected_ders, (list, tuple, set)) else self._deserialize_multi_values(selected_ders, ALL_DERSLER_LABEL)
+            selected_konular = selected_konu if isinstance(selected_konu, (list, tuple, set)) else self._deserialize_multi_values(selected_konu, ALL_KONULAR_LABEL)
+            qs = self._apply_question_filters(self.questions, selected_years, selected_dersler, selected_konular)
             return len(qs) if qs else 75
         return 75
 
     def update_question_limit(self, event=None):
         """Seçilen yıla, derse ve konuya göre soru limitini günceller."""
-        selected_year = self.year_var.get()
-        selected_ders = self.ders_var.get()
-        selected_konu = self.konu_var.get() if hasattr(self, 'konu_var') else "Tüm konular"
+        selected_year = self._selected_years()
+        selected_ders = self._selected_subjects()
+        selected_konu = self._selected_topics() if hasattr(self, 'konu_var') else []
         max_questions = self.get_question_limit_for_year(selected_year, selected_ders, selected_konu)
         self.num_spinbox.config(to=max_questions)
         self.num_var.set(str(max_questions if max_questions >= 1 else 1))
@@ -2994,9 +3296,9 @@ class ModernDKABQuiz:
         
         try:
             num_questions = int(self.num_var.get())
-            selected_year = self.year_var.get()
-            selected_ders = self.ders_var.get()
-            selected_konu = self.konu_var.get() if hasattr(self, 'konu_var') else "Tüm konular"
+            selected_year = self._selected_years()
+            selected_ders = self._selected_subjects()
+            selected_konu = self._selected_topics() if hasattr(self, 'konu_var') else []
             max_questions = self.get_question_limit_for_year(selected_year, selected_ders, selected_konu)
             if num_questions < 1 or num_questions > max_questions:
                 messagebox.showwarning("Uyarı", f"Soru sayısı 1-{max_questions} arasında olmalı!")
@@ -3008,20 +3310,7 @@ class ModernDKABQuiz:
         self._stop_countdown()
 
         # Filter questions by year, subject, and konu if selected
-        available_questions = self.questions
-        selected_year = self.year_var.get()
-        selected_ders = self.ders_var.get()
-        selected_konu = self.konu_var.get() if hasattr(self, 'konu_var') else "Tüm konular"
-        
-        if selected_year != "Tüm yıllar":
-            year = int(selected_year)
-            available_questions = [q for q in available_questions if q['yil'] == year]
-        
-        if selected_ders and selected_ders != "Tüm dersler":
-            available_questions = [q for q in available_questions if q['ders'] == selected_ders]
-
-        if selected_konu and selected_konu != "Tüm konular":
-            available_questions = [q for q in available_questions if q.get('konu') == selected_konu]
+        available_questions = self._apply_question_filters(self.questions)
             
         if not available_questions:
             messagebox.showwarning("Uyarı", "Seçilen kriterlere uygun soru bulunamadı!")
