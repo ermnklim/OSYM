@@ -653,7 +653,7 @@ class ModernDKABQuiz:
             "time_hours": "0",
             "time_minutes": "10",
             "time_seconds": "0",
-            "order": "Rastgele",
+            "order": "Sorular Rastgele",
             "num": "10",
             "goto_year": "2019",
             "goto_ders": "DKAB",
@@ -745,7 +745,10 @@ class ModernDKABQuiz:
         self.time_hours_var.set(self.persisted_settings.get("time_hours", "0"))
         self.time_minutes_var.set(self.persisted_settings.get("time_minutes", self.persisted_settings.get("time_limit", "10")))
         self.time_seconds_var.set(self.persisted_settings.get("time_seconds", "0"))
-        self.order_var.set(self.persisted_settings.get("order", "Rastgele"))
+        saved_order = self.persisted_settings.get("order", "Sorular Rastgele")
+        if saved_order == "Rastgele":
+            saved_order = "Sorular Rastgele"
+        self.order_var.set(saved_order)
         self.num_var.set(self.persisted_settings.get("num", "10"))
         self.goto_year_var.set(self.persisted_settings.get("goto_year", "2019"))
         self.goto_ders_var.set(self.persisted_settings.get("goto_ders", "DKAB"))
@@ -890,6 +893,12 @@ class ModernDKABQuiz:
             filtered = [q for q in filtered if q.get('konu') in topic_set]
 
         return filtered
+
+    def _shuffle_questions_enabled(self):
+        return self.order_var.get() in ("Rastgele", "Sorular Rastgele", "Ikisi de Rastgele")
+
+    def _shuffle_options_enabled(self):
+        return self.order_var.get() in ("Şıklar Rastgele", "Ikisi de Rastgele")
 
     def _read_bool_setting(self, data, key, fallback=False):
         raw_value = data.get(key)
@@ -1514,7 +1523,7 @@ class ModernDKABQuiz:
             'time_hours': getattr(self, 'time_hours_var', None).get() if hasattr(self, 'time_hours_var') else '0',
             'time_minutes': getattr(self, 'time_minutes_var', None).get() if hasattr(self, 'time_minutes_var') else '10',
             'time_seconds': getattr(self, 'time_seconds_var', None).get() if hasattr(self, 'time_seconds_var') else '0',
-            'order': getattr(self, 'order_var', None).get() if hasattr(self, 'order_var') else 'Rastgele',
+            'order': getattr(self, 'order_var', None).get() if hasattr(self, 'order_var') else 'Sorular Rastgele',
             'num': getattr(self, 'num_var', None).get() if hasattr(self, 'num_var') else '10',
             'ders': getattr(self, 'ders_var', None).get() if hasattr(self, 'ders_var') else 'Tüm dersler',
             'konu': getattr(self, 'konu_var', None).get() if hasattr(self, 'konu_var') else 'Tüm konular',
@@ -1761,8 +1770,8 @@ class ModernDKABQuiz:
         tk.Label(settings_card, text="Sıra:", font=('Segoe UI', 8), 
                 fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
         
-        self.order_var = tk.StringVar(value="Rastgele")
-        order_options = ["Rastgele", "Sıralı"]
+        self.order_var = tk.StringVar(value="Sorular Rastgele")
+        order_options = ["Sorular Rastgele", "Şıklar Rastgele", "Ikisi de Rastgele", "Sıralı"]
         self.order_combo = ttk.Combobox(settings_card, textvariable=self.order_var, 
                                        values=order_options, state="readonly", width=14, style='Modern.TCombobox')
         self.order_combo.pack(padx=5, pady=0, fill=tk.X)
@@ -2321,7 +2330,7 @@ class ModernDKABQuiz:
         welcome_text = (
             "Özellikler:\n"
             "• Daha temiz ve odaklı çalışma ekranı\n"
-            "• Rastgele veya sıralı soru seçimi\n"
+            "• Sorulari, siklari veya ikisini birden rastgele karistirma\n"
             "• Yıl ve konu bazlı filtreleme\n"
             "• Anında cevap ve süreli test desteği\n"
             "• Açıklama, süre ve performans takibi\n\n"
@@ -3364,11 +3373,10 @@ class ModernDKABQuiz:
         if len(available_questions) < num_questions:
             num_questions = len(available_questions)
         
-        # Select random or sequential questions
-        if self.order_var.get() == "Rastgele":
+        # Select question order according to user preference
+        if self._shuffle_questions_enabled():
             self.quiz_questions = random.sample(available_questions, num_questions)
         else:
-            # Sequential - take first N questions
             self.quiz_questions = available_questions[:num_questions]
         
         # Reset user answers for review mode
@@ -3548,12 +3556,9 @@ class ModernDKABQuiz:
         # Get options
         options = list(question['siklar'].items())
         
-        # Shuffle options only if random order is selected
-        if self.order_var.get() == "Rastgele":
+        # Shuffle options only when the selected order mode requests it
+        if self._shuffle_options_enabled():
             random.shuffle(options)
-        else:
-            # Keep original order for sequential mode
-            pass
         
         self.option_vars = {}
         self.option_map = {}
