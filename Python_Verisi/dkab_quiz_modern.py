@@ -2470,6 +2470,8 @@ class ModernDKABQuiz:
                     elif 'G?rsel dosyas?:' in line: dosya_adi = line.split('G?rsel dosyas?:')[1].strip()
                     elif 'Gorsel dosyasi:' in line: dosya_adi = line.split('Gorsel dosyasi:')[1].strip()
                     elif 'G??rsel dosyas??:' in line: dosya_adi = line.split('G??rsel dosyas??:')[1].strip()
+                    elif 'Görsel dosya adı:' in line: dosya_adi = line.split('Görsel dosya adı:')[1].strip()
+                    elif 'Gorsel dosya adi:' in line: dosya_adi = line.split('Gorsel dosya adi:')[1].strip()
                     elif 'Dosya:' in line: dosya_adi = line.split('Dosya:')[1].strip()
                     
                     if dosya_adi:

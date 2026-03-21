@@ -467,6 +467,10 @@ E) Hanbelilik
 
 Doğru Cevap: B
 
+Görsel Notu:
+Bu soru resim/görsel içeriyor.
+Dosya: 2018_DHBT_Harita_Caferilik.png
+
 ---SONRAKI SORU---
 
 DERS: DHBT Lisans
