@@ -1337,7 +1337,7 @@ class ModernDKABQuiz:
                 fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
         
         self.year_var = tk.StringVar(value="Tüm yıllar")
-        years = ["Tüm yıllar"] + [str(year) for year in range(2013, 2026)]
+        years = ["Tüm yıllar"]
         self.year_combo = ttk.Combobox(settings_card, textvariable=self.year_var, 
                                        values=years, state="readonly", width=14, style='Modern.TCombobox')
         self.year_combo.pack(padx=5, pady=0, fill=tk.X)
@@ -1608,21 +1608,21 @@ class ModernDKABQuiz:
         tk.Label(goto_card, text="Yıl:", font=('Segoe UI', 8),
                 fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
 
-        self.goto_year_var = tk.StringVar(value="2019")
-        goto_years = [str(y) for y in range(2013, 2026)]
+        self.goto_year_var = tk.StringVar(value="")
+        goto_years = []
         self.goto_year_combo = ttk.Combobox(goto_card, textvariable=self.goto_year_var,
                                             values=goto_years, state="readonly", width=14, style='Modern.TCombobox')
         self.goto_year_combo.pack(padx=5, pady=0, fill=tk.X)
-        self.goto_year_combo.bind("<<ComboboxSelected>>", self._update_goto_question_list)
+        self.goto_year_combo.bind("<<ComboboxSelected>>", self._on_goto_filter_changed)
 
         tk.Label(goto_card, text="Ders:", font=('Segoe UI', 8),
                 fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
 
-        self.goto_ders_var = tk.StringVar(value="DKAB")
+        self.goto_ders_var = tk.StringVar(value="")
         self.goto_ders_combo = ttk.Combobox(goto_card, textvariable=self.goto_ders_var,
                                             values=self.available_subjects, state="readonly", width=14, style='Modern.TCombobox')
         self.goto_ders_combo.pack(padx=5, pady=0, fill=tk.X)
-        self.goto_ders_combo.bind("<<ComboboxSelected>>", self._update_goto_question_list)
+        self.goto_ders_combo.bind("<<ComboboxSelected>>", self._on_goto_filter_changed)
 
         tk.Label(goto_card, text="Soru No:", font=('Segoe UI', 8),
                 fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
@@ -2609,14 +2609,84 @@ class ModernDKABQuiz:
         else:
             self.goto_ders_var.set(current_goto_ders)
 
+        self._sync_filter_dropdowns()
+        self._sync_goto_dropdowns()
         self.update_question_limit()
         self._update_goto_question_list()
         self._update_konu_list()
 
     def on_ders_changed(self, event=None):
         """Ders değiştiğinde konu listesini ve soru limitini günceller."""
+        self._sync_filter_dropdowns()
         self._update_konu_list()
         self.update_question_limit()
+
+    def _available_years_for_subject(self, subject, include_all=False):
+        years = sorted({str(q['yil']) for q in self.questions}, reverse=True)
+        if subject and subject != "Tüm dersler":
+            years = sorted({str(q['yil']) for q in self.questions if q['ders'] == subject}, reverse=True)
+        return (["Tüm yıllar"] + years) if include_all else years
+
+    def _available_subjects_for_year(self, year, include_all=False):
+        dersler = sorted({q['ders'] for q in self.questions})
+        if year and year != "Tüm yıllar":
+            try:
+                year_int = int(year)
+                dersler = sorted({q['ders'] for q in self.questions if q['yil'] == year_int})
+            except Exception:
+                pass
+        return (["Tüm dersler"] + dersler) if include_all else dersler
+
+    def _sync_filter_dropdowns(self):
+        """Ana filtrelerde sadece gerçekte var olan yıl/ders kombinasyonlarını gösterir."""
+        if not self.questions:
+            return
+
+        selected_year = self.year_var.get()
+        selected_ders = self.ders_var.get()
+
+        allowed_years = self._available_years_for_subject(selected_ders, include_all=True)
+        self.year_combo['values'] = allowed_years
+        if selected_year not in allowed_years:
+            selected_year = allowed_years[0] if allowed_years else "Tüm yıllar"
+            self.year_var.set(selected_year)
+
+        allowed_subjects = self._available_subjects_for_year(selected_year, include_all=True)
+        self.ders_combo['values'] = allowed_subjects
+        if selected_ders not in allowed_subjects:
+            selected_ders = allowed_subjects[0] if allowed_subjects else "Tüm dersler"
+            self.ders_var.set(selected_ders)
+
+        # Ders düzeltildiyse yıl listesini bir kez daha bu yeni derse göre netleştir.
+        allowed_years = self._available_years_for_subject(self.ders_var.get(), include_all=True)
+        self.year_combo['values'] = allowed_years
+        if self.year_var.get() not in allowed_years:
+            self.year_var.set(allowed_years[0] if allowed_years else "Tüm yıllar")
+
+    def _sync_goto_dropdowns(self):
+        """Soruya Git alaninda yalnizca mevcut sınav kombinasyonlarini gosterir."""
+        if not self.questions:
+            return
+
+        selected_year = self.goto_year_var.get()
+        selected_ders = self.goto_ders_var.get()
+
+        allowed_years = self._available_years_for_subject(selected_ders, include_all=False)
+        self.goto_year_combo['values'] = allowed_years
+        if selected_year not in allowed_years:
+            selected_year = allowed_years[0] if allowed_years else ""
+            self.goto_year_var.set(selected_year)
+
+        allowed_subjects = self._available_subjects_for_year(selected_year, include_all=False)
+        self.goto_ders_combo['values'] = allowed_subjects
+        if selected_ders not in allowed_subjects:
+            selected_ders = allowed_subjects[0] if allowed_subjects else ""
+            self.goto_ders_var.set(selected_ders)
+
+        allowed_years = self._available_years_for_subject(self.goto_ders_var.get(), include_all=False)
+        self.goto_year_combo['values'] = allowed_years
+        if self.goto_year_var.get() not in allowed_years:
+            self.goto_year_var.set(allowed_years[0] if allowed_years else "")
 
     def _update_konu_list(self, event=None):
         """Seçilen yıl ve derse göre mevcut konuları konu dropdown'ına yükler."""
@@ -3650,6 +3720,11 @@ class ModernDKABQuiz:
             self._update_goto_hint(ders, nums)
         except Exception:
             pass
+
+    def _on_goto_filter_changed(self, event=None):
+        """Soruya Git yil/ders secimleri degistiginde dropdownlari esler."""
+        self._sync_goto_dropdowns()
+        self._update_goto_question_list()
 
     def _update_goto_hint(self, ders, nums):
         """Soruya Git alaninda secilen dersin soru araligini aciklar."""
