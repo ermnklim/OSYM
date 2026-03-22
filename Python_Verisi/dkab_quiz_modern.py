@@ -1102,6 +1102,8 @@ class ModernDKABQuiz:
         normalized = self._replace_roman_numerals_for_speech(normalized)
         abbreviation_rules = [
             (r"\bHz\.\s*", "Hazreti "),
+            (r"\bM\.\s*Ö\.\s*", "milattan önce "),
+            (r"\bM\.\s*S\.\s*", "milattan sonra "),
             (r"\b(?:s\.a\.v\.|s\.a\.s\.|sav\.|sas\.)\s*", "sallallahu aleyhi ve sellem "),
             (r"\b(?:r\.a\.|ra\.)\s*", "radıyallahu anh "),
             (r"\b(?:a\.s\.|as\.)\s*", "aleyhisselam "),
@@ -1110,6 +1112,11 @@ class ModernDKABQuiz:
         ]
         for pattern, replacement in abbreviation_rules:
             normalized = re.sub(pattern, replacement, normalized, flags=re.IGNORECASE)
+        normalized = re.sub(
+            r"(?<=[A-Za-zÇĞİÖŞÜçğıöşü])\s+b\.\s+(?=[A-Za-zÇĞİÖŞÜçğıöşü])",
+            " bin ",
+            normalized,
+        )
         if self._contains_arabic_text(normalized):
             normalized = self._transliterate_arabic_text(normalized)
         return " ".join(normalized.split())
