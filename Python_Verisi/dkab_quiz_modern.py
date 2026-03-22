@@ -1011,6 +1011,7 @@ class ModernDKABQuiz:
                 continue
 
             if char == "ا" and result and result[-1].endswith("a"):
+                result.append("a")
                 i += 1
                 continue
 
@@ -1018,6 +1019,7 @@ class ModernDKABQuiz:
                 prev = result[-1] if result else ""
                 next_char = text[i + 1] if i + 1 < len(text) else ""
                 if prev.endswith("u"):
+                    result.append("u")
                     i += 1
                     continue
                 if next_char in {"َ", "ِ", "ُ"}:
@@ -1050,9 +1052,9 @@ class ModernDKABQuiz:
 
         transliterated = "".join(result)
         transliterated = re.sub(r"\s+", " ", transliterated)
-        transliterated = re.sub(r"aa+", "a", transliterated)
+        transliterated = re.sub(r"aa+", "aa", transliterated)
         transliterated = re.sub(r"ii+", "ii", transliterated)
-        transliterated = re.sub(r"uu+", "u", transliterated)
+        transliterated = re.sub(r"uu+", "uu", transliterated)
         transliterated = re.sub(r"\balşş", "eşş", transliterated, flags=re.IGNORECASE)
         transliterated = re.sub(r"\bvalss", "vess", transliterated, flags=re.IGNORECASE)
         transliterated = re.sub(r"\bguray", "gurey", transliterated, flags=re.IGNORECASE)
@@ -1096,6 +1098,13 @@ class ModernDKABQuiz:
         if voice_id:
             return voice_id
         return self.speech_voice_choices[0][0]
+
+    def _speech_finish_buffer_seconds(self, text):
+        raw_text = str(text or "")
+        sentence_breaks = len(re.findall(r"[.!?;:…]", raw_text))
+        arabic_bonus = 0.55 if self._contains_arabic_text(raw_text) else 0.0
+        length_bonus = min(1.2, len(raw_text) / 180.0)
+        return 0.65 + arabic_bonus + length_bonus + (sentence_breaks * 0.08)
 
     def _normalize_speech_text(self, text):
         normalized = str(text or "").replace("\n", " ")
@@ -1209,7 +1218,8 @@ class ModernDKABQuiz:
                 ),
             )
             if on_finished:
-                delay_ms = int(max(0.25, duration_seconds + 0.25) * 1000)
+                extra_buffer = self._speech_finish_buffer_seconds(text)
+                delay_ms = int(max(0.6, duration_seconds + extra_buffer) * 1000)
                 token = sequence_token if sequence_token is not None else self._speech_sequence_token
                 self.root.after(
                     0,
