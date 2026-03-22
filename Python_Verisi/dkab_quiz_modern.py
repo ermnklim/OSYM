@@ -2443,12 +2443,60 @@ class ModernDKABQuiz:
         if new_files:
             tk.Label(header_frame, text=f"🔔 Yeni dosya: {', '.join(new_files[:2])}",
                     font=('Segoe UI', 9), bg=self.colors['warning'], fg=self.colors['bg']).pack(pady=3)
+
+        def create_analysis_table_area(parent, height=220):
+            area_frame = tk.Frame(parent, bg=self.colors['card'])
+            area_frame.pack(fill=tk.X, padx=15, pady=(0, 5))
+
+            canvas_wrap = tk.Frame(area_frame, bg=self.colors['border'])
+            canvas_wrap.pack(fill=tk.X, expand=True)
+
+            table_canvas = tk.Canvas(
+                canvas_wrap,
+                bg=self.colors['card'],
+                highlightthickness=0,
+                bd=0,
+                height=height,
+            )
+            y_scroll = ttk.Scrollbar(
+                canvas_wrap,
+                orient="vertical",
+                command=table_canvas.yview,
+                style="Modern.Vertical.TScrollbar",
+            )
+            x_scroll = ttk.Scrollbar(
+                area_frame,
+                orient="horizontal",
+                command=table_canvas.xview,
+            )
+            table_canvas.configure(
+                yscrollcommand=y_scroll.set,
+                xscrollcommand=x_scroll.set,
+            )
+
+            y_scroll.pack(side=tk.RIGHT, fill=tk.Y)
+            table_canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+            x_scroll.pack(fill=tk.X)
+
+            table_inner = tk.Frame(table_canvas, bg=self.colors['border'])
+            table_window = table_canvas.create_window((0, 0), window=table_inner, anchor="nw")
+
+            def _refresh_table_scroll(_event=None):
+                table_canvas.configure(scrollregion=table_canvas.bbox("all"))
+
+            def _fit_table_width(event):
+                requested_width = table_inner.winfo_reqwidth()
+                table_canvas.itemconfigure(table_window, width=max(event.width, requested_width))
+
+            table_inner.bind("<Configure>", _refresh_table_scroll)
+            table_canvas.bind("<Configure>", _fit_table_width)
+
+            return table_inner
         
         tk.Label(content_frame, text="📅 YILLARA GÖRE DAĞILIM",
                 font=('Segoe UI', 11, 'bold'), bg=self.colors['card'], fg=self.colors['text']).pack(pady=(15, 5))
         
-        table_frame = tk.Frame(content_frame, bg=self.colors['border'])
-        table_frame.pack(padx=15, fill=tk.X)
+        table_frame = create_analysis_table_area(content_frame, height=170)
         
         analysis_subjects = sorted({q['ders'] for q in all_parsed_questions})
         headers = ["Yıl"] + analysis_subjects + ["Toplam"]
@@ -2468,8 +2516,7 @@ class ModernDKABQuiz:
         tk.Label(content_frame, text="📚 KONULARA GÖRE DAĞILIM",
                 font=('Segoe UI', 11, 'bold'), bg=self.colors['card'], fg=self.colors['text']).pack(pady=(20, 5))
         
-        konu_table = tk.Frame(content_frame, bg=self.colors['border'])
-        konu_table.pack(padx=15, fill=tk.X)
+        konu_table = create_analysis_table_area(content_frame, height=280)
         
         konu_headers = ["Konu"] + analysis_subjects + ["Toplam"]
         for i, h in enumerate(konu_headers):
@@ -2516,8 +2563,7 @@ class ModernDKABQuiz:
                 if q.get('konu') and q.get('konu') not in ['BİLİNMEYEN KONU', '']:
                     yil_ders_konu_data[q['yil']][q['ders']][q['konu']] += 1
             
-            matris_inner = tk.Frame(content_frame, bg=self.colors['card'])
-            matris_inner.pack(fill=tk.X, padx=15, pady=5)
+            matris_inner = create_analysis_table_area(content_frame, height=320)
             
             sorted_years = sorted(yil_ders_konu_data.keys(), reverse=True)
             sorted_konular_list = sorted(set(k for y in sorted_years for d in yil_ders_konu_data[y].keys() for k in yil_ders_konu_data[y][d].keys()))
