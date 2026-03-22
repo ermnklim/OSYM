@@ -54,6 +54,153 @@ TOPIC_ALIASES = {
     "Mezhepler tarihi": "Mezhepler Tarihi",
 }
 
+EXAM_FAMILY_LABELS = {
+    "DKAB": "ÖABT DKAB",
+    "IHL": "ÖABT İHL",
+    "MBSTS": "MBSTS",
+}
+
+PRIORITY_HINTS = {
+    "DHBT": [
+        "Fıkıh",
+        "Siyer",
+        "Kelam / Akaid",
+        "Kur'an-ı Kerim ve Tecvid",
+        "İslam Ahlakı ve Tasavvuf",
+        "Tefsir",
+        "Hadis",
+        "Dinler Tarihi",
+        "Mezhepler Tarihi",
+        "Din Hizmetleri ve Hitabet",
+    ],
+    "MBSTS": [
+        "Fıkıh",
+        "Kur'an-ı Kerim ve Tecvid",
+        "Tefsir",
+        "Hadis",
+        "Kelam / Akaid",
+        "Fıkıh Usulü",
+        "Siyer",
+        "İslam Tarihi",
+        "Dinler Tarihi",
+        "İslam Mezhepleri ve Akımları",
+        "Din Hizmetleri ve Hitabet",
+    ],
+    "ÖABT DKAB": [
+        "Fıkıh",
+        "Tefsir",
+        "Hadis",
+        "Kelam / Akaid",
+        "Din Eğitimi",
+        "Siyer",
+        "İslam Tarihi",
+        "İslam Kültür ve Medeniyeti",
+        "Dinler Tarihi",
+        "Din Sosyolojisi",
+        "Din Psikolojisi",
+        "Din Felsefesi",
+        "İslam Felsefesi",
+    ],
+    "ÖABT İHL": [
+        "Kur'an-ı Kerim ve Tecvid",
+        "Fıkıh",
+        "Tefsir",
+        "Hadis",
+        "Kelam / Akaid",
+        "Siyer",
+        "İslam Tarihi",
+        "İslam Ahlakı ve Tasavvuf",
+        "İslam Mezhepleri ve Akımları",
+        "Mezhepler Tarihi",
+        "Dinler Tarihi",
+        "Din Eğitimi",
+    ],
+}
+
+SUBTOPIC_KEYWORDS = {
+    "Kur'an-ı Kerim ve Tecvid": [
+        ("Tecvit kuralları", [r"idgam", r"ihfa", r"izhar", r"iklab", r"med", r"vakf", r"\btecvit\b"]),
+        ("Mahreç ve sıfat", [r"mahreç", r"mahrec", r"sıfat", r"sifat", r"safir", r"hemş", r"hems", r"gunne", r"tefess"]),
+        ("Kıraat", [r"kıraat", r"kiraat", r"nafi", r"ibn kesir", r"ibn amir", r"kisai", r"aşere", r"mücahid"]),
+        ("Kur'an tarihi", [r"mushaf", r"hareke", r"noktalan", r"eb[üu]'?l-esved", r"halil b\. ahmed", r"cem['’]"]),
+        ("Sure ve kavim bilgisi", [r"\bsure\b", r"\bayet\b", r"ashab", r"kavim", r"meryem", r"mutaffif", r"medyen"]),
+    ],
+    "Tefsir": [
+        ("Sebeb-i nüzul", [r"sebeb[- ]i nüzul", r"sebeb[- ]i nuzul", r"nüzul", r"nuzul"]),
+        ("Nesih", [r"nesih", r"mensuh", r"nasih"]),
+        ("Mekki-Medeni", [r"mekki", r"medeni"]),
+        ("Tefsir usulü", [r"tefsir", r"tevil", r"rivayet", r"dirayet", r"içtimai", r"ictimai"]),
+        ("Kur'an ilimleri", [r"vücuh", r"nezair", r"mübhemat", r"müşkil", r"müteşab", r"mecaz"]),
+        ("Kıssalar ve sureler", [r"kıssa", r"sure", r"meryem", r"ashab", r"peygamber"]),
+    ],
+    "Hadis": [
+        ("Hadis usulü", [r"sened", r"isnad", r"rav", r"muttasıl", r"munkatı", r"inkıta", r"tedlis", r"muallak", r"mürsel", r"hasen", r"zayıf"]),
+        ("Hadis kaynakları", [r"buhari", r"müslim", r"müsned", r"sünen", r"cami", r"muvatta", r"ibnü'?s-salah", r"tedrib"]),
+        ("Ravi ve cerh-ta'dil", [r"cerh", r"ta['’]dil", r"sika", r"adalet", r"zabt", r"vefayat"]),
+        ("Konulu hadisler", [r"niyet", r"müslüman", r"hadis", r"sünnet"]),
+    ],
+    "Fıkıh": [
+        ("Taharet", [r"abdest", r"gus", r"mest", r"necaset", r"temizlik", r"taharet"]),
+        ("Namaz", [r"namaz", r"rekât", r"rekat", r"sehiv", r"itikâf", r"itikaf", r"mesbuk", r"lahik", r"muktedi"]),
+        ("Oruç", [r"oruç", r"oruc", r"imsak", r"ramazan", r"kefaret orucu"]),
+        ("Zekât", [r"zekât", r"zekat", r"nisab", r"mülkiyet", r"toprak mahsul"]),
+        ("Hac ve umre", [r"\bhac\b", r"umre", r"ihram", r"tavaf", r"sa'y", r"müzdelife", r"mina", r"arafat"]),
+        ("Kurban", [r"kurban", r"büyükbaş", r"büyükbas", r"küçükbaş", r"kucukbas"]),
+        ("Aile hukuku", [r"nikâh", r"nikah", r"mehir", r"boşan", r"talak", r"iddet", r"hidane"]),
+        ("Miras", [r"miras", r"tereke", r"vasiyet", r"muris", r"asabe"]),
+        ("Muamelat", [r"alışveriş", r"alisveris", r"satış", r"satis", r"rehin", r"karz", r"şirket", r"sirket", r"muhayee", r"mudarebe", r"murabaha"]),
+        ("Yemin, adak, kefaret", [r"yemin", r"adak", r"kefaret"]),
+    ],
+    "Fıkıh Usulü": [
+        ("Kıyas", [r"kıyas", r"kiyas", r"illet", r"hikmet"]),
+        ("İcma", [r"icma", r"sükûti", r"sükuti", r"sarih icma"]),
+        ("İstishab ve istihsan", [r"istishab", r"istihsan"]),
+        ("Makasıd", [r"makasıd", r"makasid", r"şeria", r"seria", r"zaruret", r"haciyat", r"tahsiniyat"]),
+        ("Lafızlar ve delalet", [r"lafız", r"lafiz", r"hafi", r"müşkil", r"mücmel", r"müteşabih", r"vacib", r"mukayyed"]),
+        ("Usul metotları", [r"fukaha", r"mütekellim", r"metodu", r"tümevar", r"meseleci"]),
+    ],
+    "Kelam / Akaid": [
+        ("İman", [r"\biman\b", r"mürcie", r"mürtekib", r"büyük günah", r"murtekip"]),
+        ("Kader", [r"kader", r"kaza", r"istitaat", r"cebr", r"cebriy", r"irade", r"tekvin"]),
+        ("Tevhid ve sıfatlar", [r"tevhid", r"sıfat", r"sifat", r"vahdaniyet", r"uluhiyet", r"rü'yet", r"ruyet"]),
+        ("Kelam ekolleri", [r"mutezile", r"eşari", r"eş'ar", r"maturid", r"cehmi", r"mürcie"]),
+        ("Kelam yöntemi", [r"cevher", r"araz", r"kozmoloji", r"burhan", r"gazali", r"cüveyni", r"nazzam", r"kümun", r"zuhur"]),
+    ],
+    "Siyer": [
+        ("Mekke dönemi", [r"mekke", r"darünnedve", r"darunnedve", r"boykot", r"taif"]),
+        ("Medine dönemi", [r"medine", r"vesika", r"vesikası", r"vesikasi", r"suffe"]),
+        ("Gazve ve seriyyeler", [r"gazve", r"seriyye", r"uhud", r"huneyn", r"hayber", r"hendek", r"mute", r"zatüsselasil"]),
+        ("Hicret ve Hudeybiye", [r"hicret", r"hudeybiye"]),
+        ("Veda dönemi", [r"veda hutbesi", r"veda"]),
+    ],
+    "İslam Tarihi": [
+        ("Dört halife", [r"ebubekir", r"ömer", r"osman", r"ali", r"hulefa", r"raşidin", r"rasidin"]),
+        ("Emeviler", [r"emevi", r"mervan", r"süfyani", r"sufyani"]),
+        ("Abbasiler", [r"abbasi", r"memun", r"mihne"]),
+        ("Türk-İslam devletleri", [r"toluno", r"selçuk", r"osmanlı", r"memlük", r"memluk"]),
+    ],
+    "İslam Mezhepleri ve Akımları": [
+        ("Şia ve kolları", [r"şia", r"si[aâ]", r"imami", r"zeyd", r"ismail", r"nusayri"]),
+        ("Haricilik", [r"harici", r"ezarika", r"ibazi"]),
+        ("Modern akımlar", [r"bahai", r"kadıyan", r"kadiyan", r"vehhabi"]),
+    ],
+    "Mezhepler Tarihi": [
+        ("Şia ve kolları", [r"şia", r"si[aâ]", r"imami", r"zeyd", r"ismail", r"nusayri"]),
+        ("Haricilik", [r"harici", r"ezarika", r"ibazi"]),
+        ("Modern akımlar", [r"bahai", r"kadıyan", r"kadiyan", r"vehhabi", r"dürzi", r"durzi"]),
+    ],
+    "Dinler Tarihi": [
+        ("Hristiyanlık", [r"hristiyan", r"incil", r"teslis", r"vaftiz", r"evharist", r"misyoner"]),
+        ("Yahudilik", [r"yahudi", r"tevrat", r"roş", r"şofar", r"şabat"]),
+        ("Hint dinleri", [r"hindu", r"vişnu", r"visnu", r"karma", r"nirvana", r"avatara", r"buda"]),
+        ("Diğer dinler", [r"mecusi", r"şinto", r"sabi", r"manihe", r"tao"]),
+    ],
+    "Din Hizmetleri ve Hitabet": [
+        ("Hutbe ve vaaz", [r"hutbe", r"vaaz", r"hitabet"]),
+        ("İrşat ve yaygın din hizmeti", [r"irşat", r"irsat", r"yaygın din hizmet", r"diyanet"]),
+    ],
+}
+
 
 def normalize_topic_name(topic: str) -> str:
     topic = (topic or "").strip()
@@ -73,6 +220,30 @@ def format_subject_label(subject: str) -> str:
     for source, target in replacements.items():
         subject = subject.replace(source, target)
     return subject
+
+
+def get_exam_family(subject: str) -> str:
+    subject = format_subject_label(subject)
+    if subject.startswith("DHBT"):
+        return "DHBT"
+    return EXAM_FAMILY_LABELS.get(subject, subject)
+
+
+def extract_subtopics(question_text: str, topic: str) -> List[str]:
+    text = " ".join((question_text or "").split()).casefold()
+    matched = []
+    for label, patterns in SUBTOPIC_KEYWORDS.get(topic, []):
+        if any(re.search(pattern, text, re.IGNORECASE) for pattern in patterns):
+            matched.append(label)
+    return matched or ["Genel / Diğer"]
+
+
+def sort_topics_for_priority(exam_family: str, topic_counts: Dict[str, int]) -> List[Tuple[str, int]]:
+    hint_order = {name: idx for idx, name in enumerate(PRIORITY_HINTS.get(exam_family, []))}
+    return sorted(
+        topic_counts.items(),
+        key=lambda item: (-item[1], hint_order.get(item[0], 999), item[0]),
+    )
 
 
 def has_dhbt_common_file(year: int) -> bool:
@@ -186,11 +357,16 @@ def parse_single_question(text: str, year: int, subject: str = "DKAB") -> Dict:
             konu = topic_candidates[-1]
 
         if soru_no and not should_skip_dhbt_common_question(year, subject, soru_no):
+            soru_metni_birlesik = "\n".join(soru_metni).strip()
+            konu_adi = konu if konu else "Diğer"
             return {
                 "yil": year,
                 "ders": subject,
-                "konu": konu if konu else "Diğer",
-                "soru_no": soru_no
+                "sinav_aile": get_exam_family(subject),
+                "konu": konu_adi,
+                "soru_no": soru_no,
+                "soru_metni": soru_metni_birlesik,
+                "alt_basliklar": extract_subtopics(soru_metni_birlesik, konu_adi)
             }
     except:
         pass
@@ -356,10 +532,49 @@ def generate_analysis_text():
         text.append("-" * 70)
         text.append("")
     
+    exam_family_topic_data = defaultdict(lambda: defaultdict(int))
+    exam_family_subtopic_data = defaultdict(lambda: defaultdict(int))
+
+    for q in questions:
+        exam_family = q.get("sinav_aile") or get_exam_family(q.get("ders", ""))
+        topic_name = q.get("konu") or "Diger"
+        exam_family_topic_data[exam_family][topic_name] += 1
+        for subtopic in q.get("alt_basliklar", []):
+            exam_family_subtopic_data[exam_family][f"{topic_name} > {subtopic}"] += 1
+
+    text.append("SINAV BAZLI ONCELIK VE ALT BASLIK RAPORU")
+    text.append("-" * 70)
+
+    for exam_family in sorted(exam_family_topic_data.keys()):
+        text.append(f"\n{exam_family}:")
+
+        sorted_main_topics = sort_topics_for_priority(exam_family, exam_family_topic_data[exam_family])
+        if sorted_main_topics:
+            text.append("  En yogun ana basliklar:")
+            for topic_name, count in sorted_main_topics[:8]:
+                text.append(f"    - {topic_name}: {count}")
+
+        sorted_subtopics = sorted(
+            exam_family_subtopic_data[exam_family].items(),
+            key=lambda item: (-item[1], item[0])
+        )
+        if sorted_subtopics:
+            text.append("  En sik donen alt basliklar:")
+            for subtopic_name, count in sorted_subtopics[:10]:
+                text.append(f"    - {subtopic_name}: {count}")
+
+        priority_topics = [topic_name for topic_name, _ in sorted_main_topics[:6]]
+        if priority_topics:
+            text.append("  Onerilen calisma sirasi:")
+            text.append(f"    {' -> '.join(priority_topics)}")
+
+    text.append("-" * 70)
+    text.append("")
+
     text.append("=" * 70)
-    text.append("Analiz tamamlandı.")
+    text.append("Analiz tamamlandi.")
     text.append("=" * 70)
-    
+
     return "\n".join(text), new_files
 
 def save_analysis():

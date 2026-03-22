@@ -2409,9 +2409,9 @@ class ModernDKABQuiz:
         if new_files and hasattr(self, 'yeni_dosya_label'):
             self.yeni_dosya_label.config(text=f"🔔 Yeni: {', '.join(new_files[:2])}")
         
-        analiz_card = self.create_card(self.main_content, "📈 SORU ANALİZİ")
+        analiz_card = self.create_card(self.main_content, "Soru Analizi")
         analiz_card.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
-        
+
         content_frame = tk.Frame(analiz_card, bg=self.colors['card'])
         content_frame.pack(fill=tk.BOTH, expand=True)
         
