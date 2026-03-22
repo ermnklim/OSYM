@@ -1,7 +1,7 @@
 {
   "theme": "Acik Modern",
   "year": "2025",
-  "ders": "DKAB",
+  "ders": "MBSTS",
   "konu": "Tüm konular",
   "mode": "Anında Cevap",
   "time_limit": "0",
@@ -9,7 +9,7 @@
   "time_minutes": "0",
   "time_seconds": "15",
   "order": "Sıralı",
-  "num": "50",
+  "num": "60",
   "goto_year": "2025",
   "goto_ders": "MBSTS",
   "goto_q": "1",

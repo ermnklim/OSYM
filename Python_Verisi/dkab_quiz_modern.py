@@ -4523,7 +4523,13 @@ class ModernDKABQuiz:
 def main():
     root = tk.Tk()
     app = ModernDKABQuiz(root)
-    root.mainloop()
+    try:
+        root.mainloop()
+    except KeyboardInterrupt:
+        try:
+            app.on_close()
+        except Exception:
+            root.destroy()
 
 if __name__ == "__main__":
     main()
