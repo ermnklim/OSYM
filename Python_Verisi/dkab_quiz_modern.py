@@ -2543,6 +2543,7 @@ class ModernDKABQuiz:
             "Fıkıh",
             "Fıkıh Usulü",
             "Kelam / Akaid",
+            "İNANÇ ESASLARI",
             "İslam Mezhepleri ve Akımları",
             "İslam Tarihi",
             "Siyer",
