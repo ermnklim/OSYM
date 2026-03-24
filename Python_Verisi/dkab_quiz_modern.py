@@ -2395,6 +2395,11 @@ class ModernDKABQuiz:
         config_frame = tk.Frame(ozet_card, bg=self.colors['card'])
         config_frame.pack(fill=tk.X, padx=20, pady=(10, 0))
         
+        tk.Label(config_frame, text="Derslere Git:", font=('Segoe UI', 9, 'bold'), bg=self.colors['card'], fg=self.colors['success']).pack(side=tk.LEFT)
+        self.ozet_main_nav_var = tk.StringVar(value="Ders Seçiniz...")
+        self.ozet_main_nav_combo = ttk.Combobox(config_frame, textvariable=self.ozet_main_nav_var, state="readonly", width=25, style='Modern.TCombobox')
+        self.ozet_main_nav_combo.pack(side=tk.LEFT, padx=(5, 15))
+
         tk.Label(config_frame, text="Konuya Git:", font=('Segoe UI', 9, 'bold'), bg=self.colors['card'], fg=self.colors['accent']).pack(side=tk.LEFT)
         self.ozet_nav_var = tk.StringVar(value="Seçiniz...")
         self.ozet_nav_combo = ttk.Combobox(config_frame, textvariable=self.ozet_nav_var, state="readonly", width=30, style='Modern.TCombobox')
@@ -2523,6 +2528,56 @@ class ModernDKABQuiz:
             
         self.ozet_topic_data = parsed_topics
         
+        # Main Category (Ders) navigation
+        main_categories = {
+            "SİYER": "Siyer",
+            "HADİS": "Hadis",
+            "TEFSİR": "Tefsir",
+            "FIKIH": "Fıkıh",
+            "KELAM": "Kelam / Akaid",
+            "AKAİD": "Kelam / Akaid",
+            "DİN SOSYOLOJİSİ": "Din Sosyolojisi",
+            "DİN PSİKOLOJİSİ": "Din Psikolojisi",
+            "DİNLER TARİHİ": "Dinler Tarihi",
+            "DİN EĞİTİMİ": "Din Eğitimi",
+            "İSLAM FELSEFESİ": "İslam Felsefesi",
+            "TASAVVUF": "İslam Ahlakı ve Tasavvuf",
+            "MEZHEPLER TARİHİ": "Mezhepler Tarihi",
+            "DİN HİZMETLERİ": "Din Hizmetleri ve Hitabet",
+            "İSLAM MEDENİYETİ": "İslam Kültür ve Medeniyeti"
+        }
+        
+        found_main_topics = []
+        for cat_key in main_categories:
+            # Search for category as a standalone header line
+            for line in file_content.split('\n'):
+                if line.strip().upper().startswith(cat_key) and len(line.strip()) < 40:
+                    found_main_topics.append((line.strip(), main_categories[cat_key]))
+                    break
+        
+        # Sort found main topics by their position in the file
+        found_main_topics = sorted(found_main_topics, key=lambda x: file_content.find(x[0]))
+        self.ozet_main_nav_combo.config(values=[x[0] for x in found_main_topics])
+
+        def navigate_to_main_topic(event=None):
+            selected = self.ozet_main_nav_var.get()
+            if not selected or selected == "Ders Seçiniz...":
+                return
+            
+            txt.config(state=tk.NORMAL)
+            txt.tag_remove("main_nav_highlight", "1.0", tk.END)
+            
+            # Find exact match for the header line
+            pos = txt.search(selected, "1.0", stopindex=tk.END)
+            if pos:
+                txt.see(pos)
+                end_pos = f"{pos}+{len(selected)}c"
+                txt.tag_add("main_nav_highlight", pos, end_pos)
+                txt.tag_configure("main_nav_highlight", background=self.colors['success'], foreground="white")
+            txt.config(state=tk.DISABLED)
+
+        self.ozet_main_nav_combo.bind("<<ComboboxSelected>>", navigate_to_main_topic)
+
         topic_names = [t["topic"] for t in parsed_topics if t["topic"] != "Tümü"]
         self.ozet_nav_combo.config(values=topic_names)
         
