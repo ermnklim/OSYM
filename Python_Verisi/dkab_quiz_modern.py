@@ -2454,6 +2454,21 @@ class ModernDKABQuiz:
         current_topic_name = "Tümü"
         current_topic_sentences = []
         
+        def text_normalize(text):
+            t = text
+            t = re.sub(r'\bVIII\.', 'Sekizinci ', t)
+            t = re.sub(r'\bVII\.', 'Yedinci ', t)
+            t = re.sub(r'\bVI\.', 'Altıncı ', t)
+            t = re.sub(r'\bIV\.', 'Dördüncü ', t)
+            t = re.sub(r'\bV\.', 'Beşinci ', t)
+            t = re.sub(r'\bIII\.', 'Üçüncü ', t)
+            t = re.sub(r'\bII\.', 'İkinci ', t)
+            t = re.sub(r'\bI\.', 'Birinci ', t)
+            t = re.sub(r'(?i)\bhz\.\s*', 'Hazreti ', t)
+            for abbr in ['S.A.V', 'A.S', 'R.A', 'vs', 'vb']:
+                t = re.sub(fr'\b{abbr}\.', f'{abbr}_DOT_', t, flags=re.IGNORECASE)
+            return t
+        
         for orig_line in file_content.split('\n'):
             line = orig_line.strip()
             if not line: continue
@@ -2465,28 +2480,14 @@ class ModernDKABQuiz:
                 if alpha_chars and all(c.isupper() for c in alpha_chars):
                     if not no_parens.endswith(':') or len(no_parens) > 20:
                         is_header = True
-                    
+                        
             if is_header:
                 if current_topic_sentences:
                     parsed_topics.append({"topic": current_topic_name, "sentences": current_topic_sentences})
                 current_topic_name = line
-                current_topic_sentences = [line]
+                current_topic_sentences = [text_normalize(line)]
             else:
-                temp_line = line
-                temp_line = re.sub(r'\bVIII\.', 'Sekizinci ', temp_line)
-                temp_line = re.sub(r'\bVII\.', 'Yedinci ', temp_line)
-                temp_line = re.sub(r'\bVI\.', 'Altıncı ', temp_line)
-                temp_line = re.sub(r'\bIV\.', 'Dördüncü ', temp_line)
-                temp_line = re.sub(r'\bV\.', 'Beşinci ', temp_line)
-                temp_line = re.sub(r'\bIII\.', 'Üçüncü ', temp_line)
-                temp_line = re.sub(r'\bII\.', 'İkinci ', temp_line)
-                temp_line = re.sub(r'\bI\.', 'Birinci ', temp_line)
-                
-                temp_line = re.sub(r'(?i)\bhz\.\s*', 'Hazreti ', temp_line)
-                
-                for abbr in ['S.A.V', 'A.S', 'R.A', 'vs', 'vb']:
-                    temp_line = re.sub(fr'\b{abbr}\.', f'{abbr}_DOT_', temp_line, flags=re.IGNORECASE)
-                
+                temp_line = text_normalize(line)
                 for sentence in re.split(r'(?<=[.!?])\s+', temp_line):
                     cleaned = sentence.replace('_DOT_', '.').strip()
                     if cleaned:
@@ -2501,6 +2502,14 @@ class ModernDKABQuiz:
         self.ozet_topic_combo.config(values=topic_names)
         if self.ozet_topic_var.get() not in topic_names:
             self.ozet_topic_var.set("Tümü")
+            
+        def on_config_change(*args):
+            self.ozet_play_queue = []
+            self.ozet_current_index = 0
+            
+        self.ozet_topic_var.trace_add("write", on_config_change)
+        self.ozet_mode_var.trace_add("write", on_config_change)
+        self.ozet_repeat_var.trace_add("write", on_config_change)
 
         def build_play_queue():
             queue = []
@@ -2510,7 +2519,10 @@ class ModernDKABQuiz:
             except: loops = 1
             
             selected_blocks = []
-            if mode == "Sadece Seçili" and selected != "Tümü":
+            if mode == "Sırayla Oku" and selected != "Tümü":
+                start_idx = next((i for i, t in enumerate(self.ozet_topic_data) if t["topic"] == selected), 0)
+                selected_blocks = self.ozet_topic_data[start_idx:]
+            elif mode == "Sadece Seçili" and selected != "Tümü":
                 selected_blocks = [t for t in self.ozet_topic_data if t["topic"] == selected]
             else:
                 selected_blocks = list(self.ozet_topic_data)
