@@ -1,0 +1,2 @@
+Buraya DKAB Kodlamalı Özetinizi yazabilirsiniz.
+Bu text dosyasını doldurduktan sonra program arayüzünden Göster düğmesine basarak okuyabilir ve sesli dinleyebilirsiniz.

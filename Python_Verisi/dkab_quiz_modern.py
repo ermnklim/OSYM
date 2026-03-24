@@ -2063,6 +2063,14 @@ class ModernDKABQuiz:
                                         wraplength=180)
         self.yeni_dosya_label.pack(padx=5, pady=2, fill=tk.X)
 
+        # --- Kodlamalı Özet Kartı ---
+        ozet_card = self.create_card(sidebar, "📝 Kodlamalı Özet")
+        ozet_card.pack(fill=tk.X, padx=2, pady=2)
+        
+        ozet_btn = self.create_button(ozet_card, "📖 ÖZETİ AÇ",
+                                      self.show_kodlamali_ozet, self.colors['success'])
+        ozet_btn.pack(padx=5, pady=5, fill=tk.X, ipady=2)
+
         self.on_mode_changed()
         
     def create_main_content(self, parent):
@@ -2369,6 +2377,78 @@ class ModernDKABQuiz:
         )
         welcome_label.pack(fill=tk.BOTH, expand=True, padx=22, pady=(6, 24))
         
+    def show_kodlamali_ozet(self):
+        self.current_view = "kodlamali_ozet"
+        self.stop_speech(reset_status=False)
+        self._stop_countdown()
+        self._stop_elapsed_tracking()
+        self.remaining_seconds = 0
+        self._set_status_ready()
+        
+        for widget in self.main_content.winfo_children():
+            widget.destroy()
+            
+        ozet_card = self.create_card(self.main_content, "📝 DKAB Kodlamalı Özet")
+        ozet_card.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+        
+        controls = tk.Frame(ozet_card, bg=self.colors['card'])
+        controls.pack(fill=tk.X, padx=20, pady=10)
+        
+        text_frame = tk.Frame(ozet_card, bg=self.colors['border'])
+        text_frame.pack(fill=tk.BOTH, expand=True, padx=20, pady=(0, 20))
+        
+        txt = tk.Text(text_frame, wrap=tk.WORD, font=self.fonts['body'],
+                     bg=self.colors['card'], fg=self.colors['text'],
+                     padx=10, pady=10, bd=0)
+        
+        scroll = ttk.Scrollbar(text_frame, command=txt.yview, style="Modern.Vertical.TScrollbar")
+        txt.configure(yscrollcommand=scroll.set)
+        
+        scroll.pack(side=tk.RIGHT, fill=tk.Y)
+        txt.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        
+        ozet_file = self.base_dir / "dkab_kodlamali_ozet.txt"
+        file_content = "DKAB Kodlamalı Özet dosyası (dkab_kodlamali_ozet.txt) bulunamadı veya boş."
+        try:
+            if ozet_file.exists():
+                with open(ozet_file, "r", encoding="utf-8") as f:
+                    content = f.read().strip()
+                if content:
+                    file_content = content
+        except Exception as e:
+            file_content = f"Okuma hatası: {e}"
+            
+        txt.insert(tk.END, file_content)
+        txt.config(state=tk.DISABLED)
+        
+        def read_aloud():
+            self.stop_speech()
+            if not self.speech_engine.is_available():
+                messagebox.showerror("Hata", "Çevrimdışı Türkçe ses modeli bulunamadı.")
+                return
+            self.speak_text(file_content, status_prefix="Özet Okunuyor")
+            
+        def edit_file():
+            if str(os.name) == 'nt':
+                os.startfile(str(ozet_file))
+            else:
+                messagebox.showinfo("Bilgi", "Dosyayı manuel olarak düzenleyin:\n" + str(ozet_file))
+                
+        def refresh_text():
+            self.show_kodlamali_ozet()
+
+        read_btn = self.create_button(controls, "🔊 SESLİ OKU", read_aloud, self.colors['primary'])
+        read_btn.pack(side=tk.LEFT, padx=(0, 10))
+        
+        stop_btn = self.create_button(controls, "⏹️ DURDUR", self.stop_speech, self.colors['danger'])
+        stop_btn.pack(side=tk.LEFT, padx=(0, 10))
+        
+        edit_btn = self.create_button(controls, "✏️ DOSYAYI AÇ/DÜZENLE", edit_file, self.colors['warning'])
+        edit_btn.pack(side=tk.LEFT, padx=(0, 10))
+
+        refresh_btn = self.create_button(controls, "🔄 YENİLE", refresh_text, self.colors['success'])
+        refresh_btn.pack(side=tk.LEFT, padx=(0, 10))
+
     def check_new_files(self):
         """Yeni eklenen dosyaları kontrol eder"""
         import re
