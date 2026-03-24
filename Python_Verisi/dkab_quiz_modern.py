@@ -2547,7 +2547,6 @@ class ModernDKABQuiz:
             "İNANÇ ESASLARI",
             "İSLAM MEZHEPLER TARİHİ",
             "İSLAM KÜLTÜR VE MEDENİYETİ",
-            "TASAVVUF",
             "İslam Mezhepleri ve Akımları",
             "İslam Tarihi",
             "Siyer",
