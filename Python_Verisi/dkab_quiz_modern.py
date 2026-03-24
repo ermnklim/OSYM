@@ -2391,6 +2391,25 @@ class ModernDKABQuiz:
         ozet_card = self.create_card(self.main_content, "📝 DKAB Kodlamalı Özet")
         ozet_card.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
         
+        # Configuration frame
+        config_frame = tk.Frame(ozet_card, bg=self.colors['card'])
+        config_frame.pack(fill=tk.X, padx=20, pady=(10, 0))
+        
+        tk.Label(config_frame, text="Konu:", font=('Segoe UI', 9), bg=self.colors['card'], fg=self.colors['text']).pack(side=tk.LEFT)
+        self.ozet_topic_var = tk.StringVar(value="Tümü")
+        self.ozet_topic_combo = ttk.Combobox(config_frame, textvariable=self.ozet_topic_var, state="readonly", width=30, style='Modern.TCombobox')
+        self.ozet_topic_combo.pack(side=tk.LEFT, padx=(5, 10))
+        
+        tk.Label(config_frame, text="Mod:", font=('Segoe UI', 9), bg=self.colors['card'], fg=self.colors['text']).pack(side=tk.LEFT)
+        self.ozet_mode_var = tk.StringVar(value="Sırayla Oku")
+        self.ozet_mode_combo = ttk.Combobox(config_frame, textvariable=self.ozet_mode_var, values=["Sırayla Oku", "Sadece Seçili", "Rastgele Karışık"], state="readonly", width=16, style='Modern.TCombobox')
+        self.ozet_mode_combo.pack(side=tk.LEFT, padx=(5, 10))
+        
+        tk.Label(config_frame, text="Tur:", font=('Segoe UI', 9), bg=self.colors['card'], fg=self.colors['text']).pack(side=tk.LEFT)
+        self.ozet_repeat_var = tk.StringVar(value="1")
+        ozet_repeat_spin = tk.Spinbox(config_frame, from_=1, to=100, textvariable=self.ozet_repeat_var, width=4)
+        ozet_repeat_spin.pack(side=tk.LEFT, padx=(5, 0))
+
         controls = tk.Frame(ozet_card, bg=self.colors['card'])
         controls.pack(fill=tk.X, padx=20, pady=10)
         
@@ -2412,9 +2431,7 @@ class ModernDKABQuiz:
         try:
             if ozet_file.exists():
                 with open(ozet_file, "r", encoding="utf-8") as f:
-                    content = f.read().strip()
-                if content:
-                    file_content = content
+                    file_content = f.read().strip()
         except Exception as e:
             file_content = f"Okuma hatası: {e}"
             
@@ -2422,26 +2439,91 @@ class ModernDKABQuiz:
         txt.config(state=tk.DISABLED)
         
         import re
-        self.ozet_sentences = []
-        if file_content:
-            for line in file_content.split('\n'):
-                for sentence in re.split(r'(?<=[.!?])\s+', line):
-                    if sentence.strip():
-                        self.ozet_sentences.append(sentence.strip())
-                        
+        import random
+        
+        if not hasattr(self, 'ozet_topic_data'):
+            self.ozet_topic_data = []
+            
+        if not hasattr(self, 'ozet_play_queue'):
+            self.ozet_play_queue = []
+            
         if not hasattr(self, 'ozet_current_index'):
             self.ozet_current_index = 0
+
+        parsed_topics = []
+        current_topic_name = "Tümü"
+        current_topic_sentences = []
+        
+        for orig_line in file_content.split('\n'):
+            line = orig_line.strip()
+            if not line: continue
             
+            no_parens = re.sub(r'\(.*?\)', '', line).strip()
+            is_header = False
+            if no_parens and not no_parens.endswith(':'):
+                alpha_chars = [c for c in no_parens if c.isalpha()]
+                if alpha_chars and all(c.isupper() for c in alpha_chars):
+                    is_header = True
+                    
+            if is_header:
+                if current_topic_sentences:
+                    parsed_topics.append({"topic": current_topic_name, "sentences": current_topic_sentences})
+                current_topic_name = line
+                current_topic_sentences = [line]
+            else:
+                temp_line = line
+                for abbr in ['HZ', 'Hz', 'hz', 'S.A.V', 's.a.v', 'A.S', 'a.s', 'R.A', 'r.a', 'vs']:
+                    temp_line = re.sub(fr'\b{abbr}\.', f'{abbr}_DOT_', temp_line, flags=re.IGNORECASE)
+                
+                for sentence in re.split(r'(?<=[.!?])\s+', temp_line):
+                    cleaned = sentence.replace('_DOT_', '.').strip()
+                    if cleaned:
+                        current_topic_sentences.append(cleaned)
+                        
+        if current_topic_sentences:
+            parsed_topics.append({"topic": current_topic_name, "sentences": current_topic_sentences})
+            
+        self.ozet_topic_data = parsed_topics
+        
+        topic_names = ["Tümü"] + [t["topic"] for t in parsed_topics if t["topic"] != "Tümü"]
+        self.ozet_topic_combo.config(values=topic_names)
+        if self.ozet_topic_var.get() not in topic_names:
+            self.ozet_topic_var.set("Tümü")
+
+        def build_play_queue():
+            queue = []
+            mode = self.ozet_mode_var.get()
+            selected = self.ozet_topic_var.get()
+            try: loops = max(1, int(self.ozet_repeat_var.get()))
+            except: loops = 1
+            
+            selected_blocks = []
+            if mode == "Sadece Seçili" and selected != "Tümü":
+                selected_blocks = [t for t in self.ozet_topic_data if t["topic"] == selected]
+            else:
+                selected_blocks = list(self.ozet_topic_data)
+                
+            if mode == "Rastgele Karışık":
+                random.shuffle(selected_blocks)
+                
+            for _ in range(loops):
+                for block in selected_blocks:
+                    queue.extend(block["sentences"])
+                    
+            self.ozet_play_queue = queue
+            self.ozet_current_index = 0
+
         def play_next_sentence():
-            if self.current_view != "kodlamali_ozet" or not self.ozet_sentences:
+            if self.current_view != "kodlamali_ozet" or not self.ozet_play_queue:
                 return
                 
-            if self.ozet_current_index >= len(self.ozet_sentences):
-                self._set_speech_status("Özet okuması tamamlandı.")
+            if self.ozet_current_index >= len(self.ozet_play_queue):
+                self._set_speech_status("Seçili okuma tamamlandı.")
                 self.ozet_current_index = 0
+                self.ozet_play_queue = []
                 return
                 
-            sentence = self.ozet_sentences[self.ozet_current_index]
+            sentence = self.ozet_play_queue[self.ozet_current_index]
             self.ozet_current_index += 1
             
             self._cancel_speech_sequence()
@@ -2449,7 +2531,7 @@ class ModernDKABQuiz:
             
             self.speak_text(
                 sentence,
-                status_prefix=f"Özet ({self.ozet_current_index}/{len(self.ozet_sentences)})",
+                status_prefix=f"Okunuyor ({self.ozet_current_index}/{len(self.ozet_play_queue)})",
                 on_finished=play_next_sentence,
                 sequence_token=seq_token
             )
@@ -2459,23 +2541,30 @@ class ModernDKABQuiz:
             if not self.speech_engine.is_available():
                 messagebox.showerror("Hata", "Çevrimdışı Türkçe ses modeli bulunamadı.")
                 return
-            if not self.ozet_sentences:
+                
+            if not self.ozet_play_queue:
+                build_play_queue()
+                
+            if not self.ozet_play_queue:
                 self._set_speech_status("Okunacak metin yok.")
                 return
-            
-            if self.ozet_current_index > 0 and self.ozet_current_index < len(self.ozet_sentences):
+                
+            if self.ozet_current_index > 0 and self.ozet_current_index < len(self.ozet_play_queue):
                 self.ozet_current_index -= 1
                 
             play_next_sentence()
             
         def read_from_start():
             self.stop_speech()
-            self.ozet_current_index = 0
-            read_aloud()
+            build_play_queue()
+            if self.ozet_play_queue:
+                read_aloud()
+            else:
+                self._set_speech_status("Okunacak metin yok.")
             
         def stop_aloud():
             self.stop_speech()
-            self._set_speech_status(f"Durduruldu. Kaldığı yer: {self.ozet_current_index}/{len(self.ozet_sentences)}")
+            self._set_speech_status(f"Durduruldu. Kaldığı yer: {self.ozet_current_index}/{len(self.ozet_play_queue)}")
             
         def edit_file():
             if str(os.name) == 'nt':
@@ -2484,6 +2573,7 @@ class ModernDKABQuiz:
                 messagebox.showinfo("Bilgi", "Dosyayı manuel olarak düzenleyin:\n" + str(ozet_file))
                 
         def refresh_text():
+            self.ozet_play_queue = []
             self.ozet_current_index = 0
             self.show_kodlamali_ozet()
 
