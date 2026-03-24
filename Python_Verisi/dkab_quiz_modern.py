@@ -2395,23 +2395,37 @@ class ModernDKABQuiz:
         config_frame = tk.Frame(ozet_card, bg=self.colors['card'])
         config_frame.pack(fill=tk.X, padx=20, pady=(10, 0))
         
-        tk.Label(config_frame, text="Konu:", font=('Segoe UI', 9), bg=self.colors['card'], fg=self.colors['text']).pack(side=tk.LEFT)
+        tk.Label(config_frame, text="Konuya Git:", font=('Segoe UI', 9, 'bold'), bg=self.colors['card'], fg=self.colors['accent']).pack(side=tk.LEFT)
+        self.ozet_nav_var = tk.StringVar(value="Seçiniz...")
+        self.ozet_nav_combo = ttk.Combobox(config_frame, textvariable=self.ozet_nav_var, state="readonly", width=30, style='Modern.TCombobox')
+        self.ozet_nav_combo.pack(side=tk.LEFT, padx=(5, 15))
+        
+        tk.Label(config_frame, text="Ara:", font=('Segoe UI', 9), bg=self.colors['card'], fg=self.colors['text']).pack(side=tk.LEFT)
+        self.ozet_search_var = tk.StringVar()
+        self.ozet_search_entry = tk.Entry(config_frame, textvariable=self.ozet_search_var, width=20, bg=self.colors['bg'], fg=self.colors['text'], insertbackground=self.colors['text'], relief=tk.FLAT)
+        self.ozet_search_entry.pack(side=tk.LEFT, padx=5, ipady=3)
+        
+        # Audio Configuration frame (moved down)
+        audio_config_frame = tk.Frame(ozet_card, bg=self.colors['card'])
+        audio_config_frame.pack(fill=tk.X, padx=20, pady=(10, 0))
+        
+        tk.Label(audio_config_frame, text="Okuma Konusu:", font=('Segoe UI', 9), bg=self.colors['card'], fg=self.colors['text']).pack(side=tk.LEFT)
         self.ozet_topic_var = tk.StringVar(value="Tümü")
-        self.ozet_topic_combo = ttk.Combobox(config_frame, textvariable=self.ozet_topic_var, state="readonly", width=30, style='Modern.TCombobox')
+        self.ozet_topic_combo = ttk.Combobox(audio_config_frame, textvariable=self.ozet_topic_var, state="readonly", width=25, style='Modern.TCombobox')
         self.ozet_topic_combo.pack(side=tk.LEFT, padx=(5, 10))
         
-        tk.Label(config_frame, text="Mod:", font=('Segoe UI', 9), bg=self.colors['card'], fg=self.colors['text']).pack(side=tk.LEFT)
+        tk.Label(audio_config_frame, text="Mod:", font=('Segoe UI', 9), bg=self.colors['card'], fg=self.colors['text']).pack(side=tk.LEFT)
         self.ozet_mode_var = tk.StringVar(value="Sırayla Oku")
-        self.ozet_mode_combo = ttk.Combobox(config_frame, textvariable=self.ozet_mode_var, values=["Sırayla Oku", "Sadece Seçili", "Rastgele Karışık"], state="readonly", width=16, style='Modern.TCombobox')
+        self.ozet_mode_combo = ttk.Combobox(audio_config_frame, textvariable=self.ozet_mode_var, values=["Sırayla Oku", "Sadece Seçili", "Rastgele Karışık"], state="readonly", width=16, style='Modern.TCombobox')
         self.ozet_mode_combo.pack(side=tk.LEFT, padx=(5, 10))
         
-        tk.Label(config_frame, text="Tur:", font=('Segoe UI', 9), bg=self.colors['card'], fg=self.colors['text']).pack(side=tk.LEFT)
+        tk.Label(audio_config_frame, text="Tur:", font=('Segoe UI', 9), bg=self.colors['card'], fg=self.colors['text']).pack(side=tk.LEFT)
         self.ozet_repeat_var = tk.StringVar(value="1")
-        ozet_repeat_spin = tk.Spinbox(config_frame, from_=1, to=100, textvariable=self.ozet_repeat_var, width=4)
+        ozet_repeat_spin = tk.Spinbox(audio_config_frame, from_=1, to=100, textvariable=self.ozet_repeat_var, width=4)
         ozet_repeat_spin.pack(side=tk.LEFT, padx=(5, 0))
         
         self.ozet_follow_var = tk.BooleanVar(value=True)
-        tk.Checkbutton(config_frame, text="Takip Et", variable=self.ozet_follow_var, bg=self.colors['card'], fg=self.colors['text'], font=('Segoe UI', 9), selectcolor=self.colors['bg']).pack(side=tk.LEFT, padx=(10, 0))
+        tk.Checkbutton(audio_config_frame, text="Takip Et", variable=self.ozet_follow_var, bg=self.colors['card'], fg=self.colors['text'], font=('Segoe UI', 9), selectcolor=self.colors['bg']).pack(side=tk.LEFT, padx=(10, 0))
 
         controls = tk.Frame(ozet_card, bg=self.colors['card'])
         controls.pack(fill=tk.X, padx=20, pady=10)
@@ -2509,10 +2523,68 @@ class ModernDKABQuiz:
             
         self.ozet_topic_data = parsed_topics
         
-        topic_names = ["Tümü"] + [t["topic"] for t in parsed_topics if t["topic"] != "Tümü"]
-        self.ozet_topic_combo.config(values=topic_names)
-        if self.ozet_topic_var.get() not in topic_names:
+        topic_names = [t["topic"] for t in parsed_topics if t["topic"] != "Tümü"]
+        self.ozet_nav_combo.config(values=topic_names)
+        
+        audio_topic_names = ["Tümü"] + topic_names
+        self.ozet_topic_combo.config(values=audio_topic_names)
+        if self.ozet_topic_var.get() not in audio_topic_names:
             self.ozet_topic_var.set("Tümü")
+
+        def navigate_to_topic(event=None):
+            selected = self.ozet_nav_var.get()
+            if not selected or selected == "Seçiniz...":
+                return
+            
+            txt.config(state=tk.NORMAL)
+            txt.tag_remove("nav_highlight", "1.0", tk.END)
+            
+            # Find the topic in the text
+            pos = txt.search(selected, "1.0", stopindex=tk.END)
+            if pos:
+                txt.see(pos)
+                end_pos = f"{pos}+{len(selected)}c"
+                txt.tag_add("nav_highlight", pos, end_pos)
+                txt.tag_configure("nav_highlight", background=self.colors['accent'], foreground="white")
+            txt.config(state=tk.DISABLED)
+
+        self.ozet_nav_combo.bind("<<ComboboxSelected>>", navigate_to_topic)
+
+        def search_in_text(event=None):
+            query = self.ozet_search_var.get().strip()
+            if not query:
+                return
+            
+            txt.config(state=tk.NORMAL)
+            txt.tag_remove("search_highlight", "1.0", tk.END)
+            
+            # Start searching from current position or start
+            start_pos = txt.index(tk.INSERT) or "1.0"
+            if event and event.keysym == "Return": # If enter pressed, find next
+                start_pos = f"{start_pos}+1c"
+            else:
+                start_pos = "1.0"
+
+            pos = txt.search(query, start_pos, stopindex=tk.END, nocase=True)
+            if not pos and start_pos != "1.0": # Wrap around
+                pos = txt.search(query, "1.0", stopindex=tk.END, nocase=True)
+                
+            if pos:
+                txt.see(pos)
+                txt.mark_set(tk.INSERT, pos)
+                end_pos = f"{pos}+{len(query)}c"
+                txt.tag_add("search_highlight", pos, end_pos)
+                txt.tag_configure("search_highlight", background=self.colors['warning'], foreground="black")
+            else:
+                self._set_speech_status(f"'{query}' metinde bulunamadı.")
+            
+            txt.config(state=tk.DISABLED)
+
+        self.ozet_search_entry.bind("<Return>", search_in_text)
+        
+        search_btn = self.create_button(config_frame, "🔍 ARA", search_in_text, self.colors['primary'])
+        search_btn.config(pady=5, padx=10)
+        search_btn.pack(side=tk.LEFT, padx=5)
             
         def on_config_change(*args):
             self.ozet_play_queue = []
