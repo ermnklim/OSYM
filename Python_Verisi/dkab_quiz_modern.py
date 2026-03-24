@@ -2409,6 +2409,9 @@ class ModernDKABQuiz:
         self.ozet_repeat_var = tk.StringVar(value="1")
         ozet_repeat_spin = tk.Spinbox(config_frame, from_=1, to=100, textvariable=self.ozet_repeat_var, width=4)
         ozet_repeat_spin.pack(side=tk.LEFT, padx=(5, 0))
+        
+        self.ozet_follow_var = tk.BooleanVar(value=True)
+        tk.Checkbutton(config_frame, text="Takip Et", variable=self.ozet_follow_var, bg=self.colors['card'], fg=self.colors['text'], font=('Segoe UI', 9), selectcolor=self.colors['bg']).pack(side=tk.LEFT, padx=(10, 0))
 
         controls = tk.Frame(ozet_card, bg=self.colors['card'])
         controls.pack(fill=tk.X, padx=20, pady=10)
@@ -2419,6 +2422,7 @@ class ModernDKABQuiz:
         txt = tk.Text(text_frame, wrap=tk.WORD, font=self.fonts['body'],
                      bg=self.colors['card'], fg=self.colors['text'],
                      padx=10, pady=10, bd=0)
+        txt.tag_configure("highlight", background=self.colors['warning'], foreground="#000000")
         
         scroll = ttk.Scrollbar(text_frame, command=txt.yview, style="Modern.Vertical.TScrollbar")
         txt.configure(yscrollcommand=scroll.set)
@@ -2485,13 +2489,19 @@ class ModernDKABQuiz:
                 if current_topic_sentences:
                     parsed_topics.append({"topic": current_topic_name, "sentences": current_topic_sentences})
                 current_topic_name = line
-                current_topic_sentences = [text_normalize(line)]
+                current_topic_sentences = [{"raw": line, "norm": text_normalize(line)}]
             else:
-                temp_line = text_normalize(line)
-                for sentence in re.split(r'(?<=[.!?])\s+', temp_line):
-                    cleaned = sentence.replace('_DOT_', '.').strip()
-                    if cleaned:
-                        current_topic_sentences.append(cleaned)
+                raw_temp = line
+                for abbr in ['HZ', 'Hz', 'hz', 'S.A.V', 'A.S', 'R.A', 'vs', 'vb']:
+                    raw_temp = re.sub(fr'\b{abbr}\.', f'{abbr}_DOT_', raw_temp, flags=re.IGNORECASE)
+                for rom in ['VIII', 'VII', 'VI', 'IV', 'V', 'III', 'II', 'I']:
+                    raw_temp = re.sub(fr'\b{rom}\.\s+', f'{rom}_DOT_ ', raw_temp)
+                
+                for raw_s_split in re.split(r'(?<=[.!?])\s+', raw_temp):
+                    raw_s = raw_s_split.replace('_DOT_', '.').strip()
+                    if raw_s:
+                        norm_s = text_normalize(raw_s)
+                        current_topic_sentences.append({"raw": raw_s, "norm": norm_s})
                         
         if current_topic_sentences:
             parsed_topics.append({"topic": current_topic_name, "sentences": current_topic_sentences})
@@ -2545,16 +2555,31 @@ class ModernDKABQuiz:
                 self._set_speech_status("Seçili okuma tamamlandı.")
                 self.ozet_current_index = 0
                 self.ozet_play_queue = []
+                txt.tag_remove("highlight", "1.0", tk.END)
                 return
                 
-            sentence = self.ozet_play_queue[self.ozet_current_index]
+            sentence_obj = self.ozet_play_queue[self.ozet_current_index]
             self.ozet_current_index += 1
+            
+            raw_s = sentence_obj["raw"]
+            norm_s = sentence_obj["norm"]
+            
+            txt.tag_remove("highlight", "1.0", tk.END)
+            if self.ozet_follow_var.get() and raw_s:
+                search_text = raw_s
+                if len(search_text) > 50:
+                    search_text = search_text[:50]
+                start_idx = txt.search(search_text, "1.0", stopindex=tk.END, exact=True)
+                if start_idx:
+                    end_idx = f"{start_idx}+{len(raw_s)}c"
+                    txt.tag_add("highlight", start_idx, end_idx)
+                    txt.see(start_idx)
             
             self._cancel_speech_sequence()
             seq_token = self._speech_sequence_token
             
             self.speak_text(
-                sentence,
+                norm_s,
                 status_prefix=f"Okunuyor ({self.ozet_current_index}/{len(self.ozet_play_queue)})",
                 on_finished=play_next_sentence,
                 sequence_token=seq_token
