@@ -2460,10 +2460,11 @@ class ModernDKABQuiz:
             
             no_parens = re.sub(r'\(.*?\)', '', line).strip()
             is_header = False
-            if no_parens and not no_parens.endswith(':'):
+            if no_parens:
                 alpha_chars = [c for c in no_parens if c.isalpha()]
                 if alpha_chars and all(c.isupper() for c in alpha_chars):
-                    is_header = True
+                    if not no_parens.endswith(':') or len(no_parens) > 20:
+                        is_header = True
                     
             if is_header:
                 if current_topic_sentences:
@@ -2472,7 +2473,18 @@ class ModernDKABQuiz:
                 current_topic_sentences = [line]
             else:
                 temp_line = line
-                for abbr in ['HZ', 'Hz', 'hz', 'S.A.V', 's.a.v', 'A.S', 'a.s', 'R.A', 'r.a', 'vs']:
+                temp_line = re.sub(r'\bVIII\.', 'Sekizinci ', temp_line)
+                temp_line = re.sub(r'\bVII\.', 'Yedinci ', temp_line)
+                temp_line = re.sub(r'\bVI\.', 'Altıncı ', temp_line)
+                temp_line = re.sub(r'\bIV\.', 'Dördüncü ', temp_line)
+                temp_line = re.sub(r'\bV\.', 'Beşinci ', temp_line)
+                temp_line = re.sub(r'\bIII\.', 'Üçüncü ', temp_line)
+                temp_line = re.sub(r'\bII\.', 'İkinci ', temp_line)
+                temp_line = re.sub(r'\bI\.', 'Birinci ', temp_line)
+                
+                temp_line = re.sub(r'(?i)\bhz\.\s*', 'Hazreti ', temp_line)
+                
+                for abbr in ['S.A.V', 'A.S', 'R.A', 'vs', 'vb']:
                     temp_line = re.sub(fr'\b{abbr}\.', f'{abbr}_DOT_', temp_line, flags=re.IGNORECASE)
                 
                 for sentence in re.split(r'(?<=[.!?])\s+', temp_line):
