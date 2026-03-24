@@ -2396,12 +2396,12 @@ class ModernDKABQuiz:
         config_frame.pack(fill=tk.X, padx=20, pady=(10, 0))
         
         tk.Label(config_frame, text="Derslere Git:", font=('Segoe UI', 9, 'bold'), bg=self.colors['card'], fg=self.colors['success']).pack(side=tk.LEFT)
-        self.ozet_main_nav_var = tk.StringVar(value="Ders Seçiniz...")
+        self.ozet_main_nav_var = tk.StringVar(value="Tümü")
         self.ozet_main_nav_combo = ttk.Combobox(config_frame, textvariable=self.ozet_main_nav_var, state="readonly", width=25, style='Modern.TCombobox')
         self.ozet_main_nav_combo.pack(side=tk.LEFT, padx=(5, 15))
 
         tk.Label(config_frame, text="Konuya Git:", font=('Segoe UI', 9, 'bold'), bg=self.colors['card'], fg=self.colors['accent']).pack(side=tk.LEFT)
-        self.ozet_nav_var = tk.StringVar(value="Seçiniz...")
+        self.ozet_nav_var = tk.StringVar(value="Tümü")
         self.ozet_nav_combo = ttk.Combobox(config_frame, textvariable=self.ozet_nav_var, state="readonly", width=30, style='Modern.TCombobox')
         self.ozet_nav_combo.pack(side=tk.LEFT, padx=(5, 15))
         
@@ -2474,9 +2474,29 @@ class ModernDKABQuiz:
             self.ozet_current_index = 0
 
         parsed_topics = []
+        main_category_to_topics = {}
+        current_main_cat = "DİĞER"
         current_topic_name = "Tümü"
         current_topic_sentences = []
         
+        main_categories_map = {
+            "SİYER": "Siyer",
+            "HADİS": "Hadis",
+            "TEFSİR": "Tefsir",
+            "FIKIH": "Fıkıh",
+            "KELAM": "Kelam / Akaid",
+            "AKAİD": "Kelam / Akaid",
+            "DİN SOSYOLOJİSİ": "Din Sosyolojisi",
+            "DİN PSİKOLOJİSİ": "Din Psikolojisi",
+            "DİNLER TARİHİ": "Dinler Tarihi",
+            "DİN EĞİTİMİ": "Din Eğitimi",
+            "İSLAM FELSEFESİ": "İslam Felsefesi",
+            "TASAVVUF": "İslam Ahlakı ve Tasavvuf",
+            "MEZHEPLER TARİHİ": "Mezhepler Tarihi",
+            "DİN HİZMETLERİ": "Din Hizmetleri ve Hitabet",
+            "İSLAM MEDENİYETİ": "İslam Kültür ve Medeniyeti"
+        }
+
         def text_normalize(text):
             t = text
             t = re.sub(r'\bVIII\.', 'Sekizinci ', t)
@@ -2497,6 +2517,16 @@ class ModernDKABQuiz:
             line = orig_line.strip()
             if not line: continue
             
+            # Check if this is a main category
+            is_main = False
+            for cat_key in main_categories_map:
+                if line.upper().startswith(cat_key) and len(line) < 40:
+                    current_main_cat = line
+                    if current_main_cat not in main_category_to_topics:
+                        main_category_to_topics[current_main_cat] = []
+                    is_main = True
+                    break
+            
             no_parens = re.sub(r'\(.*?\)', '', line).strip()
             is_header = False
             if no_parens:
@@ -2507,7 +2537,11 @@ class ModernDKABQuiz:
                         
             if is_header:
                 if current_topic_sentences:
-                    parsed_topics.append({"topic": current_topic_name, "sentences": current_topic_sentences})
+                    parsed_topics.append({"topic": current_topic_name, "sentences": current_topic_sentences, "main_cat": current_main_cat})
+                    if current_main_cat not in main_category_to_topics:
+                        main_category_to_topics[current_main_cat] = []
+                    main_category_to_topics[current_main_cat].append(current_topic_name)
+                
                 current_topic_name = line
                 current_topic_sentences = [{"raw": line, "norm": text_normalize(line)}]
             else:
@@ -2524,86 +2558,68 @@ class ModernDKABQuiz:
                         current_topic_sentences.append({"raw": raw_s, "norm": norm_s})
                         
         if current_topic_sentences:
-            parsed_topics.append({"topic": current_topic_name, "sentences": current_topic_sentences})
+            parsed_topics.append({"topic": current_topic_name, "sentences": current_topic_sentences, "main_cat": current_main_cat})
+            if current_main_cat not in main_category_to_topics:
+                main_category_to_topics[current_main_cat] = []
+            main_category_to_topics[current_main_cat].append(current_topic_name)
             
         self.ozet_topic_data = parsed_topics
         
-        # Main Category (Ders) navigation
-        main_categories = {
-            "SİYER": "Siyer",
-            "HADİS": "Hadis",
-            "TEFSİR": "Tefsir",
-            "FIKIH": "Fıkıh",
-            "KELAM": "Kelam / Akaid",
-            "AKAİD": "Kelam / Akaid",
-            "DİN SOSYOLOJİSİ": "Din Sosyolojisi",
-            "DİN PSİKOLOJİSİ": "Din Psikolojisi",
-            "DİNLER TARİHİ": "Dinler Tarihi",
-            "DİN EĞİTİMİ": "Din Eğitimi",
-            "İSLAM FELSEFESİ": "İslam Felsefesi",
-            "TASAVVUF": "İslam Ahlakı ve Tasavvuf",
-            "MEZHEPLER TARİHİ": "Mezhepler Tarihi",
-            "DİN HİZMETLERİ": "Din Hizmetleri ve Hitabet",
-            "İSLAM MEDENİYETİ": "İslam Kültür ve Medeniyeti"
-        }
+        # UI Setup for Hierarchical Filter
+        all_main_cats = ["Tümü"] + list(main_category_to_topics.keys())
+        self.ozet_main_nav_combo.config(values=all_main_cats)
         
-        found_main_topics = []
-        for cat_key in main_categories:
-            # Search for category as a standalone header line
-            for line in file_content.split('\n'):
-                if line.strip().upper().startswith(cat_key) and len(line.strip()) < 40:
-                    found_main_topics.append((line.strip(), main_categories[cat_key]))
-                    break
-        
-        # Sort found main topics by their position in the file
-        found_main_topics = sorted(found_main_topics, key=lambda x: file_content.find(x[0]))
-        self.ozet_main_nav_combo.config(values=[x[0] for x in found_main_topics])
+        def on_main_cat_change(*args):
+            selected_main = self.ozet_main_nav_var.get()
+            if selected_main == "Tümü" or selected_main == "Ders Seçiniz...":
+                all_sub_topics = ["Tümü"] + [t["topic"] for t in parsed_topics]
+                self.ozet_nav_combo.config(values=all_sub_topics)
+                self.ozet_nav_var.set("Tümü")
+            else:
+                sub_topics = ["Tümü"] + main_category_to_topics.get(selected_main, [])
+                self.ozet_nav_combo.config(values=sub_topics)
+                self.ozet_nav_var.set("Tümü")
+            
+            # Auto-navigate to main cat if not "Tümü"
+            if selected_main != "Tümü" and selected_main != "Ders Seçiniz...":
+                navigate_to_main_topic()
+
+        self.ozet_main_nav_var.trace_add("write", on_main_cat_change)
 
         def navigate_to_main_topic(event=None):
             selected = self.ozet_main_nav_var.get()
-            if not selected or selected == "Ders Seçiniz...":
+            if not selected or selected in ["Tümü", "Ders Seçiniz..."]:
                 return
             
             txt.config(state=tk.NORMAL)
             txt.tag_remove("main_nav_highlight", "1.0", tk.END)
-            
-            # Find exact match for the header line
             pos = txt.search(selected, "1.0", stopindex=tk.END)
             if pos:
                 txt.see(pos)
-                end_pos = f"{pos}+{len(selected)}c"
-                txt.tag_add("main_nav_highlight", pos, end_pos)
+                txt.tag_add("main_nav_highlight", pos, f"{pos}+{len(selected)}c")
                 txt.tag_configure("main_nav_highlight", background=self.colors['success'], foreground="white")
             txt.config(state=tk.DISABLED)
 
         self.ozet_main_nav_combo.bind("<<ComboboxSelected>>", navigate_to_main_topic)
 
-        topic_names = [t["topic"] for t in parsed_topics if t["topic"] != "Tümü"]
-        self.ozet_nav_combo.config(values=topic_names)
-        
-        audio_topic_names = ["Tümü"] + topic_names
-        self.ozet_topic_combo.config(values=audio_topic_names)
-        if self.ozet_topic_var.get() not in audio_topic_names:
-            self.ozet_topic_var.set("Tümü")
-
         def navigate_to_topic(event=None):
             selected = self.ozet_nav_var.get()
-            if not selected or selected == "Seçiniz...":
+            if not selected or selected in ["Tümü", "Seçiniz..."]:
                 return
             
             txt.config(state=tk.NORMAL)
             txt.tag_remove("nav_highlight", "1.0", tk.END)
-            
-            # Find the topic in the text
             pos = txt.search(selected, "1.0", stopindex=tk.END)
             if pos:
                 txt.see(pos)
-                end_pos = f"{pos}+{len(selected)}c"
-                txt.tag_add("nav_highlight", pos, end_pos)
+                txt.tag_add("nav_highlight", pos, f"{pos}+{len(selected)}c")
                 txt.tag_configure("nav_highlight", background=self.colors['accent'], foreground="white")
             txt.config(state=tk.DISABLED)
 
         self.ozet_nav_combo.bind("<<ComboboxSelected>>", navigate_to_topic)
+        
+        # Initial populate of sub topics
+        on_main_cat_change()
 
         def search_in_text(event=None):
             query = self.ozet_search_var.get().strip()
@@ -2654,23 +2670,32 @@ class ModernDKABQuiz:
         def build_play_queue():
             queue = []
             mode = self.ozet_mode_var.get()
-            selected = self.ozet_topic_var.get()
-            main_nav_selected = self.ozet_main_nav_var.get()
             
-            # If "Tümü" is selected for reading, but the user has navigated to a specific Ders,
-            # start the reading from that Ders.
-            if selected == "Tümü" and main_nav_selected != "Ders Seçiniz...":
-                selected = main_nav_selected
-                
+            # Decision Logic: Which topic to start from?
+            # 1. Check specific Topic Navigation
+            selected = self.ozet_nav_var.get()
+            if not selected or selected in ["Tümü", "Seçiniz..."]:
+                # 2. Check Ders Navigation
+                selected = self.ozet_main_nav_var.get()
+                if not selected or selected in ["Tümü", "Ders Seçiniz..."]:
+                    # 3. Fallback to old Audio Topic var
+                    selected = self.ozet_topic_var.get()
+            
             try: loops = max(1, int(self.ozet_repeat_var.get()))
             except: loops = 1
             
             selected_blocks = []
             if mode == "Sırayla Oku" and selected != "Tümü":
-                start_idx = next((i for i, t in enumerate(self.ozet_topic_data) if t["topic"] == selected), 0)
+                # Find the first occurrence of either the main_cat or the topic
+                start_idx = 0
+                for i, t in enumerate(self.ozet_topic_data):
+                    if t["topic"] == selected or t["main_cat"] == selected:
+                        start_idx = i
+                        break
                 selected_blocks = self.ozet_topic_data[start_idx:]
             elif mode == "Sadece Seçili" and selected != "Tümü":
-                selected_blocks = [t for t in self.ozet_topic_data if t["topic"] == selected]
+                # If a Ders is selected, read all topics belonging to that Ders
+                selected_blocks = [t for t in self.ozet_topic_data if t["topic"] == selected or t["main_cat"] == selected]
             else:
                 selected_blocks = list(self.ozet_topic_data)
                 
