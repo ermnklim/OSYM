@@ -452,7 +452,7 @@ class OfflineTurkishTTS:
                 pass
 
     def _speed_to_length_scale(self, speed_value):
-        speed_value = max(0.7, min(1.6, float(speed_value)))
+        speed_value = max(0.5, min(2.0, float(speed_value)))
         return round(1.0 / speed_value, 3)
 
     def stop(self):
@@ -2427,7 +2427,11 @@ class ModernDKABQuiz:
         tk.Label(audio_config_frame, text="Tur:", font=('Segoe UI', 9), bg=self.colors['card'], fg=self.colors['text']).pack(side=tk.LEFT)
         self.ozet_repeat_var = tk.StringVar(value="1")
         ozet_repeat_spin = tk.Spinbox(audio_config_frame, from_=1, to=100, textvariable=self.ozet_repeat_var, width=4)
-        ozet_repeat_spin.pack(side=tk.LEFT, padx=(5, 0))
+        ozet_repeat_spin.pack(side=tk.LEFT, padx=(5, 10))
+        
+        tk.Label(audio_config_frame, text="Hız:", font=('Segoe UI', 9), bg=self.colors['card'], fg=self.colors['text']).pack(side=tk.LEFT)
+        speed_scale = tk.Scale(audio_config_frame, from_=0.5, to=2.0, resolution=0.1, orient=tk.HORIZONTAL, variable=self.speech_rate_var, showvalue=True, width=10, length=80, bg=self.colors['card'], fg=self.colors['text'], highlightthickness=0, troughcolor=self.colors['bg'])
+        speed_scale.pack(side=tk.LEFT, padx=(5, 0))
         
         self.ozet_follow_var = tk.BooleanVar(value=True)
         tk.Checkbutton(audio_config_frame, text="Takip Et", variable=self.ozet_follow_var, bg=self.colors['card'], fg=self.colors['text'], font=('Segoe UI', 9), selectcolor=self.colors['bg']).pack(side=tk.LEFT, padx=(10, 0))
@@ -2448,6 +2452,49 @@ class ModernDKABQuiz:
         
         scroll.pack(side=tk.RIGHT, fill=tk.Y)
         txt.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+        # Right-click menu for notes
+        def add_personal_note():
+            try:
+                selected_text = txt.get(tk.SEL_FIRST, tk.SEL_LAST).strip()
+                if not selected_text: return
+            except:
+                return
+                
+            note_win = tk.Toplevel(self.root)
+            note_win.title("Not Ekle")
+            note_win.geometry("400x300")
+            note_win.configure(bg=self.colors['bg'])
+            
+            tk.Label(note_win, text=f"Seçili Metin: {selected_text[:50]}...", font=('Segoe UI', 9, 'italic'), bg=self.colors['bg'], fg=self.colors['text_secondary']).pack(pady=10)
+            note_entry = tk.Text(note_win, height=8, width=40, bg=self.colors['card'], fg=self.colors['text'], insertbackground=self.colors['text'])
+            note_entry.pack(padx=20, pady=5)
+            
+            def save_note():
+                note = note_entry.get("1.0", tk.END).strip()
+                if note:
+                    notes_file = self.base_dir / "ozet_notlarim.txt"
+                    with open(notes_file, "a", encoding="utf-8") as f:
+                        f.write(f"\n--- {time.strftime('%Y-%m-%d %H:%M')} ---\n")
+                        f.write(f"Metin: {selected_text}\n")
+                        f.write(f"Not: {note}\n")
+                    messagebox.showinfo("Başarılı", "Notunuz 'ozet_notlarim.txt' dosyasına kaydedildi.")
+                    note_win.destroy()
+            
+            self.create_button(note_win, "KAYDET", save_note, self.colors['success']).pack(pady=10)
+
+        def show_context_menu(event):
+            menu = tk.Menu(self.root, tearoff=0, bg=self.colors['card'], fg=self.colors['text'])
+            menu.add_command(label="Not Ekle", command=add_personal_note)
+            menu.post(event.x_root, event.y_row) # Wait, it should be x_root, y_root
+            
+        # Re-defining show_context_menu properly
+        def show_context_menu(event):
+            menu = tk.Menu(self.root, tearoff=0, bg=self.colors['card'], fg=self.colors['text'])
+            menu.add_command(label="📝 Seçili Metne Not Ekle", command=add_personal_note)
+            menu.post(event.x_root, event.y_root)
+
+        txt.bind("<Button-3>", show_context_menu)
         
         ozet_file = self.base_dir / "dkab_kodlamali_ozet.txt"
         file_content = "DKAB Kodlamalı Özet dosyası (dkab_kodlamali_ozet.txt) bulunamadı veya boş."
@@ -2475,10 +2522,19 @@ class ModernDKABQuiz:
 
         parsed_topics = []
         main_category_to_topics = {}
+        main_category_counts = {}
+        topic_counts = {}
         current_main_cat = "DİĞER"
         current_topic_name = "Giriş"
         current_topic_sentences = []
         
+        def count_questions_in_text(text):
+            # Format: (çıkmış sorular: 2025 öabt 25. soru, 2024 öabt 1. soru)
+            match = re.search(r"\(çıkmış sorular:? (.*?)\)", text)
+            if match:
+                return len(match.group(1).split(","))
+            return 0
+
         # Strict Main Lessons based on README.md standards (L70-88)
         STANDARD_DERSLER = [
             "Kur'an-ı Kerim ve Tecvid",
@@ -2541,6 +2597,8 @@ class ModernDKABQuiz:
             line = orig_line.strip()
             if not line: continue
             
+            q_count = count_questions_in_text(line)
+            
             # 1. Check if this is a MAIN LESSON (Ders)
             matched_ders = is_ders_header(line)
             if matched_ders:
@@ -2555,6 +2613,7 @@ class ModernDKABQuiz:
                 current_main_cat = matched_ders
                 current_topic_name = "Giriş / Genel"
                 current_topic_sentences = [{"raw": line, "norm": text_normalize(line)}]
+                main_category_counts[current_main_cat] = main_category_counts.get(current_main_cat, 0) + q_count
                 continue
 
             # 2. Check if this is a SUB TOPIC (Konu)
@@ -2580,8 +2639,12 @@ class ModernDKABQuiz:
                 
                 current_topic_name = line
                 current_topic_sentences = [{"raw": line, "norm": text_normalize(line)}]
+                topic_counts[current_topic_name] = topic_counts.get(current_topic_name, 0) + q_count
+                main_category_counts[current_main_cat] = main_category_counts.get(current_main_cat, 0) + q_count
             else:
                 # 3. Regular Sentence
+                topic_counts[current_topic_name] = topic_counts.get(current_topic_name, 0) + q_count
+                main_category_counts[current_main_cat] = main_category_counts.get(current_main_cat, 0) + q_count
                 raw_temp = line
                 for abbr in ['HZ', 'Hz', 'hz', 'S.A.V', 'A.S', 'R.A', 'vs', 'vb', 'b', 'B']:
                     raw_temp = re.sub(fr'\b{abbr}\.', f'{abbr}_DOT_', raw_temp, flags=re.IGNORECASE)
@@ -2604,11 +2667,20 @@ class ModernDKABQuiz:
         self.ozet_topic_data = parsed_topics
         
         # UI Setup for Hierarchical Filter
+        def format_label(name, count):
+            return f"{name} ({count})" if count > 0 else name
+
         all_main_cats = ["Tümü"] + sorted(list(main_category_to_topics.keys()), key=lambda x: file_content.find(x) if x in file_content else 9999)
-        self.ozet_main_nav_combo.config(values=all_main_cats)
+        main_cat_labels = [format_label(c, main_category_counts.get(c, 0)) for c in all_main_cats]
+        self.ozet_main_nav_combo.config(values=main_cat_labels)
+        
+        # Mapping from labels back to original names
+        self._main_label_to_name = {format_label(c, main_category_counts.get(c, 0)): c for c in all_main_cats}
         
         def on_main_cat_change(*args):
-            selected_main = self.ozet_main_nav_var.get()
+            label = self.ozet_main_nav_var.get()
+            selected_main = self._main_label_to_name.get(label, "Tümü")
+            
             if selected_main == "Tümü" or selected_main == "Ders Seçiniz...":
                 # List all unique sub-topics
                 all_subs = []
@@ -2617,11 +2689,17 @@ class ModernDKABQuiz:
                     if t["topic"] not in seen:
                         all_subs.append(t["topic"])
                         seen.add(t["topic"])
-                self.ozet_nav_combo.config(values=["Tümü"] + all_subs)
+                sub_labels = ["Tümü"] + [format_label(s, topic_counts.get(s, 0)) for s in all_subs]
+                self._sub_label_to_name = {format_label(s, topic_counts.get(s, 0)): s for s in all_subs}
+                self._sub_label_to_name["Tümü"] = "Tümü"
+                self.ozet_nav_combo.config(values=sub_labels)
                 self.ozet_nav_var.set("Tümü")
             else:
-                sub_topics = ["Tümü"] + main_category_to_topics.get(selected_main, [])
-                self.ozet_nav_combo.config(values=sub_topics)
+                sub_topics = main_category_to_topics.get(selected_main, [])
+                sub_labels = ["Tümü"] + [format_label(s, topic_counts.get(s, 0)) for s in sub_topics]
+                self._sub_label_to_name = {format_label(s, topic_counts.get(s, 0)): s for s in sub_topics}
+                self._sub_label_to_name["Tümü"] = "Tümü"
+                self.ozet_nav_combo.config(values=sub_labels)
                 self.ozet_nav_var.set("Tümü")
             
             if selected_main != "Tümü" and selected_main != "Ders Seçiniz...":
@@ -2630,7 +2708,8 @@ class ModernDKABQuiz:
         self.ozet_main_nav_var.trace_add("write", on_main_cat_change)
 
         def navigate_to_main_topic(event=None):
-            selected = self.ozet_main_nav_var.get()
+            label = self.ozet_main_nav_var.get()
+            selected = self._main_label_to_name.get(label, "Tümü")
             if not selected or selected in ["Tümü", "Ders Seçiniz..."]:
                 return
             
@@ -2638,31 +2717,22 @@ class ModernDKABQuiz:
             txt.tag_remove("main_nav_highlight", "1.0", tk.END)
             
             # Find exact line starting with lesson name (case-insensitive for text vs list)
-            # Use regex to find line starting with lesson name and possibly some whitespace/newlines
-            # search with regexp=True and look for ^pattern$
             search_pattern = tr_upper(selected)
             
-            # Since Tkinter's ^ matches start of buffer, not line in search,
-            # we iterate through the text to find the exact line header
             pos = "1.0"
             while True:
                 pos = txt.search(search_pattern, pos, stopindex=tk.END, nocase=True)
                 if not pos:
                     break
                 
-                # Check if this position is at the start of a line
                 if pos.split('.')[1] == '0':
-                    # Check if the line content is exactly the header
                     line_end = txt.index(f"{pos} lineend")
                     line_content = txt.get(pos, line_end).strip()
-                    # Use tr_upper to compare to handle cases like "Din Felsefesi" vs "DİN FELSEFESİ"
                     if tr_upper(line_content).startswith(search_pattern):
                         txt.see(pos)
                         txt.tag_add("main_nav_highlight", pos, line_end)
                         txt.tag_configure("main_nav_highlight", background=self.colors['success'], foreground="white")
                         break
-                
-                # If not found, move to next line and keep searching
                 pos = f"{pos}+1c"
             
             txt.config(state=tk.DISABLED)
@@ -2670,28 +2740,26 @@ class ModernDKABQuiz:
         self.ozet_main_nav_combo.bind("<<ComboboxSelected>>", navigate_to_main_topic)
 
         def navigate_to_topic(event=None):
-            selected = self.ozet_nav_var.get()
+            label = self.ozet_nav_var.get()
+            selected = getattr(self, '_sub_label_to_name', {}).get(label, label)
             if not selected or selected in ["Tümü", "Seçiniz..."]:
                 return
             
             txt.config(state=tk.NORMAL)
             txt.tag_remove("nav_highlight", "1.0", tk.END)
             
-            # Search for topic header at start of line
             pos = "1.0"
             while True:
                 pos = txt.search(selected, pos, stopindex=tk.END)
                 if not pos:
                     break
                 
-                # Check if it's a header line
                 if pos.split('.')[1] == '0':
                     line_end = txt.index(f"{pos} lineend")
                     txt.see(pos)
                     txt.tag_add("nav_highlight", pos, line_end)
                     txt.tag_configure("nav_highlight", background=self.colors['accent'], foreground="white")
                     break
-                
                 pos = f"{pos}+1c"
                 
             txt.config(state=tk.DISABLED)
