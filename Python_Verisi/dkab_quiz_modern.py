@@ -2476,26 +2476,17 @@ class ModernDKABQuiz:
         parsed_topics = []
         main_category_to_topics = {}
         current_main_cat = "DİĞER"
-        current_topic_name = "Tümü"
+        current_topic_name = "Giriş"
         current_topic_sentences = []
         
-        main_categories_map = {
-            "SİYER": "Siyer",
-            "HADİS": "Hadis",
-            "TEFSİR": "Tefsir",
-            "FIKIH": "Fıkıh",
-            "KELAM": "Kelam / Akaid",
-            "AKAİD": "Kelam / Akaid",
-            "DİN SOSYOLOJİSİ": "Din Sosyolojisi",
-            "DİN PSİKOLOJİSİ": "Din Psikolojisi",
-            "DİNLER TARİHİ": "Dinler Tarihi",
-            "DİN EĞİTİMİ": "Din Eğitimi",
-            "İSLAM FELSEFESİ": "İslam Felsefesi",
-            "TASAVVUF": "İslam Ahlakı ve Tasavvuf",
-            "MEZHEPLER TARİHİ": "Mezhepler Tarihi",
-            "DİN HİZMETLERİ": "Din Hizmetleri ve Hitabet",
-            "İSLAM MEDENİYETİ": "İslam Kültür ve Medeniyeti"
-        }
+        # Strict Main Lessons based on README.md standards
+        STANDARD_DERSLER = [
+            "SİYER", "HADİS", "TEFSİR", "FIKIH", "KELAM", "AKAİD", 
+            "DİN SOSYOLOJİSİ", "DİN PSİKOLOJİSİ", "DİNLER TARİHİ", 
+            "DİN EĞİTİMİ", "İSLAM FELSEFESİ", "TASAVVUF", 
+            "MEZHEPLER TARİHİ", "DİN HİZMETLERİ", "İSLAM MEDENİYETİ",
+            "TECVİD", "KUR'AN-I KERİM"
+        ]
 
         def text_normalize(text):
             t = text
@@ -2517,34 +2508,49 @@ class ModernDKABQuiz:
             line = orig_line.strip()
             if not line: continue
             
-            # Check if this is a main category
+            # 1. Check if this is a MAIN LESSON (Ders)
             is_main = False
-            for cat_key in main_categories_map:
-                if line.upper().startswith(cat_key) and len(line) < 40:
+            for ders_key in STANDARD_DERSLER:
+                if line.upper().startswith(ders_key) and len(line) < 45:
+                    # Save previous topic before starting new Ders
+                    if current_topic_sentences:
+                        parsed_topics.append({"topic": current_topic_name, "sentences": current_topic_sentences, "main_cat": current_main_cat})
+                        if current_main_cat not in main_category_to_topics:
+                            main_category_to_topics[current_main_cat] = []
+                        if current_topic_name not in main_category_to_topics[current_main_cat]:
+                            main_category_to_topics[current_main_cat].append(current_topic_name)
+                    
                     current_main_cat = line
-                    if current_main_cat not in main_category_to_topics:
-                        main_category_to_topics[current_main_cat] = []
+                    current_topic_name = "Giriş / Genel" # Reset topic name for new ders
+                    current_topic_sentences = [{"raw": line, "norm": text_normalize(line)}]
                     is_main = True
                     break
             
+            if is_main: continue
+
+            # 2. Check if this is a SUB TOPIC (Konu)
+            # Conditions for sub-topic: Uppercase, not too long, not in main lessons
             no_parens = re.sub(r'\(.*?\)', '', line).strip()
-            is_header = False
+            is_sub_header = False
             if no_parens:
                 alpha_chars = [c for c in no_parens if c.isalpha()]
                 if alpha_chars and all(c.isupper() for c in alpha_chars):
-                    if not no_parens.endswith(':') or len(no_parens) > 20:
-                        is_header = True
-                        
-            if is_header:
+                    if not no_parens.endswith(':') or len(no_parens) > 15:
+                        is_sub_header = True
+            
+            if is_sub_header:
+                # Save previous topic
                 if current_topic_sentences:
                     parsed_topics.append({"topic": current_topic_name, "sentences": current_topic_sentences, "main_cat": current_main_cat})
                     if current_main_cat not in main_category_to_topics:
                         main_category_to_topics[current_main_cat] = []
-                    main_category_to_topics[current_main_cat].append(current_topic_name)
+                    if current_topic_name not in main_category_to_topics[current_main_cat]:
+                        main_category_to_topics[current_main_cat].append(current_topic_name)
                 
                 current_topic_name = line
                 current_topic_sentences = [{"raw": line, "norm": text_normalize(line)}]
             else:
+                # 3. Regular Sentence
                 raw_temp = line
                 for abbr in ['HZ', 'Hz', 'hz', 'S.A.V', 'A.S', 'R.A', 'vs', 'vb', 'b', 'B']:
                     raw_temp = re.sub(fr'\b{abbr}\.', f'{abbr}_DOT_', raw_temp, flags=re.IGNORECASE)
@@ -2561,26 +2567,32 @@ class ModernDKABQuiz:
             parsed_topics.append({"topic": current_topic_name, "sentences": current_topic_sentences, "main_cat": current_main_cat})
             if current_main_cat not in main_category_to_topics:
                 main_category_to_topics[current_main_cat] = []
-            main_category_to_topics[current_main_cat].append(current_topic_name)
+            if current_topic_name not in main_category_to_topics[current_main_cat]:
+                main_category_to_topics[current_main_cat].append(current_topic_name)
             
         self.ozet_topic_data = parsed_topics
         
         # UI Setup for Hierarchical Filter
-        all_main_cats = ["Tümü"] + list(main_category_to_topics.keys())
+        all_main_cats = ["Tümü"] + sorted(list(main_category_to_topics.keys()), key=lambda x: file_content.find(x) if x in file_content else 9999)
         self.ozet_main_nav_combo.config(values=all_main_cats)
         
         def on_main_cat_change(*args):
             selected_main = self.ozet_main_nav_var.get()
             if selected_main == "Tümü" or selected_main == "Ders Seçiniz...":
-                all_sub_topics = ["Tümü"] + [t["topic"] for t in parsed_topics]
-                self.ozet_nav_combo.config(values=all_sub_topics)
+                # List all unique sub-topics
+                all_subs = []
+                seen = set()
+                for t in parsed_topics:
+                    if t["topic"] not in seen:
+                        all_subs.append(t["topic"])
+                        seen.add(t["topic"])
+                self.ozet_nav_combo.config(values=["Tümü"] + all_subs)
                 self.ozet_nav_var.set("Tümü")
             else:
                 sub_topics = ["Tümü"] + main_category_to_topics.get(selected_main, [])
                 self.ozet_nav_combo.config(values=sub_topics)
                 self.ozet_nav_var.set("Tümü")
             
-            # Auto-navigate to main cat if not "Tümü"
             if selected_main != "Tümü" and selected_main != "Ders Seçiniz...":
                 navigate_to_main_topic()
 
