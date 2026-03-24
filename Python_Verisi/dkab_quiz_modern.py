@@ -2469,6 +2469,7 @@ class ModernDKABQuiz:
             t = re.sub(r'\bII\.', 'İkinci ', t)
             t = re.sub(r'\bI\.', 'Birinci ', t)
             t = re.sub(r'(?i)\bhz\.\s*', 'Hazreti ', t)
+            t = re.sub(r'(?i)\bb\.\s*', 'bin ', t)
             for abbr in ['S.A.V', 'A.S', 'R.A', 'vs', 'vb']:
                 t = re.sub(fr'\b{abbr}\.', f'{abbr}_DOT_', t, flags=re.IGNORECASE)
             return t
@@ -2492,7 +2493,7 @@ class ModernDKABQuiz:
                 current_topic_sentences = [{"raw": line, "norm": text_normalize(line)}]
             else:
                 raw_temp = line
-                for abbr in ['HZ', 'Hz', 'hz', 'S.A.V', 'A.S', 'R.A', 'vs', 'vb']:
+                for abbr in ['HZ', 'Hz', 'hz', 'S.A.V', 'A.S', 'R.A', 'vs', 'vb', 'b', 'B']:
                     raw_temp = re.sub(fr'\b{abbr}\.', f'{abbr}_DOT_', raw_temp, flags=re.IGNORECASE)
                 for rom in ['VIII', 'VII', 'VI', 'IV', 'V', 'III', 'II', 'I']:
                     raw_temp = re.sub(fr'\b{rom}\.\s+', f'{rom}_DOT_ ', raw_temp)
