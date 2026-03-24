@@ -2479,14 +2479,47 @@ class ModernDKABQuiz:
         current_topic_name = "Giriş"
         current_topic_sentences = []
         
-        # Strict Main Lessons based on README.md standards
+        # Strict Main Lessons based on README.md standards (L70-88)
         STANDARD_DERSLER = [
-            "SİYER", "HADİS", "TEFSİR", "FIKIH", "KELAM", "AKAİD", 
-            "DİN SOSYOLOJİSİ", "DİN PSİKOLOJİSİ", "DİNLER TARİHİ", 
-            "DİN EĞİTİMİ", "İSLAM FELSEFESİ", "TASAVVUF", 
-            "MEZHEPLER TARİHİ", "DİN HİZMETLERİ", "İSLAM MEDENİYETİ",
-            "TECVİD", "KUR'AN-I KERİM"
+            "Kur'an-ı Kerim ve Tecvid",
+            "Tefsir",
+            "Hadis",
+            "Fıkıh",
+            "Fıkıh Usulü",
+            "Kelam / Akaid",
+            "İslam Mezhepleri ve Akımları",
+            "İslam Tarihi",
+            "Siyer",
+            "İslam Kültür ve Medeniyeti",
+            "İslam Felsefesi",
+            "Din Felsefesi",
+            "Din Sosyolojisi",
+            "Din Psikolojisi",
+            "Din Eğitimi",
+            "Dinler Tarihi",
+            "İslam Ahlakı ve Tasavvuf",
+            "Mezhepler Tarihi",
+            "Din Hizmetleri ve Hitabet"
         ]
+
+        def tr_upper(text):
+            return text.replace('i', 'İ').replace('ı', 'I').upper()
+
+        def is_ders_header(line):
+            line_clean = line.strip()
+            if not line_clean: return None
+            
+            line_upper = tr_upper(line_clean)
+            
+            # ONLY match against STANDARD_DERSLER from README
+            for ders in STANDARD_DERSLER:
+                ders_upper = tr_upper(ders)
+                # Check if line matches the ders name (ignoring punctuation/case)
+                pattern = r'^' + re.escape(ders_upper) + r'($|[:\s\-])'
+                if re.match(pattern, line_upper):
+                    return ders
+            
+            return None
 
         def text_normalize(text):
             t = text
@@ -2509,34 +2542,32 @@ class ModernDKABQuiz:
             if not line: continue
             
             # 1. Check if this is a MAIN LESSON (Ders)
-            is_main = False
-            for ders_key in STANDARD_DERSLER:
-                if line.upper().startswith(ders_key) and len(line) < 45:
-                    # Save previous topic before starting new Ders
-                    if current_topic_sentences:
-                        parsed_topics.append({"topic": current_topic_name, "sentences": current_topic_sentences, "main_cat": current_main_cat})
-                        if current_main_cat not in main_category_to_topics:
-                            main_category_to_topics[current_main_cat] = []
-                        if current_topic_name not in main_category_to_topics[current_main_cat]:
-                            main_category_to_topics[current_main_cat].append(current_topic_name)
-                    
-                    current_main_cat = line
-                    current_topic_name = "Giriş / Genel" # Reset topic name for new ders
-                    current_topic_sentences = [{"raw": line, "norm": text_normalize(line)}]
-                    is_main = True
-                    break
-            
-            if is_main: continue
+            matched_ders = is_ders_header(line)
+            if matched_ders:
+                # Save previous topic
+                if current_topic_sentences:
+                    parsed_topics.append({"topic": current_topic_name, "sentences": current_topic_sentences, "main_cat": current_main_cat})
+                    if current_main_cat not in main_category_to_topics:
+                        main_category_to_topics[current_main_cat] = []
+                    if current_topic_name not in main_category_to_topics[current_main_cat]:
+                        main_category_to_topics[current_main_cat].append(current_topic_name)
+                
+                current_main_cat = matched_ders
+                current_topic_name = "Giriş / Genel"
+                current_topic_sentences = [{"raw": line, "norm": text_normalize(line)}]
+                continue
 
             # 2. Check if this is a SUB TOPIC (Konu)
-            # Conditions for sub-topic: Uppercase, not too long, not in main lessons
+            # Conditions for sub-topic: Uppercase, not too long, NOT a ders
             no_parens = re.sub(r'\(.*?\)', '', line).strip()
             is_sub_header = False
             if no_parens:
                 alpha_chars = [c for c in no_parens if c.isalpha()]
                 if alpha_chars and all(c.isupper() for c in alpha_chars):
-                    if not no_parens.endswith(':') or len(no_parens) > 15:
-                        is_sub_header = True
+                    # It's uppercase but NOT one of the main lessons
+                    if not is_ders_header(no_parens):
+                        if not no_parens.endswith(':') or len(no_parens) > 15:
+                            is_sub_header = True
             
             if is_sub_header:
                 # Save previous topic
@@ -2605,11 +2636,35 @@ class ModernDKABQuiz:
             
             txt.config(state=tk.NORMAL)
             txt.tag_remove("main_nav_highlight", "1.0", tk.END)
-            pos = txt.search(selected, "1.0", stopindex=tk.END)
-            if pos:
-                txt.see(pos)
-                txt.tag_add("main_nav_highlight", pos, f"{pos}+{len(selected)}c")
-                txt.tag_configure("main_nav_highlight", background=self.colors['success'], foreground="white")
+            
+            # Find exact line starting with lesson name (case-insensitive for text vs list)
+            # Use regex to find line starting with lesson name and possibly some whitespace/newlines
+            # search with regexp=True and look for ^pattern$
+            search_pattern = tr_upper(selected)
+            
+            # Since Tkinter's ^ matches start of buffer, not line in search,
+            # we iterate through the text to find the exact line header
+            pos = "1.0"
+            while True:
+                pos = txt.search(search_pattern, pos, stopindex=tk.END, nocase=True)
+                if not pos:
+                    break
+                
+                # Check if this position is at the start of a line
+                if pos.split('.')[1] == '0':
+                    # Check if the line content is exactly the header
+                    line_end = txt.index(f"{pos} lineend")
+                    line_content = txt.get(pos, line_end).strip()
+                    # Use tr_upper to compare to handle cases like "Din Felsefesi" vs "DİN FELSEFESİ"
+                    if tr_upper(line_content).startswith(search_pattern):
+                        txt.see(pos)
+                        txt.tag_add("main_nav_highlight", pos, line_end)
+                        txt.tag_configure("main_nav_highlight", background=self.colors['success'], foreground="white")
+                        break
+                
+                # If not found, move to next line and keep searching
+                pos = f"{pos}+1c"
+            
             txt.config(state=tk.DISABLED)
 
         self.ozet_main_nav_combo.bind("<<ComboboxSelected>>", navigate_to_main_topic)
@@ -2621,11 +2676,24 @@ class ModernDKABQuiz:
             
             txt.config(state=tk.NORMAL)
             txt.tag_remove("nav_highlight", "1.0", tk.END)
-            pos = txt.search(selected, "1.0", stopindex=tk.END)
-            if pos:
-                txt.see(pos)
-                txt.tag_add("nav_highlight", pos, f"{pos}+{len(selected)}c")
-                txt.tag_configure("nav_highlight", background=self.colors['accent'], foreground="white")
+            
+            # Search for topic header at start of line
+            pos = "1.0"
+            while True:
+                pos = txt.search(selected, pos, stopindex=tk.END)
+                if not pos:
+                    break
+                
+                # Check if it's a header line
+                if pos.split('.')[1] == '0':
+                    line_end = txt.index(f"{pos} lineend")
+                    txt.see(pos)
+                    txt.tag_add("nav_highlight", pos, line_end)
+                    txt.tag_configure("nav_highlight", background=self.colors['accent'], foreground="white")
+                    break
+                
+                pos = f"{pos}+1c"
+                
             txt.config(state=tk.DISABLED)
 
         self.ozet_nav_combo.bind("<<ComboboxSelected>>", navigate_to_topic)
