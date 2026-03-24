@@ -2582,6 +2582,51 @@ class ModernDKABQuiz:
 
         def text_normalize(text):
             t = text
+            # Rakam normalleştirme (Örn: 1. -> Birinci, 2025 -> İki bin yirmi beş)
+            def num_to_tr(match):
+                num_str = match.group(1)
+                is_ordinal = match.group(2) == '.'
+                
+                try:
+                    n = int(num_str)
+                    units = ["", "bir", "iki", "üç", "dört", "beş", "altı", "yedi", "sekiz", "dokuz"]
+                    tens = ["", "on", "yirmi", "otuz", "kırk", "elli", "altmış", "yetmiş", "seksen", "doksan"]
+                    
+                    if n == 0: return "sıfır" + ("ıncı" if is_ordinal else "")
+                    
+                    res = ""
+                    # Binler
+                    if n >= 1000:
+                        b = n // 1000
+                        if b > 1: res += units[b] + " bin "
+                        else: res += "bin "
+                        n %= 1000
+                    # Yüzler
+                    if n >= 100:
+                        y = n // 100
+                        if y > 1: res += units[y] + " yüz "
+                        else: res += "yüz "
+                        n %= 100
+                    # Onlar ve Birler
+                    if n >= 10:
+                        res += tens[n // 10] + " "
+                        n %= 10
+                    if n > 0:
+                        res += units[n] + " "
+                    
+                    res = res.strip()
+                    if is_ordinal:
+                        # Basit sıra sayısı eki (detaylı uyum için geliştirilebilir ama bu çoğu işi çözer)
+                        last_char = res[-1]
+                        if last_char in "aiıuü": res += "ncı"
+                        else: res += "inci"
+                    return res
+                except:
+                    return num_str
+
+            # Rakamları bul ve değiştir (Örn: 2025 veya 1.)
+            t = re.sub(r'(\d+)(\.)?', num_to_tr, t)
+
             t = re.sub(r'\bVIII\.', 'Sekizinci ', t)
             t = re.sub(r'\bVII\.', 'Yedinci ', t)
             t = re.sub(r'\bVI\.', 'Altıncı ', t)
