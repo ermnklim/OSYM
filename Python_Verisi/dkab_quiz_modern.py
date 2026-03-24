@@ -2421,12 +2421,61 @@ class ModernDKABQuiz:
         txt.insert(tk.END, file_content)
         txt.config(state=tk.DISABLED)
         
+        import re
+        self.ozet_sentences = []
+        if file_content:
+            for line in file_content.split('\n'):
+                for sentence in re.split(r'(?<=[.!?])\s+', line):
+                    if sentence.strip():
+                        self.ozet_sentences.append(sentence.strip())
+                        
+        if not hasattr(self, 'ozet_current_index'):
+            self.ozet_current_index = 0
+            
+        def play_next_sentence():
+            if self.current_view != "kodlamali_ozet" or not self.ozet_sentences:
+                return
+                
+            if self.ozet_current_index >= len(self.ozet_sentences):
+                self._set_speech_status("Özet okuması tamamlandı.")
+                self.ozet_current_index = 0
+                return
+                
+            sentence = self.ozet_sentences[self.ozet_current_index]
+            self.ozet_current_index += 1
+            
+            self._cancel_speech_sequence()
+            seq_token = self._speech_sequence_token
+            
+            self.speak_text(
+                sentence,
+                status_prefix=f"Özet ({self.ozet_current_index}/{len(self.ozet_sentences)})",
+                on_finished=play_next_sentence,
+                sequence_token=seq_token
+            )
+
         def read_aloud():
             self.stop_speech()
             if not self.speech_engine.is_available():
                 messagebox.showerror("Hata", "Çevrimdışı Türkçe ses modeli bulunamadı.")
                 return
-            self.speak_text(file_content, status_prefix="Özet Okunuyor")
+            if not self.ozet_sentences:
+                self._set_speech_status("Okunacak metin yok.")
+                return
+            
+            if self.ozet_current_index > 0 and self.ozet_current_index < len(self.ozet_sentences):
+                self.ozet_current_index -= 1
+                
+            play_next_sentence()
+            
+        def read_from_start():
+            self.stop_speech()
+            self.ozet_current_index = 0
+            read_aloud()
+            
+        def stop_aloud():
+            self.stop_speech()
+            self._set_speech_status(f"Durduruldu. Kaldığı yer: {self.ozet_current_index}/{len(self.ozet_sentences)}")
             
         def edit_file():
             if str(os.name) == 'nt':
@@ -2435,15 +2484,19 @@ class ModernDKABQuiz:
                 messagebox.showinfo("Bilgi", "Dosyayı manuel olarak düzenleyin:\n" + str(ozet_file))
                 
         def refresh_text():
+            self.ozet_current_index = 0
             self.show_kodlamali_ozet()
 
-        read_btn = self.create_button(controls, "🔊 SESLİ OKU", read_aloud, self.colors['primary'])
+        read_btn = self.create_button(controls, "▶️ OKU / DEVAM", read_aloud, self.colors['primary'])
         read_btn.pack(side=tk.LEFT, padx=(0, 10))
         
-        stop_btn = self.create_button(controls, "⏹️ DURDUR", self.stop_speech, self.colors['danger'])
+        restart_btn = self.create_button(controls, "⏮️ BAŞTAN OKU", read_from_start, self.colors['accent'])
+        restart_btn.pack(side=tk.LEFT, padx=(0, 10))
+        
+        stop_btn = self.create_button(controls, "⏹️ DURDUR", stop_aloud, self.colors['danger'])
         stop_btn.pack(side=tk.LEFT, padx=(0, 10))
         
-        edit_btn = self.create_button(controls, "✏️ DOSYAYI AÇ/DÜZENLE", edit_file, self.colors['warning'])
+        edit_btn = self.create_button(controls, "✏️ AÇ/DÜZENLE", edit_file, self.colors['warning'])
         edit_btn.pack(side=tk.LEFT, padx=(0, 10))
 
         refresh_btn = self.create_button(controls, "🔄 YENİLE", refresh_text, self.colors['success'])
