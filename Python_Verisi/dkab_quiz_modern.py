@@ -2646,6 +2646,8 @@ class ModernDKABQuiz:
             self.ozet_current_index = 0
             
         self.ozet_topic_var.trace_add("write", on_config_change)
+        self.ozet_main_nav_var.trace_add("write", on_config_change)
+        self.ozet_nav_var.trace_add("write", on_config_change)
         self.ozet_mode_var.trace_add("write", on_config_change)
         self.ozet_repeat_var.trace_add("write", on_config_change)
 
@@ -2653,6 +2655,13 @@ class ModernDKABQuiz:
             queue = []
             mode = self.ozet_mode_var.get()
             selected = self.ozet_topic_var.get()
+            main_nav_selected = self.ozet_main_nav_var.get()
+            
+            # If "Tümü" is selected for reading, but the user has navigated to a specific Ders,
+            # start the reading from that Ders.
+            if selected == "Tümü" and main_nav_selected != "Ders Seçiniz...":
+                selected = main_nav_selected
+                
             try: loops = max(1, int(self.ozet_repeat_var.get()))
             except: loops = 1
             
