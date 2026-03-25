@@ -2636,6 +2636,7 @@ class ModernDKABQuiz:
             t = re.sub(r'\bII\.', 'İkinci ', t)
             t = re.sub(r'\bI\.', 'Birinci ', t)
             t = re.sub(r'(?i)\bhz\.\s*', 'Hazreti ', t)
+            t = re.sub(r'(?i)\bibn\b', 'İbni', t) # İbn -> İbni telaffuzu için
             t = re.sub(r'(?i)\bb\.\s*', 'bin ', t)
             for abbr in ['S.A.V', 'A.S', 'R.A', 'vs', 'vb']:
                 t = re.sub(fr'\b{abbr}\.', f'{abbr}_DOT_', t, flags=re.IGNORECASE)
