@@ -2064,12 +2064,16 @@ class ModernDKABQuiz:
         self.yeni_dosya_label.pack(padx=5, pady=2, fill=tk.X)
 
         # --- Kodlamalı Özet Kartı ---
-        ozet_card = self.create_card(sidebar, "📝 Kodlamalı Özet")
+        ozet_card = self.create_card(sidebar, "📝 Özet Notlar")
         ozet_card.pack(fill=tk.X, padx=2, pady=2)
         
-        ozet_btn = self.create_button(ozet_card, "📖 ÖZETİ AÇ",
+        ozet_btn = self.create_button(ozet_card, "📖 Kodlamalı Özet",
                                       self.show_kodlamali_ozet, self.colors['success'])
-        ozet_btn.pack(padx=5, pady=5, fill=tk.X, ipady=2)
+        ozet_btn.pack(padx=5, pady=(5, 2), fill=tk.X, ipady=2)
+
+        ozet2_btn = self.create_button(ozet_card, "📄 DKAB Özet",
+                                       self.show_ozet, self.colors['accent'])
+        ozet2_btn.pack(padx=5, pady=(0, 5), fill=tk.X, ipady=2)
 
         self.on_mode_changed()
         
@@ -2377,8 +2381,24 @@ class ModernDKABQuiz:
         )
         welcome_label.pack(fill=tk.BOTH, expand=True, padx=22, pady=(6, 24))
         
+    def show_ozet(self):
+        """DKAB Ozet dosyasini gosterir (dkab_ozet.txt)"""
+        self._show_ozet_file(
+            filename="dkab_ozet.txt",
+            title="📄 DKAB Özet Notlar",
+            view_name="ozet",
+        )
+
     def show_kodlamali_ozet(self):
-        self.current_view = "kodlamali_ozet"
+        """DKAB Kodlamali Ozet dosyasini gosterir (dkab_kodlamali_ozet.txt)"""
+        self._show_ozet_file(
+            filename="dkab_kodlamali_ozet.txt",
+            title="📝 DKAB Kodlamalı Özet",
+            view_name="kodlamali_ozet",
+        )
+
+    def _show_ozet_file(self, filename, title, view_name):
+        self.current_view = view_name
         self.stop_speech(reset_status=False)
         self._stop_countdown()
         self._stop_elapsed_tracking()
@@ -2388,7 +2408,7 @@ class ModernDKABQuiz:
         for widget in self.main_content.winfo_children():
             widget.destroy()
             
-        ozet_card = self.create_card(self.main_content, "📝 DKAB Kodlamalı Özet")
+        ozet_card = self.create_card(self.main_content, title)
         ozet_card.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
         
         # Configuration frame
@@ -2496,8 +2516,8 @@ class ModernDKABQuiz:
 
         txt.bind("<Button-3>", show_context_menu)
         
-        ozet_file = self.base_dir / "dkab_kodlamali_ozet.txt"
-        file_content = "DKAB Kodlamalı Özet dosyası (dkab_kodlamali_ozet.txt) bulunamadı veya boş."
+        ozet_file = self.base_dir / filename
+        file_content = f"{filename} dosyası bulunamadı veya boş."
         try:
             if ozet_file.exists():
                 with open(ozet_file, "r", encoding="utf-8") as f:
@@ -2917,7 +2937,7 @@ class ModernDKABQuiz:
             self.ozet_current_index = 0
 
         def play_next_sentence():
-            if self.current_view != "kodlamali_ozet" or not self.ozet_play_queue:
+            if self.current_view not in ("kodlamali_ozet", "ozet") or not self.ozet_play_queue:
                 return
                 
             if self.ozet_current_index >= len(self.ozet_play_queue):
@@ -2993,7 +3013,7 @@ class ModernDKABQuiz:
         def refresh_text():
             self.ozet_play_queue = []
             self.ozet_current_index = 0
-            self.show_kodlamali_ozet()
+            self._show_ozet_file(filename, title, view_name)
 
         read_btn = self.create_button(controls, "▶️ OKU / DEVAM", read_aloud, self.colors['primary'])
         read_btn.pack(side=tk.LEFT, padx=(0, 10))
