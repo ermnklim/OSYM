@@ -2741,14 +2741,18 @@ class ModernDKABQuiz:
                 self._sub_label_to_name = {format_label(s, topic_counts.get(s, 0)): s for s in all_subs}
                 self._sub_label_to_name["Tümü"] = "Tümü"
                 self.ozet_nav_combo.config(values=sub_labels)
+                self.ozet_topic_combo.config(values=sub_labels)
                 self.ozet_nav_var.set("Tümü")
+                self.ozet_topic_var.set("Tümü")
             else:
                 sub_topics = main_category_to_topics.get(selected_main, [])
                 sub_labels = ["Tümü"] + [format_label(s, topic_counts.get(s, 0)) for s in sub_topics]
                 self._sub_label_to_name = {format_label(s, topic_counts.get(s, 0)): s for s in sub_topics}
                 self._sub_label_to_name["Tümü"] = "Tümü"
                 self.ozet_nav_combo.config(values=sub_labels)
+                self.ozet_topic_combo.config(values=sub_labels)
                 self.ozet_nav_var.set("Tümü")
+                self.ozet_topic_var.set("Tümü")
             
             if selected_main != "Tümü" and selected_main != "Ders Seçiniz...":
                 navigate_to_main_topic()
@@ -2868,14 +2872,20 @@ class ModernDKABQuiz:
             mode = self.ozet_mode_var.get()
             
             # Decision Logic: Which topic to start from?
-            # 1. Check specific Topic Navigation
-            selected = self.ozet_nav_var.get()
+            # 1. Check Audio-specific Topic (Okuma Konusu)
+            selected = self.ozet_topic_var.get()
             if not selected or selected in ["Tümü", "Seçiniz..."]:
-                # 2. Check Ders Navigation
-                selected = self.ozet_main_nav_var.get()
-                if not selected or selected in ["Tümü", "Ders Seçiniz..."]:
-                    # 3. Fallback to old Audio Topic var
-                    selected = self.ozet_topic_var.get()
+                # 2. Check Navigation Topic (Konuya Git)
+                selected = self.ozet_nav_var.get()
+                if not selected or selected in ["Tümü", "Seçiniz..."]:
+                    # 3. Check Ders Navigation (Derslere Git)
+                    selected = self.ozet_main_nav_var.get()
+                    if not selected or selected in ["Tümü", "Ders Seçiniz..."]:
+                        selected = "Tümü"
+            
+            # Map back from label to name if necessary
+            selected = getattr(self, '_sub_label_to_name', {}).get(selected, selected)
+            selected = self._main_label_to_name.get(selected, selected)
             
             try: loops = max(1, int(self.ozet_repeat_var.get()))
             except: loops = 1
