@@ -41,7 +41,8 @@ OSYM/
 `Python_Verisi/similarity_analyzer.py`
 
 - Benzerlik puanı, tekrar eden kalıplar, konu sıklıkları ve alt konu ipuçlarını üretir.
-- Mevcut sistem heuristik tabanlıdır; semantik embedding modeli kullanılmaz.
+- Heuristik skoru korur, ama isteğe bağlı olarak vektör tabanlı semantik skorla destekleyebilir.
+- Tam çift tarama yerine önce aday çift daraltması yaparak maliyeti azaltır.
 
 `Python_Verisi/analiz_araci.py`
 
@@ -59,6 +60,12 @@ OSYM/
 
 - Proje içindeki temel klasör yollarını merkezi olarak tanımlar.
 - Taşınabilirlik için mutlak yol yerine bu modül kullanılmalıdır.
+
+`Python_Verisi/question_bank.py`
+
+- Soru dosyalarını ortak kurallarla parse eder.
+- CLI, analiz ve GUI tarafındaki tekrar eden soru yükleme mantığını tek yerde toplar.
+- DHBT ortak soru atlama kuralını merkezi olarak uygular.
 
 `Python_Verisi/topic_catalog.py`
 
@@ -96,6 +103,7 @@ Benzerlik analizi:
 python check_sim.py
 python check_sim.py --yil 2024 --ders DKAB
 python check_sim.py --yil 2024 --ders DKAB --konu "Fıkıh"
+python check_sim.py --yil 2024 --ders DKAB --semantic
 ```
 
 Genel analiz raporu:

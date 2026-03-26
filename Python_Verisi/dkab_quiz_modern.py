@@ -25,10 +25,26 @@ except ImportError:
 
 try:
     from project_paths import GORSSELLER_DIR, ROOT_DIR, WORDE_DIR
+    from question_bank import (
+        format_subject_label as format_exam_subject_label,
+        has_dhbt_common_file as question_bank_has_dhbt_common_file,
+        load_question_bank,
+        parse_questions_from_file as parse_questions_from_exam_file,
+        parse_single_question_block,
+        should_skip_dhbt_common_question as question_bank_should_skip_dhbt_common_question,
+    )
     from topic_catalog import CANONICAL_TOPICS, normalize_topic_name as catalog_normalize_topic_name, topic_sort_key
     from topic_text_parser import parse_topic_text_file
 except ImportError:
     from Python_Verisi.project_paths import GORSSELLER_DIR, ROOT_DIR, WORDE_DIR
+    from Python_Verisi.question_bank import (
+        format_subject_label as format_exam_subject_label,
+        has_dhbt_common_file as question_bank_has_dhbt_common_file,
+        load_question_bank,
+        parse_questions_from_file as parse_questions_from_exam_file,
+        parse_single_question_block,
+        should_skip_dhbt_common_question as question_bank_should_skip_dhbt_common_question,
+    )
     from Python_Verisi.topic_catalog import CANONICAL_TOPICS, normalize_topic_name as catalog_normalize_topic_name, topic_sort_key
     from Python_Verisi.topic_text_parser import parse_topic_text_file
 
@@ -3111,7 +3127,12 @@ class ModernDKABQuiz:
                 subject=selected_subject,
                 topic=selected_topic,
             )
-            report = build_similarity_report(scope_questions, history_questions=history_questions)
+            use_semantic = len(scope_questions) <= 250
+            report = build_similarity_report(
+                scope_questions,
+                history_questions=history_questions,
+                use_semantic=use_semantic,
+            )
 
             tk.Label(content_frame, text="🔍 BENZER SORULAR VE ÇIKIŞ EĞİLİMİ",
                     font=('Segoe UI', 11, 'bold'), bg=self.colors['card'], fg=self.colors['text']).pack(pady=(20, 5))
@@ -3134,6 +3155,16 @@ class ModernDKABQuiz:
                 anchor="w",
                 justify="left",
             ).pack(fill=tk.X, padx=15, pady=(0, 10), ipady=5)
+
+            tk.Label(
+                content_frame,
+                text=f"Aday tarama: {report.get('candidate_pair_count', 0)} çift | Semantik: {report.get('semantic_backend', 'kapali')}",
+                font=('Segoe UI', 8),
+                bg=self.colors['card'],
+                fg=self.colors['text_secondary'],
+                justify="left",
+                anchor="w",
+            ).pack(fill=tk.X, padx=15, pady=(0, 8))
 
             if not scope_questions:
                 tk.Label(
@@ -3407,6 +3438,15 @@ class ModernDKABQuiz:
             return False
         return self.has_dhbt_common_file(year)
 
+    def format_subject_label(self, subject):
+        return format_exam_subject_label(subject)
+
+    def has_dhbt_common_file(self, year: int) -> bool:
+        return question_bank_has_dhbt_common_file(year, base_dir=WORDE_DIR)
+
+    def should_skip_dhbt_common_question(self, year: int, subject: str, soru_no: int) -> bool:
+        return question_bank_should_skip_dhbt_common_question(year, subject, soru_no, base_dir=WORDE_DIR)
+
     def get_analysis_filter_values(self, include_year=True):
         """Analiz ekraninda kullanilacak mevcut filtreleri dondurur."""
         year = None
@@ -3486,6 +3526,33 @@ class ModernDKABQuiz:
                 self.root.after(0, lambda: messagebox.showerror("Hata", f"Sorular yüklenirken hata oluştu: {e}"))
         
         # Show loading message
+        self.load_button.config(text="⏳ YÜKLENİYOR...", bg=self.colors['text_secondary'])
+        self.root.after(100, load_in_background)
+
+    def load_questions(self, show_message=True):
+        """Sorulari ortak soru deposu uzerinden yukler."""
+        def load_in_background():
+            try:
+                loaded_questions, found_years, unique_subjects = load_question_bank(
+                    base_dir=WORDE_DIR,
+                    default_topic=None,
+                    visual_resolver=self.resolve_visual_path,
+                )
+
+                self.questions = loaded_questions
+                self.subjects = sorted(list(unique_subjects))
+                self.available_subjects = sorted(list(unique_subjects)) or list(self.available_subjects)
+
+                years_list = ["Tüm yıllar"] + sorted(list(found_years), reverse=True)
+                ders_list = self.available_subjects
+
+                self.root.after(0, lambda: self.update_dropdown_values(years_list, ders_list))
+                self.root.after(0, self.update_stats)
+                self.root.after(0, self.update_question_limit)
+                self.root.after(0, lambda: self.questions_loaded_successfully(show_message=show_message))
+            except Exception as e:
+                self.root.after(0, lambda: messagebox.showerror("Hata", f"Sorular yüklenirken hata oluştu: {e}"))
+
         self.load_button.config(text="⏳ YÜKLENİYOR...", bg=self.colors['text_secondary'])
         self.root.after(100, load_in_background)
 
@@ -3834,6 +3901,28 @@ class ModernDKABQuiz:
             print(f"Parse hatasi: {e}")
             
         return None
+
+    def parse_questions_from_file(self, file_path: str, year: int, subject: str = "DKAB") -> List[Dict]:
+        """Dosyadan soruları ortak parser ile yükler."""
+        return parse_questions_from_exam_file(
+            Path(file_path),
+            year,
+            subject,
+            base_dir=WORDE_DIR,
+            default_topic=None,
+            visual_resolver=self.resolve_visual_path,
+        )
+
+    def parse_single_question(self, text: str, year: int, subject: str = "DKAB") -> Dict:
+        """Tek soruyu ortak parser ile çözer."""
+        return parse_single_question_block(
+            text,
+            year,
+            subject,
+            base_dir=WORDE_DIR,
+            default_topic=None,
+            visual_resolver=self.resolve_visual_path,
+        )
 
     def get_question_limit_for_year(self, selected_year, selected_ders, selected_konu=None):
         """Yıla, derse ve konuya göre maksimum soru sayısını döner."""

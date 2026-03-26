@@ -16,6 +16,15 @@ from typing import Dict, List, Tuple
 
 try:
     from project_paths import PYTHON_VERISI_DIR, WORDE_DIR
+    from question_bank import (
+        format_subject_label as format_exam_subject_label,
+        has_dhbt_common_file as question_bank_has_dhbt_common_file,
+        iter_exam_files,
+        load_question_bank,
+        parse_questions_from_file as parse_questions_from_exam_file,
+        parse_single_question_block,
+        should_skip_dhbt_common_question as question_bank_should_skip_dhbt_common_question,
+    )
     from topic_catalog import (
         is_known_topic,
         normalize_topic_name,
@@ -24,6 +33,15 @@ try:
     from topic_text_parser import parse_topic_text_file
 except ImportError:
     from Python_Verisi.project_paths import PYTHON_VERISI_DIR, WORDE_DIR
+    from Python_Verisi.question_bank import (
+        format_subject_label as format_exam_subject_label,
+        has_dhbt_common_file as question_bank_has_dhbt_common_file,
+        iter_exam_files,
+        load_question_bank,
+        parse_questions_from_file as parse_questions_from_exam_file,
+        parse_single_question_block,
+        should_skip_dhbt_common_question as question_bank_should_skip_dhbt_common_question,
+    )
     from Python_Verisi.topic_catalog import (
         is_known_topic,
         normalize_topic_name,
@@ -170,6 +188,18 @@ def should_skip_dhbt_common_question(year: int, subject: str, soru_no: int) -> b
     if subject not in {"DHBT Lisans", "DHBT Önlisans", "DHBT Ortaöğretim"}:
         return False
     return has_dhbt_common_file(year)
+
+def format_subject_label(subject: str) -> str:
+    return format_exam_subject_label(subject)
+
+
+def has_dhbt_common_file(year: int) -> bool:
+    return question_bank_has_dhbt_common_file(year, base_dir=EXAM_DIR)
+
+
+def should_skip_dhbt_common_question(year: int, subject: str, soru_no: int) -> bool:
+    return question_bank_should_skip_dhbt_common_question(year, subject, soru_no, base_dir=EXAM_DIR)
+
 
 def get_file_mod_time(file_path):
     try:
@@ -462,6 +492,67 @@ def analyze_all_exams():
                     konu_data[q['konu']][q['ders']] += 1
     
     return all_questions, years_data, konu_data
+
+def parse_questions_from_file(file_path: str, year: int, subject: str = "DKAB") -> List[Dict]:
+    """Dosyadan soruları parse eder."""
+    try:
+        questions = parse_questions_from_exam_file(
+            Path(file_path),
+            year,
+            subject,
+            base_dir=EXAM_DIR,
+            default_topic="Diğer",
+        )
+    except Exception as exc:
+        print(f"Parse hatası {year}: {exc}")
+        return []
+
+    for question in questions:
+        konu_adi = normalize_topic_name(question.get("konu", "")) or "Diğer"
+        question["sinav_aile"] = get_exam_family(subject)
+        question["konu"] = konu_adi
+        question["topic_known"] = is_known_topic(konu_adi)
+        question["alt_basliklar"] = extract_subtopics(question.get("soru_metni", ""), konu_adi)
+    return questions
+
+
+def parse_single_question(text: str, year: int, subject: str = "DKAB") -> Dict:
+    """Tek soruyu parse eder."""
+    question = parse_single_question_block(
+        text,
+        year,
+        subject,
+        base_dir=EXAM_DIR,
+        default_topic="Diğer",
+    )
+    if not question:
+        return None
+
+    konu_adi = normalize_topic_name(question.get("konu", "")) or "Diğer"
+    question["sinav_aile"] = get_exam_family(subject)
+    question["konu"] = konu_adi
+    question["topic_known"] = is_known_topic(konu_adi)
+    question["alt_basliklar"] = extract_subtopics(question.get("soru_metni", ""), konu_adi)
+    return question
+
+
+def analyze_all_exams():
+    """Tüm sınavları analiz eder."""
+    all_questions, _, _ = load_question_bank(base_dir=EXAM_DIR, default_topic="Diğer")
+    years_data = defaultdict(lambda: defaultdict(int))
+    konu_data = defaultdict(lambda: defaultdict(int))
+
+    for question in all_questions:
+        konu_adi = normalize_topic_name(question.get("konu", "")) or "Diğer"
+        question["sinav_aile"] = get_exam_family(question.get("ders", ""))
+        question["konu"] = konu_adi
+        question["topic_known"] = is_known_topic(konu_adi)
+        question["alt_basliklar"] = extract_subtopics(question.get("soru_metni", ""), konu_adi)
+        years_data[question["yil"]][question["ders"]] += 1
+        konu_data[konu_adi][question["ders"]] += 1
+
+    return all_questions, years_data, konu_data
+
 
 def generate_analysis_text():
     """Analiz metnini oluşturur"""

@@ -8,6 +8,21 @@ import unicodedata
 from collections import Counter, defaultdict
 from typing import Any, Dict, Iterable, List, Optional
 
+try:
+    import numpy as np
+except ImportError:
+    np = None
+
+try:
+    from sentence_transformers import SentenceTransformer
+except ImportError:
+    SentenceTransformer = None
+
+try:
+    from sklearn.feature_extraction.text import TfidfVectorizer
+except ImportError:
+    TfidfVectorizer = None
+
 
 STOPWORDS = {
     "acaba",
@@ -215,6 +230,11 @@ QUESTION_TYPE_PATTERNS = [
 ]
 
 
+SEMANTIC_MODEL_NAME = "paraphrase-multilingual-MiniLM-L12-v2"
+_SEMANTIC_MODEL_CACHE = None
+_SEMANTIC_MODEL_ERROR = None
+
+
 def _pick(question: Dict[str, Any], *keys: str) -> Any:
     for key in keys:
         if key in question and question[key] not in (None, ""):
@@ -328,6 +348,135 @@ def normalize_question_record(question: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
+def _candidate_keys(question: Dict[str, Any]) -> List[str]:
+    keys = []
+    keys.extend(f"p:{phrase}" for phrase in question.get("phrases", [])[:4])
+    keys.extend(f"k:{term}" for term in question.get("key_terms", [])[:4])
+    keys.extend(
+        f"t:{token}"
+        for token in question.get("tokens", [])
+        if len(token) >= 5
+    )
+    deduped = []
+    for key in keys:
+        if key not in deduped:
+            deduped.append(key)
+        if len(deduped) >= 10:
+            break
+    return deduped
+
+
+def _generate_candidate_pairs(
+    questions: List[Dict[str, Any]],
+    *,
+    max_bucket_size: int = 80,
+    max_fallback_group_size: int = 36,
+) -> List[tuple]:
+    if len(questions) < 2:
+        return []
+
+    pair_votes: Counter[tuple] = Counter()
+    inverted_index: Dict[str, List[int]] = defaultdict(list)
+
+    for idx, question in enumerate(questions):
+        for key in _candidate_keys(question):
+            prior_indexes = inverted_index[key]
+            if len(prior_indexes) <= max_bucket_size:
+                for previous_idx in prior_indexes:
+                    pair_votes[(previous_idx, idx)] += 1
+            prior_indexes.append(idx)
+
+    # Kucuk ve ayni baglamdaki gruplar icin aday kapsamini koru.
+    grouped: Dict[tuple, List[int]] = defaultdict(list)
+    for idx, question in enumerate(questions):
+        grouped[(question.get("ders"), question.get("konu"), question.get("question_type"))].append(idx)
+
+    for indexes in grouped.values():
+        if 2 <= len(indexes) <= max_fallback_group_size:
+            for offset, left_idx in enumerate(indexes):
+                for right_idx in indexes[offset + 1:]:
+                    pair_votes[(left_idx, right_idx)] += 1
+
+    return [pair for pair, _ in pair_votes.items()]
+
+
+def _get_semantic_model():
+    global _SEMANTIC_MODEL_CACHE, _SEMANTIC_MODEL_ERROR
+    if _SEMANTIC_MODEL_CACHE is not None:
+        return _SEMANTIC_MODEL_CACHE, None
+    if _SEMANTIC_MODEL_ERROR is not None:
+        return None, _SEMANTIC_MODEL_ERROR
+    if SentenceTransformer is None:
+        _SEMANTIC_MODEL_ERROR = "sentence-transformers kurulu degil"
+        return None, _SEMANTIC_MODEL_ERROR
+
+    try:
+        _SEMANTIC_MODEL_CACHE = SentenceTransformer(SEMANTIC_MODEL_NAME)
+        return _SEMANTIC_MODEL_CACHE, None
+    except Exception as exc:
+        _SEMANTIC_MODEL_ERROR = str(exc)
+        return None, _SEMANTIC_MODEL_ERROR
+
+
+def _build_semantic_index(questions: List[Dict[str, Any]], use_semantic: bool = False) -> Dict[str, Any]:
+    if not use_semantic or not questions:
+        return {"enabled": False, "backend": "kapali", "vectors": None}
+
+    texts = [question.get("full_text") or question.get("soru_metni") or "" for question in questions]
+
+    if np is not None:
+        model, model_error = _get_semantic_model()
+        if model is not None:
+            try:
+                vectors = model.encode(texts, normalize_embeddings=True, show_progress_bar=False)
+                return {
+                    "enabled": True,
+                    "backend": f"sentence-transformers:{SEMANTIC_MODEL_NAME}",
+                    "vectors": vectors,
+                }
+            except Exception as exc:
+                model_error = str(exc)
+
+        if TfidfVectorizer is not None:
+            try:
+                vectorizer = TfidfVectorizer(analyzer="char_wb", ngram_range=(3, 5), min_df=1)
+                matrix = vectorizer.fit_transform(texts)
+                return {
+                    "enabled": True,
+                    "backend": f"tfidf-char-fallback ({model_error or 'semantic model unavailable'})",
+                    "vectors": matrix,
+                }
+            except Exception as exc:
+                return {"enabled": False, "backend": f"kapali ({exc})", "vectors": None}
+
+        if model_error:
+            return {"enabled": False, "backend": f"kapali ({model_error})", "vectors": None}
+
+    return {"enabled": False, "backend": "kapali (numpy unavailable)", "vectors": None}
+
+
+def _semantic_score(semantic_index: Dict[str, Any], left_idx: int, right_idx: int) -> Optional[float]:
+    if not semantic_index.get("enabled"):
+        return None
+
+    vectors = semantic_index.get("vectors")
+    if vectors is None:
+        return None
+
+    try:
+        left = vectors[left_idx]
+        right = vectors[right_idx]
+        if np is not None and hasattr(left, "shape") and hasattr(right, "shape"):
+            if hasattr(left, "toarray"):
+                value = float(left.multiply(right).sum())
+            else:
+                value = float(np.dot(left, right))
+            return max(0.0, min(value, 1.0))
+    except Exception:
+        return None
+    return None
+
+
 def filter_questions(
     questions: Iterable[Dict[str, Any]],
     year: Optional[Any] = None,
@@ -357,7 +506,12 @@ def filter_questions(
     return filtered
 
 
-def _question_similarity(q1: Dict[str, Any], q2: Dict[str, Any]) -> float:
+def _question_similarity(
+    q1: Dict[str, Any],
+    q2: Dict[str, Any],
+    *,
+    semantic_score: Optional[float] = None,
+) -> float:
     if not q1["signature"] or not q2["signature"]:
         return 0.0
 
@@ -374,6 +528,8 @@ def _question_similarity(q1: Dict[str, Any], q2: Dict[str, Any]) -> float:
         score += 0.05
     if q1["question_type"] == q2["question_type"]:
         score += 0.03
+    if semantic_score is not None:
+        score = score * 0.72 + semantic_score * 0.28
     return min(score, 0.99)
 
 
@@ -399,21 +555,27 @@ def find_similar_pairs(
     questions: List[Dict[str, Any]],
     threshold: float = 0.55,
     limit: int = 20,
+    semantic_index: Optional[Dict[str, Any]] = None,
 ) -> List[Dict[str, Any]]:
     pairs: List[Dict[str, Any]] = []
-    for i in range(len(questions)):
-        for j in range(i + 1, len(questions)):
-            score = _question_similarity(questions[i], questions[j])
-            if score < threshold:
-                continue
-            pairs.append(
-                {
-                    "score": score,
-                    "q1": questions[i],
-                    "q2": questions[j],
-                    "overlap_terms": _overlap_terms(questions[i], questions[j]),
-                }
-            )
+    candidate_pairs = _generate_candidate_pairs(questions)
+    if not candidate_pairs and len(questions) <= 80:
+        candidate_pairs = [(i, j) for i in range(len(questions)) for j in range(i + 1, len(questions))]
+
+    for i, j in candidate_pairs:
+        semantic_score = _semantic_score(semantic_index or {}, i, j)
+        score = _question_similarity(questions[i], questions[j], semantic_score=semantic_score)
+        if score < threshold:
+            continue
+        pairs.append(
+            {
+                "score": score,
+                "semantic_score": semantic_score,
+                "q1": questions[i],
+                "q2": questions[j],
+                "overlap_terms": _overlap_terms(questions[i], questions[j]),
+            }
+        )
 
     pairs.sort(key=lambda item: item["score"], reverse=True)
     return pairs[:limit]
@@ -423,6 +585,7 @@ def build_similarity_clusters(
     questions: List[Dict[str, Any]],
     threshold: float = 0.57,
     limit: int = 8,
+    semantic_index: Optional[Dict[str, Any]] = None,
 ) -> List[Dict[str, Any]]:
     if not questions:
         return []
@@ -444,12 +607,19 @@ def build_similarity_clusters(
 
         avg_similarity = 0.0
         pair_count = 0
-        for i in range(len(cluster_questions)):
-            for j in range(i + 1, len(cluster_questions)):
-                score = _question_similarity(cluster_questions[i], cluster_questions[j])
-                if score > 0:
-                    avg_similarity += score
-                    pair_count += 1
+        local_pairs = _generate_candidate_pairs(cluster_questions, max_fallback_group_size=20)
+        if not local_pairs and len(cluster_questions) <= 24:
+            local_pairs = [
+                (i, j)
+                for i in range(len(cluster_questions))
+                for j in range(i + 1, len(cluster_questions))
+            ]
+
+        for i, j in local_pairs:
+            score = _question_similarity(cluster_questions[i], cluster_questions[j])
+            if score >= threshold:
+                avg_similarity += score
+                pair_count += 1
 
         clusters.append(
             {
@@ -583,6 +753,7 @@ def build_similarity_report(
     scope_questions: List[Dict[str, Any]],
     history_questions: Optional[List[Dict[str, Any]]] = None,
     pair_threshold: float = 0.55,
+    use_semantic: bool = False,
 ) -> Dict[str, Any]:
     normalized_scope = [normalize_question_record(question) for question in scope_questions]
     normalized_history = (
@@ -590,6 +761,8 @@ def build_similarity_report(
         if history_questions is not None
         else normalized_scope
     )
+    semantic_index = _build_semantic_index(normalized_scope, use_semantic=use_semantic)
+    candidate_pairs = _generate_candidate_pairs(normalized_scope)
 
     selected_topic = ""
     if normalized_scope:
@@ -600,11 +773,13 @@ def build_similarity_report(
     return {
         "scope_total": len(normalized_scope),
         "history_total": len(normalized_history),
+        "semantic_backend": semantic_index.get("backend", "kapali"),
+        "candidate_pair_count": len(candidate_pairs),
         "question_types": summarize_question_types(normalized_scope),
         "topic_counts": summarize_topic_counts(normalized_scope),
         "subtopics_by_topic": summarize_subtopics_by_topic(normalized_scope),
-        "clusters": build_similarity_clusters(normalized_scope),
-        "similar_pairs": find_similar_pairs(normalized_scope, threshold=pair_threshold),
+        "clusters": build_similarity_clusters(normalized_scope, semantic_index=semantic_index),
+        "similar_pairs": find_similar_pairs(normalized_scope, threshold=pair_threshold, semantic_index=semantic_index),
         "likely_topics": predict_topics(normalized_history),
         "likely_subtopics": predict_subtopics(normalized_history, selected_topic=selected_topic),
     }

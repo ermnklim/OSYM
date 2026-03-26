@@ -2,103 +2,20 @@
 # -*- coding: utf-8 -*-
 
 import argparse
-import re
 from typing import Dict, List
 
 from Python_Verisi.project_paths import WORDE_DIR
+from Python_Verisi.question_bank import load_question_bank
 from Python_Verisi.similarity_analyzer import build_similarity_report, filter_questions
 from Python_Verisi.topic_catalog import normalize_topic_name
 
 BASE_PATH = WORDE_DIR
 
 
-def format_subject_label(subject: str) -> str:
-    subject = str(subject or "").replace("_", " ").strip()
-    replacements = {
-        "Onlisans": "Önlisans",
-        "Ortaogretim": "Ortaöğretim",
-        "ogretim": "öğretim",
-        "DHBT Ortak": "DHBT Ortak (1-20)",
-    }
-    for source, target in replacements.items():
-        subject = subject.replace(source, target)
-    return subject
-
-
-def has_dhbt_common_file(year: int) -> bool:
-    return (BASE_PATH / f"{year}_DHBT_Ortak_Sorulari.txt").exists()
-
-
-def should_skip_dhbt_common_question(year: int, subject: str, soru_no: int) -> bool:
-    if soru_no > 20:
-        return False
-    if subject not in {"DHBT Lisans", "DHBT Önlisans", "DHBT Ortaöğretim"}:
-        return False
-    return has_dhbt_common_file(year)
-
-
 def parse_questions() -> List[Dict]:
-    questions: List[Dict] = []
-
-    for file_path in sorted(BASE_PATH.glob("*_Sorulari.txt")):
-        filename = file_path.name
-        match = re.search(r"(\d{4})_(.+)_Sorulari\.txt", filename)
-        if not match:
-            continue
-
-        year = int(match.group(1))
-        subject = format_subject_label(match.group(2))
-        with open(file_path, "r", encoding="utf-8") as handle:
-            content = handle.read()
-
-        content = content.replace("---SONRAKİ SORU---", "---SONRAKI SORU---")
-        content = content.replace("---SONRAKÄ° SORU---", "---SONRAKI SORU---")
-        content = content.replace("---SONRAKÃ„Â° SORU---", "---SONRAKI SORU---")
-
-        for block in content.split("---SONRAKI SORU---"):
-            if "Soru " not in block:
-                continue
-
-            lines = [line.strip() for line in block.splitlines() if line.strip()]
-            if not lines:
-                continue
-
-            soru_no = "?"
-            topic = ""
-            question_lines = []
-            options = {}
-
-            for line in lines:
-                if line.startswith("Soru ") and ":" in line:
-                    match_no = re.search(r"Soru\s+(\d+)", line)
-                    if match_no:
-                        soru_no = int(match_no.group(1))
-                elif line.startswith("KONU:"):
-                    topic = normalize_topic_name(line.split(":", 1)[1].strip())
-                elif re.match(r"^[ABCDE]\)", line):
-                    options[line[0]] = line[2:].strip()
-                elif line.startswith(("DERS:", "YIL:", "Dogru Cevap:", "Doğru Cevap:", "Aciklama:", "Açıklama:", "Gorsel", "Görsel", "Dosya:", "Konum:", "[RESIM:")):
-                    continue
-                else:
-                    question_lines.append(line)
-
-            if (
-                question_lines
-                and soru_no != "?"
-                and len(options) >= 2
-                and not should_skip_dhbt_common_question(year, subject, int(soru_no))
-            ):
-                questions.append(
-                    {
-                        "yil": year,
-                        "ders": subject,
-                        "konu": topic,
-                        "soru_no": soru_no,
-                        "soru_metni": " ".join(question_lines),
-                        "siklar": options,
-                    }
-                )
-
+    questions, _, _ = load_question_bank(base_dir=BASE_PATH, default_topic="")
+    for question in questions:
+        question["konu"] = normalize_topic_name(question.get("konu", ""))
     return questions
 
 
@@ -112,6 +29,7 @@ def main() -> None:
     parser.add_argument("--yil", help="Belirli bir yil filtrele")
     parser.add_argument("--ders", help="Belirli bir ders filtrele. Ornek: DKAB, IHL, DHBT Lisans")
     parser.add_argument("--konu", help="Belirli bir konu filtrele")
+    parser.add_argument("--semantic", action="store_true", help="Vektor tabanli semantik benzerlik guclendirmesini ac")
     args = parser.parse_args()
 
     all_questions = parse_questions()
@@ -127,7 +45,11 @@ def main() -> None:
         subject=args.ders,
         topic=args.konu,
     )
-    report = build_similarity_report(scope_questions, history_questions=history_questions)
+    report = build_similarity_report(
+        scope_questions,
+        history_questions=history_questions,
+        use_semantic=args.semantic,
+    )
 
     print("Benzer Soru ve Cikis Egilimi Analizi")
     print("====================================")
@@ -136,6 +58,8 @@ def main() -> None:
     print(f"Yil filtresi: {args.yil or 'Tum yillar'}")
     print(f"Ders filtresi: {args.ders or 'Tum dersler'}")
     print(f"Konu filtresi: {args.konu or 'Tum konular'}")
+    print(f"Aday tarama: {report.get('candidate_pair_count', 0)} cift")
+    print(f"Semantik arka uc: {report.get('semantic_backend', 'kapali')}")
 
     if not scope_questions:
         print("\nBu filtrede soru bulunamadi.")
@@ -193,8 +117,11 @@ def main() -> None:
             q1 = pair["q1"]
             q2 = pair["q2"]
             overlap = ", ".join(pair["overlap_terms"]) if pair["overlap_terms"] else "Belirgin ortak iz yok"
+            semantic_note = ""
+            if pair.get("semantic_score") is not None:
+                semantic_note = f" | semantik %{int(pair['semantic_score'] * 100)}"
             print(
-                f"- %{int(pair['score'] * 100)} | "
+                f"- %{int(pair['score'] * 100)}{semantic_note} | "
                 f"{q1['yil']} {q1['ders']} Soru {q1['soru_no']} ({q1['konu']}) <-> "
                 f"{q2['yil']} {q2['ders']} Soru {q2['soru_no']} ({q2['konu']})"
             )
