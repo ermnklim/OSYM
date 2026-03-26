@@ -1,71 +1,136 @@
-## OSYM klasor yapisi
+# OSYM Projesi
 
-Bu klasor yapisi, sorulari once Word'e duzenli yapistirmak, sonra ayni veriyi Python tarafinda JSON/CSV'ye donusturup deneme sistemine baglamak icin hazirlandi.
+Bu proje, `Worde_Yapistir/` klasöründeki sınav metinlerinden soru verisi okuyup analiz üretmek, benzer soru kalıplarını incelemek, konu bazlı çalışma yapmak ve GUI üzerinden soru çözmek için hazırlanmıştır.
 
-### Mevcut durum
+Bu sürümde özellikle şu alanlar iyileştirildi:
 
-- `DKAB` soru metinleri veri havuzunda `2013-2025` araliginda bulunuyor.
-- `IHL` soru metinleri veri havuzunda `2019-2023` araliginda bulunuyor.
-- `DHBT` soru metinleri veri havuzunda `2014`, `2016` ve `2018` yillari icin `Lisans`, `Onlisans` ve `Ortaogretim` olarak bulunuyor.
-- `2018 DHBT` sinavlari veri havuzuna eklendi ve konu etiketleri standart listeye gore duzenlendi.
+- Mutlak yol bağımlılıkları azaltıldı.
+- Konu adları ortak katalog üzerinden normalize edilmeye başlandı.
+- Özet metinleri ayrı bir parser ile işlenir hale geldi.
+- Soruları yıl ve konuya göre temiz metin dosyaları olarak dışa aktaran yeni bir araç eklendi.
 
-### Klasorler
-
-- **`Worde_Yapistir/`**: Yil bazinda Word'e yapistirilacak soru metinleri.
-- Baslangic sablonu: `Worde_Yapistir/TEMPLATE.txt`
-- **`Gorseller/`**: Yil bazinda soru gorselleri.
-- Onerilen dosya adi: `2021_Soru_01.png`, `2021_Soru_02.png`
-- **`Python_Verisi/`**: Donusum cikti klasoru.
-- `Python_Verisi/json/`
-- `Python_Verisi/csv/`
-- **`Tablolar/`**: Sorularla iliskili tablo veya ek gorsel materyaller icin yardimci klasor.
-
-### Word'e yapistirilacak metin formati
-
-Metni asagidaki sirayla tut:
-
-Not: Ayrı bir `Cevap_Anahtari/` klasoru kullanilmayacak. Dogru cevap bilgisi her sorunun hemen altinda `Dogru Cevap:` satiri olarak yer alacak.
+## Klasör Yapısı
 
 ```text
-DERS: DKAB
-KONU:
-YIL: 2021
-
-Soru 1:
-[Tam soru metni]
-
-A) ...
-B) ...
-C) ...
-D) ...
-E) ...
-
-Dogru Cevap: A
-
-Aciklama:
-[Bu sikkin neden dogru oldugu]
-
-Not:
-[Varsa gorsel bilgisi]
+OSYM/
+├─ Worde_Yapistir/           # Ham soru metinleri
+├─ Gorseller/                # Soru görselleri
+├─ Tablolar/                 # Yardımcı tablo/görsel içerikleri
+├─ Python_Verisi/            # Python kodları, analiz çıktıları, özetler
+│  ├─ analiz_araci.py
+│  ├─ dkab_quiz_modern.py
+│  ├─ similarity_analyzer.py
+│  ├─ project_paths.py
+│  ├─ topic_catalog.py
+│  ├─ topic_text_parser.py
+│  ├─ temiz_metin_aktar.py
+│  ├─ dkab_ozet.txt
+│  ├─ dkab_kodlamali_ozet.txt
+│  └─ temiz_metin/           # Yeni dışa aktarma klasörü
+├─ check_sim.py              # Benzerlik analizi için CLI giriş noktası
+└─ fix_numbering.py          # Belirli bir dosyada soru numarası düzeltme aracı
 ```
 
-### Konu giris kurallari
+## Ana Dosyalar ve Görevleri
 
-Soru ekleyecek herkes asagidaki kurallara uymali:
+`check_sim.py`
 
-- Her soru blogunda yalnizca **bir adet** `KONU:` satiri bulunur.
-- `Soru x:` satirindan sonra ikinci bir `KONU:` satiri eklenmez.
-- `KONU:` satirinda yalnizca standart konu listesinde yer alan basliklardan biri kullanilir.
-- Alt basliklar `KONU:` olarak yazilmaz.
-- Daha spesifik konu bilgisi gerekiyorsa soru metninde veya aciklamada tutulur.
-- `Akaid / Kelam` yerine daima `Kelam / Akaid` kullanilir.
-- `Islam Tarihi / Siyer` gibi birlesik baslik kullanilmaz; soru icerigine gore `Islam Tarihi` veya `Siyer` secilir.
-- `Din Sosyolojisi ve Psikolojisi` gibi birlesik baslik kullanilmaz; baskin alan hangisiyse o secilir.
-- `Kur'an-i Kerim ve Tecvid`, `Islam Tarihi`, `Islam Ahlaki ve Tasavvuf` gibi varyasyonlar yerine standart yazim kullanilir.
+- Soru havuzunu okuyup benzer soru ve konu eğilimi analizi üretir.
+- Komut satırından yıl, ders ve konu filtresi alır.
 
-### Standart konu listesi
+`Python_Verisi/similarity_analyzer.py`
 
-Yeni eklenecek sorularda sadece su konu basliklari kullanilabilir:
+- Benzerlik puanı, tekrar eden kalıplar, konu sıklıkları ve alt konu ipuçlarını üretir.
+- Mevcut sistem heuristik tabanlıdır; semantik embedding modeli kullanılmaz.
+
+`Python_Verisi/analiz_araci.py`
+
+- Tüm sınav dosyalarını okuyup genel analiz raporu üretir.
+- Yıl, ders ve konu dağılımı çıkarır.
+- Konu kalite raporu üretir.
+- Özet dosyaları ile soru konuları arasındaki eşleşme farklarını raporlar.
+
+`Python_Verisi/dkab_quiz_modern.py`
+
+- Tkinter tabanlı ana uygulamadır.
+- Soru çözme, filtreleme, analiz ekranı, özet okuma ve TTS akışını yönetir.
+
+`Python_Verisi/project_paths.py`
+
+- Proje içindeki temel klasör yollarını merkezi olarak tanımlar.
+- Taşınabilirlik için mutlak yol yerine bu modül kullanılmalıdır.
+
+`Python_Verisi/topic_catalog.py`
+
+- Kanonik soru konu listesini tutar.
+- Alias eşlemeleri ve konu normalizasyonu burada yapılır.
+- Dosya adı için güvenli konu adı üretir.
+
+`Python_Verisi/topic_text_parser.py`
+
+- `dkab_ozet.txt` ve `dkab_kodlamali_ozet.txt` dosyalarını ayrıştırır.
+- Ana başlık, alt başlık, cümle ve konu eşleşmesi bilgisi üretir.
+
+`Python_Verisi/temiz_metin_aktar.py`
+
+- Soruları ders/yıl/konu bazında temiz metin `.txt` dosyalarına dışa aktarır.
+
+## Kurulum
+
+Bu proje için en az Python 3.11 veya tercihen Python 3.12 önerilir.
+
+Windows üzerinde örnek kurulum:
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+Projede kullanılan modüllerin bir kısmı ortama zaten kurulmuş olabilir. Harici bağımlılık ihtiyacı en çok `dkab_quiz_modern.py` içindeki seslendirme tarafında ortaya çıkar.
+
+## Çalıştırma Komutları
+
+Benzerlik analizi:
+
+```bash
+python check_sim.py
+python check_sim.py --yil 2024 --ders DKAB
+python check_sim.py --yil 2024 --ders DKAB --konu "Fıkıh"
+```
+
+Genel analiz raporu:
+
+```bash
+python Python_Verisi/analiz_araci.py
+```
+
+Temiz metin dışa aktarma:
+
+```bash
+python Python_Verisi/temiz_metin_aktar.py --year 2024 --subject DKAB
+python Python_Verisi/temiz_metin_aktar.py --year 2024 --subject DKAB --topic "Fıkıh"
+```
+
+GUI uygulaması:
+
+```bash
+python Python_Verisi/dkab_quiz_modern.py
+```
+
+## Konu Sistemi
+
+Projede iki ayrı ama ilişkili konu katmanı vardır:
+
+### 1. Soru Konuları
+
+- Kaynak: soru dosyalarındaki `KONU:` satırları
+- Yönetim: `Python_Verisi/topic_catalog.py`
+- Özellik:
+  - Kanonik ve sınırlı liste kullanılır.
+  - Alias adları normalize edilir.
+  - Analiz, filtreleme ve dışa aktarma bu kanonik konu adlarıyla çalışır.
+
+Standart soru konu listesi:
 
 - `Kur'an-ı Kerim ve Tecvid`
 - `Tefsir`
@@ -87,113 +152,144 @@ Yeni eklenecek sorularda sadece su konu basliklari kullanilabilir:
 - `Mezhepler Tarihi`
 - `Din Hizmetleri ve Hitabet`
 
-### Konu dagilim rehberi
+Örnek alias düzeltmeleri:
 
-Bu dagilimlar mutlak kural degildir; son karar her zaman soru icerigine gore verilir. Ancak soru numarasi ile konu arasinda ciddi uyumsuzluk varsa once bu dagilim rehberi dikkate alinmalidir.
+- `Akaid / Kelam` -> `Kelam / Akaid`
+- `Kur'an-i Kerim ve Tecvid` -> `Kur'an-ı Kerim ve Tecvid`
+- `İslam Tarihi / Siyer` -> `İslam Tarihi`
 
-#### OABT DKAB / IHL (guncel 75 soru yapisi)
+### 2. Özet Başlıkları
 
-| Sinav | Soru araligi | Genelde gelen alanlar |
-| --- | ---: | --- |
-| OABT DKAB / IHL | 1-10 | Kur'an-ı Kerim ve Tecvid, Tefsir baslangici |
-| OABT DKAB / IHL | 11-20 | Hadis, Fıkıh, kismen Fıkıh Usulü |
-| OABT DKAB / IHL | 21-30 | Kelam / Akaid, Mezhepler, Islam dusuncesi |
-| OABT DKAB / IHL | 31-40 | Siyer, Islam Tarihi, Islam Kultur ve Medeniyeti, Tasavvuf / Ahlak |
-| OABT DKAB / IHL | 41-50 | Din Felsefesi, Din Sosyolojisi, Din Psikolojisi, Din Egitimi, Dinler Tarihi |
-| OABT DKAB / IHL | 51-75 | Ozellikle Din Egitimi ve diger din bilimleri agirlikli ogretim / olcme / gelisim / alan uygulamalari |
+- Kaynak: `Python_Verisi/dkab_ozet.txt` ve `Python_Verisi/dkab_kodlamali_ozet.txt`
+- Yönetim: `Python_Verisi/topic_text_parser.py`
+- Özellik:
+  - Daha serbest ve daha geniş başlık yapısı kullanılabilir.
+  - Bu başlıklar soru konularıyla bire bir aynı olmak zorunda değildir.
+  - Ayrı bir katman olarak korunur, ama eşleme tablosu ile kanonik soru konularına bağlanır.
 
-#### DHBT
+Örnek:
 
-| Sinav | Soru araligi | Genelde gelen alanlar |
-| --- | ---: | --- |
-| DHBT-1 | 1-20 | Temel din bilgisi: inanc, ibadet, Kur'an bilgisi, siyer, ahlak |
-| DHBT-2 | 21-40 | Duzeye gore alan bilgisi: hadis, fıkıh, tefsir, kelam / akaid, siyer, din hizmetleri / hitabet vb. |
+- `İslam İbadet Esasları` başlığı soru tarafında genelde `Fıkıh` ile ilişkilendirilir.
+- `İnanç Esasları` başlığı soru tarafında genelde `Kelam / Akaid` ile ilişkilendirilir.
 
-#### Eski KPSS-OABT hazirlik mantigi icin yaklasik okuma
+## KONU Yazım Kuralları
 
-| Sinav | Soru araligi | Genelde gelen alanlar |
-| --- | ---: | --- |
-| Eski KPSS-OABT | 1-15 | Kur'an, Tecvid, Tefsir |
-| Eski KPSS-OABT | 16-30 | Hadis, Fıkıh |
-| Eski KPSS-OABT | 31-45 | Kelam, Mezhepler, Islam Tarihi, Siyer |
-| Eski KPSS-OABT | 46-60 | Tasavvuf, Ahlak, Kultur, Medeniyet |
-| Eski KPSS-OABT | 61-75 | Din bilimleri: din egitimi, din psikolojisi, din sosyolojisi, din felsefesi, dinler tarihi |
+Soru dosyalarında her soru bloğunda en fazla bir adet `KONU:` satırı olmalıdır.
 
-### Etiketleme notlari
-
-- `Soru 75` gibi gec bir soruya `Hadis`, `Kelam / Akaid`, `Tefsir`, `Fıkıh` veya `Kur'an-ı Kerim ve Tecvid` etiketi verilecekse once mutlaka icerik tekrar kontrol edilmelidir.
-- `Din Egitimi` blogunda gecen bir soruda `Hadis` veya `Tefsir` kavramlari bulunsa bile soru ogretim, program, olcme, gelisim veya yontem odakliysa `Din Eğitimi` secilmelidir.
-- `İslam Kültür ve Medeniyeti` icine sanat, mimari, hilye, naat, tezhip, hat, minyatur, cami mimarisi gibi kultur-medeniyet sorulari girer.
-- `İslam Mezhepleri ve Akımları` ile `Mezhepler Tarihi` ayriminda, soru dogrudan mezhep / firka / akim tanitimi ise uygun baslik secilir; tarihsel-siyasi seyir odakliysa icerik tekrar kontrol edilir.
-- `Din Hizmetleri ve Hitabet` icine vaaz, hutbe, hitabet, iletisim, irsad ve din hizmeti uygulamalari girer.
-
-### Resimli veya gorselli sorular
-
-Resimli sorularda metnin icine ayrica su blogu ekle:
+Örnek:
 
 ```text
-Gorsel Notu:
-Bu soru resim/gorsel iceriyor.
-Gorsel dosya adi: 2021_Soru_04.png
-Gorsel konumu: C:\Users\osman\Desktop\OSYM\Gorseller\2021\2021_Soru_04.png
-Word'de bu satirin altina gorseli yapistir.
+DERS: DKAB
+KONU: Fıkıh
+YIL: 2024
+
+Soru 12:
+...
 ```
 
-### Pratik calisma sirasi
+Öneriler:
 
-Veri eklerken ve duzenlerken pratikte en saglikli sira su sekildedir:
+- `KONU:` satırında mümkünse doğrudan kanonik konu adı kullanın.
+- Çok özel alt başlıkları `KONU:` yerine soru metni veya açıklama içinde tutun.
+- Yeni veri girerken önce `topic_catalog.py` içindeki kanonik listeye uyun.
 
-1. Once ilgili sinavin metnini `Worde_Yapistir/` altinda tamamla veya temizle.
-2. Her soru icin `KONU:` etiketini standart konu listesine gore kontrol et.
-3. Konu kararsizsa once soru icerigine bak, sonra soru numarasini konu dagilim rehberiyle karsilastir.
-4. Gorselli sorularda `Gorseller/` klasorunu ve `Gorsel Notu` blogunu birlikte duzenle.
-5. Bir sinav tamamlandiginda parser ve analiz tarafinda konu listesinin dogru gorundugunu kontrol et.
-6. En son asamada ayni veriyi `Python_Verisi/json/` ve `Python_Verisi/csv/` altina donustur.
+## Özet Dosyası Mantığı
 
-Bugunku veri durumuna gore oncelik sirasini boyle takip etmek daha verimlidir:
+`dkab_ozet.txt` ve `dkab_kodlamali_ozet.txt` dosyaları GUI içinde okunur ve ayrıştırılır.
 
-- Mevcut DKAB ve IHL metinlerinde kalan yanlis konu etiketlerini temizle.
-- DHBT havuzunda yeni eklenecek yillari ve eksik duzeyleri ayni standartla tamamla.
-- Veri girisi oturduktan sonra parser, analiz ve arayuz tarafinda filtre kontrollerini sikilastir.
+Bu turda dosya içeriği yeniden yazılmamıştır. Ancak yeni parser için önerilen biçim şöyledir:
 
-### Ileride yapilabilecekler
+- Ana konu başlığı tek satırda açık olsun.
+- Alt başlıklar ayrı satırda olsun.
+- Çıkmış soru referansı mümkünse tek biçimde yazılsın.
 
-- Mevcut DKAB, IHL ve DHBT dosyalarini ikinci kez tarayip konu dagilim rehberine gore toplu kalite kontrol yapmak.
-- `analiz_araci.py` icine gecersiz veya supheli `KONU:` etiketlerini raporlayan otomatik kontrol eklemek.
-- `dkab_quiz_modern.py` icinde gecersiz konu gorulurse arayuzde daha acik uyari vermek.
-- Yeni DHBT yillarini ve eksik duzey / oturumlari veri havuzuna eklemek.
-- MBSTS sinavlarini ayni metin formati ve konu mantigiyla projeye dahil etmek.
-- Veri yapisi yeterince oturdugunda uygulamayi Windows icin `.exe` olarak paketlemek.
-- Ihtiyac devam ederse kurulum sihirbazi ve hafif lisanslama katmanini sonraki asamaya birakmak.
+Örnek önerilen not:
 
-### Hatirlatma notu
+```text
+SİYER
+HİCRET
+(çıkmış sorular: 2024 öabt 12. soru, 2023 öabt 17. soru)
+```
 
-- Veri kapsamini genisletirken yeni DHBT yillari ile MBSTS sinavlarini eklemeyi unutma.
-- Yeni soru eklerken once bu README'deki standart konu listesi ve dagilim rehberine gore etiketleme yap.
+## Temiz Metin Dışa Aktarma
 
-### Hafif lisanslama fikri
+Yeni araç: `Python_Verisi/temiz_metin_aktar.py`
 
-Ileride uygulanabilecek mantikli yaklasim:
+Varsayılan çıktı yapısı:
 
-- Uygulama ilk acilista lisans anahtari ister.
-- Anahtar, gelistiricinin tuttugu bir API veya veritabani uzerinden dogrulanir.
-- Her lisans anahtari tek cihaz aktivasyonu mantigiyla calisabilir.
-- Cihaz degisimi gerekiyorsa manuel lisans sifirlama veya panel uzerinden yeniden aktivasyon yapilabilir.
-- Amac asiri sert DRM kurmak degil; duzenli lisans yonetimi ve izinsiz kopyalamayi azaltmaktir.
+```text
+Python_Verisi/temiz_metin/<ders>/<yil>/<konu>.txt
+```
 
-### Guvenlik ve crack riskini azaltma notlari
+Örnek:
 
-Tam koruma mumkun degildir; ancak asagidaki onlemler riski azaltabilir:
+```text
+Python_Verisi/temiz_metin/DKAB/2024/fikih.txt
+```
 
-- Offline yerine online lisans dogrulama kullanmak.
-- Lisans anahtarini cihaz kimligiyle eslestirmek.
-- Lisans kontrolunu sadece giriste degil, uygulamanin kritik noktalarinda da yapmak.
-- Tum lisans mantigini istemcide tutmamak; asil karari sunucu tarafinda vermek.
-- API isteklerini token, imza veya zaman damgasi gibi ek korumalarla guclendirmek.
-- Kod paketlemede obfuscation kullanmak; tek basina yeterli olmasa da dogrudan kopyalamayi zorlastirir.
-- Gizli anahtarlari ve hassas sabitleri uygulama icinde duz metin olarak tutmamak.
-- Aktivasyon ve lisans denemelerini loglayip supheli kullanimlari izlemek.
-- Ayni lisansin birden fazla cihazda eszamanli kullanimini sinirlamak.
-- Guncelleme mekanizmasi ekleyip lisans ve guvenlik kontrollerini zamanla guclendirmek.
+Dosya içeriğinde şunlar bulunur:
 
-En mantikli siralama genelde sudur: once stabil `.exe`, sonra hafif online lisanslama, sonra gerekirse ek koruma katmanlari.
+- Ders
+- Yıl
+- Konu
+- Toplam soru sayısı
+- Soru numarası
+- Temiz soru kök metni
+
+Varsayılan olarak şunlar dışa aktarılmaz:
+
+- Şıklar
+- Doğru cevap
+- Açıklama
+- Görsel notları
+
+## Veri Formatı Özeti
+
+Ham soru dosyaları `Worde_Yapistir/` altında şu kalıba yakın olmalıdır:
+
+```text
+DERS: DKAB
+KONU: Tefsir
+YIL: 2024
+
+Soru 1:
+[Soru metni]
+
+A) ...
+B) ...
+C) ...
+D) ...
+E) ...
+
+Doğru Cevap: A
+
+---SONRAKI SORU---
+```
+
+Parser tarafında bazı bozuk ayraç varyasyonları da tolere edilir; yine de mümkün olduğunca `---SONRAKI SORU---` biçimi kullanılmalıdır.
+
+## Kısa Kullanım Senaryoları
+
+Belirli bir yılın DKAB soru eğilimini incelemek:
+
+```bash
+python check_sim.py --yil 2024 --ders DKAB
+```
+
+Tüm veri havuzunun konu kalite kontrolünü görmek:
+
+```bash
+python Python_Verisi/analiz_araci.py
+```
+
+2024 DKAB sorularını konu bazlı temiz metin dosyalarına ayırmak:
+
+```bash
+python Python_Verisi/temiz_metin_aktar.py --year 2024 --subject DKAB
+```
+
+Özet notlarını GUI üzerinden konu bazlı gezmek ve okutmak:
+
+```bash
+python Python_Verisi/dkab_quiz_modern.py
+```

@@ -2,14 +2,14 @@
 # -*- coding: utf-8 -*-
 
 import argparse
-import os
 import re
 from typing import Dict, List
 
+from Python_Verisi.project_paths import WORDE_DIR
 from Python_Verisi.similarity_analyzer import build_similarity_report, filter_questions
+from Python_Verisi.topic_catalog import normalize_topic_name
 
-
-BASE_PATH = r"C:\Users\osman\Desktop\OSYM\Worde_Yapistir"
+BASE_PATH = WORDE_DIR
 
 
 def format_subject_label(subject: str) -> str:
@@ -26,7 +26,7 @@ def format_subject_label(subject: str) -> str:
 
 
 def has_dhbt_common_file(year: int) -> bool:
-    return os.path.exists(os.path.join(BASE_PATH, f"{year}_DHBT_Ortak_Sorulari.txt"))
+    return (BASE_PATH / f"{year}_DHBT_Ortak_Sorulari.txt").exists()
 
 
 def should_skip_dhbt_common_question(year: int, subject: str, soru_no: int) -> bool:
@@ -40,15 +40,14 @@ def should_skip_dhbt_common_question(year: int, subject: str, soru_no: int) -> b
 def parse_questions() -> List[Dict]:
     questions: List[Dict] = []
 
-    for filename in sorted(os.listdir(BASE_PATH)):
+    for file_path in sorted(BASE_PATH.glob("*_Sorulari.txt")):
+        filename = file_path.name
         match = re.search(r"(\d{4})_(.+)_Sorulari\.txt", filename)
         if not match:
             continue
 
         year = int(match.group(1))
         subject = format_subject_label(match.group(2))
-        file_path = os.path.join(BASE_PATH, filename)
-
         with open(file_path, "r", encoding="utf-8") as handle:
             content = handle.read()
 
@@ -75,7 +74,7 @@ def parse_questions() -> List[Dict]:
                     if match_no:
                         soru_no = int(match_no.group(1))
                 elif line.startswith("KONU:"):
-                    topic = line.split(":", 1)[1].strip()
+                    topic = normalize_topic_name(line.split(":", 1)[1].strip())
                 elif re.match(r"^[ABCDE]\)", line):
                     options[line[0]] = line[2:].strip()
                 elif line.startswith(("DERS:", "YIL:", "Dogru Cevap:", "Doğru Cevap:", "Aciklama:", "Açıklama:", "Gorsel", "Görsel", "Dosya:", "Konum:", "[RESIM:")):

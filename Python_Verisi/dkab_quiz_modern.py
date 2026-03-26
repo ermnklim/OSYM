@@ -24,50 +24,22 @@ except ImportError:
     from Python_Verisi.similarity_analyzer import build_similarity_report, filter_questions
 
 try:
+    from project_paths import GORSSELLER_DIR, ROOT_DIR, WORDE_DIR
+    from topic_catalog import CANONICAL_TOPICS, normalize_topic_name as catalog_normalize_topic_name, topic_sort_key
+    from topic_text_parser import parse_topic_text_file
+except ImportError:
+    from Python_Verisi.project_paths import GORSSELLER_DIR, ROOT_DIR, WORDE_DIR
+    from Python_Verisi.topic_catalog import CANONICAL_TOPICS, normalize_topic_name as catalog_normalize_topic_name, topic_sort_key
+    from Python_Verisi.topic_text_parser import parse_topic_text_file
+
+try:
     import winsound
 except ImportError:
     winsound = None
 
 PIPER_IMPORT_ERROR = None
 
-ALLOWED_DHBT_TOPICS = [
-    "Kur'an-ı Kerim ve Tecvid",
-    "Tefsir",
-    "Hadis",
-    "Fıkıh",
-    "Fıkıh Usulü",
-    "Kelam / Akaid",
-    "İslam Mezhepleri ve Akımları",
-    "İslam Tarihi",
-    "Siyer",
-    "İslam Kültür ve Medeniyeti",
-    "İslam Felsefesi",
-    "Din Felsefesi",
-    "Din Sosyolojisi",
-    "Din Psikolojisi",
-    "Din Eğitimi",
-    "Dinler Tarihi",
-    "İslam Ahlakı ve Tasavvuf",
-    "Mezhepler Tarihi",
-    "Din Hizmetleri ve Hitabet",
-]
-
-TOPIC_SORT_ORDER = {
-    topic: index for index, topic in enumerate(ALLOWED_DHBT_TOPICS)
-}
-
-TOPIC_ALIASES = {
-    "Akaid / Kelam": "Kelam / Akaid",
-    "Kelam / Akaid": "Kelam / Akaid",
-    "Kur’an-ı Kerim ve Tecvid": "Kur'an-ı Kerim ve Tecvid",
-    "Kur'an-i Kerim ve Tecvid": "Kur'an-ı Kerim ve Tecvid",
-    "İslam Tarihi / Siyer": "İslam Tarihi",
-    "Islam Tarihi": "İslam Tarihi",
-    "İslam Ahlaki ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
-    "Islam Ahlaki ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
-    "?slam Ahlak? ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
-    "Mezhepler tarihi": "Mezhepler Tarihi",
-}
+ALLOWED_DHBT_TOPICS = list(CANONICAL_TOPICS)
 
 ALL_YEARS_LABEL = "Tüm yıllar"
 ALL_DERSLER_LABEL = "Tüm dersler"
@@ -2397,6 +2369,42 @@ class ModernDKABQuiz:
             view_name="kodlamali_ozet",
         )
 
+    def _turkish_upper(self, text: str) -> str:
+        return str(text or "").replace("i", "İ").replace("ı", "I").upper()
+
+    def _load_ozet_parser_result(self, ozet_file: Path, file_content: str):
+        try:
+            parsed = parse_topic_text_file(ozet_file)
+        except Exception as exc:
+            parsed = {
+                "topic_blocks": [],
+                "main_section_to_topics": {},
+                "main_section_counts": {},
+                "topic_counts": {},
+                "warnings": [f"Özet ayrıştırılamadı: {exc}"],
+            }
+
+        topic_blocks = list(parsed.get("topic_blocks", []))
+        if not topic_blocks and file_content.strip():
+            topic_blocks = [
+                {
+                    "topic": "Giriş / Genel",
+                    "main_cat": "Diğer",
+                    "main_section": "Diğer",
+                    "sentences": [{"raw": file_content.strip(), "norm": file_content.strip()}],
+                    "mapped_topics": [],
+                    "start_line": 1,
+                }
+            ]
+
+        return (
+            topic_blocks,
+            dict(parsed.get("main_section_to_topics", {})),
+            dict(parsed.get("main_section_counts", {})),
+            dict(parsed.get("topic_counts", {})),
+            list(parsed.get("warnings", [])),
+        )
+
     def _show_ozet_file(self, filename, title, view_name):
         self.current_view = view_name
         self.stop_speech(reset_status=False)
@@ -2528,9 +2536,6 @@ class ModernDKABQuiz:
         txt.insert(tk.END, file_content)
         txt.config(state=tk.DISABLED)
         
-        import re
-        import random
-        
         if not hasattr(self, 'ozet_topic_data'):
             self.ozet_topic_data = []
             
@@ -2539,201 +2544,15 @@ class ModernDKABQuiz:
             
         if not hasattr(self, 'ozet_current_index'):
             self.ozet_current_index = 0
-
-        parsed_topics = []
-        main_category_to_topics = {}
-        main_category_counts = {}
-        topic_counts = {}
-        current_main_cat = "DİĞER"
-        current_topic_name = "Giriş"
-        current_topic_sentences = []
-        
-        def count_questions_in_text(text):
-            # Format: (çıkmış sorular: 2025 öabt 25. soru, 2024 öabt 1. soru)
-            match = re.search(r"\(çıkmış sorular:? (.*?)\)", text)
-            if match:
-                return len(match.group(1).split(","))
-            return 0
-
-        # Strict Main Lessons based on README.md standards (L70-88)
-        STANDARD_DERSLER = [
-            "Kur'an-ı Kerim ve Tecvid",
-            "Tefsir",
-            "Hadis",
-            "İSLAM İBADET ESASLARI",
-            "İSLAM HUKUKU",
-            "Fıkıh Usulü",
-            "Kelam / Akaid",
-            "İNANÇ ESASLARI",
-            "İSLAM MEZHEPLER TARİHİ",
-            "İSLAM KÜLTÜR VE MEDENİYETİ",
-            "İslam Mezhepleri ve Akımları",
-            "İslam Tarihi",
-            "Siyer",
-            "İslam Felsefesi",
-            "Din Felsefesi",
-            "Din Sosyolojisi",
-            "Din Psikolojisi",
-            "Din Eğitimi",
-            "Dinler Tarihi",
-            "İslam Ahlakı ve Tasavvuf",
-            "Mezhepler Tarihi",
-            "Din Hizmetleri ve Hitabet"
-        ]
-
-        def tr_upper(text):
-            return text.replace('i', 'İ').replace('ı', 'I').upper()
-
-        def is_ders_header(line):
-            line_clean = line.strip()
-            if not line_clean: return None
-            
-            line_upper = tr_upper(line_clean)
-            
-            # ONLY match against STANDARD_DERSLER from README
-            for ders in STANDARD_DERSLER:
-                ders_upper = tr_upper(ders)
-                # Check if line matches the ders name (ignoring punctuation/case)
-                pattern = r'^' + re.escape(ders_upper) + r'($|[:\s\-])'
-                if re.match(pattern, line_upper):
-                    return ders
-            
-            return None
-
-        def text_normalize(text):
-            t = text
-            # Rakam normalleştirme (Örn: 1. -> Birinci, 2025 -> İki bin yirmi beş)
-            def num_to_tr(match):
-                num_str = match.group(1)
-                is_ordinal = match.group(2) == '.'
-                
-                try:
-                    n = int(num_str)
-                    units = ["", "bir", "iki", "üç", "dört", "beş", "altı", "yedi", "sekiz", "dokuz"]
-                    tens = ["", "on", "yirmi", "otuz", "kırk", "elli", "altmış", "yetmiş", "seksen", "doksan"]
-                    
-                    if n == 0: return "sıfır" + ("ıncı" if is_ordinal else "")
-                    
-                    res = ""
-                    # Binler
-                    if n >= 1000:
-                        b = n // 1000
-                        if b > 1: res += units[b] + " bin "
-                        else: res += "bin "
-                        n %= 1000
-                    # Yüzler
-                    if n >= 100:
-                        y = n // 100
-                        if y > 1: res += units[y] + " yüz "
-                        else: res += "yüz "
-                        n %= 100
-                    # Onlar ve Birler
-                    if n >= 10:
-                        res += tens[n // 10] + " "
-                        n %= 10
-                    if n > 0:
-                        res += units[n] + " "
-                    
-                    res = res.strip()
-                    if is_ordinal:
-                        # Basit sıra sayısı eki (detaylı uyum için geliştirilebilir ama bu çoğu işi çözer)
-                        last_char = res[-1]
-                        if last_char in "aiıuü": res += "ncı"
-                        else: res += "inci"
-                    return res
-                except:
-                    return num_str
-
-            # Rakamları bul ve değiştir (Örn: 2025 veya 1.)
-            t = re.sub(r'(\d+)(\.)?', num_to_tr, t)
-
-            t = re.sub(r'\bVIII\.', 'Sekizinci ', t)
-            t = re.sub(r'\bVII\.', 'Yedinci ', t)
-            t = re.sub(r'\bVI\.', 'Altıncı ', t)
-            t = re.sub(r'\bIV\.', 'Dördüncü ', t)
-            t = re.sub(r'\bV\.', 'Beşinci ', t)
-            t = re.sub(r'\bIII\.', 'Üçüncü ', t)
-            t = re.sub(r'\bII\.', 'İkinci ', t)
-            t = re.sub(r'\bI\.', 'Birinci ', t)
-            t = re.sub(r'(?i)\bhz\.\s*', 'Hazreti ', t)
-            t = re.sub(r'(?i)\bibn\b', 'İbni', t) # İbn -> İbni telaffuzu için
-            t = re.sub(r'(?i)\bb\.\s*', 'bin ', t)
-            for abbr in ['S.A.V', 'A.S', 'R.A', 'vs', 'vb']:
-                t = re.sub(fr'\b{abbr}\.', f'{abbr}_DOT_', t, flags=re.IGNORECASE)
-            return t
-        
-        for orig_line in file_content.split('\n'):
-            line = orig_line.strip()
-            if not line: continue
-            
-            q_count = count_questions_in_text(line)
-            
-            # 1. Check if this is a MAIN LESSON (Ders)
-            matched_ders = is_ders_header(line)
-            if matched_ders:
-                # Save previous topic
-                if current_topic_sentences:
-                    parsed_topics.append({"topic": current_topic_name, "sentences": current_topic_sentences, "main_cat": current_main_cat})
-                    if current_main_cat not in main_category_to_topics:
-                        main_category_to_topics[current_main_cat] = []
-                    if current_topic_name not in main_category_to_topics[current_main_cat]:
-                        main_category_to_topics[current_main_cat].append(current_topic_name)
-                
-                current_main_cat = matched_ders
-                current_topic_name = "Giriş / Genel"
-                current_topic_sentences = [{"raw": line, "norm": text_normalize(line)}]
-                main_category_counts[current_main_cat] = main_category_counts.get(current_main_cat, 0) + q_count
-                continue
-
-            # 2. Check if this is a SUB TOPIC (Konu)
-            # Conditions for sub-topic: Uppercase, not too long, NOT a ders
-            no_parens = re.sub(r'\(.*?\)', '', line).strip()
-            is_sub_header = False
-            if no_parens:
-                alpha_chars = [c for c in no_parens if c.isalpha()]
-                if alpha_chars and all(c.isupper() for c in alpha_chars):
-                    # It's uppercase but NOT one of the main lessons
-                    if not is_ders_header(no_parens):
-                        if not no_parens.endswith(':') or len(no_parens) > 15:
-                            is_sub_header = True
-            
-            if is_sub_header:
-                # Save previous topic
-                if current_topic_sentences:
-                    parsed_topics.append({"topic": current_topic_name, "sentences": current_topic_sentences, "main_cat": current_main_cat})
-                    if current_main_cat not in main_category_to_topics:
-                        main_category_to_topics[current_main_cat] = []
-                    if current_topic_name not in main_category_to_topics[current_main_cat]:
-                        main_category_to_topics[current_main_cat].append(current_topic_name)
-                
-                current_topic_name = line
-                current_topic_sentences = [{"raw": line, "norm": text_normalize(line)}]
-                topic_counts[current_topic_name] = topic_counts.get(current_topic_name, 0) + q_count
-                main_category_counts[current_main_cat] = main_category_counts.get(current_main_cat, 0) + q_count
-            else:
-                # 3. Regular Sentence
-                topic_counts[current_topic_name] = topic_counts.get(current_topic_name, 0) + q_count
-                main_category_counts[current_main_cat] = main_category_counts.get(current_main_cat, 0) + q_count
-                raw_temp = line
-                for abbr in ['HZ', 'Hz', 'hz', 'S.A.V', 'A.S', 'R.A', 'vs', 'vb', 'b', 'B']:
-                    raw_temp = re.sub(fr'\b{abbr}\.', f'{abbr}_DOT_', raw_temp, flags=re.IGNORECASE)
-                for rom in ['VIII', 'VII', 'VI', 'IV', 'V', 'III', 'II', 'I']:
-                    raw_temp = re.sub(fr'\b{rom}\.\s+', f'{rom}_DOT_ ', raw_temp)
-                
-                for raw_s_split in re.split(r'(?<=[.!?])\s+', raw_temp):
-                    raw_s = raw_s_split.replace('_DOT_', '.').strip()
-                    if raw_s:
-                        norm_s = text_normalize(raw_s)
-                        current_topic_sentences.append({"raw": raw_s, "norm": norm_s})
-                        
-        if current_topic_sentences:
-            parsed_topics.append({"topic": current_topic_name, "sentences": current_topic_sentences, "main_cat": current_main_cat})
-            if current_main_cat not in main_category_to_topics:
-                main_category_to_topics[current_main_cat] = []
-            if current_topic_name not in main_category_to_topics[current_main_cat]:
-                main_category_to_topics[current_main_cat].append(current_topic_name)
-            
+        (
+            parsed_topics,
+            main_category_to_topics,
+            main_category_counts,
+            topic_counts,
+            parser_warnings,
+        ) = self._load_ozet_parser_result(ozet_file, file_content)
         self.ozet_topic_data = parsed_topics
+        self.ozet_parser_warnings = parser_warnings
         
         # UI Setup for Hierarchical Filter
         def format_label(name, count):
@@ -2789,8 +2608,8 @@ class ModernDKABQuiz:
             txt.config(state=tk.NORMAL)
             txt.tag_remove("main_nav_highlight", "1.0", tk.END)
             
-            # Find exact line starting with lesson name (case-insensitive for text vs list)
-            search_pattern = tr_upper(selected)
+            # Find exact line starting with lesson name.
+            search_pattern = self._turkish_upper(selected)
             
             pos = "1.0"
             while True:
@@ -2801,7 +2620,7 @@ class ModernDKABQuiz:
                 if pos.split('.')[1] == '0':
                     line_end = txt.index(f"{pos} lineend")
                     line_content = txt.get(pos, line_end).strip()
-                    if tr_upper(line_content).startswith(search_pattern):
+                    if self._turkish_upper(line_content).startswith(search_pattern):
                         txt.see(pos)
                         txt.tag_add("main_nav_highlight", pos, line_end)
                         txt.tag_configure("main_nav_highlight", background=self.colors['success'], foreground="white")
@@ -3036,11 +2855,11 @@ class ModernDKABQuiz:
         import json
         from datetime import datetime
         
-        base_path = r"C:\Users\osman\Desktop\OSYM\Worde_Yapistir"
-        last_check_file = os.path.join(os.path.dirname(__file__), "last_check.json")
+        base_path = WORDE_DIR
+        last_check_file = self.base_dir / "last_check.json"
         
         try:
-            if os.path.exists(last_check_file):
+            if last_check_file.exists():
                 with open(last_check_file, 'r', encoding='utf-8') as f:
                     last_check = json.load(f)
             else:
@@ -3051,12 +2870,12 @@ class ModernDKABQuiz:
         current_files = {}
         new_files = []
         
-        if os.path.exists(base_path):
-            for filename in os.listdir(base_path):
+        if base_path.exists():
+            for file_path in base_path.iterdir():
+                filename = file_path.name
                 match = re.search(r"(\d{4})_(.+)_Sorulari\.txt", filename)
                 if match:
-                    file_path = os.path.join(base_path, filename)
-                    mod_time = os.path.getmtime(file_path)
+                    mod_time = file_path.stat().st_mtime
                     current_files[filename] = mod_time
                     
                     if filename not in last_check.get("files", {}):
@@ -3093,19 +2912,20 @@ class ModernDKABQuiz:
         content_frame = tk.Frame(analiz_card, bg=self.colors['card'])
         content_frame.pack(fill=tk.BOTH, expand=True)
         
-        base_path = r"C:\Users\osman\Desktop\OSYM\Worde_Yapistir"
+        base_path = WORDE_DIR
         years_data = defaultdict(lambda: defaultdict(int))
         konu_data = defaultdict(lambda: defaultdict(int))
         total_questions = 0
         all_parsed_questions = []
         
-        if os.path.exists(base_path):
-            for filename in os.listdir(base_path):
+        if base_path.exists():
+            for file_path in base_path.iterdir():
+                filename = file_path.name
                 match = re.search(r"(\d{4})_(.+)_Sorulari\.txt", filename)
                 if match:
                     year = int(match.group(1))
                     subject = self.format_subject_label(match.group(2))
-                    questions = self.parse_questions_from_file(os.path.join(base_path, filename), year, subject)
+                    questions = self.parse_questions_from_file(file_path, year, subject)
                     all_parsed_questions.extend(questions)
                     total_questions += len(questions)
                     for q in questions:
@@ -3578,11 +3398,14 @@ class ModernDKABQuiz:
         return subject
 
     def has_dhbt_common_file(self, year: int) -> bool:
-        base_path = r"C:\Users\osman\Desktop\OSYM\Worde_Yapistir"
-        return os.path.exists(os.path.join(base_path, f"{year}_DHBT_Ortak_Sorulari.txt"))
+        return (WORDE_DIR / f"{year}_DHBT_Ortak_Sorulari.txt").exists()
 
     def should_skip_dhbt_common_question(self, year: int, subject: str, soru_no: int) -> bool:
-        return False
+        if soru_no > 20:
+            return False
+        if subject not in {"DHBT Lisans", "DHBT Önlisans", "DHBT Ortaöğretim"}:
+            return False
+        return self.has_dhbt_common_file(year)
 
     def get_analysis_filter_values(self, include_year=True):
         """Analiz ekraninda kullanilacak mevcut filtreleri dondurur."""
@@ -3628,18 +3451,18 @@ class ModernDKABQuiz:
         def load_in_background():
             try:
                 import re
-                base_path = r"C:\Users\osman\Desktop\OSYM\Worde_Yapistir"
+                base_path = WORDE_DIR
                 loaded_questions = []
                 unique_subjects = set()
                 found_years = set()
                 
-                if os.path.exists(base_path):
-                    for filename in os.listdir(base_path):
+                if base_path.exists():
+                    for file_path in base_path.iterdir():
+                        filename = file_path.name
                         match = re.search(r"(\d{4})_(.+)_Sorulari\.txt", filename)
                         if match:
                             year = int(match.group(1))
                             subject = self.format_subject_label(match.group(2))
-                            file_path = os.path.join(base_path, filename)
                             year_questions = self.parse_questions_from_file(file_path, year, subject)
                             loaded_questions.extend(year_questions)
                             found_years.add(str(year))
@@ -3812,7 +3635,7 @@ class ModernDKABQuiz:
         if is_dhbt_only:
             konular = sorted(
                 {topic for topic in normalized_topics if topic in ALLOWED_DHBT_TOPICS},
-                key=lambda topic: (TOPIC_SORT_ORDER.get(topic, len(ALLOWED_DHBT_TOPICS)), topic),
+                key=lambda topic: topic_sort_key("DHBT", topic),
             )
         else:
             konular = sorted(normalized_topics)
@@ -3826,17 +3649,17 @@ class ModernDKABQuiz:
             cleaned = cleaned.split(':', 1)[1].strip()
 
         cleaned = cleaned.replace('/', os.sep).replace('\\', os.sep)
-        base_dir = r"C:\Users\osman\Desktop\OSYM"
+        base_dir = ROOT_DIR
         filename = os.path.basename(cleaned)
 
         candidates = []
         if os.path.isabs(cleaned):
             candidates.append(os.path.normpath(cleaned))
         else:
-            candidates.append(os.path.normpath(os.path.join(base_dir, cleaned)))
-            candidates.append(os.path.normpath(os.path.join(base_dir, "Gorseller", str(year), filename)))
-            candidates.append(os.path.normpath(os.path.join(base_dir, "Gorseller", f"{year} ihl", filename)))
-            candidates.append(os.path.normpath(os.path.join(base_dir, "Gorseller", f"{year} IHL", filename)))
+            candidates.append(os.path.normpath(os.path.join(str(base_dir), cleaned)))
+            candidates.append(os.path.normpath(os.path.join(str(GORSSELLER_DIR), str(year), filename)))
+            candidates.append(os.path.normpath(os.path.join(str(GORSSELLER_DIR), f"{year} ihl", filename)))
+            candidates.append(os.path.normpath(os.path.join(str(GORSSELLER_DIR), f"{year} IHL", filename)))
 
         for candidate in candidates:
             if os.path.exists(candidate):
@@ -3879,19 +3702,7 @@ class ModernDKABQuiz:
 
     def normalize_topic_name(self, topic: str) -> str:
         """Konu adlarindaki bozuk karakterleri ve bilinen varyasyonlari duzeltir."""
-        topic = (topic or "").strip()
-        if not topic:
-            return ""
-
-        replacements = {
-            "?slam Ahlak? ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
-            "Islam Ahlaki ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
-            "İslam Ahlaki ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
-            "Kur'an-i Kerim ve Tecvid": "Kur'an-ı Kerim ve Tecvid",
-            "Islam Tarihi": "İslam Tarihi",
-        }
-
-        return TOPIC_ALIASES.get(topic, replacements.get(topic, topic))
+        return catalog_normalize_topic_name(topic)
 
     def parse_single_question(self, text: str, year: int, subject: str = "DKAB") -> Dict:
         """Tek soruyu parse eder"""

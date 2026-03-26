@@ -6,115 +6,40 @@ Yıllara ve konulara göre soru dağılımı analizi
 Otomatik güncellenir - yeni sınav eklendiğinde bildirim yapar
 """
 
+import json
 import os
 import re
+from collections import Counter, defaultdict
 from datetime import datetime
-from collections import defaultdict
+from pathlib import Path
 from typing import Dict, List, Tuple
-import json
 
-ANALYSIS_FILE = os.path.join(os.path.dirname(__file__), "analiz_sonuc.txt")
-ANALYSIS_JSON = os.path.join(os.path.dirname(__file__), "analiz_data.json")
-LAST_CHECK_FILE = os.path.join(os.path.dirname(__file__), "last_check.json")
+try:
+    from project_paths import PYTHON_VERISI_DIR, WORDE_DIR
+    from topic_catalog import (
+        is_known_topic,
+        normalize_topic_name,
+        sort_topics_for_exam_family,
+    )
+    from topic_text_parser import parse_topic_text_file
+except ImportError:
+    from Python_Verisi.project_paths import PYTHON_VERISI_DIR, WORDE_DIR
+    from Python_Verisi.topic_catalog import (
+        is_known_topic,
+        normalize_topic_name,
+        sort_topics_for_exam_family,
+    )
+    from Python_Verisi.topic_text_parser import parse_topic_text_file
 
-EXAM_DIR = r"C:\Users\osman\Desktop\OSYM\Worde_Yapistir"
-
-KONULAR = [
-    "Kur'an-ı Kerim ve Tecvid",
-    "Tefsir",
-    "Hadis",
-    "Fıkıh",
-    "Fıkıh Usulü",
-    "Kelam / Akaid",
-    "İslam Mezhepleri ve Akımları",
-    "İslam Tarihi",
-    "Siyer",
-    "İslam Kültür ve Medeniyeti",
-    "İslam Felsefesi",
-    "Din Felsefesi",
-    "Din Sosyolojisi",
-    "Din Psikolojisi",
-    "Din Eğitimi",
-    "Dinler Tarihi",
-    "İslam Ahlakı ve Tasavvuf",
-    "Mezhepler Tarihi",
-    "Din Hizmetleri ve Hitabet",
-]
-
-TOPIC_ALIASES = {
-    "Akaid / Kelam": "Kelam / Akaid",
-    "Kelam / Akaid": "Kelam / Akaid",
-    "Kur’an-ı Kerim ve Tecvid": "Kur'an-ı Kerim ve Tecvid",
-    "Kur'an-i Kerim ve Tecvid": "Kur'an-ı Kerim ve Tecvid",
-    "İslam Tarihi / Siyer": "İslam Tarihi",
-    "Islam Tarihi": "İslam Tarihi",
-    "İslam Ahlaki ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
-    "Islam Ahlaki ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
-    "?slam Ahlak? ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
-    "Mezhepler tarihi": "Mezhepler Tarihi",
-}
+ANALYSIS_FILE = PYTHON_VERISI_DIR / "analiz_sonuc.txt"
+ANALYSIS_JSON = PYTHON_VERISI_DIR / "analiz_data.json"
+LAST_CHECK_FILE = PYTHON_VERISI_DIR / "last_check.json"
+EXAM_DIR = WORDE_DIR
 
 EXAM_FAMILY_LABELS = {
     "DKAB": "ÖABT DKAB",
     "IHL": "ÖABT İHL",
     "MBSTS": "MBSTS",
-}
-
-PRIORITY_HINTS = {
-    "DHBT": [
-        "Fıkıh",
-        "Siyer",
-        "Kelam / Akaid",
-        "Kur'an-ı Kerim ve Tecvid",
-        "İslam Ahlakı ve Tasavvuf",
-        "Tefsir",
-        "Hadis",
-        "Dinler Tarihi",
-        "Mezhepler Tarihi",
-        "Din Hizmetleri ve Hitabet",
-    ],
-    "MBSTS": [
-        "Fıkıh",
-        "Kur'an-ı Kerim ve Tecvid",
-        "Tefsir",
-        "Hadis",
-        "Kelam / Akaid",
-        "Fıkıh Usulü",
-        "Siyer",
-        "İslam Tarihi",
-        "Dinler Tarihi",
-        "İslam Mezhepleri ve Akımları",
-        "Din Hizmetleri ve Hitabet",
-    ],
-    "ÖABT DKAB": [
-        "Fıkıh",
-        "Tefsir",
-        "Hadis",
-        "Kelam / Akaid",
-        "Din Eğitimi",
-        "Siyer",
-        "İslam Tarihi",
-        "İslam Kültür ve Medeniyeti",
-        "Dinler Tarihi",
-        "Din Sosyolojisi",
-        "Din Psikolojisi",
-        "Din Felsefesi",
-        "İslam Felsefesi",
-    ],
-    "ÖABT İHL": [
-        "Kur'an-ı Kerim ve Tecvid",
-        "Fıkıh",
-        "Tefsir",
-        "Hadis",
-        "Kelam / Akaid",
-        "Siyer",
-        "İslam Tarihi",
-        "İslam Ahlakı ve Tasavvuf",
-        "İslam Mezhepleri ve Akımları",
-        "Mezhepler Tarihi",
-        "Dinler Tarihi",
-        "Din Eğitimi",
-    ],
 }
 
 SUBTOPIC_KEYWORDS = {
@@ -202,13 +127,6 @@ SUBTOPIC_KEYWORDS = {
 }
 
 
-def normalize_topic_name(topic: str) -> str:
-    topic = (topic or "").strip()
-    if not topic:
-        return ""
-    return TOPIC_ALIASES.get(topic, topic)
-
-
 def format_subject_label(subject: str) -> str:
     subject = str(subject or "").replace("_", " ").strip()
     replacements = {
@@ -239,23 +157,23 @@ def extract_subtopics(question_text: str, topic: str) -> List[str]:
 
 
 def sort_topics_for_priority(exam_family: str, topic_counts: Dict[str, int]) -> List[Tuple[str, int]]:
-    hint_order = {name: idx for idx, name in enumerate(PRIORITY_HINTS.get(exam_family, []))}
-    return sorted(
-        topic_counts.items(),
-        key=lambda item: (-item[1], hint_order.get(item[0], 999), item[0]),
-    )
+    return sort_topics_for_exam_family(exam_family, topic_counts)
 
 
 def has_dhbt_common_file(year: int) -> bool:
-    return os.path.exists(os.path.join(EXAM_DIR, f"{year}_DHBT_Ortak_Sorulari.txt"))
+    return (EXAM_DIR / f"{year}_DHBT_Ortak_Sorulari.txt").exists()
 
 
 def should_skip_dhbt_common_question(year: int, subject: str, soru_no: int) -> bool:
-    return False
+    if soru_no > 20:
+        return False
+    if subject not in {"DHBT Lisans", "DHBT Önlisans", "DHBT Ortaöğretim"}:
+        return False
+    return has_dhbt_common_file(year)
 
 def get_file_mod_time(file_path):
     try:
-        return os.path.getmtime(file_path)
+        return Path(file_path).stat().st_mtime
     except:
         return 0
 
@@ -281,11 +199,11 @@ def check_new_files():
     current_files = {}
     new_files = []
     
-    if os.path.exists(EXAM_DIR):
-        for filename in os.listdir(EXAM_DIR):
+    if EXAM_DIR.exists():
+        for file_path in EXAM_DIR.iterdir():
+            filename = file_path.name
             match = re.search(r"(\d{4})_(.+)_Sorulari\.txt", filename)
             if match:
-                file_path = os.path.join(EXAM_DIR, filename)
                 mod_time = get_file_mod_time(file_path)
                 current_files[filename] = mod_time
                 
@@ -299,6 +217,147 @@ def check_new_files():
     save_last_check(last_check)
     
     return new_files
+
+
+def load_summary_topic_reports() -> List[Dict]:
+    reports = []
+    for filename in ("dkab_ozet.txt", "dkab_kodlamali_ozet.txt"):
+        path = PYTHON_VERISI_DIR / filename
+        if not path.exists():
+            continue
+        try:
+            reports.append(parse_topic_text_file(path))
+        except Exception as exc:
+            reports.append(
+                {
+                    "path": str(path),
+                    "main_sections": [],
+                    "topic_blocks": [],
+                    "mapped_topics": [],
+                    "warnings": [f"{filename} ayrıştırılamadı: {exc}"],
+                }
+            )
+    return reports
+
+
+def build_topic_quality_report(questions: List[Dict]) -> Dict[str, object]:
+    missing_topics = []
+    alias_corrections = set()
+    unknown_topic_values = Counter()
+    subject_topic_counts = defaultdict(Counter)
+
+    for question in questions:
+        raw_values = question.get("raw_topic_values", [])
+        if question.get("topic_missing") or not raw_values:
+            missing_topics.append((question["yil"], question["ders"], question["soru_no"]))
+
+        for raw_topic, normalized_topic in question.get("topic_alias_corrections", []):
+            alias_corrections.add(f"{raw_topic} -> {normalized_topic}")
+
+        for raw_topic in raw_values:
+            normalized = normalize_topic_name(raw_topic)
+            if raw_topic and not is_known_topic(normalized):
+                unknown_topic_values[normalized] += 1
+
+        normalized_topic = normalize_topic_name(question.get("konu", ""))
+        if normalized_topic:
+            subject_topic_counts[question["ders"]][normalized_topic] += 1
+
+    rare_topic_usage = []
+    for subject, counter in subject_topic_counts.items():
+        for topic_name, count in counter.items():
+            if count <= 1:
+                rare_topic_usage.append((subject, topic_name, count))
+    rare_topic_usage.sort(key=lambda item: (item[0], item[1]))
+
+    summary_reports = load_summary_topic_reports()
+    summary_topics = set()
+    summary_warnings = []
+    for report in summary_reports:
+        summary_topics.update(report.get("mapped_topics", []))
+        summary_warnings.extend(report.get("warnings", []))
+
+    question_topics = sorted(
+        {
+            normalize_topic_name(question.get("konu", ""))
+            for question in questions
+            if is_known_topic(question.get("konu", ""))
+        }
+    )
+    summary_topics = sorted(topic for topic in summary_topics if topic)
+
+    return {
+        "missing_topics": missing_topics,
+        "alias_corrections": sorted(alias_corrections),
+        "unknown_topic_values": unknown_topic_values.most_common(),
+        "rare_topic_usage": rare_topic_usage,
+        "question_topics_without_summary": sorted(set(question_topics) - set(summary_topics)),
+        "summary_topics_without_questions": sorted(set(summary_topics) - set(question_topics)),
+        "summary_warnings": sorted(set(summary_warnings)),
+        "summary_files": [Path(report.get("path", "")).name for report in summary_reports if report.get("path")],
+    }
+
+
+def append_topic_quality_report(text: List[str], quality_report: Dict[str, object]) -> None:
+    text.append("KONU KALİTE RAPORU")
+    text.append("-" * 70)
+
+    missing_topics = quality_report["missing_topics"]
+    if missing_topics:
+        text.append("Boş veya eksik KONU etiketleri:")
+        for yil, ders, soru_no in missing_topics[:20]:
+            text.append(f"  - {yil} {ders} Soru {soru_no}")
+    else:
+        text.append("Boş KONU etiketi bulunmadı.")
+
+    alias_corrections = quality_report["alias_corrections"]
+    if alias_corrections:
+        text.append("")
+        text.append("Alias ile düzeltilen konu adları:")
+        for row in alias_corrections[:20]:
+            text.append(f"  - {row}")
+
+    unknown_topic_values = quality_report["unknown_topic_values"]
+    if unknown_topic_values:
+        text.append("")
+        text.append("Kanonik liste dışında kalan konu adları:")
+        for topic_name, count in unknown_topic_values[:20]:
+            text.append(f"  - {topic_name}: {count}")
+
+    rare_topic_usage = quality_report["rare_topic_usage"]
+    if rare_topic_usage:
+        text.append("")
+        text.append("Ders içinde nadir görülen konu kullanımları:")
+        for subject, topic_name, count in rare_topic_usage[:20]:
+            text.append(f"  - {subject} | {topic_name}: {count}")
+
+    question_topics_without_summary = quality_report["question_topics_without_summary"]
+    text.append("")
+    text.append("Soru havuzunda olup özet metninde eşleşmeyen konular:")
+    if question_topics_without_summary:
+        for topic_name in question_topics_without_summary:
+            text.append(f"  - {topic_name}")
+    else:
+        text.append("  - Tüm kanonik soru konuları özet tarafında eşleşiyor.")
+
+    summary_topics_without_questions = quality_report["summary_topics_without_questions"]
+    text.append("")
+    text.append("Özet tarafında olup soru havuzunda görünmeyen konu eşleşmeleri:")
+    if summary_topics_without_questions:
+        for topic_name in summary_topics_without_questions:
+            text.append(f"  - {topic_name}")
+    else:
+        text.append("  - Özet tarafındaki eşleşmeler soru havuzuyla uyumlu.")
+
+    summary_warnings = quality_report["summary_warnings"]
+    if summary_warnings:
+        text.append("")
+        text.append("Özet başlığı uyarıları:")
+        for warning in summary_warnings[:20]:
+            text.append(f"  - {warning}")
+
+    text.append("-" * 70)
+    text.append("")
 
 def parse_questions_from_file(file_path: str, year: int, subject: str = "DKAB") -> List[Dict]:
     """Dosyadan soruları parse eder"""
@@ -331,6 +390,8 @@ def parse_single_question(text: str, year: int, subject: str = "DKAB") -> Dict:
         soru_no = None
         soru_metni = []
         topic_candidates = []
+        raw_topic_values = []
+        alias_corrections = []
         
         for line in lines:
             line = line.strip()
@@ -342,7 +403,11 @@ def parse_single_question(text: str, year: int, subject: str = "DKAB") -> Dict:
                 except ValueError:
                     soru_no = None
             elif line.startswith('KONU:'):
-                normalized_topic = normalize_topic_name(line.split(':', 1)[1].strip())
+                raw_topic = line.split(':', 1)[1].strip()
+                raw_topic_values.append(raw_topic)
+                normalized_topic = normalize_topic_name(raw_topic)
+                if raw_topic and normalized_topic and raw_topic != normalized_topic:
+                    alias_corrections.append((raw_topic, normalized_topic))
                 if normalized_topic:
                     topic_candidates.append(normalized_topic)
             elif soru_no and not any(line.startswith(x) for x in ['A)', 'B)', 'C)', 'D)', 'E)', 'Doğru', 'Dogru', 'Açıklama', 'Aciklama', '[RESIM', 'Görsel', 'Gorsel']):
@@ -350,8 +415,8 @@ def parse_single_question(text: str, year: int, subject: str = "DKAB") -> Dict:
 
         konu = ""
         for candidate in topic_candidates:
-            if candidate in KONULAR:
-                konu = candidate
+            if is_known_topic(candidate):
+                konu = normalize_topic_name(candidate)
                 break
         if not konu and topic_candidates:
             konu = topic_candidates[-1]
@@ -364,6 +429,10 @@ def parse_single_question(text: str, year: int, subject: str = "DKAB") -> Dict:
                 "ders": subject,
                 "sinav_aile": get_exam_family(subject),
                 "konu": konu_adi,
+                "topic_missing": not any(item.strip() for item in raw_topic_values),
+                "topic_known": is_known_topic(konu_adi),
+                "raw_topic_values": raw_topic_values,
+                "topic_alias_corrections": alias_corrections,
                 "soru_no": soru_no,
                 "soru_metni": soru_metni_birlesik,
                 "alt_basliklar": extract_subtopics(soru_metni_birlesik, konu_adi)
@@ -378,13 +447,13 @@ def analyze_all_exams():
     years_data = defaultdict(lambda: defaultdict(int))
     konu_data = defaultdict(lambda: defaultdict(int))
     
-    if os.path.exists(EXAM_DIR):
-        for filename in os.listdir(EXAM_DIR):
+    if EXAM_DIR.exists():
+        for file_path in EXAM_DIR.iterdir():
+            filename = file_path.name
             match = re.search(r"(\d{4})_(.+)_Sorulari\.txt", filename)
             if match:
                 year = int(match.group(1))
                 subject = format_subject_label(match.group(2))
-                file_path = os.path.join(EXAM_DIR, filename)
                 questions = parse_questions_from_file(file_path, year, subject)
                 all_questions.extend(questions)
                 
@@ -398,6 +467,7 @@ def generate_analysis_text():
     """Analiz metnini oluşturur"""
     questions, years_data, konu_data = analyze_all_exams()
     new_files = check_new_files()
+    quality_report = build_topic_quality_report(questions)
     
     total = len(questions)
     all_subjects = sorted({subject for year_map in years_data.values() for subject in year_map.keys()})
@@ -464,7 +534,11 @@ def generate_analysis_text():
     text.append("")
     
     # Bilinmeyen konu soruları
-    unknown_questions = [(q['yil'], q['ders'], q['soru_no']) for q in questions if q.get('konu') in ['BİLİNMEYEN KONU', '', None] or not q.get('konu')]
+    unknown_questions = [
+        (q['yil'], q['ders'], q['soru_no'])
+        for q in questions
+        if q.get("topic_missing") or q.get('konu') in ['BİLİNMEYEN KONU', '', None] or not q.get('konu')
+    ]
     if unknown_questions:
         text.append("⚠️ BİLİNMEYEN KONU SORULARI")
         text.append("-" * 50)
@@ -473,6 +547,8 @@ def generate_analysis_text():
             text.append(f"  • {yil} {ders} - Soru {no}")
         text.append("-" * 50)
         text.append("")
+
+    append_topic_quality_report(text, quality_report)
     
     text.append("📋 YIL × DERS × KONU DAĞILIMI")
     text.append("-" * 70)
