@@ -42,8 +42,11 @@ TOPIC_ALIASES: Dict[str, str] = {
     "Islam Tarihi": "İslam Tarihi",
     "İslam Ahlaki ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
     "Islam Ahlaki ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
+    "?slam Ahlak? ve Tasavvuf": "İslam Ahlakı ve Tasavvuf",
     "Akaid Kelam": "Kelam / Akaid",
     "Mezhepler tarihi": "Mezhepler Tarihi",
+    "İslam Mezhepleri Tarihi": "Mezhepler Tarihi",
+    "Islam Mezhepleri Tarihi": "Mezhepler Tarihi",
 }
 
 SUMMARY_MAIN_SECTIONS: List[str] = [
