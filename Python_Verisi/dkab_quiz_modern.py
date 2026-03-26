@@ -34,7 +34,7 @@ try:
         should_skip_dhbt_common_question as question_bank_should_skip_dhbt_common_question,
     )
     from topic_catalog import CANONICAL_TOPICS, normalize_topic_name as catalog_normalize_topic_name, topic_sort_key
-    from topic_text_parser import parse_topic_text_file
+    from topic_text_parser import normalize_sentence_for_tts, parse_topic_text_file
 except ImportError:
     from Python_Verisi.project_paths import GORSSELLER_DIR, ROOT_DIR, WORDE_DIR
     from Python_Verisi.question_bank import (
@@ -46,7 +46,7 @@ except ImportError:
         should_skip_dhbt_common_question as question_bank_should_skip_dhbt_common_question,
     )
     from Python_Verisi.topic_catalog import CANONICAL_TOPICS, normalize_topic_name as catalog_normalize_topic_name, topic_sort_key
-    from Python_Verisi.topic_text_parser import parse_topic_text_file
+    from Python_Verisi.topic_text_parser import normalize_sentence_for_tts, parse_topic_text_file
 
 try:
     import winsound
@@ -1095,7 +1095,7 @@ class ModernDKABQuiz:
         return 0.65 + arabic_bonus + length_bonus + (sentence_breaks * 0.08)
 
     def _normalize_speech_text(self, text):
-        normalized = str(text or "").replace("\n", " ")
+        normalized = normalize_sentence_for_tts(str(text or "").replace("\n", " "))
         normalized = self._replace_roman_numerals_for_speech(normalized)
         abbreviation_rules = [
             (r"\bHz\.\s*", "Hazreti "),
@@ -1191,6 +1191,7 @@ class ModernDKABQuiz:
         ])
 
     def speak_text(self, text, status_prefix="Ses okunuyor", on_finished=None, sequence_token=None):
+        text = self._normalize_speech_text(text)
         voice_id = self._selected_speech_voice_id()
         if not voice_id:
             self._set_speech_status("Türkçe ses modeli bulunamadı.")

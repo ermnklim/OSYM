@@ -14,6 +14,74 @@ except ImportError:
     from Python_Verisi.topic_catalog import map_summary_heading_to_topics, match_summary_main_section
 
 
+ARABIC_LETTER_NAMES = {
+    "ا": "elif",
+    "أ": "hemze",
+    "إ": "hemze",
+    "آ": "elif",
+    "ٱ": "elif",
+    "ب": "be",
+    "ت": "te",
+    "ث": "se",
+    "ج": "cim",
+    "ح": "ha",
+    "خ": "hı",
+    "د": "dal",
+    "ذ": "zel",
+    "ر": "ra",
+    "ز": "ze",
+    "س": "sin",
+    "ش": "şın",
+    "ص": "sad",
+    "ض": "dad",
+    "ط": "tı",
+    "ظ": "zı",
+    "ع": "ayn",
+    "غ": "gayn",
+    "ف": "fe",
+    "ق": "kaf",
+    "ك": "kef",
+    "ل": "lam",
+    "م": "mim",
+    "ن": "nun",
+    "ه": "he",
+    "ة": "te merbuta",
+    "و": "vav",
+    "ؤ": "hemzeli vav",
+    "ي": "ye",
+    "ى": "ye",
+    "ئ": "hemzeli ye",
+    "ء": "hemze",
+}
+
+ARABIC_MARK_NAMES = {
+    "ً": "tenvin üstün",
+    "ٍ": "tenvin esre",
+    "ٌ": "tenvin ötre",
+    "َ": "üstün",
+    "ِ": "esre",
+    "ُ": "ötre",
+    "ْ": "cezim",
+    "ّ": "şedde",
+}
+
+TECVID_TERM_REPLACEMENTS = {
+    "MEDD-İ": "meddi",
+    "MEDD-I": "meddi",
+    "İDĞAM-I": "idğamı",
+    "IDĞAM-I": "idğamı",
+    "İDĞAM-İ": "idğamı",
+    "BİLA GUNNE": "bila gunne",
+    "MEAL GUNNE": "meal gunne",
+    "SAKİN": "sakin",
+    "TENVİN": "tenvin",
+    "İHFA": "ihfa",
+    "İZHAR": "izhar",
+    "İKLAB": "iklab",
+    "LİN": "lin",
+}
+
+
 def _count_question_references(text: str) -> int:
     match = re.search(r"\(çıkmış sorular\s*:\s*(.*?)\)", text, flags=re.IGNORECASE)
     if not match:
@@ -25,8 +93,46 @@ def _turkish_upper(text: str) -> str:
     return text.replace("i", "İ").replace("ı", "I").upper()
 
 
-def normalize_sentence_for_tts(text: str) -> str:
+def _replace_tecvid_terms(text: str) -> str:
     value = str(text or "")
+    for source, target in TECVID_TERM_REPLACEMENTS.items():
+        value = re.sub(rf"\b{re.escape(source)}\b", target, value, flags=re.IGNORECASE)
+    return value
+
+
+def _replace_arabic_symbols_for_tts(text: str) -> str:
+    value = str(text or "")
+    value = value.replace("", " ")
+    value = value.replace("◌ً", " tenvin üstün ")
+    value = value.replace("◌ٍ", " tenvin esre ")
+    value = value.replace("◌ٌ", " tenvin ötre ")
+
+    def replace_sukun_pair(match: re.Match[str]) -> str:
+        letter = match.group(1)
+        return f" cezimli {ARABIC_LETTER_NAMES.get(letter, letter)} "
+
+    value = re.sub(r"([ءاأإآٱبتثجحخدذرزسشصضطظعغفقكلمنهوىيؤئةئ])\s*ْ", replace_sukun_pair, value)
+
+    def replace_letter(match: re.Match[str]) -> str:
+        char = match.group(0)
+        if char in ARABIC_MARK_NAMES:
+            return f" {ARABIC_MARK_NAMES[char]} "
+        return f" {ARABIC_LETTER_NAMES.get(char, char)} "
+
+    value = re.sub(r"[ءاأإآٱبتثجحخدذرزسشصضطظعغفقكلمنهوىيؤئةئًٌٍَُِّْ]", replace_letter, value)
+    value = value.replace("|", ", ")
+    value = value.replace("–", ", ")
+    value = value.replace("—", ", ")
+    value = value.replace("(", " ")
+    value = value.replace(")", " ")
+    value = value.replace("“", " ")
+    value = value.replace("”", " ")
+    value = value.replace('"', " ")
+    return re.sub(r"\s+", " ", value).strip()
+
+
+def normalize_sentence_for_tts(text: str) -> str:
+    value = _replace_tecvid_terms(_replace_arabic_symbols_for_tts(text))
 
     def number_to_turkish(match: re.Match[str]) -> str:
         number_text = match.group(1)
@@ -84,9 +190,19 @@ def normalize_sentence_for_tts(text: str) -> str:
         r"(?i)\bibn\b": "İbni",
         r"(?i)\bb\.\s*": "bin ",
     }
+    replacements.update(
+        {
+            r"(?i)\bm\.\s*ö\.\s*": "milattan önce ",
+            r"(?i)\bm\.\s*s\.\s*": "milattan sonra ",
+            r"(?i)\bs\.a\.v\.\s*": "sallallahu aleyhi ve sellem ",
+            r"(?i)\ba\.s\.\s*": "aleyhisselam ",
+            r"(?i)\br\.a\.\s*": "radıyallahu anh ",
+        }
+    )
     for pattern, repl in replacements.items():
         value = re.sub(pattern, repl, value)
-    return value
+    value = value.replace(" - ", ", ")
+    return re.sub(r"\s+", " ", value).strip()
 
 
 def _is_probable_subtopic_header(line: str) -> bool:
