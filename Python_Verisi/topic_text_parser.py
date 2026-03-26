@@ -68,6 +68,12 @@ ARABIC_MARK_NAMES = {
 TECVID_TERM_REPLACEMENTS = {
     "MEDD-İ": "meddi",
     "MEDD-I": "meddi",
+    "VAKF-I LAZIM": "vakfı lazım",
+    "VAKF-İ LAZIM": "vakfı lazım",
+    "VAKF-I MUTLAK": "vakfı mutlak",
+    "VAKF-İ MUTLAK": "vakfı mutlak",
+    "VAKF-I": "vakfı",
+    "VAKF-İ": "vakfı",
     "İDĞAM-I": "idğamı",
     "IDĞAM-I": "idğamı",
     "İDĞAM-İ": "idğamı",
@@ -95,6 +101,9 @@ def _turkish_upper(text: str) -> str:
 
 def _replace_tecvid_terms(text: str) -> str:
     value = str(text or "")
+    value = value.replace("\uf077", " ")
+    value = value.replace("“", " ")
+    value = value.replace("”", " ")
     for source, target in TECVID_TERM_REPLACEMENTS.items():
         value = re.sub(rf"\b{re.escape(source)}\b", target, value, flags=re.IGNORECASE)
     return value
@@ -106,6 +115,8 @@ def _replace_arabic_symbols_for_tts(text: str) -> str:
     value = value.replace("◌ً", " tenvin üstün ")
     value = value.replace("◌ٍ", " tenvin esre ")
     value = value.replace("◌ٌ", " tenvin ötre ")
+
+    value = re.sub(r"[“”\"'`]\s*([ءاأإآٱبتثجحخدذرزسشصضطظعغفقكلمنهوىيؤئةئ])\s*[“”\"'`]", r" , \1 , ", value)
 
     def replace_sukun_pair(match: re.Match[str]) -> str:
         letter = match.group(1)
@@ -121,6 +132,7 @@ def _replace_arabic_symbols_for_tts(text: str) -> str:
 
     value = re.sub(r"[ءاأإآٱبتثجحخدذرزسشصضطظعغفقكلمنهوىيؤئةئًٌٍَُِّْ]", replace_letter, value)
     value = value.replace("|", ", ")
+    value = value.replace("/", ", ")
     value = value.replace("–", ", ")
     value = value.replace("—", ", ")
     value = value.replace("(", " ")
@@ -201,6 +213,13 @@ def normalize_sentence_for_tts(text: str) -> str:
     )
     for pattern, repl in replacements.items():
         value = re.sub(pattern, repl, value)
+    value = re.sub(r"\b(vakf[ıi]\s+\w+)\s+([a-zçğıöşü]+)\b", r"\1, \2,", value, flags=re.IGNORECASE)
+    value = re.sub(r"\b(vakfı\s+lazım)\s+(mim)\b", r"\1, \2,", value, flags=re.IGNORECASE)
+    value = re.sub(r"\b(vakfı\s+mutlak)\s+(tı)\b", r"\1, \2,", value, flags=re.IGNORECASE)
+    value = re.sub(r"vakfı\s+lazım\W+mim,", "vakfı lazım, mim,", value, flags=re.IGNORECASE)
+    value = re.sub(r"vakfı\s+mutlak\W+tı,", "vakfı mutlak, tı,", value, flags=re.IGNORECASE)
+    value = re.sub(r"\s+\?\s+", " ", value)
+    value = re.sub(r"\s+,", ",", value)
     value = value.replace(" - ", ", ")
     return re.sub(r"\s+", " ", value).strip()
 
