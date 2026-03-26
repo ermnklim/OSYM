@@ -7,21 +7,876 @@ DKAB ÖZET NOTLAR
 KUR'AN-I KERİM VE TECVİD
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-
+Kur’an-ı kerimi Okuma şekilleri
+ TERTİL (Harflerin hakkını vererek Okuma)
+ TAHKİK (Yavaş biçimde Okuma)
+ TEDVİR (Orta biçimde Okuma)
+ HADR (Hızlı biçimde Okuma)
+ HEZREME / TAHLİT (En Hızlı biçimde okuma)
+Tecvid ilminde Okuyuş hataları
+ LAHN-I HAFİ (Küçük ve Gizli hata / Ehil olan kimseler anlar.)
+ LAHN-I CELİ (Ağır ve Büyük hata / Kur’an-ı okuyan herkes anlar.)
+ Harf-i Med ( ى | و | ا )
+ Sebeb-i Med (Hemze | Sükun-Harekesiz)
+Medler
+ MEDD-İ TABİİ / ASIL MED (Bir kelimede harf-i med’in harekesiz bulunması / 1 elif miktarı okumak gerekir.)
+ MEDD-İ MUTTASIL (Bir kelimede Harfi med’den sonra Sebebi med’den hemze gelmesi durumudur. / En az 2 elif miktarı okumak gerekir.)
+ MEDD-İ MUNFASIL (Bir kelimenin Harf-i med ile bitmesi Diğer kelimenin Sebeb-i med’den hemze ile başlaması / En az 1 elif miktarı okumak gerekir.)
+ MEDD-İ LAZIM (Harf-i med’den sonra cezimli veya şeddeli bir harf gelmesiyle olur. / 4 elif miktarı okumak gerekir.)
+ MEDD-İ ARIZ (Harf-i med’den sonra Arizi-Geçici sükun gelmesiyle olur, Genellikle ayet sonlarında ve duraklarda olur. / 4 elif miktarı okumak gerekir.)
+ MEDD-İ LİN (Üstün harekesinden sonra Cezimli Vav veya Cezimli Ya harflerinin gelmesidir.)
+Tenvin ( ◌ً – ◌ٍ – ◌ٌ) ve Sakin Nun ( نْ ) hükümleri
+ İHFA (Tenvin veya Sakin Nun’dan sonra 15 harfin “ ز | ذ | د | ج | ث | ت
+ك | ف | ظ | ط | ض | ص | ش | س | ” gelmesidir.)
+ İZHAR (Tenvin veya Sakin Nun’dan sonra 5 harfin “ | غ | ع | خ | ح | ء
+ه) ” gelmesidir.)
+ İKLAB (Tenvin veya Sakin Nun’dan sonra “ ب ” harfi gelip, Tenvin veya
+Sakin Nun’un “ م ” harfine dönüşmesidir.)
+ İDĞAM-I MEAL GUNNE (Tenvin veya Sakin Nun’dan sonra 4 harfin “ و | ن | م | ى ” gelmesidir.)
+ İDĞAM-I BİLA GUNNE (Tenvin veya Sakin Nun’dan sonra 2 harfin “ ل
+ر | ” gelmesidir.)
+Mahreçleri ve Sıfatları yönünden İdğam çeşitleri
+ İDĞAM-I MİSLEYN (Mahreçleri ve Sıfatları aynı 2 harften birinin Sakin-Harekesiz, Diğerinin harekeli olma durumudur.)
+ İDĞAM-I MÜTECANİSEYN (Mahreçleri aynı Sıfatları farklı olan 2 harften birinin Sakin-Harekesiz, Diğerinin harekeli olma durumudur.)
+ İDĞAM-I MÜTEKARİBEYN (Mahreç ve Sıfat yönünden birbirine yakın olan 2 harften birinin Sakin-Harekesiz, Diğerinin harekeli olma durumudur.)
+Lam-ı tarif ( ا | ل ) ile ilgili Hükümler
+ İDĞAM-I ŞEMSİYE (Lam-ı tariften sonra 14 harfin “ ز | ر | ذ | د | ث | ت
+ن | ل | ظ | ط | ض | ص | ش | س | ” gelmesidir.)
+ İZHAR-I KAMERİYE (Lam-ı tariften sonra 14 harfin “ | خ | ح | ج | ب | أ
+ي | و | ه | م | ك | ق | ف | غ | ع ” gelmesidir.)
+Sakin Mim ( مْ ) ile ilgili Hükümler
+ İDĞAM-I MİSLEYN MEAL GUNNE / İDĞAMI ŞEFEVİ (Sakin Mim’den sonra Harekeli Mim gelince olur.)
+ İHFA-İ ŞEFEVİ / DUDAK İHFASI (Sakin Mim’den sonra Harekeli Be gelirse olur.)
+ İZHAR-I ŞEFEVİ / DUDAK İZHARI (Sakin Mim’den sonra Mim | Be harflerinin dışında bir harf gelirse olur.)
+ Bir kelimenin ortasında veya sonunda “ د | ج | ب | ط | ق ” bu 5 harften
+birinin sakin olarak bulunması (KALKALE)
+Sektenin yapıldığı ayetler
+ KEHF SURESİ, 1. AYET
+ YASİN SURESİ, 52. AYET
+ KIYAMET SURESİ, 27. AYET
+ MUTAFFİFİN SURESİ, 14. AYET
+Vakıf işaretleri
+ VAKF-I LAZIM ( “ م ” / Kesinlikle durulması gerekir.)
+ VAKF-I MUTLAK ( “ ط ” / Durulması gerekir. )
+ VAKF-I CAİZ ( “ ج “ / Geçilir fakat Durmak geçmekten daha evladır.)
+ VAKF-I MÜCEVVEZ ( “ ز “ / Geçmek evladır.)
+ VAKF-I MURAHHAS ( “ ص “ / Okuyucunun nefesinin yetmediği
+yerde durulur, Zaruret olmadıkça kullanılmaz.)
+ VAKF-I MURAKABE – MUANAKA ( “ :. :. ” / Birbirine yakın iki ayrı yere konan, üçer noktadan ibarettir. Hangisinde durmak tercih edilecekse, diğerinde geçmeyi öngörür.)
+ VAKF-I RÜKU ( “ ع ” / Hatim ve aşır okurken, başlayış ve bitiriş yeri
+tayininde, veya herhangi bir yeri ezberlerken, ders başı ve sonu olarak
+da bu işareti esas almak uygun olur.)
+ Kur’an-ı kerimi güzel ve doğru okuyan kişiye (FEMİ MUHSİN) denir.
+ Vakıf çeşitleri (TAM | KÂFİ | HASEN | KABİH)
+ Vahy-i metlüv (KUR’AN) | Vahy-i gayrimetlüv (HADİS - SÜNNET)
+İlk Vahiy Katipleri
+ ABDULLAH B. SA’D – Mekke
+ UBEYY B. KAB – Medine
+Vahiy ile ilgili terimler
+ NEHARİ (Gündüz nazil olan ayetler)
+ ŞİTAİ (Kışın nazil olan ayetler)
+ FİRAŞİ (Peygamberimiz (s.a.v) yatağında iken nazil olan ayetler)
+ HADARİ (Peygamberimiz (s.a.v) seferde değilken nazil olan ayetler)
+ Vahyin nüzul aşamaları (LEVH-İ MAHFUZ  BEYTULİZZE  DÜNYAYA İNDİRİLMESİ)
+ Kur’an-ı kerimin parça parça indirilmesi (TENCİMUL KUR’AN)
+ Kur’an toplanırken son ayetlerin bulunduğu sahabi (HUZEYME B. SABİT – Ahzab, 23. ayet)
+İstinsah – Kur’anın çoğaltılmasında bulunan kişiler
+ ZEYD B. SABİT
+ ABDULLAH B. ZÜBEYR
+ SAD B. EL AS
+ ABDURRAHMAN B. HARİS
+ Kur’an-ı kerimi; noktalayan (EBUL ESVED ED-DÜELİ), harekeleyen (HALİL B. AHMED)
+ Kur’an da bazı ayetlerin derde deva olduğunu söyleyen ilim (HAVVASUL KUR’AN)
+ Ayetlerin son kelimesi (FASILA) | Kur’an da her 5 sayfa (HİZB)
+ Ayetlerin düzeni, sıralanışı ve Surelerin ayrılışı Tevkifidir / Vahye dayanır.
+ Alimlerin çoğuna göre son ayet (BAKARA, 281 | Peygamberimiz (s.a.v) bu ayet indikten 9 gün sonra vefat etmiştir.)
+ Bakara – Ali İmran (ZEHREVAN) | Felak – Nas (MUAVVİZETAN)
+ Kıraatleri 7’ye tahsis edip kurallarını koyan (EBUBEKİR B. MÜCAHİD)
+Mekki Sureler (87 Sure)
+ İçinde “Kella” lafzı bulunanlar
+ Secde ayeti olanlar
+ Huruf-u mukatta bulunanlar (Bakara ve Ali İmran hariç)
+Medeni Sureler (27 Sure)
+ Münafıklardan bahseder (Ankebut hariç)
+ Ehli Kitap ve Cihad hükümleri
+Özelliklerine göre Sureler
+ SEBU TÜVEL (Bakara | Ali İmran | Nisa | Maide | En’am | Araf | Enfal-Tevbe)
+ MİUN (Ayet sayısı 100 civarı olan sureler)
+ MESANİ (Ayet sayısı 100’den az olanlar / Ahzab – Kaf arası)
+ MUFASSAL (Kaf – Nas arası)
+ Kur’an ayetlerinde kastedilen manayı kesin ortaya çıkarmak (TEFSİR)
+ Ayetlerdeki manayı muhtemel manalardan birine çevirmek (TE’VİL)
+ Bir sözün manasını diğer dilde denk mana ile ifade etmek (TERCÜME)
+ Bir sözün anlamını biraz noktasıyla belirtmek (MEAL)
+Te’vil Çeşitleri
+ BEYANİ (Kelamcılar, Fakihler ve Dil uzmanları kullanır)
+ BURHANİ (Akıl yürütme kullanılır / İbn-i Rüşt kullanmıştır)
+ İRFANİ (Tasavvuf ehli kullanır)
+ Günümüze kadar ulaşmış en eski Kur’an meali yazarı (MANSUR B. NUH)
+Peygamberimizin (s.a.v) Kur’an-ı açıklama şekilleri
+ MÜCMELİN TEBYİNİ (Ne kastedildiği anlaşılmayan ayetlerin açıklanması)
+ MÜBHEMİN TAFSİLİ (Kur’an da ismi işaretler, zamirlerin açıklanması)
+ MUTLAKIN TAKYİDİ (Anlam yönüyle Kayıt altına alınmayan lafızların Sünnet ile kayıt altına alınması)
+ MÜŞKİLİN TAVZİHİ (Kur’an da zıt görülen durumların açıklanması)
+Sahabe Tefsiri
+ Ahkam ayetlere karışmamışlardır.
+ Ayetlerin nüzul sebepleri açıklanmıştır.
+ Kaynaklar (KUR’ANIN KUR’AN ve SÜNNETLE TEFSİRİ | ŞİİRLER İSTİŞHAD | İSRAİLİYAT)
+Tabiin Tefsiri
+ Kur’anın bütünü tefsire konu oldu.
+ Tefsirde Kıyas metodu kullanıldı.
+ Kaynaklar (KUR’ANIN KUR’AN ve SÜNNETLE TEFSİRİ | ŞİİRLER İSTİŞHAD | İSRAİLİYAT | SAHABE İÇTİHADLARI)
+Tebeu-Tabiin Tefsiri
+ Tefsir, Tedvin edildi.
+ Tefsir, Hadis ilminin kolu oldu.
+ Dirayet tefsiri ortaya çıktı.
+ Kur’anı baştan sonra tefsir eden ilk kişi (MUKATIL B. SÜLEYMAN)
+Önemli Sahabi Müfessirler
+ ABDULLAH B. ABBAS (Mekke / Hibrul Umme / Tencümanül Kur’an)
+ UBEYY B. KAB (Medine / Kıraatte otorite / Ebu Tufeyl – Ebul Munzir)
+ ABDULLAH B. MESUD (Kufe / Tefsirde en çok söz edilen sahabi)
+Rivayet / Nakli / Me’sur Tefsirleri (Kodlama: TESS - BİSS)
+T ABERİ – Cami’ul Beyan B EĞAVİ – Mealimut Tenzil
+E Bİ HATİM – Te’vilil Kur’an İ BN KESİR – Tefsirul Kur’an
+S EMERKANDİ – Tefsiril Kur’an S EALİBİ – Cevahirul Hisan
+S ALEBİ – Keşf vel Beyan S UYUTİ – DÜRRÜL MENSUR
+Dirayet / Rey / Ma’kul Tefsirleri (Kodlama: ZEHRA - ERKEN)
+Z EMAHŞERİ – EL Keşşaf E BU SUUD - İrşad
+E BU HAYYAN – Bahrul Muhit R EŞİD RIZA – Tefsirul Menar
+H ATİP ŞİBRİNİ – Siracul Munir K ADI BEYDAVİ – Envarul Tenzil
+R AZİ – Mefatihul Gayb E LMALILI HAMDİ – Hak dini
+A LUSİ – Ruhul Menai N ESEFİ – Medarikul Tenzil
+ Mezhebi - Kelami tefsir ekolleri (MUTEZİLE | ŞİA | HARİCİ)
+ Mutezili Tefsir alimleri (KADI ABDULCABBAR | ZEMAHŞERİ)
+ Şia Tefsir alimleri (KUMMİ | TUSİ | TEBRESSİ | TABATAİ)
+ Harici Tefsir alimi (YUSUF ITFİYYİŞ – Himayanuz Zad)
+ İşari – Remzi – Tasavvufi Tefsir alimleri (TUSTERİ | SULEMİ | KUŞEYRİ | MUHYİDDİN ARABİ | İSMAİL HAKKI BURSEVİ)
+ Fıkhi – Ahkami Tefsir alimleri (KURTUBİ | TAHAVİ | İMAM ŞAFİİ)
+ İctimai Tefsir alimleri (REŞİD RIZA | SEYYİD KUTUP)
+ Ayetler ve Sureler arasındaki münasebet durumu (SİYAK)
+ VÜCUH (Bir kelimenin farklı anlamlara gelmesi) | NEZAİR (Bir kelimenin Kur’andaki anlamı)
+ Huruf-u Mukatta, Kur’an da 29 yerde geçmektedir (27 Mekki / 2 Medeni)
+ Kur’anın benzerinin getirileceği ancak Allah’ın engel olduğunu savunan görüş (SARFE TEORİSİ)
+ Kur’anın Gramer yapısını inceleyen ilim (İRABUL KUR’AN)
+ Kur’an da bir hükmü ortadan kaldıran ayet (NASİH) | Hükmü ortadan kaldırılan ayet (MENSUH)
+TEHADDİ – Meydan Okuma Ayetleri
+ Kur’an ile Meydan okuma (İsra, 88)
+ 10 Sure ile Meydan okuma (Hud, 13-14)
+ 1 Sure ile Meydan okuma (Yunus, 38)
+ Nesih Çeşitleri (KUR’ANIN KURANI NESHİ | KUR’ANIN SÜNNETİ NESHİ | SÜNNETİN SÜNNETİ NESHİ | SÜNNETİN KUR’ANI NESHİ)
+ İsraili haberi İslam’a nakletmede öne çıkanlar (KABUL AHBAR | VEHB B. MÜNEBBİH | ABDULLAH B. SELLAM)
+ Kur’an vahyinin tarihsel olduğunu ilk defa belirten fırka (BERAHİME)
+ Kur’an ayetlerini tarihsel metinler olarak ilk ele alan (HALEFULLAH)
+ Kutsal kitabın yorumlanması (TEOLOJİK HERMENEUTİK)
+ İslam dünyasında Vaki/Olgusal tefsirin temsilcisi (HASAN HANEFİ)
+ Ahmed b. Hanbele göre 3 şeyin aslı yoktur (TEFSİR | MELAHİM | MEĞAZİ)
+Kur’an da Bazı Sureler ve Anlamları
+ ENFAL – Ganimetler | EN’AM – Binek Hayvanları
+ ZUHRUF – Mücevher | AHKAF – Kum tepeleri
+ CASİYE – Diz üstü çökmek | ZARİYAT – Rüzgarlar
+ TEGABUN – Aldanma | MÜZEMMİL – Örtünüp bürünen
+ MÜDDESİR – Örtüsüne bürünen | NAZİAT – Söküp çıkaranlar
+ TEKVİR – Dürülmek | İNFİTAR – Yarılmak | HÜMEZE – Alay etmek
+ MUTAFFİFİN – Hile yapanlar | ADİYAT – Koşan atlar
+ GASİYE – Kuşatan salgın | KEVSER – Çok nimet
+ Kur’an da Peygamberimizin (s.a.v) adının geçtiği sureler (ALİ İMRAN, 144 | AHZAB, 40 | MUHAMMED, 2 | FETİH, 29)
+ Ahzab suresi 27. Ayette ismi geçen tek sahabi (ZEYD B. HARİSE)
+ Hanefi fakihler arasında meselede müctehid kabul edilen kişi (EBUL LEYS ES SEMERKANDİ)
+ Kur’an-ı kerime “Mushaf” ismini teklif eden (ABDULLAH B. MESUD)
+ Çoğaltılan Kur’anların gönderildiği yerler (MEKKE | MEDİNE | KUFE | ŞAM | BASRA | YEMEN | BAHREYN)
+ En çok Peygamber ismi geçen sure (EN’AM)
+ Zıhar ayetinin “Mücadele, 3” nüzulüne sebep olan kişi (HAVLE B. SALEBE)
+ Ha-Mim geçen sureler (MÜ’MİN | FUSSİLET | ŞURA | ZUHRUF | DUHAN | CASİYE | AHKAF)
+ Mülaane / Lanetleşme ‘nin geçtiği sure (ALİ İMRAN, 61)
+Bazı surelerin Diğer isimleri
+ FATIR / MELAİKE | MUHAMMED / KITAL | İNSAN / DEHR
+ Kur’an da geçen Müşriklerin kutsal yıldızı (ŞİRA)
+ Peygamberimizin (s.a.v); Kur’anı tamamen tefsir ettiğini söyleyen (İBN TEYMİYE) , bir kısmını tefsir ettiğini söyleyen (GAZZALİ)
+Secde ayetinin geçtiği sureler (Kodlama: MİSSAFFİRHANNN)
+M ERYEM – İ NŞİKAK – S ECDE – S AD – A RAF – F URKAN –
+F USSİLET – İ SRA – R AD – H AC – A LAK – N ECM – N EML – N AHL
+ Elhamdulillah ile başlayan sureler (FATİHA | EN’AM | KEHF | SEBE | FATIR)
+ Müsebbihat sureleri (HADİD | HAŞR | SAFF | CUMA | TEGABÜN)
+ İlk Tefsir usulü kitabı (EL BURHAN – Said el Hufi)
+ Kur’an dilini ele alan ilim (LÜGAVİ TEFSİR)
+ Edebi tefsir ekolünün kurucusu (EMİN EL-HULİ)
+ Kur’anın ayetlere ve surelere ayrılması (TEVKİF)
+ Açıklama yapılmadan ne dediği anlaşılmayan lafız (MÜCMEL)
+Meşhur Kıraat imamları
+ NAFİ (Medine | Ravileri: Kalun - Verş | En meşhur Kıraat imamı)
+ İBN-İ KESİR (Mekke | Ravileri: El-Bezzi - Kunbül)
+ EBU AMR (Basra | Ravileri: Duri - Susi)
+ İBN AMİR (Şam | Ravileri: Hişam – İbnu Zekvan)
+ ASIM (Kufe | Ravileri: Ebubekir Şu’be – Hafs | Kıraat imamımızdır)
+ HAMZA (Kufe | Ravileri: Halef - Hallad)
+ KİSAİ (Kufe | Ravileri: Ebul Haris - Duri)
+ EBU CAFER (Medine | Ravileri: İsa b. Verdan - Süleyman b. Cemmaz)
+ YAKUB EL HADRAMİ (Basra | Ravileri: Ravh – Ruveys)
+ HALEF B. HİŞAM (Kufe | Ravileri: İshak el Verrak - İdris el Haddad)
+Kur’an-ı kerimin Ana konuları
+ İTİKAT
+ İBADET
+ MUAMELAT
+ UKUBAT
+ VAAD | VAİD
+ İLMİ GERÇEKLER
+ KISSALAR
+ AHLAK | DUA
+ Bütün olarak nazil olan ilk sure (FATİHA) | Medine’de nazil olan ilk sure (BAKARA)
+ İslam dinini yok etmek amacıyla ortaya çıkan ilim (İLHADİ TEFSİR)
+ Bilimsel Tefsir ekolünün temsilcisi (TANTAVİ) | Bilimsel Tefsir ekolünün uğraştığı konu (KEVNİ AYETLER)
+ Tarihi Tefsir ekolünün temsilcisi (MUHAMMED İZZET DERVEZE)
+ Hem Huruf-u mukatta hem de Sure ismi olanlar (TAHA | YASİN | KAF | SAD)
+ Kur’an kelimelerinin ve harflerinin yazılışında Hz. Osman’ın tasvip ettiği imla şekli (RESMUL MUSHAF)
+ Kur’an’ın faziletleri hakkında ilk eser sahibi (İMAM-I ŞAFİİ)
+ Hz. Osman zamanında İslam merkezlerine gönderilen Mushaflar (MESAHİF-İ EMSÂR)
+ Kur'andaki âyetlerin neresinde durulmak, nerelerde durulmadan geçilmek lâzım geldiğini belirten işaretler (SECAVEND)
+ Kur’an-ı kerim’in bazı ayet ve surelerinin özelliklerinden bahseden ilim (HAVASSUL KUR’AN)
+ Her ayetinde Allah lafzı geçen sure (MÜCADELE)
+ Kur’an’ın 7 lehçesi (KUREYŞ | KİNANE | HEVAZİN | SAKİF | TEMİM | HUZEYL | YEMEN)
+ Kur’anda Yeminlerle ilgilenen ilim dalı (AKSAMUL KUR’AN)
+ En çok Peygamber isminin “18 isim” geçtiği sure (EN’AM)
+ Kur’an da Hz. Yunus’un ismi “ZÜNNUN” olarak geçer.
+ Kur’an da sure ismi olan, Semud kavminin yaşadığı yer (HİCR)
+ Kur’an da “Şahitli Namaz” olan namaz (SABAH NAMAZI – İsra Suresi)
+ Meryem suresinde Övülen peygamberler (İBRAHİM | MUSA | İSMAİL | İDRİS)
+ Huruf-u Mukatta ile başlayan ilk sure (KALEM)
+ Kur’an-ı kerimde inen İlk 5 sure (ALAK  MÜZEMMİL  MÜDDESİR  DUHA  İNŞİRAH)
+KAVİM
+SUÇ
+PEYGAMBER
+AZAP
+Nuh
+Şirk
+Nuh (a.s)
+Su Tufanı
+Ad
+Şirk
+Hud (a.s)
+Kum Fırtınası
+Semud
+Şirk
+Salih (a.s)
+Şiddetli Ses
+Sedum
+Eşcinsellik
+Lut (a.s)
+Taş Yağması
+Medyen | Eyke
+Tartıda Hile
+Şuayb (a.s)
+Korkunç Ses
+Firavun
+Şirk
+Musa (a.s)
+Suda Boğulma
+İsrailoğulları
+Azgınlaşma
+Musa (a.s)
+Çölde Kalma
+ Kur’an-ı kerimde Soru edatıyla başlayan sureler (İNŞİRAH | FİL | MAUN | İNSAN | NEBE | ĞAŞİYE)
+Kıraat Metodları
+ İNFİRAD (Kıraatlerin, Hicri 5. Asra kadar her imamının bütün vecihlerini ihtiva eden hatimler yapılmak suretiyle okunması metodu)
+ İNDİRÂC (Hicri 5. Asırdan itibaren bir hatimde 10 Mütevâtir Kıraat imamının kıraat şekillerini toplamak suretiyle okunması metodu)
+ Kıraat Çeşitleri (MÜTEVATİR | MEŞHUR | AHAD | ŞAZZ | MEVZU)
+ Tecvid ilminde Harflerin mahreçleri (CEVF – Boğaz ve Ağız arası | HALK – Boğaz | LİSAN – Dil | ŞEFEH – Dudak | HAYŞUM - Geniz)
+ Kur’an’ın sonundaki kısa sureler (MUFASSAL SURELER)
+Mufassal Sureler
+ TIVAL-I MUFASSAL (Hucurat ile Buruc arasındaki 36 sure)
+ EVSAT-I MUFASSAL (Buruc ile Leyl arasındaki 7 sure)
+ KISAR-I MUFASSAL (Leyl ile Nas arasındaki 22 sure)
+ Kur’an-ı kerimde Peygamberleri yalanlayan kavimler (ASHAB-I EYKE | ASHAB-I RESS | ASHAB-I HİCR | ASHAB-I KARYE)
+ İlk Rivayet Tefsiri (CAMİU’L BEYAN – Taberi) | İlk Dirayet Tefsiri (MEFATİHU’L GAYB – Razi)
+ İlk 2 ayeti Huruf-u Mukatta olan sure (ŞURA)
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 TEFSİR
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TEMEL DİNİ BİLGİLER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+ Klasik dinler tarihi kitabında Hak dinler (MİLEL) , Batıl dinler (NİHAL)
+ İman için Dil ile ikrarı kabul edenler (MÜRCİE | KERRAMİYE)
+ İman için İnanılması gereken bilgileri kabul edenler (CEHMİYE | NECCARİYE)
+ Mukallid / Taklidi imana sahip kişinin imanını kabul etmeyen (MUTEZİLE)
+ “Ben inşÂllah mü’minim” sözü (İMANDA İSTİSNA – Maturidiler kabul etmez.)
+ İnanç esasları, parçalanma kabul etmez (TECEZZİ) ve zamana göre değişmez (LA YETEĞAYYAR)
+ Allah’ın varlığını ispat eden ilim (İSBAT-I VACİP)
+Deliller
+ HUDUS (Evreninin yaratıcıya muhtaç olduğu belirtilir / Mutezile)
+ İMKAN (Vacip, Mümkin, Mümteni varlık / Aristo, Farabi, İbn-i Sina)
+ GAYE | NİZAM (Teleolojik delil / Hikmet-İnayet delili / İbn-i Rüşt)
+ ONTOLOJİK (Ekmel-Mükemmel varlık / Farabi)
+ KOZMOLOJİK (Evren-Alem delili / Hudus ve İmkan delillerini kapsar.)
+ Allah’ın Tekvin-Yaratma sıfatıyla alakalı sıfatlar (FİİLİ) | Ayetlerde Allah’a nispet edilen sıfatlar (HABERİ)
+ Meleklerin, Allah’ın izniyle suretlere bürünmesi (TEMESSÜL)
+ Babil halkını imtihan için gönderilen melekler (HARUT ve MARUT)
+ Vahyin geliş şekilleri (DOĞRUDAN | PERDE ARKASINDAN | ELÇİ İLE)
+ Kur’an da Nebi – Resul diye bahsedilenler (MUSA | HARUN | İSMAİL)
+ Suhuflar (ADEM – 10 | ŞİT – 50 | İDRİS – 30 | İBRAHİM - 10)
+Olağanüstü Durumlar
+ İSTİDRAC (Kafir ve Günahkarların isteklerine göre olur.)
+ MEUNET (Veli ve Salih kulların isteklerine göre olur.)
+ İHANET (Kafir ve Günahkarların istekleri dışında olur.)
+ Kur’anda Peygamberliği ihtilaflı olanlar (LOKMAN | ZÜLKARNEYN | ÜZEYİR)
+ Ululazm Peygamberler (NUH | İBRAHİM | MUSA | İSA | MUHAMMED)
+ Ahiret Aleminin safhaları (ÖLÜM - KABİR HAYATI - KIYAMET KOPMASI - SÜRA ÜFLEYİŞ - HAŞİR - HESAP - SIRAT – CENNET/CEHENNEM)
+ Süra; ilk üfürüş (NEFHA-İ FEZA) , ikinci üfürüş (NEFHA-İ KIYAM)
+ Kitabı; sağdan verilenler (YEMİN/MEYMENE), soldan verilenler (ŞİMAL/MEŞ’EME)
+ Cennetin bölümleri (ADN | FİRDEVS | NA’İM | ME’VA)
+ Cehennemin bölümleri (CAHİM | HAVİYE | HUTAME | LEZA | SAİR | SAKAR)
+ Kader ve Kaza’nın bağlantılı olduğu sıfatlar (İRADE | KUDRET | TEKVİN)
+ Allah’ın insanları iman-inkar etmeden serbest bırakması (TABUL KULUB)
+Çağdaş İnkarcı Akımlar
+ MATERYALİZM (Maddecilik / Metafiziği kabul etmez.)
+ DARVİNİZM (Evrim teorisi / Tekamül Nazariyesi)
+ AGNOSTİSİZM (Tanrı bilinemez / La edriye / Sofistaiyye)
+ ÖKİLTİZM (Eski geleneğin devamı niteliğinde Gizli bilimler)
+ Kelamda usul-i selase (İLAHİYAT | NÜBÜVVET | SEMİYYAT)
+ Kelamı doğuran etkenler (KIRTAS OLAYI | HİLAFET MESELESİ | SİYASİ – İÇ OLAYLAR | KADER SORUNU | KUR’AN-SÜNNETİN YORUMLANMASI)
+ İslam dünyasında Mantığı ilk tercüme eden (İBN MUKAFFA)
+İlk Dönem Kelami Şahsiyetler
+ GAYLAN DIMEŞKİ (Kaderiye kurucusu / Usul-ü hamseyi ilk belirleyen)
+ MABED CÜHENİ (Kaderiye kurucusu / Kaderi inkar eden ilk kişi)
+ CAD B. DİRHEM (İlahi sıfatlar ve Halkul Kur’an fikrini ilk ortaya atan kişi)
+ CEHM B. SAFVAN (Cebriyye kurucusu)
+Mutezile Görüşleri
+ Kendilerine verdikleri unvan (EHL-İ TEVHİD ve ADALET)
+ Allah’ın Kelam sıfatı yoktur. | Keramete inanılmaz.
+ Haram rızık değildir. | Sihrin aslı yoktur.
+ Allah’ın, kullarına güç yetiremeyeceği bir şeyi istemesi Caiz değildir.
+ Eş’ari ekolünü sistemleştiren ilk kişi (İMAM’UL HARAMEYN CÜVEYNİ)
+ Delilin geçersiz olması ile Ma’dulün geçersiz olması (İNİKÂS-I EDİLLE - Bakillani)
+Maturidilik ve Eş’arilik arasında Farklar
+ TEKLİFİ MALA YUTLAK (Allah kullarının güç yetiremeyeceği şeyi istemez / Maturidilik)
+ SEBEB ve HİKMET (Allah yaptıklarından sorumlu tutulmaz / Eş’arilik)
+ İBADET MÜKELLEFİYETİ (Kafirler imanla mükellef, ibadetle değil / Maturidilik)
+ İRTİDAT (İslam dinine dönenin amelleri de geri döner / Eş’arilik)
+ TEVBE-İ YE’S (Ümitsizlik halinde Tevbe geçerlidir / Maturidilik)
+ Kelam ilminde yenilik ihtiyacını ilk getiren (SEYYİD AHMED HAN – Tabiatçı Kelam)
+ Peygamberliğin Kesbi olduğunu söyleyenler (ŞİBLİ NUMANİ | SEYYİD AHMED HAN)
+ Kur’anda Bilginin kaynakları (BEŞ DUYU | HABER | AKIL)
+ Allah’a ait bilgi (KADİM) | Kesin olan bilgi (BEDİHİ)
+ İlimlere yönelik ilk sınıflandırma yapan (FARABİ)
+ Felsefeden Kelama ilk sistemli eleştiri yapan (İBN RÜŞT)
+Şeriatın Kısımları
+ ŞER-İ MÜNEZZEL (Nass yoluyla bildirilen hükümler)
+ ŞER-İ MÜEVVEL (İçtihat yoluyla elde edilen hükümler)
+ Cahiliye Hukuku (İBKA – İslam’a uyan | ISLAH | İLGA – İslam’a uymayan)
+İslam Hukukunun Temel özellikleri
+ İlahi iradeye dayalı olması | Bilimsel Doktrin olması
+ Yaptırımın ikili (Dünya ve Ahiret) olması | Meseleci-Kazuistik olması
+İslam hukukunun Oluşum dönemleri
+ HAZIRLIK SAFHASI (Peygamber | Sahabe | Tabiin)
+ SİSTEMLEŞME SAFHASI (Müçtehid İmamlar)
+ OLGUNLAŞMA SAFHASI (Mezhep Merkezli dönem)
+ KANUNLAŞTIRMA – UYANIŞ SAFHASI
+ MÜÇTEHİD İMAMLAR DÖNEMİ (Hicri 2 - 4. Asır / Altın Çağ / Tedvin dönemi / Abbasiler devri)
+ MEZHEP MERKEZLİ DÖNEM (Hicri 4 - 19. Asır / Taklid dönemi)
+ Kanunlaştırma dönemi eserleri (MECELLE | HUKUKİ AİLE KARARNAMESİ)
+ Arzu edilmeyen sonuçların hukukun imkanları ile aşılması (HİYEL – İmamı Azam)
+İmam-ı Azam ve Öğrencilerine verilen Unvanlar
+ ŞEYHAYN (İmamı Azam – Ebu Yusuf)
+ İMAMEYN – SAHİBEYN (Ebu Yusuf – Muhammed)
+ TARAFEYN (İmamı Azam - Muhammed)
+ Hanefi fıkıhçılar arasında Mutuni Erbaa – 4 Metin (EL MUHTAR | EL VİKAYE | MECMAUL BAHREYNE | KENZÜ DEKAİK)
+İmam-ı Şafii
+ Mezhebi Kadim (IRAK) / Mezhebi Cedid (MISIR)
+ İstinsah ve Mürsel’i kabul etmez.
+ Mukayeseli ilk İslam hukuku eseri (EL UMM)
+ Zayıf hadisleri, Kıyasa tercih eden alim (AHMED B. HANBEL)
+ İcmanın gerçekleşme şartları (İNKİRAZUL ASR – İcmaya katılan bütün müçtehidlerin ölmesi | SAHABE İHTİLAFININ BULUNMAMASI)
+ İSTİSHAB (Mevcut olan durumun devam etmesi / Hanefiler kabul etmez / Beraati Zimmet Asıldır – Aksi delil bulunmadıkça herkes suçsuzdur)
+ Kıyasın Rükunları (ASIL | FER | ASLIN HÜKMÜ | İLLET)
+ Kıyası kabul etmeyenler (ZAHİRİLER | ŞİA)
+ İSTİNSAH (Bir meseleye benzer hükümlerinden farklı hüküm vermek)
+ Zarurat-ı Diniyye (DİN | CAN | NESİL | AKIL | MAL)
+ Sarhoş edici her içkinin Şaraba kıyasla haramlığı (MUTEBER MASLAHAT)
+ Allah’ın mükelleften bir fiili yapma-yapmama isteğinde bulunması (TEKLİFİ HÜKÜM)
+ Şâri’nin bir şey için sebep, mani ve şart koyması (VAZİ HÜKÜM)
+ Peygamberimizin (s.a.v) insan olma hasebiyle yaptığı sünnet (ZEVAİD)
+ Yolcu için Oruç tutmama ruhsatı (TERFİH RUHSATI)
+ Ölüm tehdidi altında birinin Oruç bozması (ISKAT RUHSATI)
+ Eksik Vücub Ehliyeti – Cenin hakları | Tam Vücub Ehliyeti – Kişi hakları
+ Semavi Arızalar (KÜÇÜKLÜK | AKIL HASTALIĞI | ATEH – AKIL ZAYIFLIĞI)
+ Mükteseb Arızalar (SEFEH – MALINI SAVURMA | İKRAH – ZORLANMA | HEZL - ŞAKA)
+ Bütün müçtehidlerin içtihatlarının doğru tutması (MUSAVVİBE)
+ “Müçtehidin bir hükümden ulaştığı sonuç Allah’ın bu konudaki hükmüdür” anlayışı (TEADÜDÜL HUKUK)
+ Müçtehidsiz bir asrın mümkün olmadığını söyleyen (AHMED B. HANBEL)
+ Muamelat ile ilgili Temel başlıklar (MÜNAKEHAT – NİKAH | MUHASEMAT – ÖZEL HUKUK | TERİKAT - MİRAS)
+ Mezheplere ait fıkhi hükümlerin bulunduğu eserler (FÜRÜ FIKIH)
+ Fıkhın füru hükümlerinin arkasında yatan genel prensipleri belirleyen eser (KAVAİD)
+ Farklı mezhepleri ve görüş farklılıklarını anlatan eser (HİLÂF)
+ Fakihlerin meseleleri nasıl çözdüklerini anlatan eser (NEVAZİL)
+İslam hukukunun Genel prensipleri
+ Bir işten maksat ne ise hüküm ona göredir.
+ Şek ile Yakin zayi olmaz. | Meşakkat, teysiri celbeder.
+ Zarar, izale olunur. | Adet, Muhakkemdir.
+ Bir eşya üzerinde hak sahibine ait öncelikli hak (MİLK / AYNİ HAK)
+ Kullanılıp faydalanması Müslümanlara mübah olan mallar (MÜTEKAVVİM MAL)
+ Bir gayrimenkul üzerinde hak sahibine sınırlı yararlanma sağlayan hak (İRTİFAK HAKKI)
+ Geçici Evlenme engelleri (DİN FARKI | İKİ AKRABA İLE BİRDEN EVLENME | ÜÇ KERE BOŞAMA | BEŞİNCİ KADIN | BAŞKASININ EŞİ OLMA)
+ Batıl bir evlilik, Evliliğe ait hiçbir sonuç doğurmaz (UKR)
+ Evlenecek kişiler arasında her türlü denkliğin bulunması (KEFAET)
+Mehir Çeşitleri
+ MEHR-İ MÜSEMMA (Evlilik akdi sırasında miktarı belirlenen mehir)
+ MEHR-İ MİSİL (Kadınların almış olduğu mehir)
+ Eşlerin kimsenin görmeyeceği yerde başbaşa kalması (HALVET-İ SAHİHA)
+ Ölüm hariç hiçbir boşamayı kabul etmeyen sistem (ADEM-İ ZEVAL)
+Talak Çeşitleri
+ RİCİ TALAK (Kocaya boşadığı eşine dönme imkanı veren talak)
+ BAİN TALAK (Kocanın boşadığı eşine dönmesi için Akit sağlayan talak)
+ BİDİ TALAK (Adet döneminde kadını boşama / Sünnete aykırıdır)
+ Boşanma işini Kocanın kadına vermesi (TEFVİZ-İ TALAK)
+ Bir bedel karşılığında Kadının kocasını boşamaya ikna etmesi (MUHALEA / HUL’)
+ Kadının hakime başvurup istemediği evlilikten kurtulması (TEFRİK)
+ Bir kimsenin 4 ay veya daha fazla hanımına yaklaşmayacağına yemin etmesi (İ’LA)
+ Eşinin zina yaptığını ispatlamayan erkeğin hakim huzurunda eşiyle lanetleşmesi (LİAN)
+ Çocuk bakımı (HIDANE) | Çocuk emzirme (RADA)
+ Nasslarda yasaklanmış fakat Cezai yaptırımı olmayan suç (TA’ZİR)
+Zinâ
+ İspatı için gerekli olanlar (4 ŞAHİT | İKRAR)
+ Evliler yapmışsa (RECM) | Bekarlar yapmışsa (100 CELDE / SOPA)
+ Zina iftirasında – Kazf bulunulmuşsa (80 CELDE / SOPA)
+ Yol kesme cezası (HIRABE / KAT’I TARİK) | İsyan cezası (BAĞY)
+ Kısas cezasında asli yaptırım (DİYET)
+ Sistematik ve Şekle bağlı olunan ibadet (İBADET-İ MERSUME)
+ İslami literatürde Ahlaki pisliklerden arınma (TEZKİYE)
+ Eti yenen hayvanların necasetini pis saymayanlar (MALİKİ | HANBELİ)
+ Hem Abdestin hem de Teyemmümün Kur’andaki dayanağı (MAİDE, 6)
+ Hayızdan kesilen kadın (AYİSE) | İki Adet arası “15 gün” temizlik (TUHR)
+ Namazın Vacipleri (FATİHA-ZAMMİ SURE OKUMAK | KIRAATİ GİZLİ YAPMAK | KADEİ EVVEL | TAHİYYAT OKUMAK | KUNUT DUASINI OKUMAK | SAĞA-SOLA SELAM VERMEK)
+Sünnet ve Nafile namaz kılmanın Mekruh olduğu vakitler
+ Fecr-i sadık ile Güneşin doğuşu arası
+ İkindi ile Akşam arası | Bayram namazı öncesi ve sonrası
+ Hatip, hutbeye çıkarken ve hutbe esnasında
+ Kamet getirilirken (Sabah namazı hariç)
+ Namazda, 1. Rekatın rükuundan sonra imama uyan kişi (MESBUK)
+ Güneşin; tam tepede bulunması (İSTİVA) , batıya meyletmesi (ZEVAL)
+ Cuma namazında Cemaat sayıları (HANEFİ - 3 | MALİKİ - 30 | ŞAFİİ - 40)
+ Bayram namazı (Hanbeliler - Farz-ı kifaye | Şafii ve Malikiler – Sünnet)
+ İstihare namazı (1. Rekatta okunan – Kafirun | 2. Rekatta okunan – İhlas)
+ Yağmur duası (İSTİSKA) | Güneş tutulması (KÜSUF) | Ay tutulması (HÜSUF)
+ Ülkemizde Kandil gecelerinin başladığı dönem (2. SELİM DÖNEMİ)
+ Peygamberimizin (s.a.v) korku namazı kıldırdığı gazveler (ZATUR RİKA | BATNI NAHL | USFAN | ZU KARED)
+ Cenaze namazının rükunları (KIYAM | 4 TEKBİR)
+Kefen Parçaları
+ Erkeklerde (KAMİS | İZAR | LİFAFE)
+ Kadınlarda (KAMİS | İZAR | LİFAFE | GÖĞÜS ÖRTÜSÜ | BAŞÖRTÜSÜ)
+ Oruca niyet eden birinin cinsel ilişkide bulunması Keffaret gerektirir.
+ Zekatın yükümlülük şartı (AKIL) | Zekatın konusu (ALACAKLAR)
+ Zekata tabii olmayan mallar (BİNEK HAYVANLARI | EV | EŞYA | ALET)
+Zekatta Mal ile ilgili şartlar
+ TAM MÜLKİYET
+ NİSAB (Zekatın farz olması için malın en az miktarı)
+ NEMA (Artırıcılık)
+ HAVLİ HAVELAN (Yıllanma)
+ HEVAİCİ ASLIYYE (İhtiyaç fazlası olma)
+ Zekat tabi hayvanların senenin çoğunda kırlarda beslenme şartı (SAİME)
+ Hem sermayesi hem kazancı zekata tabi olan mal (TİCARET MALI - %2,5)
+ RİKAZ (Yer altında bulunan maden / Hanefiler - %20 / 3 Mezhep - %2,5)
+ Zirai ürünlerde zekat oranı - %10 | Sulamalı zirai ürünlerde oran - %5
+ TEMLİK (Zekatı sahibine iade etmek / Zekatın rüknudur)
+ Zekat ödenecek yerler – Tevbe, 60 (MİSKİN | RİKAB – KÖLE | GARİMİN – BORÇLU | AMİL – MEMUR | İBNUSEBİL – YOLDA KALAN | MÜELLEFİ KULUB | Fİ SEBİLİLLAH – ALLAH YOLUNDA OLANLAR)
+ Zekat ödenmeyecek yerler (YAKIN AKRABA | KURUMLAR | GAYRİMÜSLİM | BİDAT EHLİ)
+Uygulama yönünde Hac çeşitleri
+ İFRAD (Sadece Hac yapılır / Kurban vacip değil / Şafiilerde Faziletli)
+ TEMETTU (Umre ve Hac ayrı ayrı yapılır / Kurban vacip)
+ KIRAN (Umre ve Hac bir yapılır / Kurban vacip / Hanefilerde Faziletli)
+ Haccın Farzları (İHRAM | ARAFAT VAKFESİ | ZİYARET TAVAFI)
+ Haccın Vacipleri (SA’Y | MÜZDELİFE VAKFESİ | CEMRELER TAŞ ATMA | TRAŞ OLMA | VEDA TAVAFI)
+ Mikat Yerleri (ZULHULEYFE | CUHFE | KARN | YELEMLEM | ZATUIRK)
+ İhram Yasakları (TRAŞ OLMAK | TIRNAK KESMEK | GÜZEL KOKU SÜRÜNMEK | CİNSEL İLİŞKİ | BİTKİ KOPARMAK | HAYVAN ÖLDÜRMEK)
+ Haceri esvede elleri koyarak öpmek (İSTİLAM)
+ Afakilerin / Dışarıdan gelenlerin Mekke’ye girdikten sonra yaptığı ilk tavaf (KUDUM / VARIŞ TAVAFI – Sünnettir)
+ MİNA (Mekke – Müzdelife arası / Şeytan taşlama ve Kurban kesme yeri)
+ Hac ve Umre yapanların kesmesi gereken kurban (HEDY)
+ İhrama girdikten sonra bir sebeple Haccı tamamlayamama (İHSAR)
+ Arafat vakfesinin yerine getiremeyenin seneye kaza etmesi (FEVAT)
+Hac Cezaları
+ CİNAYET (İhram yasaklarının işlenmesi)
+ BEDEME (Arafat vakfesi sonrası cinsel ilişki sonrasında Büyükbaş hayvan kurban etme)
+ DEM (İhramdan çıkan ama Ziyaret tavafı öncesi cinsel ilişki sonrasında Küçükbaş hayvan kurban etme)
+ SADAKA (Giyim-Kuşam veya Güzel koku sürünmeden dolayı verilir.)
+ TAZMİN (Avlanan hayvanların değerinin fakirlere ödenmesi)
+ EYYAM-I NAHR (Kurban kesim günleri olan Zilhiccenin 10-11-12. Günleri)
+ BEHİMETUL ENAM (Kurbanlık hayvanlar / Koyun, Keçi, Sığır, Manda, Deve)
+ Vasiyet etmeden ölmüş birinin ardından Kurban kesilmez.
+ Kurbanlık Hayvanlar ve Yaşları (KOYUN ve KEÇİ – 1 Yaşında | SIĞIR ve MANDA – 2 Yaşında | DEVE – 5 Yaşında)
+Yemin Çeşitleri
+ LAĞV (Yanlışlıkla yapılan yemin / Keffaret yok)
+ GAMÜS (Yalan yere yapılan yemin / Keffaret yok)
+ MÜNAKİDE (Gelecek ile ilgili yemin / Keffaret var)
+ Sırasıyla Yemin Keffaretleri (10 FAKİR DOYURMA  10 FAKİR GİYDİRME  KÖLE AZAT ETME)
+ Adağın hükmünü Mekruh olarak kabul eden mezhep (ŞAFİİ)
+ Zorlama ve Tehdit altında yapılan yemini kabul eden mezhep (HANEFİ)
+ Maturidiliğin, Mutezileye benzer hükümler vermesi (TEFVİZ-İ MUTAVASSIT)
+ Abdest alırken yıkanan yerleri ovmak (DELK) | Rükudan sonra bekleme (KAVME)
+ Namazın bir kısmını imamla kılmayan kimse (LAHİK)
+ Yeminini bozan ve Gerçeğe aykırı yemin eden kişi (HANİS)
+ İbadetlerin Farz olduğu dönemler (ORUÇ – Hicri 1.5 Yıl | ZEKAT – Hicri 2. Yıl | HAC – Hicri 9. Yıl)
+ Peygamberimiz 4 Umre ve 1 defa Hac yapmıştır.
+ Haccın herhangi bir rüknünü ifade kavram (NÜSUK)
+ Kur’anda ismi “Münadi” diye geçen melek (İSRAFİL)
+ Vakti içinde yapılamayan ibadet (FAİTE)
+ Zorunlu olarak yaptığımız fiiler (IZTIRARİ)
+ Her ayın 13-14-15. Günleri tutulan oruç (EYYAM-I BİD)
+ Kurban bayramı vesilesiyle kesilen kurban (UDHİYE)
+ Kişinin Hac için hem mal hem de bedenen hazır olması (İSTİTAAT)
+ Bir yolcunun 15 günden az kalmayı planladığı yer (VATAN-I SÜKNA)
+ Ezan okurken her cümle arası biraz beklemek (TERESSÜL)
+ Rüku - Secde yaparken alınan sünnet tekbirler (İNTİKAL TEKBİR)
+ Tavaf sırasında ihram elbisesinin sağ tarafını açıkta bırakma (IZDIBA)
+ Müçtehidin illeti ortaya çıkarmak için verdiği çaba (TAHRİCUL MENAT)
+ Seddi Zerai delilini en çok kullanan mezhep (MALİKİ – Hanefiler kullanmaz)
+ Hanefilere göre 2 namazın cem edildiği yerler (ARAFAT | MÜZDELİFE)
+ Kelamda Temel konular (MESAİL – Ana konular | VESAİL – Yardımcı konular | MAKASID - Amaçlar)
+ Mürcie mezhebinin ilk eseri (KİTABUL İRCA – İbnul Hanefiyye)
+ Sünni Kelamın öncüleri (İBN KÜLLAB | KALANİSİ | MUHASİBİ)
+Selef metodunun esasları
+ TAKDİS (Allah’ı cismani şeylerden uzak tutmak)
+ TASDİK (Allah’ı bilip aynen kabul etmek)
+ İTİRAFI ACZ (Nasslarla ilgili bir şey bilmemek)
+ İMSAK (Kapalı Nasslar hakkında Te’vil yapmamak)
+ KEFF (Kalbi meşgul etmemek)
+ SÜKUT (Soru sormamak) | MARİFET EHLİNE TESLİM OLMAK
+ Mantığın Kelama dahil olduğu dönem (MÜTEAHHİRUN)
+ Yeni İlmi kelam tabirini ilk kullanan (ŞİBLİ NUMANİ)
+ İmanda artma-azalma olmayacağını belirten tek mezhep (HANEFİLİK)
+ Allah’ın ilmiyle Kulun ölüm anında iman-küfür açısından durumu (MUVAFAT – İbn Küllab)
+ İnsanlar tarih boyunca her zaman bir dine inanma ihtiyacı duymuştur (KABULÜ AMME DELİLİ)
+ Peygamberliğe karşı çıkanlar (RAVENDİ | EBUBEKİR RAZİ)
+ Eş’arilerin irade anlayışı, Cebriye-Mutezile arasındadır (CEBR-İ MUTAVVASIT)
+ SALAH – İyi olma | ASLAH – Daha iyi olma (MUTEZİLE)
+ Doğruya yönlendirmek (TEVKİF) | Yardımı kesmek (HIZLAN)
+ İstislah-Mesalihi Mürsel metodunu en çok kullanan mezhep (MALİKİLİK)
+ Ekol sahibi fakihlerin kendi sistematiği içinde yaptığı içtihad (MÜNTESİP MUKAYYED İÇTİHAT)
+ Peygamberimiz (s.a.v) döneminde İslam hukukuyla ilgili özellikler (TEDRİCE RİAYET | KOLAYLIK İLKESİ | MASLAHATIN GÖZETİLMESİ)
+ Kişinin kendi isteğiyle namazdan çıkması (HUNUC-U BİSUNİH)
+ Kadınların oturuşta ayaklarını sağa yatık bırakmaları (TEVERRÜK)
+ Fıtır Sadakası (Hanefilerde Vacip | 3 mezhepte Farz)
+ Orucun başlaması için hilalin Erken/Geç gözükmesi (İHTİLAFU METALİ)
+ Mekke ve Medine’ye gidip oraları ziyaret etme (MENASİKUL HAC)
+ Hacda omuzların dik olması ve kısa-sert adımlarla yürüme (REMEL)
+ 3 kardeş meselesinden dolayı ayrılan kişi (EŞ’ARİ)
+ Kelamda Müteahhirun dönemi (GAZZALİ)
+ Kelamın suskunluğa girdiği dönem (TAFTAZANİ)
+ İslam düşüncesinde Sırasıyla Akla önem verenler (İSLAM FİLOZOFLARI  MUTEZİLE  MATURİDİ  EŞ’ARİ  SELEFİ)
+ İnanç alanında Bilgi kaynağı kabul edilmeyen konular (KEŞİF | İLHAM | RÜYALAR)
+Bilginin Dereceleri
+ İLMEL YAKİN (Akıl ve Haber vasıtasıyla elde edilir)
+ AYNEL YAKİN (Duyu organları vasıtasıyla elde edilir)
+ HAKKAL YAKİN (Yaşantı vasıtasıyla elde edilir)
+ İnanç esaslarına; toptan inanmak (İCMALİ), araştırarak inanma (TAFSİLİ)
+ Birden fazla ilah olamayacağını savunan delil (TEMANU) | Birden fazla ilah olması durumunda 3 farklı durumun meydana gelmesi (TEVARÜD)
+ Tekvin sıfatını kabul etmeyenler (MUTEZİLE | EŞ’ARİ)
+ Ahirette Günahkarların kitabı (SİCCİN), İyilerin kitabı (İLLİYYİN)
+ Peygamberimizin (s.a.v) ibadet niteliği taşıyan sünneti (SÜNNET-İ HÜDA)
+ İcma’nın İşlevleri (MUHAFAZA | BAĞLAYICILIK | KAMU OTORİTESİNİ SINIRLAMAK | BAZI USÜL KONULARININ MEŞRUİYETİNİ SAĞLAMAK)
+ Kıyasta; Asıldaki hükmün illeti açıkça belirtilmişse (MANSUS İLLET), belirtilmemişse (MÜSTENBAT İLLET)
+ Kıyas işleminin sonucunda gerçekleşen hükmün sadece Asılda olmadığı ve Ferde de sabit olduğunun ortaya konması (TADİYE)
+ Maslahat Türleri (ZARURİYYAT | HACİYYAT | TAHSİNİYYAT)
+ Nassın bulunmadığı yerde Örfü delil sayan mezhepler (HANEFİ | MALİKİ)
+ İslam dininden önceki şeriatlerde ibadet ve hukuk alanındaki hükümler, Müslümanlar için bağlayıcı değildir (ŞERU MEN KABLENA)
+ Kıyas ve İçtihadın en fazla kullanıldığı konu (MUAMELAT)
+ Hakkında açıkça Nass bulunmayan bir hüküm hakkında müçtehidin şahsi görüş belirtmesi (REY)
+Hz. Ömer dönemi yapılan İçtihatlar
+ Muta nikahının yasaklanması | Teravih’in Cemaatle kılınması
+ Müellef-i kulübe zekat verilmemesi | İçki içene 80 sopa vurulması
+ Beytulmal’ın kurulması | Kıtlık zamanı Hırsızlık cezasının olmaması
+ Hicaz/Hadis ekolü (SAİD B. EL MÜSEYYEB) | Irak/Rey ekolü (İBRAHİM EN NEHAİ)
+ Ahkam-ı Hamse (VACİP | MENDUP | MÜBAH | MEKRUH | HARAM)
+ Abdest alırken ayakları yıkamak değil Mesh etmek farzdır (CAFERİLİK)
+ Sabah namazını ortalık henüz karanlık iken kılmak (TAĞLİS) | Sabah namazını ortalık henüz aydınlık iken kılmak (İSFAR)
+ Öğle namazını geciktirip kılmak (İBRAD)
+ 2 secde arası oturuş (CELSE) | Rükuda bir müddet beklemek (TUMA’NİNE)
+ Cuma namazının Vücub / Yükümlülük şartları (ERKEK OLMAK | MAZERETSİZ OLMAK | HÜR OLMAK | SEFERİ OLMAMAK)
+ Cuma namazının Sıhhat / Geçerlilik şartları (VAKİT | CEMAAT | ŞEHİR | CAMİ | İZİN | HUTBE)
+ 2 rekatlı Bayram namazının her rekatında fazladan 3’er tekbir alma (ZAİT TEKBİRLER)
+ Arife gününden Bayramın 4. Günü İkindi vaktine kadar 23 vakitte alınan tekbirler (TEŞRİK TEKBİRLERİ)
+ İftar etmeksizin aralıksız tutulan oruç (VİSAL – Mekruhtur)
+ İhramdan çıkıp İhram yasaklarının sona ermesi (TAHALLÜL)
+ Hac ayları (ŞEVVAL | ZİLKADE | ZİLHİCCE İLK 10 GÜN)
+ İslam hukukunda Evlilik teklifi etme (HITBE)
+ Hanefilere göre Küçükler Baba ve Dedeleri dışındaki Veliler tarafından evlendirilir fakat Çocuk büluğa erince evli olduğu kişiden ayrılabilir (HIYAR’UL BULUĞ)
+Velayet Türleri
+ VELAYET-İ KÂSIRA (Kişinin, başkasının onayı olmadan evlenmesi)
+ VELAYET-İ MÜTEADDİYE (Kişinin başkasını evlendirmesi)
+ Evliliğin meydana gelmesini ve gerçekleşmesini onaylayan söz (SİGA – Nikahın Rüknudur / İn’ikad şartıdır)
+ Sürekli Evlenme Engelleri (HURMETUL KARABET / KAN HISIMLIĞI | HURMETUL MÜSAHERAT / EVLENME HISIMLIĞI | HURMETUR RADA / SÜT HISIMLIĞI)
+ Başkasının rızasının aranmadığı akitler (NAFİZ), arandığı akitler (MEVKUF)
+İddet Süreleri
+ Evlilik, Kocanın ölümüyle bitmişse Kadın 4 ay 10 gün bekler.
+ Hamile kadının iddeti doğuma kadardır.
+ Boşanan kadınların, hamile değilse, iddeti 3 hayız dönemidir.
+ Küçük ve Yaşlıların iddeti 3 aydır.
+ ZIHAR (Bir kimsenin, karısının bir azasını kendisine ebedi haram olan birine benzetmesi / “Sen bana Annemin sırtı gibisin”)
+ Verasetin Engelleri (KÖLE OLMAK | KATİL OLMAK | MÜRTET OLMAK | GAYRİMÜSLİM OLMAK)
+ Yalnız başına olduğunda bütün mirası alan veya Mirasçı bulununca onlardan artanı alan kimse (ASABE)
+ Hür, Akîl/Baliğ olan iki mü’min; karşılıklı diyet ödeme, yardımlaşma ve vâris olma konusunda akit yapması (MEVLA’L MUVALAT AKDİ)
+ Farz veya Asabe yoluyla varis olamayan her akraba (ZEV’İL ERHAM)
+ Mûrisin / Ölen kimsenin geride varislerine bıraktığı her şey (TERİKE)
+ İslam hukukunda Mirasçının aldığı hak, pay (SEHİM)
+ Daha yakın bir mirasçının bulunması sebebiyle bir vârisin tamamen veya kısmen mirastan mahrum olması (HACB)
+ Kitap, sünnet ve icmâ ile; hakları farz kılınan hak sahipleri (ASHABU’L FERAİZ)
+ İslâm Dininin ortaya koyduğu helâl-haram sınırları, miktarı ve niteliği nasslarda belirlenmiş olan şer'î cezalar (HADD)
+Ticaret ve Mal ile ilgili Konular
+ İNE SATIŞI (Bir malın belli bir fiyat karşılığında vadeli olarak satılıp, satılan fiyattan daha düşük bir fiyatla geri satın alınması / Hanefi ve Şafii’ye göre Caizdir)
+ GABN (İslâm hukukunda genelde iki taraflı akidlerde karşılıklar arasında, özelde ise alım satımda satılan şeyle fiyatı arasında değer yönünden farklılık ve dengesizlik)
+ GARAR (Bir borç ilişkisinde akid konusunun meydana gelip gelmeyeceğinin belirsiz olması)
+ TAĞRİR (Akid yapılırken taraflardan birinin söz ve davranışı ile diğer tarafı kasten aldatması)
+ ŞÜF’A (Sahibine, satım akdine konu olan bir akarı, müşteriye mal olduğu bedel karşılığında mülkiyetine geçirme yetkisi veren bir hak)
+ RUKBA (Bir şahsa bir malın bağışlanması, bağışlayandan önce ölmesi halinde malın bağışlayana geri dönmesinin şart koşulması)
+ UMRA (Bir kimseye yaşadığı sürece onun olması, öldükten sonra da geri dönmesi şartıyla malın verilmesi)
+ ARİYET (Bir kimseye bedelsiz olarak belli bir süre kullanmak üzere bir malın verilmesini konu alan bir sözleşme)
+ KARZ (Borç, kredi, ödünç, altın, gümüş, nakit para ve misli olan şeyleri başkasına ödünç vermek)
+Şirket-i İnan / Ortak Şirket
+ MUDAREBE (Emek – Sermaye ortaklığı)
+ MÜZARAA (Zirai Ortakçılık)
+ MÜSAKAT (Bağ – Bahçe ortaklığı)
+ MUĞARESE (Boş bir arazi üzerinde yapılan ortaklık)
+ Kişiyi Allah’a yaklaştıran fiil ve davranışlar (KURBET)
+ İçine herhangi bir maddenin karışmasıyla aslî vasfı bozulmuş ve hususî bir ad almış olan sular (MUKAYYED SU)
+ Hayızlı ve Nifasalı/Lohusalı olan kadınlar için Gusül şarttır.
+ Kadınlarda Hayız ve Nifas dışında oluşan özür kanı (İSTİHAZE)
+Sehiv / Yanılma secdesini gerektiren haller
+ Farzın tehiri ve geciktirilmesi | Farzın tekrarı
+ Vacibin terki | Vacibin tehiri
+ Vacibin tekrarı | Vacibin tebdili yani değişmesi
+Cenaze ile ilgili Konular
+ MUHTAZAR (Ölmekte olan kişi) | MEYYİT (Ölen kişi)
+ GASİL (Ölünün yıkanması)
+ TEŞYİ (Cenazenin taşınması)
+ TELKİN (Cenaze kabre konulduktan sonra ölüye iman esaslarının anlatılması)
+ İSKAT (İbadetlerde borcu ölen kişi için fakire Fidye ödenmesi)
+ Mendup Oruçlar (PAZARTESİ – PERŞEMBE ORUCU | ŞEVVAL ORUCU | AŞURE ORUCU | DAVUT ORUCU | ŞABAN ORUCU | HARAM AYLARDA TUTULAN ORUÇ | ZİLHİCCE ORUCU | HER AYIN 13, 14 VE 15. GÜNLERİNDE TUTULAN ORUÇ)
+ Orucu bozan durumlar (BİLEREK YEME-İÇME | CİNSEL İLİŞKİ)
+ Tutulamayan her bir oruca fakir doyumu için verilen ücret (FİDYE)
+ Zekata Tabi Mallar (PARA | TİCARET MALLARI | TOPRAK ÜRÜNLERİ | HAYVANLAR | DEFİNE-MADEN)
+ Önceden yok iken sonradan kişinin mülkiyetine geçen mallar (MALİ MÜSTEFAD)
+Hayvanların Zekatı
+ DEVE (5-9 Deve için 1 Koyun  10-14 Deve için 2 Koyun 
+15-19 Deve için 3 Koyun)
+ SIĞIR (30-39 Sığır için 2 yaşında Buzağı  40-59 Sığır için 3 yaşında Buzağı  60’dan sonra her 30 Sığır için 1 Buzağı verilir)
+ KOYUN & KEÇİ (40-120 Koyun için 1 Koyun  121-200 Koyun için 2 Koyun  201-399 Koyun için 3 Koyun  400 sonrası her 100 Koyun için 1 Koyun ilave edilir)
+ FİTRE / FITIR SADAKASI (Ramazan Bayramı’na yetişen ve temel ihtiyaçlarının dışında belli bir miktar mala sahip olan Müslümanların kendileri ve velâyetleri altındaki kişiler için yerine getirmekle yükümlü bulundukları mali bir ibadet)
+ Çocuğun doğumundan sonra Şükür amaçlı kesilen kurban (AKİKA)
+ Vekaleten yapılan hac (BEDEL HACCI)
+ Haccın Sünnetleri (KUDUM TAVAFI | 3 HUTBE | TERVİYE GÜNÜ MİNA’YA GİTME | BAYRAM GECESİ MÜZDELİFEDE OLMA)
+ Safa ile Merve arasında gidip-gelme (SA’Y) | Kâbe’de 7 defa dönme (TAVAF) | Tavafta her bir dönme (ŞAVT)
+ Namazı bozacak davranışlarda bulunma (AMELİ KESİR)
+ Seferiyken Farz namazlarını kısaltarak kılma (KASRUS-SALAT)
+ Namazda Kadınların Erkekler arasında saf tutması (MUHAZATÜN-NİSA)
+ Peygamberimizin (s.a.v) devamlı olarak yaptığı sünnet (MUVAZEBE)
+ Allah’ı tesbih ve anmakla görevli melekler (MUKARREBUN / İLLİYYUN)
+ Cennetin bekçisi (RIDVAN) | Cehennemin bekçisi (MALİK)
+ Peygamberlerin Sıfatları (EMANET | SIDK | FETANET | TEBLİĞ | İSMET)
+ Haram rızık değildir (MUTEZİLE) | Öldürülen kişi eceliyle ölmüştür (EHLİ SÜNNET)
+ “Rüyetullah / Allah’ın görülmesi” kabul etmeyenler (MUTEZİLE ve ŞİA)
+ “Kesb / Çalışarak kazanma” kavranma kelimesini kullanan (EŞ’ARİ)
+ Hüsun/İyilik ve Kübuh/Kötülük hem akıl hem de nakille bilinir (MATURİDİ)
+ İnsanın kudret sahası içinde; herhangi bir vasıtaya bağlanmaksızın gerçekleştirdiği fiiller (TEVLİD), bir sebebe bağlı olarak gerçekleştirdiği fiiller (MÜTEVELLİD)  Mutezile
+ EŞRATÜ’S SAAT – Kıyamet Alametleri (DUMAN | DECCAL | DABBETUL ARZ | HASEF - YER ÇÖKÜNTÜLERİ | GÜNEŞİN BATIDA DOĞMASI | YECÜC VE MECÜC OLAYI | HZ. İSA’NIN GÖKTEN İNMESİ | HİCAZDA ATEŞ ÇIKMASI)
+ Allah’ın Zati sıfatları içerisinde yer alan “Vücud” sıfatına verilen isim (SIFAT-I NEFSİYYE)
+ İbadetlerin menfaat beklemeden Allah rızası için yapılması (TAABBUD)
+ Peygamberimiz (s.a.v) insanlara ve cinlere gönderilmiştir (RESULUS-SAKALEYN)
+ Mutezile’nin 5 Temel Prensibi (TEVHİD | ADALET | VAAD – VAİD | EL MENZİLE BEYNEL MENZİLETEYN | EMRİ BİL MARUF NEHYİ ANİL MÜNKER)
+ İnanılması gereken hükümlere inat edip inanmamak (KÜFR-İ CUHUDİ)
+ Çağdaş akımlardan “Cemaat-i Tebliğ” kurucusu (İLYAS KANDEHLEVİ)
+ Kadının, kocasının izni olmadan evinden ayrılması (NAŞİZE)
+ “Günahlar, Amelleri geçersiz kılar” düşüncesi (İHBAT)
+ Dinen necis sayılan bazı maddelerin kimyasal değişime uğraması sonucu temizlenmesi (İSTİHALE)
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 HADİS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-
+ Peygamberimizin (s.a.v), insanları kötülüklerden uzak tutması (TEZKİYE)
+ Hadis usulü alanında günümüze ulaşmış en eski eser (ER RİSALE – İmamı Şafii)
+ Hicri 4. Asra kadar olan dönem (MUTAKADDİMUN)
+ Raviler hakkında olumsuz kanaat belirtme (CERH) | Raviler hakkında olumlu kanaat belirtme (TA’DİL)
+ Cerh ve Ta’dilin kurallarını ilk defa derli toplu hale getiren kişi (TACİDDİN ES-SÜBKİ)
+ İlk bakışta sahih görünen hadislerin, Uzmanlar tarafından gizli kusurlarının incelenmesi (İLELÜ’L HADİS)
+ Sağlam bir hadisin, Sağlam hadisle çelişmesini inceleyen ilim (İHTİLAFUL HADİS / TEARUZ)
+Hadisler arası ihtilafları gidermede 4 yöntem
+ CEM / TE’LİF (Hadislerin hepsini geçerli sayma)
+ TEVAKKUF (Çelişen hadislerle ilgili karar vermemek)
+ NESH ve TERCİH
+ Hadis çalışma dönemleri (TESBİT | TEDVİN | TASNİF)
+Tedvin Dönemi
+ Hadisler toplanıldı.
+ İlk çalışma (ÖMER B. ABDULAZİZ)
+ Hadis toplamada ilk gayret gösteren (İBN ŞİHAB EZ-ZÜHRİ)
+ Osmanlıda ilk Darulhadis, 1. Murat zamanında İznik’te Çandarlı Halil açtı.
+ALEL EBVAB – Konularına göre Hadisler
+ MUVATTA (Belli bölgenin hadisleri / Merfu – Mevkuf – Maktu)
+ SÜNEN (Ahkami-Fıkhi hadisler / Merfu)
+ MUSANNEF (Ahkami-Fıkhi hadisler / Merfu – Mevkuf – Maktu)
+ CAMİ (Bütün konulardan hadisler)
+ALER RİCAL – Ravilerine göre Hadisler
+ MU’CEM (Raviler alfabetik sıralanır / Taberani - 3 Mu’cem)
+ MÜSNED (İlk ravisi sahabelere göre hazırlanır / Merfu)
+ ETRAF (Hadisin baş kısmı verilip farklı isnatlarının verilmesi)
+Diğer Hadis çalışmaları
+ MÜSTEDREK (Müellefin kitabına almadığı hadisleri toplayıp Onun eksiğini tamamlayan eser)
+ MÜSTAHREÇ (Hadislerin, Kitap senedinden başka senetlerle bir araya getirildiği eser)
+ ZEVAİD (Hadis kitaplarının karşılaştırılıp fazla olan hadislerin ele alındığı eser)
+ TERĞİB (İyiliği teşvik eden hadisler) | TERHİB (Kötülükten sakındıran hadisler)
+ Sahabe döneminde Hadis öğrenim yöntemi (ŞİFAİ)
+ Sahabiliği Tesbit yolları (TEVATÜR | ŞÖHRET | ŞAHİTLİK | İKRAR)
+ Muksirundan, En çok hadis rivayet eden (EBU HUREYRE)
+ Abadile / Abdullahlar (İBN ABBAS | İBN ÖMER | İBN ZÜBEYR | İBN AMR)
+ Ravide bulunan 10 kusur (METAİN-İ AŞERE)
+ Adalet ve Zabt yönünden sağlam ravi (SİKÂ)
+ Adaletin unsurları (İSLAM | BULUĞ | AKIL | TAKVA | MÜRÜVVET)
+ Zabtın unsurları (TEYAKKUZ | HIFZ | KİTABI KORUMAK | LAFZI BİLMEK)
+ Adaleti tespit yolları (ŞÖHRET | TEZKİYE)
+ Zabtı tespit yolları (MUKAYESE | İMTİHAN)
+Adalet ile ilgili Kusurlar
+ KİZBUR RAVİ (Ravinin yalancı olması)
+ İTHAMU RAVİ BİL KİZB (Ravinin yalancılıkla itham edilmesi)
+ CEHALET (Ravinin zabt durumunun bilinmemesi)
+ FISKUR RAVİ (Ravinin fasık olması)
+ BİDATUR RAVİ (Ravinin bidat ehlinden olması)
+Zabt ile ilgili Kusurlar
+ KESRETÜL GALAT (Ravinin hata yapması)
+ FERTÜL GAFLE (Ravinin dalgınlık ile çok yanılması)
+ VEHİM (Ravinin doğru zannederek yanlış hadis rivayet etmesi)
+ SUUL HIFZ (Ravinin hafıza kaybı yaşaması)
+ MUHALEFETUS SİKA (Ravinin, güvenilir ravilere ters düşmesi)
+TAHAMMÜLİ HADİS – Hadis Öğrenim yöntemleri
+ SEMA (Hocanın hadisleri okuması, Talebenin işiterek hadis alması / En üstün yöntem)
+ İMLA (Hocanın hadisleri okuması, Talebenin işiterek hadisleri yazması)
+ KIRAAT / ARZ (Talebenin hadisleri bizzat hocasına okuması ve Hocanın onaylaması)
+ İCAZET (Hocanın rivayetlerinin öğrencisinin rivayet etmesine izin vermesi)
+ MÜNAVELE (Hocanın hadislerinin yer aldığı kitabı öğrencisine elden vermesi)
+ MÜKATEBE (Hocanın hadisleri bizzat başkalarına yazıp göndermesi)
+ İL’AM (Hocanın hadisleri açıklama yapmadan öğrenciye gösterip semâ yoluyla aldığını ifade etmesi)
+ VASİYYET (Hocanın ölmeden-sefere gitmeden hadisleri öğrencisine rivayet etmesi)
+ VİCADE (Bir kimsenin el yazması hadisleri ele geçirmesi)
+Merdud / Zayıf Hadisler
+ MÜRSEL (Tabiinin, Sahabeyi atlayarak rivayet ettiği hadis)
+ MUNKATI’ (Senedinde, Sahabeden sonra birkaç ravinin atlandığı hadis)
+ MU’DAL (Senedinde 2 veya daha fazla ravisi atlanmış hadis)
+ MUALLAK (Senedinde, birkaç ravinin atlanmış gibi eksik olan hadis)
+ MÜDELLES (Hoş görülmeyen bir şeyin gizlenerek rivayet edildiği hadis)
+ MUALLEL (Gizli bir kusuru ancak Uzmanlar tarafından bulanabilen hadis)
+ MUZDARİB (Birbirine zıt olan hadislerden biri diğerine tercih imkanı vermeyen hadis)
+ MAKLUB (Kelime veya Cümle değişikliği bulunan hadis)
+ ŞAZZ (Sika ravinin kendinden Sika raviye aykırı rivayet etiiği hadis)
+ MÜNKER (Zayıf ravinin kendinden iyi olan raviye aykırı rivayet ettiği hadis)
+ METRÜK (Adalet ve Zabt kusuru bulunan ravinin rivayet ettiği hadis)
+Metnin özelliklerine göre Hadisler
+ MERFU (Peygamberimize (s.a.v) ait hadisler)
+ MEVKUF (Sahabeye ait hadisler)
+ MAKTU (Tabiine ait hadisler)
+ Senedin başından sonuna kadar ravisi düşmemiş hadis (MUTTASIL)
+HABERİ VAHİD – Mütevatir olmayan Hadisler
+ MEŞHUR (En az 3 ravisi bulunan hadis)
+ AZİZ (En az 2 ravisi bulunan hadis)
+ FERT (En az 1 ravisi bulunan hadis)
+ GARİP (Farklılık gösteren ve Tek kalan hadis)
+ Farklı senetler arasında ravi sayısı diğerine göre az olana (ÂLİ) , fazla olana (NAZİL) denir.
+ Sened ve Metinde aslında bulunmayan bir şey eklenen hadis (MÜDREC)
+ Hadis uydurma sebepleri (İSLAM DÜŞMANLIĞI | IRK-MEZHEP YANLILIĞI | MADDİYAT HIRSI | İSLAMA HİZMET ARZUSU)
+ Batılıların İslamı araştırması (ORYANTALİZM), araştıran (MÜSTEŞRİK)
+ Peygamberimizin (s.a.v), Ashabın sorusuna farklı şekilde cevap vermesi (USLUB-İ HAKİM)
+ Hadis üzerine ilk şerh çalışmasını yapan (HATTABİ – Buhari Sahih şerhi)
+ Garibul hadis ilminde ilk eser veren (EBU UBEYD KASIM)
+ Müsned türünde ilk eser yazan (EBU DAVUD ET-TAYALİSİ)
+ Peygamberimizden (s.a.v) bizzat izin alıp hadis yazan (ABDULLAH B. AMR – Sahifetus-Sahiha)
+Kur’an ve Sünnetin yoğunlaştığı alanlar
+ TAHSİS (Peygamberimizin (s.a.v), Ayette verilen genel manayı gerektiğinde daraltması)
+ TAKYİD (Peygamberimizin (s.a.v), Kur’anda Gizli - Zahir görünen ayetleri sınırlandırması)
+ TE’KİD (Peygamberimizin (s.a.v), Ayetlerdeki aynı anlam için hadis söylemesi)
+ TAVSİF (Peygamberimizin (s.a.v), Kur’an da zikredilen bir hususu detaylıca açıklaması)
+Halk dilinde Meşhur hadis kitapları
+ MAKASUDUL HASENE – Sehavi
+ KEŞFUL HAFA – Acluni
+ Ravilerin doğal sebeplerle rivayetleri unutmaları, karıştırmaları (İHTİLAT)
+ Tek bir sahabinin hadislerini toplayan eser (CÜZ)
+ En son vefat eden sahabi (EBU TUFEYL B. AMR) | En son vefat eden tabiin (HALİF B. HALİFE)
+ Hadis kitabının halka yönelik okutulması durumunda uygulanan usul (TARİKUL İMAN)
+ İlk Türkçe hadis kitabı (HADİS TARİHİ – Talat Koçyiğit)
+ Günümüze kadar ulaşmış en eski hadis mecmuası (SAHİFE-İ SAHİHA – Hemmam b. Münebbih)
+ Tasnif döneminden günümüze ulaşmış en eski hadis eseri (EL CAMİ – Mamer b. Raşid)
+ Ravinin hadis aldığı hocasıyla bizzat görüşmesi (LİKA)
+ Peygamberimizin (s.a.v) Kur’an dışında dini hükümler koyması (TEŞRİ)
+ Hadis uydurma girişimlerinin başladığı tarih (HZ. OSMANIN VEFATI / FİTNE-İ KÜBRA)
+ Talebelere hadis yazdıran hoca (MÜMLİ)
+ Bir hadisin farklı isnatlarla gelen farklı kanallarına verilen isim (TARİK)
+ Bir hadis kitabının talebelere okutulmasında uygulanan yöntem (TARİKUL HAL VEL BAHS)
+ Hadisler üzerinde titizlik gösteren muhaddislere verilen unvan (ITKAN)
+ Hadislerin şerh, usul ve yorumlarının yapıldığı dönem (TEHZİB)
+ Mütevatir hadisler konusunda ilk eser veren (SUYUTİ)
+ Ravinin sırf şaşırtmak için hocasının ismini bilinmeyen bir isimle zikretmesi (TEDLİSUŞ-ŞUYUH)
+ Bir hadis kitabının Uzmanlar tarafından okunması (TARİKUS-SERD)
+ Yaşça birbirine yakın ravilerin birbirlerine rivayet etmeleri (MÜDEBBEC)
+ Talebenin yazdığı hadislerden meydana gelen eser (EMALİ)
+ İslam tarihinde bilinen ilk Darulhadis (EN-NURİYE)
+ Hadis ilminde son mertebeye ulaşmış alimler (HAKİM)
+ Hadisin bir kısmını alıp bir kısmını bırakmak (İHTİSAR)
+ Hadis metinlerinde karışıklığı önlemek için noktalama işlemi yapma (İ’CAM)
+ Hadis ravisinin gerçekte var olup olmadığının araştırılması (İTİBAR)
+ 300 bin Hadisi ezberlemiş hadis alimine verilen unvan (HÜCCET)
+ Türkçe ilk hadis tarihi kitabı yazan (İZMİRLİ İSMAİL HAKKI)
+ İlk Musannef yazarı büyük hadis hafızı (ABDURREZZAK B. HEMMAM)
+ Hadis usulü ilminin kurucusu (ZUHRİ)
+ İsnad sistemini; İlk açıklayan (İBN SİRİN), hadise ilk uygulayan kişi (İBN ŞİHAB EZ-ZUHRİ)
+ Peygamberimizin (s.a.v); fiziksel özelliklerini anlatan hadis (HILKİ), ahlaki ve davranışsal özelliklerini anlatan hadis (HULKİ)
+ Hadis tarihinde rivayeti 1000’e ulaşmayan sahabiler (MUKİLLUN)
+ Çoğunluğa göre Delil kabul edilmeyen hadis (MÜRSEL)
+ “İsnad dindendir” sözünü söyleyen (ABDULLAH B. MÜBAREK)
+ Hadis ilmine verilen isimler (İLMUR-RİVAYE | İLMUL-AHBAR | İLMUL-ASAR)
+MUKSİRUN (En çok Hadis Rivayet eden Sahabeler)
+1 – EBU HUREYRE 5 – ABDULLAH B. ABBAS
+2 – ABDULLAH B. ÖMER 6 – CABİR B. ABDULLAH
+3 – ENES B. MALİK 7 – EBU SAİD EL HUDRİ
+4 – AİŞE B. EBUBEKİR
+ Peygamberimiz (s.a.v) zamanında Müslüman olduğu halde O’nu (s.a.v) görememiş kişiler (MUHADRAMUN)
+ Hadisleri, Hocaların isimlerine göre sınıflandırma (MU’CEMİŞ-ŞUYUH)
+ Tedlis Çeşitleri (TEDLİSUL-İSNAT | TEDLİSUT-TEVSİYE | TEDLİSUŞ-ŞUYUH | TEDLİSUL-ATF | TEDLİSUS-SÜKUT)
+Sahih Hadis Müellifleri
+ BUHARİ – Câmi/Sahih
+ MÜSLİM – Câmi/Sahih
+ TİRMİZİ – Sünen
+ EBU DAVUD – Sünen
+ NESAİ – Sünen
+ İBN MACE – Sünen
+ AHMED B. HANBEL – Müsned
+ DARİMİ – Sünen
+ İMAM MALİKİ – Muvatta
+ Bir hadisin bütün farklı kanallarını bir arada veren Kütübü-Sitte müellifi (MÜSLİM)
+ “Hasen Hadis ve Mamülün Bih” kavramlarını kullanan Kütübü-Sitte müellifi (TİRMİZİ)
+KÜTÜBÜ SİTTE
+KÜTÜBÜ TİS’A
+ Sünenine, seçilmiş ve derlenmiş anlamına gelen “EL MÜCTEBA” ismini veren Kütübü-Sitte Müellifi (NESAİ)
+ Eserinde, En fazla Zayıf hadis bulunduran Kütübü-Sitte müellifi (İBN MACE)
+ Ravilerin Hastalık ve Yaşlılık gibi Arızi sebeplerden dolayı Rivayetlerini unutmaları ve karıştırmaları (İHTİLAT)
+ Sahih ile Zayıf arasında kabul edilen hadis (HASEN)
+ Adalet ve Zabt sahibi ravilerin, Muttasıl bir senetle rivayet ettikleri Şazz ve Muallel olmayan hadis (SAHİH)
+ Müşkilul-Hadis ilmiyle alakalı Zahirde çelişkili gibi görünen hadislerin aralarını telif etme işlemi (TELFİKUL HADİS)
+ İsnattaki her Ravinin, Sıfat ve hallerini aynen devam ettirerek naklettikleri hadis (MÜSELSEL)
+ Hadis öğrenimi yapılan yolculuk (RIHLE – Tabiun döneminde yapıldı)
+ Mekke’de Hadisleri sistematik tasnife tutan ilk Muhaddis (İBN CÜREYC)
+ Ezberlenen hadislerin yazıya geçirilmesi (KİTABET)
+ Hadis rivayetinin Resulullah’a (s.a.v) ait olup olmadığının araştırılması (TAHKİK – Hz. Ömer dönemi)
+ Hadislere uydurma rivayetlerin karışmasını engellemek amacıyla çok fazla hadis rivayet etmenin yasaklanması (TAHDİT – Hz. Ömer dönemi)
+ Ravileri konu edinen ilim dalı (RİCAL)
+ Kaynağı belli olmayan hadisleri araştıran hadis eserleri (TAHRİÇ)
+ Garibul-Hadis ilmi üzerine yazılan İlk eserin müellifi (İBRAHİM B. İSHAK)
+ İhtilaflı hadisleri toplayan en meşhur hadis eseri (MÜŞKİLUL ASAR - Tahavi)
+Hadislerin Coğrafi Merkezleri
+1 – MEKKE 2 – MEDİNE 3 – ŞAM 4 – KUFE 5 – BASRA
+6 - CEZİRE/CİZRE 7 – YEMEN 8 – HORASAN 9 - ENDÜLÜS
+ Kütübü-Sitte üzerine ilk Şerh yazan kişi (HATTABİ)
+ Hadis rivayetinde ihtiyatlı davranma işi (TESEBBÜT)
+ Mevzu yani Uydurma hadisler hakkında en kapsamlı eser (EL MEVZUATU’L KÜBRA – İbnu’l Cevzi)
+ Faydasız ve Boş konuşmalar manasına gelen söz dizimi (LEVHEL HADİS)
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -55,7 +910,146 @@ KELAM / AKAİD
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 MEZHEPLER TARİHİ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
+ Hem Dinde hem de Toplumda bozulmayı ifade eden kavram (TEFRİKA)
+ “Ben kimin mevlasıysam Ali de onun mevlasıdır” hadisi (GADİR-İ HUM)
+ Hz. Osman’ın halife seçiminde heyette bulunanlar (HZ. ALİ | TALHA | ZÜBEYR B. AVVAM | SAD B. EBİ VAKKAS | ABDURRAHMAN B. AVF)
+Hariciliğe verilen Diğer isimler
+ MARİKA (Dinden çıkanlar) | HARURİYE (İlk toplandıkları yer)
+ EHLİ ŞURAT (Can ve Mallarını Allah’a satanlar)
+ MUHAKKİME (Sıffinde Hakem olayını protesto edenler)
+ VEHBİYE (Reisleri Vehb b. Rasibiye nispetle)
+ Harici Fırkalar (MUHAKKİME | EZARİKA | NECEDAT | SUFRİYYE | SEALİBE | BEYHESİYE | ACARİDE | İBADİYE)
+İbadiye Mezhebi
+ Kurucu (ABDULLAH B. İBAD) | Ummanın resmi mezhebi
+ Günümüzdeki tek harici fırka | Devlet reisini seçmek dini görevdir.
+ KADERİYE (Kader inancını reddeden, İnsana sorumluluk veren mezhep)
+ İlk Mürcie tavır sergileyen (ABDULLAH B. ÖMER)
+ Vasıl b. Ata’nın, Hasan Basri’nin derslerinden ayrılmasına sebep olan olay (MÜRTEKİB-İ KEBİRE)
+ Ehli sünnet vel Cemaat kavramını ilk kullanan (EBU LEYS SEMERKANDİ)
+ Muhaliflerce Ehli sünnete verilen isimler (HAŞVİYE | NASİBİYE | SIFATİYYE | MÜCBİRE)
+ Ashab-ı Hadis grupları (MALİKİ | ŞAFİİ | HANBELİ | RAHEVİ | HUZEYMİ)
+ Selefiye ekolünü 8.yy da tekrardan canlandıran (İBN TEYMİYYE)
+Eş’arilik
+ Kurucu (EBUL HASAN EL EŞ’ARİ - Nasuriddin)
+ Mezhebin 2. Kurucusu (BAKİLLANİ)
+ Müteahhirun dönemi (EBU HAMİD EL GAZZALİ)
+ İkrar ve Amel, İmana dâhil değildir
+ Devlet başkanı seçmek farzdır | Ehl-i Kıble tekfir edilmez
+ Maturidilik mezhebini ekolleştiren (EBUL MUİN EN NESEFİ)
+Şia’ya ait Bazı Kavramlar
+ HULUL (İlahi ruhun önce Peygambere sonra Ali’ye intikal etmesi)
+ HUDUSUL İLM (Allah’ın bir şeyi bilmezken sonradan bilmesi)
+ BEDA (Bir şeyin iyi-kötü olacağını bilmişken aksinin zuhur etmesi)
+ RECAT (Bazı İmamların kaybolup tekrar dönmesinin beklenmesi)
+ TEŞBİH (Allah ile Kulun birbirine benzemesi)
+ İBAHA (Helali haram sayma)
+ Gâli –Aşırı Şii fırkalar (SEBEİYYE - Hz. Aliye ilahlık isnat ederler) | KARMATİ | BATINİ | KEYSANİYE | İSMAİLİYYE | NİZARİYYE)
+İsmailiyye Şiası
+ Fırkanın isimleri (TA’LİMİYYE | MELAHİDE | BATINİYYE | SEBİYYE)
+ Fırkanın kolları (MUSTALİYE | NİZARİYYE)
+ Fatimiler devrinde kuruldu | Zahir-Batın ayrımına önem verirler
+ Kıblede Mekke’ye yönelinmez | Kendileri HAVAS - Diğerleri AVAM
+İmamiye Şiası
+ Fırkanın isimleri (İSNAAŞERİYYE | CAFERİYE | ASHABUL İNTİZAR)
+ 12 İmamın isimlerinin zikredildiği eser (EL KUMMİ’NİN TEFSİRİ)
+ Şeri hükümlerin kaynağı (KİTAP | SÜNNET | KIYAS)
+ Namazda ellerin bağlanmasına gerek yoktur.
+ Zekat, Ehl-i Beyte “Humus” olarak verilir.
+ Gaybeti Suğra dönemi Sefirler-İmamların yardımcıları (OSMAN B. SAİD | MUHAMMED B. OSMAN | HÜSEYİN B. RUH | ALİ B. MUHAMMED)
+ Gaybeti Suğra dönemi Sefirlik hizmeti (NİYABETİ HASSA) | Gaybeti Kübra dönemi Şii ulema (NİYABETİ AMME)
+ İmamiyede İmamın özel temsilcisi için aranan şartlar (İLİM | ADALET)
+ İmamiyede; Kur’an, Sünnet, İmamların sözlerini kabul eden (AHBARİ) ve Kur’an, Sünnet, İcma ve Aklı kabul eden (USULİ)
+ 12 İmam (HZ. ALİ | HZ. HASAN | HZ. HÜSEYİN | ALİ B. HÜSEYİN | MUHAMMED EL BAKIR | CAFER ES SADIK | MUSA EL KAZIM | ALİ EL RIZA | MUHAMMED CEVAD ET TAKİ | ALİ EL HADİ EN NAKİ | HASAN EL ASKERİ | MUHAMMED EL MEHDİ – Gaybet dönemi başladı)
+Nusayrilik
+ Kurucu (NUSAYR NEMİRİ) | Kitapları (KİTABUL MECMU)
+ Fırkanın isimleri (AKDENİZ – HATAY ALEVİLİĞİ | FELLAH - Çiftçi)
+ Şii, İslami, Musevi, Sabii izler görülür | Gizlilik esastır
+ AMS (ALİ – MUHAMMED - SELMAN) | Ali, Zahirde imam Batında İlah
+ 7 DEVİR (Tanrı 7 kez insan suretinde zuhur etmiş)
+ Hz. Hasan ve Hz. Hüseyin birer Melektir.
+ Toplu ibadet var (Kadınlar katılmaz) | Temel öğretiler (SIR)
+ ORUÇ (Peygamberimizin (s.a.v) babası Abdullah’ın sessizliğini temsil eder) | ZEKAT (Selman-ı Farisi’yi temsil eder)
+ Dini hiyerarşi (BÜYÜK ŞEYH – ŞEYH – NAKİP – NECİP)
+ Nusayri Bayramları (ĞADİR – Hz. Ali’nin imam olduğu gün | FİRAŞ – Hicretle Ali’nin Peygamberimizin (s.a.v) yatağında uyuması | MİHRİCAN | NEVRUZ | İSA’NIN DOĞUMU)
+Dürzilik
+ Kurucu (HAMZA B. ALİ) | İnançlarını saklarlar (TAKİYYE)
+ Kendilerine verdikleri isimler (BENİ MARUF | EHLÜ TEVHİD)
+ Kutsal metinleri (RESAİLU HİKME | EL HİKMETU ŞERİFE)
+ İnanç esasları (HAKİM B. EMRİLLAH’A İNANMAK | HAMZA B. ALİ’Yİ BİLMEK | HUDUDU TANIMAK)
+ Toplum 2’ye ayırırlar (UKKAL – Bilgili | CUHHAL - Bilgisiz)
+Dürzilikte 7 Esas
+ NAMAZ (Doğru sözlü olmak) | ZEKAT (Din kardeşini korumak)
+ ORUÇ (Var olmayan ibadetten vazgeçme)
+ HAC (İblis ve Azgınlardan uzaklaşma)
+ CİHAD (Hakimin hükümlerine rıza göstermek)
+ ŞEHADET (Hakimi her devirde ilah görmek)
+ VELAYET (Her durumda Hakimin hükmüne razı göstermek)
+Yezidilik
+ Kurucu (ADİ B. MUSAFİR) | En önemli sembol (HOROZ)
+ Kutsal kitaplar (MUSHAF-I REŞ | KİTAB-I CİLVE)
+ En önemli Bayram (SARSİLYA) | Bakla, Marul, Lahana, Geyik, Balık yemek yasaktır.
+ HAC (Laleşteki Şeyh Adi türbesini ziyaret etmek)
+ Melek Tavus (Cebrail | Şeytan) inancı vardır.
+ BALIM SULTAN (Bektaşilikte Pir-i sani / Mücerret-Bekarlık erkanı getiren / Kızılbaş-Bektaşi farkını ortaya koyan)
+ Kızılbaşlıkta Hiyerarşi (ÇELEBİ – DEDE – MÜREBBİ – REHBER – MUSAHİP – TALİP)
+ Alevilikte Temel Erkan kitabı (BUYRUK) | Nasip Alma ve İkrar Cemi, Bektaşiliğe aittir.
+ Alevilikte 12 Hizmet (DEDELİK | REHBERLİK | GÖZCÜLÜK | ÇERAĞCILIK | ZAKİRLİK | SÜPÜRGECİLİK | SUCULUK | KURBANCILIK | SEMAHCILIK | İZNİKÇİLİK | BEKÇİLİK | PEYK-OKUYUCULUK)
+Alevilikte Erkanlar
+ MUSAHİPLİK – İkrar Cemi (Yol Kardeşliği)
+ ABDAL MUSA (Kışın yapılır) | MUHARREM (Kerbela şehitleri anılır)
+ GÖRGÜ (Yola giren canların toplum önünde sorgulanması)
+ KOLDAN KOPAN (Gençlerle muhabbet yapılır)
+ DARDAN İNDİRME (Ölü için helallik alınır)
+ DÜŞKÜNLÜK (Yol mensubunun toplum dışına itilmesi)
+Ahmedilik
+ Kurucu (MİRZA GULAM AHMED KADİYANİ)
+ İslam dışı azınlık ilan eden ülke (PAKİSTAN)
+ Silah yerine Kalem ve Dua ile Cihad yapılır.
+ Gulam Ahmed’in nebiliğini kabul etmeyen kol (LAHOR)
+ Gulam Ahmed’in iddiaları (MÜCEDDİD – MESİH – MEHDİ – NEBİ/RESUL)
+Babilik – Bahailik
+ Kurucu (ŞEYH AHMED EL AHSAİ)
+ Babilik (MİRZA ALİ) | Bahailik (MİRZA HÜSEYİN)
+ Şii – İslam anlayışı ile ortaya çıkmıştır | Hurufilik anlayışı (19 Sayısı)
+ KIBLE (Bahaullah’ın Akka’daki kabri)
+ Bahailerin kutsal mekanı (MİŞKATÜL ENVAR)
+ Kutsal kitaplar (EL BEYAN | EL İKAN | EL AKDES | KELİMATI MAKNUNE | TERAZAT)
+ Islahatçı Anlayışlar (KÜLTÜREL – Said Nursi | SİYASAL – Ihvanı Müslimin | TARİHSEL - Fazlurrahman)
+ Maturidiliği İslam dünyasında yayan kişi (PEZDEVİ)
+ Şia’ya göre Buhariye denk sayılan Hadis kitabı (EL KAFİ)
+ İmamiyeye göre beklenen mehdi (HASAN EL ASKERİ)
+ Türkiye Nusayrileri hakkında ilk çalışma yapan (BAHA SAİD)
+ Süleyman b. Surad öncülüğünde Kufelilerce, Hz. Hüseyin’in intikamını almak için yapılan hareket (TEVVABUN)
+ Ebul Hasan el Eş’ari’nin Mezhepleri konu alan eseri (MAKALATUL İSLAM)
+ Tasavvuf tarihinde ilk kez “Sufi” lakabıyla anılan kişi (EBU HAŞİM EL KUFİ)
+ Hasan Sabbah’ın destekçisi olan fırka (NİZARİ İSMAİLİLER)
+ Kumun ve Tafra teorisini ortaya çıkaran Mutezile temsilcisi (İBRAHİM EN NAZZAM)
+ “Size 2 şey bırakıyorum: Kur’an ve Ehl-i beytim” hadisi (SAKALEYN HADİSİ - Şia)
+ Zeydiyeye göre Büyük günah işleyenlerin durumu (NİMET KÜFRÜ)
+ Cebriyenin öncüleri (CAD B. DİRHEM | CEHM B. SAFVAN)
+ Allah’ın isim ve sıfatının zati ile beraber kadim olduğunu savunan mezhep (KÜLLABİYE)
+ TEKAMÜS – Dürzilik (Ölümden sonra ruhun başka bir bedene geçmesi)
+ Alevilikte Ahiret inancıyla ilgili en önemli konu (KUL HAKKI)
+ Gulam Ahmedin, nebiliğini birtakım kelimelerin ardına sığınarak açıklaması (MUHADDES)
+ Şiada devlet başkanlığı hasebiyle kendisine yakın olanları dost sayma (TEVELLİ), uzak olanlar ile ilişik kesme (TEBERRİ)
+ İmamiyede en üstün görevli (AYETULLAH UZMA)
+ Fırkaların siyasi ve itikadi görüşlerinin ele alındığı eserler (MAKALAT)
+ Mürtekebi Kebire / Büyük günah işleyenin durumu hakkında sessiz kalan mezhep (MÜRCİE – Hariciliğe tepki olarak doğdu)
+ “… Ey Ehl-i Beyt! Muhakkak ki Allah, sizden her türlü ‘ricsi’ (kiri, pası, günahı ve eksikliği) gidermek ve sizi tertemiz temizlemek ister!” (TATHİR/TEMİZLENME AYETİ - Ahzab, 33)  Şia bu ayete binaen Ehlibeyt imamlarını masum/günahsız sayarlar.
+ VEKALET-İ FAKİH (Ayetullah Humeyni tarafından getirimiştir / Mehdi gelene kadar bilgili olan birisi Ona vekalet edecektir)
+ En faziletli / Efdal varken daha az faziletli / Mefdûl olanın imâmetinin câiz olmadığı görüşü (ZEYDİYYE)
+ Eş’ari’nin hocası Ali el Cübbai’den ayrıldığı konu (3 KARDEŞ MESELESİ)
+ Alevilikte Fakirlere yardımlaşma uygulaması (HAKKULLAH / LOKMA)
+ Alevi-Bektaşilikte 4 Kapı (TARİKAT | MARİFET | ŞERİAT | HAKİKAT)
+ Peygamberimizin (s.a.v) miraç dönüşü uğradığı inanılan meclis (KIRKLAR MECLİSİ) | Kırklar meclisinde canların hak aşkı ile dönüşleri (SEMAH)
+ VEHHABİLİK (Mezar-Türbe yıkıcılar / Tevessül-Şefaat kabul etmezler / Temel prensip “TEVHİT” / Sert ve Katı kuralları vardır / Bidat kavramı)
+ BABİLİK-BAHAİLİK (Milenyum – 1000 yıl inanışı / Kamil İnsan Teorisi)
+ Şia’ya göre Usul-i Din (TEVHİD | NÜBÜVVET | İMAMET | MEAD | ADALET)
+ “MEHDİ” kelimesini ilk kullanan (HASSAN B. SABİT)
+ Allah’ın sıfatları, Allah’ın zatının dışında bir akım hallerdir (AHVAL NAZARİYESİ – Ebu Haşim el Cübbai)
+ Nusayrilikte Allah’ın Hülul ettiği kişiler (MİKDAD B. EL-ESVED | EBU ZER EL-GIFARİ | ABDULLAH B. REVAHA | OSMAN B. MA’ZUN | KANBER B. KADAN ED-DEVRİ)
+ Bektaşiler, Hacı Bektaşi Veli’ye bağlıdır | Kızılbaşlar, 12 imamın soyundan gelen Ocaklara bağlıdır
+ Yezidilikte 3 büyük melek (MELEK TAVUS | ŞEYH HADİ | SULTAN YEZİD)
 
 
 
@@ -63,7 +1057,281 @@ MEZHEPLER TARİHİ
 İSLAM TARİHİ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-
+ G. Arabistan devletleri (MAİN | SEBE | HİMYERİ)
+ K. Arabistan devletleri (NEBATİ | TEDMÜR | GASSANİ | HİRE/LAHMİ | KİNDE)
+ Kureyş kabilelerini bir araya getirdiği için Kusay b. Kilab’a verilen unvan (EL MUCEMMİ)
+ Kureyş kabilesine adını veren kişi (FİHR B. MALİK)
+ Mekke ve Kâbe ile ilgili hizmetleri ilk düzenleyen (KUSAY B. KİLAB)
+Mekke ve Kâbe ile ilgili Bazı Hizmetler
+ KIYADE (Ordu Kumandanlığı)
+ RİFADE (Hacıları Ağırlama)
+ LİVA (Bayraktarlık)
+ HİCABE | SİDANE (Kâbe Bakımı | Kâbenin Korunması)
+ EŞNAK (Diyetlerin ödenmesi ve Zararların tespiti  Hz. Ebubekir)
+ EİNNE (Süvari birliğine kumandanlık etme)
+ RİYASET (Mekke’nin Dini ve Siyasi yönetim işi)
+ SEFARET (Dış Temsilcilik  Hz. Ömer)
+ EMVALİ MUHACCERE (Kâbe’ye sunulan malların muhafazası)
+Putlar
+ HÜBEL (En büyük Put / Elzam adlı oklar bunun yanında çekilirdi)
+ LAT (Sakif Kabilesinin putu)
+ MENAT (Huzeyl Kabilesinin putu)
+ LAT | MENAT | UZZA (Allah’ın Kızları olarak nitelendirilen Putlar)
+ VEDD | SÜVA | YEĞÜS | YEÜK (Müşriklerin eski putları  Nuh, 23)
+ Arapların takvimde hile yapması (NESİ’)
+Put Çeşitleri
+ SANEM (Madenden yapılan Put)
+ NUSUP (Taştan yapılan Put)
+ VESEN (Ahşaptan yapılan Put)
+Panayırlar
+ UKAZ (Kuss b. Saidenin Hitap panayırı)
+ ZÜLMECAZ | HUBAŞE | MECENNE
+ Araplar arasında yapılan savaşlar (EYYAMUL ARAP)
+ Bedevilerdeki Kabile meclisinin şehirdeki karşılığı (MELE’)
+ Kureyşin alt kollarının ileri gelenlerinin toplantı yeri (NADİ’)
+Toplum yapısı
+ HÜRLER (EŞRAF | AVAM - Halk)
+ MEVALİ (Azat edilmiş Köle)
+Nikâh çeşitleri
+ NİKÂH-I BEDEL (Eşleri karşılıklı değiştirme)
+ NİKÂH-I ŞIĞAR (Başlık vermemek için kızların değişimi)
+ NİKÂH-I İSTİBDA (Erkek çocuk sahibi olmak için Eşi başkasına sunma)
+ NİKÂH-I MAKT (Oğlanın, Baba öldükten sonra üvey anneyle evlenmesi)
+ Arapların Cahiliye dönemi çirkin davranışları (MESALİBU’L ARAP)
+ Cahiliye dönemi Arapların kullandığı yazı çeşidi (MÜSNET)
+ Bir kişinin kendi kabilesinden atılması (EL HAL)
+ Anlaşmalı kabileler arası geçiş (HİLF)
+ Peygamberimizin (s.a.v) halaları (ÜMEYME | BERRE | ATİKE | BEYZA | ERVA | SAFİYE)
+ Peygamberimizin (s.a.v) süt anneleri (SÜVEYBE | HALİME | ÜMMÜ EYMEN)
+ Yemenli Zübeyd kabilesinden bir Tüccar, As b. Vail’e mal satmış fakat parasını alamamıştır. Bunun üzerine Tüccar, Ebu Kubeys dağında Feryat etmiştir. Bu olay üzerine Peygamberimizin (s.a.v) amcası Zübeyr öncülüğünde kurulan grup (HILFU’L FUDUL)
+ 1. Akabe biatı – 621 (AHLAKİ) | 2. Akabe biatı – 622 (SİYASİ)
+ Medine’ye ilk hicret eden kişi (EBU SELEME)
+ Peygamberimizin (s.a.v) Hira mağarasında inzivaya çekilmesi (TAHANNÜS)
+ Peygamberimizin (s.a.v) Medine’ye hicret esnasında Sohbet ederek Müslüman yaptığı kişi (BÜREYDE)
+ Hicret zamanı Peygamberimizin (s.a.v), Müşriklerin arasından görünmeden geçerek okumuş olduğu ayetlerin bulunduğu sure (YÂSİN)
+ Hicret zamanı Peygamberimizin (s.a.v) evinde kaldığı kişi (KÜLSÜM B. HİDM)
+ Mescidi Nebevinin bulunduğu arsanın sahipleri (SEHL | SÜHEYL)
+ Peygamberimizin (s.a.v) elçileri karşıladığı, Mescid-i Nebevideki sütun (ÜSTÜVAREDÜ’L VÜFUD)
+ Medine antlaşmasına aykırı davranan Yahudi kabileleri (NADİR | KUREYZA)
+ İslam tarihinde ilk 3 Seriyye (SİFULBAHR - RABİG - HARAR)
+ Bedir savaşı öncesi düzenlenen gazveler (EBVA | BUVAT | BEDRUL ULA | ZÜLUŞEYRE)
+ Beni Nadir kabilesinden Kab b. Eşref’in: “Yerin altı üstünden iyidir” sözünü söylediği savaş (BEDİR)
+ Müslüman bir kadına saldırıdan sonra gerçekleşen gazve (BENİ KAYNUKA)
+ Peygamberimize (s.a.v) suikast düzenleyen, Beni Nadir reisi (HUYEY B. AHTAP)
+ BİR-İ MAUNE VAKASI (Amr b. Sasaa kabilesi / 70 kurrayı şehit eden Amr b. Tufeyl / Peygamberimiz (s.a.v) bu olaydan dolayı Beddua etmiştir)
+ RECİ VAKASI (Adel ve Kâre kabileleri / 10 kişiyi şehit eden Lihyanoğulları)
+ BENİ MÜSTALİK GAZVESİ (Müreysi kuyusu / İfk hadisesi bu olaydan sonra yaşandı / Peygamberimiz (s.a.v), Müstalik kabilesinin lideri Haris’in kızı Cüveyriye ile evlendi)
+ Hendek savaşında Yahudi ve Müşrik ittifakını bozan kişi (EŞCÂ KABİLESİ REİSİ NUAYM)
+ Kureyza gazvesinde Müslüman ve Yahudilerin hakemliğini kabul ettiği kişi (SAD B. MUAZ)
+ Hudeybiye antlaşmasında Müşriklerin hakem olarak gönderdiği kişi (SÜHEYL B. AMR)
+İslama Davet Mektupları
+ BİZANS (Dıhye el Kelbi)
+ HABEŞİSTAN (Amr b. Umeyme)
+ İRAN (Abdullah b. Huzafe)
+ MISIR (Hatip b. Ebi Beltaa)
+ Peygamberimizin (s.a.v), Hayberin fethi sonrası evlendiği kişi (SAFİYE)
+ Peygamberimizin (s.a.v), Umretül kaza sonrası evlendiği kişi (MEYMUNE)
+ Mute savaşında sırasıyla şehit olan sahabiler (ZEYD  CAFER  ABDULLAH B. REVAHA)
+ HUNEYN GAZVESİ (Hevazin ve Sakif kabilesi / Müslümanlar: “Bu ordu yenilmez” demişlerdir, Ardından ilahi uyarı geldi  Tevbe, 25-26)
+ Münafıkların; Lideri (ABDULLAH B. UBEY) , Mescidi (DIRAR)
+ Tebük seferinde tembelliklerinden savaşa katılmayıp daha sonra Tevbe, 118-119 ayetleriyle bağışlanan kişiler (KAB B. MALİK | MURARE B. REBİ | HİLAL B. UMEYME)
+Müşriklere verilen 4 ültimaton (Tevbe Suresi)
+ Müşrikler Kâbe’ye yaklaştırılmayacaktır.
+ Kâbe çıplak tavaf edilmeyecektir.
+ Sadece Mü’minler cennete girecektir.
+ Antlaşmalar süresi bitene kadar devam edecektir.
+ Peygamberimizin (s.a.v) mirası (FEDEK ARAZİSİ | GANİMETLERİN 1/5’İ  Enfal Suresinde belirtildi)
+ Peygamberimizin (s.a.v); fiziki özellikleri (HİLYE) , hem fiziki hem ahlaki özellikleri (ŞEMAİL)
+ ZEYNEP B. CAHŞ (Peygamberimizin halasının kızı / Zeyd b. Harise’nin eski karısı / Peygamberimiz (s.a.v) ile evliliği ayetle onaylanan kişi)
+ Peygamberimizin (s.a.v), kölelikten kurtarıp evlendiği kişi (CÜVEYRİYE)
+ Hz. Fatıma’nın Lakapları (ÜMMÜ EBİHA - BABASININ ANNESİ | ZEHRA | BETÜL - İFFETLİ)
+ AŞERE-İ MÜBEŞŞERE - Cennetle Müjdelenen 10 Sahabi (4 HALİFE | TALHA B. UBEYDULLAH | ZÜBEYR B. AVVAM | ABDURRAHMAN B. AVF | SA’D B. EBU VAKKAS | EBU UBEYDE B. CERRAH | SAİD B. ZEYD)
+HZ. EBUBEKİR (2 YIL)
+ Babası (EBU KUHAFE) | Annesi (ÜMMÜL HAYR)
+ Cahiliye döneminde adı (ABDULKÂBE) | İslami dönemde adı (ABDULLAH)
+ Cehennemden azat edildiği için verilen unvan (ATİK)
+ Hayatta iken ailesinin tamamı Müslüman olan Tek sahabidir.
+ İcraatları (USAME ORDUSU | MÜTENEBBİ – Yalancı Peygamber | ZEKAT | RİDDE – Dinden dönme)
+ Müslümanlara Suriye’nin kapısını açan savaş (ECNADEYN)
+HZ. ÖMER (10 YIL)
+ Görüşlerini destekler mahiyetteki ayetler (MUVAFAKAT-I ÖMER)
+ Muğire b. Şube’nin kölesi Ebu Lu’lue tarafından şehit edildi.
+ Kadisiye savaşı ile İran sancağı elde edildi (DİREFŞ-İ KAVİYANİ)
+ Nihavend savaşı ile Sasaniler toparlanamadı (FETİHLERİN FETHİ)
+ Taun/Veba hastalığı bu dönemde ortaya çıktı.
+ İlk İslam parası bu dönemde basıldı | Divan teşkilatı kuruldu
+ Gayrimüslimlerden alınan vergiler tek elden toplandı (FEY)
+ Basra, Kufe ve Fustat/Kahire şehirleri kuruldu.
+ Ordu için Divanı Cünd kuruldu | Hisbe Teşkilatı kuruldu
+HZ. OSMAN (12 YIL)
+ İlk Deniz seferi yapıldı (ZATÜ’S-SAVARİ)
+ Peygamberimizin Sır Kâtibidir | Kur’an-ı kerim çoğaltıldı
+HZ. ALİ (5 YIL)
+ Tebük harici bütün gazvelere katılmıştır.
+ Abdurrahman b. Mülcem tarafından şehit edildi.
+ Kur’an-ı kerimin çoğaltılıp gönderildiği şehirler (MEKKE | MEDİNE | KUFE | ŞAM | BASRA | YEMEN | BAHREYN)
+ Kur’an’ın İstinsahı-Çoğaltılmasında bulunan kişiler (ZEYD B. SABİT | SAİD B. AS | ABDULLAH B. ZÜBEYR | ABDURRAHMAN B. HARİS)
+ En fazla can kaybının olduğu Cuma / Herir gecesi (SIFFİN SAVAŞI)
+ Medine’de ilk vefat eden sahabi (OSMAN B. MA’ZUN)
+ İlk seriyye emiri, Ganimetten İlk pay alan (ABDULLAH B. CAHŞ)
+ Peygamberimizin (s.a.v); Tevrat’ta ismi (AHYED) , İncilde ismi (FARAKLİT)
+ Hayberin fethinden sonra Peygamberimizi (s.a.v) zehirlemeye çalışan kişi (ZEYNEP B. HARİS)
+ Müslüman Arapların, Avrupadaki ilerleyişini durduran savaş (PUVATYA)
+ Peygamberimize (s.a.v), Ebter yani Soyu kesik diyen kişi (AS B. VAİL)
+ Bedir savaşında esir düşen, Peygamberimizin (s.a.v) kızı Zeynep’in eşi (EBUL AS B. REBİ)
+ Peygamberimizin (s.a.v): “Allah’ım bunu bana cennette komşu eyle” dediği kişi (ÜMMÜ NESİBE)
+ Müslümanken dinden çıkan Vahiy kâtibi (ABDULLAH B. SERH)
+ Müslümanların önce yenilip sonra kazandığı savaş (HUNEYN)
+ Peygamberimizin şairi (HASSAN B. SABİT)
+ Sırasıyla Medine’den sürülen Yahudi kabileleri (KAYNUKA  NADİR  KUREYZA)
+ Kur’an’da ismi geçen 2 savaş (BEDİR | HUNEYN)
+ Peygamberimizin (s.a.v) vefatından sonra Ensarın seçmiş olduğu halife (SAD B. UBADE)
+ Medinelilerin halife seçmek için toplandığı yer (BENİ SAİDE ÇADIRI)
+ Uhud savaşından sonra Müslümanların güçlü olduğunu gösteren savaş (HAMRAUL ESED GAZVESİ)
+ Peygamberimizin (s.a.v) özlü söz söylemesi (CEVAİMUL KELİM)
+ Duhan suresinde “BATŞE-İ KÜBRA” olarak belirtilen savaş (BEDİR)
+ Kab b. Zübeyr’in, Peygamberimizi (s.a.v) öven şiiri (KASİDE-İ BÜRDE)
+ Kıbleteyn / İki kıbleli mescidinin önceki adı (BENİ SELEME)
+ Mütenebbiler - Yalancı Peygamberler (TÜLEYHA | SECAH | ESVED EL ANSİ | MÜSEYLEME)
+ Müslümanlara uygulanan ambargoya İlk tepki veren (ZÜBEYR B. EBU UMEYYE)
+ Peygamberimizin (s.a.v), Hicret öncesi yaşantısını ele alan eser (EL MEB’AS)
+ Hicretin 41. Yılına verilen ad (CEMAAT YILI)
+ Peygamberimizin (s.a.v) hutbe okuduğu esnada Kütüğün ağlaması (HANİNUL CİZ)
+ Himyeri kralı Zünüvas, Yahudiliği kabul etmeyenleri ateş dolu çukura atma olayı (UHDUD – Buruc suresi)
+ Peygamberimiz (s.a.v), Necm suresini okurken Müşriklerin secde etme olayı (GARANİK)
+ Zatun-Nitakayn / İki Kuşak sahibi (ESMA B. EBUBEKİR)
+ Bedir savaşında Kuyuların taşla doldurulması fikri (HUBBAB B. MUNZİR)
+ Savaş meydanında ilk şehidimiz (MİHCE – Bedir savaşı)
+ Peygamberimizi Uhud savaşında koruyan (NESİBE B. KAB / ÜMMÜ ÜMARE)
+ Hayber fatihi (HZ. ALİ) | Mısır fatihi (AMR B. EL AS)
+Peygamberimize (s.a.v) İlk zamanlar Vahyin geliş aşamaları
+ FETRET’UL VAHYİN SONA ERMESİ (Duha Suresi)
+ GİZLİ TEBLİĞ (Müddessir Suresi, 1-5)
+ AÇIK TEBLİĞ (Hicr Suresi, 94)
+ DAVETE YAKIN AKRABADAN BAŞLANILMASI (Şuara Suresi, 214)
+ Kıblenin değişimi (BAKARA, 144)
+Savaşlar - Sureler
+ UHUD (Al-i İmran)
+ HUNEYN | TEBÜK (Tevbe)
+ BEDİR (Enfal)
+ Tevbe suresinde Cizye ayetinin uygulandığı savaş (TEBÜK)
+ Güzel koku sürünenler (MUTAYYEBUN) | İçi Kan dolu kaba elini sürerek yemin edenler (AHLAF)
+ Hz. Ali zamanında Tahkim olayının yaşandığı yer (DEMETÜL CENDEL)
+ Huneyn gazvesinden kaçan Müşriklerin saklandığı yer (EVTAS)
+ Sırasıyla Mübarek günler (MEVLİD - REGAİP - MİRAÇ - BERAT - KADİR)
+ Sırasıyla Mekke’ye yerleşenler (AMALİKA - CÜRHÜM - HUZAA - KUREYŞ)
+ Hz. Hasan ile Muaviye arasında barışın olduğu yıl (AMÜL CEMAA / BİRLİK YILI)
+ Hz. Ebubekir zamanında toplanılan Mushaf (EMAM)
+ Cahiliye döneminde Kişileri toplum dışı bırakma (TARD)
+ Cahiliye döneminde Katili bilinmeyen bir ölünün, ölü olarak bulunduğu yer halkından 50 kişinin onu öldürmediklerine ve öldüreni bilmediklerine dair Kâbe’de yemin etmeleri (KASAME)
+ Hz. Ali’nin şehit edilmesinden sonra Şam’da halifeliğini ilan eden kişi (MUAVİYE), Kufe’de halifeliğini ilan eden kişi (HZ. HASAN)
+ 4 Halife döneminde “Emirul Mu’minun” sıfatı kullanılırken, Muaviye döneminde “Halifetullah” sıfatı kullanılmıştır.
+ Hz. Ömer döneminde verilen Yıllık maaş (ATIYYE)
+ ARABUL BAİDE (Soyu tükenmiş Araplar / Ad, Semud vb. kavimler)
+Arabul Bakiye (Soyu Devam eden Araplar)
+ ARABUL ARİBE (Asıl Araplar)
+ ARABUL MÜSTARİBE (Sonradan Araplaşanlar)
+ ARABUL MÜSTACEME (Fetihler sonrası Arap olanlar)
+ Evs ve Hazreç kabileleri arasında yapılan savaşlar (BUAS) | Haram aylarda yapılan savaşlar (FİCAR)
+ Ebrehe’nin Kâbe’ye karşılık yaptığı kilise (KULLEYS)
+ Peygamberimizin (s.a.v) Ebeleri (ŞİFA | FATMA | ÜMMÜ EYMEN)
+ Peygamberimizin (s.a.v) “Annem” diye bahsettiği kişi (FATMA B. ESED – Ebu Talip’in eşi)
+ Peygamberimizin (s.a.v) düşmanları (UKBE B. EBU MUAYT | ÜMEYYE B. HALEF | AS B. VAİL | EBU CEHİL | NADR B. EL HARİS)
+ Habeşistan hicretinde Kafile reisi Cafer b. Ebu Talip’in Habeş kralı Necaşi’ye okuduğu sure (MERYEM)
+ 620 yılında Ebu Talip ve Hz. Hatice’nin vefatı (AMÜ’L HÜZN)
+ Peygamberimizi (s.a.v), Taif dönüşü himayesine alan (MUTİM B. ADİY)
+Miraç’ta Allah’ın verdiği müjdeler
+ Bakara suresinin son 2 ayeti (Amene Resulu)
+ 5 vakit namazın Farz olması
+ Allah’a şirk koşmayanların Cennetle müjdelenmesi
+ 1. Akabe biatı (KADINLAR BİATI) | 2. Akabe biatı (SAVAŞ BİATI)
+ Akabe biatları sırasında Musab b. Umeyr’in birçok kişiyi Müslüman yaptığı yıl (SENETUL İBTİHAC / SEVİNÇ YILI)
+ Medine’ye hicret zamanı Peygamberimize (s.a.v) ve Hz. Ebubekir’e rehberlik yapan kişi (ABDULLAH B. URAYKIT)
+ Medine’ye hicret zamanı Peygamberimize (s.a.v) atıyla suikast yapmaya çalışan fakat başaramayan kişi (SÜREKA)
+ Peygamberimizin (s.a.v) Medine’de misafir kaldığı kişi (EBU EYYUB EL ENSARİ – Mihmandâr-ı Resul)
+ Ensar ve Muhacir’in kardeşliği (MUÂHAT – Ahzab Suresi)
+ Medine Sözleşmesinin yapıldığı ev (ENES B. MALİK’İN EVİ)
+ Araplarda Savaş meydanında teke tek savaşma (MÜBÂREZE)
+ Uhud savaşında Ayneyn Tepesine verilen isim (CEBELU’R-RUMAT / OKÇULAR TEPESİ)
+ Cahiliye döneminde Savaş meydanlarında ölen kişilere yapılan işkencelere verilen isim (MÜSLE)
+ Uhud savaşından cesaret alan ve Yalancı Peygamber Tüleyha’nın kışkırtmasıyla Esed kabilesi, Medine’ye saldırmak istedi. Bunun üzerine Peygamberimizin (s.a.v) düzenlediği seriyye (KATAN)
+ Nadir kabilesiyle alakalı sure (HAŞR SURESİ)
+ Hudeybiye antlaşması gereği Müşriklere iade edilen kişi (EBU CENDEL)
+ Hudeybiye antlaşmasında Vekil olarak gönderilen ve geri gelemeyen Hz. Osman adına yapılan biat (RIDVAN BİATI)
+ Zatüs-Selasil seriyyesinde Soğuk havada Ateş yaktırtmayan, Askerlerine gusül yerine teyemmüm aldırtan ve Resulullah’tan (s.a.v) tebrik alan kişi (AMR B. EL AS)
+ Mekke’nin fethinden sonra 2 görev hariç tüm görevler kaldırıldı (HİCABE | SİKAYE)
+ Taif kuşatması sırasında İlk kez Mancınık kullanma taktiğini veren kişi (SELMAN-I FARİSİ)
+ Zorluk / Usre savaşı olarak bilinen savaş (TEBÜK)
+ Elçiler yılında Müslüman olmayı kabul etmeyenler (NECRAN HRİSTİYANLARI | TAĞLİB KABİLESİ)
+Veda Haccına verilen isimler
+ HACCETÜ’L İSLAM (Resulullah’ın (s.a.v) ilk ve tek haccı)
+ HACCETÜ’L BELAĞ (Resulullah (s.a.v) Haccın rükunlarını gösterdi)
+ HACCETU'L KEMAL (İslami hükümler tamamlandı)
+ Sasaniler’in son, İslam’ın ilk Valisi (BAZAN)
+ Arabistan’a ilk Put olan Hübeli getiren kişi (AMR B. LUHAY)
+ Kusay b. Kilab’ın; Yakın akrabalarını şehrin iç kısmına yerleştirmesi (KUREŞ EL BİTAH), Uzak akrabalarını şehrin dış kısmına yerleştirmesi (KUREYŞ EZ ZEVAHİR)
+ 1. Akabe biatından önce Müslüman olan İlk Medineliler (ESAD B. ZÜRARE | AVF B. HARİS | RAFİ B. MALİK | KUTBE B. AMİR | UKBE B. ABDULLAH | HARİS B. ABDULLAH)
+ Akabe görüşmelerinin sayısı (3) | Akabe biatlarının sayısı (2)
+ Peygamberimizin (s.a.v) eşi ve “Ümmül Mesakin / Fakirlerin Anası” lakaplı annemiz (ZEYNEP)
+ Reci vakasında esir alınıp İdam edilmeden önce 2 rekat namaz kılan sahabi (HUBEYB B. ADİY)
+ Tebük gazvesinde En büyük bağışı yapan (HZ. OSMAN), Malının tamamını bağışlayan (HZ. EBUBEKİR), Malının yarısını bağışlayan (HZ. ÖMER)
+ Veda hutbesinde İlk kaldırılan faiz (ABBAS’IN FAİZİ), İlk kaldırılan kan davası (RABİA’NIN KAN DAVASI)
+ Ridde hareketini başlatan kişi (ESVED EL ANSİ)
+ Hz. Ebubekir döneminde Müslümanlar ile Bizans arasında yapılan ilk Büyük savaş (ECNADEYN)
+ Peygamberimizin (s.a.v) vefatı sonrasında Halifelik için 2 taraftan birer kişinin gelmesi teklifini sunan sahabi (HUBAB B. MUNZİR)
+ Hz. Ebubekir zamanında Kur’an-ı kerim’in toplanmasına sebep olan, Sahte peygamber Müseyleme ile yapılan ve Birçok Hafız sahabenin şehit olduğu savaş (YEMAME / AKRABA)
+ Sıffin savaşında Hz. Alinin hakemi (EBU MUSA EL EŞ’ARİ), Muaviye’nin hakemi (AMR B. EL AS), yaptıkları anlaşma (TAHKİM)
+ Sıffin savaşında Haricilerin, Hz. Ali’ye karşı söylemiş oldukları slogan (HÜKÜM, YALNIZCA ALLAH’INDIR)
+ Hz. Ali ve Hariciler arasında yapılan savaşlar (NEHREVAN | NUHAYLE)
+ Muaviye zamanında Mevali yani Arap olmayanların, Emevilere ve Arap milliyetçiliğine karşı başlattıkları harekât (ŞUUBİYYE)
+ Muaviye zamanında İstanbul 2 defa kuşatıldı ve Şam, İslam devletinin yeni başkenti oldu.
+ Yezid b. Muaviye döneminde Medine’nin 3 gün boyunca yağmalanması ve kuşatılması (HARRE OLAYI)
+ ABDULMELİK B. MERVAN DÖNEMİ (Emevilerde Resmi dil, Arapça oldu / Lakabı: Ebul Muluk – Hükümdarların Babası / Kubbetus-Sahra inşa edildi / Keysaniye isyanı bastırıldı – Muhtar es Sekafi )
+ Tarık b. Ziyad’ın Kadiks savaşıyla başlattığı Puvatya savaşıyla sona erdiren ve Avrupada kazandığı ilk toprak parçası (ENDÜLÜS / İSPANYA)
+ Cuma hutbesine Nahl, 96. Ayeti koydurtarak bugün Cuma namazlarında okunmasını sağlayan kişi (ÖMER B. ABDULAZİZ)
+ Endülüs Emevi devletinin zayıflamasıyla ortaya çıkan küçük topluluklar (TEVAİF’UL MÜLÜK)
+Endülüs Emevi Devleti
+ En parlak dönem (2. ABDURRAHMAN) | Resmi Mezhep (MALİKİLİK)
+ “Halife” unvanını ilk kullanan hükümdar (3. ABDURRAHMAN)
+ Büyük ilim şehri / Başkent (KURTUBA)
+ İspanyadaki Müslümanları himaye eden gruplar (MURABITLAR | MUVAHHİDLER | NASRİLER)
+ İspanyada Hristiyan hakimiyetinde yaşayan Müslümanlar (MÜDECCEN)
+ İspanyada Müslümanlığı kabul eden Yerli halk (MUVELLEDUM)
+ Müslümanları, Endülüsten atma düşüncesi (RECONQUİSTA)
+ Endülüste, Müslüman olmaları için satın alınan köleler (SAKALİBE)
+ Abbasilerin ilk halifesi (EBUL ABBAS ABDULLAH) | Abbasilerin gerçek kurucusu (EBU CAFER EL MANSUR)
+ Abbasiler döneminde Ebu’l Musa iç karışıklıkları önlemek amacıyla çok kan dökmüştür. Bundan dolayı Ebu’l Musa’ya verilen lakap (SEFFAH)
+ Ebu Cafer el Mansur döneminde Başkent Bağdat’a verilen unvan (MEDİNETUS-SELAM / BARIŞ ŞEHRİ)
+ Abbasilerin en parlak devri (HARUN REŞİT DÖNEMİ)
+ Abbasiler devletinde Resmi mezhebin Mutezile olduğu ve Beytulhikme’nin kurulduğu dönem (ME’MUN DÖNEMİ)
+ Mu’tasım döneminde; Türkler için kurulan şehir (SAMARRA), Sınırda Bizans tehlikesine karşı kurulan Türk ordugâhlar (AVASIM), Türk komutanlar için kurulan makam (EMÜRUL-ÜMERA)
+ Abbasiler zamanında İsyanları bastırmak amacıyla kurulan kurum (DİVANÜZ-ZENADIKA)
+ İlk Vezirlik sistemini kuran devlet (ABBASİLER)
+ Haram Aylar (ZİLKADE | ZİLHİCCE | MUHARREM | RECEP)
+ 605 yılı Kâbe Hakemliği olayında Kâbe’ye ilk girecek kişinin hakemliğinin kabul edilmesi fikrini sunan (EBU UMEYYE B. MUĞİRE)
+ Ezanı rüyasında ilk gören sahabi (ABDULLAH B. ZEYD)
+ Peygamberimizin (s.a.v) yerine Sahabelerin komuta ettiği seferler (SERİYYE)
+ Hudeybiye antlaşmasını yapmak amacıyla Peygamberimizin (s.a.v) Medine’den ayrılırken yerine vekil bıraktığı kişi (ABULLAH B. MEKTUM)
+ Peygamberimizin (s.a.v) ve Sahabelerin, Rıdvan biatı kararlarını aldığı yer (SEMURE AĞACI)
+ Mekke’de Putların ortaya çıkmasına neden olan kabile (CÜRHÜMLÜLER)
+ “Fethi Mubin” olarak bilinen olay (HUDEYBİYE ANTLAŞMASI)
+ Kâbe’de Kur’an-ı kerimi ilk okuyan sahabi (ABDULLAH B. MESUD)
+ Hicretin 9. Yılında Hac emiri olan sahabi (HZ. EBUBEKİR)
+ Peygamberimizin (s.a.v) mucizelerini konu alan eserler (DELAİL)
+ Ma’rib seddi ve Su bendleriyle meşhur G. Arabistan devleti (SEBE)
+ Halid b. Velid komutasında savaşmadan alınan K. Arabistan devleti (TEDMÜR)
+ Kâbe’de ilişkiye girdikleri için taşlaşan ve Cahiliye Araplarının tıraş olup Kurban kestikleri putlar (İSAF ve NAİLE) | En eski put (MENAT)
+ Peygamberimizin (s.a.v) “Tayyib | Tahir” olarak anılan oğlu (ABDULLAH)
+ Günümüze kadar ulaşmış en eski Siyer eseri (ES SİRETÜN NEBEVİYYE – İbn İshak)
+ Arapların kendi kabilelerini övmesi (TEFAHÜR)
+ Hz. Ebubekir’in Habeşistan’a hicret esnasında kararından vazgeçtiren ve Mekke’ye dönmesine yardımcı olan (İBN DUĞUNNE)
+ Peygamberimizle (s.a.v) güreşip müslüman olan kişi (RUKANE)
+ Medine vesikasına verilen isim (MÜVÂDEÂ / SULH ANTLAŞMASI)
+ İfk olayında Hz. Aişe ile Safvan b. Muattal’a iftira atan, Münafıkların reisi (ABDULLAH B. UBEY)
+ “Deburan” adlı 2 yıldıza tapan kabile (TEMİM)
+ Kâbe’de iken Peygamberimizi (s.a.v) korurken şehit olan (EBU HALE)
+ Resulullah’ın (s.a.v) Miraçta çıktığı yer (SİDRETÜ’L-MÜNTEHÂ)
+ Mekke’nin fethi sırasında Mekke’deki akrabaları için Eman veren kişi (ÜMMÜ HANİ)
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -76,7 +1344,184 @@ SİYER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 İSLAM KÜLTÜR VE MEDENİYETİ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
+ Kültür kelimesinin karşılığı (ES-SEKAFE/MAHARETLİ – Arapça | İRFAN – Türkçe | HARS/EKİN – Ziya Gökalp)
+ Medeniyet kelimesinin karşılığı (HADARET ve ET-TEMEDDUN – Arapça | UMRAN – İbn Haldun)
+ Medeniyet ilk defa “Civilisation” kelimesine karşılık Sadık Rıfat Paşa tarafından 1838 yılında kullanılmıştır.
+ Cahiliye dönemi Araplarının Toplum dışı saldırıdan korunmak için oluşturulan birlik beraberlik duygusu (ASABİYET)
+ Hz. Ömer döneminde İran ile yapılan savaşlar (KÖPRÜ | KADİSİYE | CELULA | NİHAVEND)
+ İslam Devleti’nin başkentleri (MEDİNE – İlk Başkent | KUFE – Hz. Ali dönemi | ŞAM – Emeviler dönemi | BAĞDAT – Abbasiler dönemi)
+ İslam Tarihi’nin 3 önemli kurumu (HİLAFET | VEZARET/VEZİRLİK | DİVAN TEŞKİLATI)
+ Endülüs Emevilerinde “Halifetullah” unvanını bırakıp “Nâsırlidinillah” unvanını kullanan kişi (3. ABDURRAHMAN)
+ Abbasilerde bazı Halifelik Alametleri (BÜRDE – Peygamber hırkası | SİKKE – Para | TIRAZ – Özel işaretli elbise)
+Vezaretler/Vezirlikler
+ TEFVİZ VEZİRLİĞİ (Abbasiler / Veliaht tayini, memur azli ve görevden alma yetkisi dışında bütün işleri halife adına yapardı)
+ TENFİZ VEZİRLİĞİ (Abbasiler / Sadece görev alanı konularından sorumludur / Devlet Bakanlığına benzer)
+ HÂCE-İ BÜZÜRG (Samani, Gazneli ve Karahanlılarda vezire verilen isimdir)
+ VEZİR-İAZÂM/SADRAZAM (Osmanlılar / “Ulu Vezir” ve “Mühr-i hümâyun” denir / İlk vezir Alaeddin Paşa)
+Divanlar
+ DİVÂNÜ’L-ATÂ (Hz. Ömer zamanında kurulan ilk Divan)
+DİVÂNÜ’L-HARÂC (Toprak vergisinden sorumlu)
+DİVÂNÜ’R-RESÂİL (Resmi yazışmalardan sorumlu)
+DİVÂNÜ’L-HÂTEM (Resmi yazışmaları mühürleme)
+DİVÂNÜ’L-BERÎD (Posta işlerinden sorumlu)
+DİVÂNÜ’L-CÜND (Belli aralıklarla Nüfus sayımı yapmak)
+DİVÂNÜ’L-MÜSTEGALLÂT (Devlete ait taşınmazları kiralama)
+DİVÂNÜ’T-TIRAZ (Sancaktar, bayrak, resmi elbise yapımı)
+DİVÂNÜ’T-TEVKİ (Resmi yazışmalardan sorumlu)
+DİVÂNÜ’L-MEZÂLİM (Temyiz mahkemesine benzer)
+DİVÂNÜ’L-EZİMME (Devlet gelir-gider işlerinden sorumlu)
+DİVÂNÜ’L-CEYŞ (Devletin Ordu işlerine bakar)
+DİVÂNÜ’D-DIYÂ (Devlet arazisinden sorumlu)
+DİVÂN-I ÂLÂ (Tüm Devlet işlerinin yürütüldüğü divan)
+DİVÂN-I İSTİFA (Mali işlerle ilgilenir)
+DİVÂN-I İNŞÂ (Haberleşme işleriyle ilgilenir)
+DİVÂN-I İŞRAF (Mali ve İdari işleri teftiş eder)
+DİVÂN-I ARZ (Askeri işlerle ilgilenir)
+DİVAN-I HÜMAYUN (Devlet işlerinin yürütüldüğü divan)
+AYAK DİVÂNI (Acil işler için padişahın isteğiyle kurulurdu)
+GALEBE DİVANI (Elçi kabulü sonrası yapılır)
+DİVÂN-I ÂSAFİ / İKİNDİ DİVANI (Sadrazam başkanlığında toplanır)
+EMEVİLER
+ABBASİLER
+SELÇUKLULAR
+OSMANLILAR
+ Hz. Osman döneminde ilk İslam donanmasını kuran, dönemin Şam valisi (MUAVİYE) | Donanma komutanı (EMİRU’L-MÂ / AMİRAL)
+ İMARET  Aşevi | DARUŞŞİFA/BİMARHANE/MÂRİSTAN  Hastane | RİBAT/KERVANSARAY  Yol güvenliğini sağlar | TABHANE  Misafirhane | ASİTANE  Tekke’nin büyüğü | BEDESTEN  Kıymetli malların saklandığı yer | SEBİL  Su dağıtım yeri | ARASTA  Çarşı
+ İslam Medeniyetinde İktisadi Kurumlar (BEYTÜLMAL | DİVAN | İHTİSAB/HİSBE – İyiliği emredip kötülükten uzaklaştıran kurum | VAKIF | AHİLİK)
+ AHİLİK (Fütüvvet geleneğinden esinlenilerek ortaya çıkmıştır / Abbasi halifesi Nâsırlidinillah rehberliğinde kuruldu / Osmanlıda ilk kuran Nasıruddin Mahmud yani Ahi Evran’dır)
+ İlk İslami eserler (KUTADGU BİLİG – Yusuf Has Hacip | DİVAN-I HİKMET – Ahmed Yesevi | ATABETÜ’L HAKAYIK – Edip Ahmet Yükneki)
+ İlk Türk-İslam destanları (SATUK BUĞRA HAN | MANAS | CENGİZNAME | EDİGE | BATTALNAME | DANİŞMENDNAME | KÖROĞLU)
+Bilim İnsanları
+ CEZERİ (Sibernetik ilminin kurucusu / İlk Robot yapımcısı)
+ HEZARFEN AHMET ÇELEBİ (Uçmayı başaran ilk insan)
+ BİRUNİ (Jeodezi ilmini kurdu / Yer çekimini buldu / Gazneli Mahmut “Sarayımın en değerli hazinesi” sözüne mazhar oldu)
+ HAREZMİ (Cebir ilminin kurucusu / Sıfırı “0” bulmuştur)
+ FEZARİ (Astronomi ile uğraşan ilk insan)
+ İBN FİRNAN (Dünya tarihinde uçuş denemesi yapan ilk insan)
+ SABUNCUOĞLU ŞERAFEDDİN (Osmanlı’nın ilk ve en ünlü Cerrahıdır)
+ TAKİYÜDDİN MEHMET (Osmanlı’nın ilk Rasathanesini kurmuştur)
+ İBNUL HEYSEM (Müslüman Fizikçilerin öncüsüdür)
+ CABİR B. HAYYAN (Modern Kimya’nın kurucusudur)
+ CAHIZ (Kitabul Heyavan eseri İslam tarihinde ilk zooloji çalışmasıdır)
+ 2. Abdülhamit döneminde Kanun-i Esasi ile kız ve erkek çocuklarına ilköğretim mecburi hale geldi.
+ Osmanlı dönemi Mektepler (SIBYAN – İlkokul | RÜŞTİYE – Ortaokul | İDADİ – Lise | DARULFÜNUN – Üniversite)
+ Osmanlı ıslahat döneminde açılan ilk mektep (HENDESEHANE)
+ Osmanlı’nın ilk Sivil yüksekokulu (MEKTEB-İ MÜLKİYEY-İ ŞAHANE)
+ Osmanlı’nın ilk İlimler akademisi (ENCÜMEN-İ DÂNİŞ)
+ Kişinin 3 hakkı vardır (ALLAH HAKKI | İNSAN HAKKI | ORTAK HAK)
+ Vilayetlere Kadılar tayin eden ilk kişi (HZ. ÖMER)
+ Şer’i hukuktan sorumlu (KADILKUDAT) | Örfi hukuktan sorumlu (EMİR-İ DAD) | Askeri hukuktan sorumlu (KADILEŞKER)
+ Emevi ve Abbasiler döneminde güvenliği sağlayan teşkilat (ŞURTA)
+ Sarayı korumakla görevli olan askerler (GULEMAN-I SARAY – Selçuklular | KAPIKULU - Osmanlı)
+ Osmanlı’da Yeniçeri ocağını kaldırıp yerine Asakir-i Mansurey-i Muhammediye adlı orduyu kuran kişi (2. MAHMUT)
+ İslam sanatının etkilendiği kültürler (İRAN | BİZANS | TÜRK)
+ Türk uygarlık tarihinin rönesansı kabul edilen dönem (TİMUR)
+ Plastik sanatlar (RESİM / HEYKEL / MİMARLIK) | Fonetik sanatlar (ŞİİR / EDEBİYAT / MÜZİK)
+ Emevi Mimarisi (ORDUGÂH CAMİLER | MESCİD-İ AKSA – Abdulmelik | ŞAM EMEVİYYE CAMİ | KUBBETUS-SAHRA – İlk Anıtsal yapı)
+ Abbasi Mimarisi (KUBBETUS-SÜLEYBİYE – İlk İslam türbesi | SAMARRA ŞEHRİ | MÜTEVEKKİLİYYE CAMİ)
+ İspanya Mimarisi (KURTUBA CAMİ – Endülüs | EL-HAMRA SARAYI - Tolunoğulları)
+ Karahanlı Mimarisi (ŞİR KEBİR CAMİ | ARAP ATA TÜRBESİ)
+ Gazneli Mimarisi (LEŞGER-İ BAZAR SARAYI | ARUS-İ FELEK CAMİ | RİBAT-I MAHİ | ZAFER KULELERİ)
+ Büyük Selçuklu Mimarisi (İSFEHAN MESCİD-İ CUMASI – İlk Anıtsal cami | KÜMBET-İ HAKİ | ZEVVARE CUMA CAMİ)
+ Timur Mimarisi (ŞAH-I ZİNDE | BİBİ HANIM CAMİ | AHMED YESEVİ KÜLLİYESİ)
+ Safevi Mimarisi (MESCİD-İ ŞAH | MADER-İ ŞAH MEDRESESİ | ALLAH VERDİ HAN KÖPRÜSÜ)
+ Dünyanın en yüksek minaresi (HİNDİSTAN KUTUP MİNARE)
+ Osmanlı Mimarisinin etkilendiği bölgeler (BİZANS | SELÇUKLU | İRAN)
+ Osmanlıda Sanat ve Zanaat teşkilatlanma şekli (EHL-İ HİREF)
+ Osmanlı’nın ilk Hastanesi (YILDIRIM DARUŞŞİFASI - Bursa)
+ Mimar Hayreddin tarafından yapılan köprü (MOSTAR KÖPRÜSÜ)
+ Osmanlı Klasik dönem cami (3 ŞEREFELİ CAMİ - Edirne)
+ Osmanlı Mimari Dönemleri (BURSA/EDİRNE DÖNEMİ  KLASİK DÖNEM  BAROK/AMPİR DÖNEM  NEOKLASİK DÖNEM)
+ Mimar Sinan’ın önemli eserleri (ŞEHZADE CAMİ – Çıraklık | SÜLEYMANİYE CAMİ – Kalfalık | SELİMİYE CAMİ – Ustalık)
+ İslam bilginleri Cahiliye dönemi Arap yazısına verdikleri isim (EL CEZM)
+ Hat sanatkarlarına verilen isimler (MUHARRİR | VERRAK | HOŞNÜVİS)
+ Emeviler döneminin ilk Büyük yazı ıslahatçısı (KUTBE EL MUHARRİR)
+ Aklam-ı sitte’yi ortaya çıkaran (İBN MUKLE), Yazı çeşitlerini ortaya çıkaran (YAKUT EL MUSTA’SIM – Hattatların Kıblesi)
+Aklam-ı Sitte (Yakut el Musta’sım)
+ TEVKİ / RİKA (Sultanlara ait belgelerin yazımında kullanılır)
+ MUHAKAK / REYHANİ (Büyük boy yazıtlarda kullanılır)
+ SÜLÜS / NESİH (Mushaf yazımında kullanılır / Sülüs, En eski yazıdır)
+ Nesih yazı çeşidinin okunmayacak şekildeki hali (GUBARİ)
+ Kitabe ve Cami yazılarında kullanılan yazı çeşidi (CELİ)
+ ŞEYH HAMDULLAH (Osmanlı Hat ekolünün kurucusu / “Kıbletü’l Küttab” unvanına sahip / Hilye-i Şerif’i ilk düzenleyen)
+ Altı yazı çeşidinin dışında olup İran hat sanatında beliren yazı (TA’LİK)
+ Osmanlı Devleti’nin resmi yazı çeşidi (DİVANİ)
+ Osmanlılarda hızlı yazma isteğinden doğan yazı çeşidi (RİK’A)
+ Osmanlı Türk Ta’lik ekolünün kurucusu (YESARİZADE MUSTAFA İZZET)
+ Osmanlıda ilk Tezhip (MEKASÜDUL ELHAN – 2. Murat’a verildi)
+ Tezhip Çeşitleri (ZEMİNİ BOYALI – Klasik | ZERENDEZER – Altın içinde Altın | HALKARİ – Bezemeli | ÇİFTTAHRİR | ZEREFŞAN – Altın serpmeli)
+ Osmanlı Saray üslupları (BABA NAKKAŞ | SAZ YOLU | ATAYOLU)
+ Minyatür sanatkarlarına verilen isimler (NAKKAŞ | MÜSAVVİR)
+Osmanlı Minyatür Sanatı
+ ŞEHNAME (Padişahların tarihlerinin yazıldığı eser)
+ TAKVİR (Nakkaş Osman’ın ortaya çıkardığı minyatür üslubu)
+ SÜRNAME (Sünnet düğünlerinin anlatıldığı eserler)
+ Ebru Malzemeleri (BOYA | TEKNE | ÖD – Renklerin birbirine karışmasını engeller | KİTRE – Suya kıvamını veren madde | FIRÇA | TARAK)
+ Ayasofya cami hatibi Mehmet efendinin bulduğu ebru (HATİP EBRUSU)
+ Çini sanatına verilen isimler (SIRÇA | KAŞİ)
+ Toprağa madeni görünüm vermek için kullanılan Çini tekniği (PERDAH-LUSTER TEKNİĞİ)
+ Çini Teknikleri (ELVAN – Çok renkli | LAKABİ – Renkli sır | SIR ÜSTÜ | MİNAİ | KAŞİ – Düz çini | KAŞİGERİ – Mozaik çini | MERTABANİ)
+ Ahşap sanatına ait 3 Teknik (OYMA/KATIA | KABARTMA | KAKMA)
+ Arapların; sesle yaptıkları nağmeler (TERENNÜM), şiirler söyledikleri nağmeler (GINÂ)
+ İslam Aleminde ilk Musiki nazariyesinin sahibi (YUSUF EL KATİP)
+ Musiki teorisi üzerine çalışan ilk Arap filozof (KİNDİ)
+ Minarelerde ezandan ayrı olarak Allah’a yapılan dua (TEMCİD)
+Tekke Musikisi Şekilleri
+ DURAK (Halveti tarikatına mensup kişilerin okudukları tasavvufi güfte)
+ NEFES (Bektaşi tarikatına mensup kişilerin okudukları tasavvufi güfte)
+ ŞUĞUL (Kıyam zikrinde okunan Arapça güfte)
+ Zikir Çeşitleri (KUUDİ | KIYAMİ | DEVRANİ – Devamlı ilerleyip dönme)
+ Kolay görünmesine rağmen benzerinin söylenmesi zor olan söz (SEHL-İ MÜMTENİ – Yunus Emre)
+ Araplarla ilgili Kavim, Şehir vs. anlatıldığı eserler (AHBAR)
+ Hamd ve Salat’tan sonra okunan deyim (FASLU HİTAP / AMMA BA’D)
+ Esma-i Hüsna ile ilgili İlk çalışmayı yapan (İBRAHİM ŞENER)
+ Türk edebiyatında en eski Siyer (TERCÜME-İ SİYERİ NEBİ – Dârir)
+ Anadolu’da ilk Miraciye yazarı (AHMEDİ) | En Meşhur Miraciye (MİRACU’N-NEBİ – Osman Dede)
+ İlk 40 Hadis (NEBCÜ’L FERADİS – Mahmud b. Ali) | İlk Hicretname (HİCRET-İ NEBİ – Naifi)
+ Fıkıh alanında ilk Manzum eser (KUDURİ TERCÜMESİ – Gülşehri)
+ İlk Menakıbname (MENASİBUL ARİF - Eflaki) | Divan edebiyatında yeni bir akım (SEBKİ HİNDİ)
+ Mevlana’nın eserleri (FİHİMAFİH | DİVAN-I KEBİR | MEKTUBAT)
+ İlahi Türleri (AYİN – Mevlevi | TAPUĞ – Gülşeni | CUMHUR – Tekke)
+ Tekke ayinlerinde belli makamlarla okunan dualar (GULBANK)
+ İslam tarihinde Vakıf statüsü taşıyan ilk işlem (SEMĞ ARAZİSİNDEKİ HURMALIK – Hz. Ömer)
+ Çininin ilk uygulandığı cami (SİDİ UKBE CAMİ – Emeviler)
+ İslam Edebiyatında ilk Mevlid yazarı (İBN DİHYE)
+ Her yönüyle Peygamberimizi (s.a.v) konu alan ilahiler (TEVŞİH)
+ Osmanlı Barok dönemi en önemli cami (NURU OSMANİYE CAMİ)
+ Ebru sanatını ilk bulan ve uygulayan (HATİP MUSTAFA)
+ 2012 UNESCO tarafından ilan edilen yıl (ITRİ YILI)
+ Çinide seramiğin üzerinde camsı görünüm kazandıran tabaka (SIR)
+ Osmanlı mimarisinde sıva üzerine boya ve altın ile yapılan bezeme (KALEM İŞİ)
+ Eski yazma kitaplarda yazının ve yazı etrafının ayrı renklere boyanması (AKKASE)
+ Ciltte bulunan kısımlar (KAPAK | SIRT | MİKLEB – Kitapta nerede kalındığını göstermek için İşaret oluşturulan kısım | ŞİRAZE – Kitabın sırt kısmının dikilmesi | SERTAB – Miklebi sırta bağlayan kısım)
+ Hokkası bulunan yazı aleti (DİVİT) | Kağıdın üzerinde düz yazılar çıkartan alet (MISTAR) | Kağıtlara sürülen koruyucu madde (AHAR)
+ Maliye, Tapu vs. işlemlerde kullanılan yazı çeşidi (SİYAKAT)
+ Osmanlı’nın ilk Camisi (HACI ÖZBEK CAMİ – İzmir)
+ Mimar Sinan’ın eserlerinde kullandığı teknik (KAGÎR KARKAS)
+ Osmanlı’nın Avrupa’ya özenerek yaptırdığı ilk eser (DOLMABAHÇE SARAYI – Abdulmecit)
+ Geometrik şekillerin birbirine geçirilmesiyle yapılan Ahşap sanatı (KÜNDEKÂRİ) | Alçı kabartmanın renklendirilmesi (MALAKÂRİ)
+ Camilerin Kıble tarafında bulunan Küçük mezarlık (HÂZİRE)
+ Güneş ve Yağmurdan korumalı yürümeli bölüm (REVAK / PORTİK)
+ Camilerde son cemaat yerinin dışında ek bir bölüm (SAKIF)
+ Osmanlı Ebru sanatkarları (ŞEBEK MEHMED | HATİP MEHMED)
+ İslam sanatının Hristiyan sanatına uygulanmış şekliyle ortaya çıkan üslub (MÜDÊJAR / MÜDECCEN)
+ Fatımilerin Mısırda yaptırdığı ilk türbeler (SEBA BENAT / 7 KIZLAR)
+ Memlükler zamanında yapılan 4 mezhep için kurulan ilk medrese (NASIRIYYE MEDRESESİ)
+ HALİD B. EBUL HEYYAC (Emeviler dönemi ilk Celî hattat yazarı / Kıble duvarına abidevi yazı yazan ilk hattat)
+ HAFIZ OSMAN (Osmanlı Hat ekolünün en önemli temsilcilerinden / “Şeyh-i Sani” unvanına sahip)
+ Ezân Makamları (SABA – Sabah Ezanı | UŞAK – Öğle Ezanı | RAST – İkindi Ezanı | SEGÂH – Akşam Ezanı | HİCAZ – Yatsı Ezanı)
+ Müslüman Türklerin, Mimari eserlerde genellikle yer verdikleri ortak öğe (EYVAN)
+ Hem Abbasilerde hem de Karahanlılarda ortak olan türbe (KUBBET-İ SÜLEYBİYE)
+ Orhan bey zamanında yapılmış olup Günümüze kadar ulaşmış Osmanlı’nın en eski medresesi (SÜLEYMANİYE MEDRESESİ)
+ Mekke’de Kâbe’yi ve Medine’de Mescid-i Nebevi’yi onaran Osmanlı mimarı (SEDEFKÂR MEHMET AĞA)
+ İslam’ın doğuşundan itibaren Mushaf yazımında kullanılan yazı çeşidi (KUFÎ)
+ Kitap cildinin her 2 kapağından birine verilen isim (DEFFE) | Değerli taşlarla bezenen cilt (MUAASA)
+ Kişinin ölümünden sonra onun üstün özelliklerini anlatan eser (MERSİYE)
+ İslam sanat eserlerinde 3 temel unsur (CEMAL | CELAL | KEMAL)
+ Emeviler zamanında yapılmış olup Hz. İsa’nın kıyametten önce ineceğinin rivayet edildiği minare (MİNARETÜ’L BEYZA)
+ Osmanlı’nın ilk külliyesi (FATİH KÜLLİYESİ) | Osmanlı’nın ilk 6 minareli camisi (SULTAN AHMED CAMİ)
+ 18. ve 19. yy’da Avrupa etkisiyle tabiattaki şekliyle Tezhip sanatımıza giren çiçeklerdir (ŞÜKUFE)
+ Tahta, Mukavva ve Deri üzerine vernik sürülerek elde edilen cilt (LAKE)
 
 
 
@@ -84,20 +1529,341 @@ SİYER
 İSLAM FELSEFESİ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-
+ Yabancı eserlerin tercümesi ilk kez Hz. Ömer zamanında oldu (HÜDAİNAME – Pehlevice’den Arapça’ya çevrildi.)
+ Hz. Ömer dönemi meşhur mütercim (SABİT B. KURRA)
+ Hermes geleneğinin İslam dünyasına kattığı ilimler (ASTROLOJİ | SİMYA | HURUFİLİK | BÜYÜCÜLÜK)
+ Mektepler (İSKENDERİYE | NUSAYBİN – Urfa | CÜNDİŞABUR – İran | ANTAKYA | HARRAN - Urfa)
+Felsefi Ekoller
+ MEŞŞAİYYE (İslam Aristocuları / Yürüyücüler / İbn-i Rüşt, Kindi, Farabi, İbn-i Sina)
+ RİVAKİYYE (Stoacılık / Osmanlı düşünürü Mehmed efendinin unvanı “ÜSTÜVANİ”)
+ İŞRAKİYYE (Şehabeddin Sühreverdi El Maktul / Doğu hikmetinin son aşaması / Nur kavramı önemlidir)
+ İHVANU SAFA (Gizemli Ansiklopedistler / Eserleri: Resail / Yeni Eflatuncular / Harflere önem verirler)
+Bağımsız Filozoflar
+ GAZZALİ (Felsefesi özetleyen eseri: Makasudul Felasife / Nedensellik ilkesini tenkit etmiştir)
+ EBUL BERAKAT EL BAĞDADİ (Eseri: Muteberi fil Hikme / Etkilenen kişi: Davud-u Kayser)
+ İBN HALDUN (Eseri: El Mukaddime / Endülüslü Alimdir)
+ İslam Düşünce Okulları (KELAM | FELSEFE | TASAVVUF)
+ İslam Felsefe Okulları (TABİATÇILIK | DEHRİCİLİK-ZAMANCILIK | MEŞŞAİLİK | İŞRAKİLİK)
+ İslam felsefesinde Materyalistler (CABİR B. HAYYAN | EBUBEKİR RAZİ)
+ Meşşailere göre Aklın gelişim evreleri (KUVVET HALİNDEKİ AKIL – FİİL HALE GELMİŞ AKIL – MELEKE HALİNDE AKIL – MÜSTEFAD AKIL)
+ Tüm kültürel gelenekleri Kur’an-Hadis’in zahiri anlamına nispetle eleştiren (İBN HAZM)
+Doğu İslam Filozofları
+ KİNDİ (Lakabı: Feylesofu’l Arap / İlk İslam filozofu / İlk Bilim tasnifi yapan kişi / İlk Meşşai filozof / Beytul hikme’de hoca)
+ FARABİ (İlimleri ayırdığı eseri: İhsaul ulum / Erdemli Devlet / Sudur nazariyesi)
+ İBN-İ SİNA (Eş şeyhurreis / Batı’da Avicenna / İlk felsefe-ilimler ansiklopedisi meydana getirdi)
+ Farabi’ye göre Faziletler (NAZARİ | FİKRİ | AHLAKİ | AMELİ)
+ Farabi’ye göre Erdemli devlet teorileri (ONTOLOJİK | BİYO-ORGANİK | FITRAT | ADALET)
+ Farabi’ye göre Erdemsiz devletler (SAPIK | FASIK | DEĞİŞEBİLEN | CAHİL)
+Batı / Endülüs İslam filozofları
+ İBN BACCE (İlk Batı İslam filozofu / İbnüs-Saiğ / Batı’da Avempace)
+ İBN TUFEYL (Tek eseri: Hay b. Yekzan / Eserindeki kahramanlar: Absal – Salomon)
+ İBN RÜŞT (Eseri: Faslul Makal / Sarih / Batı’da Commedatör)
+ İbn Bacce’ye göre Akıllar (CUMHUR – Her şeyi idrak edenler | SÜEDA – Filozoflar | NÜZZAR – Tabiat ve Matematikle uğraşanlar)
+ Mütevahhid / Yalnız adam, toplumun geneli gibi yaşamayan “Ayrık otu” dur. (İBN BACCE)
+Çağdaş İslam Düşünürleri
+ CEMALEDDİN AFGANİ (Peygamberlik, sanattır / Politik Panislamizm kahramanı / Muhammed Abduh ile “Urvetul Vuska” gazetesini çıkardılar)
+ BABANZADE AHMED NAİM (Sahihi Buhari’nin Tercüme-Şerhini yaptı)
+ ELMALILI HAMDİ (2. Abdulhamit’in tahttan indirilmesi için “Hall” fetvası yazdı)
+ MUHAMMED İKBAL (Pakistanlı şair / Mevlana’dan etkilenmiştir)
+ NURETTİN TOPÇU (Felsefe alanında doktora yapan ilk Türk öğrenci / İsyan Ahlakı)
+ ROGER GOROUDY (İman fenomeni kavramını kullandı)
+ Gazzali göre Felsefi ilimler (RİYAZİYAT | İLAHİYAT | MANTIK | TABİİYAT)
+ İBN HALDUN (En meşhur tarihçi / Bedevi-Hadari yaşam / Umran ilmi)
+ Aristo’nun Arapçaya çevrilen eseri (HERMENÖTİK > KİTABUT TEFSİR)
+ İbn-i Sina’nın Felsefi anlamda yazdığı ilk eseri (DANİŞMEND-İ ALAİ)
+ Evrenin başlangıcı-sonu olmadığını ve Bilgi konusunda sadece duyulara güvenen akım (DEHRİYYE - ZAMANCILIK)
+ İslam düşüncesinde Mistik-Felsefi geleneği başlatan kişi (SÜHREVERDİ)
+ Dehriyye ekolünün meşhur temsilcisi (İBN RAVENDİ)
+ Meşşaiyye ekolünde “Tam Aristocu” olarak bilinen kişi (İBN RÜŞT)
+ Muhafazakar İslam ekolünün kurucusu (MUSTAFA SABRİ EFENDİ)
+ Sudur nazariyesi kurucusu (PLOTİN)
+ İbn Mukaffa çevirisi olan “İsagoji” eserinin sahibi (PORFİRUS)
+ Reybiyye – Şüphecilik temsilciler (İBN MUKAFFA | EBUL ATAHİYYE)
+ Ebubekir er Razi’ye göre 5 Ezeli esas (ALLAH | RUH | HEYULA-MADDE | HALA-MEKAN | ZAMAN)
+ Meşşai filozoflar; Varlıkta Realist, Bilgide Rasyonalist, Ahlakta Mutçudur
+ Yaratma Nazariyesinin İslam dünyasında temsilcileri (KİNDİ | İBN RÜŞT)
+ Sudur Nazariyesinin İslam dünyasında temsilcileri (FARABİ | İBN-İ SİNA)
+ İhvanu Safa’ya göre Toplum tabakaları (ÇIRAKLIK  MELİKLİK  LİDERLİK  MELEK)
+ Evrim teorisi – Tekamül Nazariyesini savunan akım (İHVANU SAFA)
+ İhvanu Safa, Hurufilik anlayışı yani Rakamlara önem vermiştir.
+ Farabi’nin, Allah’ın varlığını ispat için kullandığı yöntem (KOZALİTE)
+ İslam Felsefesinde “Altın Çağ” olan dönem (İBN-İ SİNA DÖNEMİ)
+ Tehafüt geleneğini başlatanlar (GAZZALİ | İBN-İ RÜŞT)
+ Gazzali’ye göre Hakikatı Arayanlar (KELAMCI | FİLOZOF | BATINİ | SUFİ)
+ Gazzali, Felsefecileri 3’e ayırır (DEHRİ | TABİİ | İLAHİ)
+ Gazzali’ye göre İman 3 derecedir (HALKIN İMANI | KELAMCILARIM İMANI | ARİFLERİN İMANI)
+Filozofların küfre düştüğü konular (Gazzali)
+ Alemin Kadim sayılması | Haşrin ruhani olacağı
+ Allah’ın cüzi olan şeyleri bilmediği
+ Osmanlı düşüncesinde etkili olanlar (FAHREDDİN RAZİ | İBNUL ARABİ)
+ İşrakiliğin Anadoludaki temsilcisi (HAMİD EL KİRMANİ)
+Osmanlı Klasik dönem düşünürleri
+ DAVUD-U KAYSER (İbnul Arabi’nin “Vahdeti Vücud” kavramını kabul etti)
+ ŞEYH BEDRETTİN SİMAVİ (Eseri: Varidat | Ehli sünnete aykırıdır)
+ MOLLA FENARİ (Fahreddin Razi ekolünü benimsedi | Anadolu’ya Aristoculuğu getirdi)
+ Ahlakın mümkün olmadığını savunan (AHLAKİ RÖLATİVİZM)
+ İslam Ahlakının kaynakları (VAHİY ve AKIL)
+ Kur’an-ı kerimde Peygamberimize (s.a.v) verilen unvan (USVE-İ HASENE)
+ Nassi Ahlak teorisinde Ahlaki davranışlar (HELAL | HARAM | YASAK)
+ Ahlaki değerlerin mutlak olup fiillerin değişmez olduğunu savunan mezhep (MUTEZİLE)
+ Karakterci Ahlak Teorileri (FELSEFİ | TASAVVUFİ)
+ Tasavvuf dönemleri (ZÜHD  TASAVVUF  TARİKAT)
+ Tasavvufta kalbin, nefsin ve ruhun terbiye edilmesi (SEYRİSÜLUK)
+ Tarikatla ile ilgili kavramlar (PİR – Tarikat kuran | ŞEYH – Tarikat önderi | MÜRİD – Tarikata giren | RABITA – Müridin Şeyhe bağlanması)
+Tarikatler
+ KADİRİLİK (Kurucu: Abdulkadir Geylani / Cehri-Sesli zikir vardır)
+ YESEVİLİK (Kurucu: Ahmed Yesevi / İlk Türk tarikati)
+ NAKŞİBENDİLİK (Kurucu: Bahaeddin Nakşibend / En yaygın tarikat)
+ RUFAİLİK (Kurucu: Ahmed Rufai / İlk Sufi tarikati)
+ KÜBREVİLİK (Kurucu: Necmeddin Kübrevi)
+ Filozoflara göre İnsan bütün mevcudatın özetidir (ZÜBDE-İ ALEM)
+FAZİLET
+REZİLET
+GÜÇ
+Hikmet
+Cehalet
+Nazari
+İffet
+İffetsizlik
+Şehevi
+Adalet
+Zulüm
+Ameli
+Cesaret
+Korkaklık
+Gazap
+ Filozoflara göre Nefis Çeşitleri (NEFSANİ | HAYVANİ | NEBATİ)
+ İslam Ahlakında başkasını kendisine tercih etme (İSÂR)
+ İslam Ahlakında başkalarıyla bir arada yaşama (ÜNS)
+ Dinimizde İman sonrası benimsenen ve İslam Ahlakının en önemli ilkesi (DOĞRULUK)
+ İslam Ahlakında Temel erdemlerin amacı (SAADET/MUTLULUK)
+ İş Ahlakında Temel esaslar (İYİ NİYETLİLİK | ADALET | İHSAN-MÜSAMAHA | ÇALIŞKANLIK | HAKSIZLIKTAN KAÇINMA)
+İşverende bulunması gereken Ahlaki özellikler
+ Liyakat ve Hakkaniyet
+ Zekat ve Sadakasını vermek
+ Mesuliyet ve Kardeşlik
+ İş hırsıyla ibadetlerini ihmal etmemek
+Erdem – Ekonomi ilişkisi
+ HAK / ADALET  Minumum
+ GÜVEN / İYİLİK  Mutedil
+ SEVGİ / MERHAMET  Maksimum
+İslam Çevre etiği kuramları ve ilkeleri
+ MENFAAT (Nimet / Ayet ilkesi)
+ HİKMET (Ubudiyet / Kutsiyet ilkesi)
+ MESULİYET (Emanet / Hilafet ilkesi)
+ FAZİLET (Merhamet / Muhabbet ilkesi)
+Ahlakla ilgili Önemli Kavramlar
+ TUL-İ EMEL (Zevk ve Sefa için çok yaşamayı istemek)
+ UCB (Yaptığı ibadetler ve iyiliklerle övünmek)
+ TAMA’ (Dünya nimetini haramda aramak)
+ İslam Ahlakında Adalet ve Tevhid arası bağlantı kuran (İBN MİSKEVEYH)
+ Gazali Akıl ve Nakili, “Güneş ve Göz” olarak nitelendirir.
+ İnsanın Alemle düzenli irtibat kurmasına izin veren kuvvet (NUTUK)
+ İyiliği emredip Kötülüğü nehyetmek yerine Susmak (MÜDARA)
+ İslam Ahlakında Evlilik için denkliği ifade eden kavram (KÜFÜVVET)
+ Aklın, Ahlak ilmi içerisinde görevleri (TASNİF | TAFSİL | TAHSİL | TEDKİK | TAHKİK)
+Yazarlar ve Eserler (Kodlama: TEFBİG - MİMİK)
+T USİ – Ahlaki Nasiri M UHASİBİ – Er-Riaye li hukuk
+E BUBEKİR RAZİ – Tıbb-ı Ruhani İ BN HANBEL – Edebü’l Müfred
+F ARABİ – İhsau’l Ulum M AVERDİ – Edebid-Dünya
+B UHARİ – Edebü’l Müfred İ BN MİSKEVEYH – Tezhibu’l Ahlak
+İ BN MÜBAREK – Kitabuz-Zühd K INALIZADE ALİ – Ahlaki Alai
+G AZZALİ – İhyau’l Ulum
+ Gazzali’ye göre Halk kelami konularla ilgilenmemelidir (İLCAMU’L AVAM AN İLMİ KELAM)
+ Gazzali’nin, Aristo mantığının esaslarını benimsediği eseri (MİYARU’L İLİM)
+ İslam Felsefesinin ortaya çıkmasında etkili olan kültürler (HERMES | ANTİK YUNAN | HELENİSTİK | SASANİ | HİNT)
+ “Hücceti’l İslam / Müceddit” unvanları olan filozof (GAZZALİ)
+ İBN-İ MESERRE (Endülüslü filozof / Mutezile mensubu ve Bidatçı / Eseri: Risaletu’l İtibar)
+ Nefsin aşamaları (EMMARE  LEVVAME  MÜLHİME  MUTMAİNNE  RAZİYE  MARZİYE  KAMİLE)
+ Hiçbir şeyin insana sahip olmaması (FAKR) | Yufka yüreklilik (RİKKAT) | Uzlaşma, Kaynaşma (ÜLFET)
+ Yusuf Has Hacip’in Kutadgu Bilig adlı eserinde geçen Kişilerin temsil ettiği Ahlaki kavramlar (HÜKÜMDAR – Adalet | VEZİR – Saadet | VEZİRİN KARDEŞİ – Kanaat | VEZİRİN OĞLU – Akıl)
+ Filozoflara göre Nefsin 3 Önemli Gücü (KUVVEY-İ ŞEHEVİYYE – Arzu | KUVVEY-İ GAZABİYYE – Öfke | KUVVEY-İ FİKRİYYE – Düşünme)
+ İbn Rüşt’e göre İnanma eylemleri (HİKEMİ | CEDELİ | HATABİ)
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 DİN FELSEFESİ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-
+ Din felsefesinin en çok yararlandığı ilim dalı (DİNLER TARİHİ)
+ Din ile Felsefeyi birbirinden ayıran düşünür (IMMANUEL KANT)
+ “Din felsefesi” deyimini ilk kez kullanan düşünür (HEGEL)
+ Türkiye’de “Din felsefesi” kavramını ilk kullanan kişi (MEMDUH SÜLEYMAN)
+ Türkiye’de Din felsefesi alanında ilk kez eser veren (M. ŞEKİP TUNÇ)
+ Panteizm – Her şey Tanrıdır | Panenteizm – Her şey Tanrıdandır | Deizm – Emekli Tanrı
+ MUTLAKÇI MONİZM (Tanrının dünyadaki çoğulluğuna rağmen gerçekte tekillik ifade etmesi)
+ İNAYET DELİLİ (Yeryüzünde tüm varlıklar insanın varlığına uygun yaratılmıştır / İbn-i Rüşt)
+ Meşşai geleneğine bağlı filozofların vahiy görüşlerini şekillendirdikleri düşünce (İTTİSAL)
+ Peygamberliğin ispatı için mucizeye gerek olmadığını savunan mezhepler (İBADİYE | KERRAMİYE)
+Akıl ve İman
+ AKILCILIK (Her şeyin bilgisi akıldadır / Metafizik reddedilir)
+ KATI AKILCILIK (İnancın kabul edilmesi için şüpheler giderilmelidir / W. Clifford)
+ FİEDİZM / İMANCILIK (İmanın Akla dayanmadığını savunur / Kierkegaard)
+Din Dili
+ DOĞRULAMA İLKESİ (Tanrı sözü, Deney ötesi bir şeyi işaret eder / A. J. Ayer)
+ YANLIŞLAMA İLKESİ (Bir teori yanlışlığı ispatlanıncaya kadar doğrudur / A. Flwe)
+ AMELİ HAYAT İLKESİ (Doğrulama ilkesinin yanlış olduğunu ispat için çıkmıştır)
+ ESKATOLOJİK DOĞRULAMA İLKESİ (Dini hükümler dünyada İman konusunu, ahirette Bilgi konusunu oluşturur / J. Hick)
+ LİNGUSTİK TAHLİLLER (Bir hükmün; nasıl doğrulanacağı değil, nasıl ve niçin kullanıldığına bakılır)
+ TENZİHİ DİN DİLİ (Tanrı hakkında olumsuz bir dil kullanılacağını savunulur / Musa b. Meymun ve İbn-i Sina)
+ DİNİ SEMBOLİZM (Dini anlayışta Antropomorfizm / Biçimciliğe düşme tehlikesine karşı ortaya koyulan düşünce)
+Ateizm Çeşitleri
+ NEGATİF ATEİZM (Tanrının varlığına inanmamak)
+ POZİTİF ATEİZM (Tanrının var olmasını mümkün görmemek)
+ PRATİK ATEİZM (Tanrının varlığı, reddedilemez ama önemsizdir)
+ TEORİK ATEİZM (Epistemolojik – Metafizik – Mantıksal Tez)
+ MANTIKSAL TEODİSE (Tanrının vardır fakat kötülük savunulur)
+ Kötülük / Teodise problemini ilk kez formüle eden (EPİKÜR)
+ Teodise kavramını ilk kullanan (LEİBNİZ)
+ Günümüz Din felsefesinin en önemli ismi (JOHN HİCK)
+Teodise Çeşitleri
+ İYİLİK METAFİZİĞİ (Kötülük inkar edilir)
+ İYİMSERCİ TEODİSE (Her şeye rağmen Dünya mükemmel bir yer)
+ ÖZGÜR İRADE SAVUNMASI (Tanrının varlığı ve Kötülük bir aradadır)
+ NEFS EĞİTİMİ TEODİSESİ (Amaç, Ruhsal olgunlaşma / J. Hick)
+ SÜREÇ TEODİSESİ (Tanrının kötülüğü kaldırmama sebebi O’nun sınırlı bir güce sahip olmasındandır)
+ Din – Ahlak ilişkisi (ÖZDEŞLİK – Din, Ahlaktır | UYUMLULUK – Ahlak, Dinden türetilebilir | BAĞIMSIZLIK | KISMİ UYUMSUZLUK | DIŞLAYICILIK)
+ Din – Bilim ilişkisi (ÇATIŞMA | AYRIŞMA | DİYALOG | ENTEGRASYON)
+Ölümsüzlük Çeşitleri
+ AHLAKİ ÖLÜMSÜZLÜK (Eğer ölümden sonra hayat yoksa her şey mübahtır)
+ BİLİMSEL ÖLÜMSÜZLÜK (Öldüğü sanılan kişilerin tecrübeleri anlatılır)
+ METAFİZİK ÖLÜMSÜZLÜK (Ruhun ölümsüz olma durumudur)
+ Din ile Felsefe arasındaki ilişkiye ciddi manada ışık tutan eser (FASLUL MAKAL – İbn-i Rüşt)
+ FATALİZM (Bütün olup bitenlerin, kaderin önceden tespit ettiğine inanan / Determinizm tersi)
+ Panteizm (SPİNOZA) | Panenteizm (KROUSE) | Dini çoğulculuk (J. HİCK)
+ “Hikmet, Şeriatın arkadaşı ve süt kardeşidir” sözü (İBN-İ RÜŞT)
+ Türkiye’de Din felsefesini ilk okutan hoca (MEHMET AYDIN)
+ Din Felsefesinin Temel sorunları (TANRININ VARLIĞI | VAHYİN İMKÂNI | RUHUN ÖLÜMSÜZLÜĞÜ | EVRENİN YARATILIŞI)
+ Tüm Tanrılar içerisinde Sadece bir Tanrının üstünlüğünü kabul eden (HENOTEİZM)
+ Tanrının Varlığının Delilleri (ONTOLOJİK | KOZMOLOJİK | TELEOLOJİK | AHLAK | DİNİ TECRÜBE)
+ Farabi ve İbn-i Sina’ya göre Vahiy, Allah’tan faal akıl aracılığıyla sudur eder (FEYEZAN)
+ Vahyin mümkün olmadığını savunan inanç biçimleri (DEİZM | PANTEİZM | PANENTEİZM)
+ Hegel’in dinler tasnifinde olmayan din (İSLAMİYET)
+ Din dilinin hayattaki fonksiyonuna bakılarak çözümleme (KONATİF)
+Vahyin mahiyeti konusunda 3 görüş
+ ÖNERME MERKEZLİ YAKLAŞIM ( “Bildirim” olarak kabul edilir)
+ SUDURCU YAKLAŞIM ( “Feyezan” olarak kabul edilir)
+ KİŞİ MERKEZLİ YAKLAŞIM (Tanrının, İsa’da zatını açığa vurması)
+Ateizmin Dayandığı Teoriler
+ SOSYOLOJİK TEORİ (Emile Durkheim geliştirmiştir / Tanrı toplum tarafından üretilen hayal ürünü bir kavramdır)
+ PSİKOLOJİK TEORİ (Freud ve Feurbach tarafından geliştirilmiştir / Yansıtma Din Teorisi  Tanrı fikrinin çocukta baba imajının bir yansıması olarak ortaya çıktığını savunmaktır)
+ Sosyoloji kelimesi (A. COMTE) | Din sosyolojisi kelimesi (E. DURKHEİM)
+ Önemli eserler (TANRI SİTESİ – S. Agustin | İLAHİYAT MECMUASI – S. Thomas)
+Din Sosyologları
+ E. DURKHEİM (Kolektif düşünce / Eserleri: İntihar, Dini hayatın başlangıç şekilleri)
+ M. WEBER (Din sosyolojisinin kurucularından / Anlayıcı sosyoloji / Sistematik Din sosyolojisi)
+ J. WACH (Sistematik Din sosyolojisinin kurucusu / Eseri: Din sosyolojisine giriş)
+ G. LE BAS (Sosyografik betimleme tekniğini buldu / Eseri: Dini sosyoloji araştırmaları)
+ T. LUCKMANN (Eseri: Görünmeyen Din)
+ P. BERGER (Eseri: Dinin sosyal gerçekliği)
+ R. BELLAH (Sivil Din teorisini geliştirmiştir)
+ Şehristani’ nin Din sosyolojisiyle alakalı eseri (EL MİLEL VEN NİHAL)
+ Modern Din sosyolojisinin kurucusu (İBN HALDUN – UNESCO 2006 yılı)
+ Mukaddimeyi Türkçeye çeviren, Tarihi sosyolojik açıdan ele alan kişi (AHMET CEVDET PAŞA)
+ E. Durkheim’ den etkilenen, Modern Türk Din sosyolojisinin kurucusu (ZİYA GÖKALP)
+ Sosyolojiyi Türkiye’ye getiren, Fransa’dan etkilenen (PRENS SEBAHATTİN)
+ Cumhuriyet dönemi ilk müstakil Din sosyolojisi eseri (DİNİ SOSYOLOJİ – Hilmi Ziya Ülken)
+ Cumhuriyet dönemi ilk Din sosyolojisi dersi veren (MEHMET KARASUN)
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 DİN SOSYOLOJİSİ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
+ Türkiye’de Din sosyolojisinin başladığı dönem (TANZİMAT)
+Büyük Boy Kuramlar
+ YÜKSELİŞ – ÇÖKÜŞ (Tavırlar Nazariyesi – İbn Haldun | Medeniyetlerin çöküşü – A. Toynbee)
+ EVRİMCİ (İnsanlık tarihi kendi içindeki birimlerden oluşur / A. Comte, H. Spencer, E. Durkheim)
+ MODERLEŞMECİ / DİYALEKTİK (Toplumsal alanda Zıtlıkların çatışması vardır / K. Marks)
+Orta Boy Kuramlar
+ YAPISAL / İŞLEVSEL (Toplumda bulunan herbir öğe, Bütün oluşturur / T. Parsons)
+ ÇATIŞMACI (Toplumdaki çatışmanın değişime katkı sunduğunu açıklar)
+ Küçük Boy Kuramlar (BİREYSELCİ | GRUPSALCI)
+ Geleneksel Sekülerleşme teorilerinin ortak yönleri (SİVİL TOPLUM | DÜNYALIK BİLİNCİ | YENİ DÜNYA DÜZENİ | SANAL ALEM | KÜRESEL KAPİTALİZM | KARŞILIKLI BAĞIMLILIK)
+Din – Devlet ilişkisi Modelleri
+ Anayasada “Laiklik” ilkesi bulunanlar (TÜRKİYE | FRANSA | PORTEKİZ)
+ Anayasada “Laiklik” ilkesi bulunmayanlar (ALMANYA | ABD | HOLLANDA | AVUSTURYA)
+ Devlet dini olup “Laiklik” ilkesini benimseyenler (İNGİLTERE | DANİMARKA | FİNLANDİYA | NORVEÇ)
+ Din karşıtı olanlar (ÇİN | KÜBA | VİETNAM | KUZEY KORE)
+Küreselleşme Teorileri
+ MODERN DÜNYA SİSTEMİ (Kapitalist Dünya / I. Wallerstein)
+ KÜRESEL DÜNYA DÜZENSİZLİĞİ (Küreselleşme “Etki” kavramıyla anlatılır / Z. Bauman)
+ GLOKALLEŞME (Küresel – Yerel Etkileşimi / R. Robertson)
+ MODERNLİĞİN KÜRESELLEŞMESİ (Radikalleşme ve Ağ-Şebeke büyümesi / A. Giddens)
+ Küreselleşen Dünya sorunlarına Dinin katkıları (MAHRUMİYET DUYARLILIĞI | SINIRLAR | KİMLİK | İNANÇ | MEDENİYET YANKISI | DAYANIŞMA RUHU | NORMATİF UFUKLAR | UZLAŞMA)
+Yeni Dünya Hareketleri
+ MORMONLAR (Kurucu: J. Smith / İsa Mesih’in Ahir zaman azizleri kilisesi / Sivas’ın Zara ilçesinde kiliseleri vardır / İçecekler yasaktır)
+ 7. GÜN ADVENTİZMİ (Kurucular: Ellen White – James White / William Millerin takipçileridir / Advent: İsa Mesihin tekrar gelmesi)
+ YEHOVA ŞAHİTLERİ (Kurucu: C. T. Russel / Adventinist hareket / Noel, Paskalya kabul edilmez / Kan alıp vermek haramdır)
+ MOONCULUK (Kurucu: S. M. Moon / Birleşik kilise / Uzakdoğu kökenlidir / Tanrının Krallığı / Stadyumlarda Nikah törenleri vardır)
+ HARE KRİŞNA (Uluslarası Krişna bilinci cemiyeti / Avatar önemli / Ülkemizde yoga faaliyetleri vardır)
+ İSLAM MİLLETİ (Kurucu: Wallace F. Muhammed / Müslüman Siyahiler / Hem Kur’an hem de İncil önemli / Temsilci: Malcolm X)
+ TRANSDANTAL MEDİTASYON (Kurucu: M. Manesh / Yoga Tekniği)
+ FUNDAMENTALİZM (Amerikan Protestanlığı / İncil’de öze dönüş)
+ HALKIN MABEDİ (Kurucu: J. Jones / Amerika’da kuruldu)
+ TANRININ ÇOCUKLARI (Kurucu: David Berg / Cinsel istismarı engellemek amacıyla kurulmuştur)
+ KRAL DAVİD (Kurucu: David Koresh / Gayrimeşru ilişki yaşanır)
+ Yeni Dünya Hareketlerine yönelme sebepleri (MAHRUMİYET DUYGUSU | İLİŞKİ AĞLARI | SOSYAL BELİRSİZLİK)
+Terörle ilgili Yaklaşımlar
+ AKADEMİK (Araştırma eğilimi vardır)
+ ŞİDDET YANLISI (Birey kendini Özgürlük savaşçısı olarak görür)
+ DEVLETÇİ (Güvenlik ağırlıklıdır)
+ MEDYATİK (Terörün sonucuyla ilgilenir)
+Terörle ilgili Teoriler
+ ORTODOKS (Terörün işlevsel ve sembolik yönüne önem verir)
+ RADİKAL (Terör eylemlerini meşrulaştırma vardır)
+ ILIMLI (Terörün nedenlerine ve kökenlerine bakılır)
+ Namussuzluk ve Kuralsızlık anlamına gelen “ANOMİ” kelimesinin geçtiği eser (İNTİHAR – E. Durkheim)
+ Postmodern düşüncenin öncüsü (NİETCZHE / NİÇE)
+ E. Durkheim’in Osmanlı döneminde temsilcisi (EROL GÜNGÖR)
+ Din sosyolojisinde kullanılan yöntemler (GÖZLEM | AÇIKLAMA | KARŞILAŞTIRMA | VERİ TOPLAMA)
+ Prens Sebahattinin en önemli eseri (TÜRKİYE NASIL KURTULUR)
+ Toplumları “Cemaat – Cemiyet” diye ayıran kişi (F. TÖNNİES)
+ Din sosyolojisiyle alakalı ilk eser veren kişi (J. WACH)
+ Eflatunun Din sosyolojisi alanındaki eseri (KANUNLAR)
+ Ahlaki ve Siyasi büyüklüğün olduğu alan (AGONİSTİK KAMU ALANI)
+ Monografi metodunu kullanan Fransız sosyolog (LE PLAY)
+ Hollanda merkezli, İlk Protestan misyonerliğini başlatan grup (BAPTİST)
+ H. Spencer’i Türkiye’de tanıtan sosyolog (AHMET ŞUAYB)
+ Grup ayrımları (İÇ/DIŞ – Summet | BİRİNCİL/İKİNCİL – C. H. Cooley)
+ Kuramsal modernleşme devam ettikçe Din geriler (ESKİ PARADİGMA)
+ Max Weber’in Ülkemizde temsilcisi (SABRİ ÜLGENER)
+ Şerif Mardin’e ait Din sosyolojisi eseri (DİN VE İDEOLOJİ)
+ Din sosyolojisini sistematikleştiren (MAX WEBER)
+ Evrimci Din Kuramı – H. Spencer | Animizm/Ruhçuluk – Tylor | Büyü ve Din – J. Frozer | Naturizm – Max Müller | Tarihsel Din sosyolojisi – G. Menshing | Yabancılaşma kuramı – Karl Marx
+ Erdemli Toplum – Farabi İdeal Site – Gazzali
+TAVIRLAR NAZARİYESİ – İbn Haldun (Kodlama: ZORBİ)
+Z AFER – O TORİTE – R EFAH – B ARIŞ – İ SRAF
+ Ziya Gökalp’e göre Toplumsal basamaklar (KAVİM  ÜMMET  MİLLET)
+ Toplumsal Tabakalaşma Kuramları (İŞLEVSELCİ | ÇATIŞMACI | UZLAŞMACI)
+Kamusal Alan Modelleri
+ AGONİSTİK (Temsilci: H. Arendt / Rekabet önemlidir)
+ LEGALİSTİK (Temsilci: B. Ackermann / Halkın önemi vurgulanır)
+ SÖYLEMSEL (Temsilci: J. Habermas / İnsanların birbiriyle tartışması)
+E. Durkheim’e göre İntihar Çeşitleri
+ EGOİSTİK (Grup bağlarının zayıflaması sonucu oluşur)
+ ALTRUİSTİK (Toplumla kendini aşırı özdeşleştirme)
+ ANOMİK (Sanayileşmeye bağlı olarak Güç ve Statü yükselişi)
+ KARL MARX (Diyalektik Din sosyolojisi / Din, Afyondur)
+ Farabi’ye göre Erdemsiz Toplumlar (CAHİL | GÜNAHKAR | DEĞİŞMİŞ | BOZULMUŞ)
+ FARABİ (Din sosyolojisinin hazırlayıcısı ve öncüsü / Din sosyolojisiyle alakalı En önemli eseri: El Medinetu’l Fadıla)
+ Farabi, Toplumu Organizmaya benzetir | Gazzali, Toplumu Canlı organlarına benzetir
+ İBN HALDUN (İlm-i Umran  Bedevi ve Hadari hayat / Asabiyet / Eserleri: Mukaddime ve Kitabu’l İber)
+ Din, Kutsalın tecrübesidir (R. UTTO) | Din, ruhsal varlıklara inançtır (TYLOR)
+Toplumsal Sınıflandırmalar
+ KİTLE (Aynı uyarıcıdan etkilenen grup / Örnek: BEŞİKTAŞLILAR)
+ ALT KÜLTÜR (Kendine özgü yaşama tarzını benimsemiş grup / Örnek: ÇİNGENELER)
+ AZINLIK (Çeşitli yoksunluklara maruz kalan grup / Örnek: IRK FARKI)
+ YIĞIN (Aralarında sosyal ilişki bulunmayan insanların, aynı mekanda bulunmaları / Örnek: İZLEYİCİ KALABALIĞI)
+ STATÜ (Kişinin, Toplum içerisindeki konumu ve makamı)
+ ROL (Kişinin, Statüye uygun davranışlarda bulunması)
+Dini Gruplar
+ TABİİ DİNİ GRUP (Kan, Evlilik veya Akraba yolu ile bağlanma / Örnek: KABİLE)
+ SIRF DİNİ GRUP (Temel bağın Din olduğu grup / Örnek: CEMAAT)
+Toplumsal Hareketlilik
+ YATAY (Müdür  Müdür)
+ DİKEY (Öğretmen  Müdür | Müdür  Öğretmen)
+ SEKÜLERLEŞME (Dinin ortadan kalkması veya etkisinin zayıflamasıdır / Dünyevileşme / Temsilci: Max Weber)
+ Din sosyolojisi terimini ilk kullanan (E. DURKHEİM)
 
 
 
@@ -106,20 +1872,403 @@ DİN PSİKOLOJİSİ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
-
+ İslam dünyasında İnsan hayatını Psikolojik bakış açısıyla ilk inceleyen kişi (HARİS EL MUHASİBİ)
+ İslam dünyasında Rüya psikolojisi alanında ilk eser veren kişi (KİNDİ)
+ Rüya ve Vahiy psikolojisi alanında sistemli teoriyi ilk ortaya koyan kişi (FARABİ)
+ Din psikolojisi alanında en çok eser veren kişi (İBN-İ SİNA)
+ İlk ve Özgün ruh sağlığı kitabı (TIBBİ RUHANİ – Ebubekir Razi)
+ Din psikolojisinin Modern zamanlardaki kurucusu (W. JAMES – Dini tecrübenin çeşitliliği)
+ İç-Dış güdümlü Dindarlık ve “Birey ve Dini” eserinin sahibi (G. ALLPORT)
+ Totemizm, İlk dindir / Korku ve Fayda temeline dayalı, “İndirgemeci Dindarlık” yorumu yapan kişi (S. FREUD)
+ “Akretip – Tüm insanlığa ait davranış” düşüncesi olan ve S. Freud’a en güçlü eleştiri yapan öğrencisi (C. G. JUNG)
+ Dini tecrübenin Kişisel boyutunun önemini savunan kişi (A. MASLOW)
+ “Gizli Tanrı” kavramını kullanan ve Dini, Nihai anlam arayışı olarak belirten kişi (V. FRANKL – Bilinçdışı Tanrı)
+ Kültürel olarak Dinin unsurları (DİNİ TOPLULUK VE GELENEK | DİNİ KURUM | DİN DİLİ | DİNİ ŞAHIS VE NESNE | DİNİ ZAMAN VE MEKAN | DİNİ TECRÜBE)
+ Öznel olarak Dinin unsurları (DİNİ YETENEK VE EĞİLİM | DİNİ GÜDÜ | DİNİ SÖZ VE KAVRAM | DİNİ YARGI VE TASAVVUR | DİNİ TUTUM | DİNİ UYGULAMA VE ETKİNLİK)
+ Dindarlığın Boyutları – GLOCK/STARK (İDEOLOJİK/İNANÇ | ZİHİNSEL-BİLGİ | TECRÜBE/DUYGUSAL | ETKİ | TÖRENSEL/UYGULAMA)
+ Dini ve Mistik yaşantıların Biyolojik temellerini araştıran, Tanrı Geninin önemli olduğu ilim (NÖROTEOLOJİ)
+ Dindarlığın Psikolojik Kaynakları (ANLAM ARAYIŞI | ÖLÜM KORKUSU VE ÖLÜMSÜZLÜK ARZUSU | ENGELLEME VE ÇARESİZLİK | ANLAMA VE BİLİŞSEL TATMİN | SUÇLULUK VE GÜNAHKARLIK DUYGUSU)
+ Dindarlığı etkileyen Demoğrafik Değişkenler (CİNSİYET | ÖĞRENİM DURUMU | KIRSAL VE KENTSEL ÇEVRE | YAŞ | SOSYOEKONOMİK DURUM | MEDENİ DURUM)
+ Dini mahiyette söz, duygu ve davranışla ilgilenilen çocukluk dönemi yaş aralığı (3 - 4)
+ Çocukların ölümü tatil olarak gördüğü, Piaget’in Somut işlemler dönemi yaş aralığı (9 - 10)
+ Dini uygulama ve ifadeler Küçük yaşlarda taklit ve model alma yoluyla gelişir (SOSYAL ÖĞRENME TEORİSİ)
+ Tanrının insanı koruyan bir baba olduğunu savunan teori (BAĞLANMA)
+Harms Teorisi
+ Peri Masalı Evresi (3-6 yaş)
+ Gerçekçi Evre (7-12 yaş / Tanrı Dünyadaki olaylardan etkilenir)
+ Bireysel Evre (13-18 yaş / Bireylerin Tanrıyı farklı tanımlamaları)
+Elkind Teorisi (Piaget’in teorisini Dini gelişime uygulayan kişidir)
+ Koruma/Himaye arayışı (0-2 yaş) | Temsil arayışı (3-6 yaş)
+ İlişki arayışı (7-12 yaş) | İdrak arayışı (Ergenlik dönemi)
+Dini Düşünce Gelişimi Teorisi (GOLDMAN)
+ Sezgisel (0-7 yaş) | Somut (8-14 yaş) | Soyut (15+)
+İmanın yapısını oluşturan Psikolojik süreçler
+ İmanda Bilişsel Yapı (KABUL | TASDİK)
+ İmanda İradi Yapı (İTAAT | TESLİMİYET)
+ İmanda Duygusal Yapı (GÜVEN | SEVGİ | FEDAKARLIK)
+İnanç Gelişim Kuramı (FOWLER)
+ Sezgisel / Yansıtıcı İnanç (3-7 yaş)
+ Öyküsel / Lafzi İnanç (7-12 yaş)
+ Yapay / Geleneksel İnanç (12-18 yaş)
+ Bireysel / Düşünceli İnanç (18+)
+ Birleştirici İnanç (30+) | Evrensel İnanç (Yaş yok)
+ Dini Şüphe Çeşitleri (ARAYIŞ | BENCİLLİK | SADAKAT | KAVRAMSAL | BİLİMSEL | İNKARCI)
+Ateizm Çeşitleri
+ TEORİK ATEİZM (Zihinsel olarak Tanrı mevcut değildir)
+ PRATİK ATEİZM (Tanrı hayatın dışında tutulur)
+ Dini kavram ve nesnelerin zihinde canlandırılması (DİNİ TASAVVUR)
+ İslam dinine girme (İHTİDA) | İslam dininden çıkma (İRTİDAT)
+Din Değiştirme Tipleri
+ ENTELEKTÜEL TİP (Kendi dini ve Diğer dinler araştırılır, ona göre karar verilir)
+ MİSTİK TİP (Bireyi etkileyen mistik tecrübenin sonucu Din değiştirilir)
+ DENEYSEL TİP (“Bir görelim bakalım” anlayışıyla Din değiştirilir)
+ DUYGUSAL TİP (Din mensuplarına karşı duyulan sevgiden dolayı Din değiştirilir)
+ YENİDEN UYANIŞ TİPİ (Duygular sonucu Din değiştirmedir)
+ Din psikolojisi alanında “Yansıtma Teorisi” ortaya koyan kişi (S. FREUD)
+ İnsanın hayatını anlamlandırmaya yönelik düşünce (LOGOTERAPİ – V. Frankl)
+ “Tanrı Geni” kavramını ortaya atan kişi (HAMER)
+ Yaşlanmayla birlikte Dini hayatta kayda değer önemli değişmelerin olmadığını öne süren kavram (KARARLILIK)
+ Din psikolojisi terimini ilk kez kullananlar (C. G. JUNG / STARBUCK)
+ Dini hayatı “İlkel  Olgun  Kamil” olarak sıralayan (GAZZALİ)
+ Tanrı tasavvuru ve Tanrı kavramlarının farklı olduğunu söyleyen kişi (RİZZUTO)
+ Daha dindar olanların Daha az intihar ettiklerini söyleyen (KOENİNG)
+ Farabi’ye göre İnsan Nefsinin güçleri (BESLEYİCİ | DUYUM | HAYAL | ARZU ETME | DÜŞÜNME)
+ Ahlak psikolojisi alanında yazılmış en önemli eser (KİTABUN NEFS VER RUH – Fahreddin Razi)
+ Dini inancın şiddet ve derecesini ölçen ölçek (TUTUM ÖLÇEĞİ)
+ “Tanrı Baba gibidir” diyen ve Bağlanma teorisini ortaya koyan (KİRKPATRİCH)
+ Dindarlık Çeşitleri – FİCHTER (GERÇEK | ŞEKİLCİ | KENARDA | KAPLI)
+ Dini kavramların bireyler tarafından nasıl anlaşıldığı ve tasavvur edildiği ölçülerek anlam haritaları oluşturma (SEMANTİK ANALİZ)
+ İslami anlamda Din psikolojisinin esaslarını ortaya koyan (GAZZALİ)
+ Clark Din psikolojisi okulunun kurucusu (C. G. HALL)
+ Gazzali’ye göre insanların yaşadıkları dinin 3 farklı boyutu (İMAN | FİKİR | MARİFET)
+ İnanan insanların inanç ve yaşayışları arasındaki tutumsuzluk (BİLİŞSEL ÇELİŞKİ)
+Ergenlik dönemi Dini anlayış
+ DİNİ ŞUURUN UYANMASI (12 – 14 Yaş)
+ DİNİ BUNALIM VE ŞÜPHELER (14 – 18 Yaş)
+ DİNİ TUTUMLARIN BELİRGİNLEŞMESİ (18 – 21 Yaş)
+ Allah’ı insan şeklinde tasavvur etme (ANTROPOMORFİZM)
+ Kişinin, Dini zihninde yapılandırması (DİNİ TASAVVUR) | İnsanın içinde gelişen ruhsal olaylar hakkında bilgi edinmesi (DİNİ ŞUUR)
+ Aşk psikolojisinin temsilcisi (İBN-İ HAZM)
+ Gazzali’ye göre İnsanın 4 Temel güdüsü (BENLİK | FİZYOLOJİK | SALDIRGANLIK | KÖTÜLÜK)
+ Din Psikolojisinin Bilgi toplama teknikleri (DENEY | KORELASYON | TARAMA | GÖZLEM | TUTUM ÖLÇEĞİ | SEMANTİK)
+ Türkiye’de Din Psikolojisi alanında yapılan ilk Alan araştırması (DİN VE TANRI İNANCININ GELİŞMESİ ÜZERİNE BİR ARAŞTIRMA – Belma Özbaydar)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 DİN EĞİTİMİ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
-
+ A. Comte göre 3 hal yasası (TEOLOJİK  METAFİZİK  POZİTİF)
+ Din Eğitiminin temelleri (PSİKOLOJİK | SOSYOLOJİK | KÜLTÜREL | EVRENSEL | FELSEFİ)
+ Mekke dönemi Eğitim merkezi (DARULERKAM) | Medine dönemi Eğitim merkezi (SUFFA)
+ İslam öncesi Eğitim-Öğretimin verildiği yer (KÜTTAB)
+ Medreselerin kurulması için Sebepler (ÖĞRENCİ SAYISI | İTİKADI SAVUNMA | PERSONEL İHTİYACI)
+ Medrese ilimleri (MEKASID - ALET | NAKLİ - AKLİ)
+Osmanlı dönemi Medreseler
+ İlk Medrese (İZNİK) | Bağlı kurum (ŞEYHÜLİSLAM / MEŞİAT)
+ Fatih dönemi Medrese (SAHN-I SEMAN MEDRESESİ)
+ Kanuni dönemi Medrese (SÜLEYMANİYE MEDRESESİ)
+Medrese İdaresi
+ MÜDERRİS (Ders okutan hoca) | MUİD (Dersi tekrarlayan görevli)
+ DANİŞMEND / SUHTE (Mezun öğrenci) | TALEBE-İ ULUM (Öğrenci)
+ DERSİAM (Halka açık ders veren hoca)
+ MATLAB (Mezunların kayıt olduğu defter)
+Tanzimat sonrası Din eğitimi
+ MEDARİSİ İLMİYE NİZAMNAMESİ – 1910
+ DARUL HİLAFETİL ALİYYE MEDRESESİ – 1913
+ ISLAH-I MEDARİS NİZAMNAMESİ – 1914
+ MEDRESETUL MÜTAHASSİSİN – 1915
+ Medresetul Vaizin (1912) ile Medresetül Eimme vel Huteba (1913) , Medresetül İrşad (1919) olarak birleşti.
+ İlk Yüköğretim Din bölümü (ULUMU ALİYE-İ DİNİYYE ŞUBESİ - 1900)
+İlahiyat fakültesi | İmam-Hatip ortaokulları
+ İlahiyat ve İmam-Hatip ortaokullarının açılması öngörüldü (Tevhidi Tedrisat Kanunu / 3 Mart 1924)
+ İmam-Hatip liseleri kapatıldı (1932) | İmam-Hatip kursları açıldı (1948)
+ İlahiyat fakülteleri; kapatıldı (1933), açıldı (1949)
+ Yüksek İslam Enstitüleri açıldı (1959)  Bu fakülteler “İlahiyat fakültelerine” dönüştürüldü (1983)
+ İmam-Hatip okulları Meslek lisesi statüsü kazandı (1974)
+ İlk Anadolu İmam-Hatip lisesi açıldı (1985 - BEYKOZ)
+ İlk İlahiyat fakültesi açıldı (1971 - ERZURUM)
+ İlahiyat Meslek yüksekokulları açıldı (1989 - 1990)
+ DKAB zorunlu hale geldi (1982 ANAYASASI / 24. MADDE)
+Yaygın Din eğitimi (DİB – Diyanet İşleri Başkanlığı)
+ İlk Çalışma (TEVCİH-İ CİHAT NİZAMNAMESİ – 1870)
+ DİB kuruldu (1924) | Kur’an kurslarıyla alakalı ilk yönetmelik (1971)
+ Cumhuriyet döneminde açılan İmam-Hatip ortaokulu sayısı (29)
+ Vahiy temelli Dinden öğrenme yaklaşımı kurucusu (DAVİD ATTFİELD)
+ DKAB 9-12. Sınıflar arası uygulanan program (SARMAL)
+ Yaygın Din eğitiminin verildiği kurumlar (CAMİİ | KUR’AN KURSU)
+ Çocuklarda Soyut dini düşünce evresi başlangıcı (12+)
+ Yaklaşımlar (DIŞLAYICI – Tek din | KAPSAYICI – Tek din ve Diğer dinler | ÇOĞULCU – Bütün dinler)
+ Din dersinden muaf tutulma hakkının verildiği tarih (1990)
+ Okullarda Din dersinin hiçbir şekilde yer almadığı dönem (1939 – 1949)
+ Okullarda Din dersinin isteğe bağlı okutulduğu dönem (1949 – 1982)
+ Türkiye’de uygulanan Din öğretim program modeli (MEZHEPLERÜSTÜ DİNLER AÇILIMLI)
+ Osmanlı’nın ilk Müderrisi (DAVUD-U KAYSER)
+Öğrenme Yaklaşımları (M. GRİMMET – J. HULL)
+ DİNİ ÖĞRENME (Tek bir dinin esasları öğretilir)
+ DİNDEN ÖĞRENME (Öğrencilere farklı dinlerin kendi bakış açılarıyla öğretme)
+ DİN HAKKINDA ÖĞRENME (Dinin tarihsel perspektifinden hareketle dışarıdan öğretilmesi)
+ Din eğitimcilerine göre Çocuğun Din eğitimi “EŞ SEÇİMİ” ile başlar.
+ İslam tarihinde kurulan ilk Darulhadis (EN NURİYE)
+ Ortaokullarda Din dersinin bulunmadığı dönem (1927 – 1956)
+ Liselerde Din dersinin bulunmadığı dönem (1923 – 1967)
+ Din Öğretim Modelleri (FENOMENOLOJİK – N. Smart | YORUMLAYICI – R. Jackson | HİKMET TEMELLİ – R. Ellis)
+ Medreseler arasındaki en yüksek medrese (DARULHADİS)
+ İslam’ın Eğitime verdiği önem Kur’an da “ZÜMER, 7-8” / “NAHL, 78”
+ Medrese mezunlarının atanmak için sıra beklemesi (MÜLAZEMET)
+ Din dersinin resmi olmadığı tek yer (FRANSA)
+ Medrese sisteminden Yeni bir sisteme geçilen dönem (2. ABDULHAMİT)
+ İlk kez “Din eğitimi” tabiri kullanıldı (1961 ANAYASASI / 19. MADDE)
+ Osmanlı dönemi Mekteplerde verilen Din dersi (MALUMAT-I DİNİYYE)
+ Din dersi yeniden İlkokul (1949), Ortaokul (1956), Lise (1967) programlarına alındı.
+ Abbasiler zamanında Bağdat’ta kurulan ilim merkezi (BEYTULHİKME) | Fatımi ve Büveyhiler zamanında Mısır’da kurulan ilim merkezi (DARUL İLİM)
+ “Din dersi” ve “Ahlak dersi” (1982 Anayasası / 24. Madde)  “Din Kültürü ve Ahlak bilgisi dersi” olarak birleştirildi (1986)
+ 1913 yılında İmam-Hatip ve Müezzin yetiştirmek amacıyla kurulan medrese (DARUL HİLAFETİL ALİYYE MEDRESESİ)
+Dini Gelişim dönemleri
+ ÇOCUKLUK (Taklit dönemi / İnsani vasıflarla Allah düşünülür / Anne 1. Dereceden rol oynar)
+ ERGENLİK (Soyut düşünme başlar / Dinle alakalı sorular ve şüpheler artar / Allah tasavvuru ruhanidir / Dini bilinç oluşur)
+ YETİŞKİNLİK (Dini yaşamda dengeleme ve yapılandırma olur / Dönemin sonuna doğru Din içselleştirilir)
+ YAŞLILIK (Dini yaşantı artar / Dini duygular daha derinden yaşanır)
+ Din öğretiminde Temel ilkeler (BİREYSELLİK | BÜTÜNLÜK | AÇIKLIK | AMACA DÖNÜKLÜK | AKTİFLİK)
+ Din Eğitiminde “EĞİTİM” önemlidir | Dini Eğitimde “DİN” önemlidir
+ Türkiye’de Din eğitiminde ilk Akademik çalışma yapan (BEYZA BİLGİN)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 DİNLER TARİHİ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-
+ Milel ve Nihal başlığıyla yazılan İlk eserin sahibi (ABDULKADİR MERAĞİ)
+ Karşılaştırmalı Dinler tarihinde İlk eserin yazarı (ŞEHRİSTANİ)
+ Dinler tarihiyle alakalı ilk Türkçe eser (ESATİR – Şemseddin Sami)
+ Genellikle Egemen olan Din anlayışı için kullanılan tabir (ORTODOKSİ)
+HİNDUİZM
+ Kurucusu yok | Varlığını sürdüren en eski din | Toplu ibadet yok
+ Dinlerini ifade etmek için kullandıkları kavram (SANATA DHARMA / EZELİ HİKMET) | Devlet dini kabul eden ülke (NEPAL)
+ Kadim mezhepler (ŞİVACILIK | VİŞNUCULUK | ŞAKTİZM)
+ Büyük Tanrılar (BRAHMA – Yaratma | VİŞNU – Koruma | ŞİVA – Yok etme)
+ Vedalar dönemi Destanlar (MAHABBARATA | RAMAYANA)
+ Kutsal kabul edilen Nehir (GANJ) | İbadet (PUJA) | Kurban önemlidir
+Hinduizm’de Kutsal Metinler
+ ŞRUTİ (VEDALAR  Rig / Sama / Yocur / Atharva)
+ SMRİTİ (PURANALAR  Ramayana / Mahabbarata)
+Hinduizm’de Kast Sistemi
+1 - BRAHMAN (Kral/Rahip) | 2 - KŞATRİYAN (Savaşçı/Yönetici)
+3 - VAİSYA (Çiftçi/Zanaatkar) | 4 - SUDRA (İşçi/Hizmetçi) | 5 - PARYA
+Hinduizm’de Temel Kavramlar
+ KARMA (Kişinin yaptıklarının karşılığını görmesi)
+ REENKARNASYON (Ruhun yaptığı işlere göre yeni bedenle gelmesi)
+ SAMSARA (Reenkarnasyondaki Sonsuz Gidiş-Geliş döngüsü)
+ MOKŞA (İnsanların öldükten sonra başka bir bedenle gelmesi)
+CAYNİZM
+ 24 Cina vardır (TİRTHANKARALAR)  Cinaların sonuncusu (VARDHAMANA) | İnananlar topluluğu (KEŞİŞ/LAİK)
+ 3 Cevher (DOĞRU İNANÇ | DOĞRU BİLGİ | DOĞRU DAVRANIŞ)
+ Mezhepleri (DİGAMBARA – Gök giyinen / SVETAMBARA – Beyaz giyinen) | İbadet nesneleri (TİRTHANKARA HEYKELLERİ)
+ En çok kutlanan bayramları (PAJJSANA) | Amaç; Karmadan kurtulmak
+Caynizm’de 5 Büyük Yemin
+1 - YALAN SÖYLEMEME / 2 - ÇALMAMA / 3 - DÜNYAYI TERK ETME
+4 - BEKAR HAYAT SÜRME / 5 - CANLIYA ZARAR VERMEME (AHİMSA)
+ Caynizm’de Kutsal Metinler (PURVA | DALLAR/ANGALAR | ANGABAHYA)
+BUDİZM
+ Kast sistemine alternatif yoldur | İlk Budist imparator (AŞOKA)
+ Kurucu (SİDDHARTA GUATAMA BODDHAYA)
+ Nihai hedef (NİRVANA) | İbadet yerleri (PAGODA)
+ Mezhepleri (STAVİRA - Yaşlılar | MAHASANGHA - Cemaat)
+Budizm’de Kutsal Metinler / Tripitika
+ PALİ KANUNU (Kutsal Metin külliyatı)
+ VİNAYA PİTAKA (Keşişlerin uyacakları kurallar)
+ SUTTA PİTAKA (Buddha’nın Öğretisi)
+Budist Amentusu / Triratna
+ Buddha’ya/Aydınlanmışa sığınırım | Dharma’ya/Öğretiye sığınırım
+ Sangha’ya/Cemaate sığınırım
+Budizm’de 4 Seçkin Hakikat / Dharma’nın Özü
+ DUKKA (Acı çekme) | SAMUDYA (Acının kökeni) | NİRADHA (Acının kaldırılması)
+ MOGGHA (8 Dilimli Yol  Doğru Davranış / Doğru Söz / Doğru Geçim / Doğru Muhakeme / Doğru Murakabe / Doğru Anlayış / Doğru Düşünce / Doğru Niyet)
+Budizm’de 4 Kutsal Yer
+ LUMBİNİ KORULUĞU (Buda’nın doğduğu yer)
+ İSİPATANA (Buda’nın ilk vaaz verdiği yer)
+ BODDGAYA (Buda’nın aydınlandığı yer)
+ KUŞİNARA (Buda’nın öldüğü yer)
+SİHİZM
+ Kurucu (GURU NANAK) | Kutsal Metin (GURU GRANT SAHİB)
+ Tanrı (NAM) | İslam - Hinduizm sentezidir | Mabet (GURDWARA)
+TAOİZM
+ Kurucu (LAO TZU – İhtiyar Bilgin) | Kutsal Metin (TAO TE KİNG)
+ İş yapmadan çok iş yapmak (WU WEİ) | Çin’in 1. Milli dini
+ Mabet (MİAO) | Manastır (KUNG) | Manastır mabedi (KUAN)
+ İyilik – Kötülük zıtlaşması (YİN - YANG)
+ Mezhepler (SİMYACI | MİSTİK | FERDİYETÇİ | LEGALİST | CHAN)
+KONFÜÇYANİZM
+ Kurucu (KUNG FU TZU) | Tanrı (TİEN) | Çin’in 2. Milli dini
+ Amaç; Erdemli insan olmak | Mezarlara hediyeler sunulur
+ Rahip sınıfı yok | Bireysel/Ferdi ibadet yok
+ Mezhepler (ZU KSİ – Mistik | VANG YANGMİNG - Rasyonel)
+Konfüçyanizm’de Kutsal Metinler
+ VU KİNG / 5 KLASİK (DEĞİŞİKLER | TARİH | ŞİİRLER | TÖRENLER | İLK/SONBAHAR YILLIKLARI)
+ 4 KİTAP (KONFİÇYUS KONUŞMALARI | MENSİYUS SÖZLERİ | ORTAYOL DOKTRİNİ | BÜYÜK BİLGİ)
+ŞİNTOİZM
+ Japon Milli dini | Tanrı (KAMİ) | Tanrıların yolu (ŞİNTO)
+ Baş Tanrı (AMATERASU) | Amaterasu tapınağının yeri (İSE)
+ Kutsal Kitaplar (KİJOKİ ve NİHONGİ) | En önemli Bayram (MATSURİ)
+ Amaterasu sembolü (8 KÖŞELİ AYNA)
+ Mezhepler (TENDAİ | TANTRİK | SUGİA | FUKKO)
+Şintoizm Dönemleri
+1 - KASHİTO (İmparatorluğa ait Şintoizm)
+2 - JİNJA (Tapınaklara ait Şintoizm)
+3 - KYOHA (Mezheplere ait Şintoizm)
+4 - MİNKAN (Popüler Şintoizm)
+ Budizm ve Taoizm karışımı (ZENBUDİZM – Japonya’daki ismi)
+ Hindu Dinler (HİNDUİZM | BUDİZM | CAYNİZM | SİHİZM)
+ Çin – Japon Dinleri (TAOİZM | KONFÜÇYANİZM | ŞİNTOİZM)
+ZERDÜŞTLÜK / MECUSİLİK
+ Kurucu (ZERDÜŞT) | Kutsal Kitap (AVESTA) | İbadet şekli (DUA)
+ İlk insan (GAYOMART) | En önemli Bayram (NEVRUZ)
+ Ahlaki Düalizm dönemi (SASANİ) | İnanç biçimi (ATEŞPEREST)
+ Tanrı (AHURA MAZDA) | Temizlik biçimi (ATEŞ ve SU)
+ Mecusilik geleneğini sürdürenler (GABAR – İran | PERSİ – Hindistan)
+SABİİLİK
+ Sabii manası (DÖNEK) | İnanç biçimleri (GNOSTİK DÜALİZM)
+ Cemaat üyeleri (MANDANİYE) - İlim sahibi üyeler (NASURAYE)
+ Kur’an da geçtikleri yer (BAKARA, 62 / MAİDE, 67 / HACC, 17)
+ Işık Peygamberi (HZ. YAHYA) | İbadet (VAFTİZ – Boy Abdesti)
+ Işık Aleminin Kralı (NHURA) – Karanlık Aleminin Kralı (HŞUKA)
+ Kutsal Metinler (GİNZA / DRAŞYA / KOLASTA)
+ En önemli Bayramları (PANJA-PARVANİA) | Gizlilik çok önemlidir
+YAHUDİLİK
+ Tanrıyla güreşen (İSRAİL) | Mabet (SİNAGOG / HAVRA)
+ Yahudiliğe geçiş süreci (SÜNNET OLMA  TEVİLAH – Mikve adlı havuza dalma  EMİRLERİ KABUL ETME)
+ Kutsal Metinler (TANAH – Yazılı | TALMUD – Sözlü | NEVİİM – Peygamberler | KETUVİM – Kitaplar)
+ Tevrat/Tora içeriği (ÇIKIŞ | LEVİLER | SAYILAR | TESNİYE | TEKVİN)
+ Tanrı (YEHOVA/ELAHİM) | İlk Peygamber (HZ. İBRAHİM)
+ Ahiret (ŞEOL) | Hz. Süleyman zamanındaki mabet (BETHAMİKDAŞ)
+ İbadetin temeli (KURBAN) | En önemli gün (ŞABAT - Cumartesi)
+ NEBİAH – Kadın Peygamberler (MİRYAM | DEBORA | HULDA | NOADYA | YEREMYAN’IN EŞİ)
+Yahudilikte 10 Emir
+1- Benden başka Tanrı yok | 2- Put/Resim yapma | 3- Zina yapma
+4- Yalancı Şahitlik yapma | 5- Anne Babana hürmet et
+6- Cumartesi gününe riayet et | 7- Tanrı adını boş yere kullanma
+8- Komşunun bir şeyine göz dikme | 9- Çalma | 10- Öldürme
+Yahudilikte Eski mezhepler
+ PERUŞİM (Tevrat’ı öne çıkarırlar / Ortodoks Yahudiliğin devamı)
+ SADUKİM (Tevrat’ın Lafzi anlamına önem verirler / Yok olmuşlardır)
+ ESSENİLER (Mütevazi kesim / Zevk ve Evlenmeden kaçınmışlardır)
+Yahudilikte Yeni Mezhepler
+ REFORMİST (Alman Yahudileri / Tevrat’ı kabul etmezler)
+ MUHAFAZAKAR (Reformistlere tepkidir / Avrupada ismi: MASORTİ)
+ YENİDEN YAPILANDIRMACI (Amerikan Yahudileri / Naturalist Tanrı)
+ ORTODOKS (Klasik Yahudi anlayışı)
+ HASİDİLİK (Mistik unsurlar taşır / Yetişkinler siyah giyinir)
+ KABALA (Harflere önem verirler / Yahudi mistik geleneği)
+ NETUREİ KARTA (Şehrin muhafızları / Siyonizm karşıtıdır)
+ SİYONİZM (Yahudi milliyetçi hareketi / Amaç; Yahudi devleti kurmak)
+Yahudi Bayramları
+ ROŞ HAŞANA (Yeni yıl / Tişri ayının ilk günü / İş yapmak yasak)
+ YOMKİPUR (Kefaret günü / Yahudi takviminin en kutsal günü)
+ SUKOT (Çardaklar-Hasat bayramı / Mısır çıkışında çölde geçirilen günler anısına kutlanılır)
+ FISIH/PESAH (Hamursuz bayramı / Hac bayramlarının ilki / Mısır esaretinden kurtuluşun anısına kutlanılır)
+ ŞAVUOT (Haftalar bayramı / Hac bayramlarının ikincisi / Tevrat’ın israiloğullarına verilişi amacıyla kutlanılır)
+ HANUKA (Işıklar bayramı / Makabilerin zafer günü)
+ PURİM (Neşe-Eğlence bayramı / Yahudi cemaatinin Kraliçe Ester tarafından kurtulması anısına kutlanılır)
+HRİSTİYANLIK
+ Kur’an da yer alan ismi (NASARA) | İsa/Mesih anlayışı vardır
+ Hz. İsa’nın çarmıha gerilmeden önceki son ayları (PASİON)
+ Öğretisini direkt Hz. İsa’dan alan havari (BARNABAS)
+Hristiyanlıkta Kanonik İnciller
+ MATTA (Hz. İsa’nın hayatı ve dirilişi anlatılmıştır / Snoptik incil)
+ MARKOS (Hz. İsa’nın yaptıkları anlatılmıştır / Snoptik incil)
+ LUKA (Hz. İsa’nın hayatı detaylı anlatılmıştır / Snoptik incil)
+ YUHANNA (Hz. İsa’nın Tanrısal yönü ele alınmıştır)
+Hristiyanlıkta Konsiller (21 tane vardır)
+ 1. İZNİK (Baba-Oğul aynı cevherdendir / Yeni ahdi oluşturan kitapların tespiti / Paskalya bayramı kabul edildi)
+ 1. İSTANBUL (Kutsal ruh, Tanrı ilan edildi)
+ EFES (Hz. İsa’nın tek kişi 2 tabiatlı olduğu kararlaştırıldı)
+ KADIKÖY (Hz. İsa’nın Diofizit yani 2 tabiatlı tespit edildi)
+ 3. İSTANBUL (Hz. İsa’da 2 irade olduğu kabul edildi)
+ 2. İZNİK (Resim-Heykel yani İkon yerine Allah’ın ibadet layık olduğu belirtildi)
+ TRENTE (Katolik dogmalar açıklandı)
+ 1. VATİKAN (Papa’nın yanılmazlığı tartışıldı)
+ 2. VATİKAN (En detaylı Konsil / Dinlerarası diyalog fikri ortaya atıldı)
+Hristiyanlıkta Sakramentler
+ VAFTİZ (Asli günahtan temizlenme amacıyla suya dalma)
+ EVHARİSTİYA (Tanrı’ya şükür duasında bulunma)
+ KONFİRMASYON (Gençlerin imanını kuvvetlendirme)
+ HASTALARI YAĞLAMA | TEVBE
+ EVLİLİK (Katoliklerde Ruhbanlar evlenemez)
+ RAHİP TAKDİSİ (Katolikler  Papa / Ortodokslar  Patrik)
+Hristiyan Bayramları
+ NOEL (Yeni yıl / 25 Aralıkta Hz. İsa’nın doğumu anısına kutlanılır)
+ PASKALYA (Yahudi Fısıh bayramına denk / Hz. İsa’nın yeniden dirilişi anısına kutlanılır / En büyük bayramlardan)
+ HAÇ YORTUSU (Hz. İsa’nın çarmıha gerilmesi anısına yapılan tören)
+ MERYEM ANA GÜNÜ (Hz. Meryem’in göğe yükselişi anısına kutlanılır)
+ ASCENSİON (Hz. İsa’nın göğe çıkması anısına kutlanılır)
+ PENTİKOST (Kutsal Ruh’un havarilere inişi anısına kutlanılır)
+Hristiyan Mezhepleri
+ KATOLİK (Evrensel / Sakramentleri kabul ederler / Konsilleri kabul ederler / Hz. İsa’da ilahi ve insani 2 tabiat bulunur)
+ ORTODOKS (Kilise babaları / İkonlar önemli / Papazlar evlenebilir)
+ PROTESTAN (Öncü: Martin Luther / Kilise hiyerarşisi yok / İncil tek kaynak / Vaftiz ve Evharistiya’yı kabul ederler / Anglikanlar hariç Haç bulundurmazlar / Hz. Meryem’e önem vermezler)
+ MONOFİZİT KİLİSELER (Tek tabiatı kabul ederler / Süryani ve Ermeni)
+Hristiyanlıkta Yeni Dini Hareketler
+ BAPTİSTLER (Temsilci: W. Screven / Kutsallar cemaati vardır)
+ METODİSTLER (Temsilci: J. Wesley / Oxford Kutsallar klübü)
+ ÜNİTERYANLAR (Temsilci: M. Servetus / Allah’ın birliği esastır)
+ PERHİZ (Hristiyanlıkta Orucun yerine geçen Vücut terbiyesi)
+ Buda’nın doğumu, aydınlanması ve ölümü anısına kutlanan bayram (VESAK)
+ Yahudilere Mısır’dan Fırat’a kadar vaat edilen topraklar (ARZ-I MEVUD)
+ Hristiyan birliğini sağlama veya Dinlerarası iş birliği (EKÜMENİK)
+ Tanrı’nın, İsa/Mesih’te bedenleşmek suretiyle yeryüzünde yaşaması (İNKARNASYON)
+ Kutsal Ruhun, İsa/Mesih’i mesh etmek için girdiği hayvani beden (GÜVERCİN)
+ Hindu bayramlarının en eskisi (HOLİ) | Hindularda Peygamber (RİŞİ)
+ Yahudi tarihinin en etkili Mesih hareketini yapan (SABETAY SEVİ)
+ Yahudilerde son peygamber (MALAKİ) | Hristiyanlıkta ilk incil (MARKOS)
+ Zerdüşlerde Mehdi (SAOŞYANT) | Sabiilerde Mehdi (PRAŞAİ ZİVA)
+ Zerdüştlerde Karanlık Kral yani Şeytan (ANGRA MAİNYU/EHRİMEN)
+ Hinduizm Hac yerleri (KRİŞNA’NIN DOĞUM YERİ | GANJ’IN DOĞDUĞU YER | BENAREST)
+ Caynizm’de Mahavira’nın sembolü (ASLAN)
+ Caynizm Kutsal kitabı (AGAMA)
+ Sihizmde 5 Kötülük (BENLİK | ÖFKE | HIRS | MADDİ BAĞLILIK | ŞEHVET)
+ Sihizmde yaşarken kurtulan kişi (JİVAN MUKTİ)
+ Sihizmde Hayatın 4 Meyvesi (HAKİKAT | MEMNUNİYET | TEFEKKÜR | NAAM)
+ Konfüçyanizmde 5 Temel Erdem (İYİLİK YAPMAK | GÜVENİLİR OLMAK | DÜRÜST OLMAK | TERBİYELİ OLMAK | TEDBİRLİ OLMAK)
+ Bir Erkek evlat bırakmadan ölmenin günah olduğu inanç (KONFÜÇYANİZM)
+Diaspora dönemi Yahudilerinin yaşadıkları yerler
+ ASKENAZ (Almanya / Fransa / Doğu Avrupa)
+ SAFARAD (İspanya / İtalya / Yunanistan / Müslüman Ülkeler)
+ Yahudilikte Talmud 2’ye ayrılır (MİŞNA | GAMARA – Mişna’nın yorumu)
+ Yahudilikte Beslenme kuralları (KAŞRUT)  Kaşer/Helal – Trefa/Haram
+ İSEVİ YAHUDİLİK (Kurucu: Yakup el İsfehan / Ortaçağ Yahudi mezhebi)
+ Yahudi olmakla beraber, Diğer Yahudiler tarafından Yahudi görülmeyen mezhep (SAMİRİLER)
+ Havariler arasından ihanet eden tek havari (YAHUDA İSKARYOT)
+ Varlığı kabul ama içeriği kabul edilmeyen Apokrif incil (BARNABAS)
+ Hristiyanlığı toplu kabul eden (ERMENİLER) | İlk Hristiyan Cemaat kilisesi (SÜRYANİ)
+ Hristiyanlıkta para karşılığı günah çıkarma işlemi (ENDÜLİJANS)
+ Tarihteki belli başlı tüm dinleri ilk olarak konu edinen eser (YERYÜZÜNDEKİ DİNLER – Ömer Rıza Doğrul)
+ Farklı inanç sistemlerinin bir arada yaşaması dolayısıyla birbirinden etkilenmesi sonucu oluşan dini yorumlar (SENKRETİZM)
+ Bir dindeki genel düşüncelere karşı çıkan bütün dini akımların ortak adı (HERETİK)
+ Eski Türk inançları (BUDİZM | MANİHEİZM | MECUSİLİK | HRİSTİYANLIK | MUSEVİLİK)
+ Budizm’de Tanrı’nın herhangi bir bedene bürünerek yeryüzüne inmesi (AVATAR)
+ Sihizm’de İnsanın içinde yaşadığı fiziki alemin bir illüzyon olduğu inancı (MAYA)
+ Yahudilikte Tevrat’ın Hatim bayramı (SİMHA TORA)
+ Hristiyanlarda en önemli Hac merkezi (BEYTULLAHİM/BEYTLEHEM)
+ Hristiyan Teslis / Şirk-i Teb’iz inancı (BABA | OĞUL | KUTSAL RUH)
+ Kurtarıcı inancı olan dinler (HRİSTİYANLIK | YAHUDİLİK | SABİİLİK | MECUSİLİK)
+ EVAJELİZM (Hristiyan Maskeli Misyonerlerdir / Amaç; İncili yaymak)
+ İNKÜLTÜRASYON (Hristiyanların bizden gibi görünmesi)
+ Yahudi olmanın ana şartı, Yahudi bir Anneden doğmaktır.
+ Yahudilerde 2. Musa diye bilinen kişi (EZRA)
+ Yahudilik dinine, ırkına, kültürüne veya milletine karşı duyulan düşmanlık (ANTİSEMİTİSM)
+ Yahudilikte 7 kollu şamdan (MENORA) | Yahudilikte 6 köşeli yıldız (MAGEN DAVİD / SÜLEYMAN MÜHRÜ)
+ Hristiyanlığı, Yahudiliğin arasından çıkarıp ayrı bir din haline getiren ve Hristiyan tarihinin en önemli kişilerinden biri (PAVLUS)
+ Hinduizm ibadet sembolü (OM) | Hinduizm’de Yılbaşı (UGADİ)
+ İsa/Mesih hakkındaki tartışmaları konu edinen ilim (KRİSTOLOJİ)
+ Müstakil bir dini inanç olmanın ötesinde belli bir simge veya belli ritüeller ile kendisini ifade eden inanç grupları (KÜLT İNANÇLAR)
+ Genellikle İyilik ve Kötülük Tanrısı şeklinde kabul edilen iki tanrı inancı (DÜALİZM)
+ Zerdüştlere, Ateş yakmalarından dolayı verilen isim (ASRAVAN)
+ Konfiçyusa göre İnsani ilişkiler (AMİR-MEMUR | ARKADAŞ-DOST | KARI-KOCA | EBEVEYN-ÇOCUKLAR | KARDEŞLER ARASI)
+ Dinler tarihinde Kutsal kitapların tespiti (KANONİZASYON)
+ Yahudi Din Adamları (KOHEN – Tevratı öğretir | HAHAM – Sinagog Din adamı | HAZAN – Duaları melodi şeklinde okur)
+ Kilise dışında Katolik dışı inançlara karşı ağır cezalar veren mahkemeler (ENGİZİSYON)
+ Yahudilerde en alt tabakada olan grup (MİZRAHİM)
+ Hristiyanların Küçük ibadet yerleri (ŞAPEL)
+ Hristiyanlıkta Katolik ve Ortodoks kiliselerinin ayrılması olayı (SKİZMA)
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
