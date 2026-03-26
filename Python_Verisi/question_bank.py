@@ -154,6 +154,7 @@ def parse_single_question_block(
     base_dir: Path = WORDE_DIR,
     default_topic: object = "",
     visual_resolver: Optional[Callable[[str, int], str]] = None,
+    skip_dhbt_common: bool = True,
 ) -> Optional[Dict]:
     try:
         lines = text.strip().splitlines()
@@ -199,6 +200,13 @@ def parse_single_question_block(
 
             if re.match(r"^[ABCDE]\)", line):
                 options[line[0]] = line[2:].strip()
+                continue
+
+            table_option_match = re.match(r"^\|\s*([ABCDE])\)\s*\|\s*(.+)$", line)
+            if table_option_match:
+                option_key = table_option_match.group(1)
+                option_text = table_option_match.group(2).strip().strip("|").strip()
+                options[option_key] = option_text
                 continue
 
             if line.startswith(ANSWER_PREFIXES):
@@ -248,7 +256,10 @@ def parse_single_question_block(
             soru_no
             and len(options) >= 2
             and dogru_cevap
-            and not should_skip_dhbt_common_question(year, subject, soru_no, base_dir=base_dir)
+            and (
+                not skip_dhbt_common
+                or not should_skip_dhbt_common_question(year, subject, soru_no, base_dir=base_dir)
+            )
         ):
             return {
                 "yil": year,
@@ -287,8 +298,27 @@ def parse_questions_from_file(
 
     with open(file_path, "r", encoding="utf-8") as file:
         content = normalize_question_content(file.read())
+    blocks = content.split(QUESTION_SEPARATOR)
+    detected_numbers = []
+    for block in blocks:
+        match = re.search(r"(?m)^\s*Soru\s+(\d+):", block)
+        if match:
+            try:
+                detected_numbers.append(int(match.group(1)))
+            except ValueError:
+                pass
 
-    for block in content.split(QUESTION_SEPARATOR):
+    # 2022/2024 gibi bazı DHBT lisans/onlisans/ortaöğretim dosyaları yalnız
+    # ortak dışı 20 soruyu içeriyor ama numarayı 1-20 ile yeniden başlatıyor.
+    # Bu durumda sırf soru numarasına bakarak ortak soru filtresi uygulamak
+    # dosyanın tamamını yanlışlıkla elemiş oluyor.
+    skip_dhbt_common = True
+    if detected_numbers:
+        is_dhbt_variant = subject in {"DHBT Lisans", "DHBT Önlisans", "DHBT Ortaöğretim"}
+        if is_dhbt_variant and max(detected_numbers) <= 20:
+            skip_dhbt_common = False
+
+    for block in blocks:
         if "Soru " not in block:
             continue
         if not any(marker in block for marker in ANSWER_PREFIXES):
@@ -300,6 +330,7 @@ def parse_questions_from_file(
             base_dir=base_dir,
             default_topic=default_topic,
             visual_resolver=visual_resolver,
+            skip_dhbt_common=skip_dhbt_common,
         )
         if question:
             questions.append(question)

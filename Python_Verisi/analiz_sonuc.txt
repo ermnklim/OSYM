@@ -1,27 +1,27 @@
 ======================================================================
 DKAB ÖABT SORU ANALİZ RAPORU
-Oluşturulma: 2026-03-26 14:51:16
+Oluşturulma: 2026-03-26 15:12:07
 ======================================================================
 
 📊 GENEL İSTATİSTİKLER
 --------------------------------------------------
-Toplam Soru Sayısı: 1771
-  - DHBT Lisans: 80 soru
+Toplam Soru Sayısı: 1892
+  - DHBT Lisans: 120 soru
   - DHBT Ortak (1-20): 120 soru
-  - DHBT Ortaöğretim: 80 soru
-  - DHBT Önlisans: 80 soru
+  - DHBT Ortaöğretim: 120 soru
+  - DHBT Önlisans: 120 soru
   - DKAB: 798 soru
   - IHL: 375 soru
-  - MBSTS: 238 soru
+  - MBSTS: 239 soru
 
 📅 YILLARA GÖRE DAĞILIM
 --------------------------------------------------
 Yıl      DHBT Lisans        DHBT Ortak (1-20)  DHBT Ortaöğretim   DHBT Önlisans      DKAB               IHL                MBSTS              Toplam    
 --------------------------------------------------
 2025     0                  0                  0                  0                  50                 0                  60                 110       
-2024     0                  20                 0                  0                  75                 0                  60                 155       
+2024     20                 20                 20                 20                 75                 0                  60                 215       
 2023     0                  0                  0                  0                  75                 75                 60                 210       
-2022     0                  20                 0                  0                  75                 75                 58                 228       
+2022     20                 20                 20                 20                 75                 75                 59                 289       
 2021     0                  0                  0                  0                  75                 75                 0                  150       
 2020     20                 20                 20                 20                 74                 75                 0                  229       
 2019     0                  0                  0                  0                  74                 75                 0                  149       
@@ -38,23 +38,23 @@ Yıl      DHBT Lisans        DHBT Ortak (1-20)  DHBT Ortaöğretim   DHBT Önlis
 Konu                                DHBT Lisans  DHBT Ortak (1-20) DHBT Ortaöğretim DHBT Önlisans DKAB         IHL          MBSTS        Toplam  
 --------------------------------------------------
 Din Eğitimi                         0            0            0            0            173          82           0            255     
-Fıkıh                               11           27           8            10           73           40           62           231     
-Kelam / Akaid                       13           18           12           11           66           38           23           181     
-Tefsir                              12           0            10           9            60           33           45           169     
-İslam Tarihi                        9            1            8            7            73           38           20           156     
-Hadis                               12           0            13           12           53           31           28           149     
-Kur'an-ı Kerim ve Tecvid            0            26           3            2            39           26           11           107     
-Dinler Tarihi                       6            0            6            6            39           10           10           77      
+Fıkıh                               16           27           12           15           73           40           63           246     
+Kelam / Akaid                       17           18           18           15           66           38           23           195     
+Tefsir                              13           0            13           11           60           33           45           175     
+İslam Tarihi                        14           1            14           14           73           38           20           174     
+Hadis                               18           0            19           18           53           31           28           167     
+Kur'an-ı Kerim ve Tecvid            5            26           6            6            39           26           11           119     
+Dinler Tarihi                       10           0            10           11           39           10           10           90      
 İslam Mezhepleri ve Akımları        0            0            0            0            37           18           9            64      
 İslam Kültür ve Medeniyeti          0            0            0            0            38           15           0            53      
 İslam Felsefesi                     0            0            0            0            40           10           1            51      
+Siyer                               3            31           1            2            0            4            9            50      
 Din Psikolojisi                     0            0            0            0            37           12           0            49      
-Siyer                               1            31           1            2            0            4            9            48      
 Din Felsefesi                       0            0            0            0            35           9            1            45      
 Din Sosyolojisi                     0            0            0            0            35           9            0            44      
-Fıkıh Usulü                         2            1            5            5            0            0            16           29      
-Mezhepler Tarihi                    9            0            8            10           0            0            0            27      
-Din Hizmetleri ve Hitabet           5            0            6            6            0            0            0            17      
+Mezhepler Tarihi                    13           0            13           14           0            0            0            40      
+Fıkıh Usulü                         4            1            6            6            0            0            16           33      
+Din Hizmetleri ve Hitabet           7            0            8            8            0            0            0            23      
 İslam Ahlakı ve Tasavvuf            0            13           0            0            0            0            0            13      
 ?slam Ahlak? ve Tasavvuf            0            3            0            0            0            0            0            3       
 İslam Mezhepleri Tarihi             0            0            0            0            0            0            3            3       
@@ -90,7 +90,6 @@ Kanonik liste dışında kalan konu adları:
   - Haber-i Vahid Analizi: 1
 
 Ders içinde nadir görülen konu kullanımları:
-  - DHBT Lisans | Siyer: 1
   - DHBT Ortak (1-20) | Fıkıh Usulü: 1
   - DHBT Ortak (1-20) | İslam Tarihi: 1
   - DHBT Ortaöğretim | Siyer: 1
@@ -139,10 +138,10 @@ Soru havuzunda olup özet metninde eşleşmeyen konular:
   MBSTS: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 0, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 2, Fıkıh: 14, Fıkıh Usulü: 6, Hadis: 7, Kelam / Akaid: 8, Kur'an-ı Kerim ve Tecvid: 5, Mezhepler Tarihi: 0, Siyer: 4, Tefsir: 9, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 1, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 1, İslam Tarihi: 3
 
 2024:
-  DHBT Lisans: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 0, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 0, Fıkıh: 0, Fıkıh Usulü: 0, Hadis: 0, Kelam / Akaid: 0, Kur'an-ı Kerim ve Tecvid: 0, Mezhepler Tarihi: 0, Siyer: 0, Tefsir: 0, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 0, İslam Tarihi: 0
+  DHBT Lisans: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 1, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 2, Fıkıh: 2, Fıkıh Usulü: 2, Hadis: 3, Kelam / Akaid: 2, Kur'an-ı Kerim ve Tecvid: 2, Mezhepler Tarihi: 2, Siyer: 0, Tefsir: 1, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 0, İslam Tarihi: 3
   DHBT Ortak (1-20): ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 0, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 0, Fıkıh: 5, Fıkıh Usulü: 0, Hadis: 0, Kelam / Akaid: 4, Kur'an-ı Kerim ve Tecvid: 4, Mezhepler Tarihi: 0, Siyer: 5, Tefsir: 0, İslam Ahlakı ve Tasavvuf: 2, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 0, İslam Tarihi: 0
-  DHBT Ortaöğretim: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 0, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 0, Fıkıh: 0, Fıkıh Usulü: 0, Hadis: 0, Kelam / Akaid: 0, Kur'an-ı Kerim ve Tecvid: 0, Mezhepler Tarihi: 0, Siyer: 0, Tefsir: 0, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 0, İslam Tarihi: 0
-  DHBT Önlisans: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 0, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 0, Fıkıh: 0, Fıkıh Usulü: 0, Hadis: 0, Kelam / Akaid: 0, Kur'an-ı Kerim ve Tecvid: 0, Mezhepler Tarihi: 0, Siyer: 0, Tefsir: 0, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 0, İslam Tarihi: 0
+  DHBT Ortaöğretim: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 1, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 2, Fıkıh: 2, Fıkıh Usulü: 1, Hadis: 3, Kelam / Akaid: 3, Kur'an-ı Kerim ve Tecvid: 1, Mezhepler Tarihi: 2, Siyer: 0, Tefsir: 2, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 0, İslam Tarihi: 3
+  DHBT Önlisans: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 1, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 2, Fıkıh: 2, Fıkıh Usulü: 1, Hadis: 3, Kelam / Akaid: 2, Kur'an-ı Kerim ve Tecvid: 2, Mezhepler Tarihi: 3, Siyer: 0, Tefsir: 1, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 0, İslam Tarihi: 3
   DKAB: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 18, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 0, Din Psikolojisi: 3, Din Sosyolojisi: 3, Dinler Tarihi: 3, Fıkıh: 7, Fıkıh Usulü: 0, Hadis: 5, Kelam / Akaid: 6, Kur'an-ı Kerim ve Tecvid: 4, Mezhepler Tarihi: 0, Siyer: 0, Tefsir: 5, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 6, İslam Kültür ve Medeniyeti: 5, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 4, İslam Tarihi: 6
   IHL: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 0, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 0, Fıkıh: 0, Fıkıh Usulü: 0, Hadis: 0, Kelam / Akaid: 0, Kur'an-ı Kerim ve Tecvid: 0, Mezhepler Tarihi: 0, Siyer: 0, Tefsir: 0, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 0, İslam Tarihi: 0
   MBSTS: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 1, Din Hizmetleri ve Hitabet: 0, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 2, Fıkıh: 17, Fıkıh Usulü: 3, Hadis: 7, Kelam / Akaid: 5, Kur'an-ı Kerim ve Tecvid: 3, Mezhepler Tarihi: 0, Siyer: 0, Tefsir: 11, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 3, İslam Tarihi: 8
@@ -157,13 +156,13 @@ Soru havuzunda olup özet metninde eşleşmeyen konular:
   MBSTS: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 0, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 3, Fıkıh: 18, Fıkıh Usulü: 2, Hadis: 7, Kelam / Akaid: 5, Kur'an-ı Kerim ve Tecvid: 2, Mezhepler Tarihi: 0, Siyer: 0, Tefsir: 11, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 5, İslam Tarihi: 7
 
 2022:
-  DHBT Lisans: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 0, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 0, Fıkıh: 0, Fıkıh Usulü: 0, Hadis: 0, Kelam / Akaid: 0, Kur'an-ı Kerim ve Tecvid: 0, Mezhepler Tarihi: 0, Siyer: 0, Tefsir: 0, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 0, İslam Tarihi: 0
+  DHBT Lisans: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 1, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 2, Fıkıh: 3, Fıkıh Usulü: 0, Hadis: 3, Kelam / Akaid: 2, Kur'an-ı Kerim ve Tecvid: 3, Mezhepler Tarihi: 2, Siyer: 2, Tefsir: 0, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 0, İslam Tarihi: 2
   DHBT Ortak (1-20): ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 0, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 0, Fıkıh: 4, Fıkıh Usulü: 0, Hadis: 0, Kelam / Akaid: 2, Kur'an-ı Kerim ve Tecvid: 3, Mezhepler Tarihi: 0, Siyer: 7, Tefsir: 0, İslam Ahlakı ve Tasavvuf: 3, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 0, İslam Tarihi: 1
-  DHBT Ortaöğretim: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 0, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 0, Fıkıh: 0, Fıkıh Usulü: 0, Hadis: 0, Kelam / Akaid: 0, Kur'an-ı Kerim ve Tecvid: 0, Mezhepler Tarihi: 0, Siyer: 0, Tefsir: 0, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 0, İslam Tarihi: 0
-  DHBT Önlisans: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 0, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 0, Fıkıh: 0, Fıkıh Usulü: 0, Hadis: 0, Kelam / Akaid: 0, Kur'an-ı Kerim ve Tecvid: 0, Mezhepler Tarihi: 0, Siyer: 0, Tefsir: 0, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 0, İslam Tarihi: 0
+  DHBT Ortaöğretim: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 1, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 2, Fıkıh: 2, Fıkıh Usulü: 0, Hadis: 3, Kelam / Akaid: 3, Kur'an-ı Kerim ve Tecvid: 2, Mezhepler Tarihi: 3, Siyer: 0, Tefsir: 1, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 0, İslam Tarihi: 3
+  DHBT Önlisans: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 1, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 3, Fıkıh: 3, Fıkıh Usulü: 0, Hadis: 3, Kelam / Akaid: 2, Kur'an-ı Kerim ve Tecvid: 2, Mezhepler Tarihi: 1, Siyer: 0, Tefsir: 1, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 0, İslam Tarihi: 4
   DKAB: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 18, Din Felsefesi: 4, Din Hizmetleri ve Hitabet: 0, Din Psikolojisi: 3, Din Sosyolojisi: 3, Dinler Tarihi: 3, Fıkıh: 7, Fıkıh Usulü: 0, Hadis: 5, Kelam / Akaid: 7, Kur'an-ı Kerim ve Tecvid: 4, Mezhepler Tarihi: 0, Siyer: 0, Tefsir: 5, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 2, İslam Kültür ve Medeniyeti: 5, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 3, İslam Tarihi: 6
   IHL: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 17, Din Felsefesi: 2, Din Hizmetleri ve Hitabet: 0, Din Psikolojisi: 2, Din Sosyolojisi: 2, Dinler Tarihi: 2, Fıkıh: 8, Fıkıh Usulü: 0, Hadis: 6, Kelam / Akaid: 7, Kur'an-ı Kerim ve Tecvid: 5, Mezhepler Tarihi: 0, Siyer: 0, Tefsir: 7, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 2, İslam Kültür ve Medeniyeti: 3, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 4, İslam Tarihi: 8
-  MBSTS: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 0, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 3, Fıkıh: 13, Fıkıh Usulü: 5, Hadis: 7, Kelam / Akaid: 5, Kur'an-ı Kerim ve Tecvid: 1, Mezhepler Tarihi: 0, Siyer: 5, Tefsir: 14, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 3, İslam Mezhepleri ve Akımları: 0, İslam Tarihi: 2
+  MBSTS: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 0, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 3, Fıkıh: 14, Fıkıh Usulü: 5, Hadis: 7, Kelam / Akaid: 5, Kur'an-ı Kerim ve Tecvid: 1, Mezhepler Tarihi: 0, Siyer: 5, Tefsir: 14, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 3, İslam Mezhepleri ve Akımları: 0, İslam Tarihi: 2
 
 2021:
   DHBT Lisans: ?slam Ahlak? ve Tasavvuf: 0, Din Eğitimi: 0, Din Felsefesi: 0, Din Hizmetleri ve Hitabet: 0, Din Psikolojisi: 0, Din Sosyolojisi: 0, Dinler Tarihi: 0, Fıkıh: 0, Fıkıh Usulü: 0, Hadis: 0, Kelam / Akaid: 0, Kur'an-ı Kerim ve Tecvid: 0, Mezhepler Tarihi: 0, Siyer: 0, Tefsir: 0, İslam Ahlakı ve Tasavvuf: 0, İslam Felsefesi: 0, İslam Kültür ve Medeniyeti: 0, İslam Mezhepleri Tarihi: 0, İslam Mezhepleri ve Akımları: 0, İslam Tarihi: 0
@@ -250,18 +249,19 @@ Soru havuzunda olup özet metninde eşleşmeyen konular:
 
 📋 YIL × KONU MATRİSİ (DHBT Lisans)
 ----------------------------------------------------------------------
-Konu                           2020     2018     2016     2014    
+Konu                           2024     2022     2020     2018     2016     2014    
 ----------------------------------------------------------------------
-Fıkıh                          4        2        3        2       
-Kelam / Akaid                  4        3        3        3       
-Tefsir                         3        3        3        3       
-İslam Tarihi                   1        3        3        2       
-Hadis                          2        3        3        4       
-Dinler Tarihi                  1        2        2        1       
-Siyer                          1        0        0        0       
-Fıkıh Usulü                    0        1        0        1       
-Mezhepler Tarihi               3        2        2        2       
-Din Hizmetleri ve Hitabet      1        1        1        2       
+Fıkıh                          2        3        4        2        3        2       
+Kelam / Akaid                  2        2        4        3        3        3       
+Tefsir                         1        0        3        3        3        3       
+İslam Tarihi                   3        2        1        3        3        2       
+Hadis                          3        3        2        3        3        4       
+Kur'an-ı Kerim ve Tecvid       2        3        0        0        0        0       
+Dinler Tarihi                  2        2        1        2        2        1       
+Siyer                          0        2        1        0        0        0       
+Mezhepler Tarihi               2        2        3        2        2        2       
+Fıkıh Usulü                    2        0        0        1        0        1       
+Din Hizmetleri ve Hitabet      1        1        1        1        1        2       
 ----------------------------------------------------------------------
 
 📋 YIL × KONU MATRİSİ (DHBT Ortak (1-20))
@@ -280,36 +280,36 @@ Fıkıh Usulü                    0        0        0        0        1        0
 
 📋 YIL × KONU MATRİSİ (DHBT Ortaöğretim)
 ----------------------------------------------------------------------
-Konu                           2020     2018     2016     2014    
+Konu                           2024     2022     2020     2018     2016     2014    
 ----------------------------------------------------------------------
-Fıkıh                          2        2        3        1       
-Kelam / Akaid                  4        4        3        1       
-Tefsir                         2        3        3        2       
-İslam Tarihi                   3        2        1        2       
-Hadis                          3        3        3        4       
-Kur'an-ı Kerim ve Tecvid       2        0        0        1       
-Dinler Tarihi                  1        2        2        1       
-Siyer                          0        0        0        1       
-Fıkıh Usulü                    1        1        1        2       
-Mezhepler Tarihi               1        2        2        3       
-Din Hizmetleri ve Hitabet      1        1        2        2       
+Fıkıh                          2        2        2        2        3        1       
+Kelam / Akaid                  3        3        4        4        3        1       
+Tefsir                         2        1        2        3        3        2       
+İslam Tarihi                   3        3        3        2        1        2       
+Hadis                          3        3        3        3        3        4       
+Kur'an-ı Kerim ve Tecvid       1        2        2        0        0        1       
+Dinler Tarihi                  2        2        1        2        2        1       
+Siyer                          0        0        0        0        0        1       
+Mezhepler Tarihi               2        3        1        2        2        3       
+Fıkıh Usulü                    1        0        1        1        1        2       
+Din Hizmetleri ve Hitabet      1        1        1        1        2        2       
 ----------------------------------------------------------------------
 
 📋 YIL × KONU MATRİSİ (DHBT Önlisans)
 ----------------------------------------------------------------------
-Konu                           2020     2018     2016     2014    
+Konu                           2024     2022     2020     2018     2016     2014    
 ----------------------------------------------------------------------
-Fıkıh                          4        2        2        2       
-Kelam / Akaid                  3        3        2        3       
-Tefsir                         2        3        3        1       
-İslam Tarihi                   0        3        3        1       
-Hadis                          3        3        2        4       
-Kur'an-ı Kerim ve Tecvid       0        0        0        2       
-Dinler Tarihi                  1        2        2        1       
-Siyer                          2        0        0        0       
-Fıkıh Usulü                    1        1        1        2       
-Mezhepler Tarihi               3        2        3        2       
-Din Hizmetleri ve Hitabet      1        1        2        2       
+Fıkıh                          2        3        4        2        2        2       
+Kelam / Akaid                  2        2        3        3        2        3       
+Tefsir                         1        1        2        3        3        1       
+İslam Tarihi                   3        4        0        3        3        1       
+Hadis                          3        3        3        3        2        4       
+Kur'an-ı Kerim ve Tecvid       2        2        0        0        0        2       
+Dinler Tarihi                  2        3        1        2        2        1       
+Siyer                          0        0        2        0        0        0       
+Mezhepler Tarihi               3        1        3        2        3        2       
+Fıkıh Usulü                    1        0        1        1        1        2       
+Din Hizmetleri ve Hitabet      1        1        1        1        2        2       
 ----------------------------------------------------------------------
 
 📋 YIL × KONU MATRİSİ (DKAB)
@@ -347,8 +347,8 @@ Dinler Tarihi                  2        2        2        2        2
 İslam Mezhepleri ve Akımları   2        4        3        5        4       
 İslam Kültür ve Medeniyeti     3        3        3        3        3       
 İslam Felsefesi                2        2        2        2        2       
-Din Psikolojisi                2        2        4        2        2       
 Siyer                          4        0        0        0        0       
+Din Psikolojisi                2        2        4        2        2       
 Din Felsefesi                  0        2        2        2        3       
 Din Sosyolojisi                2        2        2        2        1       
 ----------------------------------------------------------------------
@@ -357,7 +357,7 @@ Din Sosyolojisi                2        2        2        2        1
 ----------------------------------------------------------------------
 Konu                           2025     2024     2023     2022    
 ----------------------------------------------------------------------
-Fıkıh                          14       17       18       13      
+Fıkıh                          14       17       18       14      
 Kelam / Akaid                  8        5        5        5       
 Tefsir                         9        11       11       14      
 İslam Tarihi                   3        8        7        2       
@@ -377,31 +377,31 @@ SINAV BAZLI ONCELIK VE ALT BASLIK RAPORU
 
 DHBT:
   En yogun ana basliklar:
-    - Fıkıh: 56
-    - Kelam / Akaid: 54
-    - Hadis: 37
-    - Siyer: 35
-    - Kur'an-ı Kerim ve Tecvid: 31
-    - Tefsir: 31
-    - Mezhepler Tarihi: 27
-    - İslam Tarihi: 25
+    - Fıkıh: 70
+    - Kelam / Akaid: 68
+    - Hadis: 55
+    - Kur'an-ı Kerim ve Tecvid: 43
+    - İslam Tarihi: 43
+    - Mezhepler Tarihi: 40
+    - Siyer: 37
+    - Tefsir: 37
   En sik donen alt basliklar:
-    - Hadis > Konulu hadisler: 37
-    - Kelam / Akaid > Genel / Diğer: 26
-    - Fıkıh > Genel / Diğer: 19
-    - İslam Tarihi > Dört halife: 19
-    - Mezhepler Tarihi > Genel / Diğer: 18
-    - Tefsir > Tefsir usulü: 18
-    - Siyer > Genel / Diğer: 14
-    - Siyer > Mekke dönemi: 14
-    - İslam Ahlakı ve Tasavvuf > Genel / Diğer: 13
-    - Hadis > Hadis usulü: 11
+    - Hadis > Konulu hadisler: 54
+    - Kelam / Akaid > Genel / Diğer: 33
+    - İslam Tarihi > Dört halife: 32
+    - Mezhepler Tarihi > Genel / Diğer: 28
+    - Fıkıh > Genel / Diğer: 26
+    - Tefsir > Tefsir usulü: 24
+    - Hadis > Hadis usulü: 18
+    - Kur'an-ı Kerim ve Tecvid > Genel / Diğer: 16
+    - Kur'an-ı Kerim ve Tecvid > Tecvit kuralları: 16
+    - Kelam / Akaid > Kelam ekolleri: 15
   Onerilen calisma sirasi:
-    Fıkıh -> Kelam / Akaid -> Hadis -> Siyer -> Kur'an-ı Kerim ve Tecvid -> Tefsir
+    Fıkıh -> Kelam / Akaid -> Hadis -> Kur'an-ı Kerim ve Tecvid -> İslam Tarihi -> Mezhepler Tarihi
 
 MBSTS:
   En yogun ana basliklar:
-    - Fıkıh: 62
+    - Fıkıh: 63
     - Tefsir: 45
     - Hadis: 28
     - Kelam / Akaid: 23
@@ -416,8 +416,8 @@ MBSTS:
     - Hadis > Hadis usulü: 15
     - Fıkıh > Genel / Diğer: 14
     - İslam Tarihi > Dört halife: 12
+    - Fıkıh > Aile hukuku: 10
     - Tefsir > Genel / Diğer: 10
-    - Fıkıh > Aile hukuku: 9
     - Fıkıh > Muamelat: 9
     - Fıkıh > Hac ve umre: 8
   Onerilen calisma sirasi:
