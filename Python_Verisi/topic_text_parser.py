@@ -99,6 +99,17 @@ def _turkish_upper(text: str) -> str:
     return text.replace("i", "İ").replace("ı", "I").upper()
 
 
+def _spoken_join_i_suffix(match: re.Match[str]) -> str:
+    stem = match.group(1).strip().lower()
+    last_vowel = ""
+    for char in reversed(stem):
+        if char in "aeıioöuü":
+            last_vowel = char
+            break
+    suffix = "i" if last_vowel in {"e", "i", "ö", "ü"} else "ı"
+    return stem + suffix
+
+
 def _replace_tecvid_terms(text: str) -> str:
     value = str(text or "")
     value = value.replace("\uf077", " ")
@@ -106,6 +117,7 @@ def _replace_tecvid_terms(text: str) -> str:
     value = value.replace("”", " ")
     for source, target in TECVID_TERM_REPLACEMENTS.items():
         value = re.sub(rf"\b{re.escape(source)}\b", target, value, flags=re.IGNORECASE)
+    value = re.sub(r"\b([A-Za-zÇĞİÖŞÜçğıöşü]+)-[Iİıi]\b", _spoken_join_i_suffix, value)
     return value
 
 
@@ -218,6 +230,7 @@ def normalize_sentence_for_tts(text: str) -> str:
     value = re.sub(r"\b(vakfı\s+mutlak)\s+(tı)\b", r"\1, \2,", value, flags=re.IGNORECASE)
     value = re.sub(r"vakfı\s+lazım\W+mim,", "vakfı lazım, mim,", value, flags=re.IGNORECASE)
     value = re.sub(r"vakfı\s+mutlak\W+tı,", "vakfı mutlak, tı,", value, flags=re.IGNORECASE)
+    value = re.sub(r",\s*,+", ", ", value)
     value = re.sub(r"\s+\?\s+", " ", value)
     value = re.sub(r"\s+,", ",", value)
     value = value.replace(" - ", ", ")
