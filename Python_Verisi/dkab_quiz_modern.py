@@ -14,7 +14,7 @@ import sys
 import time
 import re
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List, Set, Tuple
 import threading
 import wave
 
@@ -33,7 +33,12 @@ try:
         parse_single_question_block,
         should_skip_dhbt_common_question as question_bank_should_skip_dhbt_common_question,
     )
-    from topic_catalog import CANONICAL_TOPICS, normalize_topic_name as catalog_normalize_topic_name, topic_sort_key
+    from topic_catalog import (
+        CANONICAL_TOPICS,
+        map_summary_heading_to_topics,
+        normalize_topic_name as catalog_normalize_topic_name,
+        topic_sort_key,
+    )
     from topic_text_parser import normalize_sentence_for_tts, parse_topic_text_file
 except ImportError:
     from Python_Verisi.project_paths import GORSSELLER_DIR, ROOT_DIR, WORDE_DIR
@@ -45,7 +50,12 @@ except ImportError:
         parse_single_question_block,
         should_skip_dhbt_common_question as question_bank_should_skip_dhbt_common_question,
     )
-    from Python_Verisi.topic_catalog import CANONICAL_TOPICS, normalize_topic_name as catalog_normalize_topic_name, topic_sort_key
+    from Python_Verisi.topic_catalog import (
+        CANONICAL_TOPICS,
+        map_summary_heading_to_topics,
+        normalize_topic_name as catalog_normalize_topic_name,
+        topic_sort_key,
+    )
     from Python_Verisi.topic_text_parser import normalize_sentence_for_tts, parse_topic_text_file
 
 try:
@@ -61,6 +71,7 @@ ALL_YEARS_LABEL = "Tüm yıllar"
 ALL_DERSLER_LABEL = "Tüm dersler"
 ALL_KONULAR_LABEL = "Tüm konular"
 MULTI_VALUE_SEPARATOR = " || "
+SUMMARY_EXAM_FAMILY_ORDER = ("DHBT", "MBSTS", "ÖABT", "İHL")
 
 
 class MultiSelectFilter:
@@ -561,6 +572,8 @@ class ModernDKABQuiz:
         )
         self._speech_sequence_job = None
         self._speech_sequence_token = 0
+        self._summary_exam_families_by_topic: Dict[str, Set[str]] = {}
+        self._summary_exam_index_key = None
         self.persisted_settings = self.load_persisted_settings()
 
         self.theme_palettes = {
@@ -2422,6 +2435,143 @@ class ModernDKABQuiz:
             list(parsed.get("warnings", [])),
         )
 
+    def _summary_exam_family_for_subject(self, subject: str) -> str:
+        normalized_subject = format_exam_subject_label(str(subject or ""))
+        if normalized_subject == "DKAB":
+            return "ÖABT"
+        if normalized_subject == "IHL":
+            return "İHL"
+        if normalized_subject == "MBSTS":
+            return "MBSTS"
+        if normalized_subject.startswith("DHBT"):
+            return "DHBT"
+        return ""
+
+    def _ensure_summary_exam_index(self):
+        source_questions = list(self.questions)
+        if not source_questions:
+            try:
+                source_questions, _, _ = load_question_bank(
+                    base_dir=WORDE_DIR,
+                    default_topic=None,
+                    visual_resolver=self.resolve_visual_path,
+                )
+            except Exception:
+                source_questions = []
+
+        cache_key = tuple(
+            sorted(
+                (
+                    str(question.get("yil", "")),
+                    str(question.get("ders", "")),
+                    str(question.get("konu", "")),
+                )
+                for question in source_questions
+            )
+        )
+        if cache_key == self._summary_exam_index_key:
+            return
+
+        topic_to_exam_families: Dict[str, Set[str]] = {}
+        for question in source_questions:
+            topic_name = catalog_normalize_topic_name(question.get("konu", ""))
+            exam_family = self._summary_exam_family_for_subject(question.get("ders", ""))
+            if not topic_name or not exam_family:
+                continue
+            topic_to_exam_families.setdefault(topic_name, set()).add(exam_family)
+
+        self._summary_exam_families_by_topic = topic_to_exam_families
+        self._summary_exam_index_key = cache_key
+
+    def _summary_topics_for_block(self, block: Dict) -> List[str]:
+        topics: List[str] = []
+        candidates = list(block.get("mapped_topics", []))
+        candidates.extend(map_summary_heading_to_topics(block.get("topic", "")))
+        candidates.extend(map_summary_heading_to_topics(block.get("main_cat", "")))
+
+        seen = set()
+        for candidate in candidates:
+            normalized = catalog_normalize_topic_name(candidate)
+            if normalized and normalized not in seen:
+                topics.append(normalized)
+                seen.add(normalized)
+        return topics
+
+    def _summary_exam_badges_for_block(self, block: Dict) -> List[str]:
+        self._ensure_summary_exam_index()
+
+        found_families = set()
+        for topic_name in self._summary_topics_for_block(block):
+            found_families.update(self._summary_exam_families_by_topic.get(topic_name, set()))
+
+        return [family for family in SUMMARY_EXAM_FAMILY_ORDER if family in found_families]
+
+    def _should_show_summary_badges_for_block(self, block: Dict) -> bool:
+        heading_text = ""
+        sentences = list(block.get("sentences", []))
+        if sentences:
+            heading_text = str(sentences[0].get("raw", "")).strip()
+        if not heading_text:
+            heading_text = str(block.get("topic", "")).strip()
+        if not heading_text:
+            return False
+
+        if heading_text.startswith(("•", "-", "*", "\uf077", "\uf0b7", "\uf0a7", "\uf0b6")):
+            return False
+
+        alpha_chars = [char for char in heading_text if char.isalpha()]
+        uppercase_ratio = (
+            sum(1 for char in alpha_chars if char.isupper()) / len(alpha_chars)
+            if alpha_chars
+            else 0
+        )
+        looks_like_short_label = heading_text.endswith(":") and len(heading_text) <= 90
+        looks_like_heading = len(heading_text) <= 80 and not re.search(r"[.!?]", heading_text)
+
+        if block.get("topic") == "Giriş / Genel":
+            return bool(alpha_chars) and (uppercase_ratio >= 0.65 or looks_like_heading)
+
+        return looks_like_short_label or (looks_like_heading and uppercase_ratio >= 0.35)
+
+    def _decorate_ozet_text_with_exam_badges(self, text_widget: tk.Text) -> None:
+        badge_styles = {
+            "DHBT": {"background": self.colors["warning"], "foreground": "#0f172a"},
+            "MBSTS": {"background": self.colors["success"], "foreground": "#f8fafc"},
+            "ÖABT": {"background": self.colors["accent"], "foreground": "#f8fafc"},
+            "İHL": {"background": self.colors["danger"], "foreground": "#f8fafc"},
+        }
+
+        for family, style in badge_styles.items():
+            text_widget.tag_configure(
+                f"exam_badge_{family}",
+                font=("Segoe UI", 8, "bold"),
+                **style,
+            )
+
+        inserted_lines = set()
+        text_widget.config(state=tk.NORMAL)
+        for block in self.ozet_topic_data:
+            start_line = block.get("start_line")
+            if not start_line or start_line in inserted_lines:
+                continue
+            if not self._should_show_summary_badges_for_block(block):
+                continue
+
+            badges = self._summary_exam_badges_for_block(block)
+            if not badges:
+                continue
+
+            inserted_lines.add(start_line)
+            text_widget.insert(f"{start_line}.end", "   ")
+            for family in badges:
+                text_widget.insert(
+                    f"{start_line}.end",
+                    f" {family} ",
+                    (f"exam_badge_{family}",),
+                )
+                text_widget.insert(f"{start_line}.end", " ")
+        text_widget.config(state=tk.DISABLED)
+
     def _show_ozet_file(self, filename, title, view_name):
         self.current_view = view_name
         self.stop_speech(reset_status=False)
@@ -2480,6 +2630,16 @@ class ModernDKABQuiz:
         
         self.ozet_follow_var = tk.BooleanVar(value=True)
         tk.Checkbutton(audio_config_frame, text="Takip Et", variable=self.ozet_follow_var, bg=self.colors['card'], fg=self.colors['text'], font=('Segoe UI', 9), selectcolor=self.colors['bg']).pack(side=tk.LEFT, padx=(10, 0))
+
+        badge_info_label = tk.Label(
+            ozet_card,
+            text="Sınav rozetleri yalnızca görsel bilgi içindir, seslendirme bunları okumaz.",
+            font=("Segoe UI", 8, "italic"),
+            bg=self.colors['card'],
+            fg=self.colors['text_secondary'],
+            anchor="w",
+        )
+        badge_info_label.pack(fill=tk.X, padx=20, pady=(6, 4))
 
         controls = tk.Frame(ozet_card, bg=self.colors['card'])
         controls.pack(fill=tk.X, padx=20, pady=10)
@@ -2570,6 +2730,7 @@ class ModernDKABQuiz:
         ) = self._load_ozet_parser_result(ozet_file, file_content)
         self.ozet_topic_data = parsed_topics
         self.ozet_parser_warnings = parser_warnings
+        self._decorate_ozet_text_with_exam_badges(txt)
         
         # UI Setup for Hierarchical Filter
         def format_label(name, count):
