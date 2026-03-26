@@ -721,7 +721,7 @@ ALER RİCAL – Ravilerine göre Hadisler
  MU’CEM (Raviler alfabetik sıralanır / Taberani - 3 Mu’cem)
  MÜSNED (İlk ravisi sahabelere göre hazırlanır / Merfu)
  ETRAF (Hadisin baş kısmı verilip farklı isnatlarının verilmesi)
-Diğer Hadis çalışmaları
+ Diğer Hadis çalışmaları
  MÜSTEDREK (Müellefin kitabına almadığı hadisleri toplayıp Onun eksiğini tamamlayan eser)
  MÜSTAHREÇ (Hadislerin, Kitap senedinden başka senetlerle bir araya getirildiği eser)
  ZEVAİD (Hadis kitaplarının karşılaştırılıp fazla olan hadislerin ele alındığı eser)
