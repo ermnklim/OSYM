@@ -573,6 +573,7 @@ class ModernDKABQuiz:
         self._speech_sequence_job = None
         self._speech_sequence_token = 0
         self._summary_exam_families_by_topic: Dict[str, Set[str]] = {}
+        self._summary_question_refs_by_topic: Dict[str, Dict[str, List[Dict[str, object]]]] = {}
         self._summary_exam_index_key = None
         self.persisted_settings = self.load_persisted_settings()
 
@@ -2473,14 +2474,33 @@ class ModernDKABQuiz:
             return
 
         topic_to_exam_families: Dict[str, Set[str]] = {}
+        topic_to_question_refs: Dict[str, Dict[str, List[Dict[str, object]]]] = {}
         for question in source_questions:
             topic_name = catalog_normalize_topic_name(question.get("konu", ""))
             exam_family = self._summary_exam_family_for_subject(question.get("ders", ""))
             if not topic_name or not exam_family:
                 continue
             topic_to_exam_families.setdefault(topic_name, set()).add(exam_family)
+            topic_to_question_refs.setdefault(topic_name, {}).setdefault(exam_family, []).append(
+                {
+                    "yil": question.get("yil"),
+                    "soru_no": question.get("soru_no"),
+                    "ders": str(question.get("ders", "") or ""),
+                }
+            )
+
+        for family_map in topic_to_question_refs.values():
+            for ref_list in family_map.values():
+                ref_list.sort(
+                    key=lambda item: (
+                        int(item.get("yil", 0) or 0),
+                        str(item.get("ders", "")),
+                        int(item.get("soru_no", 0) or 0),
+                    )
+                )
 
         self._summary_exam_families_by_topic = topic_to_exam_families
+        self._summary_question_refs_by_topic = topic_to_question_refs
         self._summary_exam_index_key = cache_key
 
     def _summary_topics_for_block(self, block: Dict) -> List[str]:
@@ -2505,6 +2525,76 @@ class ModernDKABQuiz:
             found_families.update(self._summary_exam_families_by_topic.get(topic_name, set()))
 
         return [family for family in SUMMARY_EXAM_FAMILY_ORDER if family in found_families]
+
+    def _summary_question_refs_for_block(self, block: Dict) -> Dict[str, List[Dict[str, object]]]:
+        self._ensure_summary_exam_index()
+
+        grouped_refs: Dict[str, List[Dict[str, object]]] = {}
+        seen_keys = set()
+
+        for topic_name in self._summary_topics_for_block(block):
+            family_map = self._summary_question_refs_by_topic.get(topic_name, {})
+            for family, ref_list in family_map.items():
+                for ref in ref_list:
+                    ref_key = (
+                        family,
+                        ref.get("ders"),
+                        ref.get("yil"),
+                        ref.get("soru_no"),
+                    )
+                    if ref_key in seen_keys:
+                        continue
+                    grouped_refs.setdefault(family, []).append(ref)
+                    seen_keys.add(ref_key)
+
+        for ref_list in grouped_refs.values():
+            ref_list.sort(
+                key=lambda item: (
+                    int(item.get("yil", 0) or 0),
+                    str(item.get("ders", "")),
+                    int(item.get("soru_no", 0) or 0),
+                )
+            )
+
+        return grouped_refs
+
+    def _format_summary_ref_entry(self, family: str, ref: Dict[str, object]) -> str:
+        year = ref.get("yil", "?")
+        question_no = ref.get("soru_no", "?")
+        subject = format_exam_subject_label(str(ref.get("ders", "") or ""))
+
+        if family == "DHBT":
+            detail = subject.replace("DHBT ", "", 1).strip() or "Genel"
+            detail = detail.replace("Ortak (1-20) (1-20)", "Ortak (1-20)")
+            return f"{year} {detail} S{question_no}"
+        if family == "ÖABT":
+            return f"{year} DKAB S{question_no}"
+        if family == "İHL":
+            return f"{year} İHL S{question_no}"
+        return f"{year} S{question_no}"
+
+    def _show_ozet_reference_panel(self, block: Dict) -> None:
+        if not hasattr(self, "ozet_reference_text"):
+            return
+
+        heading = str(block.get("topic", "") or block.get("main_cat", "")).strip() or "Seçili Başlık"
+        grouped_refs = self._summary_question_refs_for_block(block)
+
+        lines = [f"{heading}"]
+        if not grouped_refs:
+            lines.append("Bu başlık için eşleşen yıl/soru referansı bulunamadı.")
+        else:
+            for family in SUMMARY_EXAM_FAMILY_ORDER:
+                ref_list = grouped_refs.get(family, [])
+                if not ref_list:
+                    continue
+                entries = ", ".join(self._format_summary_ref_entry(family, ref) for ref in ref_list)
+                lines.append(f"{family}: {entries}")
+
+        self.ozet_reference_text.config(state=tk.NORMAL)
+        self.ozet_reference_text.delete("1.0", tk.END)
+        self.ozet_reference_text.insert("1.0", "\n".join(lines))
+        self.ozet_reference_text.config(state=tk.DISABLED)
 
     def _should_show_summary_badges_for_block(self, block: Dict) -> bool:
         heading_text = ""
@@ -2641,6 +2731,44 @@ class ModernDKABQuiz:
         )
         badge_info_label.pack(fill=tk.X, padx=20, pady=(6, 4))
 
+        reference_card = tk.Frame(
+            ozet_card,
+            bg=self.colors['primary'],
+            highlightbackground=self.colors['border'],
+            highlightthickness=1,
+        )
+        reference_card.pack(fill=tk.X, padx=20, pady=(0, 8))
+
+        reference_title = tk.Label(
+            reference_card,
+            text="Başlığa tıkla: yıl / soru referansları burada görünür",
+            font=("Segoe UI", 9, "bold"),
+            bg=self.colors['primary'],
+            fg=self.colors['text'],
+            anchor="w",
+        )
+        reference_title.pack(fill=tk.X, padx=10, pady=(8, 4))
+
+        self.ozet_reference_text = tk.Text(
+            reference_card,
+            height=5,
+            wrap=tk.WORD,
+            font=("Segoe UI", 8),
+            bg=self.colors['primary'],
+            fg=self.colors['text_secondary'],
+            insertbackground=self.colors['text'],
+            relief=tk.FLAT,
+            bd=0,
+            padx=10,
+            pady=0,
+        )
+        self.ozet_reference_text.pack(fill=tk.X, padx=0, pady=(0, 8))
+        self.ozet_reference_text.insert(
+            "1.0",
+            "Henüz bir başlık seçilmedi. Rozetli konu satırına tıklayın; ayrıntılar seslendirmeye dahil edilmez.",
+        )
+        self.ozet_reference_text.config(state=tk.DISABLED)
+
         controls = tk.Frame(ozet_card, bg=self.colors['card'])
         controls.pack(fill=tk.X, padx=20, pady=10)
         
@@ -2731,6 +2859,26 @@ class ModernDKABQuiz:
         self.ozet_topic_data = parsed_topics
         self.ozet_parser_warnings = parser_warnings
         self._decorate_ozet_text_with_exam_badges(txt)
+        self._ozet_blocks_by_line = {
+            int(block["start_line"]): block
+            for block in self.ozet_topic_data
+            if block.get("start_line")
+        }
+
+        def show_block_references_for_line(line_number):
+            try:
+                block = self._ozet_blocks_by_line.get(int(line_number))
+            except Exception:
+                block = None
+            if block and self._should_show_summary_badges_for_block(block):
+                self._show_ozet_reference_panel(block)
+
+        def on_text_left_click(event):
+            text_index = txt.index(f"@{event.x},{event.y}")
+            line_number = text_index.split(".", 1)[0]
+            show_block_references_for_line(line_number)
+
+        txt.bind("<Button-1>", on_text_left_click, add="+")
         
         # UI Setup for Hierarchical Filter
         def format_label(name, count):
@@ -2802,6 +2950,7 @@ class ModernDKABQuiz:
                         txt.see(pos)
                         txt.tag_add("main_nav_highlight", pos, line_end)
                         txt.tag_configure("main_nav_highlight", background=self.colors['success'], foreground="white")
+                        show_block_references_for_line(pos.split(".", 1)[0])
                         break
                 pos = f"{pos}+1c"
             
@@ -2829,6 +2978,7 @@ class ModernDKABQuiz:
                     txt.see(pos)
                     txt.tag_add("nav_highlight", pos, line_end)
                     txt.tag_configure("nav_highlight", background=self.colors['accent'], foreground="white")
+                    show_block_references_for_line(pos.split(".", 1)[0])
                     break
                 pos = f"{pos}+1c"
                 
