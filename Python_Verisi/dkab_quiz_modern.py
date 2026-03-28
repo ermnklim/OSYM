@@ -1149,7 +1149,7 @@ class ModernDKABQuiz:
             question_text = self._normalize_speech_text(question.get("soru_metni", ""))
             if question_text:
                 parts.append(
-                    f"Soru {question.get('soru_no', self.current_index + 1)}. {question_text}"
+                    f"Soru {question.get('soru_no', self.current_index + 1)}: {question_text}"
                 )
 
         if include_options:
