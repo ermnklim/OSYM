@@ -13,7 +13,7 @@ E) Mezhebi görüş farklılıklarının temelini oluşturacak fikri tartışmal
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Tefsir
@@ -31,7 +31,7 @@ E) Tevil
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Tefsir
@@ -49,7 +49,7 @@ E) Gurabzade Ahmed Nasıh
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Fıkıh Usulü
@@ -67,7 +67,7 @@ E) Hükümlerin hikmetini belirlemenin kelamcının vazifesi olmasıyla
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Fıkıh
@@ -85,7 +85,7 @@ E) Caiz
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Fıkıh
@@ -103,7 +103,7 @@ E) Karz
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Hadis
@@ -121,7 +121,7 @@ E) Şerh
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Hadis
@@ -139,7 +139,7 @@ E) Mahfuz
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Hadis
@@ -157,7 +157,7 @@ E) Kettani – Nazmu'l-mutenasır
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Hadis
@@ -175,7 +175,7 @@ E) Mustahrec
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Kelam / Akaid
@@ -193,7 +193,7 @@ E) İhtira
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Kelam / Akaid
@@ -211,7 +211,7 @@ E) Tekvin – Mükevven
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Kelam / Akaid
@@ -229,7 +229,7 @@ E) Allah'ı bilmek aklen değil, naklen vaciptir.
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: İslam Tarihi
@@ -237,7 +237,7 @@ YIL: 2014
 
 Soru 34:
 Nefsü'z-zekiyye isyanıyla ilgili,
-I. Emevilere karşı gelişmiştir.
+I. Emevîlere karşı gelişmiştir.
 II. Ehl-i Beyt adına gerçekleştirilmiştir.
 III. Ebu Hanife ve İmam Malik gibi âlimler tarafından desteklenmiştir.
 IV. Ebu Cafer Mansur tarafından bastırılmıştır.
@@ -251,7 +251,7 @@ E) II, III ve IV
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: İslam Tarihi
@@ -264,12 +264,12 @@ Aşağıdakilerden hangisi bu devletler arasında yer almaz?
 A) Gazneliler
 B) Selçuklular
 C) Karahanlılar
-D) Tahiriler
+D) Tahir'iler
 E) Büveyhiler
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Dinler Tarihi
@@ -290,7 +290,7 @@ E) Hanuka
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Mezhepler Tarihi
@@ -308,7 +308,7 @@ E) Mürcie
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Mezhepler Tarihi
@@ -322,11 +322,11 @@ A) Ashabu'l-hadis – Haşviye
 B) Ehlü'ş-şurat – Havaric
 C) İmamiye – Rafıza
 D) Mürcie – Şükkak
-E) İsmailiye – Fatimiye
+E) İsmailiye – Fatımiye
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Din Hizmetleri ve Hitabet
@@ -349,7 +349,7 @@ E) I, III ve IV
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Din Hizmetleri ve Hitabet

@@ -13,7 +13,7 @@ E) Yemin kefareti orucu
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Fıkıh
@@ -35,7 +35,7 @@ E) II, III ve IV
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Fıkıh
@@ -54,7 +54,7 @@ E) Evliliğin geçerli olduğunu ancak Şeyma'nın mehir alamayacağını
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Fıkıh
@@ -73,7 +73,7 @@ E) Tedip
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Fıkıh Usulü
@@ -92,7 +92,7 @@ E) Nasih olan nassın, mensuhun seviyesinde veya daha üstün olması
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Tefsir
@@ -109,7 +109,7 @@ E) Kültürel etkileşimlerle yabancı kelimelerin Arapça'ya girmesi
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Tefsir
@@ -128,7 +128,7 @@ E) Kasasü'l-Kur'an
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Hadis
@@ -152,7 +152,7 @@ E) I, II ve IV
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Hadis
@@ -171,7 +171,7 @@ E) Tahammülü'l-hadis ilmine
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Hadis
@@ -190,7 +190,7 @@ E) Cabir b. Abdullah
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Kelam / Akaid
@@ -210,7 +210,7 @@ E) Ahlak
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Kelam / Akaid
@@ -231,7 +231,7 @@ E) II ve III
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Mezhepler Tarihi
@@ -250,7 +250,7 @@ E) Bahailik
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Kelam / Akaid
@@ -269,7 +269,7 @@ E) Cebriyye
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Siyer
@@ -290,7 +290,7 @@ E) Vedd
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Siyer
@@ -312,24 +312,24 @@ E) Hicabe      rifade    sikaye
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Mezhepler Tarihi
 YIL: 2020
 
 Soru 37:
-Zeyd b. Ali'nin Emevi yönetimine karşı başlattığı isyan hareketinin öncesinde taraftarlarından bazılarının kendisini terk etmelerine ve bu nedenle Zeyd tarafından rafizi olarak isimlendirilmelerine sebep olan konu aşağıdakilerden hangisidir?
+Zeyd b. Ali'nin Emevî yönetimine karşı başlattığı isyan hareketinin öncesinde taraftarlarından bazılarının kendisini terk etmelerine ve bu nedenle Zeyd tarafından rafızi olarak isimlendirilmelerine sebep olan konu aşağıdakilerden hangisidir?
 
 A) Hz. Ali'nin tahkimi kabul ederek küfre girip girmediği
-B) Emevi iktidarına isyan etmenin gerekliliği
+B) Emevî iktidarına isyan etmenin gerekliliği
 C) Hz. Osman'ın uygulamalarının doğruluğu
 D) Büyük günah işleyen kişinin durumu
 E) Hz. Ebu Bekir ve Hz. Ömer'in hilafetlerinin meşruiyeti
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Mezhepler Tarihi
@@ -348,7 +348,7 @@ E) Beyhesiyye
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Din Hizmetleri ve Hitabet
@@ -367,7 +367,7 @@ E) Darbımesel
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Dinler Tarihi

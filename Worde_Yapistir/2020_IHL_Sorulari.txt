@@ -7,7 +7,7 @@ KONU: Kur'an-ı Kerim ve Tecvid
 Kur'an-ı Kerim'de;
 • Huneyn Savaşı'nın nasıl gerçekleştiğinden bahseden,
 • Tebük Seferi'nin hazırlıkları ve münafıkların bu sefer esnasındaki tutumlarını anlatan,
-• Kuba Mescidi'nin karşısına yaptırılan Mescid-i Dırar'a değinen
+• Küba Mescidi'nin karşısına yaptırılan Mescid-i Dırar'a değinen
 sure aşağıdakilerden hangisidir?
 
 A) Tevbe
@@ -88,7 +88,7 @@ KONU: Tefsir
 
 Aşağıdakilerden hangisi bu parçada bahsedilen tefsirlere örnektir?
 
-A) İbn Kesir'in Tefsirü'l-Kur'an'il-Azim'i
+A) İbn Kesir'in Tefsirü'l-Kur'an'ıl-Azim'i
 B) Reşid Rıza'nın Tefsirü'l-Menar'ı
 C) Taberi'nin Camiu'l-Beyan'ı
 D) Ebu's-Suud'un İrşadü'l-Akl's-Selim'i
@@ -105,7 +105,7 @@ Hz. Muhammed'in vefatından sonra sahabelerin bir kısmı Medine'den ayrılarak 
 Bu parçada bahsedilen şehir aşağıdakilerden hangisidir?
 
 A) Basra
-B) Kufe
+B) Küfe
 C) Şam
 D) Bağdat
 E) Mekke
@@ -212,7 +212,7 @@ Doğru Cevap: D
 
 Soru 14:
 KONU: Hadis
-Emevi yöneticilerinden Ömer b. Abdülaziz, birçok hadis âliminin vefatı üzerine hadislerin kaybolacağından endişelenmiştir. Bu sebeple valilere ve ülkedeki hadis âlimlerine mektuplar göndererek hadislerin toplanmasını emretmiş ve hadis konusundaki yetkinliğiyle bilinen bir âlimi de bu işin başına getirmiştir. Bundan dolayı genel bir kabul olarak resmî tedvin dönemi bu âlim ile başlatılır.
+Emevî yöneticilerinden Ömer b. Abdülaziz, birçok hadis âliminin vefatı üzerine hadislerin kaybolacağından endişelenmiştir. Bu sebeple valilere ve ülkedeki hadis âlimlerine mektuplar göndererek hadislerin toplanmasını emretmiş ve hadis konusundaki yetkinliğiyle bilinen bir âlimi de bu işin başına getirmiştir. Bundan dolayı genel bir kabul olarak resmî tedvin dönemi bu âlim ile başlatılır.
 
 Bu parçada bahsedilen âlim aşağıdakilerden hangisidir?
 
@@ -248,7 +248,7 @@ Doğru Cevap: B
 
 Soru 16:
 KONU: Hadis
-Bir hadis, Hammad b. Seleme→ Eyyub→ Muhammed b. Sirin→ Ebu Hureyre→Resulullah şeklindeki bir isnadla rivayet edilmektedir. Önceleri Hammad b. Seleme'nin bu hadisi rivayette tek kaldığı zannedilmiş ancak yapılan araştırma neticesinde aynı rivayetin -senedde yer alan Muhammed b. Sirin'den- Eyyub dışında başka bir ravi tarafından da rivayet edildiği tespit edilmiştir.
+Bir hadis, Hammad b. Seleme→ Eyyûb→ Muhammed b. Şirin→ Ebu Hüreyre→Resulullah şeklindeki bir isnadla rivayet edilmektedir. Önceleri Hammad b. Seleme'nin bu hadisi rivayette tek kaldığı zannedilmiş ancak yapılan araştırma neticesinde aynı rivayetin -senedde yer alan Muhammed b. Şirin'den- Eyyûb dışında başka bir ravi tarafından da rivayet edildiği tespit edilmiştir.
 
 Bu durumda sonradan tespit edilen rivayete verilen isim aşağıdakilerden hangisidir?
 
@@ -411,7 +411,7 @@ E) Mesalih-i mürsele
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 26:
 KONU: Fıkıh
@@ -427,7 +427,7 @@ E) Sedd-i zerai
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 27:
 KONU: Kelam / Akaid
@@ -443,7 +443,7 @@ E) Temanü
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 28:
 KONU: Kelam / Akaid
@@ -459,7 +459,7 @@ E) İnikas-ı edille
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 29:
 KONU: Kelam / Akaid
@@ -479,7 +479,7 @@ E) I, II ve III
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 30:
 KONU: Kelam / Akaid
@@ -495,7 +495,7 @@ E) İhanet
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 31:
 KONU: Kelam / Akaid
@@ -518,7 +518,7 @@ E) I, III ve IV
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 32:
 KONU: İslam Mezhepleri ve Akımları
@@ -538,7 +538,7 @@ E) I, II ve III
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 33:
 KONU: Kelam / Akaid
@@ -558,7 +558,7 @@ E) Cüveyni
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 34:
 KONU: İslam Mezhepleri ve Akımları
@@ -579,7 +579,7 @@ E) II ve IV
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 35:
 KONU: İslam Mezhepleri ve Akımları
@@ -593,7 +593,7 @@ E) Nefsiyye
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 36:
 KONU: İslam Mezhepleri ve Akımları
@@ -614,7 +614,7 @@ E) I, III ve IV
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 37:
 KONU: İslam Mezhepleri ve Akımları
@@ -635,7 +635,7 @@ E) II, III ve IV
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 38:
 KONU: İslam Tarihi / Siyer
@@ -651,7 +651,7 @@ E) Beni Müstalik
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 39:
 KONU: İslam Tarihi / Siyer
@@ -667,7 +667,7 @@ E) Mekke’nin Fethi
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 40:
 KONU: İslam Tarihi / Siyer
@@ -687,7 +687,7 @@ E) Himyerliler
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 41:
 KONU: İslam Tarihi / Siyer
@@ -701,7 +701,7 @@ E) Hz. Muhammed’e ilk vahyin burada gelmesi
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 42:
 KONU: İslam Tarihi / Siyer
@@ -722,7 +722,7 @@ E) I - III - IV - II
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 43:
 KONU: İslam Tarihi / Siyer
@@ -742,7 +742,7 @@ E) Zeyd b. Sabit
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 44:
 KONU: İslam Tarihi / Siyer
@@ -756,13 +756,13 @@ Abbasiler Dönemi'ndeki yerleşim birimleri arasında;
 
 A) Samerra
 B) Basra
-C) Kufe
+C) Küfe
 D) Bağdat
 E) Şam
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 45:
 KONU: İslam Kültür ve Medeniyeti
@@ -778,7 +778,7 @@ E) Nefes
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 46:
 KONU: İslam Tarihi / Siyer
@@ -787,17 +787,17 @@ KONU: İslam Tarihi / Siyer
 A) Şehirlerin güvenliğinden sorumlu en üst yöneticidir.
 B) Halife ile halk arasındaki bağlantıyı kuran görevlidir.
 C) Elçilerin halifeyle görüşmelerini ayarlamıştır.
-D) İslam tarihinde ilk kez Emeviler Dönemi'nde ihdas edilmiştir.
+D) İslam tarihinde ilk kez Emevîler Dönemi'nde ihdas edilmiştir.
 E) Bazı İslam devletlerinde "sahibu'l-bab" olarak isimlendirilmiştir.
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 47:
 KONU: İslam Kültür ve Medeniyeti
 Aşağıdaki fotoğrafta içten kubbe, dıştan piramidal çatı ile örtülü çift katlı bir mezar anıtı yer alır.
-[RESIM: Gorseller/2020 ihl/2020_Soru_47.png]
+[RESİM: Görseller/2020 ihl/2020_Soru_47.png]
 Bu yapı formu aşağıdakilerden hangisidir?
 
 A) Bedesten
@@ -808,7 +808,7 @@ E) Tekke
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 48:
 KONU: İslam Kültür ve Medeniyeti
@@ -828,7 +828,7 @@ E) Sikaye
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 49:
 KONU: İslam Felsefesi
@@ -844,7 +844,7 @@ E) Akıl yetisiyle hakikat bilgisine ulaşılamayacağını düşünürler.
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 50:
 KONU: İslam Felsefesi
@@ -865,7 +865,7 @@ E) İbn Tufeyl
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 51:
 KONU: Din Felsefesi
@@ -881,7 +881,7 @@ E) Tamamen kişisel ve şahsa özel bir yapıda olması
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 52:
 KONU: Din Felsefesi
@@ -889,7 +889,7 @@ KONU: Din Felsefesi
 
 Parçaya göre bu yaklaşım hangi anlayışa eleştiri olarak öne sürülebilir?
 
-A) Spiritualizm
+A) Spiritüalizm
 B) Agnostisizm
 C) Darvinizm
 D) Pozitivizm
@@ -897,7 +897,7 @@ E) Deizm
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 53:
 KONU: Din Sosyolojisi
@@ -911,14 +911,14 @@ Din sosyolojisi alanında ilk çalışma yapan düşünürlerin birçoğu, dinin
 Buna göre aşağıdakilerden hangisi hakkında bilgi verilmemiştir?
 
 A) Animizm
-B) Naturizm
+B) Natürizm
 C) Totemizm
 D) Evrimci
 E) Atalar kültü
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 54:
 KONU: Din Sosyolojisi
@@ -934,7 +934,7 @@ E) Sivil din
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 55:
 KONU: Din Psikolojisi
@@ -950,7 +950,7 @@ E) Erich Fromm
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 56:
 KONU: Din Psikolojisi
@@ -966,7 +966,7 @@ E) Önemli olan Tanrı’nın varlığı değil bireyin inandığı Tanrı fikri
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 57:
 KONU: Din Eğitimi
@@ -975,14 +975,14 @@ Osmanlı Dönemi'nde okula yeni başlayan çocuklar için genellikle pazartesi v
 Bu tören aşağıdakilerden hangisiyle isimlendirilir?
 
 A) Cer
-B) Surre alayı
+B) Sürre alayı
 C) Tetimme
 D) Alay-ı hümayun
 E) Âmin alayı
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 58:
 KONU: Din Eğitimi
@@ -1003,7 +1003,7 @@ E)        Muallim     Müeddib      Muid
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 59:
 KONU: Dinler Tarihi
@@ -1023,7 +1023,7 @@ E) Evharistiya
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 60:
 KONU: Dinler Tarihi
@@ -1039,7 +1039,7 @@ E) Sihizm
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 61:
 KONU: Din Eğitimi
@@ -1060,7 +1060,7 @@ E) Hazırbulunuşluklarını tespit etme
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 62:
 KONU: Din Eğitimi
@@ -1076,7 +1076,7 @@ E) Somuttan soyuta - Bütünlük
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 63:
 KONU: Din Eğitimi
@@ -1094,7 +1094,7 @@ E) Tam öğrenme modeli
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 64:
 KONU: Din Eğitimi
@@ -1120,7 +1120,7 @@ E)        Alan bilgisi     Pedagojik      Genel kültür
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 65:
 KONU: Din Eğitimi
@@ -1141,7 +1141,7 @@ E) III ve IV
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 66:
 KONU: Din Eğitimi
@@ -1162,7 +1162,7 @@ E)      Sınıflama     Sıralama      Eşit oranlı
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 67:
 KONU: Din Eğitimi
@@ -1178,7 +1178,7 @@ E) Aktif öğrenme
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 68:
 KONU: Din Eğitimi
@@ -1192,7 +1192,7 @@ E) Sosyal hayatta kişiyi ilgilendiren meselelere duyarlı olması
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 69:
 KONU: Din Eğitimi
@@ -1208,7 +1208,7 @@ E) İbadetlerin, bireyin ahlaki gelişimi üzerindeki etkisini yorumlar.
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 70:
 KONU: Din Eğitimi
@@ -1229,7 +1229,7 @@ E)             Sıra/sütun oturma      U tipi                  Küme
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 71:
 KONU: Din Eğitimi
@@ -1250,7 +1250,7 @@ E) I, III ve IV
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 72:
 KONU: Din Eğitimi
@@ -1271,7 +1271,7 @@ E)      Olumlu pekiştireç    İkinci tip ceza      Olumsuz pekiştireç
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 73:
 KONU: Din Eğitimi
@@ -1292,7 +1292,7 @@ E) Ön yargı
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 74:
 KONU: Din Eğitimi
@@ -1308,7 +1308,7 @@ E) Bilişsel - Değerlendirme
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 Soru 75:
 KONU: Din Eğitimi

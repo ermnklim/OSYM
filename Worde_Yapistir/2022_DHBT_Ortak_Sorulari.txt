@@ -15,7 +15,7 @@ E) Teşri
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kelam / Akaid
@@ -34,7 +34,7 @@ E) İrade
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kelam / Akaid
@@ -53,7 +53,7 @@ E) Akaid
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Fıkıh
@@ -76,7 +76,7 @@ E) II, III ve IV
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Fıkıh
@@ -98,7 +98,7 @@ E) I ve III
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Fıkıh
@@ -115,7 +115,7 @@ E) Kan bağışında bulunma
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Fıkıh
@@ -132,7 +132,7 @@ E) Nisab
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Siyer
@@ -151,7 +151,7 @@ E) Fil
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: İslam Tarihi
@@ -170,7 +170,7 @@ E) İdari ve siyasi meselelere kayıtsız kalması
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -193,7 +193,7 @@ E) I, III ve IV
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -215,7 +215,7 @@ E) ص ve ز
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -234,7 +234,7 @@ E) Gençleri muhatap alması
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Siyer
@@ -253,7 +253,7 @@ E) İkliminin Mekke ile benzerlik göstermesi
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Siyer
@@ -272,7 +272,7 @@ E) Hz. Muhammed'in koyduğu hükümlerin Müslümanlar için bağlayıcı olduğ
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Siyer
@@ -291,7 +291,7 @@ E) Ekonomik imtiyazlarını kaybetme kaygıları
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Siyer
@@ -310,7 +310,7 @@ E) Çocuklara hayvan bakımı ve savaş aletlerinin kullanımı konusunda tecrü
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Siyer
@@ -327,7 +327,7 @@ E) Hayber
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: İslam Ahlakı ve Tasavvuf
@@ -346,7 +346,7 @@ E) Toplumda kötü davranışlar sergileyen insanlara ne tür yaptırımlar uygu
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: İslam Ahlakı ve Tasavvuf
@@ -365,7 +365,7 @@ E) Dünya ve ahiret arasında kesin bir ayrım olduğuna
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: İslam Ahlakı ve Tasavvuf

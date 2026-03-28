@@ -15,7 +15,7 @@ E) م
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -33,7 +33,7 @@ E) Meal-gunne
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -51,7 +51,7 @@ E) Karia
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -74,7 +74,7 @@ E) İftira
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -92,7 +92,7 @@ E) İstinsahü'l-Kur'an
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -110,7 +110,7 @@ E) Ashab-ı Sair
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -128,13 +128,13 @@ E) Gusül abdestinin nasıl alınacağı
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
 YIL: 2023
 Soru 8:
-Hz. Muhammed'in vefatından sonra tefsir çalışmaları belirli bölgelerde yoğunlaşmıştır. Bu bölgelerin başında Mekke, Medine ve Kufe (Irak) şehirleri bulunmaktadır. Bu şehirlerde bazı sahabeler tefsirin gelişmesine öncülük etmiştir.
+Hz. Muhammed'in vefatından sonra tefsir çalışmaları belirli bölgelerde yoğunlaşmıştır. Bu bölgelerin başında Mekke, Medine ve Küfe (Irak) şehirleri bulunmaktadır. Bu şehirlerde bazı sahabeler tefsirin gelişmesine öncülük etmiştir.
 
 Bu sahabeler aşağıdakilerin hangisinde sırasıyla verilmiştir?
 
@@ -146,7 +146,7 @@ E) Abdullah b. Mesud – İkrime – Mücahid
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -167,7 +167,7 @@ E) I, II ve III
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -189,7 +189,7 @@ E) I ve IV
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -211,7 +211,7 @@ E) Nesefî'nin Medârikü't-Tenzîl'i
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -229,7 +229,7 @@ E) Aksamü'l-Kur'an
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -247,7 +247,7 @@ E) Kasasü'l-Kur'an
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kelam / Akaid
@@ -263,7 +263,7 @@ E) Zeyd b. Ali İsyanı
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kelam / Akaid
@@ -279,7 +279,7 @@ E) Abdülkahir el-Bağdadi
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kelam / Akaid
@@ -295,7 +295,7 @@ E) Tahkîkî
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kelam / Akaid
@@ -307,11 +307,11 @@ A) "Eğer Allah dileseydi ne biz ne de babalarımız O'na ortak koşardık." (En
 B) "Eğer dedikleri gibi, Allah'la beraber başka tanrılar da bulunsaydı, o takdirde bu ilahlar arşın sahibi olmaya yol ararlardı." (İsra, 17:42)
 C) "Andolsun, eğer onlara, 'Gökleri ve yeri kim yarattı, güneşi ve ayı hizmetinize kim verdi?' diye soracak olsan mutlaka, 'Allah' diyeceklerdir." (Ankebut, 29:61)
 D) "O, yeryüzünde olanların hepsini sizin için yaratan, sonra göğe yönelip onları yedi gök hâlinde düzenleyendir." (Bakara, 2:19)
-E) "Acaba onlar herhangi bir yaratıcı olmadan mı yaratıldılar? Yoksa kendileri mi yaratıcıdırlar?" (Tur, 52:35)
+E) "Acaba onlar herhangi bir yaratıcı olmadan mı yaratıldılar? Yoksa kendileri mi yaratıcıdırlar?" (Tür, 52:35)
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kelam / Akaid
@@ -319,7 +319,7 @@ YIL: 2023
 Soru 18:
 Hristiyanlık tarihinde Hz. İsa'nın mahiyeti ile ilgili ciddi tartışmalar yaşanmıştır. Bu tartışmalardan biri de Tanrı'nın kelimesi olarak nitelenen Hz. İsa'nın Tanrı ile aynı özden mi yoksa yaratılmış mı olduğu meselesidir. Bu meselede Hristiyanların çoğunluğu Hz. İsa'nın tanrısal cevhere sahip, dolayısıyla ezelî olduğunu savunurken bir kısmı ise onun yaratılmış olduğunu kabul eder.
 
-Bu parçada bahsedilen konu aşağıdaki kelami tartışmalardan hangisiyle benzerlik arz etmektedir?
+Bu parçada bahsedilen konu aşağıdaki kelamı tartışmalardan hangisiyle benzerlik arz etmektedir?
 
 A) Rüyetullah
 B) İstitaat
@@ -329,7 +329,7 @@ E) İmamet
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Mezhepleri ve Akımları
@@ -347,7 +347,7 @@ E) Görüşleriyle yönetimi etkileyerek mihne dönemine zemin hazırlamıştır
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Mezhepleri ve Akımları
@@ -369,7 +369,7 @@ D) I ve III
 E) II ve III
 
 Doğru Cevap: E
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Mezhepleri ve Akımları
@@ -387,7 +387,7 @@ E) Ortaya çıkışı siyasi olmakla birlikte ekol, zamanla itikadî bir gruba d
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -406,7 +406,7 @@ E)    Arafat              Mina
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -424,7 +424,7 @@ E) Muamelat
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh Usulü
@@ -442,7 +442,7 @@ E) Müteaddi olması
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -460,7 +460,7 @@ E) Bir şeyin bulunduğu hâl üzere kalması asıldır.
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh Usulü
@@ -478,7 +478,7 @@ E) Önceki şeriatlar
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -496,7 +496,7 @@ E) Karz
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -520,7 +520,7 @@ E) İcare
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -538,7 +538,7 @@ E) Adanan şey, adayan kişinin o anda veya daha sonra yapması gereken farz vey
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -556,7 +556,7 @@ E) Misli mal olduğundan tazmini gerekir.
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -576,7 +576,7 @@ E) II ve III
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -594,7 +594,7 @@ E) Radâ'
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -613,7 +613,7 @@ E) Vasiyet        borçlar             miras paylaşımı
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -631,7 +631,7 @@ E) Ashabü'l-feraiz
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -649,7 +649,7 @@ E) İne
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -670,7 +670,7 @@ E) Ayşe, Burcu ve Cemre
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -694,7 +694,7 @@ E) III ve IV
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -712,7 +712,7 @@ E) Hayız hâli sebebiyle, sa'y yapmadan ibadetini tamamlar.
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -733,7 +733,7 @@ E) III ve IV
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -750,7 +750,7 @@ D) Hasan'ın da Hüseyin'in de sadece namazı bozulmuştur.
 E) Hasan'ın abdesti; Hüseyin'in namazı bozulmuştur.
 
 Doğru Cevap: C
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -768,7 +768,7 @@ E) Kâbe'yi tavaf etmek
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -786,7 +786,7 @@ E) Ferd olduğu sanılan hadislerin meşhur veya mütevatir olduğunu göstermek
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -804,7 +804,7 @@ E) Müstedrek
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -822,7 +822,7 @@ E) Müstedrek
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -842,7 +842,7 @@ E) II ve III
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -861,7 +861,7 @@ E) II ve III
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -879,7 +879,7 @@ E) Münker
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -897,7 +897,7 @@ E) Rivayetin nazil bir isnada sahip olması
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Tarihi / Siyer
@@ -915,13 +915,13 @@ E) Tedmürlüler
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Tarihi / Siyer
 YIL: 2023
 Soru 50:
-Aşağıdakilerden hangisi risaletin Medine dönemi hadiseleri arasında yer alır?
+Aşağıdakilerden hangisi risalet'in Medine dönemi hadiseleri arasında yer alır?
 
 A) İsra hadisesinin vuku bulması
 B) Akabe biatlarının gerçekleşmesi
@@ -931,7 +931,7 @@ E) Hz. Hatice ve Ebu Talib'in ölümü
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Tarihi / Siyer
@@ -947,7 +947,7 @@ E) Hz. Ali'nin zaferde önemli bir katkısı olmuştur.
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Tarihi / Siyer
@@ -965,7 +965,7 @@ E) Beni Kaynuka kabilesine verilecek cezanın tespit edilmesi
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Tarihi / Siyer
@@ -981,13 +981,13 @@ E) Uman
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Tarihi / Siyer
 YIL: 2023
 Soru 54:
-Emeviler, yönetimlerinin son yıllarında iktidarlarını küçük ve seçkin bir azınlığa dayandırmış ve birbirinden farklı pek çok kesimin tepkisini çekmişlerdi. Bundan dolayı Emeviler'in yıkılarak Abbasiler'in iktidara gelmesi İslam devleti içerisinde yaşayan bazı kesimler tarafından olumlu karşılanmıştı. Bunlar arasında özellikle yönetimde söz sahibi olan bir grup, Abbasi hâkimiyetinden oldukça memnun olmuştu.
+Emevîler, yönetimlerinin son yıllarında iktidarlarını küçük ve seçkin bir azınlığa dayandırmış ve birbirinden farklı pek çok kesimin tepkisini çekmişlerdi. Bundan dolayı Emevîler'in yıkılarak Abbasiler'in iktidara gelmesi İslam devleti içerisinde yaşayan bazı kesimler tarafından olumlu karşılanmıştı. Bunlar arasında özellikle yönetimde söz sahibi olan bir grup, Abbasi hâkimiyetinden oldukça memnun olmuştu.
 
 Bu parçada bahsedilen grup aşağıdakilerden hangisidir?
 
@@ -999,7 +999,7 @@ E) Zimmî
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Tarihi / Siyer
@@ -1021,7 +1021,7 @@ E) I, II ve IV
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Dinler Tarihi
@@ -1043,7 +1043,7 @@ E) II ve IV
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Mezhepleri ve Akımları
@@ -1059,7 +1059,7 @@ E) Büyük günah işleyip tövbe etmeyenler ebedî olarak cehennemde kalacaklar
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Mezhepleri ve Akımları
@@ -1077,7 +1077,7 @@ E) Horasan – Mekke
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Dinler Tarihi
@@ -1095,7 +1095,7 @@ E) Mormonlar
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Dinler Tarihi

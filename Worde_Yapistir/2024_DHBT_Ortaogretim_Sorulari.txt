@@ -15,7 +15,7 @@ E) Cuma namazında cemaat oluşturacak kişi sayısı
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortaöğretim
 KONU: Fıkıh
@@ -34,7 +34,7 @@ E) Mübah
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortaöğretim
 KONU: Fıkıh
@@ -53,7 +53,7 @@ E) İstihsan
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortaöğretim
 KONU: Tefsir
@@ -72,7 +72,7 @@ E) Übey b. Ka'b
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortaöğretim
 KONU: Tefsir
@@ -93,7 +93,7 @@ E) İlmî
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortaöğretim
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -112,7 +112,7 @@ E) Nasih ve mensuh
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortaöğretim
 KONU: Hadis
@@ -131,7 +131,7 @@ E) Mürsel
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortaöğretim
 KONU: Hadis
@@ -150,7 +150,7 @@ E) Fıkhü'l-hadis
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortaöğretim
 KONU: Hadis
@@ -172,7 +172,7 @@ E) I, III ve IV
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortaöğretim
 KONU: Kelam / Akaid
@@ -190,7 +190,7 @@ D) Kadim problemlere karşı takınılan tavrın korunmasına
 E) Felsefi problemlerin tartışılmaya başlanmasına
 
 Doğru Cevap: A
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortaöğretim
 KONU: Kelam / Akaid
@@ -209,7 +209,7 @@ E) Allah'ın ezelî ilminin tartışmaya açılması
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortaöğretim
 KONU: Kelam / Akaid
@@ -233,7 +233,7 @@ E) II ve III
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortaöğretim
 KONU: İslam Tarihi
@@ -252,7 +252,7 @@ E) Mürtedlere karşı nasıl bir politikanın izlenmesi gerektiği
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortaöğretim
 KONU: İslam Tarihi
@@ -262,9 +262,9 @@ Soru 14:
 Aşağıdaki haritada bazı yerler numaralandırılarak gösterilmiştir.
 
 Görsel Notu: Haritayı inceleyiniz.
-Dosya: 2024_DHBT_Ortaogretim_Soru_14_Harita.png
+Dosya: 2024_DHBT_Ortaöğretim_Soru_14_Harita.png
 
-Bu yerlerden hangisi Emeviler Dönemi'nde fethedilmiştir?
+Bu yerlerden hangisi Emevîler Dönemi'nde fethedilmiştir?
 
 A) I
 B) II
@@ -274,7 +274,7 @@ E) V
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortaöğretim
 KONU: İslam Tarihi
@@ -293,7 +293,7 @@ E) Manevi ilerlemenin zekât ibadetiyle sağlanacağı
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortaöğretim
 KONU: Mezhepler Tarihi
@@ -315,14 +315,14 @@ E) Dürzilik
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortaöğretim
 KONU: Mezhepler Tarihi
 YIL: 2024
 
 Soru 17:
-Emeviler Arap olmayan Müslümanları, Arap Müslümanlardan aşağı görmüş ve onları idari ve askerî görevlerden uzak tutmuşlardır. Bundan dolayı mevali olarak adlandırılan bu grup daha çok ilmî faaliyetlere yönelmiştir. Farklı kültürel ve etnik arkaplana sahip olmalarının da etkisiyle bu kişiler arasından Allah'ın adaletine, akla ve insanın özgürlüğüne özel bir önem veren ve Kur'an'ın yaratılmış olduğunu savunan itikadi bir mezhep ortaya çıkmıştır.
+Emevîler Arap olmayan Müslümanları, Arap Müslümanlardan aşağı görmüş ve onları idari ve askerî görevlerden uzak tutmuşlardır. Bundan dolayı mevali olarak adlandırılan bu grup daha çok ilmî faaliyetlere yönelmiştir. Farklı kültürel ve etnik arkaplana sahip olmalarının da etkisiyle bu kişiler arasından Allah'ın adaletine, akla ve insanın özgürlüğüne özel bir önem veren ve Kur'an'ın yaratılmış olduğunu savunan itikadi bir mezhep ortaya çıkmıştır.
 
 Bu mezhep aşağıdakilerden hangisidir?
 
@@ -334,7 +334,7 @@ E) Selefiyye
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortaöğretim
 KONU: Dinler Tarihi
@@ -355,7 +355,7 @@ E) Karma           mana
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortaöğretim
 KONU: Dinler Tarihi
@@ -378,7 +378,7 @@ E) Konfüçyanizm
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortaöğretim
 KONU: Din Hizmetleri ve Hitabet

@@ -50,7 +50,7 @@ Doğru Cevap: E
 Görsel Notu:
 Bu soruda Arapça sure metni görseli var.
 Dosya: 2020_Soru_03.png
-Konum: C:\Users\osman\Desktop\OSYM\Gorseller\2020\2020_Soru_03.png
+Konum: C:\Users\osman\Desktop\OSYM\Görseller\2020\2020_Soru_03.png
 
 ---SONRAKİ SORU---
 
@@ -162,7 +162,7 @@ Doğru Cevap: D
 
 Soru 11:
 KONU: Hadis
-Sahabeler içerisinde binden fazla hadis rivayet edenler bulunmaktadır. "Muksirun" olarak isimlendirilen bu kişiler, Suyuti'nin verdiği bilgiye göre Hz. Aişe, Ebu Hureyre, Abdullah b. Ömer, Enes b. Malik, Abdullah b. Abbas, Cabir b. Abdullah ve Ebu Said el-Hudri olmak üzere toplam yedi kişidir. Ancak bu kişilere göre çok daha erken tarihlerde İslam'a girmelerine ve Hz. Muhammed ile görüşme imkânına sahip olmalarına rağmen, muksiruna girememiş pek çok sahabe bulunmaktadır. Aşağıdakilerden hangisi bu durumun sebepleri arasında gösterilemez?
+Sahabeler içerisinde binden fazla hadis rivayet edenler bulunmaktadır. "Muksirun" olarak isimlendirilen bu kişiler, Suyuti'nin verdiği bilgiye göre Hz. Aişe, Ebu Hüreyre, Abdullah b. Ömer, Enes b. Malik, Abdullah b. Abbas, Cabir b. Abdullah ve Ebu Said el-Hudri olmak üzere toplam yedi kişidir. Ancak bu kişilere göre çok daha erken tarihlerde İslam'a girmelerine ve Hz. Muhammed ile görüşme imkânına sahip olmalarına rağmen, muksiruna girememiş pek çok sahabe bulunmaktadır. Aşağıdakilerden hangisi bu durumun sebepleri arasında gösterilemez?
 
 A) Yönetim ve idare işleri ile meşgul olmaları
 B) Hadis nakletme imkânı bulunan yerlerden uzakta yaşamaları
@@ -176,7 +176,7 @@ Doğru Cevap: E
 
 Soru 12:
 KONU: Hadis
-Ebu Hureyre, "Ölüyü yıkayan, boy abdesti; cenazeyi taşıyan ise abdest alsın." sözünü Hz. Muhammed'e isnad ederek aktarmıştır. Bu sözü Abdullah b. Abbas işittiğinde "Kuru odunu taşımaktan dolayı neden bize abdest gereksin?" diyerek itiraz etmiştir. Hz. Aişe de Ebu Hureyre'nin bu rivayetine "Müslümanların ölüsü pis midir, bir odunu taşıyan kimseye ne lazım gelir?" diyerek karşı çıkmıştır. Her iki sahabe de bu sözün bu hâli ile Hz. Muhammed'e nispet edilmesine karşı çıkmışlardır. Bu parçada merkeze alınan metin tenkit yöntemi aşağıdakilerden hangisidir?
+Ebu Hüreyre, "Ölüyü yıkayan, boy abdesti; cenazeyi taşıyan ise abdest alsın." sözünü Hz. Muhammed'e isnad ederek aktarmıştır. Bu sözü Abdullah b. Abbas işittiğinde "Kuru odunu taşımaktan dolayı neden bize abdest gereksin?" diyerek itiraz etmiştir. Hz. Aişe de Ebu Hüreyre'nin bu rivayetine "Müslümanların ölüsü pis midir, bir odunu taşıyan kimseye ne lazım gelir?" diyerek karşı çıkmıştır. Her iki sahabe de bu sözün bu hâli ile Hz. Muhammed'e nispet edilmesine karşı çıkmışlardır. Bu parçada merkeze alınan metin tenkit yöntemi aşağıdakilerden hangisidir?
 
 A) Kur'an'ın genel esaslarına aykırılık
 B) Tarihî verilere aykırılık
@@ -203,7 +203,7 @@ Doğru Cevap: C
 Görsel Notu:
 Bu soruda isnat şeması görseli var.
 Dosya: 2020_Soru_13.png
-Konum: C:\Users\osman\Desktop\OSYM\Gorseller\2020\2020_Soru_13.png
+Konum: C:\Users\osman\Desktop\OSYM\Görseller\2020\2020_Soru_13.png
 
 ---SONRAKİ SORU---
 
@@ -295,7 +295,7 @@ KONU: Fıkıh
 
 A) Selem
 B) Sarf
-C) Harac
+C) Haraç
 D) İhtikar
 E) Narh
 
@@ -305,7 +305,7 @@ Doğru Cevap: E
 
 Soru 20:
 KONU: Fıkıh
-İslam hukuku öğretim üyesi Ahmet Bey, dersinde içtihat hakkında şu açıklamayı yapmıştır: "İslam hukukunun büyük bir kısmı içtihat kaynaklıdır. İçtihat; konulmuş olan hükümleri anlamayı ve açıklamayı ifade eder. Öyle ki kıyas, istihsan ve istislah gibi içtihat metotları, hükmü ilkten koyan değil, naslarda potansiyel olarak var olduğu düşünülen hükümleri açığa çıkaran mekanizmalar şeklinde değerlendirilmişlerdir. İçtihat yoluyla değişen şartlara uygun olarak hükümlerin ortaya konması mümkün olmakta bununla birlikte çoğunlukla zanni olması nedeniyle müçtehitler değişik sonuçlara ulaşabilmektedir." Ahmet Bey'in bu ifadelerinden aşağıdaki yargıların hangisine ulaşılamaz?
+İslam hukuku öğretim üyesi Ahmet Bey, dersinde içtihat hakkında şu açıklamayı yapmıştır: "İslam hukukunun büyük bir kısmı içtihat kaynaklıdır. İçtihat; konulmuş olan hükümleri anlamayı ve açıklamayı ifade eder. Öyle ki kıyas, istihsan ve istislah gibi içtihat metotları, hükmü ilkten koyan değil, naslarda potansiyel olarak var olduğu düşünülen hükümleri açığa çıkaran mekanizmalar şeklinde değerlendirilmişlerdir. İçtihat yoluyla değişen şartlara uygun olarak hükümlerin ortaya konması mümkün olmakta bununla birlikte çoğunlukla zannı olması nedeniyle müçtehitler değişik sonuçlara ulaşabilmektedir." Ahmet Bey'in bu ifadelerinden aşağıdaki yargıların hangisine ulaşılamaz?
 
 A) İslam hukukunun gelişiminde âlimlerin çabasının rolü büyüktür.
 B) İçtihadı yapacak kişinin resmî olarak bu işle görevli bir kişi olması gerekir.
@@ -336,10 +336,10 @@ KONU: Kelam / Akaid
 Hz. Osman'ın halifeliğinin ikinci altı yıllık kısmında bazı ihtilaflar yaşanmıştır. Bu ihtilaflar, Hz. Osman'ın vefatından sonra da devam etmiş ve Müslümanlar arasında iç savaşa sebep olmuştur. Savaşan tarafların Müslüman olmaları sebebiyle savaşlara katılanların durumunun ne olacağı hususu, âlimler arasında tartışmalara neden olmuştur. Mürcie olarak isimlendirilen bir grup âlim, onların bu dünyada mümin olarak kabul edilmesi ve öbür dünyadaki durumlarının ise Allah'a bırakılması gerektiğini savunmuştur. Mürcie'nin bu görüşünün amacı aşağıdakilerden hangisidir?
 
 A) Müslüman toplumdaki ayrışma ve tekfir olaylarının önüne geçmek
-B) Haricilerin Emevilere karşı başlattıkları isyanlarda halkın desteğini sağlamak
+B) Haricilerin Emevîlere karşı başlattıkları isyanlarda halkın desteğini sağlamak
 C) İslam toprağında yaşayan gayrimüslimlere İslam'ı sevdirmek
 D) Kişi ve olaylarla ilgili Kur'an'dan hareketle çözümler getirmek
-E) Tüm dinî grupların Emevi yönetimine biat etmesini sağlamak
+E) Tüm dinî grupların Emevî yönetimine biat etmesini sağlamak
 
 Doğru Cevap: A
 
@@ -687,7 +687,7 @@ Düşünürler ve Tanrı'nın varlığına dair meşhur oldukları delillerle il
 I. İbn Rüşd - İnayet ve ihtira,
 II. İbn Sina - Dinî tecrübe,
 III. Kant - Ahlak,
-IV. David Hume - Teleolojik
+IV. David Hü'me - Teleolojik
 eşleştirmelerinden hangileri doğrudur?
 
 A) Yalnız III
@@ -883,7 +883,7 @@ Doğru Cevap: A
 
 Soru 59:
 KONU: Dinler Tarihi
-Bir kurtarıcının gelerek kötülükleri ortadan kaldıracağı inancı pek çok dinde olduğu gibi Hinduizm'de de vardır. Ancak bu dinde, diğer dinlerden farklı olarak Tanrı'nın gelişi kıyametin habercisi değildir. Onlara göre Tanrı Vişnu; kötülüklerin arttığı ve dinî değerlerin zayıfladığı dönemlerde bedenleşerek yeryüzüne iner, Hinduizmi yok olmaktan kurtarır, kötüleri cezalandırır, evrendeki düzeni yeniden tesis eder ve makamına geri döner. Bu parçada bahsedilen inanç aşağıdaki kavramlardan hangisiyle ifade edilmektedir?
+Bir kurtarıcının gelerek kötülükleri ortadan kaldıracağı inancı pek çok dinde olduğu gibi Hinduizm'de de vardır. Ancak bu dinde, diğer dinlerden farklı olarak Tanrı'nın gelişi kıyametin habercisi değildir. Onlara göre Tanrı Vişnu; kötülüklerin arttığı ve dinî değerlerin zayıfladığı dönemlerde bedenleşerek yeryüzüne iner, Hinduizm'i yok olmaktan kurtarır, kötüleri cezalandırır, evrendeki düzeni yeniden tesis eder ve makamına geri döner. Bu parçada bahsedilen inanç aşağıdaki kavramlardan hangisiyle ifade edilmektedir?
 
 A) Avidya
 B) Mokşa

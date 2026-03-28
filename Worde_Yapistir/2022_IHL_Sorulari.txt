@@ -36,7 +36,7 @@ Doğru Cevap: B
 Soru 3:
 KONU: Kur'an-ı Kerim ve Tecvid
 حَمَّ (1) عَسَقَ كَذَلِكَ يُوحَى إِلَيْكَ (Şura, 42:1-3)
-Verilen ayetlerde aşağıdaki medlerden hangisi bulunmamaktadır?
+Verilen ayetlerde aşağıdaki medler'den hangisi bulunmamaktadır?
 A) Tabii
 B) Lazım
 C) Lin
@@ -176,7 +176,7 @@ KONU: Hadis
 Hadis âlimleri ravi biyografilerine dair derledikleri kitapları tabaka esasına göre tertip etmişlerdir. Buna göre ilk üç tabaka sahabe, tabiun ve tebe-i tabiun neslidir. Ancak bazı ravilerin hangi tabakaya mensup oldukları hususunda ihtilaf bulunmaktadır. Hz. Muhammed devrinde Müslüman olduğu hâlde onunla görüşemeyen kişiler buna örnektir. Bu gibi ravileri nitelemek için özel bir kavram kullanılmaktadır.
 Bu parçada bahsedilen raviler aşağıdaki kavramlardan hangisiyle ifade edilir?
 A) Muhadram
-B) Mechul
+B) Meçhul
 C) Müdellis
 D) Mürsil
 E) Mübtedi
@@ -203,7 +203,7 @@ Doğru Cevap: A
 
 Soru 15:
 KONU: Hadis
-Hz. Ali'nin faziletleriyle ilgili yazdığı bir kitap sebebiyle hakkında Şia taraftarı olduğuna dair iddialar bulunsa da bunlar delilsiz görülmüştür. Çoğunlukla ahkâm hadislerinden oluşan kapsamlı bir çalışma yapıp Remle Emiri'ne arz etmiş, Emir çalışmadaki hadislerin tamamının sahih olup olmadığını sorunca "Hayır" cevabını vermiştir. Bunun üzerine Remle Emiri "Bize sahih hadisleri yaz." şeklinde talepte bulunmuş, o da çalışmadaki bazı hadisleri çıkartarak bir eser kaleme almıştır. Yazar tarafından el-Mücteba ismi verilen bu eser farklı bir isimle meşhur olmuştur.
+Hz. Ali'nin faziletleriyle ilgili yazdığı bir kitap sebebiyle hakkında Şia taraftarı olduğuna dair iddialar bulunsa da bunlar delilsiz görülmüştür. Çoğunlukla ahkâm hadislerinden oluşan kapsamlı bir çalışma yapıp Remle Emir'ine arz etmiş, Emir çalışmadaki hadislerin tamamının sahih olup olmadığını sorunca "Hayır" cevabını vermiştir. Bunun üzerine Remle Emiri "Bize sahih hadisleri yaz." şeklinde talepte bulunmuş, o da çalışmadaki bazı hadisleri çıkartarak bir eser kaleme almıştır. Yazar tarafından el-Mücteba ismi verilen bu eser farklı bir isimle meşhur olmuştur.
 Bu parçada bahsedilen hadis âlimi ve eseri aşağıdakilerden hangisidir?
 A) Ebu Davud – Sünen
 B) Buhari – Sahih
@@ -368,7 +368,7 @@ Doğru Cevap: D
 
 Soru 26:
 KONU: Fıkıh
-Temettu haccı yapan bir kişi kesecek kurban bulamadığı takdirde aşağıdakilerden hangisini yapması gerekir?
+Temettü haccı yapan bir kişi kesecek kurban bulamadığı takdirde aşağıdakilerden hangisini yapması gerekir?
 A) Memleketine dönünce kurban keser.
 B) Kurbanlık hayvanın bedelini hayır kurumuna sadaka olarak verir.
 C) Memleketindeki yakınlarına telefon ederek kendi adına kurban kesmelerini ister.
@@ -525,7 +525,7 @@ Doğru Cevap: E
 
 Soru 37:
 KONU: İslam Mezhepleri ve Akımları
-Ahzab Suresi 40. ayette geçen “...(O) Allah'ın elçisi ve nebilerin hatemidir...” ifadesi Müslümanlar tarafından Hz. Muhammed'in son peygamber olduğunu gösteren bir delil olarak ele alınmıştır. Ancak “hatem” kelimesinin sözlükte yüzük, mühür, süs gibi anlamlara gelmesinden hareketle İslam dünyasında farklı yorumlara başvurarak Allah'tan vahiy alma sürecinin Hz. Muhammed ile son bulmadığını söyleyen bazı gruplar da ortaya çıkmıştır.
+Ahzab Suresi 40. ayette geçen “...(O) Allah'ın elçisi ve nebilerin hatem'idir...” ifadesi Müslümanlar tarafından Hz. Muhammed'in son peygamber olduğunu gösteren bir delil olarak ele alınmıştır. Ancak “hatem” kelimesinin sözlükte yüzük, mühür, süs gibi anlamlara gelmesinden hareketle İslam dünyasında farklı yorumlara başvurarak Allah'tan vahiy alma sürecinin Hz. Muhammed ile son bulmadığını söyleyen bazı gruplar da ortaya çıkmıştır.
 Buna göre;
 I. İbazilik,
 II. Kadîyanîlik,
@@ -691,7 +691,7 @@ Doğru Cevap: B
 
 Soru 48:
 KONU: İslam Kültür ve Medeniyeti
-Emevi Dönemi mimari eserlerinden;
+Emevî Dönemi mimari eserlerinden;
 * Kitab-ı Mukaddes'te geçen Kutsal Kaya'nın üzerine inşa edilen,
 * birçok peygamberin makam ve türbesinin bulunduğu Kudüs'teki Merve tepesinde yer alan,
 * Hz. İbrahim'in, Hz. İsmail'i kurban etmek için seçtiği yerde yapılan

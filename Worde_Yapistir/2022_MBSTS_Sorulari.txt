@@ -1,5 +1,5 @@
 ﻿
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kelam / Akaid
@@ -18,7 +18,7 @@ E) Ta'dil – tecvir
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -37,7 +37,7 @@ E) Hervele
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -61,7 +61,7 @@ E) I, II ve III
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -80,7 +80,7 @@ E) Ali, Barış ve Cemil
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -97,7 +97,7 @@ E) Arife günü Müzdelife'de akşam ve yatsı namazlarını cem etmek
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -122,7 +122,7 @@ E) Malikiliğin niyet şartı
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -141,7 +141,7 @@ E) Çocuk şu anda vermez, baliğ olunca önceki yılların zekâtını da verir
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -160,7 +160,7 @@ E) Tam mülkiyet
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh Usulü
@@ -182,7 +182,7 @@ E) I ve III
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh Usulü
@@ -201,7 +201,7 @@ E) İcma
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh Usulü
@@ -220,7 +220,7 @@ E) Yaşayıp yaşamadığı bilinmeyen genç bir şahsın sağ kabul edilmesi
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh Usulü
@@ -239,7 +239,7 @@ E) Fasid
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -256,7 +256,7 @@ E) Öğle ve ikindi namazlarının cem edilerek kılınabilmesi
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -277,7 +277,7 @@ Buna göre eşinden boşanan ve eşi ölen kadınların beklemeleri gereken idde
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -289,14 +289,14 @@ Evlenme kararı alan Serdar ve Meryem'in nikâh merasimi, ailelerin katılımıy
 Bu parçaya göre Meryem'in mehir hakkıyla ilgili aşağıdakilerden hangisi doğrudur?
 
 A) 50 gram alır.
-B) Miras veya mehirden birini alır.
+B) Miras veya mehir'den birini alır.
 C) Mehir alamaz.
 D) Mehr-i misil alır.
 E) 10 gram alır.
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -315,7 +315,7 @@ E) Selem
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -334,7 +334,7 @@ E) Selem
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -353,7 +353,7 @@ E) Emval
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh Usulü
@@ -372,7 +372,7 @@ E) Mücmel, hafi, müşkil, müteşabih
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -391,7 +391,7 @@ E) İkrar
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -408,7 +408,7 @@ E) Hz. Muhammed'in fiziksel görünüşü ve karakter özellikleri
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -427,7 +427,7 @@ E) Musannif
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -446,7 +446,7 @@ E) Müsned
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -465,7 +465,7 @@ E) Sahih - hasen
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -484,7 +484,7 @@ E) Muztarib
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -507,7 +507,7 @@ E) II ve III
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -526,7 +526,7 @@ E) Müstefiz
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Siyer
@@ -546,7 +546,7 @@ E) Mute
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Siyer
@@ -565,7 +565,7 @@ E) Daru’n-Nedve
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Siyer
@@ -584,7 +584,7 @@ E) Hz. Muhammed’in Taif dönüşü Mekke’ye girmekte zorlanması
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Siyer
@@ -603,7 +603,7 @@ E) İfk Hadisesi
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Siyer
@@ -622,7 +622,7 @@ E) Bizans imparatorunun, Hz. Muhammed’in elçisine kötü muamelede bulunması
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Tarihi
@@ -644,14 +644,14 @@ E) III ve IV
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Mezhepleri Tarihi
 YIL: 2022
 
 Soru 54:
-Emeviler devrinde ortaya çıkan Mutezile, Abbasiler devrinde Memun tarafından devletin resmî mezhebi hâline gelmiştir. Böylece gücünün zirvesine ulaşan Mutezili düşünce, özellikle “Kur’an’ın mahluk olduğu” iddiası, halka ve ulemaya zorla kabul ettirilmeye çalışılmış; kabul etmeyenlere çeşitli baskılar yapılmıştır.
+Emevîler devrinde ortaya çıkan Mutezile, Abbasiler devrinde Memun tarafından devletin resmî mezhebi hâline gelmiştir. Böylece gücünün zirvesine ulaşan Mutezili düşünce, özellikle “Kur’an’ın mahluk olduğu” iddiası, halka ve ulemaya zorla kabul ettirilmeye çalışılmış; kabul etmeyenlere çeşitli baskılar yapılmıştır.
 
 Bu süreç aşağıdakilerden hangisiyle isimlendirilmektedir?
 
@@ -663,18 +663,18 @@ E) İstibdat
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Tarihi
 YIL: 2022
 
 Soru 55:
-Emeviler döneminde;
+Emevîler döneminde;
 
 • ikinci sınıf olarak görüldüğü için dışlanan,
 • bu nedenle Abbasi ihtilaline destek veren,
-• Emevilerin yıkılışında önemli bir rol oynayan
+• Emevîlerin yıkılışında önemli bir rol oynayan
 
 grup aşağıdakilerden hangisidir?
 
@@ -686,7 +686,7 @@ E) Mevali
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Dinler Tarihi
@@ -709,7 +709,7 @@ E) Aforoz - agnostik - paskalya
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Dinler Tarihi
@@ -728,7 +728,7 @@ E) Yoga
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Mezhepleri Tarihi
@@ -747,7 +747,7 @@ E) Vehhabilik
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Mezhepleri Tarihi
@@ -766,7 +766,7 @@ E) Nakib
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Dinler Tarihi
@@ -801,7 +801,7 @@ E) Tertil
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -826,7 +826,7 @@ E) II ve III
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -843,7 +843,7 @@ E) Tarık – Kıyamet anında yaşanacak olan dehşetten bahsedilmesi
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -862,7 +862,7 @@ E) Hz. Salih – Kavmine dişi deve getirmesi
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -884,7 +884,7 @@ E) Son kitap olmasını
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -903,7 +903,7 @@ E) İbrahim – Lut
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -922,7 +922,7 @@ E) Kişinin kiminle evleneceği
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -941,7 +941,7 @@ E) Hudeybiye Musalahası
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -966,7 +966,7 @@ E) II, III ve IV
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -985,7 +985,7 @@ E) İ'cazü'l-Kur'an
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -1004,7 +1004,7 @@ E) Kıssa ve mesellerin mesajı
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -1023,7 +1023,7 @@ E) Ahkâmın neshi
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -1042,7 +1042,7 @@ E) Bakara
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -1061,7 +1061,7 @@ E) İşari
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -1080,7 +1080,7 @@ E) Hz. İbrahim
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -1099,7 +1099,7 @@ E) Tergib ve terhibin belirlenmesinden
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kelam / Akaid
@@ -1118,7 +1118,7 @@ E) İyiliği emredip kötülükten sakındırma görevini yerine getirmek
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kelam / Akaid
@@ -1137,7 +1137,7 @@ E) Tafra
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kelam / Akaid
@@ -1154,7 +1154,7 @@ E) Ahlak
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kelam / Akaid

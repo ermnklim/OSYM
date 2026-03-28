@@ -16,7 +16,7 @@ E) Sahabe kavli
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Fıkıh
@@ -34,7 +34,7 @@ E) Müsakat
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Fıkıh
@@ -52,7 +52,7 @@ E) Zehraveyn
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Hadis
@@ -70,7 +70,7 @@ E) Bir Müslümanın ihtiyaç duyacağı konuları içermesi
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Din Hizmetleri ve Hitabet
@@ -88,7 +88,7 @@ E) Mesel
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Hadis
@@ -111,7 +111,7 @@ E) II, III ve IV
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: İslam Tarihi
@@ -129,7 +129,7 @@ E) Haciblik
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: İslam Tarihi
@@ -150,14 +150,14 @@ E) Harun Reşid
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: İslam Tarihi
 YIL: 2016
 
 Soru 29:
-Endülüs Emevileri sonrasında İspanya Yarımadası Müslümanlarla Hristiyanlar arasında sıkı bir hâkimiyet mücadelesine sahne oldu. Bu mücadelede iktidar kısa aralıklarla sürekli el değiştirdi. Bu durum farklı şehirlerde kümelenmiş etnik çeşitlilikle birleşince bölgenin istikrarsızlaşmasına yol açtı. İstikrarsızlığın zirve yaptığı bir ortamda Muhammed b. Tumert'in etrafında toplanan Berberiler, siyasi otoriteye karşı Mağrib merkezli bir tepki hareketi başlattılar. Bir taraftan toplumdaki ahlaksızlığa cephe alırken, bir taraftan da Kur'an ve Sünnet'e dönmeyi savundular. Muhammed b. Tumert'in mehdilik talebiyle öne çıktığı bu hareket, daha sonra Endülüs coğrafyasına bir asrı geçen bir süre hâkim olan bir devletin de çekirdeğini oluşturdu.
+Endülüs Emevîleri sonrasında İspanya Yarımadası Müslümanlarla Hristiyanlar arasında sıkı bir hâkimiyet mücadelesine sahne oldu. Bu mücadelede iktidar kısa aralıklarla sürekli el değiştirdi. Bu durum farklı şehirlerde kümelenmiş etnik çeşitlilikle birleşince bölgenin istikrarsızlaşmasına yol açtı. İstikrarsızlığın zirve yaptığı bir ortamda Muhammed b. Tumert'in etrafında toplanan Berberiler, siyasi otoriteye karşı Mağrib merkezli bir tepki hareketi başlattılar. Bir taraftan toplumdaki ahlaksızlığa cephe alırken, bir taraftan da Kur'an ve Sünnet'e dönmeyi savundular. Muhammed b. Tumert'in mehdilik talebiyle öne çıktığı bu hareket, daha sonra Endülüs coğrafyasına bir asrı geçen bir süre hâkim olan bir devletin de çekirdeğini oluşturdu.
 Bu devlet aşağıdakilerden hangisidir?
 
 A) Murabıtlar
@@ -168,7 +168,7 @@ E) Meriniler
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Tefsir
@@ -185,7 +185,7 @@ E) Müslüman âlimlerin Kur'an'da geçen bazı olaylar hakkında daha fazla bil
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Tefsir
@@ -203,7 +203,7 @@ E) Müşkilü'l-Kur'an
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Tefsir
@@ -221,7 +221,7 @@ E) Mezhebî
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Mezhepler Tarihi
@@ -239,7 +239,7 @@ E) Genellikle seçimle belirlenir.
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Kelam / Akaid
@@ -257,7 +257,7 @@ E) Tasdik
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Kelam / Akaid
@@ -275,7 +275,7 @@ E) Yeryüzünde her şey Allah'ın bilgisi dâhilinde gerçekleşir.
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Mezhepler Tarihi
@@ -293,7 +293,7 @@ E) Cemaat-i Tebliğ
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Mezhepler Tarihi
@@ -315,7 +315,7 @@ E) Zeydilik
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Dinler Tarihi
@@ -336,7 +336,7 @@ E) Metodistler
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Dinler Tarihi
@@ -354,7 +354,7 @@ E) Şintoizm
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Din Hizmetleri ve Hitabet

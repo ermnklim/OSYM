@@ -21,7 +21,7 @@ E) Şafii      Hanbeli    Hanefi
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Fıkıh
@@ -40,7 +40,7 @@ E) Selem — murabaha
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Fıkıh
@@ -62,7 +62,7 @@ E) Vedia
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -81,7 +81,7 @@ E) Zekâtın kimlere verileceği
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -98,7 +98,7 @@ E) "Soran biri, bir gün olacak azabı sordu." (Mearic, 70:1)
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -115,7 +115,7 @@ E) Haris el-Muhasibi — Fehmü'l-Kur'an
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Hadis
@@ -134,7 +134,7 @@ E) İbn Şihab ez-Zühri
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Hadis
@@ -153,7 +153,7 @@ E) Müstedrek
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Hadis
@@ -172,7 +172,7 @@ E) Zehebi'nin Mizanü'l-İtidal'i
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Siyer
@@ -191,7 +191,7 @@ E) Delailü'n-nübüvve
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Kelam / Akaid
@@ -216,14 +216,14 @@ E) Taaddüd-i kudema
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Kelam / Akaid
 YIL: 2022
 
 Soru 12:
-Ehl-i Sünnet'in ilk temsilcileri, sistemleşmiş itikadi mezheplerin teşekkülünden önce Hz. Muhammed'e ve sahabeye tabi olmuş, naslarda tevilden kaçınmış ve kelami konularda genellikle akla veya reye başvurmamayı tercih etmişlerdir.
+Ehl-i Sünnet'in ilk temsilcileri, sistemleşmiş itikadi mezheplerin teşekkülünden önce Hz. Muhammed'e ve sahabeye tabi olmuş, naslarda tevilden kaçınmış ve kelamı konularda genellikle akla veya reye başvurmamayı tercih etmişlerdir.
 
 Bu parçada bahsedilen kişileri nitelemek için kullanılan kavram aşağıdakilerden hangisidir?
 
@@ -235,7 +235,7 @@ E) Cebriyye
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Siyer
@@ -254,7 +254,7 @@ E) Huneyn
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: İslam Tarihi
@@ -273,7 +273,7 @@ E) Babürlüler
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: İslam Tarihi
@@ -290,7 +290,7 @@ E) Alacak kişilerin divan defterine kaydedilmesi
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Mezhepler Tarihi
@@ -309,7 +309,7 @@ E) Hüseyin b. Hamdan el-Hasibi
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Mezhepler Tarihi
@@ -326,7 +326,7 @@ E) Va'd ve vaîd
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Dinler Tarihi
@@ -345,7 +345,7 @@ E) Kadıköy
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Dinler Tarihi
@@ -369,7 +369,7 @@ E) II ve III
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Din Hizmetleri ve Hitabet

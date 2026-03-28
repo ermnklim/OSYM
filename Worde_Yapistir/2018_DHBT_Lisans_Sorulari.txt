@@ -16,7 +16,7 @@ E) Anneanneye
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Fıkıh Usulü
@@ -36,7 +36,7 @@ E) Örf
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Fıkıh
@@ -60,7 +60,7 @@ Görsel Notu:
 Bu soru resim/görsel içeriyor.
 Dosya: 2018_DHBT_Harita_Caferilik.png
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Hadis
@@ -80,7 +80,7 @@ E) Müstedrek
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Hadis
@@ -98,7 +98,7 @@ E) II ve III
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Hadis
@@ -118,7 +118,7 @@ E) Muallel
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: İslam Tarihi
@@ -138,7 +138,7 @@ E) Abbas b. Abdulmuttalib
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: İslam Tarihi
@@ -146,7 +146,7 @@ YIL: 2018
 
 Soru 28:
 
-Arap ırkını üstün gören ve onlara ayrıcalıklı statü tanıyan Emevi politikası, Arap olmayan ve özellikle İran asıllı müslüman mevali arasında huzursuzluğa neden olmuştur. Zamanla bu düşünceye tepki olarak, Arap üstünlüğünü reddeden hatta Arap olmayanları Araplardan üstün gören ve Arapları küçümseyen bir akım gelişmiştir.
+Arap ırkını üstün gören ve onlara ayrıcalıklı statü tanıyan Emevî politikası, Arap olmayan ve özellikle İran asıllı müslüman mevali arasında huzursuzluğa neden olmuştur. Zamanla bu düşünceye tepki olarak, Arap üstünlüğünü reddeden hatta Arap olmayanları Araplardan üstün gören ve Arapları küçümseyen bir akım gelişmiştir.
 
 Bu akıma verilen isim aşağıdakilerden hangisidir?
 
@@ -158,7 +158,7 @@ E) Kerramiyye
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: İslam Tarihi
@@ -166,19 +166,19 @@ YIL: 2018
 
 Soru 29:
 
-Bedevilerin yerleşik hayata geçmeleri ve iskân edilmeleri, askerlerin sivillerden ayrı bir bölgede toplu olarak yaşamaları, bazı siyasi ve sosyal amaçlarla Müslümanların yeni fethedilen bölgelere yerleştirilmeleri gibi gerekçelerle pek çok yeni şehir kurulmuştur. Bu uygulama Dört Halife ile başlamış, Emeviler ve Abbasiler döneminde de devam etmiştir.
+Bedevilerin yerleşik hayata geçmeleri ve iskân edilmeleri, askerlerin sivillerden ayrı bir bölgede toplu olarak yaşamaları, bazı siyasi ve sosyal amaçlarla Müslümanların yeni fethedilen bölgelere yerleştirilmeleri gibi gerekçelerle pek çok yeni şehir kurulmuştur. Bu uygulama Dört Halife ile başlamış, Emevîler ve Abbasiler döneminde de devam etmiştir.
 
 Buna göre aşağıdaki şehir ve kurulduğu dönem eşleştirmelerinden hangisi yanlıştır?
 
-A) Kufe – Dört Halife
-B) Kayrevan – Emeviler
-C) Basra – Emeviler
+A) Küfe – Dört Halife
+B) Kayrevan – Emevîler
+C) Basra – Emevîler
 D) Samerra – Abbasiler
 E) Bağdat – Abbasiler
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Tefsir
@@ -198,7 +198,7 @@ E) II, III ve IV
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Tefsir
@@ -216,7 +216,7 @@ E) Kadı Beyzavi
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Tefsir
@@ -236,7 +236,7 @@ E) Mücmel ve müfesser
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Kelam / Akaid
@@ -256,7 +256,7 @@ E) Emr-i bi'l-maruf nehy-i ani'l-münker
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Kelam / Akaid
@@ -276,7 +276,7 @@ E) Kıyas
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Kelam / Akaid
@@ -296,7 +296,7 @@ E) İrhas
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Mezhepler Tarihi
@@ -314,7 +314,7 @@ E) Zeydilik
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Mezhepler Tarihi
@@ -322,7 +322,7 @@ YIL: 2018
 
 Soru 37:
 
-Hz. Hüseyin'in Kerbela'da katlinin intikamını almak üzere Emevilere başkaldıran Muhtar es-Sekafi, bir savaş öncesinde taraftarlarına Allah'ın kendilerini zafere ulaştıracağını söyler ve gerçekten de savaş dediği gibi neticelenir. Bir başka savaş öncesinde de aynı ifadeleri tekrarlar. Fakat sonuç söylediği gibi gerçekleşmez. Taraftarlarının yaşadığı hayal kırıklığı karşısında, Allah'ın kendisine zafer vadettiğini ancak daha sonra durumun farklı gerçekleştiğini belirtir. Bu görüşü ile Allah'ın ilim ve iradesinde değişiklik meydana geldiğini ima eder.
+Hz. Hüseyin'in Kerbela'da katlinin intikamını almak üzere Emevîlere başkaldıran Muhtar es-Sekafi, bir savaş öncesinde taraftarlarına Allah'ın kendilerini zafere ulaştıracağını söyler ve gerçekten de savaş dediği gibi neticelenir. Bir başka savaş öncesinde de aynı ifadeleri tekrarlar. Fakat sonuç söylediği gibi gerçekleşmez. Taraftarlarının yaşadığı hayal kırıklığı karşısında, Allah'ın kendisine zafer vadettiğini ancak daha sonra durumun farklı gerçekleştiğini belirtir. Bu görüşü ile Allah'ın ilim ve iradesinde değişiklik meydana geldiğini ima eder.
 
 Bu parçada bahsedilen anlayış aşağıdaki kavramlardan hangisiyle ifade edilir?
 
@@ -334,7 +334,7 @@ E) Recat
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Dinler Tarihi
@@ -352,7 +352,7 @@ E) Evanjelizm
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Dinler Tarihi
@@ -370,7 +370,7 @@ E) Budizm
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Din Hizmetleri ve Hitabet

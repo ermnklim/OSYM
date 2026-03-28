@@ -14,7 +14,7 @@ E) Beka
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kelam / Akaid
@@ -32,7 +32,7 @@ E) Hz. Muhammed'in Mekke'nin fethini önceden bildirmesi
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kelam / Akaid
@@ -55,7 +55,7 @@ E) I, II ve V
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Fıkıh
@@ -73,7 +73,7 @@ E) Sürekli ağız dolusu kusmak
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Fıkıh
@@ -91,7 +91,7 @@ E) Mübah
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Fıkıh
@@ -109,7 +109,7 @@ E) İhtiyaç fazlası olması
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Fıkıh
@@ -127,7 +127,7 @@ E) İhsar
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Fıkıh
@@ -139,13 +139,13 @@ Aşağıdakilerden hangisi bu adlandırmalardan biri değildir?
 
 A) Teşrik
 B) Zevaid
-C) Tahrime
+C) Tahrim'e
 D) İntikal
 E) İrsal
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -162,7 +162,7 @@ E) Telif ve tedvin
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -180,7 +180,7 @@ E) Tecvit
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -200,7 +200,7 @@ E) Medd-i lazım
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -214,11 +214,11 @@ A) Kitab
 B) Furkan
 C) Zikir
 D) Tenzil
-E) Mesani
+E) Mesa'nı
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -236,7 +236,7 @@ E) Tağut – belam
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -254,7 +254,7 @@ E) Toplumsal yapıda kimi değişiklikler ve düzenlemelere yer vermiştir.
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Siyer
@@ -272,14 +272,14 @@ E) Hılf
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Siyer
 YIL: 2014
 
 Soru 16:
-Hz. Muhammed, Hicret'in sekizinci yılında Haris b. Umeyr el-Ezdi'yi İslam'a davet mektubunu ulaştırmak üzere Busra'ya gönderdi. Ancak Haris, mektubu ulaştıramadan Gassani emirlerinden Şurahbil b. Amr tarafından yakalanarak öldürüldü. Bunun üzerine Hz. Muhammed, Zeyd b. Harise komutasındaki bir orduyu bu bölgeye gönderdi. Müslümanlar, Hristiyan Arapların da dâhil olduğu büyük bir Bizans ordusuyla karşılaştı. Komutanlarını kaybetmelerine rağmen Halid b. Velid'in gayretleriyle Müslümanlar fazla zayiat vermeden Medine'ye dönmeyi başardılar.
+Hz. Muhammed, Hicret'in sekizinci yılında Haris b. Umeyr el-Ezdi'yi İslam'a davet mektubunu ulaştırmak üzere Büşra'ya gönderdi. Ancak Haris, mektubu ulaştıramadan Gassani emirlerinden Şurahbil b. Amr tarafından yakalanarak öldürüldü. Bunun üzerine Hz. Muhammed, Zeyd b. Harise komutasındaki bir orduyu bu bölgeye gönderdi. Müslümanlar, Hristiyan Arapların da dâhil olduğu büyük bir Bizans ordusuyla karşılaştı. Komutanlarını kaybetmelerine rağmen Halid b. Velid'in gayretleriyle Müslümanlar fazla zayiat vermeden Medine'ye dönmeyi başardılar.
 Bu gelişmelerin yaşandığı savaş aşağıdakilerden hangisidir?
 
 A) Tebük
@@ -290,7 +290,7 @@ E) Huneyn
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Siyer
@@ -308,7 +308,7 @@ E) Hudeybiye Antlaşması öncesi Hz. Ömer'i Mekkelilere elçi olarak gönderme
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Siyer
@@ -326,7 +326,7 @@ E) Ebnâ
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: İslam Ahlakı ve Tasavvuf
@@ -344,7 +344,7 @@ E) İnsan, Allah'ın belirlediği sınırlar çerçevesinde hür olabilir.
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: İslam Ahlakı ve Tasavvuf

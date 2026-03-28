@@ -15,7 +15,7 @@ E) Kefalet
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Fıkıh
@@ -37,7 +37,7 @@ E) I, II ve IV
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Fıkıh
@@ -57,7 +57,7 @@ E) Mehr-i misil           mehr-i müeccel
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Fıkıh
@@ -76,7 +76,7 @@ E) Ölenin baba bir, kız ve erkek kardeşleri
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Tefsir
@@ -95,7 +95,7 @@ E) Mecazü'l-Kur'an
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Tefsir
@@ -114,7 +114,7 @@ E) Kuşluk vakti
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Tefsir
@@ -133,7 +133,7 @@ E) Huyey b. Ahtab
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Hadis
@@ -154,7 +154,7 @@ E) Buhari'nin el-Camiu's-sahih'i
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Mezhepler Tarihi
@@ -175,7 +175,7 @@ E) Nevruz
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Hadis
@@ -194,7 +194,7 @@ E) Adap
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Kelam / Akaid
@@ -213,7 +213,7 @@ E) İstitaat
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Kelam / Akaid
@@ -237,7 +237,7 @@ E) I, II ve III
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Kelam / Akaid
@@ -256,7 +256,7 @@ E) İmkân
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Kelam / Akaid
@@ -275,7 +275,7 @@ E) Mutezile
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Siyer
@@ -294,7 +294,7 @@ E) Arab-ı garibe
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: İslam Tarihi
@@ -315,7 +315,7 @@ E) I ve III
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Mezhepler Tarihi
@@ -334,7 +334,7 @@ E) Muattıla
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Mezhepler Tarihi
@@ -353,7 +353,7 @@ E) Hz. Ebu Bekir ve Hz. Ömer'in halifetiklerinin meşruiyeti
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Dinler Tarihi
@@ -372,7 +372,7 @@ E) Nesturi
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Din Hizmetleri ve Hitabet

@@ -315,9 +315,9 @@ Soru 17:
 KONU: Fıkıh
 Haber-i vahid olarak rivayet edilen bir fiilî sünnet;
 I. hem sübutu hem de delaleti kati,
-II. hem sübutu hem de delaleti zanni,
-III. sübutu kati; delaleti zanni,
-IV. sübutu zanni; delaleti kati
+II. hem sübutu hem de delaleti zannı,
+III. sübutu kati; delaleti zannı,
+IV. sübutu zannı; delaleti kati
 şeklindeki delil tasniflerinden hangilerine girebilir?
 
 A) Yalnız I
@@ -440,7 +440,7 @@ KONU: Selefiyye / Tevil
 YIL: 2019
 Soru 23:
 KONU: Kelam / Akaid
-İstanbul’dan Ankara’ya hızlı trenle seyahat etmekte olan Hasan, yanında oturan yolcunun kendisi gibi dinî içerikli bir kitap okuduğunu fark eder. İlk fırsatta tanıştığı ve adının Kamil olduğunu öğrendiği bu yolcu ile aralarında genel dinî konulardan itikadi ve kelami konulara evrilen koyu bir sohbet başlar. Sohbet sırasında Kamil, Al-i İmran Suresi’nin 7. ayetinde geçen “...kalplerinde bir eğrilik olanlar, fitne çıkarmak ve onun olmadık yorumlarını yapmak için müteşabih ayetlerinin ardına düşerler. Oysa onun gerçek manasını ancak Allah bilir.” şeklindeki ifadeye dikkat çeker ve bazı ayetlerde Allah hakkında kullanılan vech (yüz), istiva (oturma) ve ayn (göz) gibi sözcüklerin asla yorumlanmaması gerektiğini ve yorumlanmaya çalışılsa da bunun mümkün olmadığını belirtir.
+İstanbul’dan Ankara’ya hızlı trenle seyahat etmekte olan Hasan, yanında oturan yolcunun kendisi gibi dinî içerikli bir kitap okuduğunu fark eder. İlk fırsatta tanıştığı ve adının Kamil olduğunu öğrendiği bu yolcu ile aralarında genel dinî konulardan itikadi ve kelamı konulara evrilen koyu bir sohbet başlar. Sohbet sırasında Kamil, Al-i İmran Suresi’nin 7. ayetinde geçen “...kalplerinde bir eğrilik olanlar, fitne çıkarmak ve onun olmadık yorumlarını yapmak için müteşabih ayetlerinin ardına düşerler. Oysa onun gerçek manasını ancak Allah bilir.” şeklindeki ifadeye dikkat çeker ve bazı ayetlerde Allah hakkında kullanılan vech (yüz), istiva (oturma) ve ayn (göz) gibi sözcüklerin asla yorumlanmaması gerektiğini ve yorumlanmaya çalışılsa da bunun mümkün olmadığını belirtir.
 
 Kamil’in bu yaklaşımı, aşağıdaki mezheplerden hangisiyle ilişkilendirilebilir?
 
@@ -585,7 +585,7 @@ KONU: Mutezile / Kader
 YIL: 2019
 Soru 31:
 KONU: İslam Mezhepleri ve Akımları
-Emeviler, kendi iktidarlarını sağlam temellere oturtmak ve toplumdaki muhalif hareketlerin direncini kırmak için her şeyi Allah’ın iradesiyle ilişkilendirmek istiyorlardı. İlahi irade sonucu iktidara geldiklerini, toplumdaki buhranların ve yönetimdeki olumsuzlukların kendileriyle bir ilgisinin olmadığını ve her şeyin Allah’ın takdiriyle olduğunu ileri sürüyorlardı. Emevi iktidarının bu olumsuz yaklaşımına ve insan iradesini yok saymasına karşı çıkan bazı âlimler, insanın kaderinin kendi elinde olduğunu, insanın iyilik ve kötülüğü tamamen kendi iradesi ve gücüyle gerçekleştirdiğini ileri sürmüşlerdir. Bu âlimlerin görüşleri zamanla sistemleşerek İslam dünyasında aklı merkeze alan bir mezhebin ortaya çıkmasına vesile olmuştur.
+Emevîler, kendi iktidarlarını sağlam temellere oturtmak ve toplumdaki muhalif hareketlerin direncini kırmak için her şeyi Allah’ın iradesiyle ilişkilendirmek istiyorlardı. İlahi irade sonucu iktidara geldiklerini, toplumdaki buhranların ve yönetimdeki olumsuzlukların kendileriyle bir ilgisinin olmadığını ve her şeyin Allah’ın takdiriyle olduğunu ileri sürüyorlardı. Emevî iktidarının bu olumsuz yaklaşımına ve insan iradesini yok saymasına karşı çıkan bazı âlimler, insanın kaderinin kendi elinde olduğunu, insanın iyilik ve kötülüğü tamamen kendi iradesi ve gücüyle gerçekleştirdiğini ileri sürmüşlerdir. Bu âlimlerin görüşleri zamanla sistemleşerek İslam dünyasında aklı merkeze alan bir mezhebin ortaya çıkmasına vesile olmuştur.
 
 Bu parçada bahsedilen mezhep aşağıdakilerden hangisidir?
 
@@ -623,7 +623,7 @@ KONU: Mute Savaşı
 YIL: 2019
 Soru 33:
 KONU: İslam Tarihi / Siyer
-Hz. Muhammed’in, Hicret’in sekizinci yılında İslam’a davet için Busra’ya gönderdiği elçi yolda şehit edildi. Bunun üzerine Hz. Muhammed üç bin kişilik bir ordu hazırladı ve bölgeye gönderdi. Orduyu komuta etmek üzere de sırasıyla üç kişiyi görevlendirdi ve bunların ölümü hâlinde istedikleri birini komutan seçebileceklerini söyledi. Bizans’ın gönderdiği yüz bin kişilik orduyla üç bin kişilik İslam ordusu arasında gerçekleşen savaşta Hz. Muhammed’in görevlendirdiği komutanların hepsi şehit oldu ve daha sonra sancağı alan Halid b. Velid’in taktik başarısı sayesinde büyük bir kayıp yaşanmadan savaş son buldu.
+Hz. Muhammed’in, Hicret’in sekizinci yılında İslam’a davet için Büşra’ya gönderdiği elçi yolda şehit edildi. Bunun üzerine Hz. Muhammed üç bin kişilik bir ordu hazırladı ve bölgeye gönderdi. Orduyu komuta etmek üzere de sırasıyla üç kişiyi görevlendirdi ve bunların ölümü hâlinde istedikleri birini komutan seçebileceklerini söyledi. Bizans’ın gönderdiği yüz bin kişilik orduyla üç bin kişilik İslam ordusu arasında gerçekleşen savaşta Hz. Muhammed’in görevlendirdiği komutanların hepsi şehit oldu ve daha sonra sancağı alan Halid b. Velid’in taktik başarısı sayesinde büyük bir kayıp yaşanmadan savaş son buldu.
 
 Bu parçada bahsedilen savaş aşağıdakilerden hangisidir?
 
@@ -702,12 +702,12 @@ KONU: Abdülmelik b. Mervan
 YIL: 2019
 Soru 37:
 KONU: İslam Tarihi / Siyer
-Emevi Devleti'nde;
+Emevî Devleti'nde;
 - kaybolan otoriteyi tekrar tesis etmesi,
 - ilk İslam parasını tedavüle sokması,
 - yaşanan isyanları bastırması,
 - devlet teşkilatında önemli düzenlemeler gerçekleştirmesi
-gibi sebeplerle tarihçiler tarafından, Emevi Devleti'nin ikinci kurucusu olarak kabul edilen yönetici aşağıdakilerden hangisidir?
+gibi sebeplerle tarihçiler tarafından, Emevî Devleti'nin ikinci kurucusu olarak kabul edilen yönetici aşağıdakilerden hangisidir?
 
 A) Abdülmelik b. Mervan
 B) Mervan b. Hakem
@@ -799,7 +799,7 @@ Doğru Cevap: A
 Görsel Notu:
 Bu soru resimlidir.
 Dosya: 2019_Soru_41.png
-Konum: C:\Users\osman\Desktop\OSYM\Gorseller\2019\2019_Soru_41.png
+Konum: C:\Users\osman\Desktop\OSYM\Görseller\2019\2019_Soru_41.png
 
 ---SONRAKİ SORU---
 

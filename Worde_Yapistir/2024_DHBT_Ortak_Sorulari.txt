@@ -19,7 +19,7 @@ E) III ve IV
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kelam / Akaid
@@ -43,7 +43,7 @@ E) I, II ve III
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kelam / Akaid
@@ -62,7 +62,7 @@ E) Meleklere iman
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Fıkıh
@@ -86,7 +86,7 @@ E) II ve III
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Fıkıh
@@ -105,7 +105,7 @@ E) Hastayı ziyaret etmek
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Fıkıh
@@ -129,7 +129,7 @@ E) II ve III
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Fıkıh
@@ -151,7 +151,7 @@ E) Ahmet ve Faruk
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Fıkıh
@@ -170,7 +170,7 @@ E) Kudüm
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Siyer
@@ -189,7 +189,7 @@ E) Hz. Lut
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -205,7 +205,7 @@ D) el-Beytü'l-Haram
 E) el-Beytü'l-Muharrem
 
 Doğru Cevap: A
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -228,7 +228,7 @@ E) İhfa        iklab      idgam
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -247,7 +247,7 @@ E) Anlatımda canlı bir üslubun kullanılması
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -266,7 +266,7 @@ E) Ayet sonlarını belirten işaretlerin konulması
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Siyer
@@ -285,7 +285,7 @@ E) Cömertliğin cahiliye Arap geleneğinde önemli bir yere sahip olduğu
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Siyer
@@ -304,7 +304,7 @@ E) Ebu Talip'in akrabası olarak ona sahip çıkması
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Siyer
@@ -323,7 +323,7 @@ E) İslam, haram ay uygulamasını ortadan kaldırmıştır.
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Siyer
@@ -342,7 +342,7 @@ E) Ahlaki bir yaşantıyı benimsemeleri
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: İslam Ahlakı ve Tasavvuf
@@ -361,7 +361,7 @@ E) Ahlaki sorumluluk, insanlara karşı sorumlu olmayı gerektirir.
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kelam / Akaid
@@ -380,7 +380,7 @@ E) "Tevrat'la yükümlü tutulup da onunla amel etmeyenlerin durumu, ciltlerle k
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: İslam Ahlakı ve Tasavvuf

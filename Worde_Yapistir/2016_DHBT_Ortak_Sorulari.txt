@@ -14,14 +14,14 @@ E) Batn-ı Nahle
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Siyer
 YIL: 2016
 
 Soru 2:
-Müslümanlar, Hicret sonrasında toplu hâlde ibadet amacıyla Medine'de Mescid-i Nebi'yi inşa ettiler. Bu mescit ibadet dışında, hukuki, askerî ve siyasi işlerin yürütüldüğü bir merkez işlevi gördü. Ancak bu, Medine'deki tek mescit değildi; Beni Harise, Beni Saide, Gıfar, Beni Adiy, Beni Mazin, Beni Ubeyd, Eslem, Cüheyne gibi çok sayıda mescit de inşa edilmişti. Vakit namazları için bu mescitler, Cuma namazı için ise Mescid-i Nebi kullanılıyordu.
+Müslümanlar, Hicret sonrasında toplu hâlde ibadet amacıyla Medine'de Mescid-i Nebi'yi inşa ettiler. Bu mescit ibadet dışında, hukuki, askerî ve siyasi işlerin yürütüldüğü bir merkez işlevi gördü. Ancak bu, Medine'deki tek mescit değildi; Beni Harise, Beni Saide, Gıfar, Beni Adiy, Beni Mazin, Beni Ubeyd, Eşlem, Cüheyne gibi çok sayıda mescit de inşa edilmişti. Vakit namazları için bu mescitler, Cuma namazı için ise Mescid-i Nebi kullanılıyordu.
 Hicret sonrasında bu mescitlerin inşa edilmiş olması aşağıdakilerden hangisiyle ilişkilidir?
 
 A) Yerleşimin dağınık olmasıyla
@@ -32,7 +32,7 @@ E) Yahudilere galip gelme isteğiyle
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Siyer
@@ -50,7 +50,7 @@ E) Küçük yaşta yetim kalması
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Siyer
@@ -68,7 +68,7 @@ E) Sikâye
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Siyer
@@ -86,7 +86,7 @@ E) Akabe'de, Mekkelilerle Medineli Müslümanlar arasında
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -103,7 +103,7 @@ E) Hz. Nuh
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -120,7 +120,7 @@ E) Kurban
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -137,7 +137,7 @@ E) Hz. Nuh
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -154,7 +154,7 @@ E) Tenzilî
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -172,7 +172,7 @@ E) Tekâsür
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Fıkıh
@@ -190,7 +190,7 @@ E) Amacı
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Fıkıh Usulü
@@ -208,7 +208,7 @@ E) Ölüm tehdidi sebebiyle Allah'ı inkâr ettiğini söyleyen kişinin imanın
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Fıkıh
@@ -226,7 +226,7 @@ E) Baliğ olmak
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Fıkıh
@@ -243,7 +243,7 @@ E) İstihare
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Fıkıh
@@ -256,12 +256,12 @@ Hanefilere göre aşağıdakilerden hangisi bu cezayı gerektiren durumlardan bi
 A) Müzdelife vakfesini özürsüz terketmek
 B) Veda tavafını terk etmek
 C) Say yapmamak
-D) Arafatta vakfe yapmamak
+D) Arafat'ta vakfe yapmamak
 E) Şeytan taşlamayı terk etmek
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: ?slam Ahlak? ve Tasavvuf
@@ -279,7 +279,7 @@ E) Şirk
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -300,7 +300,7 @@ E) Mücrim
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: ?slam Ahlak? ve Tasavvuf
@@ -317,7 +317,7 @@ E) Bu soru iptal edilmi?tir.
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: ?slam Ahlak? ve Tasavvuf
@@ -335,7 +335,7 @@ E) Marifet
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Ortak
 KONU: Kelam / Akaid

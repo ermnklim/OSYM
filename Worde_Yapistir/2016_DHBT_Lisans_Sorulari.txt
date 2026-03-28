@@ -17,7 +17,7 @@ E) Kemal
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Fıkıh
@@ -35,7 +35,7 @@ E) Caferiyye
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Fıkıh
@@ -53,7 +53,7 @@ E) Müsaneha
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Hadis
@@ -69,12 +69,12 @@ eser aşağıdakilerden hangisine aittir?
 A) Neysaburi
 B) İmam Malik
 C) Ahmed b. Hanbel
-D) İbn Mace
+D) İbn Mâce
 E) Tirmizi
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Hadis
@@ -92,7 +92,7 @@ E) Hasen – sahih
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Hadis
@@ -104,13 +104,13 @@ Aşağıdakilerden hangisinin Kerem'in müracaat ettiği eserler arasında yer a
 
 A) İbn Hacer – Fethu'l-Bari
 B) Suyuti – Tenviru'l-Havalik
-C) Ayni – Umdetu'l-Kari
+C) Aynı – Umdetu'l-Kari
 D) Kastallânî – İrşadu's-Sari
-E) Kirmani – Kevakibu'd-Derari
+E) Kirmanı – Kevakibu'd-Derari
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: İslam Tarihi
@@ -131,7 +131,7 @@ E) II ve III
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: İslam Tarihi
@@ -149,14 +149,14 @@ E) Vasık
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: İslam Tarihi
 YIL: 2016
 
 Soru 29:
-Emevi hanedanından;
+Emevî hanedanından;
 - Fedek arazisini ehl-i beyte iade eden,
 - mevaliye yönelik haksız uygulamalara son veren,
 - toplumsal barışı yeniden tesis eden
@@ -170,7 +170,7 @@ E) Abdülmelik b. Mervan
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Tefsir
@@ -188,7 +188,7 @@ E) Garibü'l-Kur'an
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Tefsir
@@ -206,7 +206,7 @@ E) Ayet ve sureler arasındaki ilişkinin bilinmesi
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Tefsir
@@ -227,7 +227,7 @@ E) I ve III
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Kelam / Akaid
@@ -245,7 +245,7 @@ E) Nübüvvetin gerekliliği
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Kelam / Akaid
@@ -262,7 +262,7 @@ E) "Allah kendisine ortak koşulmasını asla bağışlamaz; ondan başka günah
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Kelam / Akaid
@@ -280,7 +280,7 @@ E) İhanet
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Mezhepler Tarihi
@@ -302,7 +302,7 @@ E) Dürzilik
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Mezhepler Tarihi
@@ -323,7 +323,7 @@ E) Nusayrilik
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Dinler Tarihi
@@ -341,7 +341,7 @@ E) Baptistler
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Dinler Tarihi
@@ -359,7 +359,7 @@ E) Aranyakalar
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Lisans
 KONU: Din Hizmetleri ve Hitabet

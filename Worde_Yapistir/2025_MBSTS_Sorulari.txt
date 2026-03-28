@@ -15,7 +15,7 @@ E) Gunne
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -34,7 +34,7 @@ E) يَلْبَثُ ذَٰلِكَ
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -53,7 +53,7 @@ E) Ameş
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -75,7 +75,7 @@ E) Semud
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -97,7 +97,7 @@ E) Ahzab
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -116,7 +116,7 @@ E) Doğduğu, öleceği ve diriltileceği gün esenlik verildiği
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -135,7 +135,7 @@ E) "Yeryüzünde düşmanı tamamıyla sindirip hâkim duruma gelmedikçe bir pe
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -159,7 +159,7 @@ E) I, II ve III
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -178,7 +178,7 @@ E) İhtilafü't-tezad
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -197,7 +197,7 @@ E) Mecaz olarak yorumlamıştır.
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -216,7 +216,7 @@ E) Mekki - Medeni
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -235,7 +235,7 @@ E) Müteşabihü'l-Kur'an
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -254,7 +254,7 @@ E) Taberi'nin Camiu'l-beyan'ı ve Suyuti'nin ed-Dürrü'l-mensur'u
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Tefsir
@@ -273,7 +273,7 @@ E) Ahmed Mustafa el-Meraği
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kelam / Akaid
@@ -290,7 +290,7 @@ E) Tekvin
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kelam / Akaid
@@ -309,7 +309,7 @@ E) Kelam ilmi tüm dinî ilimlerin merkezini oluşturmaktadır.
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kelam / Akaid
@@ -326,7 +326,7 @@ E) Eserleriyle şerh ve derlemecilik faaliyetlerini başlatmıştır.
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kelam / Akaid
@@ -345,7 +345,7 @@ E) Tevil - takdis
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kelam / Akaid
@@ -362,7 +362,7 @@ E) Belirli bir siyasi tavrı desteklemek
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kelam / Akaid
@@ -384,7 +384,7 @@ E) Ebü'l-Hüzeyl el-Allaf
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kelam / Akaid
@@ -405,7 +405,7 @@ E) İstidlal bi'ş-şahid ale'l-gaib
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -422,7 +422,7 @@ E) Adanması hâlinde vacip olur.
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -441,7 +441,7 @@ E) Mustafa, imamla birlikte namaza başlayamadığı için mesbuktur.
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -458,7 +458,7 @@ E) Saç kesmeden ihramdan çıkabilirler.
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -477,7 +477,7 @@ E) Verilen miktarın farz olan orandan fazla olması
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -494,7 +494,7 @@ E) Nafile orucun kazasında
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -513,7 +513,7 @@ E) Cuma günü saat 15.00'te
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -537,7 +537,7 @@ E) 50 küçükbaş 32 büyükbaş
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -561,7 +561,7 @@ E) II ve III
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -580,7 +580,7 @@ E) İne
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -589,7 +589,7 @@ YIL: 2025
 Soru 31:
 Sabri Bey ile Gül Hanım bir miktar mehir belirleyerek evlenmeye karar verir. Ailelerin de rızası alındıktan sonra düğün günü gelir ve merasim başlar. Düğün salonunda nikâh kıyıldıktan hemen sonra gelen Sabri Bey'in eski eşi, ondan iki çocuğu olduğunu ve onun nafakalarını aksattığını söyleyerek huzursuzluk çıkarır. Bu durumdan haberi olmayan Gül Hanım, Sabri Bey'e bunların doğru olup olmadığını sorar. Yaptığı hatadan dolayı mahcup olan Sabri Bey, Gül Hanım'ı boşamanın uygun olacağına karar verir ve onu hemen boşar.
 
-Hanefi mezhebine göre Sabri Bey'in ödemesi gereken mehirle ilgili aşağıdakilerden hangisi doğrudur?
+Hanefi mezhebine göre Sabri Bey'in ödemesi gereken mehir'le ilgili aşağıdakilerden hangisi doğrudur?
 
 A) Zifaf gerçekleşmediği için müsemma mehir, misil mehre dönüşür.
 B) Zifaf gerçekleşmediği için ödemesi gerekmez.
@@ -599,7 +599,7 @@ E) Nikâh, şartlarına uygun olarak gerçekleştiği için tamamını öder.
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -618,7 +618,7 @@ E) Annesinin
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -637,7 +637,7 @@ E) Müzaraa
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -657,7 +657,7 @@ E) Geçerlidir. | Evliyken alacağının yarısı kadar alır.
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh Usulü
@@ -676,7 +676,7 @@ E) Hükmün illete değil hikmete dayanması
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh Usulü
@@ -698,7 +698,7 @@ E) II ve III
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh Usulü
@@ -721,14 +721,14 @@ E) Namaz | hac | oruç
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh Usulü
 YIL: 2025
 
 Soru 38:
-Hz. Osman, Basra'daki bir arazisini Talha b. Ubeydullah'a satmış fakat ikisi de bu araziyi görmemiştir. Hem Hz. Osman'a hem de Talha'ya çevredeki kişiler bu alım satımdan zarar ettiklerini söylediklerinde onlar da görmeden yapılan işlemden dolayı muhayyerlik haklarının olduğunu söylemiştir. Bu konuda ihtilaf çıkınca da Cübeyr b. Mutim'i hakem tayin etmişlerdir. O da sadece Talha'nın muhayyerlik hakkı bulunduğuna hükmetmiş ve sahabenin yanında verilen bu karara hiçbir sahabe itiraz etmemiştir.
+Hz. Osman, Basra'daki bir arazisini Talha b. Ubeydullah'a satmış fakat ikisi de bu araziyi görmemiştir. Hem Hz. Osman'a hem de Talha'ya çevredeki kişiler bu alım satımdan zarar ettiklerini söylediklerinde onlar da görmeden yapılan işlemden dolayı muhayyerlik haklarının olduğunu söylemiştir. Bu konuda ihtilaf çıkınca da Cübeyr b. Muti'mi hakem tayin etmişlerdir. O da sadece Talha'nın muhayyerlik hakkı bulunduğuna hükmetmiş ve sahabenin yanında verilen bu karara hiçbir sahabe itiraz etmemiştir.
 
 Bu parçada bahsedilen durum aşağıdaki delillerden hangisi kapsamında değerlendirilir?
 
@@ -740,7 +740,7 @@ E) Fiilî sünnet
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh Usulü
@@ -759,7 +759,7 @@ E) Meseleci bir yöntemle oluşturulması
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh
@@ -781,7 +781,7 @@ E) Nevevi'nin el-Mecmu'u
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Fıkıh Usulü
@@ -800,7 +800,7 @@ E) Haciyat
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -819,7 +819,7 @@ E) Ravinin adaleti için aranan tüm şartlar sahabeler için de geçerlidir.
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -838,7 +838,7 @@ E) Mütelif ve muhtelif
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -859,14 +859,14 @@ E) Hâkim en-Nisaburi'nin Marife'si
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
 YIL: 2025
 
 Soru 45:
-- Güvenilir bir muhaddis olan Cerir b. Hazim'in oğulları, ihtiyarlayan babalarının hafızasının kötüleştiğini fark ettiklerinde hadisleri hatalı nakletmesini önlemek için onu kimseyle görüştürmemeye çalışmıştır.
+- Güvenilir bir muhaddis olan Cerir b. Hazım'ın oğulları, ihtiyarlayan babalarının hafızasının kötüleştiğini fark ettiklerinde hadisleri hatalı nakletmesini önlemek için onu kimseyle görüştürmemeye çalışmıştır.
 - Rivayetlerini kitaptan nakleden Abdullah b. Lehia; evinde çıkan bir yangında kitaplarını kaybetmiş, hafızasının zayıflığı sebebiyle son dönemdeki nakillerinde hatalar yapmıştır.
 
 Verilen örnekler hadis ilminde aşağıdaki ravi kusurlarından hangisi kapsamında değerlendirilir?
@@ -879,7 +879,7 @@ E) Vehim
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -901,7 +901,7 @@ E) II ve III
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -920,7 +920,7 @@ E) Senedde inkıta vardır.
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Hadis
@@ -939,7 +939,7 @@ E) İdrac
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Siyer
@@ -963,7 +963,7 @@ E) Huneyn
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Siyer
@@ -982,7 +982,7 @@ E) Zatüsselasil
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Siyer
@@ -999,7 +999,7 @@ E) Hz. Muhammed'e suikast girişiminde bulunmaları
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Siyer
@@ -1021,7 +1021,7 @@ E) II-IV-III-I
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Tarihi
@@ -1040,7 +1040,7 @@ E) İsyancıları affederek onların desteğini almak istemesi
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Tarihi
@@ -1062,17 +1062,17 @@ E) I, III ve IV
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Tarihi
 YIL: 2025
 
 Soru 55:
-Emevi Devleti yöneticilerinden
+Emevî Devleti yöneticilerinden
 - Hz. Osman'ın devlet yönetiminde önemli kararlara imza atan,
 - Hz. Osman'a yapılan eleştirilerin merkezinde yer alan,
-- Emevi yönetiminde Süfyaniler dönemini sonlandıran
+- Emevî yönetiminde Süfyaniler dönemini sonlandıran
 
 kişi aşağıdakilerden hangisidir?
 
@@ -1084,7 +1084,7 @@ E) İbrahim b. Velid
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Mezhepleri ve Akımları
@@ -1103,7 +1103,7 @@ E) İbazilik
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: İslam Felsefesi
@@ -1122,7 +1122,7 @@ E) Selefilik
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Kelam / Akaid
@@ -1141,7 +1141,7 @@ E) Zeydiyye
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Dinler Tarihi
@@ -1160,7 +1160,7 @@ E) Paskalya ayininin
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: MBSTS
 KONU: Dinler Tarihi
@@ -1173,7 +1173,7 @@ Bu parçada bahsedilen Vişnu inancı aşağıdaki kavramlardan hangisiyle ifade
 
 A) Nirvana
 B) Karma
-C) Ahimsa
+C) Ahımsa
 D) Avatara
 E) Avidya
 

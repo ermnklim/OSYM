@@ -15,7 +15,7 @@ E) Vedia
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Fıkıh
@@ -34,7 +34,7 @@ E) Yemini bozma
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Fıkıh Usulü
@@ -53,7 +53,7 @@ E) Geçerliliği hususunda âlimlerin ittifak etmesi
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Tefsir
@@ -72,7 +72,7 @@ E) Mevzui
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -91,7 +91,7 @@ E) Umunun tahsisi
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -110,7 +110,7 @@ E) Fedailü'l-Kur'an
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Hadis
@@ -129,7 +129,7 @@ E) Musannef
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Hadis
@@ -148,7 +148,7 @@ E) Mürsel
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Hadis
@@ -167,7 +167,7 @@ E) Esbabü vürudu'l-hadis — Muhtelifü'l-hadis
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Mezhepler Tarihi
@@ -183,7 +183,7 @@ D) İmamlar peygamberin varisleridir.
 E) İmamlar masumdur.
 
 Doğru Cevap: B
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Kelam / Akaid
@@ -202,7 +202,7 @@ E) Zorunlu bir nedenselliği ortaya çıkarması
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Kelam / Akaid
@@ -219,7 +219,7 @@ E) Halku'l-Kur'an
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: İslam Tarihi
@@ -238,14 +238,14 @@ E) Sahibü'ş-şurta
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: İslam Tarihi
 YIL: 2024
 
 Soru 14:
-Abbasiler devrinde halifelik, tıpkı Emevilerde olduğu gibi verasete dayalı olarak devam etti. Ancak Abbasiler, Emevilerin temsil ettiği mülk-devlet yerine, dine dayalı devlet şeklinde gerçek halifelik idealini temsil eden kimseler olarak göründüler. Bu amaçla halifeliğin dinî yönünü ön plana çıkardılar ve halifeler için daha önce kullanılmayan bir unvan eklediler. Bu sayede meşruiyetlerini geniş kitlelere benimsetmeye ve yönetimlerinin ilahi bir temele dayandığını ifade etmeye çalıştılar.
+Abbasiler devrinde halifelik, tıpkı Emevîlerde olduğu gibi verasete dayalı olarak devam etti. Ancak Abbasiler, Emevîlerin temsil ettiği mülk-devlet yerine, dine dayalı devlet şeklinde gerçek halifelik idealini temsil eden kimseler olarak göründüler. Bu amaçla halifeliğin dinî yönünü ön plana çıkardılar ve halifeler için daha önce kullanılmayan bir unvan eklediler. Bu sayede meşruiyetlerini geniş kitlelere benimsetmeye ve yönetimlerinin ilahi bir temele dayandığını ifade etmeye çalıştılar.
 
 Bu parçada sözü edilen unvan aşağıdakilerden hangisidir?
 
@@ -257,7 +257,7 @@ E) Rüknü'd-din
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: İslam Tarihi
@@ -268,7 +268,7 @@ Dört halife döneminde meydana gelen;
   I. yalancı peygamberlerle savaşılması,
   II. divan teşkilatının kurulması,
   III. zekât vermeyenlerle mücadele edilmesi,
-  IV. Gazze ve Busra gibi şehirlerin fethedilmesi
+  IV. Gazze ve Büşra gibi şehirlerin fethedilmesi
 
 gibi faaliyetlerden hangileri Hz. Ebubekir döneminde gerçekleşmiştir?
 
@@ -280,7 +280,7 @@ E) I, III ve IV
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Mezhepler Tarihi
@@ -299,7 +299,7 @@ E) Eşarilik
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Mezhepler Tarihi
@@ -318,7 +318,7 @@ E) Bir görüşün mezhebe dönüşmesi onun toplumsal bir karşılığının ol
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Dinler Tarihi
@@ -337,7 +337,7 @@ E) Karşılaştırma yöntemi kullandığına
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Dinler Tarihi
@@ -359,7 +359,7 @@ E) Konfüçyanizm
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Din Hizmetleri ve Hitabet

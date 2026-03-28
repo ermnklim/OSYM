@@ -15,7 +15,7 @@ E) Hacda tıraş olma
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Fıkıh
@@ -38,7 +38,7 @@ E) Ariyet   Vedia      Karz
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Fıkıh
@@ -55,7 +55,7 @@ E) Recep ve Şaban aylarının tamamını oruçlu geçirmek
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -74,7 +74,7 @@ E) Garibü'l-Kur'an
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Kur'an-ı Kerim ve Tecvid
@@ -86,14 +86,14 @@ Hz. Muhammed'e muhtelif zaman ve mekânlarda vahiy geldiği bilinmektedir. Vahiy
 Bu parçada aşağıdaki terim ikililerinin hangisinden söz edilmemiştir?
 
 A) Hadari — seferî
-B) Ardi — semai
+B) Ardı — semai
 C) Nehari — leyli
 D) Sayfi — şitai
 E) Mekki — Medeni
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Tefsir
@@ -112,7 +112,7 @@ E) Zemahşeri'nin el-Keşşaf'ı
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Hadis
@@ -134,7 +134,7 @@ E) Mürsel — mudal — maktu
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Hadis
@@ -153,7 +153,7 @@ E) Seçim yapmayı gerektirecek bir sebep bulana kadar beklenmesi
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Hadis
@@ -172,7 +172,7 @@ E) Bâtıni yorumlar içermesi
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Kelam / Akaid
@@ -191,7 +191,7 @@ E) Cebriyye
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Kelam / Akaid
@@ -214,7 +214,7 @@ E) III ve IV
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Mezhepler Tarihi
@@ -235,7 +235,7 @@ E) Gaybet
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: İslam Tarihi
@@ -254,7 +254,7 @@ E) Ebu Hanife
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: İslam Tarihi
@@ -276,7 +276,7 @@ E) Afrika'ya yönelik başarılı fetihlerin başlatıldığına
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: İslam Tarihi
@@ -288,14 +288,14 @@ Sultan Mahmud ve oğlu Mesud zamanında Gazne şehri bir ilim ve kültür merkez
 Bu parçada bahsedilen âlim aşağıdakilerden hangisidir?
 
 A) Şehristani
-B) Firdevsi
+B) Firdevs'i
 C) Harezmi
 D) Biruni
 E) Kaşgarlı Mahmud
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Dinler Tarihi
@@ -314,7 +314,7 @@ E) Zeydilik
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: İslam Tarihi
@@ -331,7 +331,7 @@ E) Benî Sakif
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Dinler Tarihi
@@ -350,7 +350,7 @@ E) II. Vatikan
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Dinler Tarihi
@@ -369,7 +369,7 @@ E) İslam'ın, önceki ilahi dinlerle aynı kaynaktan geldiğine dair örnekler 
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Din Hizmetleri ve Hitabet

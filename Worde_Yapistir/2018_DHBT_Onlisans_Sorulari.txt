@@ -16,7 +16,7 @@ E) Fidye
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Fıkıh Usulü
@@ -36,7 +36,7 @@ E) II, III ve IV
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Fıkıh
@@ -60,7 +60,7 @@ Görsel Notu:
 Bu soru resim/görsel içeriyor.
 Dosya: 2018_DHBT_Harita_Malikilik.png
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Hadis
@@ -80,7 +80,7 @@ E) Müstahrec – zevaid – müstedrek
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Hadis
@@ -98,7 +98,7 @@ E) I, II ve III
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Hadis
@@ -118,7 +118,7 @@ E) Muallak
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: İslam Tarihi
@@ -136,7 +136,7 @@ E) I, II ve III
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: İslam Tarihi
@@ -156,7 +156,7 @@ E) Devletin ekonomik etkinlikleri
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: İslam Tarihi
@@ -164,17 +164,17 @@ YIL: 2018
 
 Soru 29:
 
-Aşağıdakilerden hangisinin Emevilerin zayıflaması ve yıkılmasında önemli bir etkisinin olduğu söylenemez?
+Aşağıdakilerden hangisinin Emevîlerin zayıflaması ve yıkılmasında önemli bir etkisinin olduğu söylenemez?
 
 A) Mevalinin
 B) Ehlibeyt taraftarlarının
 C) Haricilerin
-D) Muhalif Emevilerin
+D) Muhalif Emevîlerin
 E) Ehlikitabın
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Tefsir
@@ -194,7 +194,7 @@ E) Vücuh ve nezair
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Tefsir
@@ -212,7 +212,7 @@ E) Fıkhi
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Tefsir
@@ -225,12 +225,12 @@ Soru 32:
 A) Taberi
 B) Süyuti
 C) İbn Kesir
-D) Kurtubi
+D) Kurtubî
 E) Begavi
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Kelam / Akaid
@@ -250,7 +250,7 @@ E) İmamiyye
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Kelam / Akaid
@@ -270,7 +270,7 @@ E) Mürcie
 
 Doğru Cevap: D
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Kelam / Akaid
@@ -290,7 +290,7 @@ E) Cüz-i la yetecezza
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Mezhepler Tarihi
@@ -308,7 +308,7 @@ E) Hicab: Hz. Muhammed – Bab: Hz. Fatıma
 
 Doğru Cevap: B
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Mezhepler Tarihi
@@ -326,7 +326,7 @@ E) Afganistan
 
 Doğru Cevap: E
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Dinler Tarihi
@@ -334,7 +334,7 @@ YIL: 2018
 
 Soru 38:
 
-Hristiyanlığın kutsal kitabı ile ilgili olarak; I. Eski Ahit, Tanrı'nın Hz. Musa ile Sina'da yaptığı sözleşmeyi simgelemektedir. II. Eski Ahit, Kitab-ı Mukaddes'te Yeni Ahit'e nazaran daha ayrıcalıklı bir konuma sahiptir. III. Yeni Ahit, sadece kanonik olarak kabul edilen dört incilden oluşmaktadır. yargılarından hangileri doğrudur?
+Hristiyanlığın kutsal kitabı ile ilgili olarak; I. Eski Ahit, Tanrı'nın Hz. Musa ile Sina'da yaptığı sözleşmeyi simgelemektedir. II. Eski Ahit, Kitab-ı Mukaddes'te Yeni Ahit'e nazaran daha ayrıcalıklı bir konuma sahiptir. III. Yeni Ahit, sadece kanonik olarak kabul edilen dört incil'den oluşmaktadır. yargılarından hangileri doğrudur?
 
 A) Yalnız I
 B) Yalnız III
@@ -344,7 +344,7 @@ E) I, II ve III
 
 Doğru Cevap: A
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Dinler Tarihi
@@ -362,7 +362,7 @@ E) Putperestlik
 
 Doğru Cevap: C
 
----SONRAKI SORU---
+---SONRAKİ SORU---
 
 DERS: DHBT Önlisans
 KONU: Din Hizmetleri ve Hitabet

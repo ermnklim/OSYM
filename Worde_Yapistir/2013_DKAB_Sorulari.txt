@@ -4,7 +4,7 @@ YIL: 2013
 KONU: İslam Tarihi / Siyer
 
 Soru 1:
-İslam öncesi Arap toplumu; hürler, köleler ve azatlılar şeklinde üç sınıftan oluşmaktaydı. Azatlılar, hürler ile köleler arasında bir statüye sahipti. Bir köle, sahibi tarafından azat edilirse azat edenin azatlısı olur ve onun kabilesinin bir üyesi sayılırdı. Bunlar, köleler gibi alınıp satılmazlar, fakat hürlerin haklarına da sahip olamazlardı. Bu toplumsal statü, Emeviler Dönemi'nde daha da genelleştirilmiş ve Arap olmayan yeni Müslümanları tanımlamak için kullanılmıştır.
+İslam öncesi Arap toplumu; hürler, köleler ve azatlılar şeklinde üç sınıftan oluşmaktaydı. Azatlılar, hürler ile köleler arasında bir statüye sahipti. Bir köle, sahibi tarafından azat edilirse azat edenin azatlısı olur ve onun kabilesinin bir üyesi sayılırdı. Bunlar, köleler gibi alınıp satılmazlar, fakat hürlerin haklarına da sahip olamazlardı. Bu toplumsal statü, Emevîler Dönemi'nde daha da genelleştirilmiş ve Arap olmayan yeni Müslümanları tanımlamak için kullanılmıştır.
 
 Bu parçada sözü edilen toplumsal statü aşağıdakilerden hangisidir?
 
@@ -46,7 +46,7 @@ A) Zi'l-Kurba
 B) Zü'n-Nureyn
 C) Sakaleyn
 D) Zü'l-Cenahayn
-E) Murteza
+E) Mürteza
 
 Doğru Cevap: B
 
@@ -85,7 +85,7 @@ Doğru Cevap: D
 KONU: Hadis
 
 Soru 6:
-Hadislerin, sahabi adları altında sıralanması suretiyle oluşturulan eserler aşağıdakilerden hangisidir?
+Hadislerin, şahabı adları altında sıralanması suretiyle oluşturulan eserler aşağıdakilerden hangisidir?
 
 A) Sünenler
 B) Müsnedler
