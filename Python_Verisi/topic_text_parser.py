@@ -88,6 +88,63 @@ TECVID_TERM_REPLACEMENTS = {
 }
 
 
+def _roman_to_int(value: str) -> int | None:
+    roman_values = {
+        "I": 1,
+        "V": 5,
+        "X": 10,
+        "L": 50,
+        "C": 100,
+        "D": 500,
+        "M": 1000,
+    }
+    text = str(value or "").upper().strip()
+    if not text or any(char not in roman_values for char in text):
+        return None
+
+    total = 0
+    previous_value = 0
+    repeat_count = 0
+    previous_char = ""
+    for char in reversed(text):
+        current_value = roman_values[char]
+        if char == previous_char:
+            repeat_count += 1
+            if char in {"V", "L", "D"} or repeat_count >= 3:
+                return None
+        else:
+            repeat_count = 0
+        if current_value < previous_value:
+            if char not in {"I", "X", "C"}:
+                return None
+            total -= current_value
+        else:
+            total += current_value
+            previous_value = current_value
+        previous_char = char
+    return total if total > 0 else None
+
+
+def _replace_roman_numerals_for_tts(text: str) -> str:
+    pattern = re.compile(
+        r"(?<![A-Za-zÇĞİÖŞÜçğıöşü])"
+        r"(M{0,3}(?:CM|CD|D?C{0,3})"
+        r"(?:XC|XL|L?X{0,3})(?:IX|IV|V?I{1,3}|I))"
+        r"(\.?)"
+        r"(?![A-Za-zÇĞİÖŞÜçğıöşü])"
+    )
+
+    def replace(match: re.Match[str]) -> str:
+        roman = match.group(1)
+        suffix = match.group(2) or ""
+        numeric_value = _roman_to_int(roman)
+        if numeric_value is None:
+            return match.group(0)
+        return f"{numeric_value}{suffix}"
+
+    return pattern.sub(replace, str(text or ""))
+
+
 def _count_question_references(text: str) -> int:
     match = re.search(r"\(çıkmış sorular\s*:\s*(.*?)\)", text, flags=re.IGNORECASE)
     if not match:
@@ -156,7 +213,30 @@ def _replace_arabic_symbols_for_tts(text: str) -> str:
 
 
 def normalize_sentence_for_tts(text: str) -> str:
-    value = _replace_tecvid_terms(_replace_arabic_symbols_for_tts(text))
+    value = _replace_roman_numerals_for_tts(text)
+    value = _replace_tecvid_terms(_replace_arabic_symbols_for_tts(value))
+    ordinal_map = {
+        "bir": "birinci",
+        "iki": "ikinci",
+        "üç": "üçüncü",
+        "dört": "dördüncü",
+        "beş": "beşinci",
+        "altı": "altıncı",
+        "yedi": "yedinci",
+        "sekiz": "sekizinci",
+        "dokuz": "dokuzuncu",
+        "on": "onuncu",
+        "yirmi": "yirminci",
+        "otuz": "otuzuncu",
+        "kırk": "kırkıncı",
+        "elli": "ellinci",
+        "altmış": "altmışıncı",
+        "yetmiş": "yetmişinci",
+        "seksen": "sekseninci",
+        "doksan": "doksanıncı",
+        "yüz": "yüzüncü",
+        "bin": "bininci",
+    }
 
     def number_to_turkish(match: re.Match[str]) -> str:
         number_text = match.group(1)
@@ -196,9 +276,11 @@ def normalize_sentence_for_tts(text: str) -> str:
 
         if not is_ordinal:
             return result
-        if result and result[-1] in "aiıuü":
-            return result + "ncı"
-        return result + "inci"
+        parts = [piece for piece in result.split() if piece]
+        if not parts:
+            return result
+        parts[-1] = ordinal_map.get(parts[-1], parts[-1])
+        return " ".join(parts)
 
     value = re.sub(r"(\d+)(\.)?", number_to_turkish, value)
     replacements = {

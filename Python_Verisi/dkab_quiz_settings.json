@@ -14,11 +14,11 @@
   "goto_ders": "DHBT Ortak (1-20)",
   "goto_q": "1",
   "speech_voice": "Piper Türkçe DFKI (Orta)",
-  "speech_rate": "1.00",
+  "speech_rate": "1.20",
   "speech_read_question": "1",
   "speech_read_options": "0",
   "speech_read_answer": "1",
-  "speech_wait_ms": "500",
+  "speech_wait_ms": "250",
   "speech_auto_mode": "Soru ve şıkları oku",
   "speech_feedback_mode": "Söyleme"
 }

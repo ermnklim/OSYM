@@ -935,6 +935,124 @@ class ModernDKABQuiz:
         )
         return pattern.sub(lambda match: roman_map.get(match.group(1), match.group(1)), text)
 
+    def _replace_roman_numerals_for_speech(self, text):
+        pattern = re.compile(
+            r"(?<![A-Za-zÇĞİÖŞÜçğıöşü])"
+            r"(M{0,3}(?:CM|CD|D?C{0,3})"
+            r"(?:XC|XL|L?X{0,3})(?:IX|IV|V?I{1,3}|I))"
+            r"(\.?)"
+            r"(?![A-Za-zÇĞİÖŞÜçğıöşü])"
+        )
+        roman_values = {
+            "I": 1,
+            "V": 5,
+            "X": 10,
+            "L": 50,
+            "C": 100,
+            "D": 500,
+            "M": 1000,
+        }
+
+        ones = {
+            0: "",
+            1: "bir",
+            2: "iki",
+            3: "üç",
+            4: "dört",
+            5: "beş",
+            6: "altı",
+            7: "yedi",
+            8: "sekiz",
+            9: "dokuz",
+        }
+        tens = {
+            0: "",
+            1: "on",
+            2: "yirmi",
+            3: "otuz",
+            4: "kırk",
+            5: "elli",
+            6: "altmış",
+            7: "yetmiş",
+            8: "seksen",
+            9: "doksan",
+        }
+        ordinal_map = {
+            "bir": "birinci",
+            "iki": "ikinci",
+            "üç": "üçüncü",
+            "dört": "dördüncü",
+            "beş": "beşinci",
+            "altı": "altıncı",
+            "yedi": "yedinci",
+            "sekiz": "sekizinci",
+            "dokuz": "dokuzuncu",
+            "on": "onuncu",
+            "yirmi": "yirminci",
+            "otuz": "otuzuncu",
+            "kırk": "kırkıncı",
+            "elli": "ellinci",
+            "altmış": "altmışıncı",
+            "yetmiş": "yetmişinci",
+            "seksen": "sekseninci",
+            "doksan": "doksanıncı",
+            "yüz": "yüzüncü",
+            "bin": "bininci",
+        }
+
+        def roman_to_int(value):
+            total = 0
+            previous_value = 0
+            for char in reversed(value):
+                current_value = roman_values[char]
+                if current_value < previous_value:
+                    total -= current_value
+                else:
+                    total += current_value
+                    previous_value = current_value
+            return total
+
+        def int_to_turkish(value):
+            number = int(value)
+            if number == 0:
+                return "sıfır"
+
+            parts = []
+            if number >= 1000:
+                thousands = number // 1000
+                if thousands > 1:
+                    parts.append(ones[thousands])
+                parts.append("bin")
+                number %= 1000
+            if number >= 100:
+                hundreds = number // 100
+                if hundreds > 1:
+                    parts.append(ones[hundreds])
+                parts.append("yüz")
+                number %= 100
+            if number >= 10:
+                parts.append(tens[number // 10])
+                number %= 10
+            if number:
+                parts.append(ones[number])
+            return " ".join(part for part in parts if part)
+
+        def to_ordinal_words(words):
+            parts = [part for part in words.split() if part]
+            if not parts:
+                return words
+            parts[-1] = ordinal_map.get(parts[-1], parts[-1])
+            return " ".join(parts)
+
+        def replace(match):
+            number = roman_to_int(match.group(1))
+            spoken = int_to_turkish(number)
+            if match.group(2) == ".":
+                spoken = to_ordinal_words(spoken)
+            return spoken
+
+        return pattern.sub(replace, str(text or ""))
+
     def _transliterate_arabic_text(self, text):
         base_map = {
             "ا": "a",
