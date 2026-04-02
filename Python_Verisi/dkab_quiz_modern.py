@@ -1543,7 +1543,7 @@ class ModernDKABQuiz:
         speech_text = f"{result_text} {self.build_answer_audio_text(question)}"
         self.speak_text(speech_text, status_prefix="Cevap geri bildirimi okunuyor")
 
-    def create_speech_controls(self, parent, question):
+    def create_speech_controls(self, parent, question, include_navigation=False):
         speech_frame = tk.Frame(parent, bg=self.colors['card'], relief=tk.RIDGE, bd=1)
         speech_frame.pack(fill=tk.X, pady=(0, 15))
 
@@ -1585,6 +1585,69 @@ class ModernDKABQuiz:
             button.pack(side=tk.LEFT, padx=(0, 8), ipadx=4, ipady=3)
             if not controls_enabled:
                 button.config(state=tk.DISABLED, cursor="arrow")
+
+        if include_navigation:
+            self.create_compact_question_navigation(buttons_frame)
+
+    def create_compact_question_navigation(self, parent):
+        if not getattr(self, 'quiz_questions', None):
+            return
+
+        nav_shell = tk.Frame(parent, bg=self.colors['card'])
+        nav_shell.pack(side=tk.LEFT, padx=(4, 0))
+
+        tk.Frame(
+            nav_shell,
+            bg=self.colors['border'],
+            width=1,
+            height=28,
+        ).pack(side=tk.LEFT, fill=tk.Y, padx=(0, 8), pady=2)
+
+        nav_frame = tk.Frame(nav_shell, bg=self.colors['card'])
+        nav_frame.pack(side=tk.LEFT)
+
+        compact_font = ('Segoe UI', 8, 'bold')
+        compact_padx = 8
+        compact_pady = 5
+
+        if self.current_index > 0:
+            prev_btn = self.create_button(
+                nav_frame, "<", self.previous_question, self.colors['text_secondary']
+            )
+            prev_btn.config(font=compact_font, padx=compact_padx, pady=compact_pady)
+            prev_btn.pack(side=tk.LEFT, padx=(0, 4), ipady=1)
+
+        tk.Label(
+            nav_frame,
+            text=f"Soru {self.current_index + 1}/{self.total_questions}",
+            font=('Segoe UI', 8, 'bold'),
+            bg=self.colors['card'],
+            fg=self.colors['text'],
+        ).pack(side=tk.LEFT, padx=(0, 4))
+
+        if self.current_index < len(self.quiz_questions) - 1:
+            next_btn = self.create_button(
+                nav_frame, ">", self.next_question, self.colors['success']
+            )
+            next_btn.config(font=compact_font, padx=compact_padx, pady=compact_pady)
+            next_btn.pack(side=tk.LEFT, padx=(0, 4), ipady=1)
+        else:
+            finish_command = self.show_results
+            if self._uses_review_flow():
+                finish_command = self.show_review_screen
+
+            finish_btn = self.create_button(
+                nav_frame, "Bitir", finish_command, self.colors['accent']
+            )
+            finish_btn.config(font=compact_font, padx=compact_padx, pady=compact_pady)
+            finish_btn.pack(side=tk.LEFT, padx=(0, 4), ipady=1)
+
+        if self._uses_review_flow():
+            finish_test_btn = self.create_button(
+                nav_frame, "Testi Bitir", self.confirm_finish_test, self.colors['danger']
+            )
+            finish_test_btn.config(font=('Segoe UI', 7, 'bold'), padx=7, pady=compact_pady)
+            finish_test_btn.pack(side=tk.LEFT, ipady=1)
 
     def on_close(self):
         self.stop_speech(reset_status=False)
@@ -4546,7 +4609,7 @@ class ModernDKABQuiz:
         progress = (self.current_index + 1) / self.total_questions
         progress_canvas.create_rectangle(0, 0, 200 * progress, 6, fill=self.colors['success'], outline="")
 
-        self.create_speech_controls(content_frame, question)
+        self.create_speech_controls(content_frame, question, include_navigation=True)
         
         # Question text
         question_frame = tk.Frame(content_frame, bg=self.colors['primary'], relief=tk.RIDGE, bd=2)
@@ -4678,6 +4741,8 @@ class ModernDKABQuiz:
             finish_btn = self.create_button(nav_frame, "🏁", finish_command, self.colors['accent'])
             finish_btn.pack(side=tk.RIGHT, padx=5, ipady=2)
         
+        nav_frame.pack_forget()
+
         # Restore selection from history if exists
         self.restore_selection_from_history(question)
         self.maybe_auto_read_question(question)
