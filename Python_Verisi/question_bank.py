@@ -110,7 +110,7 @@ def _resolve_default_topic(default_topic: object, subject: str) -> str:
     if callable(default_topic):
         return str(default_topic(subject) or "")
     if default_topic is None:
-        return subject
+        return ""
     return str(default_topic or "")
 
 

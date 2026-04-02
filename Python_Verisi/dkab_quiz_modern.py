@@ -4206,10 +4206,17 @@ class ModernDKABQuiz:
             topics=[],
         )
 
+        subject_like_labels = {
+            self.normalize_topic_name(q.get('ders'))
+            for q in qs
+            if self.normalize_topic_name(q.get('ders'))
+        }
+
         normalized_topics = {
             self.normalize_topic_name(q.get('konu'))
             for q in qs
             if self.normalize_topic_name(q.get('konu'))
+            and self.normalize_topic_name(q.get('konu')) not in subject_like_labels
         }
 
         selected_subjects = set(self._selected_subjects())
@@ -4404,7 +4411,7 @@ class ModernDKABQuiz:
                 return {
                     "yil": year,
                     "ders": subject,
-                    "konu": self.normalize_topic_name(konu) if konu else subject,
+                    "konu": self.normalize_topic_name(konu) if konu else "",
                     "soru_no": soru_no,
                     "soru_metni": '\n'.join(soru_metni).strip(),
                     "siklar": options,
