@@ -1606,9 +1606,9 @@ class ModernDKABQuiz:
         nav_frame = tk.Frame(nav_shell, bg=self.colors['card'])
         nav_frame.pack(side=tk.LEFT)
 
-        compact_font = ('Segoe UI', 8, 'bold')
-        compact_padx = 8
-        compact_pady = 5
+        compact_font = ('Segoe UI', 9, 'bold')
+        compact_padx = 10
+        compact_pady = 6
 
         if self.current_index > 0:
             prev_btn = self.create_button(
@@ -1620,7 +1620,7 @@ class ModernDKABQuiz:
         tk.Label(
             nav_frame,
             text=f"Soru {self.current_index + 1}/{self.total_questions}",
-            font=('Segoe UI', 8, 'bold'),
+            font=('Segoe UI', 9, 'bold'),
             bg=self.colors['card'],
             fg=self.colors['text'],
         ).pack(side=tk.LEFT, padx=(0, 4))
@@ -1646,7 +1646,7 @@ class ModernDKABQuiz:
             finish_test_btn = self.create_button(
                 nav_frame, "Testi Bitir", self.confirm_finish_test, self.colors['danger']
             )
-            finish_test_btn.config(font=('Segoe UI', 7, 'bold'), padx=7, pady=compact_pady)
+            finish_test_btn.config(font=('Segoe UI', 8, 'bold'), padx=9, pady=compact_pady)
             finish_test_btn.pack(side=tk.LEFT, ipady=1)
 
     def on_close(self):
@@ -2466,26 +2466,27 @@ class ModernDKABQuiz:
         self.time_second_spinbox.config(state=spinbox_state)
         self._set_status_ready()
 
-    def create_card(self, parent, title):
+    def create_card(self, parent, title, show_header=True):
         """Modern kart oluşturur"""
         card = tk.Frame(parent, bg=self.colors['card'], bd=0, highlightthickness=1,
                         highlightbackground=self.colors['border'])
-        
-        header = tk.Frame(card, bg=self.colors['primary'], height=30)
-        header.pack(fill=tk.X)
-        header.pack_propagate(False)
 
-        accent = tk.Frame(header, bg=self.colors['accent'], width=4)
-        accent.pack(side=tk.LEFT, fill=tk.Y)
+        if show_header:
+            header = tk.Frame(card, bg=self.colors['primary'], height=30)
+            header.pack(fill=tk.X)
+            header.pack_propagate(False)
 
-        title_label = tk.Label(
-            header,
-            text=title,
-            font=('Bahnschrift SemiBold', 10),
-            fg=self.colors['text'],
-            bg=self.colors['primary']
-        )
-        title_label.pack(side=tk.LEFT, padx=10, pady=4)
+            accent = tk.Frame(header, bg=self.colors['accent'], width=4)
+            accent.pack(side=tk.LEFT, fill=tk.Y)
+
+            title_label = tk.Label(
+                header,
+                text=title,
+                font=('Bahnschrift SemiBold', 10),
+                fg=self.colors['text'],
+                bg=self.colors['primary']
+            )
+            title_label.pack(side=tk.LEFT, padx=10, pady=4)
         
         return card
         
@@ -4584,6 +4585,7 @@ class ModernDKABQuiz:
         
         # Question card
         question_card = self.create_card(self.main_content, f"📝 Soru {self.current_index + 1}/{self.total_questions}")
+        question_card = self.create_card(self.main_content, "", show_header=False)
         question_card.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
         
         content_frame = tk.Frame(question_card, bg=self.colors['card'])
