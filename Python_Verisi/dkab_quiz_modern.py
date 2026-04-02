@@ -2295,6 +2295,30 @@ class ModernDKABQuiz:
         self.main_content.bind("<Leave>", lambda e: self.root.unbind_all("<MouseWheel>"))
         self.canvas.bind("<Enter>", lambda e: self.root.bind_all("<MouseWheel>", _on_main_mousewheel))
         self.canvas.bind("<Leave>", lambda e: self.root.unbind_all("<MouseWheel>"))
+
+    def _widget_y_in_main_content(self, widget):
+        y_pos = 0
+        current = widget
+        while current is not None and current != self.main_content:
+            y_pos += current.winfo_y()
+            current = current.master
+        return y_pos
+
+    def _scroll_main_to_widget(self, widget, top_padding=24):
+        if not hasattr(self, "canvas") or not widget or not widget.winfo_exists():
+            return
+
+        self.root.update_idletasks()
+
+        content_height = max(self.main_content.winfo_reqheight(), self.main_content.winfo_height())
+        canvas_height = max(1, self.canvas.winfo_height())
+        max_scroll = max(0, content_height - canvas_height)
+        if max_scroll <= 0:
+            return
+
+        widget_y = self._widget_y_in_main_content(widget)
+        target_y = max(0, min(widget_y - top_padding, max_scroll))
+        self.canvas.yview_moveto(target_y / max_scroll)
         
     def _quiz_mode(self):
         """Başlatılan testin modunu döndürür."""
@@ -4563,11 +4587,11 @@ class ModernDKABQuiz:
         question_card.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
         
         content_frame = tk.Frame(question_card, bg=self.colors['card'])
-        content_frame.pack(fill=tk.BOTH, expand=True, padx=20, pady=20)
+        content_frame.pack(fill=tk.BOTH, expand=True, padx=16, pady=14)
         
         # Progress bar
         progress_frame = tk.Frame(content_frame, bg=self.colors['card'])
-        progress_frame.pack(fill=tk.X, pady=(0, 15))
+        progress_frame.pack(fill=tk.X, pady=(0, 10))
         
         konu_display = f" | Konu: {question['konu']}" if question.get('konu') and question['konu'] != question['ders'] else ""
         progress_text = tk.Label(progress_frame, 
@@ -4577,7 +4601,7 @@ class ModernDKABQuiz:
         progress_text.pack(side=tk.LEFT)
 
         time_info_frame = tk.Frame(content_frame, bg=self.colors['card'])
-        time_info_frame.pack(fill=tk.X, pady=(0, 10))
+        time_info_frame.pack(fill=tk.X, pady=(0, 6))
 
         self.elapsed_text_var = tk.StringVar(
             value=f"Geçen Süre: {self._format_seconds(self.total_elapsed_seconds)}"
@@ -4613,13 +4637,20 @@ class ModernDKABQuiz:
         
         # Question text
         question_frame = tk.Frame(content_frame, bg=self.colors['primary'], relief=tk.RIDGE, bd=2)
-        question_frame.pack(fill=tk.X, pady=(0, 15))
-        
+        question_frame.pack(fill=tk.X, pady=(0, 10))
+
+        question_text_content = question.get('soru_metni', '') or ''
+        question_height = 4
+        if len(question_text_content) > 260 or question_text_content.count('\n') > 2:
+            question_height = 5
+        if len(question_text_content) > 520 or question_text_content.count('\n') > 5:
+            question_height = 6
+
         question_text = tk.Text(question_frame, font=self.fonts['body'], 
                                bg=self.colors['primary'], fg=self.colors['text'],
-                               wrap=tk.WORD, height=6, relief=tk.FLAT, padx=15, pady=15)
+                               wrap=tk.WORD, height=question_height, relief=tk.FLAT, padx=12, pady=10)
         question_text.pack(fill=tk.X)
-        question_text.insert(tk.END, question['soru_metni'])
+        question_text.insert(tk.END, question_text_content)
         question_text.config(state=tk.DISABLED)
         
         # Visual notification if exists
@@ -4694,7 +4725,7 @@ class ModernDKABQuiz:
             display_label = f"{key})"
             
             option_frame = tk.Frame(options_frame, bg=self.colors['card'])
-            option_frame.pack(fill=tk.X, pady=8)
+            option_frame.pack(fill=tk.X, pady=6)
             
             # Option button
             var = tk.StringVar()
@@ -4705,7 +4736,7 @@ class ModernDKABQuiz:
                                  bg=self.colors['border'], fg=self.colors['text'],
                                  relief=tk.FLAT, cursor="hand2",
                                  command=lambda v=var, i=str(i): self.select_option(v, i))
-            option_btn.pack(fill=tk.X, ipady=8)
+            option_btn.pack(fill=tk.X, ipady=6)
             self.option_buttons[str(i)] = option_btn
         
         # Navigation buttons at the top
@@ -4746,6 +4777,7 @@ class ModernDKABQuiz:
         # Restore selection from history if exists
         self.restore_selection_from_history(question)
         self.maybe_auto_read_question(question)
+        self.root.after_idle(lambda frame=options_frame: self._scroll_main_to_widget(frame, top_padding=18))
     
     def confirm_finish_test(self):
         """Testi bitirmek için onay dialogu gösterir"""
