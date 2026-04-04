@@ -74,6 +74,7 @@ ALL_DERSLER_LABEL = "Tüm dersler"
 ALL_KONULAR_LABEL = "Tüm konular"
 MULTI_VALUE_SEPARATOR = " || "
 SUMMARY_EXAM_FAMILY_ORDER = ("DHBT", "MBSTS", "ÖABT", "İHL")
+GLOBAL_SEARCH_SCOPES = ("Her Şey", "Sorular", "Özetler", "Hap Bilgiler", "Analiz")
 
 
 class MultiSelectFilter:
@@ -543,6 +544,7 @@ class ModernDKABQuiz:
         self.test_history = []
         self.current_view = "welcome"
         self.current_specific_question = None
+        self.current_text_document = None
         self.subjects = []
         self.available_subjects = [
             "DKAB",
@@ -578,6 +580,8 @@ class ModernDKABQuiz:
         self._summary_question_refs_by_topic: Dict[str, Dict[str, List[Dict[str, object]]]] = {}
         self._summary_exam_index_key = None
         self.hap_bilgi_data: Dict[str, object] | None = None
+        self.global_search_last_query = ""
+        self.global_search_last_scope = GLOBAL_SEARCH_SCOPES[0]
         self.persisted_settings = self.load_persisted_settings()
 
         self.theme_palettes = {
@@ -1772,6 +1776,15 @@ class ModernDKABQuiz:
             self.show_results()
         elif self.current_view == 'specific' and self.current_specific_question:
             self.show_specific_question(self.current_specific_question)
+        elif self.current_view == 'global_search':
+            self.show_global_search(perform_search=bool(self.global_search_last_query))
+        elif self.current_view == 'text_document' and self.current_text_document:
+            self.show_text_document(
+                self.current_text_document.get("title", "Metin"),
+                self.current_text_document.get("content", ""),
+                query=self.current_text_document.get("query", ""),
+                subtitle=self.current_text_document.get("subtitle", ""),
+            )
         else:
             self.show_welcome_screen()
 
@@ -2181,6 +2194,32 @@ class ModernDKABQuiz:
         self.load_button = self.create_button(sidebar, "📁 YÜKLE", 
                                              self.load_questions, self.colors['warning'])
         self.load_button.pack(padx=2, pady=2, fill=tk.X, ipady=2)
+
+        search_card = self.create_card(sidebar, "🌐 Global Arama")
+        search_card.pack(fill=tk.X, padx=2, pady=2)
+
+        tk.Label(search_card, text="Metin:", font=('Segoe UI', 8),
+                fg=self.colors['text'], bg=self.colors['card']).pack(anchor=tk.W, padx=5, pady=(3, 0))
+
+        self.sidebar_search_var = tk.StringVar(value=self.global_search_last_query)
+        self.sidebar_search_entry = tk.Entry(
+            search_card,
+            textvariable=self.sidebar_search_var,
+            bg=self.colors['bg'],
+            fg=self.colors['text'],
+            insertbackground=self.colors['text'],
+            relief=tk.FLAT,
+        )
+        self.sidebar_search_entry.pack(padx=5, pady=(0, 4), fill=tk.X, ipady=4)
+        self.sidebar_search_entry.bind("<Return>", self.open_global_search_from_sidebar)
+
+        self.global_search_button = self.create_button(
+            search_card,
+            "🔎 HER YERDE ARA",
+            self.open_global_search_from_sidebar,
+            self.colors['accent'],
+        )
+        self.global_search_button.pack(padx=5, pady=(0, 5), fill=tk.X, ipady=2)
 
         # --- Soruya Git Kartı ---
         goto_card = self.create_card(sidebar, "🔍 Soruya Git")
@@ -2837,6 +2876,591 @@ class ModernDKABQuiz:
 
         self._populate_hap_topics()
         self._render_hap_bilgi_text()
+
+    def _normalize_search_text(self, text):
+        value = str(text or "")
+        replacements = {
+            "İ": "i",
+            "I": "ı",
+            "â€™": "'",
+            "’": "'",
+        }
+        for source, target in replacements.items():
+            value = value.replace(source, target)
+        return re.sub(r"\s+", " ", value.casefold()).strip()
+
+    def _search_terms(self, query):
+        normalized = self._normalize_search_text(query)
+        terms = [term for term in normalized.split() if term]
+        return normalized, terms
+
+    def _build_search_snippet(self, text, query, max_chars=220):
+        content = " ".join(str(text or "").split())
+        if not content:
+            return ""
+
+        match = re.search(re.escape(str(query or "").strip()), content, flags=re.IGNORECASE)
+        if not match:
+            return content[:max_chars].rstrip() + ("..." if len(content) > max_chars else "")
+
+        start = max(0, match.start() - max_chars // 3)
+        end = min(len(content), match.end() + max_chars // 2)
+        snippet = content[start:end].strip()
+        if start > 0:
+            snippet = "..." + snippet
+        if end < len(content):
+            snippet = snippet + "..."
+        return snippet
+
+    def _question_search_source(self):
+        if self.questions:
+            return list(self.questions)
+        try:
+            source_questions, _, _ = load_question_bank(
+                base_dir=WORDE_DIR,
+                default_topic=None,
+            )
+        except Exception:
+            source_questions = []
+        return source_questions
+
+    def _build_question_search_entries(self):
+        entries = []
+        for question in self._question_search_source():
+            options_text = " ".join(
+                f"{key} {value}"
+                for key, value in sorted((question.get("siklar") or {}).items())
+            )
+            answer_key = str(question.get("dogru_cevap", "") or "").strip()
+            answer_text = (question.get("siklar") or {}).get(answer_key, "")
+            preview_text = " ".join(
+                part for part in [
+                    question.get("soru_metni", ""),
+                    f"Doğru cevap: {answer_key} {answer_text}".strip(),
+                    question.get("aciklama", ""),
+                ]
+                if str(part or "").strip()
+            )
+            searchable_text = " ".join(
+                str(part or "")
+                for part in [
+                    question.get("ders", ""),
+                    question.get("yil", ""),
+                    question.get("konu", ""),
+                    question.get("soru_metni", ""),
+                    options_text,
+                    answer_key,
+                    answer_text,
+                    question.get("aciklama", ""),
+                ]
+            )
+            entries.append(
+                {
+                    "kind": "question",
+                    "scope": "Sorular",
+                    "title": f"{question.get('ders', '')} {question.get('yil', '')} | Soru {question.get('soru_no', '')}",
+                    "subtitle": f"Konu: {question.get('konu', 'Belirtilmemiş')}",
+                    "preview_text": preview_text,
+                    "searchable_text": searchable_text,
+                    "question": question,
+                    "open_label": "Soruyu Aç",
+                }
+            )
+        return entries
+
+    def _build_summary_search_entries(self):
+        entries = []
+        summary_files = (
+            ("dkab_ozet.txt", "DKAB Özet"),
+            ("dkab_kodlamali_ozet.txt", "Kodlamalı Özet"),
+        )
+        for filename, label in summary_files:
+            path = self.base_dir / filename
+            if not path.exists():
+                continue
+            try:
+                parsed = parse_topic_text_file(path)
+                blocks = list(parsed.get("topic_blocks", []))
+            except Exception:
+                blocks = []
+
+            if not blocks:
+                content = self._read_text_file_content(path)
+                entries.append(
+                    {
+                        "kind": "text_file",
+                        "scope": "Özetler",
+                        "title": label,
+                        "subtitle": filename,
+                        "preview_text": content,
+                        "searchable_text": content,
+                        "path": str(path),
+                        "open_label": "Metni Aç",
+                    }
+                )
+                continue
+
+            for block in blocks:
+                sentences = block.get("sentences", [])
+                raw_text = " ".join(
+                    str(sentence.get("raw", "")).strip()
+                    for sentence in sentences
+                    if sentence.get("raw")
+                )
+                entries.append(
+                    {
+                        "kind": "text_file",
+                        "scope": "Özetler",
+                        "title": f"{label} | {block.get('topic', 'Genel')}",
+                        "subtitle": f"{block.get('main_cat', 'Diğer')} | {filename}",
+                        "preview_text": raw_text,
+                        "searchable_text": " ".join(
+                            str(part or "")
+                            for part in [
+                                label,
+                                block.get("main_cat", ""),
+                                block.get("topic", ""),
+                                raw_text,
+                            ]
+                        ),
+                        "path": str(path),
+                        "open_label": "Metni Aç",
+                    }
+                )
+        return entries
+
+    def _build_hap_search_entries(self):
+        entries = []
+        try:
+            hap_data = ensure_hap_bilgi_data()
+        except Exception:
+            hap_data = {"exams": []}
+
+        self.hap_bilgi_data = hap_data
+        for exam_entry in hap_data.get("exams", []):
+            label = str(exam_entry.get("label", "")).strip()
+            general_path = exam_entry.get("general_path")
+            if general_path:
+                content = self._read_text_file_content(general_path)
+                entries.append(
+                    {
+                        "kind": "text_file",
+                        "scope": "Hap Bilgiler",
+                        "title": f"{label} | Genel Panel",
+                        "subtitle": "Hap Bilgiler",
+                        "preview_text": content,
+                        "searchable_text": content,
+                        "path": str(general_path),
+                        "open_label": "Paneli Aç",
+                    }
+                )
+
+            for topic_entry in exam_entry.get("topics", []):
+                topic_path = topic_entry.get("text_path")
+                if not topic_path:
+                    continue
+                content = self._read_text_file_content(topic_path)
+                entries.append(
+                    {
+                        "kind": "text_file",
+                        "scope": "Hap Bilgiler",
+                        "title": f"{label} | {topic_entry.get('topic', 'Konu')}",
+                        "subtitle": "Hap Bilgiler",
+                        "preview_text": content,
+                        "searchable_text": content,
+                        "path": str(topic_path),
+                        "open_label": "Metni Aç",
+                    }
+                )
+        return entries
+
+    def _build_analysis_search_entries(self):
+        entries = []
+        for filename, label in (
+            ("analiz_sonuc.txt", "Analiz Raporu"),
+            ("ozet_notlarim.txt", "Kişisel Notlar"),
+        ):
+            path = self.base_dir / filename
+            if not path.exists():
+                continue
+            content = self._read_text_file_content(path)
+            entries.append(
+                {
+                    "kind": "text_file",
+                    "scope": "Analiz",
+                    "title": label,
+                    "subtitle": filename,
+                    "preview_text": content,
+                    "searchable_text": content,
+                    "path": str(path),
+                    "open_label": "Metni Aç",
+                }
+            )
+        return entries
+
+    def _search_entry_score(self, entry, normalized_query, terms):
+        haystack = self._normalize_search_text(entry.get("searchable_text", ""))
+        if not haystack:
+            return 0
+
+        score = 0
+        if normalized_query and normalized_query in haystack:
+            score += 10 + haystack.count(normalized_query) * 2
+        elif terms and all(term in haystack for term in terms):
+            score += 4
+        else:
+            return 0
+
+        for term in set(terms):
+            score += haystack.count(term)
+        return score
+
+    def _search_app_content(self, query, scope):
+        normalized_query, terms = self._search_terms(query)
+        if not normalized_query:
+            return []
+
+        builders = {
+            "Sorular": self._build_question_search_entries,
+            "Özetler": self._build_summary_search_entries,
+            "Hap Bilgiler": self._build_hap_search_entries,
+            "Analiz": self._build_analysis_search_entries,
+        }
+
+        selected_scopes = list(builders.keys()) if scope == "Her Şey" else [scope]
+        results = []
+        for selected_scope in selected_scopes:
+            builder = builders.get(selected_scope)
+            if builder is None:
+                continue
+            for entry in builder():
+                score = self._search_entry_score(entry, normalized_query, terms)
+                if score <= 0:
+                    continue
+                result = dict(entry)
+                result["score"] = score
+                result["snippet"] = self._build_search_snippet(
+                    entry.get("preview_text", entry.get("searchable_text", "")),
+                    query,
+                )
+                results.append(result)
+
+        kind_order = {"question": 0, "text_file": 1}
+        results.sort(
+            key=lambda item: (
+                -item.get("score", 0),
+                kind_order.get(item.get("kind", ""), 99),
+                item.get("title", ""),
+            )
+        )
+        return results
+
+    def open_global_search_from_sidebar(self, event=None):
+        if hasattr(self, "sidebar_search_var"):
+            self.global_search_last_query = self.sidebar_search_var.get().strip()
+        self.show_global_search(perform_search=bool(self.global_search_last_query))
+
+    def show_global_search(self, perform_search=False):
+        self.current_view = "global_search"
+        self.current_text_document = None
+        self.stop_speech(reset_status=False)
+        self._stop_countdown()
+        self._stop_elapsed_tracking()
+        self.remaining_seconds = 0
+        self._set_status_ready()
+
+        for widget in self.main_content.winfo_children():
+            widget.destroy()
+
+        search_card = self.create_card(self.main_content, "🌐 Global Arama")
+        search_card.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+
+        tk.Label(
+            search_card,
+            text="Sorular, özetler, hap bilgiler ve analiz metinleri tek yerden aranır.",
+            font=("Segoe UI", 9, "italic"),
+            justify=tk.LEFT,
+            wraplength=860,
+            bg=self.colors['card'],
+            fg=self.colors['text_secondary'],
+            anchor="w",
+        ).pack(fill=tk.X, padx=20, pady=(12, 6))
+
+        controls = tk.Frame(search_card, bg=self.colors['card'])
+        controls.pack(fill=tk.X, padx=20, pady=(0, 10))
+
+        self.global_search_query_var = tk.StringVar(value=self.global_search_last_query)
+        self.global_search_scope_var = tk.StringVar(value=self.global_search_last_scope or GLOBAL_SEARCH_SCOPES[0])
+        self.global_search_status_var = tk.StringVar(value="Arama bekleniyor.")
+
+        tk.Label(controls, text="Ara:", font=('Segoe UI', 9, 'bold'),
+                fg=self.colors['text'], bg=self.colors['card']).pack(side=tk.LEFT)
+
+        self.global_search_entry = tk.Entry(
+            controls,
+            textvariable=self.global_search_query_var,
+            bg=self.colors['bg'],
+            fg=self.colors['text'],
+            insertbackground=self.colors['text'],
+            relief=tk.FLAT,
+            width=34,
+        )
+        self.global_search_entry.pack(side=tk.LEFT, padx=(6, 10), ipady=4)
+        self.global_search_entry.bind("<Return>", self.run_global_search)
+
+        tk.Label(controls, text="Alan:", font=('Segoe UI', 9, 'bold'),
+                fg=self.colors['text'], bg=self.colors['card']).pack(side=tk.LEFT)
+
+        self.global_search_scope_combo = ttk.Combobox(
+            controls,
+            textvariable=self.global_search_scope_var,
+            values=list(GLOBAL_SEARCH_SCOPES),
+            state="readonly",
+            width=16,
+            style='Modern.TCombobox',
+        )
+        self.global_search_scope_combo.pack(side=tk.LEFT, padx=(6, 10))
+
+        search_btn = self.create_button(
+            controls,
+            "🔎 Ara",
+            self.run_global_search,
+            self.colors['accent'],
+        )
+        search_btn.pack(side=tk.LEFT)
+
+        tk.Label(
+            search_card,
+            textvariable=self.global_search_status_var,
+            font=("Segoe UI", 9, "bold"),
+            justify=tk.LEFT,
+            wraplength=860,
+            bg=self.colors['primary'],
+            fg=self.colors['text'],
+            anchor="w",
+            padx=12,
+            pady=8,
+        ).pack(fill=tk.X, padx=20, pady=(0, 10))
+
+        self.global_search_results_frame = tk.Frame(search_card, bg=self.colors['card'])
+        self.global_search_results_frame.pack(fill=tk.BOTH, expand=True, padx=20, pady=(0, 20))
+
+        self.root.after(50, self.global_search_entry.focus_set)
+        if perform_search and self.global_search_last_query.strip():
+            self.run_global_search()
+
+    def run_global_search(self, event=None):
+        query = self.global_search_query_var.get().strip() if hasattr(self, "global_search_query_var") else ""
+        scope = self.global_search_scope_var.get() if hasattr(self, "global_search_scope_var") else GLOBAL_SEARCH_SCOPES[0]
+        self.global_search_last_query = query
+        self.global_search_last_scope = scope
+
+        if hasattr(self, "sidebar_search_var"):
+            self.sidebar_search_var.set(query)
+
+        if len(query) < 2:
+            self.global_search_status_var.set("En az 2 karakter gir.")
+            self._render_global_search_results([], query)
+            return
+
+        self.global_search_status_var.set(f"'{query}' aranıyor...")
+        self.root.update_idletasks()
+        results = self._search_app_content(query, scope)
+        self._render_global_search_results(results, query)
+
+    def _render_global_search_results(self, results, query):
+        if not hasattr(self, "global_search_results_frame"):
+            return
+
+        for child in self.global_search_results_frame.winfo_children():
+            child.destroy()
+
+        if not results:
+            self.global_search_status_var.set(f"'{query}' için sonuç bulunamadı.")
+            tk.Label(
+                self.global_search_results_frame,
+                text="Sonuç yok. Aramayı farklı bir kelime ya da alanla tekrar deneyebilirsin.",
+                font=("Segoe UI", 10),
+                justify=tk.LEFT,
+                wraplength=820,
+                bg=self.colors['card'],
+                fg=self.colors['text_secondary'],
+                anchor="w",
+            ).pack(fill=tk.X, pady=10)
+            return
+
+        shown_results = results[:120]
+        extra_count = max(0, len(results) - len(shown_results))
+        status_text = f"{len(results)} sonuç bulundu."
+        if extra_count:
+            status_text += f" İlk {len(shown_results)} sonuç gösteriliyor."
+        self.global_search_status_var.set(status_text)
+
+        for index, result in enumerate(shown_results, start=1):
+            card = tk.Frame(
+                self.global_search_results_frame,
+                bg=self.colors['primary'],
+                highlightbackground=self.colors['border'],
+                highlightthickness=1,
+            )
+            card.pack(fill=tk.X, pady=(0, 10))
+
+            title_row = tk.Frame(card, bg=self.colors['primary'])
+            title_row.pack(fill=tk.X, padx=12, pady=(10, 4))
+
+            tk.Label(
+                title_row,
+                text=f"{index}. {result.get('title', '')}",
+                font=("Segoe UI", 10, "bold"),
+                bg=self.colors['primary'],
+                fg=self.colors['text'],
+                anchor="w",
+            ).pack(side=tk.LEFT, fill=tk.X, expand=True)
+
+            tk.Label(
+                title_row,
+                text=result.get("scope", ""),
+                font=("Segoe UI", 8, "bold"),
+                bg=self.colors['accent'],
+                fg=self.colors['text'],
+                padx=8,
+                pady=2,
+            ).pack(side=tk.RIGHT)
+
+            subtitle = str(result.get("subtitle", "") or "").strip()
+            if subtitle:
+                tk.Label(
+                    card,
+                    text=subtitle,
+                    font=("Segoe UI", 8),
+                    bg=self.colors['primary'],
+                    fg=self.colors['text_secondary'],
+                    anchor="w",
+                    justify=tk.LEFT,
+                ).pack(fill=tk.X, padx=12)
+
+            tk.Label(
+                card,
+                text=result.get("snippet", ""),
+                font=("Segoe UI", 9),
+                bg=self.colors['primary'],
+                fg=self.colors['text'],
+                justify=tk.LEFT,
+                wraplength=780,
+                anchor="w",
+            ).pack(fill=tk.X, padx=12, pady=(6, 8))
+
+            action_row = tk.Frame(card, bg=self.colors['primary'])
+            action_row.pack(fill=tk.X, padx=12, pady=(0, 10))
+
+            open_btn = self.create_button(
+                action_row,
+                result.get("open_label", "Aç"),
+                lambda item=result, q=query: self._open_search_result(item, q),
+                self.colors['success'],
+            )
+            open_btn.config(font=('Segoe UI', 8, 'bold'), padx=8, pady=5)
+            open_btn.pack(side=tk.LEFT)
+
+    def _open_search_result(self, result, query=""):
+        if result.get("kind") == "question" and result.get("question"):
+            self.show_specific_question(result["question"])
+            return
+
+        path_value = result.get("path")
+        if path_value:
+            self.show_text_document(
+                result.get("title", "Metin"),
+                self._read_text_file_content(path_value),
+                query=query,
+                subtitle=result.get("subtitle", ""),
+            )
+
+    def _highlight_query_in_text_widget(self, text_widget, query):
+        text_widget.tag_remove("search_hit", "1.0", tk.END)
+        query = str(query or "").strip()
+        if not query:
+            return
+
+        start_index = "1.0"
+        first_hit = None
+        while True:
+            pos = text_widget.search(query, start_index, stopindex=tk.END, nocase=True)
+            if not pos:
+                break
+            end_pos = f"{pos}+{len(query)}c"
+            text_widget.tag_add("search_hit", pos, end_pos)
+            if first_hit is None:
+                first_hit = pos
+            start_index = end_pos
+
+        text_widget.tag_configure("search_hit", background=self.colors['warning'], foreground="#000000")
+        if first_hit:
+            text_widget.see(first_hit)
+
+    def show_text_document(self, title, content, query="", subtitle=""):
+        self.current_view = "text_document"
+        self.current_text_document = {
+            "title": title,
+            "content": content,
+            "query": query,
+            "subtitle": subtitle,
+        }
+        self.stop_speech(reset_status=False)
+        self._stop_countdown()
+        self._stop_elapsed_tracking()
+        self.remaining_seconds = 0
+        self._set_status_ready()
+
+        for widget in self.main_content.winfo_children():
+            widget.destroy()
+
+        card = self.create_card(self.main_content, title)
+        card.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+
+        controls = tk.Frame(card, bg=self.colors['card'])
+        controls.pack(fill=tk.X, padx=20, pady=(12, 8))
+
+        back_btn = self.create_button(
+            controls,
+            "← Aramaya Dön",
+            lambda: self.show_global_search(perform_search=bool(self.global_search_last_query)),
+            self.colors['text_secondary'],
+        )
+        back_btn.pack(side=tk.LEFT)
+
+        if subtitle:
+            tk.Label(
+                card,
+                text=subtitle,
+                font=("Segoe UI", 9, "italic"),
+                justify=tk.LEFT,
+                wraplength=840,
+                bg=self.colors['card'],
+                fg=self.colors['text_secondary'],
+                anchor="w",
+            ).pack(fill=tk.X, padx=20, pady=(0, 8))
+
+        text_frame = tk.Frame(card, bg=self.colors['border'])
+        text_frame.pack(fill=tk.BOTH, expand=True, padx=20, pady=(0, 20))
+
+        text_widget = tk.Text(
+            text_frame,
+            wrap=tk.WORD,
+            font=self.fonts['body'],
+            bg=self.colors['card'],
+            fg=self.colors['text'],
+            padx=10,
+            pady=10,
+            bd=0,
+        )
+        scroll = ttk.Scrollbar(text_frame, command=text_widget.yview, style="Modern.Vertical.TScrollbar")
+        text_widget.configure(yscrollcommand=scroll.set)
+        scroll.pack(side=tk.RIGHT, fill=tk.Y)
+        text_widget.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        text_widget.insert("1.0", str(content or ""))
+        self._highlight_query_in_text_widget(text_widget, query)
+        text_widget.config(state=tk.DISABLED)
 
     def _turkish_upper(self, text: str) -> str:
         return str(text or "").replace("i", "İ").replace("ı", "I").upper()
