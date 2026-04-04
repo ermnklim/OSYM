@@ -1,0 +1,36 @@
+2024 DHBT Lisans HAP BİLGİ PANELİ
+Sınav ailesi: DHBT
+Toplam soru: 20
+Konu sayısı: 10
+
+Bu sınav için kısa rota:
+- Önce Hadis (3), İslam Tarihi (3), Fıkıh (2) çalışılırsa ana gövde hızlı toparlanır.
+- Bu sınavda sık dönen alt başlıklar: Konulu hadisler (3), Abbasiler (2), Dört halife (2), Hadis usulü (2).
+- Soru kalıbı dağılımı: Kavram / eşleştirme (7), Genel bilgi (6), İstisna / ters kök (5), Doğru kombinasyon (1).
+- İlk üç konu yaklaşık %40'lik alanı kapsıyor.
+
+Konu konu hızlı hat:
+- Hadis: Konulu hadisler (3), Hadis usulü (2). (3 soru)
+- İslam Tarihi: Abbasiler (2), Dört halife (2). (3 soru)
+- Fıkıh: Kurban (1), Muamelat (1). (2 soru)
+- Kelam / Akaid: Kelam ekolleri (1). (2 soru)
+- Kur'an-ı Kerim ve Tecvid: Sure ve kavim bilgisi (1), Tecvit kuralları (1). (2 soru)
+- Dinler Tarihi: Hristiyanlık (1). (2 soru)
+- Mezhepler Tarihi: Genel / Diğer (2). (2 soru)
+- Fıkıh Usulü: Kıyas (1), İcma (1). (2 soru)
+- Tefsir: Tefsir usulü (1). (1 soru)
+- Din Hizmetleri ve Hitabet: İrşat ve yaygın din hizmeti (1). (1 soru)
+
+En çok karıştırılan mini notlar:
+- Sahih-hasen-zayıf ile mürsel-munkatı-muallak ayrımlarını aynı kartta çalış.
+- Merfu, mevkuf ve maktu kavramlarını ravi zinciriyle birlikte düşün.
+- Dört Halife ve Emevi-Abbasi geçişlerini zaman sırasıyla tekrar et.
+- Farz-vacip, şart-rükün ve zekat-fitre ayrımlarını kısa kart yap.
+- Kaza gerektirenle kefaret gerektiren oruç bozmalarını karşılaştırmalı çalış.
+- Kader-kaza ve Maturidilik-Eşarilik ayrımını karıştırma.
+
+Çalışma taktiği:
+- Önce kavram eşleştirme.
+- Sonra şahıs-eser-ekol listesi.
+- Sonra kronoloji.
+- En son çıkmış soru mantığı.

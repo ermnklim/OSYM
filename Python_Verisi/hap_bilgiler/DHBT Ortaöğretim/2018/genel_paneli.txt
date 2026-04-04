@@ -1,0 +1,35 @@
+2018 DHBT Ortaöğretim HAP BİLGİ PANELİ
+Sınav ailesi: DHBT
+Toplam soru: 20
+Konu sayısı: 9
+
+Bu sınav için kısa rota:
+- Önce Kelam / Akaid (4), Tefsir (3), Hadis (3) çalışılırsa ana gövde hızlı toparlanır.
+- Bu sınavda sık dönen alt başlıklar: Konulu hadisler (3), Tefsir usulü (2), İman (2), Abbasiler (1).
+- Soru kalıbı dağılımı: Kavram / eşleştirme (7), İstisna / ters kök (6), Genel bilgi (4), Örnek / uygulama (2).
+- İlk üç konu yaklaşık %50'lik alanı kapsıyor.
+
+Konu konu hızlı hat:
+- Kelam / Akaid: İman (2), Kelam ekolleri (1). (4 soru)
+- Tefsir: Tefsir usulü (2). (3 soru)
+- Hadis: Konulu hadisler (3). (3 soru)
+- Fıkıh: Namaz (1), Oruç (1). (2 soru)
+- Dinler Tarihi: Genel / Diğer (2). (2 soru)
+- Mezhepler Tarihi: Genel / Diğer (2). (2 soru)
+- İslam Tarihi: Abbasiler (1), Dört halife (1). (2 soru)
+- Din Hizmetleri ve Hitabet: Hutbe ve vaaz (1). (1 soru)
+- Fıkıh Usulü: Genel / Diğer (1). (1 soru)
+
+En çok karıştırılan mini notlar:
+- Kader-kaza ve Maturidilik-Eşarilik ayrımını karıştırma.
+- Büyük günah meselesinde Harici, Mürcie ve Ehl-i sünnet farkını birlikte tekrar et.
+- Mekki-Medeni, muhkem-müteşabih ve rivayet-dirayet ayrımlarını karıştırma.
+- Nesih ile esbab-ı nüzul başlıklarını aynı tablo içinde tekrar etmek faydalıdır.
+- Sahih-hasen-zayıf ile mürsel-munkatı-muallak ayrımlarını aynı kartta çalış.
+- Merfu, mevkuf ve maktu kavramlarını ravi zinciriyle birlikte düşün.
+
+Çalışma taktiği:
+- Önce kavram eşleştirme.
+- Sonra şahıs-eser-ekol listesi.
+- Sonra kronoloji.
+- En son çıkmış soru mantığı.

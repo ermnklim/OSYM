@@ -1,0 +1,39 @@
+2025 DKAB HAP BİLGİ PANELİ
+Sınav ailesi: ÖABT DKAB
+Toplam soru: 50
+Konu sayısı: 13
+
+Bu sınav için kısa rota:
+- Önce İslam Tarihi (8), Fıkıh (7), Tefsir (5) çalışılırsa ana gövde hızlı toparlanır.
+- Bu sınavda sık dönen alt başlıklar: Dört halife (4), Konulu hadisler (3), Tecvit kuralları (3), Abbasiler (1).
+- Soru kalıbı dağılımı: Genel bilgi (20), Kavram / eşleştirme (14), İstisna / ters kök (9), Doğru kombinasyon (4).
+- İlk üç konu yaklaşık %40'lik alanı kapsıyor.
+
+Konu konu hızlı hat:
+- İslam Tarihi: Dört halife (4), Abbasiler (1). (8 soru)
+- Fıkıh: Aile hukuku (1), Hac ve umre (1). (7 soru)
+- Tefsir: Kıssalar ve sureler (1), Tefsir usulü (1). (5 soru)
+- Hadis: Konulu hadisler (3), Hadis kaynakları (1). (5 soru)
+- Kelam / Akaid: Kader (1), Kelam ekolleri (1). (5 soru)
+- Kur'an-ı Kerim ve Tecvid: Tecvit kuralları (3), Kıraat (1). (4 soru)
+- İslam Mezhepleri ve Akımları: Modern akımlar (1). (4 soru)
+- Din Eğitimi: Genel / Diğer (2). (2 soru)
+- Dinler Tarihi: Yahudilik (1). (2 soru)
+- Din Sosyolojisi: Genel / Diğer (2). (2 soru)
+- Din Psikolojisi: Genel / Diğer (2). (2 soru)
+- Din Felsefesi: Genel / Diğer (2). (2 soru)
+- İslam Felsefesi: Genel / Diğer (2). (2 soru)
+
+En çok karıştırılan mini notlar:
+- Dört Halife ve Emevi-Abbasi geçişlerini zaman sırasıyla tekrar et.
+- Farz-vacip, şart-rükün ve zekat-fitre ayrımlarını kısa kart yap.
+- Kaza gerektirenle kefaret gerektiren oruç bozmalarını karşılaştırmalı çalış.
+- Mekki-Medeni, muhkem-müteşabih ve rivayet-dirayet ayrımlarını karıştırma.
+- Nesih ile esbab-ı nüzul başlıklarını aynı tablo içinde tekrar etmek faydalıdır.
+- Sahih-hasen-zayıf ile mürsel-munkatı-muallak ayrımlarını aynı kartta çalış.
+
+Çalışma taktiği:
+- Önce kavram eşleştirme.
+- Sonra şahıs-eser-ekol listesi.
+- Sonra kronoloji.
+- En son çıkmış soru mantığı.

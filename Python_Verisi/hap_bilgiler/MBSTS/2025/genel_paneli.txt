@@ -1,0 +1,37 @@
+2025 MBSTS HAP BİLGİ PANELİ
+Sınav ailesi: MBSTS
+Toplam soru: 60
+Konu sayısı: 11
+
+Bu sınav için kısa rota:
+- Önce Fıkıh (14), Tefsir (9), Kelam / Akaid (8) çalışılırsa ana gövde hızlı toparlanır.
+- Bu sınavda sık dönen alt başlıklar: Konulu hadisler (7), Tefsir usulü (6), Hadis usulü (5), Aile hukuku (3).
+- Soru kalıbı dağılımı: Genel bilgi (25), Kavram / eşleştirme (14), İstisna / ters kök (10), Doğru kombinasyon (5).
+- İlk üç konu yaklaşık %52'lik alanı kapsıyor.
+
+Konu konu hızlı hat:
+- Fıkıh: Aile hukuku (3), Miras (2). (14 soru)
+- Tefsir: Tefsir usulü (6), Kıssalar ve sureler (1). (9 soru)
+- Kelam / Akaid: Kelam yöntemi (3), Tevhid ve sıfatlar (3). (8 soru)
+- Hadis: Konulu hadisler (7), Hadis usulü (5). (7 soru)
+- Fıkıh Usulü: Kıyas (1), Lafızlar ve delalet (1). (6 soru)
+- Kur'an-ı Kerim ve Tecvid: Mahreç ve sıfat (2), Sure ve kavim bilgisi (2). (5 soru)
+- Siyer: Medine dönemi (2), Mekke dönemi (2). (4 soru)
+- İslam Tarihi: Dört halife (2), Abbasiler (1). (3 soru)
+- Dinler Tarihi: Hint dinleri (1), Hristiyanlık (1). (2 soru)
+- İslam Mezhepleri ve Akımları: Genel / Diğer (1). (1 soru)
+- İslam Felsefesi: Genel / Diğer (1). (1 soru)
+
+En çok karıştırılan mini notlar:
+- Farz-vacip, şart-rükün ve zekat-fitre ayrımlarını kısa kart yap.
+- Kaza gerektirenle kefaret gerektiren oruç bozmalarını karşılaştırmalı çalış.
+- Mekki-Medeni, muhkem-müteşabih ve rivayet-dirayet ayrımlarını karıştırma.
+- Nesih ile esbab-ı nüzul başlıklarını aynı tablo içinde tekrar etmek faydalıdır.
+- Kader-kaza ve Maturidilik-Eşarilik ayrımını karıştırma.
+- Büyük günah meselesinde Harici, Mürcie ve Ehl-i sünnet farkını birlikte tekrar et.
+
+Çalışma taktiği:
+- Önce kavram eşleştirme.
+- Sonra şahıs-eser-ekol listesi.
+- Sonra kronoloji.
+- En son çıkmış soru mantığı.

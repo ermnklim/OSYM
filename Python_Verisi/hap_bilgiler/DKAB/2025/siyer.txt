@@ -1,0 +1,10 @@
+2025 DKAB / Siyer
+Soru sayısı: 1
+
+Kısa panel:
+- Bu başlıkta ağırlık Genel / Diğer (1) etrafında dönüyor.
+- Sorular en çok İstisna / ters kök (1) yapısında geliyor.
+- Hızlı tekrar için önce Genel / Diğer çizgisini bitir; ardından 1 mikro kartı sırayla gözden geçir.
+
+Hap bilgiler:
+- Soru 33 | Hz. Muhammed: dışarıda kalan -> Bedir Savaşı.

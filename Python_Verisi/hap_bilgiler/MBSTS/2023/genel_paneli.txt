@@ -1,0 +1,35 @@
+2023 MBSTS HAP BİLGİ PANELİ
+Sınav ailesi: MBSTS
+Toplam soru: 60
+Konu sayısı: 9
+
+Bu sınav için kısa rota:
+- Önce Fıkıh (18), Tefsir (11), Hadis (7) çalışılırsa ana gövde hızlı toparlanır.
+- Bu sınavda sık dönen alt başlıklar: Konulu hadisler (7), Namaz (4), Tefsir usulü (4), Aile hukuku (3).
+- Soru kalıbı dağılımı: Genel bilgi (29), Doğru kombinasyon (11), İstisna / ters kök (10), Kavram / eşleştirme (8).
+- İlk üç konu yaklaşık %60'lik alanı kapsıyor.
+
+Konu konu hızlı hat:
+- Fıkıh: Namaz (4), Aile hukuku (3). (18 soru)
+- Tefsir: Tefsir usulü (4), Kıssalar ve sureler (3). (11 soru)
+- Hadis: Konulu hadisler (7), Hadis usulü (3). (7 soru)
+- İslam Tarihi: Dört halife (3), Abbasiler (1). (7 soru)
+- Kelam / Akaid: Kelam yöntemi (1), İman (1). (5 soru)
+- İslam Mezhepleri ve Akımları: Haricilik (3), Şia ve kolları (1). (5 soru)
+- Dinler Tarihi: Hristiyanlık (1), Yahudilik (1). (3 soru)
+- Kur'an-ı Kerim ve Tecvid: Tecvit kuralları (2). (2 soru)
+- Fıkıh Usulü: Kıyas (2), İcma (1). (2 soru)
+
+En çok karıştırılan mini notlar:
+- Farz-vacip, şart-rükün ve zekat-fitre ayrımlarını kısa kart yap.
+- Kaza gerektirenle kefaret gerektiren oruç bozmalarını karşılaştırmalı çalış.
+- Mekki-Medeni, muhkem-müteşabih ve rivayet-dirayet ayrımlarını karıştırma.
+- Nesih ile esbab-ı nüzul başlıklarını aynı tablo içinde tekrar etmek faydalıdır.
+- Sahih-hasen-zayıf ile mürsel-munkatı-muallak ayrımlarını aynı kartta çalış.
+- Merfu, mevkuf ve maktu kavramlarını ravi zinciriyle birlikte düşün.
+
+Çalışma taktiği:
+- Önce kavram eşleştirme.
+- Sonra şahıs-eser-ekol listesi.
+- Sonra kronoloji.
+- En son çıkmış soru mantığı.

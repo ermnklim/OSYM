@@ -1,0 +1,10 @@
+2026 MBSTS / Diğer
+Soru sayısı: 1
+
+Kısa panel:
+- Bu başlıkta ağırlık Genel / Diğer (1) etrafında dönüyor.
+- Sorular en çok Kavram / eşleştirme (1) yapısında geliyor.
+- Hızlı tekrar için önce Genel / Diğer çizgisini bitir; ardından 1 mikro kartı sırayla gözden geçir.
+
+Hap bilgiler:
+- Soru 36 | İslam hukukunda bir kimsenin hukukî temsilcisi olmadığı hâlde, onun adına...: ana cevap -> Fuzûlî.

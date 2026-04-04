@@ -25,6 +25,7 @@ except ImportError:
 
 try:
     from project_paths import GORSSELLER_DIR, ROOT_DIR, WORDE_DIR
+    from hap_bilgi_generator import ensure_hap_bilgi_data
     from question_bank import (
         format_subject_label as format_exam_subject_label,
         has_dhbt_common_file as question_bank_has_dhbt_common_file,
@@ -42,6 +43,7 @@ try:
     from topic_text_parser import normalize_sentence_for_tts, parse_topic_text_file
 except ImportError:
     from Python_Verisi.project_paths import GORSSELLER_DIR, ROOT_DIR, WORDE_DIR
+    from Python_Verisi.hap_bilgi_generator import ensure_hap_bilgi_data
     from Python_Verisi.question_bank import (
         format_subject_label as format_exam_subject_label,
         has_dhbt_common_file as question_bank_has_dhbt_common_file,
@@ -575,6 +577,7 @@ class ModernDKABQuiz:
         self._summary_exam_families_by_topic: Dict[str, Set[str]] = {}
         self._summary_question_refs_by_topic: Dict[str, Dict[str, List[Dict[str, object]]]] = {}
         self._summary_exam_index_key = None
+        self.hap_bilgi_data: Dict[str, object] | None = None
         self.persisted_settings = self.load_persisted_settings()
 
         self.theme_palettes = {
@@ -2259,6 +2262,10 @@ class ModernDKABQuiz:
                                        self.show_ozet, self.colors['accent'])
         ozet2_btn.pack(padx=5, pady=(0, 5), fill=tk.X, ipady=2)
 
+        hap_btn = self.create_button(ozet_card, "🧠 Hap Bilgiler",
+                                     self.show_hap_bilgiler, self.colors['warning'])
+        hap_btn.pack(padx=5, pady=(0, 5), fill=tk.X, ipady=2)
+
         self.on_mode_changed()
         
     def create_main_content(self, parent):
@@ -2605,6 +2612,231 @@ class ModernDKABQuiz:
             title="📝 DKAB Kodlamalı Özet",
             view_name="kodlamali_ozet",
         )
+
+    def _format_hap_exam_summary(self, exams):
+        labels = [str(item.get("label", "")).strip() for item in exams if str(item.get("label", "")).strip()]
+        if not labels:
+            return "Henüz hap bilgi verisi üretilmedi."
+        if len(labels) <= 3:
+            return "Tarama kapsamı: " + ", ".join(labels)
+        return f"Tarama kapsamı: {len(labels)} sınav işlendi."
+
+    def _read_text_file_content(self, path_value):
+        try:
+            path = Path(str(path_value or ""))
+            if path.exists():
+                return path.read_text(encoding="utf-8")
+        except Exception as exc:
+            return f"Metin okunamadı: {exc}"
+        return "Metin dosyası bulunamadı."
+
+    def _selected_hap_exam_entry(self):
+        label = self.hap_exam_var.get() if hasattr(self, "hap_exam_var") else ""
+        return getattr(self, "_hap_exam_label_to_entry", {}).get(label)
+
+    def _selected_hap_topic_entry(self):
+        exam_entry = self._selected_hap_exam_entry()
+        if not exam_entry:
+            return None
+        selected_topic = self.hap_topic_var.get() if hasattr(self, "hap_topic_var") else ""
+        for topic_entry in exam_entry.get("topics", []):
+            if topic_entry.get("topic") == selected_topic:
+                return topic_entry
+        return None
+
+    def _populate_hap_topics(self):
+        if not hasattr(self, "hap_topic_combo"):
+            return
+        exam_entry = self._selected_hap_exam_entry()
+        topic_values = ["Genel Panel"]
+        if exam_entry:
+            topic_values.extend(topic.get("topic", "") for topic in exam_entry.get("topics", []) if topic.get("topic"))
+        self.hap_topic_combo.config(values=topic_values)
+        if self.hap_topic_var.get() not in topic_values:
+            self.hap_topic_var.set(topic_values[0])
+
+    def _render_hap_bilgi_text(self):
+        if not hasattr(self, "hap_text_widget"):
+            return
+
+        exam_entry = self._selected_hap_exam_entry()
+        topic_entry = self._selected_hap_topic_entry()
+        content = "Gösterilecek hap bilgi bulunamadı."
+        info_line = ""
+
+        if exam_entry:
+            if topic_entry:
+                content = self._read_text_file_content(topic_entry.get("text_path"))
+                info_line = (
+                    f"{exam_entry.get('label', '')} | {topic_entry.get('topic', '')} | "
+                    f"{topic_entry.get('question_count', 0)} soru"
+                )
+            else:
+                content = self._read_text_file_content(exam_entry.get("general_path"))
+                info_line = (
+                    f"{exam_entry.get('label', '')} | Genel panel | "
+                    f"{exam_entry.get('question_count', 0)} soru"
+                )
+
+        self.hap_info_var.set(info_line)
+        self.hap_text_widget.config(state=tk.NORMAL)
+        self.hap_text_widget.delete("1.0", tk.END)
+        self.hap_text_widget.insert("1.0", content)
+        self.hap_text_widget.config(state=tk.DISABLED)
+
+    def _on_hap_exam_changed(self, *_args):
+        self._populate_hap_topics()
+        self._render_hap_bilgi_text()
+
+    def _on_hap_topic_changed(self, *_args):
+        self._render_hap_bilgi_text()
+
+    def show_hap_bilgiler(self):
+        self.current_view = "hap_bilgiler"
+        self.stop_speech(reset_status=False)
+        self._stop_countdown()
+        self._stop_elapsed_tracking()
+        self.remaining_seconds = 0
+        self._set_status_ready()
+
+        for widget in self.main_content.winfo_children():
+            widget.destroy()
+
+        try:
+            self.hap_bilgi_data = ensure_hap_bilgi_data()
+        except Exception as exc:
+            error_card = self.create_card(self.main_content, "🧠 Hap Bilgi Paneli")
+            error_card.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+            tk.Label(
+                error_card,
+                text=f"Hap bilgi verisi hazırlanamadı: {exc}",
+                font=("Segoe UI", 11),
+                justify=tk.LEFT,
+                wraplength=760,
+                bg=self.colors['card'],
+                fg=self.colors['danger'],
+                anchor="w",
+            ).pack(fill=tk.X, padx=20, pady=20)
+            return
+
+        exams = list((self.hap_bilgi_data or {}).get("exams", []))
+        self._hap_exam_label_to_entry = {
+            str(entry.get("label", "")).strip(): entry
+            for entry in exams
+            if str(entry.get("label", "")).strip()
+        }
+
+        panel_card = self.create_card(self.main_content, "🧠 Hap Bilgi Paneli")
+        panel_card.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+
+        generated_at = str((self.hap_bilgi_data or {}).get("generated_at", "") or "").replace("T", " ")
+        summary_text = self._format_hap_exam_summary(exams)
+        if generated_at:
+            summary_text = f"{summary_text} | Son üretim: {generated_at}"
+
+        tk.Label(
+            panel_card,
+            text=summary_text,
+            font=("Segoe UI", 9, "italic"),
+            justify=tk.LEFT,
+            wraplength=840,
+            bg=self.colors['card'],
+            fg=self.colors['text_secondary'],
+            anchor="w",
+        ).pack(fill=tk.X, padx=20, pady=(12, 6))
+
+        warnings = list((self.hap_bilgi_data or {}).get("warnings", []))
+        if warnings:
+            tk.Label(
+                panel_card,
+                text=" | ".join(warnings[:2]),
+                font=("Segoe UI", 8),
+                justify=tk.LEFT,
+                wraplength=840,
+                bg=self.colors['card'],
+                fg=self.colors['warning'],
+                anchor="w",
+            ).pack(fill=tk.X, padx=20, pady=(0, 6))
+
+        controls = tk.Frame(panel_card, bg=self.colors['card'])
+        controls.pack(fill=tk.X, padx=20, pady=(4, 8))
+
+        tk.Label(
+            controls,
+            text="Sınav:",
+            font=("Segoe UI", 9, "bold"),
+            bg=self.colors['card'],
+            fg=self.colors['text'],
+        ).pack(side=tk.LEFT)
+
+        exam_labels = list(self._hap_exam_label_to_entry.keys())
+        self.hap_exam_var = tk.StringVar(value=exam_labels[0] if exam_labels else "")
+        self.hap_exam_combo = ttk.Combobox(
+            controls,
+            textvariable=self.hap_exam_var,
+            values=exam_labels,
+            state="readonly",
+            width=24,
+            style='Modern.TCombobox',
+        )
+        self.hap_exam_combo.pack(side=tk.LEFT, padx=(6, 18))
+        self.hap_exam_combo.bind("<<ComboboxSelected>>", self._on_hap_exam_changed)
+
+        tk.Label(
+            controls,
+            text="Konu:",
+            font=("Segoe UI", 9, "bold"),
+            bg=self.colors['card'],
+            fg=self.colors['text'],
+        ).pack(side=tk.LEFT)
+
+        self.hap_topic_var = tk.StringVar(value="Genel Panel")
+        self.hap_topic_combo = ttk.Combobox(
+            controls,
+            textvariable=self.hap_topic_var,
+            values=["Genel Panel"],
+            state="readonly",
+            width=34,
+            style='Modern.TCombobox',
+        )
+        self.hap_topic_combo.pack(side=tk.LEFT, padx=(6, 0))
+        self.hap_topic_combo.bind("<<ComboboxSelected>>", self._on_hap_topic_changed)
+
+        self.hap_info_var = tk.StringVar(value="")
+        tk.Label(
+            panel_card,
+            textvariable=self.hap_info_var,
+            font=("Segoe UI", 9, "bold"),
+            justify=tk.LEFT,
+            wraplength=840,
+            bg=self.colors['primary'],
+            fg=self.colors['text'],
+            anchor="w",
+            padx=12,
+            pady=8,
+        ).pack(fill=tk.X, padx=20, pady=(0, 10))
+
+        text_frame = tk.Frame(panel_card, bg=self.colors['border'])
+        text_frame.pack(fill=tk.BOTH, expand=True, padx=20, pady=(0, 20))
+
+        self.hap_text_widget = tk.Text(
+            text_frame,
+            wrap=tk.WORD,
+            font=self.fonts['body'],
+            bg=self.colors['card'],
+            fg=self.colors['text'],
+            padx=10,
+            pady=10,
+            bd=0,
+        )
+        scroll = ttk.Scrollbar(text_frame, command=self.hap_text_widget.yview, style="Modern.Vertical.TScrollbar")
+        self.hap_text_widget.configure(yscrollcommand=scroll.set)
+        scroll.pack(side=tk.RIGHT, fill=tk.Y)
+        self.hap_text_widget.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        self.hap_text_widget.config(state=tk.DISABLED)
+
+        self._populate_hap_topics()
+        self._render_hap_bilgi_text()
 
     def _turkish_upper(self, text: str) -> str:
         return str(text or "").replace("i", "İ").replace("ı", "I").upper()

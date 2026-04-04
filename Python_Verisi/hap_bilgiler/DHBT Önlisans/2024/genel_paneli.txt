@@ -1,0 +1,36 @@
+2024 DHBT Önlisans HAP BİLGİ PANELİ
+Sınav ailesi: DHBT
+Toplam soru: 20
+Konu sayısı: 10
+
+Bu sınav için kısa rota:
+- Önce Hadis (3), Mezhepler Tarihi (3), İslam Tarihi (3) çalışılırsa ana gövde hızlı toparlanır.
+- Bu sınavda sık dönen alt başlıklar: Dört halife (3), Konulu hadisler (3), Abbasiler (1), Hadis usulü (1).
+- Soru kalıbı dağılımı: Kavram / eşleştirme (8), Genel bilgi (5), İstisna / ters kök (4), Doğru kombinasyon (2).
+- İlk üç konu yaklaşık %45'lik alanı kapsıyor.
+
+Konu konu hızlı hat:
+- Hadis: Konulu hadisler (3), Hadis usulü (1). (3 soru)
+- Mezhepler Tarihi: Haricilik (1). (3 soru)
+- İslam Tarihi: Dört halife (3), Abbasiler (1). (3 soru)
+- Fıkıh: Kurban (1), Oruç (1). (2 soru)
+- Kelam / Akaid: Kelam ekolleri (1). (2 soru)
+- Kur'an-ı Kerim ve Tecvid: Tecvit kuralları (1). (2 soru)
+- Dinler Tarihi: Hint dinleri (1). (2 soru)
+- Tefsir: Tefsir usulü (1). (1 soru)
+- Din Hizmetleri ve Hitabet: Hutbe ve vaaz (1). (1 soru)
+- Fıkıh Usulü: Genel / Diğer (1). (1 soru)
+
+En çok karıştırılan mini notlar:
+- Sahih-hasen-zayıf ile mürsel-munkatı-muallak ayrımlarını aynı kartta çalış.
+- Merfu, mevkuf ve maktu kavramlarını ravi zinciriyle birlikte düşün.
+- Kurucu isim, temel görüş ve coğrafya üçlüsünü birlikte ezberle.
+- Dört Halife ve Emevi-Abbasi geçişlerini zaman sırasıyla tekrar et.
+- Farz-vacip, şart-rükün ve zekat-fitre ayrımlarını kısa kart yap.
+- Kaza gerektirenle kefaret gerektiren oruç bozmalarını karşılaştırmalı çalış.
+
+Çalışma taktiği:
+- Önce kavram eşleştirme.
+- Sonra şahıs-eser-ekol listesi.
+- Sonra kronoloji.
+- En son çıkmış soru mantığı.
