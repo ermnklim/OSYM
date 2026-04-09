@@ -13,6 +13,9 @@ import os
 import sys
 import time
 import re
+import html
+import webbrowser
+import unicodedata
 from pathlib import Path
 from typing import Dict, List, Set, Tuple
 import threading
@@ -565,6 +568,8 @@ class ModernDKABQuiz:
         self.question_times = {}
         self.active_mode = None
         self.base_dir = Path(__file__).resolve().parent
+        self.print_output_dir = self.base_dir / "yazdir_ciktilari"
+        self.print_output_dir.mkdir(parents=True, exist_ok=True)
         self.settings_file = str(self.base_dir / "dkab_quiz_settings.json")
         self.speech_engine = OfflineTurkishTTS(self.base_dir)
         self.speech_voice_choices = self.speech_engine.get_voice_choices()
@@ -582,6 +587,11 @@ class ModernDKABQuiz:
         self.hap_bilgi_data: Dict[str, object] | None = None
         self.global_search_last_query = ""
         self.global_search_last_scope = GLOBAL_SEARCH_SCOPES[0]
+        self.current_ozet_filename = None
+        self.current_ozet_title = ""
+        self.current_ozet_text_widget = None
+        self.last_print_output = ""
+        self.print_status_var = tk.StringVar(value="Yazdırma hazır.")
         self.persisted_settings = self.load_persisted_settings()
 
         self.theme_palettes = {
@@ -2221,6 +2231,37 @@ class ModernDKABQuiz:
         )
         self.global_search_button.pack(padx=5, pady=(0, 5), fill=tk.X, ipady=2)
 
+        print_card = self.create_card(sidebar, "🖨️ Yazdır")
+        print_card.pack(fill=tk.X, padx=2, pady=2)
+
+        tk.Label(
+            print_card,
+            text="Açık testi veya konuyu yazdırma önizlemesiyle açar.",
+            font=('Segoe UI', 8),
+            fg=self.colors['text_secondary'],
+            bg=self.colors['card'],
+            wraplength=190,
+            justify=tk.LEFT,
+        ).pack(anchor=tk.W, padx=5, pady=(4, 2), fill=tk.X)
+
+        self.print_current_button = self.create_button(
+            print_card,
+            "🖨️ AÇILANI YAZDIR",
+            self.print_current_view,
+            self.colors['success'],
+        )
+        self.print_current_button.pack(padx=5, pady=(0, 4), fill=tk.X, ipady=2)
+
+        tk.Label(
+            print_card,
+            textvariable=self.print_status_var,
+            font=('Segoe UI', 7),
+            fg=self.colors['text_secondary'],
+            bg=self.colors['card'],
+            wraplength=190,
+            justify=tk.LEFT,
+        ).pack(anchor=tk.W, padx=5, pady=(0, 5), fill=tk.X)
+
         # --- Soruya Git Kartı ---
         goto_card = self.create_card(sidebar, "🔍 Soruya Git")
         goto_card.pack(fill=tk.X, padx=2, pady=2)
@@ -2730,6 +2771,517 @@ class ModernDKABQuiz:
     def _on_hap_topic_changed(self, *_args):
         self._render_hap_bilgi_text()
 
+    def _update_print_status(self, text):
+        message = str(text or "").strip() or "Yazdırma hazır."
+        self.last_print_output = message
+        if hasattr(self, "print_status_var"):
+            self.print_status_var.set(message)
+
+    def _slugify_print_name(self, text, default="dokuman"):
+        value = str(text or "").strip().lower()
+        replacements = {
+            "ç": "c",
+            "ğ": "g",
+            "ı": "i",
+            "ö": "o",
+            "ş": "s",
+            "ü": "u",
+        }
+        for source, target in replacements.items():
+            value = value.replace(source, target)
+        value = re.sub(r"[^a-z0-9]+", "-", value).strip("-")
+        return value or default
+
+    def _normalize_heading_key(self, text):
+        value = unicodedata.normalize("NFKD", str(text or ""))
+        value = "".join(char for char in value if not unicodedata.combining(char))
+        value = value.casefold()
+        replacements = {
+            "ç": "c",
+            "ğ": "g",
+            "ı": "i",
+            "ö": "o",
+            "ş": "s",
+            "ü": "u",
+        }
+        for source, target in replacements.items():
+            value = value.replace(source, target)
+        return re.sub(r"[^a-z0-9]+", " ", value).strip()
+
+    def _is_decorative_separator_line(self, text):
+        stripped = str(text or "").strip()
+        if not stripped:
+            return False
+        return len(stripped) >= 8 and re.fullmatch(r"[\W_]+", stripped) is not None
+
+    def _strip_duplicate_print_heading(self, content, title):
+        lines = str(content or "").replace("\r\n", "\n").splitlines()
+        if not lines:
+            return ""
+
+        title_key = self._normalize_heading_key(title)
+        index = 0
+        while index < len(lines) and (not lines[index].strip() or self._is_decorative_separator_line(lines[index])):
+            index += 1
+
+        if index < len(lines) and self._normalize_heading_key(lines[index]) == title_key:
+            index += 1
+            while index < len(lines) and (not lines[index].strip() or self._is_decorative_separator_line(lines[index])):
+                index += 1
+
+        cleaned = "\n".join(lines[index:]).strip()
+        return cleaned or str(content or "").strip()
+
+    def _get_current_ozet_print_text(self):
+        text_widget = getattr(self, "current_ozet_text_widget", None)
+        if text_widget and getattr(text_widget, "winfo_exists", lambda: False)():
+            try:
+                return text_widget.get("1.0", "end-1c")
+            except Exception:
+                pass
+
+        if self.current_ozet_filename:
+            return self._read_text_file_content(self.base_dir / self.current_ozet_filename)
+        return ""
+
+    def _plain_text_to_html(self, text):
+        normalized = str(text or "").replace("\r\n", "\n").strip()
+        if not normalized:
+            return "<p>İçerik bulunamadı.</p>"
+
+        html_parts = []
+        for block in re.split(r"\n{2,}", normalized):
+            lines = block.splitlines() or [block]
+            html_parts.append(
+                "<p>" + "<br>".join(html.escape(line) for line in lines) + "</p>"
+            )
+        return "\n".join(html_parts)
+
+    def _build_print_html(self, title, body_html, subtitle=""):
+        subtitle_html = ""
+        if str(subtitle or "").strip():
+            subtitle_html = (
+                f'<div class="subtitle">{html.escape(str(subtitle)).replace(chr(10), "<br>")}</div>'
+            )
+
+        return f"""<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>{html.escape(str(title or "Yazdır"))}</title>
+  <style>
+    @page {{
+      size: A4;
+      margin: 16mm 14mm 18mm 14mm;
+    }}
+    body {{
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #111827;
+      background: #ffffff;
+      margin: 0;
+      line-height: 1.45;
+      font-size: 12pt;
+    }}
+    .page {{
+      max-width: 185mm;
+      margin: 0 auto;
+    }}
+    h1 {{
+      font-size: 19pt;
+      margin: 0 0 8px 0;
+      color: #0f172a;
+    }}
+    h2 {{
+      font-size: 14pt;
+      margin: 18px 0 8px 0;
+      color: #0f172a;
+    }}
+    .subtitle {{
+      font-size: 10pt;
+      color: #475569;
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #cbd5e1;
+    }}
+    .question {{
+      margin-bottom: 18px;
+      page-break-inside: avoid;
+      break-inside: avoid;
+      border: 1px solid #dbe4ee;
+      border-radius: 10px;
+      padding: 12px 14px;
+    }}
+    .question-number {{
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #0f172a;
+    }}
+    .meta {{
+      font-size: 9.5pt;
+      color: #64748b;
+      margin-bottom: 8px;
+    }}
+    .meta-note {{
+      font-size: 9.5pt;
+      color: #475569;
+      margin-top: 8px;
+    }}
+    .question-text {{
+      white-space: pre-wrap;
+    }}
+    .options {{
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+    }}
+    .options li {{
+      margin: 5px 0;
+      padding: 4px 0;
+    }}
+    .answer-key {{
+      margin-top: 22px;
+      page-break-inside: avoid;
+      break-inside: avoid;
+      border-top: 2px solid #0f172a;
+      padding-top: 12px;
+    }}
+    .answer-list {{
+      columns: 3;
+      -webkit-columns: 3;
+      -moz-columns: 3;
+      padding-left: 18px;
+      margin: 10px 0 0 0;
+    }}
+    .answer-list li {{
+      margin: 2px 0 4px 0;
+    }}
+    p {{
+      margin: 0 0 12px 0;
+      white-space: pre-wrap;
+    }}
+    @media print {{
+      .no-print {{
+        display: none !important;
+      }}
+    }}
+  </style>
+  <script>
+    window.addEventListener("load", function() {{
+      setTimeout(function() {{ window.print(); }}, 350);
+    }});
+  </script>
+</head>
+<body>
+  <div class="page">
+    <h1>{html.escape(str(title or "Yazdır"))}</h1>
+    {subtitle_html}
+    {body_html}
+  </div>
+</body>
+</html>
+"""
+
+    def _write_print_html(self, title, body_html, subtitle="", suggested_name="dokuman"):
+        self.print_output_dir.mkdir(parents=True, exist_ok=True)
+        timestamp = time.strftime("%Y%m%d_%H%M%S")
+        file_name = f"{timestamp}_{self._slugify_print_name(suggested_name or title)}.html"
+        output_path = self.print_output_dir / file_name
+        output_path.write_text(
+            self._build_print_html(title, body_html, subtitle=subtitle),
+            encoding="utf-8",
+        )
+        return output_path
+
+    def _open_print_preview(self, title, body_html, subtitle="", suggested_name="dokuman"):
+        try:
+            output_path = self._write_print_html(
+                title,
+                body_html,
+                subtitle=subtitle,
+                suggested_name=suggested_name,
+            )
+        except Exception as exc:
+            messagebox.showerror("Yazdırma Hatası", f"Yazdırma dosyası hazırlanamadı:\n{exc}")
+            self._update_print_status("Yazdırma dosyası hazırlanamadı.")
+            return None
+
+        opened = False
+        try:
+            if os.name == "nt":
+                os.startfile(str(output_path))
+                opened = True
+            else:
+                opened = webbrowser.open_new_tab(output_path.as_uri())
+        except Exception:
+            try:
+                opened = webbrowser.open_new_tab(output_path.as_uri())
+            except Exception:
+                opened = False
+
+        if opened:
+            self._update_print_status(f"Önizleme açıldı: {output_path.name}")
+        else:
+            self._update_print_status(f"Dosya hazırlandı: {output_path.name}")
+            messagebox.showinfo(
+                "Yazdırma Dosyası Hazır",
+                f"Önizleme otomatik açılamadı.\nDosya burada hazırlandı:\n{output_path}",
+            )
+
+        return output_path
+
+    def _quiz_title_for_print(self, questions):
+        questions = list(questions or [])
+        if not questions:
+            return "Test"
+
+        years = sorted({str(q.get("yil", "")).strip() for q in questions if str(q.get("yil", "")).strip()})
+        subjects = sorted({str(q.get("ders", "")).strip() for q in questions if str(q.get("ders", "")).strip()})
+
+        if len(subjects) == 1 and len(years) == 1:
+            return f"{years[0]} {subjects[0]} Testi"
+        if len(subjects) == 1:
+            return f"{subjects[0]} Karışık Test"
+        return "Karışık Test"
+
+    def _build_quiz_print_body(self, questions):
+        question_sections = []
+        answer_rows = []
+
+        for index, question in enumerate(questions, start=1):
+            meta_parts = []
+            if question.get("ders"):
+                meta_parts.append(f"Sınav: {question['ders']}")
+            if question.get("yil"):
+                meta_parts.append(f"Yıl: {question['yil']}")
+            if question.get("soru_no"):
+                meta_parts.append(f"Kaynak Soru: {question['soru_no']}")
+            if question.get("konu") and question.get("konu") != question.get("ders"):
+                meta_parts.append(f"Konu: {question['konu']}")
+
+            option_lines = []
+            for option_key in ("A", "B", "C", "D", "E"):
+                option_text = str((question.get("siklar") or {}).get(option_key, "")).strip()
+                if option_text:
+                    option_lines.append(
+                        f"<li><strong>{html.escape(option_key)})</strong> {html.escape(option_text)}</li>"
+                    )
+
+            visual_note = ""
+            visuals = [Path(str(path)).name for path in question.get("gorsel_dosyalari", []) if str(path).strip()]
+            if visuals:
+                visual_note = (
+                    '<div class="meta-note"><strong>Görsel:</strong> '
+                    + html.escape(", ".join(visuals))
+                    + "</div>"
+                )
+
+            question_sections.append(
+                f"""
+<section class="question">
+  <div class="question-number">Soru {index}</div>
+  <div class="meta">{html.escape(' | '.join(meta_parts))}</div>
+  <div class="question-text">{html.escape(str(question.get('soru_metni', '') or '')).replace(chr(10), '<br>')}</div>
+  <ul class="options">
+    {''.join(option_lines)}
+  </ul>
+  {visual_note}
+</section>
+"""
+            )
+            answer_rows.append(
+                f"<li>{index} - {html.escape(str(question.get('dogru_cevap', '') or '').upper())}</li>"
+            )
+
+        answer_key_html = f"""
+<section class="answer-key">
+  <h2>Cevaplar</h2>
+  <div class="meta">Cevap anahtarı test sırasına göre listelenmiştir.</div>
+  <ol class="answer-list">
+    {''.join(answer_rows)}
+  </ol>
+</section>
+"""
+        return "".join(question_sections) + answer_key_html
+
+    def _build_quiz_print_payload(self, questions=None):
+        questions = list(questions or self.quiz_questions or [])
+        if not questions:
+            return None
+
+        title = self._quiz_title_for_print(questions)
+        subtitle_parts = [f"{len(questions)} soru"]
+        if self.current_view in ("review", "results") and self.total_questions:
+            subtitle_parts.append(f"Skor: {self.score}/{self.total_questions}")
+        if self.total_elapsed_seconds:
+            subtitle_parts.append(f"Toplam süre: {self._format_seconds(self.total_elapsed_seconds)}")
+
+        return (
+            title,
+            " | ".join(subtitle_parts),
+            self._build_quiz_print_body(questions),
+            f"{title}-{len(questions)}-soru",
+        )
+
+    def _current_ozet_selection_name(self):
+        topic_label = self.ozet_topic_var.get() if hasattr(self, "ozet_topic_var") else "Tümü"
+        nav_label = self.ozet_nav_var.get() if hasattr(self, "ozet_nav_var") else "Tümü"
+        main_label = self.ozet_main_nav_var.get() if hasattr(self, "ozet_main_nav_var") else "Tümü"
+
+        topic_name = getattr(self, "_sub_label_to_name", {}).get(topic_label, topic_label)
+        nav_name = getattr(self, "_sub_label_to_name", {}).get(nav_label, nav_label)
+        main_name = getattr(self, "_main_label_to_name", {}).get(main_label, main_label)
+
+        for candidate in (topic_name, nav_name, main_name):
+            if candidate and candidate not in ("Tümü", "Seçiniz...", "Ders Seçiniz..."):
+                return candidate
+        return "Tümü"
+
+    def _selected_ozet_blocks_for_print(self):
+        blocks = list(getattr(self, "ozet_topic_data", []) or [])
+        if not blocks:
+            return []
+
+        selected_name = self._current_ozet_selection_name()
+        if selected_name == "Tümü":
+            return blocks
+
+        filtered = [
+            block for block in blocks
+            if str(block.get("topic", "")).strip() == selected_name
+            or str(block.get("main_cat", "")).strip() == selected_name
+        ]
+        return filtered or blocks
+
+    def _compose_ozet_blocks_text(self, blocks):
+        if not blocks:
+            return ""
+
+        parts = []
+        last_main_cat = None
+        for block in blocks:
+            main_cat = str(block.get("main_cat", "")).strip()
+            topic = str(block.get("topic", "")).strip()
+            sentences = [
+                str(sentence.get("raw", "")).strip()
+                for sentence in block.get("sentences", [])
+                if str(sentence.get("raw", "")).strip()
+            ]
+
+            if main_cat and main_cat != last_main_cat:
+                parts.append(main_cat)
+            if topic and topic != main_cat:
+                parts.append(topic)
+            if sentences:
+                parts.append("\n".join(sentences))
+            last_main_cat = main_cat or last_main_cat
+
+        return "\n\n".join(part for part in parts if str(part).strip())
+
+    def _build_ozet_print_payload(self):
+        if not self.current_ozet_filename:
+            return None
+
+        content = self._get_current_ozet_print_text()
+        selection_name = self._current_ozet_selection_name()
+        subtitle = "Tüm içerik" if selection_name == "Tümü" else f"Seçim: {selection_name}"
+        title = self.current_ozet_title or "Özet Notlar"
+        title_candidates = [title]
+        if self.current_ozet_filename == "dkab_ozet.txt":
+            title_candidates.append("DKAB ÖZET NOTLAR")
+        elif self.current_ozet_filename == "dkab_kodlamali_ozet.txt":
+            title_candidates.extend(["DKAB KODLAMALI ÖZET", "DKAB KODLAMALI OZET"])
+
+        for candidate in title_candidates:
+            content = self._strip_duplicate_print_heading(content, candidate)
+        return (
+            title,
+            subtitle,
+            self._plain_text_to_html(content),
+            f"{title}-{selection_name}",
+        )
+
+    def _build_hap_print_payload(self):
+        exam_entry = self._selected_hap_exam_entry()
+        if not exam_entry:
+            return None
+
+        topic_entry = self._selected_hap_topic_entry()
+        if topic_entry:
+            title = f"{exam_entry.get('label', '')} | {topic_entry.get('topic', '')}"
+            content = self._read_text_file_content(topic_entry.get("text_path"))
+        else:
+            title = f"{exam_entry.get('label', '')} | Genel Panel"
+            content = self._read_text_file_content(exam_entry.get("general_path"))
+
+        return (
+            title,
+            "Hap Bilgiler",
+            self._plain_text_to_html(content),
+            title,
+        )
+
+    def _build_text_document_print_payload(self):
+        if not self.current_text_document:
+            return None
+
+        title = str(self.current_text_document.get("title", "Metin")).strip() or "Metin"
+        subtitle = str(self.current_text_document.get("subtitle", "") or "").strip()
+        content = self.current_text_document.get("content", "")
+        return (
+            title,
+            subtitle,
+            self._plain_text_to_html(content),
+            title,
+        )
+
+    def _build_specific_question_print_payload(self):
+        if not self.current_specific_question:
+            return None
+
+        question = self.current_specific_question
+        title = f"{question.get('ders', '')} {question.get('yil', '')} Soru {question.get('soru_no', '')}".strip()
+        subtitle_parts = []
+        if question.get("konu") and question.get("konu") != question.get("ders"):
+            subtitle_parts.append(f"Konu: {question.get('konu')}")
+        subtitle_parts.append("Tek soru çıktısı")
+        return (
+            title,
+            " | ".join(subtitle_parts),
+            self._build_quiz_print_body([question]),
+            title,
+        )
+
+    def _collect_print_payload_for_current_view(self):
+        if self.current_view in ("question", "review", "results") and self.quiz_questions:
+            return self._build_quiz_print_payload()
+        if self.current_view == "specific" and self.current_specific_question:
+            return self._build_specific_question_print_payload()
+        if self.current_view in ("ozet", "kodlamali_ozet"):
+            return self._build_ozet_print_payload()
+        if self.current_view == "hap_bilgiler":
+            return self._build_hap_print_payload()
+        if self.current_view == "text_document" and self.current_text_document:
+            return self._build_text_document_print_payload()
+        return None
+
+    def print_current_view(self):
+        payload = self._collect_print_payload_for_current_view()
+        if not payload:
+            self._update_print_status("Önce bir test, soru veya konu aç.")
+            messagebox.showinfo(
+                "Yazdırma",
+                "Şu an yazdırılabilir bir test veya konu ekranı açık değil.",
+            )
+            return
+
+        title, subtitle, body_html, suggested_name = payload
+        self._open_print_preview(
+            title,
+            body_html,
+            subtitle=subtitle,
+            suggested_name=suggested_name,
+        )
+
     def show_hap_bilgiler(self):
         self.current_view = "hap_bilgiler"
         self.stop_speech(reset_status=False)
@@ -2840,6 +3392,14 @@ class ModernDKABQuiz:
         )
         self.hap_topic_combo.pack(side=tk.LEFT, padx=(6, 0))
         self.hap_topic_combo.bind("<<ComboboxSelected>>", self._on_hap_topic_changed)
+
+        print_btn = self.create_button(
+            controls,
+            "🖨️ Yazdır",
+            self.print_current_view,
+            self.colors['success'],
+        )
+        print_btn.pack(side=tk.RIGHT)
 
         self.hap_info_var = tk.StringVar(value="")
         tk.Label(
@@ -3429,6 +3989,14 @@ class ModernDKABQuiz:
         )
         back_btn.pack(side=tk.LEFT)
 
+        print_btn = self.create_button(
+            controls,
+            "🖨️ Yazdır",
+            self.print_current_view,
+            self.colors['success'],
+        )
+        print_btn.pack(side=tk.RIGHT)
+
         if subtitle:
             tk.Label(
                 card,
@@ -3726,6 +4294,8 @@ class ModernDKABQuiz:
 
     def _show_ozet_file(self, filename, title, view_name):
         self.current_view = view_name
+        self.current_ozet_filename = filename
+        self.current_ozet_title = title
         self.stop_speech(reset_status=False)
         self._stop_countdown()
         self._stop_elapsed_tracking()
@@ -3902,6 +4472,7 @@ class ModernDKABQuiz:
             
         txt.insert(tk.END, file_content)
         txt.config(state=tk.DISABLED)
+        self.current_ozet_text_widget = txt
         
         if not hasattr(self, 'ozet_topic_data'):
             self.ozet_topic_data = []
@@ -4238,6 +4809,9 @@ class ModernDKABQuiz:
 
         refresh_btn = self.create_button(controls, "🔄 YENİLE", refresh_text, self.colors['success'])
         refresh_btn.pack(side=tk.LEFT, padx=(0, 10))
+
+        print_btn = self.create_button(controls, "🖨️ YAZDIR", self.print_current_view, self.colors['success'])
+        print_btn.pack(side=tk.RIGHT, padx=(10, 0))
 
     def check_new_files(self):
         """Yeni eklenen dosyaları kontrol eder"""
@@ -5618,6 +6192,14 @@ class ModernDKABQuiz:
         counter_label = tk.Label(nav_frame, text=f"Soru {self.current_index + 1}/{self.total_questions}", 
                                 font=('Segoe UI', 9, 'bold'), bg=self.colors['card'], fg=self.colors['text'])
         counter_label.pack(side=tk.LEFT, expand=True)
+
+        print_btn = self.create_button(
+            nav_frame,
+            "🖨️",
+            self.print_current_view,
+            self.colors['warning'],
+        )
+        print_btn.pack(side=tk.RIGHT, padx=5, ipady=2)
         
         # Testi Bitir button (only in review flow modes: Test Sonu Değerlendir and Süreli)
         if self._uses_review_flow():
@@ -6053,6 +6635,10 @@ class ModernDKABQuiz:
         # Buttons
         button_frame = tk.Frame(content_frame, bg=self.colors['card'])
         button_frame.pack(fill=tk.X, pady=20)
+
+        print_btn = self.create_button(button_frame, "🖨️ YAZDIR",
+                                      self.print_current_view, self.colors['warning'])
+        print_btn.pack(side=tk.LEFT, padx=10, ipady=8)
         
         new_test_btn = self.create_button(button_frame, "🔄 YENİ TEST", 
                                          self.new_test, self.colors['success'])
@@ -6319,6 +6905,14 @@ class ModernDKABQuiz:
                                     self.colors['success'])
             nb.pack(side=tk.RIGHT, ipady=4)
 
+        print_btn = self.create_button(
+            nav_frame,
+            "🖨️ Yazdır",
+            self.print_current_view,
+            self.colors['warning'],
+        )
+        print_btn.pack(side=tk.RIGHT, padx=(0, 10), ipady=4)
+
         self.maybe_auto_read_question(question)
 
     def next_question(self):
@@ -6451,6 +7045,14 @@ class ModernDKABQuiz:
 
         button_frame = tk.Frame(content_frame, bg=self.colors['card'])
         button_frame.pack(fill=tk.X, pady=20)
+
+        print_btn = self.create_button(
+            button_frame,
+            "🖨️ YAZDIR",
+            self.print_current_view,
+            self.colors['warning']
+        )
+        print_btn.pack(side=tk.LEFT, padx=10, ipady=8)
 
         new_test_btn = self.create_button(
             button_frame,
