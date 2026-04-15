@@ -1072,11 +1072,11 @@ class ModernDKABQuiz:
 
     def _transliterate_arabic_text(self, text):
         base_map = {
-            "ا": "a",
-            "أ": "e",
-            "إ": "i",
+            "ا": "",
+            "أ": "",
+            "إ": "",
             "آ": "a",
-            "ٱ": "a",
+            "ٱ": "",
             "ب": "b",
             "ت": "t",
             "ث": "s",
@@ -1093,10 +1093,10 @@ class ModernDKABQuiz:
             "ض": "d",
             "ط": "t",
             "ظ": "z",
-            "ع": "a",
-            "غ": "g",
+            "ع": "",
+            "غ": "ğ",
             "ف": "f",
-            "ق": "g",
+            "ق": "k",
             "ك": "k",
             "ل": "l",
             "م": "m",
@@ -1106,19 +1106,18 @@ class ModernDKABQuiz:
             "و": "v",
             "ي": "y",
             "ى": "a",
-            "ئ": "i",
-            "ؤ": "u",
+            "ئ": "",
+            "ؤ": "",
             "ء": "",
         }
-        vowel_map = {
+        vowel_marks = {
             "َ": "a",
             "ِ": "i",
             "ُ": "u",
-            "ً": "",
-            "ٍ": "",
-            "ٌ": "",
-            "ْ": "",
+            "ٰ": "a",
         }
+        tanwin_marks = {"ً": "a", "ٍ": "i", "ٌ": "u"}
+        all_marks = set(vowel_marks) | set(tanwin_marks) | {"ْ", "ّ"}
         punctuation_map = str.maketrans({
             "،": " ",
             "؛": " ",
@@ -1126,7 +1125,19 @@ class ModernDKABQuiz:
             "ـ": "",
             "(": " ",
             ")": " ",
+            "[": " ",
+            "]": " ",
+            "{": " ",
+            "}": " ",
         })
+
+        def collect_marks(raw_text, start_index):
+            marks = []
+            index = start_index
+            while index < len(raw_text) and raw_text[index] in all_marks:
+                marks.append(raw_text[index])
+                index += 1
+            return marks, index
 
         text = str(text or "").translate(punctuation_map)
         text = re.sub(r"[\u0660-\u0669\d]+", " ", text)
@@ -1136,71 +1147,131 @@ class ModernDKABQuiz:
         while i < len(text):
             char = text[i]
 
-            if char == "ّ":
-                if result:
-                    result.append(result[-1])
+            if char.isspace():
+                result.append(" ")
                 i += 1
                 continue
 
-            if char in vowel_map:
-                result.append(vowel_map[char])
-                i += 1
-                continue
-
-            if char == "ا" and result and result[-1].endswith("a"):
-                result.append("a")
-                i += 1
-                continue
-
-            if char == "و":
-                prev = result[-1] if result else ""
-                next_char = text[i + 1] if i + 1 < len(text) else ""
-                if prev.endswith("u"):
-                    result.append("u")
-                    i += 1
-                    continue
-                if next_char in {"َ", "ِ", "ُ"}:
-                    result.append("v")
-                else:
-                    result.append("u" if not prev else "v")
-                i += 1
-                continue
-
-            if char == "ي":
-                prev = result[-1] if result else ""
-                next_char = text[i + 1] if i + 1 < len(text) else ""
-                if prev.endswith("i"):
-                    result.append("i")
-                elif prev.endswith("a"):
-                    result.append("y")
-                elif next_char in {"َ", "ِ", "ُ"}:
-                    result.append("y")
-                else:
-                    result.append("i" if not prev else "y")
-                i += 1
-                continue
-
-            if char in base_map:
-                result.append(base_map[char])
-            else:
+            if char not in base_map and char not in all_marks:
                 result.append(char)
+                i += 1
+                continue
 
-            i += 1
+            if char in all_marks:
+                i += 1
+                continue
+
+            marks, next_index = collect_marks(text, i + 1)
+
+            if char == "و" and (i == 0 or text[i - 1].isspace()) and ("َ" in marks or not marks):
+                result.append("ve")
+                i = next_index
+                continue
+
+            base_sound = base_map.get(char, "")
+            next_char = text[next_index] if next_index < len(text) else ""
+            next_marks, after_next_index = collect_marks(text, next_index + 1) if next_char in base_map else ([], next_index + 1)
+
+            shadda = "ّ" in marks
+            consonant = base_sound + base_sound if shadda and base_sound else base_sound
+
+            vowel = ""
+            for mark in ("ِ", "ُ", "َ", "ٰ"):
+                if mark in marks:
+                    vowel = vowel_marks[mark]
+                    break
+
+            has_tanwin = any(mark in marks for mark in tanwin_marks)
+            if has_tanwin:
+                vowel = ""
+            elif not vowel:
+                for mark in ("ٍ", "ٌ", "ً"):
+                    if mark in marks:
+                        vowel = tanwin_marks[mark]
+                        break
+
+            consume_next = False
+            if next_char in {"ا", "ى"} and vowel == "a" and not any(mark in next_marks for mark in vowel_marks | tanwin_marks):
+                consume_next = True
+            elif next_char == "و" and vowel == "u" and not any(mark in next_marks for mark in vowel_marks | tanwin_marks):
+                consume_next = True
+            elif next_char == "ي" and vowel == "i" and not any(mark in next_marks for mark in vowel_marks | tanwin_marks):
+                consume_next = True
+            elif next_char == "ي" and vowel == "a" and "ْ" in next_marks:
+                vowel = "ey"
+                consume_next = True
+            elif next_char == "و" and vowel == "a" and "ْ" in next_marks:
+                vowel = "ev"
+                consume_next = True
+
+            syllable = f"{consonant}{vowel}"
+            if not syllable and char in {"ا", "أ", "إ", "ٱ"}:
+                syllable = vowel or "e"
+            elif not syllable and char == "ة":
+                syllable = "e"
+
+            if syllable:
+                result.append(syllable)
+
+            i = after_next_index if consume_next else next_index
 
         transliterated = "".join(result)
-        transliterated = re.sub(r"\s+", " ", transliterated)
-        transliterated = re.sub(r"aa+", "aa", transliterated)
-        transliterated = re.sub(r"ii+", "ii", transliterated)
-        transliterated = re.sub(r"uu+", "uu", transliterated)
-        transliterated = re.sub(r"\balşş", "eşş", transliterated, flags=re.IGNORECASE)
-        transliterated = re.sub(r"\bvalss", "vess", transliterated, flags=re.IGNORECASE)
-        transliterated = re.sub(r"\bguray", "gurey", transliterated, flags=re.IGNORECASE)
-        transliterated = re.sub(r"\bkuray", "kurey", transliterated, flags=re.IGNORECASE)
-        transliterated = re.sub(r"\bgureyşi\b", "gureyş", transliterated, flags=re.IGNORECASE)
-        transliterated = re.sub(r"\bliilafi\b", "liilefi", transliterated, flags=re.IGNORECASE)
-        transliterated = re.sub(r"\biilafihim\b", "iilefihim", transliterated, flags=re.IGNORECASE)
-        transliterated = re.sub(r"\brihlaea\b", "rihlete", transliterated, flags=re.IGNORECASE)
+        transliterated = re.sub(r"\s+", " ", transliterated).strip()
+        transliterated = re.sub(r"aa+", "a", transliterated, flags=re.IGNORECASE)
+        transliterated = re.sub(r"uu+", "u", transliterated, flags=re.IGNORECASE)
+        transliterated = re.sub(r"([bcçdfgğhjklmnprsştvyz])\1{2,}", r"\1\1", transliterated, flags=re.IGNORECASE)
+        transliterated = re.sub(r"\bal", "el", transliterated, flags=re.IGNORECASE)
+
+        sun_letter_map = {
+            "t": "ett",
+            "s": "ess",
+            "ş": "eşş",
+            "d": "edd",
+            "z": "ezz",
+            "r": "err",
+            "n": "enn",
+            "l": "ell",
+        }
+        for letter, replacement in sun_letter_map.items():
+            transliterated = re.sub(
+                rf"\bel{letter}",
+                replacement,
+                transliterated,
+                flags=re.IGNORECASE,
+            )
+
+        cleanup_rules = [
+            (r"\bkuray", "kurey"),
+            (r"\bkureyşi\b", "kureyş"),
+            (r"\bkureyiş\b", "kureyş"),
+            (r"\bguray", "gurey"),
+            (r"eşşş", "eşş"),
+            (r"esss", "ess"),
+            (r"\blilafi\b", "liilefi"),
+            (r"\bliilafi\b", "liilefi"),
+            (r"\bilafihim\b", "iilefihim"),
+            (r"\biilafihim\b", "iilefihim"),
+            (r"\brihlaea\b", "rihlete"),
+            (r"\brihletea\b", "rihlete"),
+            (r"\bbayt", "beyt"),
+            (r"\bve el", "vel"),
+            (r"\bveelss", "vess"),
+            (r"\bfalyabudue\b", "felyabudu"),
+            (r"\bhazaa\b", "haza"),
+            (r"\bhevf\b", "havf"),
+            (r"\bcui\b", "cu"),
+        ]
+        for pattern, replacement in cleanup_rules:
+            transliterated = re.sub(pattern, replacement, transliterated, flags=re.IGNORECASE)
+
         return transliterated.strip()
+
+    def _replace_arabic_segments_for_speech(self, text):
+        arabic_segment_pattern = re.compile(r"[\u0600-\u06FF\u0670]+(?:[\u0600-\u06FF\u0670\s]+[\u0600-\u06FF\u0670]+)*")
+        return arabic_segment_pattern.sub(
+            lambda match: self._transliterate_arabic_text(match.group(0)),
+            str(text or ""),
+        )
 
     def _initial_speech_status_text(self):
         if self.speech_engine.is_available():
@@ -1244,7 +1315,11 @@ class ModernDKABQuiz:
         return 0.65 + arabic_bonus + length_bonus + (sentence_breaks * 0.08)
 
     def _normalize_speech_text(self, text):
-        normalized = normalize_sentence_for_tts(str(text or "").replace("\n", " "))
+        raw_text = str(text or "").replace("\n", " ")
+        if self._contains_arabic_text(raw_text):
+            raw_text = self._replace_arabic_segments_for_speech(raw_text)
+
+        normalized = normalize_sentence_for_tts(raw_text)
         normalized = self._replace_roman_numerals_for_speech(normalized)
         abbreviation_rules = [
             (r"\bHz\.\s*", "Hazreti "),
@@ -1263,8 +1338,6 @@ class ModernDKABQuiz:
             " bin ",
             normalized,
         )
-        if self._contains_arabic_text(normalized):
-            normalized = self._transliterate_arabic_text(normalized)
         return " ".join(normalized.split())
 
     def _option_read_label(self, option_letter):
