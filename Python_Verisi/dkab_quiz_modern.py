@@ -930,33 +930,9 @@ class ModernDKABQuiz:
         return bool(re.search(r"[\u0600-\u06FF]", str(text or "")))
 
     def _replace_roman_numerals_for_speech(self, text):
-        roman_map = {
-            "I": "1",
-            "II": "2",
-            "III": "3",
-            "IV": "4",
-            "V": "5",
-            "VI": "6",
-            "VII": "7",
-            "VIII": "8",
-            "IX": "9",
-            "X": "10",
-            "XI": "11",
-            "XII": "12",
-        }
-
         pattern = re.compile(
             r"(?<![A-Za-zÇĞİÖŞÜçğıöşü])"
-            r"(XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)"
-            r"(?![A-Za-zÇĞİÖŞÜçğıöşü])"
-        )
-        return pattern.sub(lambda match: roman_map.get(match.group(1), match.group(1)), text)
-
-    def _replace_roman_numerals_for_speech(self, text):
-        pattern = re.compile(
-            r"(?<![A-Za-zÇĞİÖŞÜçğıöşü])"
-            r"(M{0,3}(?:CM|CD|D?C{0,3})"
-            r"(?:XC|XL|L?X{0,3})(?:IX|IV|V?I{1,3}|I))"
+            r"([IVXLCDM]+)"
             r"(\.?)"
             r"(?![A-Za-zÇĞİÖŞÜçğıöşü])"
         )
@@ -1018,15 +994,50 @@ class ModernDKABQuiz:
         }
 
         def roman_to_int(value):
+            text_value = str(value or "").upper().strip()
+            if not text_value:
+                return None
+
             total = 0
             previous_value = 0
-            for char in reversed(value):
-                current_value = roman_values[char]
+            for char in reversed(text_value):
+                current_value = roman_values.get(char)
+                if current_value is None:
+                    return None
                 if current_value < previous_value:
                     total -= current_value
                 else:
                     total += current_value
                     previous_value = current_value
+            if total <= 0:
+                return None
+
+            def int_to_roman(number):
+                roman_parts = [
+                    (1000, "M"),
+                    (900, "CM"),
+                    (500, "D"),
+                    (400, "CD"),
+                    (100, "C"),
+                    (90, "XC"),
+                    (50, "L"),
+                    (40, "XL"),
+                    (10, "X"),
+                    (9, "IX"),
+                    (5, "V"),
+                    (4, "IV"),
+                    (1, "I"),
+                ]
+                pieces = []
+                remaining = int(number)
+                for numeric_value, roman_piece in roman_parts:
+                    while remaining >= numeric_value:
+                        pieces.append(roman_piece)
+                        remaining -= numeric_value
+                return "".join(pieces)
+
+            if int_to_roman(total) != text_value:
+                return None
             return total
 
         def int_to_turkish(value):
@@ -1063,6 +1074,8 @@ class ModernDKABQuiz:
 
         def replace(match):
             number = roman_to_int(match.group(1))
+            if number is None:
+                return match.group(0)
             spoken = int_to_turkish(number)
             if match.group(2) == ".":
                 spoken = to_ordinal_words(spoken)
